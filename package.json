@@ -1,6 +1,6 @@
 {
     "name": "@unaxiom/genesis-sdk",
-    "version": "v7.7.0",
+    "version": "7.7.0-dev",
     "description": "NPM module that provides access to Genesis' API",
     "types": "./lib/cjs/types/index.d.ts",
     "main": "./lib/cjs/index.js",
