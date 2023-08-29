@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.OVERTIME_SORT_KEY
  */
-export declare enum OVERTIME_SORT_KEY ***REMOVED***
+export declare enum OVERTIME_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -81,14 +81,14 @@ export declare enum OVERTIME_SORT_KEY ***REMOVED***
      * @generated from enum value: OVERTIME_SORT_KEY_TO_TIMESTAMP = 14;
      */
     OVERTIME_SORT_KEY_TO_TIMESTAMP = 14
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.OvertimesServiceCreateRequest
  */
-export declare class OvertimesServiceCreateRequest extends Message<OvertimesServiceCreateRequest> ***REMOVED***
+export declare class OvertimesServiceCreateRequest extends Message<OvertimesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -151,14 +151,14 @@ export declare class OvertimesServiceCreateRequest extends Message<OvertimesServ
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OvertimesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OvertimesServiceCreateRequest;
     static equals(a: OvertimesServiceCreateRequest | PlainMessage<OvertimesServiceCreateRequest> | undefined, b: OvertimesServiceCreateRequest | PlainMessage<OvertimesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.OvertimesServiceUpdateRequest
  */
-export declare class OvertimesServiceUpdateRequest extends Message<OvertimesServiceUpdateRequest> ***REMOVED***
+export declare class OvertimesServiceUpdateRequest extends Message<OvertimesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -221,14 +221,14 @@ export declare class OvertimesServiceUpdateRequest extends Message<OvertimesServ
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OvertimesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OvertimesServiceUpdateRequest;
     static equals(a: OvertimesServiceUpdateRequest | PlainMessage<OvertimesServiceUpdateRequest> | undefined, b: OvertimesServiceUpdateRequest | PlainMessage<OvertimesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.Overtime
  */
-export declare class Overtime extends Message<Overtime> ***REMOVED***
+export declare class Overtime extends Message<Overtime> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -321,14 +321,14 @@ export declare class Overtime extends Message<Overtime> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Overtime;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Overtime;
     static equals(a: Overtime | PlainMessage<Overtime> | undefined, b: Overtime | PlainMessage<Overtime> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.OvertimesList
  */
-export declare class OvertimesList extends Message<OvertimesList> ***REMOVED***
+export declare class OvertimesList extends Message<OvertimesList> {
     /**
      * List of records
      *
@@ -343,14 +343,14 @@ export declare class OvertimesList extends Message<OvertimesList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OvertimesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OvertimesList;
     static equals(a: OvertimesList | PlainMessage<OvertimesList> | undefined, b: OvertimesList | PlainMessage<OvertimesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.OvertimesServicePaginationReq
  */
-export declare class OvertimesServicePaginationReq extends Message<OvertimesServicePaginationReq> ***REMOVED***
+export declare class OvertimesServicePaginationReq extends Message<OvertimesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -395,14 +395,14 @@ export declare class OvertimesServicePaginationReq extends Message<OvertimesServ
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OvertimesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OvertimesServicePaginationReq;
     static equals(a: OvertimesServicePaginationReq | PlainMessage<OvertimesServicePaginationReq> | undefined, b: OvertimesServicePaginationReq | PlainMessage<OvertimesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.OvertimesServicePaginationResponse
  */
-export declare class OvertimesServicePaginationResponse extends Message<OvertimesServicePaginationResponse> ***REMOVED***
+export declare class OvertimesServicePaginationResponse extends Message<OvertimesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -435,14 +435,14 @@ export declare class OvertimesServicePaginationResponse extends Message<Overtime
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OvertimesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OvertimesServicePaginationResponse;
     static equals(a: OvertimesServicePaginationResponse | PlainMessage<OvertimesServicePaginationResponse> | undefined, b: OvertimesServicePaginationResponse | PlainMessage<OvertimesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.OvertimesServiceEntityPaginationReq
  */
-export declare class OvertimesServiceEntityPaginationReq extends Message<OvertimesServiceEntityPaginationReq> ***REMOVED***
+export declare class OvertimesServiceEntityPaginationReq extends Message<OvertimesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -487,14 +487,14 @@ export declare class OvertimesServiceEntityPaginationReq extends Message<Overtim
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OvertimesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OvertimesServiceEntityPaginationReq;
     static equals(a: OvertimesServiceEntityPaginationReq | PlainMessage<OvertimesServiceEntityPaginationReq> | undefined, b: OvertimesServiceEntityPaginationReq | PlainMessage<OvertimesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.OvertimesServiceFilterReq
  */
-export declare class OvertimesServiceFilterReq extends Message<OvertimesServiceFilterReq> ***REMOVED***
+export declare class OvertimesServiceFilterReq extends Message<OvertimesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -635,14 +635,14 @@ export declare class OvertimesServiceFilterReq extends Message<OvertimesServiceF
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OvertimesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OvertimesServiceFilterReq;
     static equals(a: OvertimesServiceFilterReq | PlainMessage<OvertimesServiceFilterReq> | undefined, b: OvertimesServiceFilterReq | PlainMessage<OvertimesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.OvertimesServiceSearchAllReq
  */
-export declare class OvertimesServiceSearchAllReq extends Message<OvertimesServiceSearchAllReq> ***REMOVED***
+export declare class OvertimesServiceSearchAllReq extends Message<OvertimesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -705,5 +705,5 @@ export declare class OvertimesServiceSearchAllReq extends Message<OvertimesServi
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OvertimesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OvertimesServiceSearchAllReq;
     static equals(a: OvertimesServiceSearchAllReq | PlainMessage<OvertimesServiceSearchAllReq> | undefined, b: OvertimesServiceSearchAllReq | PlainMessage<OvertimesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=overtimes_pb.d.ts.map

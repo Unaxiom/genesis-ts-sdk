@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.LEAVE_ADJUSTMENT_SORT_KEY
  */
-export declare enum LEAVE_ADJUSTMENT_SORT_KEY ***REMOVED***
+export declare enum LEAVE_ADJUSTMENT_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -68,14 +68,14 @@ export declare enum LEAVE_ADJUSTMENT_SORT_KEY ***REMOVED***
      * @generated from enum value: LEAVE_ADJUSTMENT_SORT_KEY_USER_ID = 12;
      */
     LEAVE_ADJUSTMENT_SORT_KEY_USER_ID = 12
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceCreateRequest
  */
-export declare class LeavesAdjustmentsServiceCreateRequest extends Message<LeavesAdjustmentsServiceCreateRequest> ***REMOVED***
+export declare class LeavesAdjustmentsServiceCreateRequest extends Message<LeavesAdjustmentsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -120,14 +120,14 @@ export declare class LeavesAdjustmentsServiceCreateRequest extends Message<Leave
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceCreateRequest;
     static equals(a: LeavesAdjustmentsServiceCreateRequest | PlainMessage<LeavesAdjustmentsServiceCreateRequest> | undefined, b: LeavesAdjustmentsServiceCreateRequest | PlainMessage<LeavesAdjustmentsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceUpdateRequest
  */
-export declare class LeavesAdjustmentsServiceUpdateRequest extends Message<LeavesAdjustmentsServiceUpdateRequest> ***REMOVED***
+export declare class LeavesAdjustmentsServiceUpdateRequest extends Message<LeavesAdjustmentsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -172,14 +172,14 @@ export declare class LeavesAdjustmentsServiceUpdateRequest extends Message<Leave
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceUpdateRequest;
     static equals(a: LeavesAdjustmentsServiceUpdateRequest | PlainMessage<LeavesAdjustmentsServiceUpdateRequest> | undefined, b: LeavesAdjustmentsServiceUpdateRequest | PlainMessage<LeavesAdjustmentsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.LeaveAdjustment
  */
-export declare class LeaveAdjustment extends Message<LeaveAdjustment> ***REMOVED***
+export declare class LeaveAdjustment extends Message<LeaveAdjustment> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -260,14 +260,14 @@ export declare class LeaveAdjustment extends Message<LeaveAdjustment> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeaveAdjustment;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeaveAdjustment;
     static equals(a: LeaveAdjustment | PlainMessage<LeaveAdjustment> | undefined, b: LeaveAdjustment | PlainMessage<LeaveAdjustment> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add a record
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceRecordCreateRequest
  */
-export declare class LeavesAdjustmentsServiceRecordCreateRequest extends Message<LeavesAdjustmentsServiceRecordCreateRequest> ***REMOVED***
+export declare class LeavesAdjustmentsServiceRecordCreateRequest extends Message<LeavesAdjustmentsServiceRecordCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -306,14 +306,14 @@ export declare class LeavesAdjustmentsServiceRecordCreateRequest extends Message
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceRecordCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceRecordCreateRequest;
     static equals(a: LeavesAdjustmentsServiceRecordCreateRequest | PlainMessage<LeavesAdjustmentsServiceRecordCreateRequest> | undefined, b: LeavesAdjustmentsServiceRecordCreateRequest | PlainMessage<LeavesAdjustmentsServiceRecordCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update a record
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceRecordUpdateRequest
  */
-export declare class LeavesAdjustmentsServiceRecordUpdateRequest extends Message<LeavesAdjustmentsServiceRecordUpdateRequest> ***REMOVED***
+export declare class LeavesAdjustmentsServiceRecordUpdateRequest extends Message<LeavesAdjustmentsServiceRecordUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -358,14 +358,14 @@ export declare class LeavesAdjustmentsServiceRecordUpdateRequest extends Message
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceRecordUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceRecordUpdateRequest;
     static equals(a: LeavesAdjustmentsServiceRecordUpdateRequest | PlainMessage<LeavesAdjustmentsServiceRecordUpdateRequest> | undefined, b: LeavesAdjustmentsServiceRecordUpdateRequest | PlainMessage<LeavesAdjustmentsServiceRecordUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute a record associated to a record
  *
  * @generated from message Genesis.LeaveAdjustmentRecord
  */
-export declare class LeaveAdjustmentRecord extends Message<LeaveAdjustmentRecord> ***REMOVED***
+export declare class LeaveAdjustmentRecord extends Message<LeaveAdjustmentRecord> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -428,14 +428,14 @@ export declare class LeaveAdjustmentRecord extends Message<LeaveAdjustmentRecord
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeaveAdjustmentRecord;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeaveAdjustmentRecord;
     static equals(a: LeaveAdjustmentRecord | PlainMessage<LeaveAdjustmentRecord> | undefined, b: LeaveAdjustmentRecord | PlainMessage<LeaveAdjustmentRecord> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.LeavesAdjustmentsList
  */
-export declare class LeavesAdjustmentsList extends Message<LeavesAdjustmentsList> ***REMOVED***
+export declare class LeavesAdjustmentsList extends Message<LeavesAdjustmentsList> {
     /**
      * List of records
      *
@@ -450,14 +450,14 @@ export declare class LeavesAdjustmentsList extends Message<LeavesAdjustmentsList
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsList;
     static equals(a: LeavesAdjustmentsList | PlainMessage<LeavesAdjustmentsList> | undefined, b: LeavesAdjustmentsList | PlainMessage<LeavesAdjustmentsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of leave adjustment records
  *
  * @generated from message Genesis.LeavesAdjustmentsRecordsList
  */
-export declare class LeavesAdjustmentsRecordsList extends Message<LeavesAdjustmentsRecordsList> ***REMOVED***
+export declare class LeavesAdjustmentsRecordsList extends Message<LeavesAdjustmentsRecordsList> {
     /**
      * List of records
      *
@@ -472,14 +472,14 @@ export declare class LeavesAdjustmentsRecordsList extends Message<LeavesAdjustme
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsRecordsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsRecordsList;
     static equals(a: LeavesAdjustmentsRecordsList | PlainMessage<LeavesAdjustmentsRecordsList> | undefined, b: LeavesAdjustmentsRecordsList | PlainMessage<LeavesAdjustmentsRecordsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.LeavesAdjustmentsRecordsHistoryRequest
  */
-export declare class LeavesAdjustmentsRecordsHistoryRequest extends Message<LeavesAdjustmentsRecordsHistoryRequest> ***REMOVED***
+export declare class LeavesAdjustmentsRecordsHistoryRequest extends Message<LeavesAdjustmentsRecordsHistoryRequest> {
     /**
      * Stores the leave adjustment ID
      *
@@ -500,14 +500,14 @@ export declare class LeavesAdjustmentsRecordsHistoryRequest extends Message<Leav
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsRecordsHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsRecordsHistoryRequest;
     static equals(a: LeavesAdjustmentsRecordsHistoryRequest | PlainMessage<LeavesAdjustmentsRecordsHistoryRequest> | undefined, b: LeavesAdjustmentsRecordsHistoryRequest | PlainMessage<LeavesAdjustmentsRecordsHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.LeavesAdjustmentsServicePaginationReq
  */
-export declare class LeavesAdjustmentsServicePaginationReq extends Message<LeavesAdjustmentsServicePaginationReq> ***REMOVED***
+export declare class LeavesAdjustmentsServicePaginationReq extends Message<LeavesAdjustmentsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -552,14 +552,14 @@ export declare class LeavesAdjustmentsServicePaginationReq extends Message<Leave
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServicePaginationReq;
     static equals(a: LeavesAdjustmentsServicePaginationReq | PlainMessage<LeavesAdjustmentsServicePaginationReq> | undefined, b: LeavesAdjustmentsServicePaginationReq | PlainMessage<LeavesAdjustmentsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.LeavesAdjustmentsServicePaginationResponse
  */
-export declare class LeavesAdjustmentsServicePaginationResponse extends Message<LeavesAdjustmentsServicePaginationResponse> ***REMOVED***
+export declare class LeavesAdjustmentsServicePaginationResponse extends Message<LeavesAdjustmentsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -592,14 +592,14 @@ export declare class LeavesAdjustmentsServicePaginationResponse extends Message<
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServicePaginationResponse;
     static equals(a: LeavesAdjustmentsServicePaginationResponse | PlainMessage<LeavesAdjustmentsServicePaginationResponse> | undefined, b: LeavesAdjustmentsServicePaginationResponse | PlainMessage<LeavesAdjustmentsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceEntityPaginationReq
  */
-export declare class LeavesAdjustmentsServiceEntityPaginationReq extends Message<LeavesAdjustmentsServiceEntityPaginationReq> ***REMOVED***
+export declare class LeavesAdjustmentsServiceEntityPaginationReq extends Message<LeavesAdjustmentsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -644,14 +644,14 @@ export declare class LeavesAdjustmentsServiceEntityPaginationReq extends Message
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceEntityPaginationReq;
     static equals(a: LeavesAdjustmentsServiceEntityPaginationReq | PlainMessage<LeavesAdjustmentsServiceEntityPaginationReq> | undefined, b: LeavesAdjustmentsServiceEntityPaginationReq | PlainMessage<LeavesAdjustmentsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceFilterReq
  */
-export declare class LeavesAdjustmentsServiceFilterReq extends Message<LeavesAdjustmentsServiceFilterReq> ***REMOVED***
+export declare class LeavesAdjustmentsServiceFilterReq extends Message<LeavesAdjustmentsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -768,14 +768,14 @@ export declare class LeavesAdjustmentsServiceFilterReq extends Message<LeavesAdj
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceFilterReq;
     static equals(a: LeavesAdjustmentsServiceFilterReq | PlainMessage<LeavesAdjustmentsServiceFilterReq> | undefined, b: LeavesAdjustmentsServiceFilterReq | PlainMessage<LeavesAdjustmentsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceSearchAllReq
  */
-export declare class LeavesAdjustmentsServiceSearchAllReq extends Message<LeavesAdjustmentsServiceSearchAllReq> ***REMOVED***
+export declare class LeavesAdjustmentsServiceSearchAllReq extends Message<LeavesAdjustmentsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -832,5 +832,5 @@ export declare class LeavesAdjustmentsServiceSearchAllReq extends Message<Leaves
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceSearchAllReq;
     static equals(a: LeavesAdjustmentsServiceSearchAllReq | PlainMessage<LeavesAdjustmentsServiceSearchAllReq> | undefined, b: LeavesAdjustmentsServiceSearchAllReq | PlainMessage<LeavesAdjustmentsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=leaves_adjustments_pb.d.ts.map

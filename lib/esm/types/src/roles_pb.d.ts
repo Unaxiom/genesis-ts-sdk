@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.ROLE_SORT_KEY
  */
-export declare enum ROLE_SORT_KEY ***REMOVED***
+export declare enum ROLE_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -62,14 +62,14 @@ export declare enum ROLE_SORT_KEY ***REMOVED***
      * @generated from enum value: ROLE_SORT_KEY_CODE = 11;
      */
     ROLE_SORT_KEY_CODE = 11
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.RolesServiceCreateRequest
  */
-export declare class RolesServiceCreateRequest extends Message<RolesServiceCreateRequest> ***REMOVED***
+export declare class RolesServiceCreateRequest extends Message<RolesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -138,14 +138,14 @@ export declare class RolesServiceCreateRequest extends Message<RolesServiceCreat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RolesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RolesServiceCreateRequest;
     static equals(a: RolesServiceCreateRequest | PlainMessage<RolesServiceCreateRequest> | undefined, b: RolesServiceCreateRequest | PlainMessage<RolesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.RolesServiceUpdateRequest
  */
-export declare class RolesServiceUpdateRequest extends Message<RolesServiceUpdateRequest> ***REMOVED***
+export declare class RolesServiceUpdateRequest extends Message<RolesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -220,14 +220,14 @@ export declare class RolesServiceUpdateRequest extends Message<RolesServiceUpdat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RolesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RolesServiceUpdateRequest;
     static equals(a: RolesServiceUpdateRequest | PlainMessage<RolesServiceUpdateRequest> | undefined, b: RolesServiceUpdateRequest | PlainMessage<RolesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.Role
  */
-export declare class Role extends Message<Role> ***REMOVED***
+export declare class Role extends Message<Role> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -320,14 +320,14 @@ export declare class Role extends Message<Role> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Role;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Role;
     static equals(a: Role | PlainMessage<Role> | undefined, b: Role | PlainMessage<Role> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the necessary data structure during creation/updation of a role access
  *
  * @generated from message Genesis.RolesServiceAccessCreateAndUpdateRequest
  */
-export declare class RolesServiceAccessCreateAndUpdateRequest extends Message<RolesServiceAccessCreateAndUpdateRequest> ***REMOVED***
+export declare class RolesServiceAccessCreateAndUpdateRequest extends Message<RolesServiceAccessCreateAndUpdateRequest> {
     /**
      * The menu UID (or internal code)
      *
@@ -348,14 +348,14 @@ export declare class RolesServiceAccessCreateAndUpdateRequest extends Message<Ro
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RolesServiceAccessCreateAndUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RolesServiceAccessCreateAndUpdateRequest;
     static equals(a: RolesServiceAccessCreateAndUpdateRequest | PlainMessage<RolesServiceAccessCreateAndUpdateRequest> | undefined, b: RolesServiceAccessCreateAndUpdateRequest | PlainMessage<RolesServiceAccessCreateAndUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the data structure of each role access on the platform
  *
  * @generated from message Genesis.RoleAccess
  */
-export declare class RoleAccess extends Message<RoleAccess> ***REMOVED***
+export declare class RoleAccess extends Message<RoleAccess> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -406,14 +406,14 @@ export declare class RoleAccess extends Message<RoleAccess> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RoleAccess;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RoleAccess;
     static equals(a: RoleAccess | PlainMessage<RoleAccess> | undefined, b: RoleAccess | PlainMessage<RoleAccess> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of roles
  *
  * @generated from message Genesis.RolesList
  */
-export declare class RolesList extends Message<RolesList> ***REMOVED***
+export declare class RolesList extends Message<RolesList> {
     /**
      * List of records
      *
@@ -428,14 +428,14 @@ export declare class RolesList extends Message<RolesList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RolesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RolesList;
     static equals(a: RolesList | PlainMessage<RolesList> | undefined, b: RolesList | PlainMessage<RolesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.RolesServicePaginationReq
  */
-export declare class RolesServicePaginationReq extends Message<RolesServicePaginationReq> ***REMOVED***
+export declare class RolesServicePaginationReq extends Message<RolesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -480,14 +480,14 @@ export declare class RolesServicePaginationReq extends Message<RolesServicePagin
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RolesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RolesServicePaginationReq;
     static equals(a: RolesServicePaginationReq | PlainMessage<RolesServicePaginationReq> | undefined, b: RolesServicePaginationReq | PlainMessage<RolesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.RolesServicePaginationResponse
  */
-export declare class RolesServicePaginationResponse extends Message<RolesServicePaginationResponse> ***REMOVED***
+export declare class RolesServicePaginationResponse extends Message<RolesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -520,14 +520,14 @@ export declare class RolesServicePaginationResponse extends Message<RolesService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RolesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RolesServicePaginationResponse;
     static equals(a: RolesServicePaginationResponse | PlainMessage<RolesServicePaginationResponse> | undefined, b: RolesServicePaginationResponse | PlainMessage<RolesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.RolesServiceEntityPaginationReq
  */
-export declare class RolesServiceEntityPaginationReq extends Message<RolesServiceEntityPaginationReq> ***REMOVED***
+export declare class RolesServiceEntityPaginationReq extends Message<RolesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -572,14 +572,14 @@ export declare class RolesServiceEntityPaginationReq extends Message<RolesServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RolesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RolesServiceEntityPaginationReq;
     static equals(a: RolesServiceEntityPaginationReq | PlainMessage<RolesServiceEntityPaginationReq> | undefined, b: RolesServiceEntityPaginationReq | PlainMessage<RolesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.RolesServiceFilterReq
  */
-export declare class RolesServiceFilterReq extends Message<RolesServiceFilterReq> ***REMOVED***
+export declare class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -690,14 +690,14 @@ export declare class RolesServiceFilterReq extends Message<RolesServiceFilterReq
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RolesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RolesServiceFilterReq;
     static equals(a: RolesServiceFilterReq | PlainMessage<RolesServiceFilterReq> | undefined, b: RolesServiceFilterReq | PlainMessage<RolesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.RolesServiceSearchAllReq
  */
-export declare class RolesServiceSearchAllReq extends Message<RolesServiceSearchAllReq> ***REMOVED***
+export declare class RolesServiceSearchAllReq extends Message<RolesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -754,5 +754,5 @@ export declare class RolesServiceSearchAllReq extends Message<RolesServiceSearch
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RolesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RolesServiceSearchAllReq;
     static equals(a: RolesServiceSearchAllReq | PlainMessage<RolesServiceSearchAllReq> | undefined, b: RolesServiceSearchAllReq | PlainMessage<RolesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=roles_pb.d.ts.map

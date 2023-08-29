@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** Goal, GoalItem, GoalItemHistoryRequest, GoalsItemsList, GoalsList, GoalsServiceCreateRequest, GoalsServiceEntityPaginationReq, GoalsServiceFilterReq, GoalsServiceItemCreateRequest, GoalsServiceItemUpdateRequest, GoalsServicePaginationReq, GoalsServicePaginationResponse, GoalsServiceSearchAllReq, GoalsServiceUpdateRequest ***REMOVED*** from "./goals_pb.js";
-import ***REMOVED*** ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { Goal, GoalItem, GoalItemHistoryRequest, GoalsItemsList, GoalsList, GoalsServiceCreateRequest, GoalsServiceEntityPaginationReq, GoalsServiceFilterReq, GoalsServiceItemCreateRequest, GoalsServiceItemUpdateRequest, GoalsServicePaginationReq, GoalsServicePaginationResponse, GoalsServiceSearchAllReq, GoalsServiceUpdateRequest } from "./goals_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,372 +13,372 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.GoalsService
  */
-export const GoalsService = ***REMOVED***
+export const GoalsService = {
   typeName: "Genesis.GoalsService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.GoalsService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: GoalsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.GoalsService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: GoalsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.GoalsService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: GoalsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.GoalsService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.GoalsService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.GoalsService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.GoalsService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.GoalsService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: GoalsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.GoalsService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.GoalsService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.GoalsService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.GoalsService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.GoalsService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.GoalsService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
      * @generated from rpc Genesis.GoalsService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Clone goal from an existing goal (denoted by the identifier)
      *
      * @generated from rpc Genesis.GoalsService.Clone
      */
-    clone: ***REMOVED***
+    clone: {
       name: "Clone",
       I: CloneRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a goal
      *
      * @generated from rpc Genesis.GoalsService.AddGoalItem
      */
-    addGoalItem: ***REMOVED***
+    addGoalItem: {
       name: "AddGoalItem",
       I: GoalsServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a goal
      *
      * @generated from rpc Genesis.GoalsService.ModifyGoalItem
      */
-    modifyGoalItem: ***REMOVED***
+    modifyGoalItem: {
       name: "ModifyGoalItem",
       I: GoalsServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a goal
      *
      * @generated from rpc Genesis.GoalsService.ApproveGoalItem
      */
-    approveGoalItem: ***REMOVED***
+    approveGoalItem: {
       name: "ApproveGoalItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a goal
      *
      * @generated from rpc Genesis.GoalsService.DeleteGoalItem
      */
-    deleteGoalItem: ***REMOVED***
+    deleteGoalItem: {
       name: "DeleteGoalItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a goal
      *
      * @generated from rpc Genesis.GoalsService.ReorderGoalItems
      */
-    reorderGoalItems: ***REMOVED***
+    reorderGoalItems: {
       name: "ReorderGoalItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View goal Item by ID
      *
      * @generated from rpc Genesis.GoalsService.ViewGoalItemByID
      */
-    viewGoalItemByID: ***REMOVED***
+    viewGoalItemByID: {
       name: "ViewGoalItemByID",
       I: Identifier,
       O: GoalItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved goal items for given goal ID
      *
      * @generated from rpc Genesis.GoalsService.ViewApprovedGoalItems
      */
-    viewApprovedGoalItems: ***REMOVED***
+    viewApprovedGoalItems: {
       name: "ViewApprovedGoalItems",
       I: IdentifierWithSearchKey,
       O: GoalsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved goal items for given goal ID
      *
      * @generated from rpc Genesis.GoalsService.ViewUnapprovedGoalItems
      */
-    viewUnapprovedGoalItems: ***REMOVED***
+    viewUnapprovedGoalItems: {
       name: "ViewUnapprovedGoalItems",
       I: IdentifierWithSearchKey,
       O: GoalsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the goal item
      *
      * @generated from rpc Genesis.GoalsService.ViewGoalItemHistory
      */
-    viewGoalItemHistory: ***REMOVED***
+    viewGoalItemHistory: {
       name: "ViewGoalItemHistory",
       I: GoalItemHistoryRequest,
       O: GoalsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.GoalsService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: Goal,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.GoalsService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: GoalsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.GoalsService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: GoalsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.GoalsService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: GoalsServicePaginationReq,
       O: GoalsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.GoalsService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: GoalsServiceEntityPaginationReq,
       O: GoalsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.GoalsService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: GoalsServiceSearchAllReq,
       O: GoalsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.GoalsService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: GoalsServiceFilterReq,
       O: GoalsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.GoalsService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

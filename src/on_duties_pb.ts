@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -14,7 +14,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.ON_DUTY_SORT_KEY
  */
-export enum ON_DUTY_SORT_KEY ***REMOVED***
+export enum ON_DUTY_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -98,21 +98,21 @@ export enum ON_DUTY_SORT_KEY ***REMOVED***
    * @generated from enum value: ON_DUTY_SORT_KEY_EXIT_TIMESTAMP = 14;
    */
   ON_DUTY_SORT_KEY_EXIT_TIMESTAMP = 14,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(ON_DUTY_SORT_KEY)
 proto3.util.setEnumType(ON_DUTY_SORT_KEY, "Genesis.ON_DUTY_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "ON_DUTY_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "ON_DUTY_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "ON_DUTY_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "ON_DUTY_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "ON_DUTY_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "ON_DUTY_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "ON_DUTY_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "ON_DUTY_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "ON_DUTY_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
-  ***REMOVED*** no: 12, name: "ON_DUTY_SORT_KEY_USER_ID" ***REMOVED***,
-  ***REMOVED*** no: 13, name: "ON_DUTY_SORT_KEY_ENTRY_TIMESTAMP" ***REMOVED***,
-  ***REMOVED*** no: 14, name: "ON_DUTY_SORT_KEY_EXIT_TIMESTAMP" ***REMOVED***,
+  { no: 0, name: "ON_DUTY_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "ON_DUTY_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "ON_DUTY_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "ON_DUTY_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "ON_DUTY_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "ON_DUTY_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "ON_DUTY_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "ON_DUTY_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "ON_DUTY_SORT_KEY_FINAL_REF_NUMBER" },
+  { no: 12, name: "ON_DUTY_SORT_KEY_USER_ID" },
+  { no: 13, name: "ON_DUTY_SORT_KEY_ENTRY_TIMESTAMP" },
+  { no: 14, name: "ON_DUTY_SORT_KEY_EXIT_TIMESTAMP" },
 ]);
 
 /**
@@ -121,7 +121,7 @@ proto3.util.setEnumType(ON_DUTY_SORT_KEY, "Genesis.ON_DUTY_SORT_KEY", [
  *
  * @generated from message Genesis.OnDutiesServiceCreateRequest
  */
-export class OnDutiesServiceCreateRequest extends Message<OnDutiesServiceCreateRequest> ***REMOVED***
+export class OnDutiesServiceCreateRequest extends Message<OnDutiesServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -185,41 +185,41 @@ export class OnDutiesServiceCreateRequest extends Message<OnDutiesServiceCreateR
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<OnDutiesServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<OnDutiesServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.OnDutiesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceCreateRequest {
     return new OnDutiesServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceCreateRequest {
     return new OnDutiesServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceCreateRequest {
     return new OnDutiesServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: OnDutiesServiceCreateRequest | PlainMessage<OnDutiesServiceCreateRequest> | undefined, b: OnDutiesServiceCreateRequest | PlainMessage<OnDutiesServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: OnDutiesServiceCreateRequest | PlainMessage<OnDutiesServiceCreateRequest> | undefined, b: OnDutiesServiceCreateRequest | PlainMessage<OnDutiesServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(OnDutiesServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -227,7 +227,7 @@ export class OnDutiesServiceCreateRequest extends Message<OnDutiesServiceCreateR
  *
  * @generated from message Genesis.OnDutiesServiceUpdateRequest
  */
-export class OnDutiesServiceUpdateRequest extends Message<OnDutiesServiceUpdateRequest> ***REMOVED***
+export class OnDutiesServiceUpdateRequest extends Message<OnDutiesServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -291,41 +291,41 @@ export class OnDutiesServiceUpdateRequest extends Message<OnDutiesServiceUpdateR
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<OnDutiesServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<OnDutiesServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.OnDutiesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceUpdateRequest {
     return new OnDutiesServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceUpdateRequest {
     return new OnDutiesServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceUpdateRequest {
     return new OnDutiesServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: OnDutiesServiceUpdateRequest | PlainMessage<OnDutiesServiceUpdateRequest> | undefined, b: OnDutiesServiceUpdateRequest | PlainMessage<OnDutiesServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: OnDutiesServiceUpdateRequest | PlainMessage<OnDutiesServiceUpdateRequest> | undefined, b: OnDutiesServiceUpdateRequest | PlainMessage<OnDutiesServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(OnDutiesServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -333,7 +333,7 @@ export class OnDutiesServiceUpdateRequest extends Message<OnDutiesServiceUpdateR
  *
  * @generated from message Genesis.OnDutiesServiceImageEntryRequest
  */
-export class OnDutiesServiceImageEntryRequest extends Message<OnDutiesServiceImageEntryRequest> ***REMOVED***
+export class OnDutiesServiceImageEntryRequest extends Message<OnDutiesServiceImageEntryRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -343,9 +343,9 @@ export class OnDutiesServiceImageEntryRequest extends Message<OnDutiesServiceIma
 
   /**
    * // The reference ID of the onduty
-   * string reference_id = 10 [(genesis_validate.rules).string = ***REMOVED***
+   * string reference_id = 10 [(genesis_validate.rules).string = {
    *     pattern: "[0-9A-Za-z ]+$", // Allow spaces
-   * ***REMOVED***];
+   * }];
    * The ID of the user who has requested for onduty
    *
    * @generated from field: int64 user_id = 11;
@@ -380,38 +380,38 @@ export class OnDutiesServiceImageEntryRequest extends Message<OnDutiesServiceIma
    */
   entryLongitude = 0;
 
-  constructor(data?: PartialMessage<OnDutiesServiceImageEntryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<OnDutiesServiceImageEntryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.OnDutiesServiceImageEntryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "entry_image", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "entry_image_mime_type", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "entry_latitude", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "entry_longitude", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "entry_image", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
+    { no: 14, name: "entry_image_mime_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "entry_latitude", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
+    { no: 16, name: "entry_longitude", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceImageEntryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceImageEntryRequest {
     return new OnDutiesServiceImageEntryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceImageEntryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceImageEntryRequest {
     return new OnDutiesServiceImageEntryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceImageEntryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceImageEntryRequest {
     return new OnDutiesServiceImageEntryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: OnDutiesServiceImageEntryRequest | PlainMessage<OnDutiesServiceImageEntryRequest> | undefined, b: OnDutiesServiceImageEntryRequest | PlainMessage<OnDutiesServiceImageEntryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: OnDutiesServiceImageEntryRequest | PlainMessage<OnDutiesServiceImageEntryRequest> | undefined, b: OnDutiesServiceImageEntryRequest | PlainMessage<OnDutiesServiceImageEntryRequest> | undefined): boolean {
     return proto3.util.equals(OnDutiesServiceImageEntryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -419,7 +419,7 @@ export class OnDutiesServiceImageEntryRequest extends Message<OnDutiesServiceIma
  *
  * @generated from message Genesis.OnDutiesServiceImageExitRequest
  */
-export class OnDutiesServiceImageExitRequest extends Message<OnDutiesServiceImageExitRequest> ***REMOVED***
+export class OnDutiesServiceImageExitRequest extends Message<OnDutiesServiceImageExitRequest> {
   /**
    * The ID of the record that needs to be updated
    *
@@ -455,37 +455,37 @@ export class OnDutiesServiceImageExitRequest extends Message<OnDutiesServiceImag
    */
   exitLongitude = 0;
 
-  constructor(data?: PartialMessage<OnDutiesServiceImageExitRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<OnDutiesServiceImageExitRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.OnDutiesServiceImageExitRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "exit_image", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "exit_image_mime_type", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "exit_latitude", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "exit_longitude", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ ***REMOVED***,
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "exit_image", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
+    { no: 14, name: "exit_image_mime_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "exit_latitude", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
+    { no: 16, name: "exit_longitude", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceImageExitRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceImageExitRequest {
     return new OnDutiesServiceImageExitRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceImageExitRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceImageExitRequest {
     return new OnDutiesServiceImageExitRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceImageExitRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceImageExitRequest {
     return new OnDutiesServiceImageExitRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: OnDutiesServiceImageExitRequest | PlainMessage<OnDutiesServiceImageExitRequest> | undefined, b: OnDutiesServiceImageExitRequest | PlainMessage<OnDutiesServiceImageExitRequest> | undefined): boolean ***REMOVED***
+  static equals(a: OnDutiesServiceImageExitRequest | PlainMessage<OnDutiesServiceImageExitRequest> | undefined, b: OnDutiesServiceImageExitRequest | PlainMessage<OnDutiesServiceImageExitRequest> | undefined): boolean {
     return proto3.util.equals(OnDutiesServiceImageExitRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -493,7 +493,7 @@ export class OnDutiesServiceImageExitRequest extends Message<OnDutiesServiceImag
  *
  * @generated from message Genesis.OnDuty
  */
-export class OnDuty extends Message<OnDuty> ***REMOVED***
+export class OnDuty extends Message<OnDuty> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -592,46 +592,46 @@ export class OnDuty extends Message<OnDuty> ***REMOVED***
    */
   formData: FormFieldDatum[] = [];
 
-  constructor(data?: PartialMessage<OnDuty>) ***REMOVED***
+  constructor(data?: PartialMessage<OnDuty>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.OnDuty";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDuty ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDuty {
     return new OnDuty().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDuty ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDuty {
     return new OnDuty().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDuty ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDuty {
     return new OnDuty().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: OnDuty | PlainMessage<OnDuty> | undefined, b: OnDuty | PlainMessage<OnDuty> | undefined): boolean ***REMOVED***
+  static equals(a: OnDuty | PlainMessage<OnDuty> | undefined, b: OnDuty | PlainMessage<OnDuty> | undefined): boolean {
     return proto3.util.equals(OnDuty, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -639,7 +639,7 @@ export class OnDuty extends Message<OnDuty> ***REMOVED***
  *
  * @generated from message Genesis.OnDutiesList
  */
-export class OnDutiesList extends Message<OnDutiesList> ***REMOVED***
+export class OnDutiesList extends Message<OnDutiesList> {
   /**
    * List of records
    *
@@ -647,33 +647,33 @@ export class OnDutiesList extends Message<OnDutiesList> ***REMOVED***
    */
   list: OnDuty[] = [];
 
-  constructor(data?: PartialMessage<OnDutiesList>) ***REMOVED***
+  constructor(data?: PartialMessage<OnDutiesList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.OnDutiesList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: OnDuty, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: OnDuty, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesList {
     return new OnDutiesList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesList {
     return new OnDutiesList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesList {
     return new OnDutiesList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: OnDutiesList | PlainMessage<OnDutiesList> | undefined, b: OnDutiesList | PlainMessage<OnDutiesList> | undefined): boolean ***REMOVED***
+  static equals(a: OnDutiesList | PlainMessage<OnDutiesList> | undefined, b: OnDutiesList | PlainMessage<OnDutiesList> | undefined): boolean {
     return proto3.util.equals(OnDutiesList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -681,7 +681,7 @@ export class OnDutiesList extends Message<OnDutiesList> ***REMOVED***
  *
  * @generated from message Genesis.OnDutiesServicePaginationReq
  */
-export class OnDutiesServicePaginationReq extends Message<OnDutiesServicePaginationReq> ***REMOVED***
+export class OnDutiesServicePaginationReq extends Message<OnDutiesServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -724,38 +724,38 @@ export class OnDutiesServicePaginationReq extends Message<OnDutiesServicePaginat
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<OnDutiesServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<OnDutiesServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.OnDutiesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ON_DUTY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ON_DUTY_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServicePaginationReq {
     return new OnDutiesServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServicePaginationReq {
     return new OnDutiesServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServicePaginationReq {
     return new OnDutiesServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: OnDutiesServicePaginationReq | PlainMessage<OnDutiesServicePaginationReq> | undefined, b: OnDutiesServicePaginationReq | PlainMessage<OnDutiesServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: OnDutiesServicePaginationReq | PlainMessage<OnDutiesServicePaginationReq> | undefined, b: OnDutiesServicePaginationReq | PlainMessage<OnDutiesServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(OnDutiesServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -763,7 +763,7 @@ export class OnDutiesServicePaginationReq extends Message<OnDutiesServicePaginat
  *
  * @generated from message Genesis.OnDutiesServicePaginationResponse
  */
-export class OnDutiesServicePaginationResponse extends Message<OnDutiesServicePaginationResponse> ***REMOVED***
+export class OnDutiesServicePaginationResponse extends Message<OnDutiesServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -792,36 +792,36 @@ export class OnDutiesServicePaginationResponse extends Message<OnDutiesServicePa
    */
   payload: OnDuty[] = [];
 
-  constructor(data?: PartialMessage<OnDutiesServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<OnDutiesServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.OnDutiesServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: OnDuty, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: OnDuty, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServicePaginationResponse {
     return new OnDutiesServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServicePaginationResponse {
     return new OnDutiesServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServicePaginationResponse {
     return new OnDutiesServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: OnDutiesServicePaginationResponse | PlainMessage<OnDutiesServicePaginationResponse> | undefined, b: OnDutiesServicePaginationResponse | PlainMessage<OnDutiesServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: OnDutiesServicePaginationResponse | PlainMessage<OnDutiesServicePaginationResponse> | undefined, b: OnDutiesServicePaginationResponse | PlainMessage<OnDutiesServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(OnDutiesServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -829,7 +829,7 @@ export class OnDutiesServicePaginationResponse extends Message<OnDutiesServicePa
  *
  * @generated from message Genesis.OnDutiesServiceEntityPaginationReq
  */
-export class OnDutiesServiceEntityPaginationReq extends Message<OnDutiesServiceEntityPaginationReq> ***REMOVED***
+export class OnDutiesServiceEntityPaginationReq extends Message<OnDutiesServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -872,38 +872,38 @@ export class OnDutiesServiceEntityPaginationReq extends Message<OnDutiesServiceE
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<OnDutiesServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<OnDutiesServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.OnDutiesServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ON_DUTY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ON_DUTY_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceEntityPaginationReq {
     return new OnDutiesServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceEntityPaginationReq {
     return new OnDutiesServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceEntityPaginationReq {
     return new OnDutiesServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: OnDutiesServiceEntityPaginationReq | PlainMessage<OnDutiesServiceEntityPaginationReq> | undefined, b: OnDutiesServiceEntityPaginationReq | PlainMessage<OnDutiesServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: OnDutiesServiceEntityPaginationReq | PlainMessage<OnDutiesServiceEntityPaginationReq> | undefined, b: OnDutiesServiceEntityPaginationReq | PlainMessage<OnDutiesServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(OnDutiesServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -911,7 +911,7 @@ export class OnDutiesServiceEntityPaginationReq extends Message<OnDutiesServiceE
  *
  * @generated from message Genesis.OnDutiesServiceFilterReq
  */
-export class OnDutiesServiceFilterReq extends Message<OnDutiesServiceFilterReq> ***REMOVED***
+export class OnDutiesServiceFilterReq extends Message<OnDutiesServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1066,54 +1066,54 @@ export class OnDutiesServiceFilterReq extends Message<OnDutiesServiceFilterReq> 
    */
   exitTimestampEnd = protoInt64.zero;
 
-  constructor(data?: PartialMessage<OnDutiesServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<OnDutiesServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.OnDutiesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ON_DUTY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "entry_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "entry_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 26, name: "exit_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 27, name: "exit_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ON_DUTY_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 24, name: "entry_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 25, name: "entry_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 26, name: "exit_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 27, name: "exit_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceFilterReq {
     return new OnDutiesServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceFilterReq {
     return new OnDutiesServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceFilterReq {
     return new OnDutiesServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: OnDutiesServiceFilterReq | PlainMessage<OnDutiesServiceFilterReq> | undefined, b: OnDutiesServiceFilterReq | PlainMessage<OnDutiesServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: OnDutiesServiceFilterReq | PlainMessage<OnDutiesServiceFilterReq> | undefined, b: OnDutiesServiceFilterReq | PlainMessage<OnDutiesServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(OnDutiesServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1121,7 +1121,7 @@ export class OnDutiesServiceFilterReq extends Message<OnDutiesServiceFilterReq> 
  *
  * @generated from message Genesis.OnDutiesServiceSearchAllReq
  */
-export class OnDutiesServiceSearchAllReq extends Message<OnDutiesServiceSearchAllReq> ***REMOVED***
+export class OnDutiesServiceSearchAllReq extends Message<OnDutiesServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1185,39 +1185,39 @@ export class OnDutiesServiceSearchAllReq extends Message<OnDutiesServiceSearchAl
    */
   userId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<OnDutiesServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<OnDutiesServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.OnDutiesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ON_DUTY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ON_DUTY_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OnDutiesServiceSearchAllReq {
     return new OnDutiesServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceSearchAllReq {
     return new OnDutiesServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceSearchAllReq {
     return new OnDutiesServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: OnDutiesServiceSearchAllReq | PlainMessage<OnDutiesServiceSearchAllReq> | undefined, b: OnDutiesServiceSearchAllReq | PlainMessage<OnDutiesServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: OnDutiesServiceSearchAllReq | PlainMessage<OnDutiesServiceSearchAllReq> | undefined, b: OnDutiesServiceSearchAllReq | PlainMessage<OnDutiesServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(OnDutiesServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -14,7 +14,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.SALES_ENQUIRY_SORT_KEY
  */
-export enum SALES_ENQUIRY_SORT_KEY ***REMOVED***
+export enum SALES_ENQUIRY_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -98,21 +98,21 @@ export enum SALES_ENQUIRY_SORT_KEY ***REMOVED***
    * @generated from enum value: SALES_ENQUIRY_SORT_KEY_PRIORITY = 14;
    */
   SALES_ENQUIRY_SORT_KEY_PRIORITY = 14,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(SALES_ENQUIRY_SORT_KEY)
 proto3.util.setEnumType(SALES_ENQUIRY_SORT_KEY, "Genesis.SALES_ENQUIRY_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "SALES_ENQUIRY_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "SALES_ENQUIRY_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "SALES_ENQUIRY_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "SALES_ENQUIRY_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "SALES_ENQUIRY_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "SALES_ENQUIRY_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "SALES_ENQUIRY_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "SALES_ENQUIRY_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "SALES_ENQUIRY_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
-  ***REMOVED*** no: 12, name: "SALES_ENQUIRY_SORT_KEY_CONSIGNEE_CLIENT_ID" ***REMOVED***,
-  ***REMOVED*** no: 13, name: "SALES_ENQUIRY_SORT_KEY_BUYER_CLIENT_ID" ***REMOVED***,
-  ***REMOVED*** no: 14, name: "SALES_ENQUIRY_SORT_KEY_PRIORITY" ***REMOVED***,
+  { no: 0, name: "SALES_ENQUIRY_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "SALES_ENQUIRY_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "SALES_ENQUIRY_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "SALES_ENQUIRY_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "SALES_ENQUIRY_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "SALES_ENQUIRY_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "SALES_ENQUIRY_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "SALES_ENQUIRY_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "SALES_ENQUIRY_SORT_KEY_FINAL_REF_NUMBER" },
+  { no: 12, name: "SALES_ENQUIRY_SORT_KEY_CONSIGNEE_CLIENT_ID" },
+  { no: 13, name: "SALES_ENQUIRY_SORT_KEY_BUYER_CLIENT_ID" },
+  { no: 14, name: "SALES_ENQUIRY_SORT_KEY_PRIORITY" },
 ]);
 
 /**
@@ -121,7 +121,7 @@ proto3.util.setEnumType(SALES_ENQUIRY_SORT_KEY, "Genesis.SALES_ENQUIRY_SORT_KEY"
  *
  * @generated from message Genesis.SalesEnquiriesServiceCreateRequest
  */
-export class SalesEnquiriesServiceCreateRequest extends Message<SalesEnquiriesServiceCreateRequest> ***REMOVED***
+export class SalesEnquiriesServiceCreateRequest extends Message<SalesEnquiriesServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -213,45 +213,45 @@ export class SalesEnquiriesServiceCreateRequest extends Message<SalesEnquiriesSe
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<SalesEnquiriesServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiriesServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiriesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "consignee_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "buyer_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "priority", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "miscellaneous_cost", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "overall_discount", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "consignee_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "buyer_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "priority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "miscellaneous_cost", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 18, name: "overall_discount", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 19, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceCreateRequest {
     return new SalesEnquiriesServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceCreateRequest {
     return new SalesEnquiriesServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceCreateRequest {
     return new SalesEnquiriesServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiriesServiceCreateRequest | PlainMessage<SalesEnquiriesServiceCreateRequest> | undefined, b: SalesEnquiriesServiceCreateRequest | PlainMessage<SalesEnquiriesServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiriesServiceCreateRequest | PlainMessage<SalesEnquiriesServiceCreateRequest> | undefined, b: SalesEnquiriesServiceCreateRequest | PlainMessage<SalesEnquiriesServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(SalesEnquiriesServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -259,7 +259,7 @@ export class SalesEnquiriesServiceCreateRequest extends Message<SalesEnquiriesSe
  *
  * @generated from message Genesis.SalesEnquiriesServiceUpdateRequest
  */
-export class SalesEnquiriesServiceUpdateRequest extends Message<SalesEnquiriesServiceUpdateRequest> ***REMOVED***
+export class SalesEnquiriesServiceUpdateRequest extends Message<SalesEnquiriesServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -358,46 +358,46 @@ export class SalesEnquiriesServiceUpdateRequest extends Message<SalesEnquiriesSe
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<SalesEnquiriesServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiriesServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiriesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "consignee_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "buyer_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "priority", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "miscellaneous_cost", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "overall_discount", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "consignee_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "buyer_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "priority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "miscellaneous_cost", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 18, name: "overall_discount", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 19, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceUpdateRequest {
     return new SalesEnquiriesServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceUpdateRequest {
     return new SalesEnquiriesServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceUpdateRequest {
     return new SalesEnquiriesServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiriesServiceUpdateRequest | PlainMessage<SalesEnquiriesServiceUpdateRequest> | undefined, b: SalesEnquiriesServiceUpdateRequest | PlainMessage<SalesEnquiriesServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiriesServiceUpdateRequest | PlainMessage<SalesEnquiriesServiceUpdateRequest> | undefined, b: SalesEnquiriesServiceUpdateRequest | PlainMessage<SalesEnquiriesServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(SalesEnquiriesServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -405,7 +405,7 @@ export class SalesEnquiriesServiceUpdateRequest extends Message<SalesEnquiriesSe
  *
  * @generated from message Genesis.SalesEnquiry
  */
-export class SalesEnquiry extends Message<SalesEnquiry> ***REMOVED***
+export class SalesEnquiry extends Message<SalesEnquiry> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -546,52 +546,52 @@ export class SalesEnquiry extends Message<SalesEnquiry> ***REMOVED***
    */
   totalPrice = 0;
 
-  constructor(data?: PartialMessage<SalesEnquiry>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiry>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiry";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "consignee_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "buyer_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "priority", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "miscellaneous_cost", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "overall_discount", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "list", kind: "message", T: SalesEnquiryItem, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 40, name: "total_price", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "consignee_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "buyer_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "priority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "miscellaneous_cost", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 18, name: "overall_discount", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 19, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "list", kind: "message", T: SalesEnquiryItem, repeated: true },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
+    { no: 40, name: "total_price", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiry ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiry {
     return new SalesEnquiry().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiry ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiry {
     return new SalesEnquiry().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiry ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiry {
     return new SalesEnquiry().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiry | PlainMessage<SalesEnquiry> | undefined, b: SalesEnquiry | PlainMessage<SalesEnquiry> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiry | PlainMessage<SalesEnquiry> | undefined, b: SalesEnquiry | PlainMessage<SalesEnquiry> | undefined): boolean {
     return proto3.util.equals(SalesEnquiry, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -599,7 +599,7 @@ export class SalesEnquiry extends Message<SalesEnquiry> ***REMOVED***
  *
  * @generated from message Genesis.SalesEnquiriesServiceItemCreateRequest
  */
-export class SalesEnquiriesServiceItemCreateRequest extends Message<SalesEnquiriesServiceItemCreateRequest> ***REMOVED***
+export class SalesEnquiriesServiceItemCreateRequest extends Message<SalesEnquiriesServiceItemCreateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -677,43 +677,43 @@ export class SalesEnquiriesServiceItemCreateRequest extends Message<SalesEnquiri
    */
   specifications = "";
 
-  constructor(data?: PartialMessage<SalesEnquiriesServiceItemCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiriesServiceItemCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiriesServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "sales_enquiry_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "discount", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "sales_enquiry_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "discount", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 18, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceItemCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceItemCreateRequest {
     return new SalesEnquiriesServiceItemCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceItemCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceItemCreateRequest {
     return new SalesEnquiriesServiceItemCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceItemCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceItemCreateRequest {
     return new SalesEnquiriesServiceItemCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiriesServiceItemCreateRequest | PlainMessage<SalesEnquiriesServiceItemCreateRequest> | undefined, b: SalesEnquiriesServiceItemCreateRequest | PlainMessage<SalesEnquiriesServiceItemCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiriesServiceItemCreateRequest | PlainMessage<SalesEnquiriesServiceItemCreateRequest> | undefined, b: SalesEnquiriesServiceItemCreateRequest | PlainMessage<SalesEnquiriesServiceItemCreateRequest> | undefined): boolean {
     return proto3.util.equals(SalesEnquiriesServiceItemCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -721,7 +721,7 @@ export class SalesEnquiriesServiceItemCreateRequest extends Message<SalesEnquiri
  *
  * @generated from message Genesis.SalesEnquiriesServiceItemUpdateRequest
  */
-export class SalesEnquiriesServiceItemUpdateRequest extends Message<SalesEnquiriesServiceItemUpdateRequest> ***REMOVED***
+export class SalesEnquiriesServiceItemUpdateRequest extends Message<SalesEnquiriesServiceItemUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -799,43 +799,43 @@ export class SalesEnquiriesServiceItemUpdateRequest extends Message<SalesEnquiri
    */
   specifications = "";
 
-  constructor(data?: PartialMessage<SalesEnquiriesServiceItemUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiriesServiceItemUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiriesServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "discount", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "discount", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 18, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceItemUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceItemUpdateRequest {
     return new SalesEnquiriesServiceItemUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceItemUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceItemUpdateRequest {
     return new SalesEnquiriesServiceItemUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceItemUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceItemUpdateRequest {
     return new SalesEnquiriesServiceItemUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiriesServiceItemUpdateRequest | PlainMessage<SalesEnquiriesServiceItemUpdateRequest> | undefined, b: SalesEnquiriesServiceItemUpdateRequest | PlainMessage<SalesEnquiriesServiceItemUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiriesServiceItemUpdateRequest | PlainMessage<SalesEnquiriesServiceItemUpdateRequest> | undefined, b: SalesEnquiriesServiceItemUpdateRequest | PlainMessage<SalesEnquiriesServiceItemUpdateRequest> | undefined): boolean {
     return proto3.util.equals(SalesEnquiriesServiceItemUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -843,7 +843,7 @@ export class SalesEnquiriesServiceItemUpdateRequest extends Message<SalesEnquiri
  *
  * @generated from message Genesis.SalesEnquiryItem
  */
-export class SalesEnquiryItem extends Message<SalesEnquiryItem> ***REMOVED***
+export class SalesEnquiryItem extends Message<SalesEnquiryItem> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -949,47 +949,47 @@ export class SalesEnquiryItem extends Message<SalesEnquiryItem> ***REMOVED***
    */
   specifications = "";
 
-  constructor(data?: PartialMessage<SalesEnquiryItem>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiryItem>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiryItem";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "sales_enquiry_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "discount", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "sales_enquiry_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "discount", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 17, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 18, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiryItem ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiryItem {
     return new SalesEnquiryItem().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiryItem ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiryItem {
     return new SalesEnquiryItem().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiryItem ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiryItem {
     return new SalesEnquiryItem().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiryItem | PlainMessage<SalesEnquiryItem> | undefined, b: SalesEnquiryItem | PlainMessage<SalesEnquiryItem> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiryItem | PlainMessage<SalesEnquiryItem> | undefined, b: SalesEnquiryItem | PlainMessage<SalesEnquiryItem> | undefined): boolean {
     return proto3.util.equals(SalesEnquiryItem, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -997,7 +997,7 @@ export class SalesEnquiryItem extends Message<SalesEnquiryItem> ***REMOVED***
  *
  * @generated from message Genesis.SalesEnquiriesList
  */
-export class SalesEnquiriesList extends Message<SalesEnquiriesList> ***REMOVED***
+export class SalesEnquiriesList extends Message<SalesEnquiriesList> {
   /**
    * List of records
    *
@@ -1005,33 +1005,33 @@ export class SalesEnquiriesList extends Message<SalesEnquiriesList> ***REMOVED**
    */
   list: SalesEnquiry[] = [];
 
-  constructor(data?: PartialMessage<SalesEnquiriesList>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiriesList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiriesList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: SalesEnquiry, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: SalesEnquiry, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesList {
     return new SalesEnquiriesList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesList {
     return new SalesEnquiriesList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesList {
     return new SalesEnquiriesList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiriesList | PlainMessage<SalesEnquiriesList> | undefined, b: SalesEnquiriesList | PlainMessage<SalesEnquiriesList> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiriesList | PlainMessage<SalesEnquiriesList> | undefined, b: SalesEnquiriesList | PlainMessage<SalesEnquiriesList> | undefined): boolean {
     return proto3.util.equals(SalesEnquiriesList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1039,7 +1039,7 @@ export class SalesEnquiriesList extends Message<SalesEnquiriesList> ***REMOVED**
  *
  * @generated from message Genesis.SalesEnquiriesItemsList
  */
-export class SalesEnquiriesItemsList extends Message<SalesEnquiriesItemsList> ***REMOVED***
+export class SalesEnquiriesItemsList extends Message<SalesEnquiriesItemsList> {
   /**
    * List of records
    *
@@ -1047,33 +1047,33 @@ export class SalesEnquiriesItemsList extends Message<SalesEnquiriesItemsList> **
    */
   list: SalesEnquiryItem[] = [];
 
-  constructor(data?: PartialMessage<SalesEnquiriesItemsList>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiriesItemsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiriesItemsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: SalesEnquiryItem, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: SalesEnquiryItem, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesItemsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesItemsList {
     return new SalesEnquiriesItemsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesItemsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesItemsList {
     return new SalesEnquiriesItemsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesItemsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesItemsList {
     return new SalesEnquiriesItemsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiriesItemsList | PlainMessage<SalesEnquiriesItemsList> | undefined, b: SalesEnquiriesItemsList | PlainMessage<SalesEnquiriesItemsList> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiriesItemsList | PlainMessage<SalesEnquiriesItemsList> | undefined, b: SalesEnquiriesItemsList | PlainMessage<SalesEnquiriesItemsList> | undefined): boolean {
     return proto3.util.equals(SalesEnquiriesItemsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1081,7 +1081,7 @@ export class SalesEnquiriesItemsList extends Message<SalesEnquiriesItemsList> **
  *
  * @generated from message Genesis.SalesEnquiryItemHistoryRequest
  */
-export class SalesEnquiryItemHistoryRequest extends Message<SalesEnquiryItemHistoryRequest> ***REMOVED***
+export class SalesEnquiryItemHistoryRequest extends Message<SalesEnquiryItemHistoryRequest> {
   /**
    * Stores the sales enquiry ID
    *
@@ -1096,34 +1096,34 @@ export class SalesEnquiryItemHistoryRequest extends Message<SalesEnquiryItemHist
    */
   name = "";
 
-  constructor(data?: PartialMessage<SalesEnquiryItemHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiryItemHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiryItemHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "sales_enquiry_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 10, name: "sales_enquiry_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiryItemHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiryItemHistoryRequest {
     return new SalesEnquiryItemHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiryItemHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiryItemHistoryRequest {
     return new SalesEnquiryItemHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiryItemHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiryItemHistoryRequest {
     return new SalesEnquiryItemHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiryItemHistoryRequest | PlainMessage<SalesEnquiryItemHistoryRequest> | undefined, b: SalesEnquiryItemHistoryRequest | PlainMessage<SalesEnquiryItemHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiryItemHistoryRequest | PlainMessage<SalesEnquiryItemHistoryRequest> | undefined, b: SalesEnquiryItemHistoryRequest | PlainMessage<SalesEnquiryItemHistoryRequest> | undefined): boolean {
     return proto3.util.equals(SalesEnquiryItemHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1131,7 +1131,7 @@ export class SalesEnquiryItemHistoryRequest extends Message<SalesEnquiryItemHist
  *
  * @generated from message Genesis.SalesEnquiriesServicePaginationReq
  */
-export class SalesEnquiriesServicePaginationReq extends Message<SalesEnquiriesServicePaginationReq> ***REMOVED***
+export class SalesEnquiriesServicePaginationReq extends Message<SalesEnquiriesServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1174,38 +1174,38 @@ export class SalesEnquiriesServicePaginationReq extends Message<SalesEnquiriesSe
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<SalesEnquiriesServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiriesServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiriesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ENQUIRY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ENQUIRY_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServicePaginationReq {
     return new SalesEnquiriesServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServicePaginationReq {
     return new SalesEnquiriesServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServicePaginationReq {
     return new SalesEnquiriesServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiriesServicePaginationReq | PlainMessage<SalesEnquiriesServicePaginationReq> | undefined, b: SalesEnquiriesServicePaginationReq | PlainMessage<SalesEnquiriesServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiriesServicePaginationReq | PlainMessage<SalesEnquiriesServicePaginationReq> | undefined, b: SalesEnquiriesServicePaginationReq | PlainMessage<SalesEnquiriesServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(SalesEnquiriesServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1213,7 +1213,7 @@ export class SalesEnquiriesServicePaginationReq extends Message<SalesEnquiriesSe
  *
  * @generated from message Genesis.SalesEnquiriesServicePaginationResponse
  */
-export class SalesEnquiriesServicePaginationResponse extends Message<SalesEnquiriesServicePaginationResponse> ***REMOVED***
+export class SalesEnquiriesServicePaginationResponse extends Message<SalesEnquiriesServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -1242,36 +1242,36 @@ export class SalesEnquiriesServicePaginationResponse extends Message<SalesEnquir
    */
   payload: SalesEnquiry[] = [];
 
-  constructor(data?: PartialMessage<SalesEnquiriesServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiriesServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiriesServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: SalesEnquiry, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: SalesEnquiry, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServicePaginationResponse {
     return new SalesEnquiriesServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServicePaginationResponse {
     return new SalesEnquiriesServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServicePaginationResponse {
     return new SalesEnquiriesServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiriesServicePaginationResponse | PlainMessage<SalesEnquiriesServicePaginationResponse> | undefined, b: SalesEnquiriesServicePaginationResponse | PlainMessage<SalesEnquiriesServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiriesServicePaginationResponse | PlainMessage<SalesEnquiriesServicePaginationResponse> | undefined, b: SalesEnquiriesServicePaginationResponse | PlainMessage<SalesEnquiriesServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(SalesEnquiriesServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1279,7 +1279,7 @@ export class SalesEnquiriesServicePaginationResponse extends Message<SalesEnquir
  *
  * @generated from message Genesis.SalesEnquiriesServiceEntityPaginationReq
  */
-export class SalesEnquiriesServiceEntityPaginationReq extends Message<SalesEnquiriesServiceEntityPaginationReq> ***REMOVED***
+export class SalesEnquiriesServiceEntityPaginationReq extends Message<SalesEnquiriesServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1322,38 +1322,38 @@ export class SalesEnquiriesServiceEntityPaginationReq extends Message<SalesEnqui
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<SalesEnquiriesServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiriesServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiriesServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ENQUIRY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ENQUIRY_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceEntityPaginationReq {
     return new SalesEnquiriesServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceEntityPaginationReq {
     return new SalesEnquiriesServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceEntityPaginationReq {
     return new SalesEnquiriesServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiriesServiceEntityPaginationReq | PlainMessage<SalesEnquiriesServiceEntityPaginationReq> | undefined, b: SalesEnquiriesServiceEntityPaginationReq | PlainMessage<SalesEnquiriesServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiriesServiceEntityPaginationReq | PlainMessage<SalesEnquiriesServiceEntityPaginationReq> | undefined, b: SalesEnquiriesServiceEntityPaginationReq | PlainMessage<SalesEnquiriesServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(SalesEnquiriesServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1361,7 +1361,7 @@ export class SalesEnquiriesServiceEntityPaginationReq extends Message<SalesEnqui
  *
  * @generated from message Genesis.SalesEnquiriesServiceFilterReq
  */
-export class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiriesServiceFilterReq> ***REMOVED***
+export class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiriesServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1509,53 +1509,53 @@ export class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiriesServic
    */
   currencyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<SalesEnquiriesServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiriesServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiriesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ENQUIRY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "consignee_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "buyer_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "priority", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ENQUIRY_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "consignee_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 23, name: "buyer_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 24, name: "priority", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 25, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceFilterReq {
     return new SalesEnquiriesServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceFilterReq {
     return new SalesEnquiriesServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceFilterReq {
     return new SalesEnquiriesServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiriesServiceFilterReq | PlainMessage<SalesEnquiriesServiceFilterReq> | undefined, b: SalesEnquiriesServiceFilterReq | PlainMessage<SalesEnquiriesServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiriesServiceFilterReq | PlainMessage<SalesEnquiriesServiceFilterReq> | undefined, b: SalesEnquiriesServiceFilterReq | PlainMessage<SalesEnquiriesServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(SalesEnquiriesServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1563,7 +1563,7 @@ export class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiriesServic
  *
  * @generated from message Genesis.SalesEnquiriesServiceSearchAllReq
  */
-export class SalesEnquiriesServiceSearchAllReq extends Message<SalesEnquiriesServiceSearchAllReq> ***REMOVED***
+export class SalesEnquiriesServiceSearchAllReq extends Message<SalesEnquiriesServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1634,40 +1634,40 @@ export class SalesEnquiriesServiceSearchAllReq extends Message<SalesEnquiriesSer
    */
   buyerClientId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<SalesEnquiriesServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<SalesEnquiriesServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SalesEnquiriesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ENQUIRY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "consignee_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "buyer_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ENQUIRY_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "consignee_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 23, name: "buyer_client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesEnquiriesServiceSearchAllReq {
     return new SalesEnquiriesServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceSearchAllReq {
     return new SalesEnquiriesServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesEnquiriesServiceSearchAllReq {
     return new SalesEnquiriesServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SalesEnquiriesServiceSearchAllReq | PlainMessage<SalesEnquiriesServiceSearchAllReq> | undefined, b: SalesEnquiriesServiceSearchAllReq | PlainMessage<SalesEnquiriesServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: SalesEnquiriesServiceSearchAllReq | PlainMessage<SalesEnquiriesServiceSearchAllReq> | undefined, b: SalesEnquiriesServiceSearchAllReq | PlainMessage<SalesEnquiriesServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(SalesEnquiriesServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

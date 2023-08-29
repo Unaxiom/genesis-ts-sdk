@@ -3,8 +3,8 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 
 /**
  *
@@ -12,7 +12,7 @@ import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/p
  *
  * @generated from message Genesis.FormField
  */
-export class FormField extends Message<FormField> ***REMOVED***
+export class FormField extends Message<FormField> {
   /**
    * The ID of the form field
    *
@@ -104,45 +104,45 @@ export class FormField extends Message<FormField> ***REMOVED***
    */
   timestamp = protoInt64.zero;
 
-  constructor(data?: PartialMessage<FormField>) ***REMOVED***
+  constructor(data?: PartialMessage<FormField>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.FormField";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "section_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "type", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "width", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 6, name: "element", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "placeholder", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "regex", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "defined_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 10, name: "printable", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "highlightable", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "section_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 4, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 5, name: "width", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 6, name: "element", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 7, name: "placeholder", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 8, name: "regex", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "defined_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 10, name: "printable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 11, name: "highlightable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 12, name: "active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 13, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormField ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormField {
     return new FormField().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormField ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormField {
     return new FormField().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormField ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormField {
     return new FormField().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: FormField | PlainMessage<FormField> | undefined, b: FormField | PlainMessage<FormField> | undefined): boolean ***REMOVED***
+  static equals(a: FormField | PlainMessage<FormField> | undefined, b: FormField | PlainMessage<FormField> | undefined): boolean {
     return proto3.util.equals(FormField, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -150,7 +150,7 @@ export class FormField extends Message<FormField> ***REMOVED***
  *
  * @generated from message Genesis.FormFieldDatum
  */
-export class FormFieldDatum extends Message<FormFieldDatum> ***REMOVED***
+export class FormFieldDatum extends Message<FormFieldDatum> {
   /**
    * The ID of the record
    *
@@ -214,41 +214,41 @@ export class FormFieldDatum extends Message<FormFieldDatum> ***REMOVED***
    */
   timestamp = protoInt64.zero;
 
-  constructor(data?: PartialMessage<FormFieldDatum>) ***REMOVED***
+  constructor(data?: PartialMessage<FormFieldDatum>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.FormFieldDatum";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "form_field", kind: "message", T: FormField ***REMOVED***,
-    ***REMOVED*** no: 3, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "added_by", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 6, name: "selected_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "form_field", kind: "message", T: FormField },
+    { no: 3, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 4, name: "added_by", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 5, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 6, name: "selected_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 7, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 8, name: "active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormFieldDatum ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormFieldDatum {
     return new FormFieldDatum().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatum ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatum {
     return new FormFieldDatum().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatum ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatum {
     return new FormFieldDatum().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: FormFieldDatum | PlainMessage<FormFieldDatum> | undefined, b: FormFieldDatum | PlainMessage<FormFieldDatum> | undefined): boolean ***REMOVED***
+  static equals(a: FormFieldDatum | PlainMessage<FormFieldDatum> | undefined, b: FormFieldDatum | PlainMessage<FormFieldDatum> | undefined): boolean {
     return proto3.util.equals(FormFieldDatum, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -256,7 +256,7 @@ export class FormFieldDatum extends Message<FormFieldDatum> ***REMOVED***
  *
  * @generated from message Genesis.FormFieldDatumCreateRequest
  */
-export class FormFieldDatumCreateRequest extends Message<FormFieldDatumCreateRequest> ***REMOVED***
+export class FormFieldDatumCreateRequest extends Message<FormFieldDatumCreateRequest> {
   /**
    * The ID of the corresponding form field
    *
@@ -278,35 +278,35 @@ export class FormFieldDatumCreateRequest extends Message<FormFieldDatumCreateReq
    */
   selectedValues: string[] = [];
 
-  constructor(data?: PartialMessage<FormFieldDatumCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<FormFieldDatumCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.FormFieldDatumCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "form_field_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "selected_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true ***REMOVED***,
+    { no: 1, name: "form_field_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "selected_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormFieldDatumCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormFieldDatumCreateRequest {
     return new FormFieldDatumCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatumCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatumCreateRequest {
     return new FormFieldDatumCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatumCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatumCreateRequest {
     return new FormFieldDatumCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: FormFieldDatumCreateRequest | PlainMessage<FormFieldDatumCreateRequest> | undefined, b: FormFieldDatumCreateRequest | PlainMessage<FormFieldDatumCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: FormFieldDatumCreateRequest | PlainMessage<FormFieldDatumCreateRequest> | undefined, b: FormFieldDatumCreateRequest | PlainMessage<FormFieldDatumCreateRequest> | undefined): boolean {
     return proto3.util.equals(FormFieldDatumCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -314,7 +314,7 @@ export class FormFieldDatumCreateRequest extends Message<FormFieldDatumCreateReq
  *
  * @generated from message Genesis.FormFieldDatumList
  */
-export class FormFieldDatumList extends Message<FormFieldDatumList> ***REMOVED***
+export class FormFieldDatumList extends Message<FormFieldDatumList> {
   /**
    * List of records
    *
@@ -322,33 +322,33 @@ export class FormFieldDatumList extends Message<FormFieldDatumList> ***REMOVED**
    */
   list: FormFieldDatum[] = [];
 
-  constructor(data?: PartialMessage<FormFieldDatumList>) ***REMOVED***
+  constructor(data?: PartialMessage<FormFieldDatumList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.FormFieldDatumList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormFieldDatumList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormFieldDatumList {
     return new FormFieldDatumList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatumList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatumList {
     return new FormFieldDatumList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatumList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatumList {
     return new FormFieldDatumList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: FormFieldDatumList | PlainMessage<FormFieldDatumList> | undefined, b: FormFieldDatumList | PlainMessage<FormFieldDatumList> | undefined): boolean ***REMOVED***
+  static equals(a: FormFieldDatumList | PlainMessage<FormFieldDatumList> | undefined, b: FormFieldDatumList | PlainMessage<FormFieldDatumList> | undefined): boolean {
     return proto3.util.equals(FormFieldDatumList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -356,7 +356,7 @@ export class FormFieldDatumList extends Message<FormFieldDatumList> ***REMOVED**
  *
  * @generated from message Genesis.FormFieldDatumHistoryRequest
  */
-export class FormFieldDatumHistoryRequest extends Message<FormFieldDatumHistoryRequest> ***REMOVED***
+export class FormFieldDatumHistoryRequest extends Message<FormFieldDatumHistoryRequest> {
   /**
    * The ID of the corresponding form field
    *
@@ -371,32 +371,32 @@ export class FormFieldDatumHistoryRequest extends Message<FormFieldDatumHistoryR
    */
   refUuid = "";
 
-  constructor(data?: PartialMessage<FormFieldDatumHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<FormFieldDatumHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.FormFieldDatumHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "form_field_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "form_field_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "ref_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormFieldDatumHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FormFieldDatumHistoryRequest {
     return new FormFieldDatumHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatumHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatumHistoryRequest {
     return new FormFieldDatumHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatumHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatumHistoryRequest {
     return new FormFieldDatumHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: FormFieldDatumHistoryRequest | PlainMessage<FormFieldDatumHistoryRequest> | undefined, b: FormFieldDatumHistoryRequest | PlainMessage<FormFieldDatumHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: FormFieldDatumHistoryRequest | PlainMessage<FormFieldDatumHistoryRequest> | undefined, b: FormFieldDatumHistoryRequest | PlainMessage<FormFieldDatumHistoryRequest> | undefined): boolean {
     return proto3.util.equals(FormFieldDatumHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

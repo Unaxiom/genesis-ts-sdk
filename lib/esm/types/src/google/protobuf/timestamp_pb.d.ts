@@ -1,5 +1,5 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, JsonWriteOptions, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, JsonWriteOptions, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
 /**
  * A Timestamp represents a point in time independent of any time zone or local
  * calendar, encoded as a count of seconds and fractions of seconds at
@@ -70,9 +70,9 @@ import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
  *
  * In JSON format, the Timestamp type is encoded as a string in the
  * [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) format. That is, the
- * format is "***REMOVED***year***REMOVED***-***REMOVED***month***REMOVED***-***REMOVED***day***REMOVED***T***REMOVED***hour***REMOVED***:***REMOVED***min***REMOVED***:***REMOVED***sec***REMOVED***[.***REMOVED***frac_sec***REMOVED***]Z"
- * where ***REMOVED***year***REMOVED*** is always expressed using four digits while ***REMOVED***month***REMOVED***, ***REMOVED***day***REMOVED***,
- * ***REMOVED***hour***REMOVED***, ***REMOVED***min***REMOVED***, and ***REMOVED***sec***REMOVED*** are zero-padded to two digits each. The fractional
+ * format is "{year}-{month}-{day}T{hour}:{min}:{sec}[.{frac_sec}]Z"
+ * where {year} is always expressed using four digits while {month}, {day},
+ * {hour}, {min}, and {sec} are zero-padded to two digits each. The fractional
  * seconds, which can go up to 9 digits (i.e. up to 1 nanosecond resolution),
  * are optional. The "Z" suffix indicates the timezone ("UTC"); the timezone
  * is required. A proto3 JSON serializer should always use UTC (as indicated by
@@ -97,7 +97,7 @@ import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from message google.protobuf.Timestamp
  */
-export declare class Timestamp extends Message<Timestamp> ***REMOVED***
+export declare class Timestamp extends Message<Timestamp> {
     /**
      * Represents seconds of UTC time since Unix epoch
      * 1970-01-01T00:00:00Z. Must be from 0001-01-01T00:00:00Z to
@@ -128,5 +128,5 @@ export declare class Timestamp extends Message<Timestamp> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Timestamp;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Timestamp;
     static equals(a: Timestamp | PlainMessage<Timestamp> | undefined, b: Timestamp | PlainMessage<Timestamp> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=timestamp_pb.d.ts.map

@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** Overtime, OvertimesList, OvertimesServiceCreateRequest, OvertimesServiceEntityPaginationReq, OvertimesServiceFilterReq, OvertimesServicePaginationReq, OvertimesServicePaginationResponse, OvertimesServiceSearchAllReq, OvertimesServiceUpdateRequest ***REMOVED*** from "./overtimes_pb.js";
-import ***REMOVED*** ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { Overtime, OvertimesList, OvertimesServiceCreateRequest, OvertimesServiceEntityPaginationReq, OvertimesServiceFilterReq, OvertimesServicePaginationReq, OvertimesServicePaginationResponse, OvertimesServiceSearchAllReq, OvertimesServiceUpdateRequest } from "./overtimes_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,152 +13,152 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.OvertimesService
  */
-export const OvertimesService = ***REMOVED***
+export const OvertimesService = {
   typeName: "Genesis.OvertimesService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.OvertimesService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: OvertimesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.OvertimesService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: OvertimesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.OvertimesService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: OvertimesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.OvertimesService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.OvertimesService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.OvertimesService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.OvertimesService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.OvertimesService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: OvertimesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.OvertimesService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.OvertimesService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.OvertimesService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.OvertimesService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.OvertimesService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -167,100 +167,100 @@ export const OvertimesService = ***REMOVED***
      *
      * @generated from rpc Genesis.OvertimesService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.OvertimesService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: Overtime,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.OvertimesService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: OvertimesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.OvertimesService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: OvertimesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.OvertimesService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: OvertimesServicePaginationReq,
       O: OvertimesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.OvertimesService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: OvertimesServiceEntityPaginationReq,
       O: OvertimesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.OvertimesService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: OvertimesServiceSearchAllReq,
       O: OvertimesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.OvertimesService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: OvertimesServiceFilterReq,
       O: OvertimesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.OvertimesService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

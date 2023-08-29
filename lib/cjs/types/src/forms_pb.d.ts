@@ -1,12 +1,12 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
 /**
  *
  * Describes the parameters that are part of each form field
  *
  * @generated from message Genesis.FormField
  */
-export declare class FormField extends Message<FormField> ***REMOVED***
+export declare class FormField extends Message<FormField> {
     /**
      * The ID of the form field
      *
@@ -93,14 +93,14 @@ export declare class FormField extends Message<FormField> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormField;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormField;
     static equals(a: FormField | PlainMessage<FormField> | undefined, b: FormField | PlainMessage<FormField> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the data stored in an individual form field data row of each dynamic form
  *
  * @generated from message Genesis.FormFieldDatum
  */
-export declare class FormFieldDatum extends Message<FormFieldDatum> ***REMOVED***
+export declare class FormFieldDatum extends Message<FormFieldDatum> {
     /**
      * The ID of the record
      *
@@ -163,14 +163,14 @@ export declare class FormFieldDatum extends Message<FormFieldDatum> ***REMOVED**
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatum;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatum;
     static equals(a: FormFieldDatum | PlainMessage<FormFieldDatum> | undefined, b: FormFieldDatum | PlainMessage<FormFieldDatum> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the data required for creating a dynamic form field entry
  *
  * @generated from message Genesis.FormFieldDatumCreateRequest
  */
-export declare class FormFieldDatumCreateRequest extends Message<FormFieldDatumCreateRequest> ***REMOVED***
+export declare class FormFieldDatumCreateRequest extends Message<FormFieldDatumCreateRequest> {
     /**
      * The ID of the corresponding form field
      *
@@ -197,14 +197,14 @@ export declare class FormFieldDatumCreateRequest extends Message<FormFieldDatumC
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatumCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatumCreateRequest;
     static equals(a: FormFieldDatumCreateRequest | PlainMessage<FormFieldDatumCreateRequest> | undefined, b: FormFieldDatumCreateRequest | PlainMessage<FormFieldDatumCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.FormFieldDatumList
  */
-export declare class FormFieldDatumList extends Message<FormFieldDatumList> ***REMOVED***
+export declare class FormFieldDatumList extends Message<FormFieldDatumList> {
     /**
      * List of records
      *
@@ -219,14 +219,14 @@ export declare class FormFieldDatumList extends Message<FormFieldDatumList> ***R
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatumList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatumList;
     static equals(a: FormFieldDatumList | PlainMessage<FormFieldDatumList> | undefined, b: FormFieldDatumList | PlainMessage<FormFieldDatumList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the data required to fetch history of the given form field and the specified resource
  *
  * @generated from message Genesis.FormFieldDatumHistoryRequest
  */
-export declare class FormFieldDatumHistoryRequest extends Message<FormFieldDatumHistoryRequest> ***REMOVED***
+export declare class FormFieldDatumHistoryRequest extends Message<FormFieldDatumHistoryRequest> {
     /**
      * The ID of the corresponding form field
      *
@@ -247,5 +247,5 @@ export declare class FormFieldDatumHistoryRequest extends Message<FormFieldDatum
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FormFieldDatumHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FormFieldDatumHistoryRequest;
     static equals(a: FormFieldDatumHistoryRequest | PlainMessage<FormFieldDatumHistoryRequest> | undefined, b: FormFieldDatumHistoryRequest | PlainMessage<FormFieldDatumHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=forms_pb.d.ts.map

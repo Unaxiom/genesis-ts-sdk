@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -14,7 +14,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.USER_SORT_KEY
  */
-export enum USER_SORT_KEY ***REMOVED***
+export enum USER_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -91,20 +91,20 @@ export enum USER_SORT_KEY ***REMOVED***
    * @generated from enum value: USER_SORT_KEY_PHONE = 14;
    */
   USER_SORT_KEY_PHONE = 14,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(USER_SORT_KEY)
 proto3.util.setEnumType(USER_SORT_KEY, "Genesis.USER_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "USER_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "USER_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "USER_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "USER_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "USER_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "USER_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "USER_SORT_KEY_USERNAME" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "USER_SORT_KEY_NAME" ***REMOVED***,
-  ***REMOVED*** no: 12, name: "USER_SORT_KEY_CODE" ***REMOVED***,
-  ***REMOVED*** no: 13, name: "USER_SORT_KEY_EMAIL" ***REMOVED***,
-  ***REMOVED*** no: 14, name: "USER_SORT_KEY_PHONE" ***REMOVED***,
+  { no: 0, name: "USER_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "USER_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "USER_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "USER_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "USER_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "USER_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 10, name: "USER_SORT_KEY_USERNAME" },
+  { no: 11, name: "USER_SORT_KEY_NAME" },
+  { no: 12, name: "USER_SORT_KEY_CODE" },
+  { no: 13, name: "USER_SORT_KEY_EMAIL" },
+  { no: 14, name: "USER_SORT_KEY_PHONE" },
 ]);
 
 /**
@@ -113,7 +113,7 @@ proto3.util.setEnumType(USER_SORT_KEY, "Genesis.USER_SORT_KEY", [
  *
  * @generated from message Genesis.UsersServiceCreateRequest
  */
-export class UsersServiceCreateRequest extends Message<UsersServiceCreateRequest> ***REMOVED***
+export class UsersServiceCreateRequest extends Message<UsersServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -317,61 +317,61 @@ export class UsersServiceCreateRequest extends Message<UsersServiceCreateRequest
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<UsersServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<UsersServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UsersServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "plain_text_password", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "mobile_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "work_email", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "birthday", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 31, name: "joining_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 32, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 33, name: "city", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 34, name: "state", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 35, name: "country", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 36, name: "pin_code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 37, name: "blood_group", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 50, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 51, name: "attendance_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 52, name: "department_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 53, name: "payroll_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 54, name: "payroll_tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 55, name: "payroll_currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 56, name: "basic_pay_amount", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 57, name: "basic_pay_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 70, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "plain_text_password", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "mobile_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "work_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "birthday", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 31, name: "joining_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 32, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 33, name: "city", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 34, name: "state", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 35, name: "country", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 36, name: "pin_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 37, name: "blood_group", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 50, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 51, name: "attendance_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 52, name: "department_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 53, name: "payroll_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 54, name: "payroll_tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 55, name: "payroll_currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 56, name: "basic_pay_amount", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 57, name: "basic_pay_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 70, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceCreateRequest {
     return new UsersServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceCreateRequest {
     return new UsersServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceCreateRequest {
     return new UsersServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UsersServiceCreateRequest | PlainMessage<UsersServiceCreateRequest> | undefined, b: UsersServiceCreateRequest | PlainMessage<UsersServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: UsersServiceCreateRequest | PlainMessage<UsersServiceCreateRequest> | undefined, b: UsersServiceCreateRequest | PlainMessage<UsersServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(UsersServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -379,7 +379,7 @@ export class UsersServiceCreateRequest extends Message<UsersServiceCreateRequest
  *
  * @generated from message Genesis.UsersServiceUpdateRequest
  */
-export class UsersServiceUpdateRequest extends Message<UsersServiceUpdateRequest> ***REMOVED***
+export class UsersServiceUpdateRequest extends Message<UsersServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -576,60 +576,60 @@ export class UsersServiceUpdateRequest extends Message<UsersServiceUpdateRequest
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<UsersServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<UsersServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UsersServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "mobile_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "work_email", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "birthday", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 31, name: "joining_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 32, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 33, name: "city", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 34, name: "state", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 35, name: "country", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 36, name: "pin_code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 37, name: "blood_group", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 50, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 51, name: "attendance_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 52, name: "department_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 53, name: "payroll_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 54, name: "payroll_tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 55, name: "payroll_currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 56, name: "basic_pay_amount", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 57, name: "basic_pay_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 70, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "mobile_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "work_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "birthday", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 31, name: "joining_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 32, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 33, name: "city", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 34, name: "state", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 35, name: "country", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 36, name: "pin_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 37, name: "blood_group", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 50, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 51, name: "attendance_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 52, name: "department_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 53, name: "payroll_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 54, name: "payroll_tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 55, name: "payroll_currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 56, name: "basic_pay_amount", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 57, name: "basic_pay_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 70, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceUpdateRequest {
     return new UsersServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceUpdateRequest {
     return new UsersServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceUpdateRequest {
     return new UsersServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UsersServiceUpdateRequest | PlainMessage<UsersServiceUpdateRequest> | undefined, b: UsersServiceUpdateRequest | PlainMessage<UsersServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: UsersServiceUpdateRequest | PlainMessage<UsersServiceUpdateRequest> | undefined, b: UsersServiceUpdateRequest | PlainMessage<UsersServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(UsersServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -637,7 +637,7 @@ export class UsersServiceUpdateRequest extends Message<UsersServiceUpdateRequest
  *
  * @generated from message Genesis.User
  */
-export class User extends Message<User> ***REMOVED***
+export class User extends Message<User> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -862,64 +862,64 @@ export class User extends Message<User> ***REMOVED***
    */
   formData: FormFieldDatum[] = [];
 
-  constructor(data?: PartialMessage<User>) ***REMOVED***
+  constructor(data?: PartialMessage<User>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.User";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "mobile_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "work_email", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "birthday", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 31, name: "joining_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 32, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 33, name: "city", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 34, name: "state", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 35, name: "country", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 36, name: "pin_code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 37, name: "blood_group", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 50, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 51, name: "attendance_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 52, name: "department_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 53, name: "payroll_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 54, name: "payroll_tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 55, name: "payroll_currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 56, name: "basic_pay_amount", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 57, name: "basic_pay_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 60, name: "mfa_status", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 70, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "mobile_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "work_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "birthday", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 31, name: "joining_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 32, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 33, name: "city", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 34, name: "state", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 35, name: "country", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 36, name: "pin_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 37, name: "blood_group", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 50, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 51, name: "attendance_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 52, name: "department_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 53, name: "payroll_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 54, name: "payroll_tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 55, name: "payroll_currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 56, name: "basic_pay_amount", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 57, name: "basic_pay_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 60, name: "mfa_status", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 70, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): User ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): User {
     return new User().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): User ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): User {
     return new User().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): User ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): User {
     return new User().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: User | PlainMessage<User> | undefined, b: User | PlainMessage<User> | undefined): boolean ***REMOVED***
+  static equals(a: User | PlainMessage<User> | undefined, b: User | PlainMessage<User> | undefined): boolean {
     return proto3.util.equals(User, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -927,7 +927,7 @@ export class User extends Message<User> ***REMOVED***
  *
  * @generated from message Genesis.UserPrimaryInfo
  */
-export class UserPrimaryInfo extends Message<UserPrimaryInfo> ***REMOVED***
+export class UserPrimaryInfo extends Message<UserPrimaryInfo> {
   /**
    * The username of the user
    *
@@ -984,40 +984,40 @@ export class UserPrimaryInfo extends Message<UserPrimaryInfo> ***REMOVED***
    */
   bloodGroup = "";
 
-  constructor(data?: PartialMessage<UserPrimaryInfo>) ***REMOVED***
+  constructor(data?: PartialMessage<UserPrimaryInfo>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UserPrimaryInfo";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "password", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "mobile_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "mfa_status", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "mfa_secret", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "blood_group", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 10, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "password", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
+    { no: 13, name: "role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "mobile_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "mfa_status", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 16, name: "mfa_secret", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
+    { no: 20, name: "blood_group", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UserPrimaryInfo ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UserPrimaryInfo {
     return new UserPrimaryInfo().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UserPrimaryInfo ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UserPrimaryInfo {
     return new UserPrimaryInfo().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UserPrimaryInfo ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UserPrimaryInfo {
     return new UserPrimaryInfo().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UserPrimaryInfo | PlainMessage<UserPrimaryInfo> | undefined, b: UserPrimaryInfo | PlainMessage<UserPrimaryInfo> | undefined): boolean ***REMOVED***
+  static equals(a: UserPrimaryInfo | PlainMessage<UserPrimaryInfo> | undefined, b: UserPrimaryInfo | PlainMessage<UserPrimaryInfo> | undefined): boolean {
     return proto3.util.equals(UserPrimaryInfo, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1025,7 +1025,7 @@ export class UserPrimaryInfo extends Message<UserPrimaryInfo> ***REMOVED***
  *
  * @generated from message Genesis.UsersList
  */
-export class UsersList extends Message<UsersList> ***REMOVED***
+export class UsersList extends Message<UsersList> {
   /**
    * List of records
    *
@@ -1033,33 +1033,33 @@ export class UsersList extends Message<UsersList> ***REMOVED***
    */
   list: User[] = [];
 
-  constructor(data?: PartialMessage<UsersList>) ***REMOVED***
+  constructor(data?: PartialMessage<UsersList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UsersList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: User, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: User, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersList {
     return new UsersList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersList {
     return new UsersList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersList {
     return new UsersList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UsersList | PlainMessage<UsersList> | undefined, b: UsersList | PlainMessage<UsersList> | undefined): boolean ***REMOVED***
+  static equals(a: UsersList | PlainMessage<UsersList> | undefined, b: UsersList | PlainMessage<UsersList> | undefined): boolean {
     return proto3.util.equals(UsersList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1067,7 +1067,7 @@ export class UsersList extends Message<UsersList> ***REMOVED***
  *
  * @generated from message Genesis.UsersServicePaginationReq
  */
-export class UsersServicePaginationReq extends Message<UsersServicePaginationReq> ***REMOVED***
+export class UsersServicePaginationReq extends Message<UsersServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1110,38 +1110,38 @@ export class UsersServicePaginationReq extends Message<UsersServicePaginationReq
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<UsersServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<UsersServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UsersServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(USER_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(USER_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServicePaginationReq {
     return new UsersServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServicePaginationReq {
     return new UsersServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServicePaginationReq {
     return new UsersServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UsersServicePaginationReq | PlainMessage<UsersServicePaginationReq> | undefined, b: UsersServicePaginationReq | PlainMessage<UsersServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: UsersServicePaginationReq | PlainMessage<UsersServicePaginationReq> | undefined, b: UsersServicePaginationReq | PlainMessage<UsersServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(UsersServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1149,7 +1149,7 @@ export class UsersServicePaginationReq extends Message<UsersServicePaginationReq
  *
  * @generated from message Genesis.UsersServicePaginationResponse
  */
-export class UsersServicePaginationResponse extends Message<UsersServicePaginationResponse> ***REMOVED***
+export class UsersServicePaginationResponse extends Message<UsersServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -1178,36 +1178,36 @@ export class UsersServicePaginationResponse extends Message<UsersServicePaginati
    */
   payload: User[] = [];
 
-  constructor(data?: PartialMessage<UsersServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<UsersServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UsersServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: User, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: User, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServicePaginationResponse {
     return new UsersServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServicePaginationResponse {
     return new UsersServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServicePaginationResponse {
     return new UsersServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UsersServicePaginationResponse | PlainMessage<UsersServicePaginationResponse> | undefined, b: UsersServicePaginationResponse | PlainMessage<UsersServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: UsersServicePaginationResponse | PlainMessage<UsersServicePaginationResponse> | undefined, b: UsersServicePaginationResponse | PlainMessage<UsersServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(UsersServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1215,7 +1215,7 @@ export class UsersServicePaginationResponse extends Message<UsersServicePaginati
  *
  * @generated from message Genesis.UsersServiceEntityPaginationReq
  */
-export class UsersServiceEntityPaginationReq extends Message<UsersServiceEntityPaginationReq> ***REMOVED***
+export class UsersServiceEntityPaginationReq extends Message<UsersServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1258,38 +1258,38 @@ export class UsersServiceEntityPaginationReq extends Message<UsersServiceEntityP
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<UsersServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<UsersServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UsersServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(USER_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(USER_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceEntityPaginationReq {
     return new UsersServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceEntityPaginationReq {
     return new UsersServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceEntityPaginationReq {
     return new UsersServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UsersServiceEntityPaginationReq | PlainMessage<UsersServiceEntityPaginationReq> | undefined, b: UsersServiceEntityPaginationReq | PlainMessage<UsersServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: UsersServiceEntityPaginationReq | PlainMessage<UsersServiceEntityPaginationReq> | undefined, b: UsersServiceEntityPaginationReq | PlainMessage<UsersServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(UsersServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1297,7 +1297,7 @@ export class UsersServiceEntityPaginationReq extends Message<UsersServiceEntityP
  *
  * @generated from message Genesis.UsersServiceFilterReq
  */
-export class UsersServiceFilterReq extends Message<UsersServiceFilterReq> ***REMOVED***
+export class UsersServiceFilterReq extends Message<UsersServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1487,59 +1487,59 @@ export class UsersServiceFilterReq extends Message<UsersServiceFilterReq> ***REM
    */
   workEmail = "";
 
-  constructor(data?: PartialMessage<UsersServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<UsersServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UsersServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(USER_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 26, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 27, name: "attendance_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 28, name: "department_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 29, name: "payroll_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "payroll_tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 31, name: "payroll_currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 32, name: "basic_pay_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 33, name: "work_email", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(USER_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 24, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 25, name: "role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 26, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 27, name: "attendance_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 28, name: "department_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 29, name: "payroll_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "payroll_tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 31, name: "payroll_currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 32, name: "basic_pay_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 33, name: "work_email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceFilterReq {
     return new UsersServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceFilterReq {
     return new UsersServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceFilterReq {
     return new UsersServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UsersServiceFilterReq | PlainMessage<UsersServiceFilterReq> | undefined, b: UsersServiceFilterReq | PlainMessage<UsersServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: UsersServiceFilterReq | PlainMessage<UsersServiceFilterReq> | undefined, b: UsersServiceFilterReq | PlainMessage<UsersServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(UsersServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1547,7 +1547,7 @@ export class UsersServiceFilterReq extends Message<UsersServiceFilterReq> ***REM
  *
  * @generated from message Genesis.UsersServiceSearchAllReq
  */
-export class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> ***REMOVED***
+export class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1604,40 +1604,40 @@ export class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> 
    */
   searchKey = "";
 
-  constructor(data?: PartialMessage<UsersServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<UsersServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UsersServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(USER_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(USER_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceSearchAllReq {
     return new UsersServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceSearchAllReq {
     return new UsersServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceSearchAllReq {
     return new UsersServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UsersServiceSearchAllReq | PlainMessage<UsersServiceSearchAllReq> | undefined, b: UsersServiceSearchAllReq | PlainMessage<UsersServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: UsersServiceSearchAllReq | PlainMessage<UsersServiceSearchAllReq> | undefined, b: UsersServiceSearchAllReq | PlainMessage<UsersServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(UsersServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1645,7 +1645,7 @@ export class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> 
  *
  * @generated from message Genesis.UsersServiceRegisterMobileDeviceRequest
  */
-export class UsersServiceRegisterMobileDeviceRequest extends Message<UsersServiceRegisterMobileDeviceRequest> ***REMOVED***
+export class UsersServiceRegisterMobileDeviceRequest extends Message<UsersServiceRegisterMobileDeviceRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -1674,34 +1674,34 @@ export class UsersServiceRegisterMobileDeviceRequest extends Message<UsersServic
    */
   deviceToken = "";
 
-  constructor(data?: PartialMessage<UsersServiceRegisterMobileDeviceRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<UsersServiceRegisterMobileDeviceRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UsersServiceRegisterMobileDeviceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "device_os", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "device_token", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "device_os", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "device_token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceRegisterMobileDeviceRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UsersServiceRegisterMobileDeviceRequest {
     return new UsersServiceRegisterMobileDeviceRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceRegisterMobileDeviceRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceRegisterMobileDeviceRequest {
     return new UsersServiceRegisterMobileDeviceRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceRegisterMobileDeviceRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceRegisterMobileDeviceRequest {
     return new UsersServiceRegisterMobileDeviceRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UsersServiceRegisterMobileDeviceRequest | PlainMessage<UsersServiceRegisterMobileDeviceRequest> | undefined, b: UsersServiceRegisterMobileDeviceRequest | PlainMessage<UsersServiceRegisterMobileDeviceRequest> | undefined): boolean ***REMOVED***
+  static equals(a: UsersServiceRegisterMobileDeviceRequest | PlainMessage<UsersServiceRegisterMobileDeviceRequest> | undefined, b: UsersServiceRegisterMobileDeviceRequest | PlainMessage<UsersServiceRegisterMobileDeviceRequest> | undefined): boolean {
     return proto3.util.equals(UsersServiceRegisterMobileDeviceRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

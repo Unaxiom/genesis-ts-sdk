@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** Associate, AssociatePaginationResp, AssociatesList, AssociatesServiceCreateRequest, AssociatesServiceEntityPaginationReq, AssociatesServicePaginationReq, AssociatesServiceSearchAllReq, AssociatesServiceUpdateRequest ***REMOVED*** from "./associates_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ActiveStatus, BooleanResponse, BytesResponse, Empty, Identifier, IdentifierUUID, IdentifierWithUserComment ***REMOVED*** from "./base_pb.js";
+import { Associate, AssociatePaginationResp, AssociatesList, AssociatesServiceCreateRequest, AssociatesServiceEntityPaginationReq, AssociatesServicePaginationReq, AssociatesServiceSearchAllReq, AssociatesServiceUpdateRequest } from "./associates_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
+import { ActiveStatus, BooleanResponse, BytesResponse, Empty, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base_pb.js";
 
 /**
  *
@@ -13,152 +13,152 @@ import ***REMOVED*** ActiveStatus, BooleanResponse, BytesResponse, Empty, Identi
  *
  * @generated from service Genesis.AssociatesService
  */
-export const AssociatesService = ***REMOVED***
+export const AssociatesService = {
   typeName: "Genesis.AssociatesService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create a associate
      *
      * @generated from rpc Genesis.AssociatesService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: AssociatesServiceCreateRequest,
       O: Associate,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update a associate
      *
      * @generated from rpc Genesis.AssociatesService.Update
      */
-    update: ***REMOVED***
+    update: {
       name: "Update",
       I: AssociatesServiceUpdateRequest,
       O: Associate,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard the associate
      *
      * @generated from rpc Genesis.AssociatesService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore the associate
      *
      * @generated from rpc Genesis.AssociatesService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.AssociatesService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: Associate,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Download Associate by ID as a vCard
      *
      * @generated from rpc Genesis.AssociatesService.DownloadVCard
      */
-    downloadVCard: ***REMOVED***
+    downloadVCard: {
       name: "DownloadVCard",
       I: Identifier,
       O: BytesResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all associates
      *
      * @generated from rpc Genesis.AssociatesService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: AssociatesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all associates with the given entity UUID
      *
      * @generated from rpc Genesis.AssociatesService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: AssociatesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View associates with pagination
      *
      * @generated from rpc Genesis.AssociatesService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: AssociatesServicePaginationReq,
       O: AssociatePaginationResp,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View associates with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.AssociatesService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: AssociatesServiceEntityPaginationReq,
       O: AssociatePaginationResp,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Check if the user has permission to modify an associate
      *
      * @generated from rpc Genesis.AssociatesService.CheckModifyPermission
      */
-    checkModifyPermission: ***REMOVED***
+    checkModifyPermission: {
       name: "CheckModifyPermission",
       I: Empty,
       O: BooleanResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Check if the user has permission to add an associate
      *
      * @generated from rpc Genesis.AssociatesService.CheckAddPermission
      */
-    checkAddPermission: ***REMOVED***
+    checkAddPermission: {
       name: "CheckAddPermission",
       I: Empty,
       O: BooleanResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all associates that match the given search key
      *
      * @generated from rpc Genesis.AssociatesService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: AssociatesServiceSearchAllReq,
       O: AssociatesList,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

@@ -1,5 +1,5 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, JsonWriteOptions, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, JsonWriteOptions, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
 /**
  * A Duration represents a signed, fixed-length span of time represented
  * as a count of seconds and fractions of seconds at nanosecond
@@ -19,13 +19,13 @@ import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
  *     duration.seconds = end.seconds - start.seconds;
  *     duration.nanos = end.nanos - start.nanos;
  *
- *     if (duration.seconds < 0 && duration.nanos > 0) ***REMOVED***
+ *     if (duration.seconds < 0 && duration.nanos > 0) {
  *       duration.seconds += 1;
  *       duration.nanos -= 1000000000;
- * ***REMOVED*** else if (duration.seconds > 0 && duration.nanos < 0) ***REMOVED***
+ *     } else if (duration.seconds > 0 && duration.nanos < 0) {
  *       duration.seconds -= 1;
  *       duration.nanos += 1000000000;
- * ***REMOVED***
+ *     }
  *
  * Example 2: Compute Timestamp from Timestamp + Duration in pseudo code.
  *
@@ -36,13 +36,13 @@ import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
  *     end.seconds = start.seconds + duration.seconds;
  *     end.nanos = start.nanos + duration.nanos;
  *
- *     if (end.nanos < 0) ***REMOVED***
+ *     if (end.nanos < 0) {
  *       end.seconds -= 1;
  *       end.nanos += 1000000000;
- * ***REMOVED*** else if (end.nanos >= 1000000000) ***REMOVED***
+ *     } else if (end.nanos >= 1000000000) {
  *       end.seconds += 1;
  *       end.nanos -= 1000000000;
- * ***REMOVED***
+ *     }
  *
  * Example 3: Compute Duration from datetime.timedelta in Python.
  *
@@ -64,7 +64,7 @@ import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from message google.protobuf.Duration
  */
-export declare class Duration extends Message<Duration> ***REMOVED***
+export declare class Duration extends Message<Duration> {
     /**
      * Signed seconds of the span of time. Must be from -315,576,000,000
      * to +315,576,000,000 inclusive. Note: these bounds are computed from:
@@ -94,5 +94,5 @@ export declare class Duration extends Message<Duration> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Duration;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Duration;
     static equals(a: Duration | PlainMessage<Duration> | undefined, b: Duration | PlainMessage<Duration> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=duration_pb.d.ts.map

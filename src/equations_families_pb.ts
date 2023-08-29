@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -13,7 +13,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.EQUATION_FAMILY_SORT_KEY
  */
-export enum EQUATION_FAMILY_SORT_KEY ***REMOVED***
+export enum EQUATION_FAMILY_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -76,18 +76,18 @@ export enum EQUATION_FAMILY_SORT_KEY ***REMOVED***
    * @generated from enum value: EQUATION_FAMILY_SORT_KEY_FAMILY_ID = 11;
    */
   EQUATION_FAMILY_SORT_KEY_FAMILY_ID = 11,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(EQUATION_FAMILY_SORT_KEY)
 proto3.util.setEnumType(EQUATION_FAMILY_SORT_KEY, "Genesis.EQUATION_FAMILY_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "EQUATION_FAMILY_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "EQUATION_FAMILY_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "EQUATION_FAMILY_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "EQUATION_FAMILY_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "EQUATION_FAMILY_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "EQUATION_FAMILY_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "EQUATION_FAMILY_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "EQUATION_FAMILY_SORT_KEY_NAME" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "EQUATION_FAMILY_SORT_KEY_FAMILY_ID" ***REMOVED***,
+  { no: 0, name: "EQUATION_FAMILY_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "EQUATION_FAMILY_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "EQUATION_FAMILY_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "EQUATION_FAMILY_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "EQUATION_FAMILY_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "EQUATION_FAMILY_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "EQUATION_FAMILY_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "EQUATION_FAMILY_SORT_KEY_NAME" },
+  { no: 11, name: "EQUATION_FAMILY_SORT_KEY_FAMILY_ID" },
 ]);
 
 /**
@@ -96,7 +96,7 @@ proto3.util.setEnumType(EQUATION_FAMILY_SORT_KEY, "Genesis.EQUATION_FAMILY_SORT_
  *
  * @generated from message Genesis.EquationsFamiliesServiceCreateRequest
  */
-export class EquationsFamiliesServiceCreateRequest extends Message<EquationsFamiliesServiceCreateRequest> ***REMOVED***
+export class EquationsFamiliesServiceCreateRequest extends Message<EquationsFamiliesServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -139,38 +139,38 @@ export class EquationsFamiliesServiceCreateRequest extends Message<EquationsFami
    */
   description = "";
 
-  constructor(data?: PartialMessage<EquationsFamiliesServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsFamiliesServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsFamiliesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceCreateRequest {
     return new EquationsFamiliesServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceCreateRequest {
     return new EquationsFamiliesServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceCreateRequest {
     return new EquationsFamiliesServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsFamiliesServiceCreateRequest | PlainMessage<EquationsFamiliesServiceCreateRequest> | undefined, b: EquationsFamiliesServiceCreateRequest | PlainMessage<EquationsFamiliesServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsFamiliesServiceCreateRequest | PlainMessage<EquationsFamiliesServiceCreateRequest> | undefined, b: EquationsFamiliesServiceCreateRequest | PlainMessage<EquationsFamiliesServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(EquationsFamiliesServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -178,7 +178,7 @@ export class EquationsFamiliesServiceCreateRequest extends Message<EquationsFami
  *
  * @generated from message Genesis.EquationsFamiliesServiceUpdateRequest
  */
-export class EquationsFamiliesServiceUpdateRequest extends Message<EquationsFamiliesServiceUpdateRequest> ***REMOVED***
+export class EquationsFamiliesServiceUpdateRequest extends Message<EquationsFamiliesServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -221,38 +221,38 @@ export class EquationsFamiliesServiceUpdateRequest extends Message<EquationsFami
    */
   description = "";
 
-  constructor(data?: PartialMessage<EquationsFamiliesServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsFamiliesServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsFamiliesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceUpdateRequest {
     return new EquationsFamiliesServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceUpdateRequest {
     return new EquationsFamiliesServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceUpdateRequest {
     return new EquationsFamiliesServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsFamiliesServiceUpdateRequest | PlainMessage<EquationsFamiliesServiceUpdateRequest> | undefined, b: EquationsFamiliesServiceUpdateRequest | PlainMessage<EquationsFamiliesServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsFamiliesServiceUpdateRequest | PlainMessage<EquationsFamiliesServiceUpdateRequest> | undefined, b: EquationsFamiliesServiceUpdateRequest | PlainMessage<EquationsFamiliesServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(EquationsFamiliesServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -260,7 +260,7 @@ export class EquationsFamiliesServiceUpdateRequest extends Message<EquationsFami
  *
  * @generated from message Genesis.EquationFamily
  */
-export class EquationFamily extends Message<EquationFamily> ***REMOVED***
+export class EquationFamily extends Message<EquationFamily> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -345,44 +345,44 @@ export class EquationFamily extends Message<EquationFamily> ***REMOVED***
    */
   totalPrice = 0;
 
-  constructor(data?: PartialMessage<EquationFamily>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationFamily>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationFamily";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "list", kind: "message", T: EquationFamilyItem, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 40, name: "total_price", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "list", kind: "message", T: EquationFamilyItem, repeated: true },
+    { no: 40, name: "total_price", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationFamily ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationFamily {
     return new EquationFamily().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationFamily ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationFamily {
     return new EquationFamily().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationFamily ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationFamily {
     return new EquationFamily().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationFamily | PlainMessage<EquationFamily> | undefined, b: EquationFamily | PlainMessage<EquationFamily> | undefined): boolean ***REMOVED***
+  static equals(a: EquationFamily | PlainMessage<EquationFamily> | undefined, b: EquationFamily | PlainMessage<EquationFamily> | undefined): boolean {
     return proto3.util.equals(EquationFamily, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -390,7 +390,7 @@ export class EquationFamily extends Message<EquationFamily> ***REMOVED***
  *
  * @generated from message Genesis.EquationsFamiliesServiceItemCreateRequest
  */
-export class EquationsFamiliesServiceItemCreateRequest extends Message<EquationsFamiliesServiceItemCreateRequest> ***REMOVED***
+export class EquationsFamiliesServiceItemCreateRequest extends Message<EquationsFamiliesServiceItemCreateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -433,38 +433,38 @@ export class EquationsFamiliesServiceItemCreateRequest extends Message<Equations
    */
   specifications = "";
 
-  constructor(data?: PartialMessage<EquationsFamiliesServiceItemCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsFamiliesServiceItemCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsFamiliesServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "equation_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "equation_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceItemCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceItemCreateRequest {
     return new EquationsFamiliesServiceItemCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceItemCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceItemCreateRequest {
     return new EquationsFamiliesServiceItemCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceItemCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceItemCreateRequest {
     return new EquationsFamiliesServiceItemCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsFamiliesServiceItemCreateRequest | PlainMessage<EquationsFamiliesServiceItemCreateRequest> | undefined, b: EquationsFamiliesServiceItemCreateRequest | PlainMessage<EquationsFamiliesServiceItemCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsFamiliesServiceItemCreateRequest | PlainMessage<EquationsFamiliesServiceItemCreateRequest> | undefined, b: EquationsFamiliesServiceItemCreateRequest | PlainMessage<EquationsFamiliesServiceItemCreateRequest> | undefined): boolean {
     return proto3.util.equals(EquationsFamiliesServiceItemCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -472,7 +472,7 @@ export class EquationsFamiliesServiceItemCreateRequest extends Message<Equations
  *
  * @generated from message Genesis.EquationsFamiliesServiceItemUpdateRequest
  */
-export class EquationsFamiliesServiceItemUpdateRequest extends Message<EquationsFamiliesServiceItemUpdateRequest> ***REMOVED***
+export class EquationsFamiliesServiceItemUpdateRequest extends Message<EquationsFamiliesServiceItemUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -508,37 +508,37 @@ export class EquationsFamiliesServiceItemUpdateRequest extends Message<Equations
    */
   specifications = "";
 
-  constructor(data?: PartialMessage<EquationsFamiliesServiceItemUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsFamiliesServiceItemUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsFamiliesServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceItemUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceItemUpdateRequest {
     return new EquationsFamiliesServiceItemUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceItemUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceItemUpdateRequest {
     return new EquationsFamiliesServiceItemUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceItemUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceItemUpdateRequest {
     return new EquationsFamiliesServiceItemUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsFamiliesServiceItemUpdateRequest | PlainMessage<EquationsFamiliesServiceItemUpdateRequest> | undefined, b: EquationsFamiliesServiceItemUpdateRequest | PlainMessage<EquationsFamiliesServiceItemUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsFamiliesServiceItemUpdateRequest | PlainMessage<EquationsFamiliesServiceItemUpdateRequest> | undefined, b: EquationsFamiliesServiceItemUpdateRequest | PlainMessage<EquationsFamiliesServiceItemUpdateRequest> | undefined): boolean {
     return proto3.util.equals(EquationsFamiliesServiceItemUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -546,7 +546,7 @@ export class EquationsFamiliesServiceItemUpdateRequest extends Message<Equations
  *
  * @generated from message Genesis.EquationFamilyItem
  */
-export class EquationFamilyItem extends Message<EquationFamilyItem> ***REMOVED***
+export class EquationFamilyItem extends Message<EquationFamilyItem> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -617,42 +617,42 @@ export class EquationFamilyItem extends Message<EquationFamilyItem> ***REMOVED**
    */
   specifications = "";
 
-  constructor(data?: PartialMessage<EquationFamilyItem>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationFamilyItem>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationFamilyItem";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "equation_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "equation_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationFamilyItem ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationFamilyItem {
     return new EquationFamilyItem().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationFamilyItem ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationFamilyItem {
     return new EquationFamilyItem().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationFamilyItem ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationFamilyItem {
     return new EquationFamilyItem().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationFamilyItem | PlainMessage<EquationFamilyItem> | undefined, b: EquationFamilyItem | PlainMessage<EquationFamilyItem> | undefined): boolean ***REMOVED***
+  static equals(a: EquationFamilyItem | PlainMessage<EquationFamilyItem> | undefined, b: EquationFamilyItem | PlainMessage<EquationFamilyItem> | undefined): boolean {
     return proto3.util.equals(EquationFamilyItem, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -660,7 +660,7 @@ export class EquationFamilyItem extends Message<EquationFamilyItem> ***REMOVED**
  *
  * @generated from message Genesis.EquationsFamiliesList
  */
-export class EquationsFamiliesList extends Message<EquationsFamiliesList> ***REMOVED***
+export class EquationsFamiliesList extends Message<EquationsFamiliesList> {
   /**
    * List of records
    *
@@ -668,33 +668,33 @@ export class EquationsFamiliesList extends Message<EquationsFamiliesList> ***REM
    */
   list: EquationFamily[] = [];
 
-  constructor(data?: PartialMessage<EquationsFamiliesList>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsFamiliesList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsFamiliesList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: EquationFamily, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: EquationFamily, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesList {
     return new EquationsFamiliesList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesList {
     return new EquationsFamiliesList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesList {
     return new EquationsFamiliesList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsFamiliesList | PlainMessage<EquationsFamiliesList> | undefined, b: EquationsFamiliesList | PlainMessage<EquationsFamiliesList> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsFamiliesList | PlainMessage<EquationsFamiliesList> | undefined, b: EquationsFamiliesList | PlainMessage<EquationsFamiliesList> | undefined): boolean {
     return proto3.util.equals(EquationsFamiliesList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -702,7 +702,7 @@ export class EquationsFamiliesList extends Message<EquationsFamiliesList> ***REM
  *
  * @generated from message Genesis.EquationsFamiliesItemsList
  */
-export class EquationsFamiliesItemsList extends Message<EquationsFamiliesItemsList> ***REMOVED***
+export class EquationsFamiliesItemsList extends Message<EquationsFamiliesItemsList> {
   /**
    * List of records
    *
@@ -710,33 +710,33 @@ export class EquationsFamiliesItemsList extends Message<EquationsFamiliesItemsLi
    */
   list: EquationFamilyItem[] = [];
 
-  constructor(data?: PartialMessage<EquationsFamiliesItemsList>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsFamiliesItemsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsFamiliesItemsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: EquationFamilyItem, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: EquationFamilyItem, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesItemsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesItemsList {
     return new EquationsFamiliesItemsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesItemsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesItemsList {
     return new EquationsFamiliesItemsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesItemsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesItemsList {
     return new EquationsFamiliesItemsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsFamiliesItemsList | PlainMessage<EquationsFamiliesItemsList> | undefined, b: EquationsFamiliesItemsList | PlainMessage<EquationsFamiliesItemsList> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsFamiliesItemsList | PlainMessage<EquationsFamiliesItemsList> | undefined, b: EquationsFamiliesItemsList | PlainMessage<EquationsFamiliesItemsList> | undefined): boolean {
     return proto3.util.equals(EquationsFamiliesItemsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -744,7 +744,7 @@ export class EquationsFamiliesItemsList extends Message<EquationsFamiliesItemsLi
  *
  * @generated from message Genesis.EquationFamilyItemHistoryRequest
  */
-export class EquationFamilyItemHistoryRequest extends Message<EquationFamilyItemHistoryRequest> ***REMOVED***
+export class EquationFamilyItemHistoryRequest extends Message<EquationFamilyItemHistoryRequest> {
   /**
    * Stores the ID of the equation family
    *
@@ -759,34 +759,34 @@ export class EquationFamilyItemHistoryRequest extends Message<EquationFamilyItem
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<EquationFamilyItemHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationFamilyItemHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationFamilyItemHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "equation_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "equation_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationFamilyItemHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationFamilyItemHistoryRequest {
     return new EquationFamilyItemHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationFamilyItemHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationFamilyItemHistoryRequest {
     return new EquationFamilyItemHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationFamilyItemHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationFamilyItemHistoryRequest {
     return new EquationFamilyItemHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationFamilyItemHistoryRequest | PlainMessage<EquationFamilyItemHistoryRequest> | undefined, b: EquationFamilyItemHistoryRequest | PlainMessage<EquationFamilyItemHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: EquationFamilyItemHistoryRequest | PlainMessage<EquationFamilyItemHistoryRequest> | undefined, b: EquationFamilyItemHistoryRequest | PlainMessage<EquationFamilyItemHistoryRequest> | undefined): boolean {
     return proto3.util.equals(EquationFamilyItemHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -794,7 +794,7 @@ export class EquationFamilyItemHistoryRequest extends Message<EquationFamilyItem
  *
  * @generated from message Genesis.EquationsFamiliesServicePaginationReq
  */
-export class EquationsFamiliesServicePaginationReq extends Message<EquationsFamiliesServicePaginationReq> ***REMOVED***
+export class EquationsFamiliesServicePaginationReq extends Message<EquationsFamiliesServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -837,38 +837,38 @@ export class EquationsFamiliesServicePaginationReq extends Message<EquationsFami
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<EquationsFamiliesServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsFamiliesServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsFamiliesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_FAMILY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_FAMILY_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServicePaginationReq {
     return new EquationsFamiliesServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServicePaginationReq {
     return new EquationsFamiliesServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServicePaginationReq {
     return new EquationsFamiliesServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsFamiliesServicePaginationReq | PlainMessage<EquationsFamiliesServicePaginationReq> | undefined, b: EquationsFamiliesServicePaginationReq | PlainMessage<EquationsFamiliesServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsFamiliesServicePaginationReq | PlainMessage<EquationsFamiliesServicePaginationReq> | undefined, b: EquationsFamiliesServicePaginationReq | PlainMessage<EquationsFamiliesServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(EquationsFamiliesServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -876,7 +876,7 @@ export class EquationsFamiliesServicePaginationReq extends Message<EquationsFami
  *
  * @generated from message Genesis.EquationsFamiliesServicePaginationResponse
  */
-export class EquationsFamiliesServicePaginationResponse extends Message<EquationsFamiliesServicePaginationResponse> ***REMOVED***
+export class EquationsFamiliesServicePaginationResponse extends Message<EquationsFamiliesServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -905,36 +905,36 @@ export class EquationsFamiliesServicePaginationResponse extends Message<Equation
    */
   payload: EquationFamily[] = [];
 
-  constructor(data?: PartialMessage<EquationsFamiliesServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsFamiliesServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsFamiliesServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: EquationFamily, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: EquationFamily, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServicePaginationResponse {
     return new EquationsFamiliesServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServicePaginationResponse {
     return new EquationsFamiliesServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServicePaginationResponse {
     return new EquationsFamiliesServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsFamiliesServicePaginationResponse | PlainMessage<EquationsFamiliesServicePaginationResponse> | undefined, b: EquationsFamiliesServicePaginationResponse | PlainMessage<EquationsFamiliesServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsFamiliesServicePaginationResponse | PlainMessage<EquationsFamiliesServicePaginationResponse> | undefined, b: EquationsFamiliesServicePaginationResponse | PlainMessage<EquationsFamiliesServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(EquationsFamiliesServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -942,7 +942,7 @@ export class EquationsFamiliesServicePaginationResponse extends Message<Equation
  *
  * @generated from message Genesis.EquationsFamiliesServiceEntityPaginationReq
  */
-export class EquationsFamiliesServiceEntityPaginationReq extends Message<EquationsFamiliesServiceEntityPaginationReq> ***REMOVED***
+export class EquationsFamiliesServiceEntityPaginationReq extends Message<EquationsFamiliesServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -985,38 +985,38 @@ export class EquationsFamiliesServiceEntityPaginationReq extends Message<Equatio
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<EquationsFamiliesServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsFamiliesServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsFamiliesServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_FAMILY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_FAMILY_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceEntityPaginationReq {
     return new EquationsFamiliesServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceEntityPaginationReq {
     return new EquationsFamiliesServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceEntityPaginationReq {
     return new EquationsFamiliesServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsFamiliesServiceEntityPaginationReq | PlainMessage<EquationsFamiliesServiceEntityPaginationReq> | undefined, b: EquationsFamiliesServiceEntityPaginationReq | PlainMessage<EquationsFamiliesServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsFamiliesServiceEntityPaginationReq | PlainMessage<EquationsFamiliesServiceEntityPaginationReq> | undefined, b: EquationsFamiliesServiceEntityPaginationReq | PlainMessage<EquationsFamiliesServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(EquationsFamiliesServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1024,7 +1024,7 @@ export class EquationsFamiliesServiceEntityPaginationReq extends Message<Equatio
  *
  * @generated from message Genesis.EquationsFamiliesServiceFilterReq
  */
-export class EquationsFamiliesServiceFilterReq extends Message<EquationsFamiliesServiceFilterReq> ***REMOVED***
+export class EquationsFamiliesServiceFilterReq extends Message<EquationsFamiliesServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1144,49 +1144,49 @@ export class EquationsFamiliesServiceFilterReq extends Message<EquationsFamilies
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<EquationsFamiliesServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsFamiliesServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsFamiliesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_FAMILY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_FAMILY_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceFilterReq {
     return new EquationsFamiliesServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceFilterReq {
     return new EquationsFamiliesServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceFilterReq {
     return new EquationsFamiliesServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsFamiliesServiceFilterReq | PlainMessage<EquationsFamiliesServiceFilterReq> | undefined, b: EquationsFamiliesServiceFilterReq | PlainMessage<EquationsFamiliesServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsFamiliesServiceFilterReq | PlainMessage<EquationsFamiliesServiceFilterReq> | undefined, b: EquationsFamiliesServiceFilterReq | PlainMessage<EquationsFamiliesServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(EquationsFamiliesServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1194,7 +1194,7 @@ export class EquationsFamiliesServiceFilterReq extends Message<EquationsFamilies
  *
  * @generated from message Genesis.EquationsFamiliesServiceSearchAllReq
  */
-export class EquationsFamiliesServiceSearchAllReq extends Message<EquationsFamiliesServiceSearchAllReq> ***REMOVED***
+export class EquationsFamiliesServiceSearchAllReq extends Message<EquationsFamiliesServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1251,38 +1251,38 @@ export class EquationsFamiliesServiceSearchAllReq extends Message<EquationsFamil
    */
   searchKey = "";
 
-  constructor(data?: PartialMessage<EquationsFamiliesServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsFamiliesServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsFamiliesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_FAMILY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_FAMILY_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsFamiliesServiceSearchAllReq {
     return new EquationsFamiliesServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceSearchAllReq {
     return new EquationsFamiliesServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceSearchAllReq {
     return new EquationsFamiliesServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsFamiliesServiceSearchAllReq | PlainMessage<EquationsFamiliesServiceSearchAllReq> | undefined, b: EquationsFamiliesServiceSearchAllReq | PlainMessage<EquationsFamiliesServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsFamiliesServiceSearchAllReq | PlainMessage<EquationsFamiliesServiceSearchAllReq> | undefined, b: EquationsFamiliesServiceSearchAllReq | PlainMessage<EquationsFamiliesServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(EquationsFamiliesServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

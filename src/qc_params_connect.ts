@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** QCParam, QCParamsList, QCParamsServiceCreateRequest, QCParamsServiceEntityPaginationReq, QCParamsServiceFilterReq, QCParamsServicePaginationReq, QCParamsServicePaginationResponse, QCParamsServiceSearchAllReq, QCParamsServiceUpdateRequest ***REMOVED*** from "./qc_params_pb.js";
-import ***REMOVED*** ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { QCParam, QCParamsList, QCParamsServiceCreateRequest, QCParamsServiceEntityPaginationReq, QCParamsServiceFilterReq, QCParamsServicePaginationReq, QCParamsServicePaginationResponse, QCParamsServiceSearchAllReq, QCParamsServiceUpdateRequest } from "./qc_params_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,152 +13,152 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.QCParamsService
  */
-export const QCParamsService = ***REMOVED***
+export const QCParamsService = {
   typeName: "Genesis.QCParamsService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.QCParamsService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: QCParamsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.QCParamsService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: QCParamsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.QCParamsService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: QCParamsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.QCParamsService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.QCParamsService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.QCParamsService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.QCParamsService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.QCParamsService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: QCParamsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.QCParamsService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.QCParamsService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.QCParamsService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.QCParamsService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.QCParamsService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -167,100 +167,100 @@ export const QCParamsService = ***REMOVED***
      *
      * @generated from rpc Genesis.QCParamsService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.QCParamsService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: QCParam,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.QCParamsService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: QCParamsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.QCParamsService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: QCParamsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.QCParamsService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: QCParamsServicePaginationReq,
       O: QCParamsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.QCParamsService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: QCParamsServiceEntityPaginationReq,
       O: QCParamsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.QCParamsService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: QCParamsServiceSearchAllReq,
       O: QCParamsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.QCParamsService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: QCParamsServiceFilterReq,
       O: QCParamsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.QCParamsService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

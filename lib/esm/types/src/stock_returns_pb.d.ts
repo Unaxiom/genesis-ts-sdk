@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.STOCK_RETURN_SORT_KEY
  */
-export declare enum STOCK_RETURN_SORT_KEY ***REMOVED***
+export declare enum STOCK_RETURN_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -63,14 +63,14 @@ export declare enum STOCK_RETURN_SORT_KEY ***REMOVED***
      * @generated from enum value: STOCK_RETURN_SORT_KEY_FINAL_REF_NUMBER = 11;
      */
     STOCK_RETURN_SORT_KEY_FINAL_REF_NUMBER = 11
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.StockReturnsServiceCreateRequest
  */
-export declare class StockReturnsServiceCreateRequest extends Message<StockReturnsServiceCreateRequest> ***REMOVED***
+export declare class StockReturnsServiceCreateRequest extends Message<StockReturnsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -121,14 +121,14 @@ export declare class StockReturnsServiceCreateRequest extends Message<StockRetur
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceCreateRequest;
     static equals(a: StockReturnsServiceCreateRequest | PlainMessage<StockReturnsServiceCreateRequest> | undefined, b: StockReturnsServiceCreateRequest | PlainMessage<StockReturnsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.StockReturnsServiceUpdateRequest
  */
-export declare class StockReturnsServiceUpdateRequest extends Message<StockReturnsServiceUpdateRequest> ***REMOVED***
+export declare class StockReturnsServiceUpdateRequest extends Message<StockReturnsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -173,14 +173,14 @@ export declare class StockReturnsServiceUpdateRequest extends Message<StockRetur
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceUpdateRequest;
     static equals(a: StockReturnsServiceUpdateRequest | PlainMessage<StockReturnsServiceUpdateRequest> | undefined, b: StockReturnsServiceUpdateRequest | PlainMessage<StockReturnsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.StockReturn
  */
-export declare class StockReturn extends Message<StockReturn> ***REMOVED***
+export declare class StockReturn extends Message<StockReturn> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -267,14 +267,14 @@ export declare class StockReturn extends Message<StockReturn> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturn;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturn;
     static equals(a: StockReturn | PlainMessage<StockReturn> | undefined, b: StockReturn | PlainMessage<StockReturn> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a stock return
  *
  * @generated from message Genesis.StockReturnsServiceItemCreateRequest
  */
-export declare class StockReturnsServiceItemCreateRequest extends Message<StockReturnsServiceItemCreateRequest> ***REMOVED***
+export declare class StockReturnsServiceItemCreateRequest extends Message<StockReturnsServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -319,14 +319,14 @@ export declare class StockReturnsServiceItemCreateRequest extends Message<StockR
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceItemCreateRequest;
     static equals(a: StockReturnsServiceItemCreateRequest | PlainMessage<StockReturnsServiceItemCreateRequest> | undefined, b: StockReturnsServiceItemCreateRequest | PlainMessage<StockReturnsServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a stock return
  *
  * @generated from message Genesis.StockReturnsServiceItemUpdateRequest
  */
-export declare class StockReturnsServiceItemUpdateRequest extends Message<StockReturnsServiceItemUpdateRequest> ***REMOVED***
+export declare class StockReturnsServiceItemUpdateRequest extends Message<StockReturnsServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -365,14 +365,14 @@ export declare class StockReturnsServiceItemUpdateRequest extends Message<StockR
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceItemUpdateRequest;
     static equals(a: StockReturnsServiceItemUpdateRequest | PlainMessage<StockReturnsServiceItemUpdateRequest> | undefined, b: StockReturnsServiceItemUpdateRequest | PlainMessage<StockReturnsServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a stock return
  *
  * @generated from message Genesis.StockReturnItem
  */
-export declare class StockReturnItem extends Message<StockReturnItem> ***REMOVED***
+export declare class StockReturnItem extends Message<StockReturnItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -441,14 +441,14 @@ export declare class StockReturnItem extends Message<StockReturnItem> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnItem;
     static equals(a: StockReturnItem | PlainMessage<StockReturnItem> | undefined, b: StockReturnItem | PlainMessage<StockReturnItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of stock returns
  *
  * @generated from message Genesis.StockReturnsList
  */
-export declare class StockReturnsList extends Message<StockReturnsList> ***REMOVED***
+export declare class StockReturnsList extends Message<StockReturnsList> {
     /**
      * List of records
      *
@@ -463,14 +463,14 @@ export declare class StockReturnsList extends Message<StockReturnsList> ***REMOV
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsList;
     static equals(a: StockReturnsList | PlainMessage<StockReturnsList> | undefined, b: StockReturnsList | PlainMessage<StockReturnsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of stock return items
  *
  * @generated from message Genesis.StockReturnsItemsList
  */
-export declare class StockReturnsItemsList extends Message<StockReturnsItemsList> ***REMOVED***
+export declare class StockReturnsItemsList extends Message<StockReturnsItemsList> {
     /**
      * List of records
      *
@@ -485,14 +485,14 @@ export declare class StockReturnsItemsList extends Message<StockReturnsItemsList
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsItemsList;
     static equals(a: StockReturnsItemsList | PlainMessage<StockReturnsItemsList> | undefined, b: StockReturnsItemsList | PlainMessage<StockReturnsItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.StockReturnItemHistoryRequest
  */
-export declare class StockReturnItemHistoryRequest extends Message<StockReturnItemHistoryRequest> ***REMOVED***
+export declare class StockReturnItemHistoryRequest extends Message<StockReturnItemHistoryRequest> {
     /**
      * Stores the stock return ID
      *
@@ -513,14 +513,14 @@ export declare class StockReturnItemHistoryRequest extends Message<StockReturnIt
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnItemHistoryRequest;
     static equals(a: StockReturnItemHistoryRequest | PlainMessage<StockReturnItemHistoryRequest> | undefined, b: StockReturnItemHistoryRequest | PlainMessage<StockReturnItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the info of a prospective stock return item
  *
  * @generated from message Genesis.StockReturnItemProspectiveInfoRequest
  */
-export declare class StockReturnItemProspectiveInfoRequest extends Message<StockReturnItemProspectiveInfoRequest> ***REMOVED***
+export declare class StockReturnItemProspectiveInfoRequest extends Message<StockReturnItemProspectiveInfoRequest> {
     /**
      * Stores the stock return ID
      *
@@ -541,14 +541,14 @@ export declare class StockReturnItemProspectiveInfoRequest extends Message<Stock
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnItemProspectiveInfoRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnItemProspectiveInfoRequest;
     static equals(a: StockReturnItemProspectiveInfoRequest | PlainMessage<StockReturnItemProspectiveInfoRequest> | undefined, b: StockReturnItemProspectiveInfoRequest | PlainMessage<StockReturnItemProspectiveInfoRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload to retrieve the quantity that has already been added for the specific ref_from, ref_id and family_id
  *
  * @generated from message Genesis.StockReturnsServiceAlreadyAddedQuantityForSourceRequest
  */
-export declare class StockReturnsServiceAlreadyAddedQuantityForSourceRequest extends Message<StockReturnsServiceAlreadyAddedQuantityForSourceRequest> ***REMOVED***
+export declare class StockReturnsServiceAlreadyAddedQuantityForSourceRequest extends Message<StockReturnsServiceAlreadyAddedQuantityForSourceRequest> {
     /**
      * The associated reference
      *
@@ -575,14 +575,14 @@ export declare class StockReturnsServiceAlreadyAddedQuantityForSourceRequest ext
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceAlreadyAddedQuantityForSourceRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceAlreadyAddedQuantityForSourceRequest;
     static equals(a: StockReturnsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<StockReturnsServiceAlreadyAddedQuantityForSourceRequest> | undefined, b: StockReturnsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<StockReturnsServiceAlreadyAddedQuantityForSourceRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.StockReturnsServicePaginationReq
  */
-export declare class StockReturnsServicePaginationReq extends Message<StockReturnsServicePaginationReq> ***REMOVED***
+export declare class StockReturnsServicePaginationReq extends Message<StockReturnsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -627,14 +627,14 @@ export declare class StockReturnsServicePaginationReq extends Message<StockRetur
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServicePaginationReq;
     static equals(a: StockReturnsServicePaginationReq | PlainMessage<StockReturnsServicePaginationReq> | undefined, b: StockReturnsServicePaginationReq | PlainMessage<StockReturnsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.StockReturnsServicePaginationResponse
  */
-export declare class StockReturnsServicePaginationResponse extends Message<StockReturnsServicePaginationResponse> ***REMOVED***
+export declare class StockReturnsServicePaginationResponse extends Message<StockReturnsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -667,14 +667,14 @@ export declare class StockReturnsServicePaginationResponse extends Message<Stock
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServicePaginationResponse;
     static equals(a: StockReturnsServicePaginationResponse | PlainMessage<StockReturnsServicePaginationResponse> | undefined, b: StockReturnsServicePaginationResponse | PlainMessage<StockReturnsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.StockReturnsServiceEntityPaginationReq
  */
-export declare class StockReturnsServiceEntityPaginationReq extends Message<StockReturnsServiceEntityPaginationReq> ***REMOVED***
+export declare class StockReturnsServiceEntityPaginationReq extends Message<StockReturnsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -719,14 +719,14 @@ export declare class StockReturnsServiceEntityPaginationReq extends Message<Stoc
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceEntityPaginationReq;
     static equals(a: StockReturnsServiceEntityPaginationReq | PlainMessage<StockReturnsServiceEntityPaginationReq> | undefined, b: StockReturnsServiceEntityPaginationReq | PlainMessage<StockReturnsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.StockReturnsServiceFilterReq
  */
-export declare class StockReturnsServiceFilterReq extends Message<StockReturnsServiceFilterReq> ***REMOVED***
+export declare class StockReturnsServiceFilterReq extends Message<StockReturnsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -849,14 +849,14 @@ export declare class StockReturnsServiceFilterReq extends Message<StockReturnsSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceFilterReq;
     static equals(a: StockReturnsServiceFilterReq | PlainMessage<StockReturnsServiceFilterReq> | undefined, b: StockReturnsServiceFilterReq | PlainMessage<StockReturnsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.StockReturnsServiceSearchAllReq
  */
-export declare class StockReturnsServiceSearchAllReq extends Message<StockReturnsServiceSearchAllReq> ***REMOVED***
+export declare class StockReturnsServiceSearchAllReq extends Message<StockReturnsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -925,5 +925,5 @@ export declare class StockReturnsServiceSearchAllReq extends Message<StockReturn
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceSearchAllReq;
     static equals(a: StockReturnsServiceSearchAllReq | PlainMessage<StockReturnsServiceSearchAllReq> | undefined, b: StockReturnsServiceSearchAllReq | PlainMessage<StockReturnsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=stock_returns_pb.d.ts.map

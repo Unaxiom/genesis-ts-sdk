@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.PURCHASE_INDENT_SORT_KEY
  */
-export declare enum PURCHASE_INDENT_SORT_KEY ***REMOVED***
+export declare enum PURCHASE_INDENT_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -69,14 +69,14 @@ export declare enum PURCHASE_INDENT_SORT_KEY ***REMOVED***
      * @generated from enum value: PURCHASE_INDENT_SORT_KEY_CONSIGNEE_LOCATION_ID = 12;
      */
     PURCHASE_INDENT_SORT_KEY_CONSIGNEE_LOCATION_ID = 12
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.PurchasesIndentsServiceCreateRequest
  */
-export declare class PurchasesIndentsServiceCreateRequest extends Message<PurchasesIndentsServiceCreateRequest> ***REMOVED***
+export declare class PurchasesIndentsServiceCreateRequest extends Message<PurchasesIndentsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -121,14 +121,14 @@ export declare class PurchasesIndentsServiceCreateRequest extends Message<Purcha
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceCreateRequest;
     static equals(a: PurchasesIndentsServiceCreateRequest | PlainMessage<PurchasesIndentsServiceCreateRequest> | undefined, b: PurchasesIndentsServiceCreateRequest | PlainMessage<PurchasesIndentsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.PurchasesIndentsServiceUpdateRequest
  */
-export declare class PurchasesIndentsServiceUpdateRequest extends Message<PurchasesIndentsServiceUpdateRequest> ***REMOVED***
+export declare class PurchasesIndentsServiceUpdateRequest extends Message<PurchasesIndentsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -173,14 +173,14 @@ export declare class PurchasesIndentsServiceUpdateRequest extends Message<Purcha
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceUpdateRequest;
     static equals(a: PurchasesIndentsServiceUpdateRequest | PlainMessage<PurchasesIndentsServiceUpdateRequest> | undefined, b: PurchasesIndentsServiceUpdateRequest | PlainMessage<PurchasesIndentsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to perform an autofill request
  *
  * @generated from message Genesis.PurchasesIndentsServiceAutofillRequest
  */
-export declare class PurchasesIndentsServiceAutofillRequest extends Message<PurchasesIndentsServiceAutofillRequest> ***REMOVED***
+export declare class PurchasesIndentsServiceAutofillRequest extends Message<PurchasesIndentsServiceAutofillRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -201,14 +201,14 @@ export declare class PurchasesIndentsServiceAutofillRequest extends Message<Purc
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceAutofillRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceAutofillRequest;
     static equals(a: PurchasesIndentsServiceAutofillRequest | PlainMessage<PurchasesIndentsServiceAutofillRequest> | undefined, b: PurchasesIndentsServiceAutofillRequest | PlainMessage<PurchasesIndentsServiceAutofillRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.PurchaseIndent
  */
-export declare class PurchaseIndent extends Message<PurchaseIndent> ***REMOVED***
+export declare class PurchaseIndent extends Message<PurchaseIndent> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -289,14 +289,14 @@ export declare class PurchaseIndent extends Message<PurchaseIndent> ***REMOVED**
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseIndent;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseIndent;
     static equals(a: PurchaseIndent | PlainMessage<PurchaseIndent> | undefined, b: PurchaseIndent | PlainMessage<PurchaseIndent> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a purchase indent
  *
  * @generated from message Genesis.PurchasesIndentsServiceItemCreateRequest
  */
-export declare class PurchasesIndentsServiceItemCreateRequest extends Message<PurchasesIndentsServiceItemCreateRequest> ***REMOVED***
+export declare class PurchasesIndentsServiceItemCreateRequest extends Message<PurchasesIndentsServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -341,14 +341,14 @@ export declare class PurchasesIndentsServiceItemCreateRequest extends Message<Pu
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceItemCreateRequest;
     static equals(a: PurchasesIndentsServiceItemCreateRequest | PlainMessage<PurchasesIndentsServiceItemCreateRequest> | undefined, b: PurchasesIndentsServiceItemCreateRequest | PlainMessage<PurchasesIndentsServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an individual item as part of multiple item addition to a purchase indent
  *
  * @generated from message Genesis.PurchasesIndentsServiceMultipleItemsSingleton
  */
-export declare class PurchasesIndentsServiceMultipleItemsSingleton extends Message<PurchasesIndentsServiceMultipleItemsSingleton> ***REMOVED***
+export declare class PurchasesIndentsServiceMultipleItemsSingleton extends Message<PurchasesIndentsServiceMultipleItemsSingleton> {
     /**
      * Stores the family ID
      *
@@ -381,14 +381,14 @@ export declare class PurchasesIndentsServiceMultipleItemsSingleton extends Messa
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceMultipleItemsSingleton;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceMultipleItemsSingleton;
     static equals(a: PurchasesIndentsServiceMultipleItemsSingleton | PlainMessage<PurchasesIndentsServiceMultipleItemsSingleton> | undefined, b: PurchasesIndentsServiceMultipleItemsSingleton | PlainMessage<PurchasesIndentsServiceMultipleItemsSingleton> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add multiple items to a purchase indent
  *
  * @generated from message Genesis.PurchasesIndentsServiceMultipleItemsCreateRequest
  */
-export declare class PurchasesIndentsServiceMultipleItemsCreateRequest extends Message<PurchasesIndentsServiceMultipleItemsCreateRequest> ***REMOVED***
+export declare class PurchasesIndentsServiceMultipleItemsCreateRequest extends Message<PurchasesIndentsServiceMultipleItemsCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -415,14 +415,14 @@ export declare class PurchasesIndentsServiceMultipleItemsCreateRequest extends M
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceMultipleItemsCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceMultipleItemsCreateRequest;
     static equals(a: PurchasesIndentsServiceMultipleItemsCreateRequest | PlainMessage<PurchasesIndentsServiceMultipleItemsCreateRequest> | undefined, b: PurchasesIndentsServiceMultipleItemsCreateRequest | PlainMessage<PurchasesIndentsServiceMultipleItemsCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a purchase indent
  *
  * @generated from message Genesis.PurchasesIndentsServiceItemUpdateRequest
  */
-export declare class PurchasesIndentsServiceItemUpdateRequest extends Message<PurchasesIndentsServiceItemUpdateRequest> ***REMOVED***
+export declare class PurchasesIndentsServiceItemUpdateRequest extends Message<PurchasesIndentsServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -461,14 +461,14 @@ export declare class PurchasesIndentsServiceItemUpdateRequest extends Message<Pu
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceItemUpdateRequest;
     static equals(a: PurchasesIndentsServiceItemUpdateRequest | PlainMessage<PurchasesIndentsServiceItemUpdateRequest> | undefined, b: PurchasesIndentsServiceItemUpdateRequest | PlainMessage<PurchasesIndentsServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a purchase indent
  *
  * @generated from message Genesis.PurchaseIndentItem
  */
-export declare class PurchaseIndentItem extends Message<PurchaseIndentItem> ***REMOVED***
+export declare class PurchaseIndentItem extends Message<PurchaseIndentItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -537,14 +537,14 @@ export declare class PurchaseIndentItem extends Message<PurchaseIndentItem> ***R
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseIndentItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseIndentItem;
     static equals(a: PurchaseIndentItem | PlainMessage<PurchaseIndentItem> | undefined, b: PurchaseIndentItem | PlainMessage<PurchaseIndentItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of purchases indents
  *
  * @generated from message Genesis.PurchasesIndentsList
  */
-export declare class PurchasesIndentsList extends Message<PurchasesIndentsList> ***REMOVED***
+export declare class PurchasesIndentsList extends Message<PurchasesIndentsList> {
     /**
      * List of records
      *
@@ -559,14 +559,14 @@ export declare class PurchasesIndentsList extends Message<PurchasesIndentsList> 
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsList;
     static equals(a: PurchasesIndentsList | PlainMessage<PurchasesIndentsList> | undefined, b: PurchasesIndentsList | PlainMessage<PurchasesIndentsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of purchase indent items
  *
  * @generated from message Genesis.PurchasesIndentsItemsList
  */
-export declare class PurchasesIndentsItemsList extends Message<PurchasesIndentsItemsList> ***REMOVED***
+export declare class PurchasesIndentsItemsList extends Message<PurchasesIndentsItemsList> {
     /**
      * List of records
      *
@@ -581,14 +581,14 @@ export declare class PurchasesIndentsItemsList extends Message<PurchasesIndentsI
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsItemsList;
     static equals(a: PurchasesIndentsItemsList | PlainMessage<PurchasesIndentsItemsList> | undefined, b: PurchasesIndentsItemsList | PlainMessage<PurchasesIndentsItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.PurchaseIndentItemHistoryRequest
  */
-export declare class PurchaseIndentItemHistoryRequest extends Message<PurchaseIndentItemHistoryRequest> ***REMOVED***
+export declare class PurchaseIndentItemHistoryRequest extends Message<PurchaseIndentItemHistoryRequest> {
     /**
      * Stores the purchase indent ID
      *
@@ -609,14 +609,14 @@ export declare class PurchaseIndentItemHistoryRequest extends Message<PurchaseIn
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseIndentItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseIndentItemHistoryRequest;
     static equals(a: PurchaseIndentItemHistoryRequest | PlainMessage<PurchaseIndentItemHistoryRequest> | undefined, b: PurchaseIndentItemHistoryRequest | PlainMessage<PurchaseIndentItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the info of a prospective purchase indent item
  *
  * @generated from message Genesis.PurchaseIndentItemProspectiveInfoRequest
  */
-export declare class PurchaseIndentItemProspectiveInfoRequest extends Message<PurchaseIndentItemProspectiveInfoRequest> ***REMOVED***
+export declare class PurchaseIndentItemProspectiveInfoRequest extends Message<PurchaseIndentItemProspectiveInfoRequest> {
     /**
      * Stores the purchase indent ID
      *
@@ -637,14 +637,14 @@ export declare class PurchaseIndentItemProspectiveInfoRequest extends Message<Pu
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseIndentItemProspectiveInfoRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseIndentItemProspectiveInfoRequest;
     static equals(a: PurchaseIndentItemProspectiveInfoRequest | PlainMessage<PurchaseIndentItemProspectiveInfoRequest> | undefined, b: PurchaseIndentItemProspectiveInfoRequest | PlainMessage<PurchaseIndentItemProspectiveInfoRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.PurchasesIndentsServicePaginationReq
  */
-export declare class PurchasesIndentsServicePaginationReq extends Message<PurchasesIndentsServicePaginationReq> ***REMOVED***
+export declare class PurchasesIndentsServicePaginationReq extends Message<PurchasesIndentsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -689,14 +689,14 @@ export declare class PurchasesIndentsServicePaginationReq extends Message<Purcha
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServicePaginationReq;
     static equals(a: PurchasesIndentsServicePaginationReq | PlainMessage<PurchasesIndentsServicePaginationReq> | undefined, b: PurchasesIndentsServicePaginationReq | PlainMessage<PurchasesIndentsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.PurchasesIndentsServicePaginationResponse
  */
-export declare class PurchasesIndentsServicePaginationResponse extends Message<PurchasesIndentsServicePaginationResponse> ***REMOVED***
+export declare class PurchasesIndentsServicePaginationResponse extends Message<PurchasesIndentsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -729,14 +729,14 @@ export declare class PurchasesIndentsServicePaginationResponse extends Message<P
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServicePaginationResponse;
     static equals(a: PurchasesIndentsServicePaginationResponse | PlainMessage<PurchasesIndentsServicePaginationResponse> | undefined, b: PurchasesIndentsServicePaginationResponse | PlainMessage<PurchasesIndentsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.PurchasesIndentsServiceEntityPaginationReq
  */
-export declare class PurchasesIndentsServiceEntityPaginationReq extends Message<PurchasesIndentsServiceEntityPaginationReq> ***REMOVED***
+export declare class PurchasesIndentsServiceEntityPaginationReq extends Message<PurchasesIndentsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -781,14 +781,14 @@ export declare class PurchasesIndentsServiceEntityPaginationReq extends Message<
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceEntityPaginationReq;
     static equals(a: PurchasesIndentsServiceEntityPaginationReq | PlainMessage<PurchasesIndentsServiceEntityPaginationReq> | undefined, b: PurchasesIndentsServiceEntityPaginationReq | PlainMessage<PurchasesIndentsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.PurchasesIndentsServiceFilterReq
  */
-export declare class PurchasesIndentsServiceFilterReq extends Message<PurchasesIndentsServiceFilterReq> ***REMOVED***
+export declare class PurchasesIndentsServiceFilterReq extends Message<PurchasesIndentsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -923,14 +923,14 @@ export declare class PurchasesIndentsServiceFilterReq extends Message<PurchasesI
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceFilterReq;
     static equals(a: PurchasesIndentsServiceFilterReq | PlainMessage<PurchasesIndentsServiceFilterReq> | undefined, b: PurchasesIndentsServiceFilterReq | PlainMessage<PurchasesIndentsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.PurchasesIndentsServiceSearchAllReq
  */
-export declare class PurchasesIndentsServiceSearchAllReq extends Message<PurchasesIndentsServiceSearchAllReq> ***REMOVED***
+export declare class PurchasesIndentsServiceSearchAllReq extends Message<PurchasesIndentsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -993,5 +993,5 @@ export declare class PurchasesIndentsServiceSearchAllReq extends Message<Purchas
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesIndentsServiceSearchAllReq;
     static equals(a: PurchasesIndentsServiceSearchAllReq | PlainMessage<PurchasesIndentsServiceSearchAllReq> | undefined, b: PurchasesIndentsServiceSearchAllReq | PlainMessage<PurchasesIndentsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=purchases_indents_pb.d.ts.map

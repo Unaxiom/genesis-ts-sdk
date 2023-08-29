@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -14,7 +14,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.GOODS_DISPATCH_SORT_KEY
  */
-export enum GOODS_DISPATCH_SORT_KEY ***REMOVED***
+export enum GOODS_DISPATCH_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -77,18 +77,18 @@ export enum GOODS_DISPATCH_SORT_KEY ***REMOVED***
    * @generated from enum value: GOODS_DISPATCH_SORT_KEY_FINAL_REF_NUMBER = 11;
    */
   GOODS_DISPATCH_SORT_KEY_FINAL_REF_NUMBER = 11,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY)
 proto3.util.setEnumType(GOODS_DISPATCH_SORT_KEY, "Genesis.GOODS_DISPATCH_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "GOODS_DISPATCH_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "GOODS_DISPATCH_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "GOODS_DISPATCH_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "GOODS_DISPATCH_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "GOODS_DISPATCH_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "GOODS_DISPATCH_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "GOODS_DISPATCH_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "GOODS_DISPATCH_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "GOODS_DISPATCH_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
+  { no: 0, name: "GOODS_DISPATCH_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "GOODS_DISPATCH_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "GOODS_DISPATCH_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "GOODS_DISPATCH_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "GOODS_DISPATCH_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "GOODS_DISPATCH_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "GOODS_DISPATCH_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "GOODS_DISPATCH_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "GOODS_DISPATCH_SORT_KEY_FINAL_REF_NUMBER" },
 ]);
 
 /**
@@ -97,7 +97,7 @@ proto3.util.setEnumType(GOODS_DISPATCH_SORT_KEY, "Genesis.GOODS_DISPATCH_SORT_KE
  *
  * @generated from enum Genesis.GOODS_DISPATCH_BILLING_STATUS
  */
-export enum GOODS_DISPATCH_BILLING_STATUS ***REMOVED***
+export enum GOODS_DISPATCH_BILLING_STATUS {
   /**
    * Any billing status
    *
@@ -118,12 +118,12 @@ export enum GOODS_DISPATCH_BILLING_STATUS ***REMOVED***
    * @generated from enum value: GOODS_DISPATCH_BILLING_STATUS_UNBILLED = 2;
    */
   GOODS_DISPATCH_BILLING_STATUS_UNBILLED = 2,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS)
 proto3.util.setEnumType(GOODS_DISPATCH_BILLING_STATUS, "Genesis.GOODS_DISPATCH_BILLING_STATUS", [
-  ***REMOVED*** no: 0, name: "GOODS_DISPATCH_BILLING_STATUS_ANY_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "GOODS_DISPATCH_BILLING_STATUS_BILLED" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "GOODS_DISPATCH_BILLING_STATUS_UNBILLED" ***REMOVED***,
+  { no: 0, name: "GOODS_DISPATCH_BILLING_STATUS_ANY_UNSPECIFIED" },
+  { no: 1, name: "GOODS_DISPATCH_BILLING_STATUS_BILLED" },
+  { no: 2, name: "GOODS_DISPATCH_BILLING_STATUS_UNBILLED" },
 ]);
 
 /**
@@ -132,7 +132,7 @@ proto3.util.setEnumType(GOODS_DISPATCH_BILLING_STATUS, "Genesis.GOODS_DISPATCH_B
  *
  * @generated from message Genesis.GoodsDispatchesServiceCreateRequest
  */
-export class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatchesServiceCreateRequest> ***REMOVED***
+export class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatchesServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -182,39 +182,39 @@ export class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatches
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<GoodsDispatchesServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceCreateRequest {
     return new GoodsDispatchesServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceCreateRequest {
     return new GoodsDispatchesServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceCreateRequest {
     return new GoodsDispatchesServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesServiceCreateRequest | PlainMessage<GoodsDispatchesServiceCreateRequest> | undefined, b: GoodsDispatchesServiceCreateRequest | PlainMessage<GoodsDispatchesServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesServiceCreateRequest | PlainMessage<GoodsDispatchesServiceCreateRequest> | undefined, b: GoodsDispatchesServiceCreateRequest | PlainMessage<GoodsDispatchesServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -222,7 +222,7 @@ export class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatches
  *
  * @generated from message Genesis.GoodsDispatchesServiceUpdateRequest
  */
-export class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDispatchesServiceUpdateRequest> ***REMOVED***
+export class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDispatchesServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -265,38 +265,38 @@ export class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDispatches
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<GoodsDispatchesServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceUpdateRequest {
     return new GoodsDispatchesServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceUpdateRequest {
     return new GoodsDispatchesServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceUpdateRequest {
     return new GoodsDispatchesServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesServiceUpdateRequest | PlainMessage<GoodsDispatchesServiceUpdateRequest> | undefined, b: GoodsDispatchesServiceUpdateRequest | PlainMessage<GoodsDispatchesServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesServiceUpdateRequest | PlainMessage<GoodsDispatchesServiceUpdateRequest> | undefined, b: GoodsDispatchesServiceUpdateRequest | PlainMessage<GoodsDispatchesServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -304,7 +304,7 @@ export class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDispatches
  *
  * @generated from message Genesis.GoodsDispatchesServiceAutofillRequest
  */
-export class GoodsDispatchesServiceAutofillRequest extends Message<GoodsDispatchesServiceAutofillRequest> ***REMOVED***
+export class GoodsDispatchesServiceAutofillRequest extends Message<GoodsDispatchesServiceAutofillRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -326,35 +326,35 @@ export class GoodsDispatchesServiceAutofillRequest extends Message<GoodsDispatch
    */
   splitIntoUnitQuantity = false;
 
-  constructor(data?: PartialMessage<GoodsDispatchesServiceAutofillRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesServiceAutofillRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesServiceAutofillRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "split_into_unit_quantity", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "split_into_unit_quantity", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceAutofillRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceAutofillRequest {
     return new GoodsDispatchesServiceAutofillRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceAutofillRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceAutofillRequest {
     return new GoodsDispatchesServiceAutofillRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceAutofillRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceAutofillRequest {
     return new GoodsDispatchesServiceAutofillRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesServiceAutofillRequest | PlainMessage<GoodsDispatchesServiceAutofillRequest> | undefined, b: GoodsDispatchesServiceAutofillRequest | PlainMessage<GoodsDispatchesServiceAutofillRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesServiceAutofillRequest | PlainMessage<GoodsDispatchesServiceAutofillRequest> | undefined, b: GoodsDispatchesServiceAutofillRequest | PlainMessage<GoodsDispatchesServiceAutofillRequest> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesServiceAutofillRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -362,7 +362,7 @@ export class GoodsDispatchesServiceAutofillRequest extends Message<GoodsDispatch
  *
  * @generated from message Genesis.GoodsDispatch
  */
-export class GoodsDispatch extends Message<GoodsDispatch> ***REMOVED***
+export class GoodsDispatch extends Message<GoodsDispatch> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -454,45 +454,45 @@ export class GoodsDispatch extends Message<GoodsDispatch> ***REMOVED***
    */
   formData: FormFieldDatum[] = [];
 
-  constructor(data?: PartialMessage<GoodsDispatch>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatch>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatch";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "list", kind: "message", T: GoodsDispatchItem, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "list", kind: "message", T: GoodsDispatchItem, repeated: true },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatch ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatch {
     return new GoodsDispatch().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatch ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatch {
     return new GoodsDispatch().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatch ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatch {
     return new GoodsDispatch().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatch | PlainMessage<GoodsDispatch> | undefined, b: GoodsDispatch | PlainMessage<GoodsDispatch> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatch | PlainMessage<GoodsDispatch> | undefined, b: GoodsDispatch | PlainMessage<GoodsDispatch> | undefined): boolean {
     return proto3.util.equals(GoodsDispatch, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -500,7 +500,7 @@ export class GoodsDispatch extends Message<GoodsDispatch> ***REMOVED***
  *
  * @generated from message Genesis.GoodsDispatchesServiceItemCreateRequest
  */
-export class GoodsDispatchesServiceItemCreateRequest extends Message<GoodsDispatchesServiceItemCreateRequest> ***REMOVED***
+export class GoodsDispatchesServiceItemCreateRequest extends Message<GoodsDispatchesServiceItemCreateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -557,40 +557,40 @@ export class GoodsDispatchesServiceItemCreateRequest extends Message<GoodsDispat
    */
   clientFamilyCode = "";
 
-  constructor(data?: PartialMessage<GoodsDispatchesServiceItemCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesServiceItemCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "goods_dispatch_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "client_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "client_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "goods_dispatch_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "client_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "client_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceItemCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceItemCreateRequest {
     return new GoodsDispatchesServiceItemCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceItemCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceItemCreateRequest {
     return new GoodsDispatchesServiceItemCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceItemCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceItemCreateRequest {
     return new GoodsDispatchesServiceItemCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesServiceItemCreateRequest | PlainMessage<GoodsDispatchesServiceItemCreateRequest> | undefined, b: GoodsDispatchesServiceItemCreateRequest | PlainMessage<GoodsDispatchesServiceItemCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesServiceItemCreateRequest | PlainMessage<GoodsDispatchesServiceItemCreateRequest> | undefined, b: GoodsDispatchesServiceItemCreateRequest | PlainMessage<GoodsDispatchesServiceItemCreateRequest> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesServiceItemCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -598,7 +598,7 @@ export class GoodsDispatchesServiceItemCreateRequest extends Message<GoodsDispat
  *
  * @generated from message Genesis.GoodsDispatchesServiceItemUpdateRequest
  */
-export class GoodsDispatchesServiceItemUpdateRequest extends Message<GoodsDispatchesServiceItemUpdateRequest> ***REMOVED***
+export class GoodsDispatchesServiceItemUpdateRequest extends Message<GoodsDispatchesServiceItemUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -648,39 +648,39 @@ export class GoodsDispatchesServiceItemUpdateRequest extends Message<GoodsDispat
    */
   clientFamilyCode = "";
 
-  constructor(data?: PartialMessage<GoodsDispatchesServiceItemUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesServiceItemUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "client_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "client_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "client_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "client_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceItemUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceItemUpdateRequest {
     return new GoodsDispatchesServiceItemUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceItemUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceItemUpdateRequest {
     return new GoodsDispatchesServiceItemUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceItemUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceItemUpdateRequest {
     return new GoodsDispatchesServiceItemUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesServiceItemUpdateRequest | PlainMessage<GoodsDispatchesServiceItemUpdateRequest> | undefined, b: GoodsDispatchesServiceItemUpdateRequest | PlainMessage<GoodsDispatchesServiceItemUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesServiceItemUpdateRequest | PlainMessage<GoodsDispatchesServiceItemUpdateRequest> | undefined, b: GoodsDispatchesServiceItemUpdateRequest | PlainMessage<GoodsDispatchesServiceItemUpdateRequest> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesServiceItemUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -688,7 +688,7 @@ export class GoodsDispatchesServiceItemUpdateRequest extends Message<GoodsDispat
  *
  * @generated from message Genesis.GoodsDispatchItem
  */
-export class GoodsDispatchItem extends Message<GoodsDispatchItem> ***REMOVED***
+export class GoodsDispatchItem extends Message<GoodsDispatchItem> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -773,44 +773,44 @@ export class GoodsDispatchItem extends Message<GoodsDispatchItem> ***REMOVED***
    */
   clientFamilyCode = "";
 
-  constructor(data?: PartialMessage<GoodsDispatchItem>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchItem>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchItem";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "goods_dispatch_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "client_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "client_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "goods_dispatch_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "client_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "client_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchItem ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchItem {
     return new GoodsDispatchItem().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchItem ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchItem {
     return new GoodsDispatchItem().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchItem ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchItem {
     return new GoodsDispatchItem().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchItem | PlainMessage<GoodsDispatchItem> | undefined, b: GoodsDispatchItem | PlainMessage<GoodsDispatchItem> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchItem | PlainMessage<GoodsDispatchItem> | undefined, b: GoodsDispatchItem | PlainMessage<GoodsDispatchItem> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchItem, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -818,7 +818,7 @@ export class GoodsDispatchItem extends Message<GoodsDispatchItem> ***REMOVED***
  *
  * @generated from message Genesis.GoodsDispatchesList
  */
-export class GoodsDispatchesList extends Message<GoodsDispatchesList> ***REMOVED***
+export class GoodsDispatchesList extends Message<GoodsDispatchesList> {
   /**
    * List of records
    *
@@ -826,33 +826,33 @@ export class GoodsDispatchesList extends Message<GoodsDispatchesList> ***REMOVED
    */
   list: GoodsDispatch[] = [];
 
-  constructor(data?: PartialMessage<GoodsDispatchesList>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: GoodsDispatch, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: GoodsDispatch, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesList {
     return new GoodsDispatchesList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesList {
     return new GoodsDispatchesList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesList {
     return new GoodsDispatchesList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesList | PlainMessage<GoodsDispatchesList> | undefined, b: GoodsDispatchesList | PlainMessage<GoodsDispatchesList> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesList | PlainMessage<GoodsDispatchesList> | undefined, b: GoodsDispatchesList | PlainMessage<GoodsDispatchesList> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -860,7 +860,7 @@ export class GoodsDispatchesList extends Message<GoodsDispatchesList> ***REMOVED
  *
  * @generated from message Genesis.GoodsDispatchesItemsList
  */
-export class GoodsDispatchesItemsList extends Message<GoodsDispatchesItemsList> ***REMOVED***
+export class GoodsDispatchesItemsList extends Message<GoodsDispatchesItemsList> {
   /**
    * List of records
    *
@@ -868,33 +868,33 @@ export class GoodsDispatchesItemsList extends Message<GoodsDispatchesItemsList> 
    */
   list: GoodsDispatchItem[] = [];
 
-  constructor(data?: PartialMessage<GoodsDispatchesItemsList>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesItemsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesItemsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: GoodsDispatchItem, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: GoodsDispatchItem, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesItemsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesItemsList {
     return new GoodsDispatchesItemsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesItemsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesItemsList {
     return new GoodsDispatchesItemsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesItemsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesItemsList {
     return new GoodsDispatchesItemsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesItemsList | PlainMessage<GoodsDispatchesItemsList> | undefined, b: GoodsDispatchesItemsList | PlainMessage<GoodsDispatchesItemsList> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesItemsList | PlainMessage<GoodsDispatchesItemsList> | undefined, b: GoodsDispatchesItemsList | PlainMessage<GoodsDispatchesItemsList> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesItemsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -902,7 +902,7 @@ export class GoodsDispatchesItemsList extends Message<GoodsDispatchesItemsList> 
  *
  * @generated from message Genesis.GoodsDispatchItemHistoryRequest
  */
-export class GoodsDispatchItemHistoryRequest extends Message<GoodsDispatchItemHistoryRequest> ***REMOVED***
+export class GoodsDispatchItemHistoryRequest extends Message<GoodsDispatchItemHistoryRequest> {
   /**
    * Stores the goods dispatch ID
    *
@@ -917,34 +917,34 @@ export class GoodsDispatchItemHistoryRequest extends Message<GoodsDispatchItemHi
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<GoodsDispatchItemHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchItemHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchItemHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "goods_dispatch_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "goods_dispatch_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchItemHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchItemHistoryRequest {
     return new GoodsDispatchItemHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchItemHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchItemHistoryRequest {
     return new GoodsDispatchItemHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchItemHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchItemHistoryRequest {
     return new GoodsDispatchItemHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchItemHistoryRequest | PlainMessage<GoodsDispatchItemHistoryRequest> | undefined, b: GoodsDispatchItemHistoryRequest | PlainMessage<GoodsDispatchItemHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchItemHistoryRequest | PlainMessage<GoodsDispatchItemHistoryRequest> | undefined, b: GoodsDispatchItemHistoryRequest | PlainMessage<GoodsDispatchItemHistoryRequest> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchItemHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -952,7 +952,7 @@ export class GoodsDispatchItemHistoryRequest extends Message<GoodsDispatchItemHi
  *
  * @generated from message Genesis.GoodsDispatchItemProspectiveInfoRequest
  */
-export class GoodsDispatchItemProspectiveInfoRequest extends Message<GoodsDispatchItemProspectiveInfoRequest> ***REMOVED***
+export class GoodsDispatchItemProspectiveInfoRequest extends Message<GoodsDispatchItemProspectiveInfoRequest> {
   /**
    * Stores the goods dispatch ID
    *
@@ -967,34 +967,34 @@ export class GoodsDispatchItemProspectiveInfoRequest extends Message<GoodsDispat
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<GoodsDispatchItemProspectiveInfoRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchItemProspectiveInfoRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchItemProspectiveInfoRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "goods_dispatch_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "goods_dispatch_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchItemProspectiveInfoRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchItemProspectiveInfoRequest {
     return new GoodsDispatchItemProspectiveInfoRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchItemProspectiveInfoRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchItemProspectiveInfoRequest {
     return new GoodsDispatchItemProspectiveInfoRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchItemProspectiveInfoRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchItemProspectiveInfoRequest {
     return new GoodsDispatchItemProspectiveInfoRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchItemProspectiveInfoRequest | PlainMessage<GoodsDispatchItemProspectiveInfoRequest> | undefined, b: GoodsDispatchItemProspectiveInfoRequest | PlainMessage<GoodsDispatchItemProspectiveInfoRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchItemProspectiveInfoRequest | PlainMessage<GoodsDispatchItemProspectiveInfoRequest> | undefined, b: GoodsDispatchItemProspectiveInfoRequest | PlainMessage<GoodsDispatchItemProspectiveInfoRequest> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchItemProspectiveInfoRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1002,7 +1002,7 @@ export class GoodsDispatchItemProspectiveInfoRequest extends Message<GoodsDispat
  *
  * @generated from message Genesis.GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest
  */
-export class GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest extends Message<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest> ***REMOVED***
+export class GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest extends Message<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest> {
   /**
    * The associated reference
    *
@@ -1024,35 +1024,35 @@ export class GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest extends 
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest {
     return new GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest {
     return new GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest {
     return new GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest> | undefined, b: GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest> | undefined, b: GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1060,7 +1060,7 @@ export class GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest extends 
  *
  * @generated from message Genesis.GoodsDispatchesServicePaginationReq
  */
-export class GoodsDispatchesServicePaginationReq extends Message<GoodsDispatchesServicePaginationReq> ***REMOVED***
+export class GoodsDispatchesServicePaginationReq extends Message<GoodsDispatchesServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1103,38 +1103,38 @@ export class GoodsDispatchesServicePaginationReq extends Message<GoodsDispatches
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<GoodsDispatchesServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServicePaginationReq {
     return new GoodsDispatchesServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServicePaginationReq {
     return new GoodsDispatchesServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServicePaginationReq {
     return new GoodsDispatchesServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesServicePaginationReq | PlainMessage<GoodsDispatchesServicePaginationReq> | undefined, b: GoodsDispatchesServicePaginationReq | PlainMessage<GoodsDispatchesServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesServicePaginationReq | PlainMessage<GoodsDispatchesServicePaginationReq> | undefined, b: GoodsDispatchesServicePaginationReq | PlainMessage<GoodsDispatchesServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1142,7 +1142,7 @@ export class GoodsDispatchesServicePaginationReq extends Message<GoodsDispatches
  *
  * @generated from message Genesis.GoodsDispatchesServicePaginationResponse
  */
-export class GoodsDispatchesServicePaginationResponse extends Message<GoodsDispatchesServicePaginationResponse> ***REMOVED***
+export class GoodsDispatchesServicePaginationResponse extends Message<GoodsDispatchesServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -1171,36 +1171,36 @@ export class GoodsDispatchesServicePaginationResponse extends Message<GoodsDispa
    */
   payload: GoodsDispatch[] = [];
 
-  constructor(data?: PartialMessage<GoodsDispatchesServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: GoodsDispatch, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: GoodsDispatch, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServicePaginationResponse {
     return new GoodsDispatchesServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServicePaginationResponse {
     return new GoodsDispatchesServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServicePaginationResponse {
     return new GoodsDispatchesServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesServicePaginationResponse | PlainMessage<GoodsDispatchesServicePaginationResponse> | undefined, b: GoodsDispatchesServicePaginationResponse | PlainMessage<GoodsDispatchesServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesServicePaginationResponse | PlainMessage<GoodsDispatchesServicePaginationResponse> | undefined, b: GoodsDispatchesServicePaginationResponse | PlainMessage<GoodsDispatchesServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1208,7 +1208,7 @@ export class GoodsDispatchesServicePaginationResponse extends Message<GoodsDispa
  *
  * @generated from message Genesis.GoodsDispatchesServiceEntityPaginationReq
  */
-export class GoodsDispatchesServiceEntityPaginationReq extends Message<GoodsDispatchesServiceEntityPaginationReq> ***REMOVED***
+export class GoodsDispatchesServiceEntityPaginationReq extends Message<GoodsDispatchesServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1251,38 +1251,38 @@ export class GoodsDispatchesServiceEntityPaginationReq extends Message<GoodsDisp
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<GoodsDispatchesServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceEntityPaginationReq {
     return new GoodsDispatchesServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceEntityPaginationReq {
     return new GoodsDispatchesServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceEntityPaginationReq {
     return new GoodsDispatchesServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesServiceEntityPaginationReq | PlainMessage<GoodsDispatchesServiceEntityPaginationReq> | undefined, b: GoodsDispatchesServiceEntityPaginationReq | PlainMessage<GoodsDispatchesServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesServiceEntityPaginationReq | PlainMessage<GoodsDispatchesServiceEntityPaginationReq> | undefined, b: GoodsDispatchesServiceEntityPaginationReq | PlainMessage<GoodsDispatchesServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1290,7 +1290,7 @@ export class GoodsDispatchesServiceEntityPaginationReq extends Message<GoodsDisp
  *
  * @generated from message Genesis.GoodsDispatchesServiceFilterReq
  */
-export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServiceFilterReq> ***REMOVED***
+export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1431,52 +1431,52 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    */
   billingStatus = GOODS_DISPATCH_BILLING_STATUS.GOODS_DISPATCH_BILLING_STATUS_ANY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<GoodsDispatchesServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceFilterReq {
     return new GoodsDispatchesServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceFilterReq {
     return new GoodsDispatchesServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceFilterReq {
     return new GoodsDispatchesServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesServiceFilterReq | PlainMessage<GoodsDispatchesServiceFilterReq> | undefined, b: GoodsDispatchesServiceFilterReq | PlainMessage<GoodsDispatchesServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesServiceFilterReq | PlainMessage<GoodsDispatchesServiceFilterReq> | undefined, b: GoodsDispatchesServiceFilterReq | PlainMessage<GoodsDispatchesServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1484,7 +1484,7 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
  *
  * @generated from message Genesis.GoodsDispatchesServiceSearchAllReq
  */
-export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesServiceSearchAllReq> ***REMOVED***
+export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1562,41 +1562,41 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
    */
   billingStatus = GOODS_DISPATCH_BILLING_STATUS.GOODS_DISPATCH_BILLING_STATUS_ANY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<GoodsDispatchesServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsDispatchesServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsDispatchesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceSearchAllReq {
     return new GoodsDispatchesServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceSearchAllReq {
     return new GoodsDispatchesServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceSearchAllReq {
     return new GoodsDispatchesServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsDispatchesServiceSearchAllReq | PlainMessage<GoodsDispatchesServiceSearchAllReq> | undefined, b: GoodsDispatchesServiceSearchAllReq | PlainMessage<GoodsDispatchesServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsDispatchesServiceSearchAllReq | PlainMessage<GoodsDispatchesServiceSearchAllReq> | undefined, b: GoodsDispatchesServiceSearchAllReq | PlainMessage<GoodsDispatchesServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(GoodsDispatchesServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

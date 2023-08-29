@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -13,7 +13,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.SHIFT_SORT_KEY
  */
-export enum SHIFT_SORT_KEY ***REMOVED***
+export enum SHIFT_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -90,20 +90,20 @@ export enum SHIFT_SORT_KEY ***REMOVED***
    * @generated from enum value: SHIFT_SORT_KEY_END_AT = 13;
    */
   SHIFT_SORT_KEY_END_AT = 13,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(SHIFT_SORT_KEY)
 proto3.util.setEnumType(SHIFT_SORT_KEY, "Genesis.SHIFT_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "SHIFT_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "SHIFT_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "SHIFT_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "SHIFT_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "SHIFT_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "SHIFT_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "SHIFT_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "SHIFT_SORT_KEY_NAME" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "SHIFT_SORT_KEY_CODE" ***REMOVED***,
-  ***REMOVED*** no: 12, name: "SHIFT_SORT_KEY_START_AT" ***REMOVED***,
-  ***REMOVED*** no: 13, name: "SHIFT_SORT_KEY_END_AT" ***REMOVED***,
+  { no: 0, name: "SHIFT_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "SHIFT_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "SHIFT_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "SHIFT_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "SHIFT_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "SHIFT_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "SHIFT_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "SHIFT_SORT_KEY_NAME" },
+  { no: 11, name: "SHIFT_SORT_KEY_CODE" },
+  { no: 12, name: "SHIFT_SORT_KEY_START_AT" },
+  { no: 13, name: "SHIFT_SORT_KEY_END_AT" },
 ]);
 
 /**
@@ -112,7 +112,7 @@ proto3.util.setEnumType(SHIFT_SORT_KEY, "Genesis.SHIFT_SORT_KEY", [
  *
  * @generated from message Genesis.ShiftsServiceCreateRequest
  */
-export class ShiftsServiceCreateRequest extends Message<ShiftsServiceCreateRequest> ***REMOVED***
+export class ShiftsServiceCreateRequest extends Message<ShiftsServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -183,42 +183,42 @@ export class ShiftsServiceCreateRequest extends Message<ShiftsServiceCreateReque
    */
   timezone = "";
 
-  constructor(data?: PartialMessage<ShiftsServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ShiftsServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ShiftsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "start_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "end_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "day_of_week", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "timezone", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "start_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "end_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "day_of_week", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "timezone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServiceCreateRequest {
     return new ShiftsServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServiceCreateRequest {
     return new ShiftsServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServiceCreateRequest {
     return new ShiftsServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ShiftsServiceCreateRequest | PlainMessage<ShiftsServiceCreateRequest> | undefined, b: ShiftsServiceCreateRequest | PlainMessage<ShiftsServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ShiftsServiceCreateRequest | PlainMessage<ShiftsServiceCreateRequest> | undefined, b: ShiftsServiceCreateRequest | PlainMessage<ShiftsServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(ShiftsServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -226,7 +226,7 @@ export class ShiftsServiceCreateRequest extends Message<ShiftsServiceCreateReque
  *
  * @generated from message Genesis.ShiftsServiceUpdateRequest
  */
-export class ShiftsServiceUpdateRequest extends Message<ShiftsServiceUpdateRequest> ***REMOVED***
+export class ShiftsServiceUpdateRequest extends Message<ShiftsServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -304,43 +304,43 @@ export class ShiftsServiceUpdateRequest extends Message<ShiftsServiceUpdateReque
    */
   timezone = "";
 
-  constructor(data?: PartialMessage<ShiftsServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ShiftsServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ShiftsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "start_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "end_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "day_of_week", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "timezone", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "start_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "end_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "day_of_week", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "timezone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServiceUpdateRequest {
     return new ShiftsServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServiceUpdateRequest {
     return new ShiftsServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServiceUpdateRequest {
     return new ShiftsServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ShiftsServiceUpdateRequest | PlainMessage<ShiftsServiceUpdateRequest> | undefined, b: ShiftsServiceUpdateRequest | PlainMessage<ShiftsServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ShiftsServiceUpdateRequest | PlainMessage<ShiftsServiceUpdateRequest> | undefined, b: ShiftsServiceUpdateRequest | PlainMessage<ShiftsServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(ShiftsServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -348,7 +348,7 @@ export class ShiftsServiceUpdateRequest extends Message<ShiftsServiceUpdateReque
  *
  * @generated from message Genesis.Shift
  */
-export class Shift extends Message<Shift> ***REMOVED***
+export class Shift extends Message<Shift> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -447,46 +447,46 @@ export class Shift extends Message<Shift> ***REMOVED***
    */
   timezone = "";
 
-  constructor(data?: PartialMessage<Shift>) ***REMOVED***
+  constructor(data?: PartialMessage<Shift>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.Shift";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "start_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "end_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "day_of_week", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "timezone", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "start_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "end_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "day_of_week", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "timezone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Shift ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Shift {
     return new Shift().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Shift ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Shift {
     return new Shift().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Shift ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Shift {
     return new Shift().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Shift | PlainMessage<Shift> | undefined, b: Shift | PlainMessage<Shift> | undefined): boolean ***REMOVED***
+  static equals(a: Shift | PlainMessage<Shift> | undefined, b: Shift | PlainMessage<Shift> | undefined): boolean {
     return proto3.util.equals(Shift, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -494,7 +494,7 @@ export class Shift extends Message<Shift> ***REMOVED***
  *
  * @generated from message Genesis.ShiftsList
  */
-export class ShiftsList extends Message<ShiftsList> ***REMOVED***
+export class ShiftsList extends Message<ShiftsList> {
   /**
    * List of records
    *
@@ -502,33 +502,33 @@ export class ShiftsList extends Message<ShiftsList> ***REMOVED***
    */
   list: Shift[] = [];
 
-  constructor(data?: PartialMessage<ShiftsList>) ***REMOVED***
+  constructor(data?: PartialMessage<ShiftsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ShiftsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: Shift, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: Shift, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsList {
     return new ShiftsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsList {
     return new ShiftsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsList {
     return new ShiftsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ShiftsList | PlainMessage<ShiftsList> | undefined, b: ShiftsList | PlainMessage<ShiftsList> | undefined): boolean ***REMOVED***
+  static equals(a: ShiftsList | PlainMessage<ShiftsList> | undefined, b: ShiftsList | PlainMessage<ShiftsList> | undefined): boolean {
     return proto3.util.equals(ShiftsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -536,7 +536,7 @@ export class ShiftsList extends Message<ShiftsList> ***REMOVED***
  *
  * @generated from message Genesis.ShiftsServicePaginationReq
  */
-export class ShiftsServicePaginationReq extends Message<ShiftsServicePaginationReq> ***REMOVED***
+export class ShiftsServicePaginationReq extends Message<ShiftsServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -579,38 +579,38 @@ export class ShiftsServicePaginationReq extends Message<ShiftsServicePaginationR
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<ShiftsServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<ShiftsServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ShiftsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SHIFT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SHIFT_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServicePaginationReq {
     return new ShiftsServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServicePaginationReq {
     return new ShiftsServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServicePaginationReq {
     return new ShiftsServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ShiftsServicePaginationReq | PlainMessage<ShiftsServicePaginationReq> | undefined, b: ShiftsServicePaginationReq | PlainMessage<ShiftsServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: ShiftsServicePaginationReq | PlainMessage<ShiftsServicePaginationReq> | undefined, b: ShiftsServicePaginationReq | PlainMessage<ShiftsServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(ShiftsServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -618,7 +618,7 @@ export class ShiftsServicePaginationReq extends Message<ShiftsServicePaginationR
  *
  * @generated from message Genesis.ShiftsServicePaginationResponse
  */
-export class ShiftsServicePaginationResponse extends Message<ShiftsServicePaginationResponse> ***REMOVED***
+export class ShiftsServicePaginationResponse extends Message<ShiftsServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -647,36 +647,36 @@ export class ShiftsServicePaginationResponse extends Message<ShiftsServicePagina
    */
   payload: Shift[] = [];
 
-  constructor(data?: PartialMessage<ShiftsServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<ShiftsServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ShiftsServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: Shift, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: Shift, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServicePaginationResponse {
     return new ShiftsServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServicePaginationResponse {
     return new ShiftsServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServicePaginationResponse {
     return new ShiftsServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ShiftsServicePaginationResponse | PlainMessage<ShiftsServicePaginationResponse> | undefined, b: ShiftsServicePaginationResponse | PlainMessage<ShiftsServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: ShiftsServicePaginationResponse | PlainMessage<ShiftsServicePaginationResponse> | undefined, b: ShiftsServicePaginationResponse | PlainMessage<ShiftsServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(ShiftsServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -684,7 +684,7 @@ export class ShiftsServicePaginationResponse extends Message<ShiftsServicePagina
  *
  * @generated from message Genesis.ShiftsServiceEntityPaginationReq
  */
-export class ShiftsServiceEntityPaginationReq extends Message<ShiftsServiceEntityPaginationReq> ***REMOVED***
+export class ShiftsServiceEntityPaginationReq extends Message<ShiftsServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -727,38 +727,38 @@ export class ShiftsServiceEntityPaginationReq extends Message<ShiftsServiceEntit
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<ShiftsServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<ShiftsServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ShiftsServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SHIFT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SHIFT_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServiceEntityPaginationReq {
     return new ShiftsServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServiceEntityPaginationReq {
     return new ShiftsServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServiceEntityPaginationReq {
     return new ShiftsServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ShiftsServiceEntityPaginationReq | PlainMessage<ShiftsServiceEntityPaginationReq> | undefined, b: ShiftsServiceEntityPaginationReq | PlainMessage<ShiftsServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: ShiftsServiceEntityPaginationReq | PlainMessage<ShiftsServiceEntityPaginationReq> | undefined, b: ShiftsServiceEntityPaginationReq | PlainMessage<ShiftsServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(ShiftsServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -766,7 +766,7 @@ export class ShiftsServiceEntityPaginationReq extends Message<ShiftsServiceEntit
  *
  * @generated from message Genesis.ShiftsServiceFilterReq
  */
-export class ShiftsServiceFilterReq extends Message<ShiftsServiceFilterReq> ***REMOVED***
+export class ShiftsServiceFilterReq extends Message<ShiftsServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -886,49 +886,49 @@ export class ShiftsServiceFilterReq extends Message<ShiftsServiceFilterReq> ***R
    */
   code = "";
 
-  constructor(data?: PartialMessage<ShiftsServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<ShiftsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ShiftsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SHIFT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SHIFT_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServiceFilterReq {
     return new ShiftsServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServiceFilterReq {
     return new ShiftsServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServiceFilterReq {
     return new ShiftsServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ShiftsServiceFilterReq | PlainMessage<ShiftsServiceFilterReq> | undefined, b: ShiftsServiceFilterReq | PlainMessage<ShiftsServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: ShiftsServiceFilterReq | PlainMessage<ShiftsServiceFilterReq> | undefined, b: ShiftsServiceFilterReq | PlainMessage<ShiftsServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(ShiftsServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -936,7 +936,7 @@ export class ShiftsServiceFilterReq extends Message<ShiftsServiceFilterReq> ***R
  *
  * @generated from message Genesis.ShiftsServiceSearchAllReq
  */
-export class ShiftsServiceSearchAllReq extends Message<ShiftsServiceSearchAllReq> ***REMOVED***
+export class ShiftsServiceSearchAllReq extends Message<ShiftsServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -993,38 +993,38 @@ export class ShiftsServiceSearchAllReq extends Message<ShiftsServiceSearchAllReq
    */
   searchKey = "";
 
-  constructor(data?: PartialMessage<ShiftsServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<ShiftsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ShiftsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SHIFT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SHIFT_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ShiftsServiceSearchAllReq {
     return new ShiftsServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsServiceSearchAllReq {
     return new ShiftsServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsServiceSearchAllReq {
     return new ShiftsServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ShiftsServiceSearchAllReq | PlainMessage<ShiftsServiceSearchAllReq> | undefined, b: ShiftsServiceSearchAllReq | PlainMessage<ShiftsServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: ShiftsServiceSearchAllReq | PlainMessage<ShiftsServiceSearchAllReq> | undefined, b: ShiftsServiceSearchAllReq | PlainMessage<ShiftsServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(ShiftsServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

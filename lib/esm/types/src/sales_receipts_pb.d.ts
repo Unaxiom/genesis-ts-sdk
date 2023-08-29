@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.SALE_RECEIPT_SORT_KEY
  */
-export declare enum SALE_RECEIPT_SORT_KEY ***REMOVED***
+export declare enum SALE_RECEIPT_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -68,14 +68,14 @@ export declare enum SALE_RECEIPT_SORT_KEY ***REMOVED***
      * @generated from enum value: SALE_RECEIPT_SORT_KEY_PAYMENT_TIMESTAMP = 12;
      */
     SALE_RECEIPT_SORT_KEY_PAYMENT_TIMESTAMP = 12
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.SalesReceiptsServiceCreateRequest
  */
-export declare class SalesReceiptsServiceCreateRequest extends Message<SalesReceiptsServiceCreateRequest> ***REMOVED***
+export declare class SalesReceiptsServiceCreateRequest extends Message<SalesReceiptsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -162,14 +162,14 @@ export declare class SalesReceiptsServiceCreateRequest extends Message<SalesRece
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReceiptsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReceiptsServiceCreateRequest;
     static equals(a: SalesReceiptsServiceCreateRequest | PlainMessage<SalesReceiptsServiceCreateRequest> | undefined, b: SalesReceiptsServiceCreateRequest | PlainMessage<SalesReceiptsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.SalesReceiptsServiceUpdateRequest
  */
-export declare class SalesReceiptsServiceUpdateRequest extends Message<SalesReceiptsServiceUpdateRequest> ***REMOVED***
+export declare class SalesReceiptsServiceUpdateRequest extends Message<SalesReceiptsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -250,14 +250,14 @@ export declare class SalesReceiptsServiceUpdateRequest extends Message<SalesRece
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReceiptsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReceiptsServiceUpdateRequest;
     static equals(a: SalesReceiptsServiceUpdateRequest | PlainMessage<SalesReceiptsServiceUpdateRequest> | undefined, b: SalesReceiptsServiceUpdateRequest | PlainMessage<SalesReceiptsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.SaleReceipt
  */
-export declare class SaleReceipt extends Message<SaleReceipt> ***REMOVED***
+export declare class SaleReceipt extends Message<SaleReceipt> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -380,14 +380,14 @@ export declare class SaleReceipt extends Message<SaleReceipt> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SaleReceipt;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SaleReceipt;
     static equals(a: SaleReceipt | PlainMessage<SaleReceipt> | undefined, b: SaleReceipt | PlainMessage<SaleReceipt> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.SalesReceiptsList
  */
-export declare class SalesReceiptsList extends Message<SalesReceiptsList> ***REMOVED***
+export declare class SalesReceiptsList extends Message<SalesReceiptsList> {
     /**
      * List of records
      *
@@ -402,14 +402,14 @@ export declare class SalesReceiptsList extends Message<SalesReceiptsList> ***REM
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReceiptsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReceiptsList;
     static equals(a: SalesReceiptsList | PlainMessage<SalesReceiptsList> | undefined, b: SalesReceiptsList | PlainMessage<SalesReceiptsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.SalesReceiptsServicePaginationReq
  */
-export declare class SalesReceiptsServicePaginationReq extends Message<SalesReceiptsServicePaginationReq> ***REMOVED***
+export declare class SalesReceiptsServicePaginationReq extends Message<SalesReceiptsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -454,14 +454,14 @@ export declare class SalesReceiptsServicePaginationReq extends Message<SalesRece
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReceiptsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReceiptsServicePaginationReq;
     static equals(a: SalesReceiptsServicePaginationReq | PlainMessage<SalesReceiptsServicePaginationReq> | undefined, b: SalesReceiptsServicePaginationReq | PlainMessage<SalesReceiptsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.SalesReceiptsServicePaginationResponse
  */
-export declare class SalesReceiptsServicePaginationResponse extends Message<SalesReceiptsServicePaginationResponse> ***REMOVED***
+export declare class SalesReceiptsServicePaginationResponse extends Message<SalesReceiptsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -494,14 +494,14 @@ export declare class SalesReceiptsServicePaginationResponse extends Message<Sale
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReceiptsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReceiptsServicePaginationResponse;
     static equals(a: SalesReceiptsServicePaginationResponse | PlainMessage<SalesReceiptsServicePaginationResponse> | undefined, b: SalesReceiptsServicePaginationResponse | PlainMessage<SalesReceiptsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.SalesReceiptsServiceEntityPaginationReq
  */
-export declare class SalesReceiptsServiceEntityPaginationReq extends Message<SalesReceiptsServiceEntityPaginationReq> ***REMOVED***
+export declare class SalesReceiptsServiceEntityPaginationReq extends Message<SalesReceiptsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -546,14 +546,14 @@ export declare class SalesReceiptsServiceEntityPaginationReq extends Message<Sal
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReceiptsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReceiptsServiceEntityPaginationReq;
     static equals(a: SalesReceiptsServiceEntityPaginationReq | PlainMessage<SalesReceiptsServiceEntityPaginationReq> | undefined, b: SalesReceiptsServiceEntityPaginationReq | PlainMessage<SalesReceiptsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.SalesReceiptsServiceFilterReq
  */
-export declare class SalesReceiptsServiceFilterReq extends Message<SalesReceiptsServiceFilterReq> ***REMOVED***
+export declare class SalesReceiptsServiceFilterReq extends Message<SalesReceiptsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -712,14 +712,14 @@ export declare class SalesReceiptsServiceFilterReq extends Message<SalesReceipts
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReceiptsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReceiptsServiceFilterReq;
     static equals(a: SalesReceiptsServiceFilterReq | PlainMessage<SalesReceiptsServiceFilterReq> | undefined, b: SalesReceiptsServiceFilterReq | PlainMessage<SalesReceiptsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.SalesReceiptsServiceSearchAllReq
  */
-export declare class SalesReceiptsServiceSearchAllReq extends Message<SalesReceiptsServiceSearchAllReq> ***REMOVED***
+export declare class SalesReceiptsServiceSearchAllReq extends Message<SalesReceiptsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -776,5 +776,5 @@ export declare class SalesReceiptsServiceSearchAllReq extends Message<SalesRecei
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReceiptsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReceiptsServiceSearchAllReq;
     static equals(a: SalesReceiptsServiceSearchAllReq | PlainMessage<SalesReceiptsServiceSearchAllReq> | undefined, b: SalesReceiptsServiceSearchAllReq | PlainMessage<SalesReceiptsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=sales_receipts_pb.d.ts.map

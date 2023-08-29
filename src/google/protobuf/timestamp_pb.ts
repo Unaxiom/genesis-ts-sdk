@@ -33,8 +33,8 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, JsonWriteOptions, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, JsonWriteOptions, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 
 /**
  * A Timestamp represents a point in time independent of any time zone or local
@@ -106,9 +106,9 @@ import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/p
  *
  * In JSON format, the Timestamp type is encoded as a string in the
  * [RFC 3339](https://www.ietf.org/rfc/rfc3339.txt) format. That is, the
- * format is "***REMOVED***year***REMOVED***-***REMOVED***month***REMOVED***-***REMOVED***day***REMOVED***T***REMOVED***hour***REMOVED***:***REMOVED***min***REMOVED***:***REMOVED***sec***REMOVED***[.***REMOVED***frac_sec***REMOVED***]Z"
- * where ***REMOVED***year***REMOVED*** is always expressed using four digits while ***REMOVED***month***REMOVED***, ***REMOVED***day***REMOVED***,
- * ***REMOVED***hour***REMOVED***, ***REMOVED***min***REMOVED***, and ***REMOVED***sec***REMOVED*** are zero-padded to two digits each. The fractional
+ * format is "{year}-{month}-{day}T{hour}:{min}:{sec}[.{frac_sec}]Z"
+ * where {year} is always expressed using four digits while {month}, {day},
+ * {hour}, {min}, and {sec} are zero-padded to two digits each. The fractional
  * seconds, which can go up to 9 digits (i.e. up to 1 nanosecond resolution),
  * are optional. The "Z" suffix indicates the timezone ("UTC"); the timezone
  * is required. A proto3 JSON serializer should always use UTC (as indicated by
@@ -133,7 +133,7 @@ import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/p
  *
  * @generated from message google.protobuf.Timestamp
  */
-export class Timestamp extends Message<Timestamp> ***REMOVED***
+export class Timestamp extends Message<Timestamp> {
   /**
    * Represents seconds of UTC time since Unix epoch
    * 1970-01-01T00:00:00Z. Must be from 0001-01-01T00:00:00Z to
@@ -153,93 +153,93 @@ export class Timestamp extends Message<Timestamp> ***REMOVED***
    */
   nanos = 0;
 
-  constructor(data?: PartialMessage<Timestamp>) ***REMOVED***
+  constructor(data?: PartialMessage<Timestamp>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
-  override fromJson(json: JsonValue, options?: Partial<JsonReadOptions>): this ***REMOVED***
-    if (typeof json !== "string") ***REMOVED***
-      throw new Error(`cannot decode google.protobuf.Timestamp from JSON: $***REMOVED***proto3.json.debug(json)***REMOVED***`);
-***REMOVED***
-    const matches = json.match(/^([0-9]***REMOVED***4***REMOVED***)-([0-9]***REMOVED***2***REMOVED***)-([0-9]***REMOVED***2***REMOVED***)T([0-9]***REMOVED***2***REMOVED***):([0-9]***REMOVED***2***REMOVED***):([0-9]***REMOVED***2***REMOVED***)(?:Z|\.([0-9]***REMOVED***3,9***REMOVED***)Z|([+-][0-9][0-9]:[0-9][0-9]))$/);
-    if (!matches) ***REMOVED***
+  override fromJson(json: JsonValue, options?: Partial<JsonReadOptions>): this {
+    if (typeof json !== "string") {
+      throw new Error(`cannot decode google.protobuf.Timestamp from JSON: ${proto3.json.debug(json)}`);
+    }
+    const matches = json.match(/^([0-9]{4})-([0-9]{2})-([0-9]{2})T([0-9]{2}):([0-9]{2}):([0-9]{2})(?:Z|\.([0-9]{3,9})Z|([+-][0-9][0-9]:[0-9][0-9]))$/);
+    if (!matches) {
       throw new Error(`cannot decode google.protobuf.Timestamp from JSON: invalid RFC 3339 string`);
-***REMOVED***
+    }
     const ms = Date.parse(matches[1] + "-" + matches[2] + "-" + matches[3] + "T" + matches[4] + ":" + matches[5] + ":" + matches[6] + (matches[8] ? matches[8] : "Z"));
-    if (Number.isNaN(ms)) ***REMOVED***
+    if (Number.isNaN(ms)) {
       throw new Error(`cannot decode google.protobuf.Timestamp from JSON: invalid RFC 3339 string`);
-***REMOVED***
-    if (ms < Date.parse("0001-01-01T00:00:00Z") || ms > Date.parse("9999-12-31T23:59:59Z")) ***REMOVED***
+    }
+    if (ms < Date.parse("0001-01-01T00:00:00Z") || ms > Date.parse("9999-12-31T23:59:59Z")) {
       throw new Error(`cannot decode message google.protobuf.Timestamp from JSON: must be from 0001-01-01T00:00:00Z to 9999-12-31T23:59:59Z inclusive`);
-***REMOVED***
+    }
     this.seconds = protoInt64.parse(ms / 1000);
     this.nanos = 0;
-    if (matches[7]) ***REMOVED***
+    if (matches[7]) {
       this.nanos = (parseInt("1" + matches[7] + "0".repeat(9 - matches[7].length)) - 1000000000);
-***REMOVED***
+    }
     return this;
-  ***REMOVED***
+  }
 
-  override toJson(options?: Partial<JsonWriteOptions>): JsonValue ***REMOVED***
+  override toJson(options?: Partial<JsonWriteOptions>): JsonValue {
     const ms = Number(this.seconds) * 1000;
-    if (ms < Date.parse("0001-01-01T00:00:00Z") || ms > Date.parse("9999-12-31T23:59:59Z")) ***REMOVED***
+    if (ms < Date.parse("0001-01-01T00:00:00Z") || ms > Date.parse("9999-12-31T23:59:59Z")) {
       throw new Error(`cannot encode google.protobuf.Timestamp to JSON: must be from 0001-01-01T00:00:00Z to 9999-12-31T23:59:59Z inclusive`);
-***REMOVED***
-    if (this.nanos < 0) ***REMOVED***
+    }
+    if (this.nanos < 0) {
       throw new Error(`cannot encode google.protobuf.Timestamp to JSON: nanos must not be negative`);
-***REMOVED***
+    }
     let z = "Z";
-    if (this.nanos > 0) ***REMOVED***
+    if (this.nanos > 0) {
       const nanosStr = (this.nanos + 1000000000).toString().substring(1);
-      if (nanosStr.substring(3) === "000000") ***REMOVED***
+      if (nanosStr.substring(3) === "000000") {
         z = "." + nanosStr.substring(0, 3) + "Z";
-  ***REMOVED*** else if (nanosStr.substring(6) === "000") ***REMOVED***
+      } else if (nanosStr.substring(6) === "000") {
         z = "." + nanosStr.substring(0, 6) + "Z";
-  ***REMOVED*** else ***REMOVED***
+      } else {
         z = "." + nanosStr + "Z";
-  ***REMOVED***
-***REMOVED***
+      }
+    }
     return new Date(ms).toISOString().replace(".000Z", z);
-  ***REMOVED***
+  }
 
-  toDate(): Date ***REMOVED***
+  toDate(): Date {
     return new Date(Number(this.seconds) * 1000 + Math.ceil(this.nanos / 1000000));
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "google.protobuf.Timestamp";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "seconds", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "nanos", kind: "scalar", T: 5 /* ScalarType.INT32 */ ***REMOVED***,
+    { no: 1, name: "seconds", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "nanos", kind: "scalar", T: 5 /* ScalarType.INT32 */ },
   ]);
 
-  static now(): Timestamp ***REMOVED***
+  static now(): Timestamp {
     return Timestamp.fromDate(new Date())
-  ***REMOVED***
+  }
 
-  static fromDate(date: Date): Timestamp ***REMOVED***
+  static fromDate(date: Date): Timestamp {
     const ms = date.getTime();
-    return new Timestamp(***REMOVED***
+    return new Timestamp({
       seconds: protoInt64.parse(Math.floor(ms / 1000)),
       nanos: (ms % 1000) * 1000000,
-***REMOVED***);
-  ***REMOVED***
+    });
+  }
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Timestamp ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Timestamp {
     return new Timestamp().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Timestamp ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Timestamp {
     return new Timestamp().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Timestamp ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Timestamp {
     return new Timestamp().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Timestamp | PlainMessage<Timestamp> | undefined, b: Timestamp | PlainMessage<Timestamp> | undefined): boolean ***REMOVED***
+  static equals(a: Timestamp | PlainMessage<Timestamp> | undefined, b: Timestamp | PlainMessage<Timestamp> | undefined): boolean {
     return proto3.util.equals(Timestamp, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

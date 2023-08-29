@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto2 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Duration ***REMOVED*** from "./google/protobuf/duration_pb.js";
-import ***REMOVED*** Timestamp ***REMOVED*** from "./google/protobuf/timestamp_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto2 } from "@bufbuild/protobuf";
+import { Duration } from "./google/protobuf/duration_pb.js";
+import { Timestamp } from "./google/protobuf/timestamp_pb.js";
 /**
  * WellKnownRegex contain some well-known patterns.
  *
  * @generated from enum genesis_validate.KnownRegex
  */
-export declare enum KnownRegex ***REMOVED***
+export declare enum KnownRegex {
     /**
      * @generated from enum value: UNKNOWN = 0;
      */
@@ -24,14 +24,14 @@ export declare enum KnownRegex ***REMOVED***
      * @generated from enum value: HTTP_HEADER_VALUE = 2;
      */
     HTTP_HEADER_VALUE = 2
-***REMOVED***
+}
 /**
  * FieldRules encapsulates the rules for each type of field. Depending on the
  * field, the correct set should be used to ensure proper validations.
  *
  * @generated from message genesis_validate.FieldRules
  */
-export declare class FieldRules extends Message<FieldRules> ***REMOVED***
+export declare class FieldRules extends Message<FieldRules> {
     /**
      * @generated from field: optional genesis_validate.MessageRules message = 17;
      */
@@ -39,7 +39,7 @@ export declare class FieldRules extends Message<FieldRules> ***REMOVED***
     /**
      * @generated from oneof genesis_validate.FieldRules.type
      */
-    type: ***REMOVED***
+    type: {
         /**
          * Scalar Field Types
          *
@@ -47,91 +47,91 @@ export declare class FieldRules extends Message<FieldRules> ***REMOVED***
          */
         value: FloatRules;
         case: "float";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.DoubleRules double = 2;
          */
         value: DoubleRules;
         case: "double";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.Int32Rules int32 = 3;
          */
         value: Int32Rules;
         case: "int32";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.Int64Rules int64 = 4;
          */
         value: Int64Rules;
         case: "int64";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.UInt32Rules uint32 = 5;
          */
         value: UInt32Rules;
         case: "uint32";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.UInt64Rules uint64 = 6;
          */
         value: UInt64Rules;
         case: "uint64";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.SInt32Rules sint32 = 7;
          */
         value: SInt32Rules;
         case: "sint32";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.SInt64Rules sint64 = 8;
          */
         value: SInt64Rules;
         case: "sint64";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.Fixed32Rules fixed32 = 9;
          */
         value: Fixed32Rules;
         case: "fixed32";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.Fixed64Rules fixed64 = 10;
          */
         value: Fixed64Rules;
         case: "fixed64";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.SFixed32Rules sfixed32 = 11;
          */
         value: SFixed32Rules;
         case: "sfixed32";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.SFixed64Rules sfixed64 = 12;
          */
         value: SFixed64Rules;
         case: "sfixed64";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.BoolRules bool = 13;
          */
         value: BoolRules;
         case: "bool";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.StringRules string = 14;
          */
         value: StringRules;
         case: "string";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.BytesRules bytes = 15;
          */
         value: BytesRules;
         case: "bytes";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * Complex Field Types
          *
@@ -139,19 +139,19 @@ export declare class FieldRules extends Message<FieldRules> ***REMOVED***
          */
         value: EnumRules;
         case: "enum";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.RepeatedRules repeated = 18;
          */
         value: RepeatedRules;
         case: "repeated";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.MapRules map = 19;
          */
         value: MapRules;
         case: "map";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * Well-Known Field Types
          *
@@ -159,22 +159,22 @@ export declare class FieldRules extends Message<FieldRules> ***REMOVED***
          */
         value: AnyRules;
         case: "any";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.DurationRules duration = 21;
          */
         value: DurationRules;
         case: "duration";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * @generated from field: genesis_validate.TimestampRules timestamp = 22;
          */
         value: TimestampRules;
         case: "timestamp";
-***REMOVED*** | ***REMOVED***
+    } | {
         case: undefined;
         value?: undefined;
-***REMOVED***;
+    };
     constructor(data?: PartialMessage<FieldRules>);
     static readonly runtime: typeof proto2;
     static readonly typeName = "genesis_validate.FieldRules";
@@ -183,13 +183,13 @@ export declare class FieldRules extends Message<FieldRules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FieldRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FieldRules;
     static equals(a: FieldRules | PlainMessage<FieldRules> | undefined, b: FieldRules | PlainMessage<FieldRules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * FloatRules describes the constraints applied to `float` values
  *
  * @generated from message genesis_validate.FloatRules
  */
-export declare class FloatRules extends Message<FloatRules> ***REMOVED***
+export declare class FloatRules extends Message<FloatRules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -255,13 +255,13 @@ export declare class FloatRules extends Message<FloatRules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FloatRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FloatRules;
     static equals(a: FloatRules | PlainMessage<FloatRules> | undefined, b: FloatRules | PlainMessage<FloatRules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * DoubleRules describes the constraints applied to `double` values
  *
  * @generated from message genesis_validate.DoubleRules
  */
-export declare class DoubleRules extends Message<DoubleRules> ***REMOVED***
+export declare class DoubleRules extends Message<DoubleRules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -327,13 +327,13 @@ export declare class DoubleRules extends Message<DoubleRules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DoubleRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DoubleRules;
     static equals(a: DoubleRules | PlainMessage<DoubleRules> | undefined, b: DoubleRules | PlainMessage<DoubleRules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * Int32Rules describes the constraints applied to `int32` values
  *
  * @generated from message genesis_validate.Int32Rules
  */
-export declare class Int32Rules extends Message<Int32Rules> ***REMOVED***
+export declare class Int32Rules extends Message<Int32Rules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -399,13 +399,13 @@ export declare class Int32Rules extends Message<Int32Rules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Int32Rules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Int32Rules;
     static equals(a: Int32Rules | PlainMessage<Int32Rules> | undefined, b: Int32Rules | PlainMessage<Int32Rules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * Int64Rules describes the constraints applied to `int64` values
  *
  * @generated from message genesis_validate.Int64Rules
  */
-export declare class Int64Rules extends Message<Int64Rules> ***REMOVED***
+export declare class Int64Rules extends Message<Int64Rules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -471,13 +471,13 @@ export declare class Int64Rules extends Message<Int64Rules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Int64Rules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Int64Rules;
     static equals(a: Int64Rules | PlainMessage<Int64Rules> | undefined, b: Int64Rules | PlainMessage<Int64Rules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * UInt32Rules describes the constraints applied to `uint32` values
  *
  * @generated from message genesis_validate.UInt32Rules
  */
-export declare class UInt32Rules extends Message<UInt32Rules> ***REMOVED***
+export declare class UInt32Rules extends Message<UInt32Rules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -543,13 +543,13 @@ export declare class UInt32Rules extends Message<UInt32Rules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UInt32Rules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UInt32Rules;
     static equals(a: UInt32Rules | PlainMessage<UInt32Rules> | undefined, b: UInt32Rules | PlainMessage<UInt32Rules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * UInt64Rules describes the constraints applied to `uint64` values
  *
  * @generated from message genesis_validate.UInt64Rules
  */
-export declare class UInt64Rules extends Message<UInt64Rules> ***REMOVED***
+export declare class UInt64Rules extends Message<UInt64Rules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -615,13 +615,13 @@ export declare class UInt64Rules extends Message<UInt64Rules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UInt64Rules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UInt64Rules;
     static equals(a: UInt64Rules | PlainMessage<UInt64Rules> | undefined, b: UInt64Rules | PlainMessage<UInt64Rules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * SInt32Rules describes the constraints applied to `sint32` values
  *
  * @generated from message genesis_validate.SInt32Rules
  */
-export declare class SInt32Rules extends Message<SInt32Rules> ***REMOVED***
+export declare class SInt32Rules extends Message<SInt32Rules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -687,13 +687,13 @@ export declare class SInt32Rules extends Message<SInt32Rules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SInt32Rules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SInt32Rules;
     static equals(a: SInt32Rules | PlainMessage<SInt32Rules> | undefined, b: SInt32Rules | PlainMessage<SInt32Rules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * SInt64Rules describes the constraints applied to `sint64` values
  *
  * @generated from message genesis_validate.SInt64Rules
  */
-export declare class SInt64Rules extends Message<SInt64Rules> ***REMOVED***
+export declare class SInt64Rules extends Message<SInt64Rules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -759,13 +759,13 @@ export declare class SInt64Rules extends Message<SInt64Rules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SInt64Rules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SInt64Rules;
     static equals(a: SInt64Rules | PlainMessage<SInt64Rules> | undefined, b: SInt64Rules | PlainMessage<SInt64Rules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * Fixed32Rules describes the constraints applied to `fixed32` values
  *
  * @generated from message genesis_validate.Fixed32Rules
  */
-export declare class Fixed32Rules extends Message<Fixed32Rules> ***REMOVED***
+export declare class Fixed32Rules extends Message<Fixed32Rules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -831,13 +831,13 @@ export declare class Fixed32Rules extends Message<Fixed32Rules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Fixed32Rules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Fixed32Rules;
     static equals(a: Fixed32Rules | PlainMessage<Fixed32Rules> | undefined, b: Fixed32Rules | PlainMessage<Fixed32Rules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * Fixed64Rules describes the constraints applied to `fixed64` values
  *
  * @generated from message genesis_validate.Fixed64Rules
  */
-export declare class Fixed64Rules extends Message<Fixed64Rules> ***REMOVED***
+export declare class Fixed64Rules extends Message<Fixed64Rules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -903,13 +903,13 @@ export declare class Fixed64Rules extends Message<Fixed64Rules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Fixed64Rules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Fixed64Rules;
     static equals(a: Fixed64Rules | PlainMessage<Fixed64Rules> | undefined, b: Fixed64Rules | PlainMessage<Fixed64Rules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * SFixed32Rules describes the constraints applied to `sfixed32` values
  *
  * @generated from message genesis_validate.SFixed32Rules
  */
-export declare class SFixed32Rules extends Message<SFixed32Rules> ***REMOVED***
+export declare class SFixed32Rules extends Message<SFixed32Rules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -975,13 +975,13 @@ export declare class SFixed32Rules extends Message<SFixed32Rules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SFixed32Rules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SFixed32Rules;
     static equals(a: SFixed32Rules | PlainMessage<SFixed32Rules> | undefined, b: SFixed32Rules | PlainMessage<SFixed32Rules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * SFixed64Rules describes the constraints applied to `sfixed64` values
  *
  * @generated from message genesis_validate.SFixed64Rules
  */
-export declare class SFixed64Rules extends Message<SFixed64Rules> ***REMOVED***
+export declare class SFixed64Rules extends Message<SFixed64Rules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -1047,13 +1047,13 @@ export declare class SFixed64Rules extends Message<SFixed64Rules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SFixed64Rules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SFixed64Rules;
     static equals(a: SFixed64Rules | PlainMessage<SFixed64Rules> | undefined, b: SFixed64Rules | PlainMessage<SFixed64Rules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * BoolRules describes the constraints applied to `bool` values
  *
  * @generated from message genesis_validate.BoolRules
  */
-export declare class BoolRules extends Message<BoolRules> ***REMOVED***
+export declare class BoolRules extends Message<BoolRules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -1068,13 +1068,13 @@ export declare class BoolRules extends Message<BoolRules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): BoolRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): BoolRules;
     static equals(a: BoolRules | PlainMessage<BoolRules> | undefined, b: BoolRules | PlainMessage<BoolRules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * StringRules describe the constraints applied to `string` values
  *
  * @generated from message genesis_validate.StringRules
  */
-export declare class StringRules extends Message<StringRules> ***REMOVED***
+export declare class StringRules extends Message<StringRules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -1181,7 +1181,7 @@ export declare class StringRules extends Message<StringRules> ***REMOVED***
      *
      * @generated from oneof genesis_validate.StringRules.well_known
      */
-    wellKnown: ***REMOVED***
+    wellKnown: {
         /**
          * Email specifies that the field must be a valid email address as
          * defined by RFC 5322
@@ -1190,7 +1190,7 @@ export declare class StringRules extends Message<StringRules> ***REMOVED***
          */
         value: boolean;
         case: "email";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * Hostname specifies that the field must be a valid hostname as
          * defined by RFC 1034. This constraint does not support
@@ -1200,7 +1200,7 @@ export declare class StringRules extends Message<StringRules> ***REMOVED***
          */
         value: boolean;
         case: "hostname";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * Ip specifies that the field must be a valid IP (v4 or v6) address.
          * Valid IPv6 addresses should not include surrounding square brackets.
@@ -1209,7 +1209,7 @@ export declare class StringRules extends Message<StringRules> ***REMOVED***
          */
         value: boolean;
         case: "ip";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * Ipv4 specifies that the field must be a valid IPv4 address.
          *
@@ -1217,7 +1217,7 @@ export declare class StringRules extends Message<StringRules> ***REMOVED***
          */
         value: boolean;
         case: "ipv4";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * Ipv6 specifies that the field must be a valid IPv6 address. Valid
          * IPv6 addresses should not include surrounding square brackets.
@@ -1226,7 +1226,7 @@ export declare class StringRules extends Message<StringRules> ***REMOVED***
          */
         value: boolean;
         case: "ipv6";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * Uri specifies that the field must be a valid, absolute URI as defined
          * by RFC 3986
@@ -1235,7 +1235,7 @@ export declare class StringRules extends Message<StringRules> ***REMOVED***
          */
         value: boolean;
         case: "uri";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * UriRef specifies that the field must be a valid URI as defined by RFC
          * 3986 and may be relative or absolute.
@@ -1244,7 +1244,7 @@ export declare class StringRules extends Message<StringRules> ***REMOVED***
          */
         value: boolean;
         case: "uriRef";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * Address specifies that the field must be either a valid hostname as
          * defined by RFC 1034 (which does not support internationalized domain
@@ -1254,7 +1254,7 @@ export declare class StringRules extends Message<StringRules> ***REMOVED***
          */
         value: boolean;
         case: "address";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * Uuid specifies that the field must be a valid UUID as defined by
          * RFC 4122
@@ -1263,7 +1263,7 @@ export declare class StringRules extends Message<StringRules> ***REMOVED***
          */
         value: boolean;
         case: "uuid";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * WellKnownRegex specifies a common well known pattern defined as a regex.
          *
@@ -1271,10 +1271,10 @@ export declare class StringRules extends Message<StringRules> ***REMOVED***
          */
         value: KnownRegex;
         case: "wellKnownRegex";
-***REMOVED*** | ***REMOVED***
+    } | {
         case: undefined;
         value?: undefined;
-***REMOVED***;
+    };
     /**
      * This applies to regexes HTTP_HEADER_NAME and HTTP_HEADER_VALUE to enable
      * strict header validation.
@@ -1300,13 +1300,13 @@ export declare class StringRules extends Message<StringRules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StringRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StringRules;
     static equals(a: StringRules | PlainMessage<StringRules> | undefined, b: StringRules | PlainMessage<StringRules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * BytesRules describe the constraints applied to `bytes` values
  *
  * @generated from message genesis_validate.BytesRules
  */
-export declare class BytesRules extends Message<BytesRules> ***REMOVED***
+export declare class BytesRules extends Message<BytesRules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -1382,7 +1382,7 @@ export declare class BytesRules extends Message<BytesRules> ***REMOVED***
      *
      * @generated from oneof genesis_validate.BytesRules.well_known
      */
-    wellKnown: ***REMOVED***
+    wellKnown: {
         /**
          * Ip specifies that the field must be a valid IP (v4 or v6) address in
          * byte format
@@ -1391,7 +1391,7 @@ export declare class BytesRules extends Message<BytesRules> ***REMOVED***
          */
         value: boolean;
         case: "ip";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * Ipv4 specifies that the field must be a valid IPv4 address in byte
          * format
@@ -1400,7 +1400,7 @@ export declare class BytesRules extends Message<BytesRules> ***REMOVED***
          */
         value: boolean;
         case: "ipv4";
-***REMOVED*** | ***REMOVED***
+    } | {
         /**
          * Ipv6 specifies that the field must be a valid IPv6 address in byte
          * format
@@ -1409,10 +1409,10 @@ export declare class BytesRules extends Message<BytesRules> ***REMOVED***
          */
         value: boolean;
         case: "ipv6";
-***REMOVED*** | ***REMOVED***
+    } | {
         case: undefined;
         value?: undefined;
-***REMOVED***;
+    };
     /**
      * IgnoreEmpty specifies that the validation rules of this field should be
      * evaluated only if the field is not empty
@@ -1428,13 +1428,13 @@ export declare class BytesRules extends Message<BytesRules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): BytesRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): BytesRules;
     static equals(a: BytesRules | PlainMessage<BytesRules> | undefined, b: BytesRules | PlainMessage<BytesRules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * EnumRules describe the constraints applied to enum values
  *
  * @generated from message genesis_validate.EnumRules
  */
-export declare class EnumRules extends Message<EnumRules> ***REMOVED***
+export declare class EnumRules extends Message<EnumRules> {
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -1470,14 +1470,14 @@ export declare class EnumRules extends Message<EnumRules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnumRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnumRules;
     static equals(a: EnumRules | PlainMessage<EnumRules> | undefined, b: EnumRules | PlainMessage<EnumRules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * MessageRules describe the constraints applied to embedded message values.
  * For message-type fields, validation is performed recursively.
  *
  * @generated from message genesis_validate.MessageRules
  */
-export declare class MessageRules extends Message<MessageRules> ***REMOVED***
+export declare class MessageRules extends Message<MessageRules> {
     /**
      * Skip specifies that the validation rules of this field should not be
      * evaluated
@@ -1499,13 +1499,13 @@ export declare class MessageRules extends Message<MessageRules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): MessageRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): MessageRules;
     static equals(a: MessageRules | PlainMessage<MessageRules> | undefined, b: MessageRules | PlainMessage<MessageRules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * RepeatedRules describe the constraints applied to `repeated` values
  *
  * @generated from message genesis_validate.RepeatedRules
  */
-export declare class RepeatedRules extends Message<RepeatedRules> ***REMOVED***
+export declare class RepeatedRules extends Message<RepeatedRules> {
     /**
      * MinItems specifies that this field must have the specified number of
      * items at a minimum
@@ -1551,13 +1551,13 @@ export declare class RepeatedRules extends Message<RepeatedRules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RepeatedRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RepeatedRules;
     static equals(a: RepeatedRules | PlainMessage<RepeatedRules> | undefined, b: RepeatedRules | PlainMessage<RepeatedRules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * MapRules describe the constraints applied to `map` values
  *
  * @generated from message genesis_validate.MapRules
  */
-export declare class MapRules extends Message<MapRules> ***REMOVED***
+export declare class MapRules extends Message<MapRules> {
     /**
      * MinPairs specifies that this field must have the specified number of
      * KVs at a minimum
@@ -1608,14 +1608,14 @@ export declare class MapRules extends Message<MapRules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): MapRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): MapRules;
     static equals(a: MapRules | PlainMessage<MapRules> | undefined, b: MapRules | PlainMessage<MapRules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * AnyRules describe constraints applied exclusively to the
  * `google.protobuf.Any` well-known type
  *
  * @generated from message genesis_validate.AnyRules
  */
-export declare class AnyRules extends Message<AnyRules> ***REMOVED***
+export declare class AnyRules extends Message<AnyRules> {
     /**
      * Required specifies that this field must be set
      *
@@ -1644,14 +1644,14 @@ export declare class AnyRules extends Message<AnyRules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AnyRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AnyRules;
     static equals(a: AnyRules | PlainMessage<AnyRules> | undefined, b: AnyRules | PlainMessage<AnyRules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * DurationRules describe the constraints applied exclusively to the
  * `google.protobuf.Duration` well-known type
  *
  * @generated from message genesis_validate.DurationRules
  */
-export declare class DurationRules extends Message<DurationRules> ***REMOVED***
+export declare class DurationRules extends Message<DurationRules> {
     /**
      * Required specifies that this field must be set
      *
@@ -1714,14 +1714,14 @@ export declare class DurationRules extends Message<DurationRules> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DurationRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DurationRules;
     static equals(a: DurationRules | PlainMessage<DurationRules> | undefined, b: DurationRules | PlainMessage<DurationRules> | undefined): boolean;
-***REMOVED***
+}
 /**
  * TimestampRules describe the constraints applied exclusively to the
  * `google.protobuf.Timestamp` well-known type
  *
  * @generated from message genesis_validate.TimestampRules
  */
-export declare class TimestampRules extends Message<TimestampRules> ***REMOVED***
+export declare class TimestampRules extends Message<TimestampRules> {
     /**
      * Required specifies that this field must be set
      *
@@ -1792,5 +1792,5 @@ export declare class TimestampRules extends Message<TimestampRules> ***REMOVED**
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TimestampRules;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TimestampRules;
     static equals(a: TimestampRules | PlainMessage<TimestampRules> | undefined, b: TimestampRules | PlainMessage<TimestampRules> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=genesis.validate_pb.d.ts.map

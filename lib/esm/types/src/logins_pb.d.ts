@@ -1,12 +1,12 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
 /**
  *
  * Describes the data structure for a user to login
  *
  * @generated from message Genesis.UserLoginRequest
  */
-export declare class UserLoginRequest extends Message<UserLoginRequest> ***REMOVED***
+export declare class UserLoginRequest extends Message<UserLoginRequest> {
     /**
      * Username of the user
      *
@@ -33,14 +33,14 @@ export declare class UserLoginRequest extends Message<UserLoginRequest> ***REMOV
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UserLoginRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UserLoginRequest;
     static equals(a: UserLoginRequest | PlainMessage<UserLoginRequest> | undefined, b: UserLoginRequest | PlainMessage<UserLoginRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a user login request
  *
  * @generated from message Genesis.UserLoginResponse
  */
-export declare class UserLoginResponse extends Message<UserLoginResponse> ***REMOVED***
+export declare class UserLoginResponse extends Message<UserLoginResponse> {
     /**
      * Username of the user that just logged in
      *
@@ -67,14 +67,14 @@ export declare class UserLoginResponse extends Message<UserLoginResponse> ***REM
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UserLoginResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UserLoginResponse;
     static equals(a: UserLoginResponse | PlainMessage<UserLoginResponse> | undefined, b: UserLoginResponse | PlainMessage<UserLoginResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the data structure required to check if the login is still valid
  *
  * @generated from message Genesis.AuthTokenValidityRequest
  */
-export declare class AuthTokenValidityRequest extends Message<AuthTokenValidityRequest> ***REMOVED***
+export declare class AuthTokenValidityRequest extends Message<AuthTokenValidityRequest> {
     /**
      * The token whose validity needs to be determined
      *
@@ -89,14 +89,14 @@ export declare class AuthTokenValidityRequest extends Message<AuthTokenValidityR
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AuthTokenValidityRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AuthTokenValidityRequest;
     static equals(a: AuthTokenValidityRequest | PlainMessage<AuthTokenValidityRequest> | undefined, b: AuthTokenValidityRequest | PlainMessage<AuthTokenValidityRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the data structure required to logout a user
  *
  * @generated from message Genesis.LogoutRequest
  */
-export declare class LogoutRequest extends Message<LogoutRequest> ***REMOVED***
+export declare class LogoutRequest extends Message<LogoutRequest> {
     constructor(data?: PartialMessage<LogoutRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Genesis.LogoutRequest";
@@ -105,14 +105,14 @@ export declare class LogoutRequest extends Message<LogoutRequest> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogoutRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogoutRequest;
     static equals(a: LogoutRequest | PlainMessage<LogoutRequest> | undefined, b: LogoutRequest | PlainMessage<LogoutRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response data structure to a logout request
  *
  * @generated from message Genesis.LogoutResponse
  */
-export declare class LogoutResponse extends Message<LogoutResponse> ***REMOVED***
+export declare class LogoutResponse extends Message<LogoutResponse> {
     constructor(data?: PartialMessage<LogoutResponse>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Genesis.LogoutResponse";
@@ -121,5 +121,5 @@ export declare class LogoutResponse extends Message<LogoutResponse> ***REMOVED**
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogoutResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogoutResponse;
     static equals(a: LogoutResponse | PlainMessage<LogoutResponse> | undefined, b: LogoutResponse | PlainMessage<LogoutResponse> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=logins_pb.d.ts.map

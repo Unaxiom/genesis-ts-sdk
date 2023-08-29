@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -13,7 +13,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.EQUATION_SALES_BUNDLE_SORT_KEY
  */
-export enum EQUATION_SALES_BUNDLE_SORT_KEY ***REMOVED***
+export enum EQUATION_SALES_BUNDLE_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -76,18 +76,18 @@ export enum EQUATION_SALES_BUNDLE_SORT_KEY ***REMOVED***
    * @generated from enum value: EQUATION_SALES_BUNDLE_SORT_KEY_FAMILY_ID = 11;
    */
   EQUATION_SALES_BUNDLE_SORT_KEY_FAMILY_ID = 11,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(EQUATION_SALES_BUNDLE_SORT_KEY)
 proto3.util.setEnumType(EQUATION_SALES_BUNDLE_SORT_KEY, "Genesis.EQUATION_SALES_BUNDLE_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "EQUATION_SALES_BUNDLE_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "EQUATION_SALES_BUNDLE_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "EQUATION_SALES_BUNDLE_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "EQUATION_SALES_BUNDLE_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "EQUATION_SALES_BUNDLE_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "EQUATION_SALES_BUNDLE_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "EQUATION_SALES_BUNDLE_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "EQUATION_SALES_BUNDLE_SORT_KEY_NAME" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "EQUATION_SALES_BUNDLE_SORT_KEY_FAMILY_ID" ***REMOVED***,
+  { no: 0, name: "EQUATION_SALES_BUNDLE_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "EQUATION_SALES_BUNDLE_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "EQUATION_SALES_BUNDLE_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "EQUATION_SALES_BUNDLE_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "EQUATION_SALES_BUNDLE_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "EQUATION_SALES_BUNDLE_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "EQUATION_SALES_BUNDLE_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "EQUATION_SALES_BUNDLE_SORT_KEY_NAME" },
+  { no: 11, name: "EQUATION_SALES_BUNDLE_SORT_KEY_FAMILY_ID" },
 ]);
 
 /**
@@ -96,7 +96,7 @@ proto3.util.setEnumType(EQUATION_SALES_BUNDLE_SORT_KEY, "Genesis.EQUATION_SALES_
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceCreateRequest
  */
-export class EquationsSalesBundlesServiceCreateRequest extends Message<EquationsSalesBundlesServiceCreateRequest> ***REMOVED***
+export class EquationsSalesBundlesServiceCreateRequest extends Message<EquationsSalesBundlesServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -139,38 +139,38 @@ export class EquationsSalesBundlesServiceCreateRequest extends Message<Equations
    */
   description = "";
 
-  constructor(data?: PartialMessage<EquationsSalesBundlesServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsSalesBundlesServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsSalesBundlesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceCreateRequest {
     return new EquationsSalesBundlesServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceCreateRequest {
     return new EquationsSalesBundlesServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceCreateRequest {
     return new EquationsSalesBundlesServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsSalesBundlesServiceCreateRequest | PlainMessage<EquationsSalesBundlesServiceCreateRequest> | undefined, b: EquationsSalesBundlesServiceCreateRequest | PlainMessage<EquationsSalesBundlesServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsSalesBundlesServiceCreateRequest | PlainMessage<EquationsSalesBundlesServiceCreateRequest> | undefined, b: EquationsSalesBundlesServiceCreateRequest | PlainMessage<EquationsSalesBundlesServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(EquationsSalesBundlesServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -178,7 +178,7 @@ export class EquationsSalesBundlesServiceCreateRequest extends Message<Equations
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceUpdateRequest
  */
-export class EquationsSalesBundlesServiceUpdateRequest extends Message<EquationsSalesBundlesServiceUpdateRequest> ***REMOVED***
+export class EquationsSalesBundlesServiceUpdateRequest extends Message<EquationsSalesBundlesServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -221,38 +221,38 @@ export class EquationsSalesBundlesServiceUpdateRequest extends Message<Equations
    */
   description = "";
 
-  constructor(data?: PartialMessage<EquationsSalesBundlesServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsSalesBundlesServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsSalesBundlesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceUpdateRequest {
     return new EquationsSalesBundlesServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceUpdateRequest {
     return new EquationsSalesBundlesServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceUpdateRequest {
     return new EquationsSalesBundlesServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsSalesBundlesServiceUpdateRequest | PlainMessage<EquationsSalesBundlesServiceUpdateRequest> | undefined, b: EquationsSalesBundlesServiceUpdateRequest | PlainMessage<EquationsSalesBundlesServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsSalesBundlesServiceUpdateRequest | PlainMessage<EquationsSalesBundlesServiceUpdateRequest> | undefined, b: EquationsSalesBundlesServiceUpdateRequest | PlainMessage<EquationsSalesBundlesServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(EquationsSalesBundlesServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -260,7 +260,7 @@ export class EquationsSalesBundlesServiceUpdateRequest extends Message<Equations
  *
  * @generated from message Genesis.EquationSalesBundle
  */
-export class EquationSalesBundle extends Message<EquationSalesBundle> ***REMOVED***
+export class EquationSalesBundle extends Message<EquationSalesBundle> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -345,44 +345,44 @@ export class EquationSalesBundle extends Message<EquationSalesBundle> ***REMOVED
    */
   totalPrice = 0;
 
-  constructor(data?: PartialMessage<EquationSalesBundle>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationSalesBundle>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationSalesBundle";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "list", kind: "message", T: EquationSalesBundleItem, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 40, name: "total_price", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "list", kind: "message", T: EquationSalesBundleItem, repeated: true },
+    { no: 40, name: "total_price", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationSalesBundle ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationSalesBundle {
     return new EquationSalesBundle().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationSalesBundle ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationSalesBundle {
     return new EquationSalesBundle().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationSalesBundle ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationSalesBundle {
     return new EquationSalesBundle().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationSalesBundle | PlainMessage<EquationSalesBundle> | undefined, b: EquationSalesBundle | PlainMessage<EquationSalesBundle> | undefined): boolean ***REMOVED***
+  static equals(a: EquationSalesBundle | PlainMessage<EquationSalesBundle> | undefined, b: EquationSalesBundle | PlainMessage<EquationSalesBundle> | undefined): boolean {
     return proto3.util.equals(EquationSalesBundle, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -390,7 +390,7 @@ export class EquationSalesBundle extends Message<EquationSalesBundle> ***REMOVED
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceItemCreateRequest
  */
-export class EquationsSalesBundlesServiceItemCreateRequest extends Message<EquationsSalesBundlesServiceItemCreateRequest> ***REMOVED***
+export class EquationsSalesBundlesServiceItemCreateRequest extends Message<EquationsSalesBundlesServiceItemCreateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -433,38 +433,38 @@ export class EquationsSalesBundlesServiceItemCreateRequest extends Message<Equat
    */
   specifications = "";
 
-  constructor(data?: PartialMessage<EquationsSalesBundlesServiceItemCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsSalesBundlesServiceItemCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsSalesBundlesServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "equation_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "equation_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceItemCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceItemCreateRequest {
     return new EquationsSalesBundlesServiceItemCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceItemCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceItemCreateRequest {
     return new EquationsSalesBundlesServiceItemCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceItemCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceItemCreateRequest {
     return new EquationsSalesBundlesServiceItemCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsSalesBundlesServiceItemCreateRequest | PlainMessage<EquationsSalesBundlesServiceItemCreateRequest> | undefined, b: EquationsSalesBundlesServiceItemCreateRequest | PlainMessage<EquationsSalesBundlesServiceItemCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsSalesBundlesServiceItemCreateRequest | PlainMessage<EquationsSalesBundlesServiceItemCreateRequest> | undefined, b: EquationsSalesBundlesServiceItemCreateRequest | PlainMessage<EquationsSalesBundlesServiceItemCreateRequest> | undefined): boolean {
     return proto3.util.equals(EquationsSalesBundlesServiceItemCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -472,7 +472,7 @@ export class EquationsSalesBundlesServiceItemCreateRequest extends Message<Equat
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceItemUpdateRequest
  */
-export class EquationsSalesBundlesServiceItemUpdateRequest extends Message<EquationsSalesBundlesServiceItemUpdateRequest> ***REMOVED***
+export class EquationsSalesBundlesServiceItemUpdateRequest extends Message<EquationsSalesBundlesServiceItemUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -508,37 +508,37 @@ export class EquationsSalesBundlesServiceItemUpdateRequest extends Message<Equat
    */
   specifications = "";
 
-  constructor(data?: PartialMessage<EquationsSalesBundlesServiceItemUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsSalesBundlesServiceItemUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsSalesBundlesServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceItemUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceItemUpdateRequest {
     return new EquationsSalesBundlesServiceItemUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceItemUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceItemUpdateRequest {
     return new EquationsSalesBundlesServiceItemUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceItemUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceItemUpdateRequest {
     return new EquationsSalesBundlesServiceItemUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsSalesBundlesServiceItemUpdateRequest | PlainMessage<EquationsSalesBundlesServiceItemUpdateRequest> | undefined, b: EquationsSalesBundlesServiceItemUpdateRequest | PlainMessage<EquationsSalesBundlesServiceItemUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsSalesBundlesServiceItemUpdateRequest | PlainMessage<EquationsSalesBundlesServiceItemUpdateRequest> | undefined, b: EquationsSalesBundlesServiceItemUpdateRequest | PlainMessage<EquationsSalesBundlesServiceItemUpdateRequest> | undefined): boolean {
     return proto3.util.equals(EquationsSalesBundlesServiceItemUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -546,7 +546,7 @@ export class EquationsSalesBundlesServiceItemUpdateRequest extends Message<Equat
  *
  * @generated from message Genesis.EquationSalesBundleItem
  */
-export class EquationSalesBundleItem extends Message<EquationSalesBundleItem> ***REMOVED***
+export class EquationSalesBundleItem extends Message<EquationSalesBundleItem> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -617,42 +617,42 @@ export class EquationSalesBundleItem extends Message<EquationSalesBundleItem> **
    */
   specifications = "";
 
-  constructor(data?: PartialMessage<EquationSalesBundleItem>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationSalesBundleItem>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationSalesBundleItem";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "equation_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "equation_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "unit_price", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationSalesBundleItem ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationSalesBundleItem {
     return new EquationSalesBundleItem().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationSalesBundleItem ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationSalesBundleItem {
     return new EquationSalesBundleItem().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationSalesBundleItem ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationSalesBundleItem {
     return new EquationSalesBundleItem().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationSalesBundleItem | PlainMessage<EquationSalesBundleItem> | undefined, b: EquationSalesBundleItem | PlainMessage<EquationSalesBundleItem> | undefined): boolean ***REMOVED***
+  static equals(a: EquationSalesBundleItem | PlainMessage<EquationSalesBundleItem> | undefined, b: EquationSalesBundleItem | PlainMessage<EquationSalesBundleItem> | undefined): boolean {
     return proto3.util.equals(EquationSalesBundleItem, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -660,7 +660,7 @@ export class EquationSalesBundleItem extends Message<EquationSalesBundleItem> **
  *
  * @generated from message Genesis.EquationsSalesBundlesList
  */
-export class EquationsSalesBundlesList extends Message<EquationsSalesBundlesList> ***REMOVED***
+export class EquationsSalesBundlesList extends Message<EquationsSalesBundlesList> {
   /**
    * List of records
    *
@@ -668,33 +668,33 @@ export class EquationsSalesBundlesList extends Message<EquationsSalesBundlesList
    */
   list: EquationSalesBundle[] = [];
 
-  constructor(data?: PartialMessage<EquationsSalesBundlesList>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsSalesBundlesList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsSalesBundlesList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: EquationSalesBundle, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: EquationSalesBundle, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesList {
     return new EquationsSalesBundlesList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesList {
     return new EquationsSalesBundlesList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesList {
     return new EquationsSalesBundlesList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsSalesBundlesList | PlainMessage<EquationsSalesBundlesList> | undefined, b: EquationsSalesBundlesList | PlainMessage<EquationsSalesBundlesList> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsSalesBundlesList | PlainMessage<EquationsSalesBundlesList> | undefined, b: EquationsSalesBundlesList | PlainMessage<EquationsSalesBundlesList> | undefined): boolean {
     return proto3.util.equals(EquationsSalesBundlesList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -702,7 +702,7 @@ export class EquationsSalesBundlesList extends Message<EquationsSalesBundlesList
  *
  * @generated from message Genesis.EquationsSalesBundlesItemsList
  */
-export class EquationsSalesBundlesItemsList extends Message<EquationsSalesBundlesItemsList> ***REMOVED***
+export class EquationsSalesBundlesItemsList extends Message<EquationsSalesBundlesItemsList> {
   /**
    * List of records
    *
@@ -710,33 +710,33 @@ export class EquationsSalesBundlesItemsList extends Message<EquationsSalesBundle
    */
   list: EquationSalesBundleItem[] = [];
 
-  constructor(data?: PartialMessage<EquationsSalesBundlesItemsList>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsSalesBundlesItemsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsSalesBundlesItemsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: EquationSalesBundleItem, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: EquationSalesBundleItem, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesItemsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesItemsList {
     return new EquationsSalesBundlesItemsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesItemsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesItemsList {
     return new EquationsSalesBundlesItemsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesItemsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesItemsList {
     return new EquationsSalesBundlesItemsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsSalesBundlesItemsList | PlainMessage<EquationsSalesBundlesItemsList> | undefined, b: EquationsSalesBundlesItemsList | PlainMessage<EquationsSalesBundlesItemsList> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsSalesBundlesItemsList | PlainMessage<EquationsSalesBundlesItemsList> | undefined, b: EquationsSalesBundlesItemsList | PlainMessage<EquationsSalesBundlesItemsList> | undefined): boolean {
     return proto3.util.equals(EquationsSalesBundlesItemsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -744,7 +744,7 @@ export class EquationsSalesBundlesItemsList extends Message<EquationsSalesBundle
  *
  * @generated from message Genesis.EquationSalesBundleItemHistoryRequest
  */
-export class EquationSalesBundleItemHistoryRequest extends Message<EquationSalesBundleItemHistoryRequest> ***REMOVED***
+export class EquationSalesBundleItemHistoryRequest extends Message<EquationSalesBundleItemHistoryRequest> {
   /**
    * Stores the ID of the equation sales bundle
    *
@@ -759,34 +759,34 @@ export class EquationSalesBundleItemHistoryRequest extends Message<EquationSales
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<EquationSalesBundleItemHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationSalesBundleItemHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationSalesBundleItemHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "equation_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "equation_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationSalesBundleItemHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationSalesBundleItemHistoryRequest {
     return new EquationSalesBundleItemHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationSalesBundleItemHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationSalesBundleItemHistoryRequest {
     return new EquationSalesBundleItemHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationSalesBundleItemHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationSalesBundleItemHistoryRequest {
     return new EquationSalesBundleItemHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationSalesBundleItemHistoryRequest | PlainMessage<EquationSalesBundleItemHistoryRequest> | undefined, b: EquationSalesBundleItemHistoryRequest | PlainMessage<EquationSalesBundleItemHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: EquationSalesBundleItemHistoryRequest | PlainMessage<EquationSalesBundleItemHistoryRequest> | undefined, b: EquationSalesBundleItemHistoryRequest | PlainMessage<EquationSalesBundleItemHistoryRequest> | undefined): boolean {
     return proto3.util.equals(EquationSalesBundleItemHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -794,7 +794,7 @@ export class EquationSalesBundleItemHistoryRequest extends Message<EquationSales
  *
  * @generated from message Genesis.EquationsSalesBundlesServicePaginationReq
  */
-export class EquationsSalesBundlesServicePaginationReq extends Message<EquationsSalesBundlesServicePaginationReq> ***REMOVED***
+export class EquationsSalesBundlesServicePaginationReq extends Message<EquationsSalesBundlesServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -837,38 +837,38 @@ export class EquationsSalesBundlesServicePaginationReq extends Message<Equations
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<EquationsSalesBundlesServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsSalesBundlesServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsSalesBundlesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_SALES_BUNDLE_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_SALES_BUNDLE_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServicePaginationReq {
     return new EquationsSalesBundlesServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServicePaginationReq {
     return new EquationsSalesBundlesServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServicePaginationReq {
     return new EquationsSalesBundlesServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsSalesBundlesServicePaginationReq | PlainMessage<EquationsSalesBundlesServicePaginationReq> | undefined, b: EquationsSalesBundlesServicePaginationReq | PlainMessage<EquationsSalesBundlesServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsSalesBundlesServicePaginationReq | PlainMessage<EquationsSalesBundlesServicePaginationReq> | undefined, b: EquationsSalesBundlesServicePaginationReq | PlainMessage<EquationsSalesBundlesServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(EquationsSalesBundlesServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -876,7 +876,7 @@ export class EquationsSalesBundlesServicePaginationReq extends Message<Equations
  *
  * @generated from message Genesis.EquationsSalesBundlesServicePaginationResponse
  */
-export class EquationsSalesBundlesServicePaginationResponse extends Message<EquationsSalesBundlesServicePaginationResponse> ***REMOVED***
+export class EquationsSalesBundlesServicePaginationResponse extends Message<EquationsSalesBundlesServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -905,36 +905,36 @@ export class EquationsSalesBundlesServicePaginationResponse extends Message<Equa
    */
   payload: EquationSalesBundle[] = [];
 
-  constructor(data?: PartialMessage<EquationsSalesBundlesServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsSalesBundlesServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsSalesBundlesServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: EquationSalesBundle, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: EquationSalesBundle, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServicePaginationResponse {
     return new EquationsSalesBundlesServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServicePaginationResponse {
     return new EquationsSalesBundlesServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServicePaginationResponse {
     return new EquationsSalesBundlesServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsSalesBundlesServicePaginationResponse | PlainMessage<EquationsSalesBundlesServicePaginationResponse> | undefined, b: EquationsSalesBundlesServicePaginationResponse | PlainMessage<EquationsSalesBundlesServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsSalesBundlesServicePaginationResponse | PlainMessage<EquationsSalesBundlesServicePaginationResponse> | undefined, b: EquationsSalesBundlesServicePaginationResponse | PlainMessage<EquationsSalesBundlesServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(EquationsSalesBundlesServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -942,7 +942,7 @@ export class EquationsSalesBundlesServicePaginationResponse extends Message<Equa
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceEntityPaginationReq
  */
-export class EquationsSalesBundlesServiceEntityPaginationReq extends Message<EquationsSalesBundlesServiceEntityPaginationReq> ***REMOVED***
+export class EquationsSalesBundlesServiceEntityPaginationReq extends Message<EquationsSalesBundlesServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -985,38 +985,38 @@ export class EquationsSalesBundlesServiceEntityPaginationReq extends Message<Equ
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<EquationsSalesBundlesServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsSalesBundlesServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsSalesBundlesServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_SALES_BUNDLE_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_SALES_BUNDLE_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceEntityPaginationReq {
     return new EquationsSalesBundlesServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceEntityPaginationReq {
     return new EquationsSalesBundlesServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceEntityPaginationReq {
     return new EquationsSalesBundlesServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsSalesBundlesServiceEntityPaginationReq | PlainMessage<EquationsSalesBundlesServiceEntityPaginationReq> | undefined, b: EquationsSalesBundlesServiceEntityPaginationReq | PlainMessage<EquationsSalesBundlesServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsSalesBundlesServiceEntityPaginationReq | PlainMessage<EquationsSalesBundlesServiceEntityPaginationReq> | undefined, b: EquationsSalesBundlesServiceEntityPaginationReq | PlainMessage<EquationsSalesBundlesServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(EquationsSalesBundlesServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1024,7 +1024,7 @@ export class EquationsSalesBundlesServiceEntityPaginationReq extends Message<Equ
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceFilterReq
  */
-export class EquationsSalesBundlesServiceFilterReq extends Message<EquationsSalesBundlesServiceFilterReq> ***REMOVED***
+export class EquationsSalesBundlesServiceFilterReq extends Message<EquationsSalesBundlesServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1144,49 +1144,49 @@ export class EquationsSalesBundlesServiceFilterReq extends Message<EquationsSale
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<EquationsSalesBundlesServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsSalesBundlesServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsSalesBundlesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_SALES_BUNDLE_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_SALES_BUNDLE_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceFilterReq {
     return new EquationsSalesBundlesServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceFilterReq {
     return new EquationsSalesBundlesServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceFilterReq {
     return new EquationsSalesBundlesServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsSalesBundlesServiceFilterReq | PlainMessage<EquationsSalesBundlesServiceFilterReq> | undefined, b: EquationsSalesBundlesServiceFilterReq | PlainMessage<EquationsSalesBundlesServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsSalesBundlesServiceFilterReq | PlainMessage<EquationsSalesBundlesServiceFilterReq> | undefined, b: EquationsSalesBundlesServiceFilterReq | PlainMessage<EquationsSalesBundlesServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(EquationsSalesBundlesServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1194,7 +1194,7 @@ export class EquationsSalesBundlesServiceFilterReq extends Message<EquationsSale
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceSearchAllReq
  */
-export class EquationsSalesBundlesServiceSearchAllReq extends Message<EquationsSalesBundlesServiceSearchAllReq> ***REMOVED***
+export class EquationsSalesBundlesServiceSearchAllReq extends Message<EquationsSalesBundlesServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1251,38 +1251,38 @@ export class EquationsSalesBundlesServiceSearchAllReq extends Message<EquationsS
    */
   searchKey = "";
 
-  constructor(data?: PartialMessage<EquationsSalesBundlesServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<EquationsSalesBundlesServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EquationsSalesBundlesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_SALES_BUNDLE_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(EQUATION_SALES_BUNDLE_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EquationsSalesBundlesServiceSearchAllReq {
     return new EquationsSalesBundlesServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceSearchAllReq {
     return new EquationsSalesBundlesServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceSearchAllReq {
     return new EquationsSalesBundlesServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EquationsSalesBundlesServiceSearchAllReq | PlainMessage<EquationsSalesBundlesServiceSearchAllReq> | undefined, b: EquationsSalesBundlesServiceSearchAllReq | PlainMessage<EquationsSalesBundlesServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: EquationsSalesBundlesServiceSearchAllReq | PlainMessage<EquationsSalesBundlesServiceSearchAllReq> | undefined, b: EquationsSalesBundlesServiceSearchAllReq | PlainMessage<EquationsSalesBundlesServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(EquationsSalesBundlesServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

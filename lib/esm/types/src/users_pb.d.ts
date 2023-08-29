@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.USER_SORT_KEY
  */
-export declare enum USER_SORT_KEY ***REMOVED***
+export declare enum USER_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -75,14 +75,14 @@ export declare enum USER_SORT_KEY ***REMOVED***
      * @generated from enum value: USER_SORT_KEY_PHONE = 14;
      */
     USER_SORT_KEY_PHONE = 14
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.UsersServiceCreateRequest
  */
-export declare class UsersServiceCreateRequest extends Message<UsersServiceCreateRequest> ***REMOVED***
+export declare class UsersServiceCreateRequest extends Message<UsersServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -265,14 +265,14 @@ export declare class UsersServiceCreateRequest extends Message<UsersServiceCreat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceCreateRequest;
     static equals(a: UsersServiceCreateRequest | PlainMessage<UsersServiceCreateRequest> | undefined, b: UsersServiceCreateRequest | PlainMessage<UsersServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.UsersServiceUpdateRequest
  */
-export declare class UsersServiceUpdateRequest extends Message<UsersServiceUpdateRequest> ***REMOVED***
+export declare class UsersServiceUpdateRequest extends Message<UsersServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -449,14 +449,14 @@ export declare class UsersServiceUpdateRequest extends Message<UsersServiceUpdat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceUpdateRequest;
     static equals(a: UsersServiceUpdateRequest | PlainMessage<UsersServiceUpdateRequest> | undefined, b: UsersServiceUpdateRequest | PlainMessage<UsersServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.User
  */
-export declare class User extends Message<User> ***REMOVED***
+export declare class User extends Message<User> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -657,14 +657,14 @@ export declare class User extends Message<User> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): User;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): User;
     static equals(a: User | PlainMessage<User> | undefined, b: User | PlainMessage<User> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message that is used internally to validate user
  *
  * @generated from message Genesis.UserPrimaryInfo
  */
-export declare class UserPrimaryInfo extends Message<UserPrimaryInfo> ***REMOVED***
+export declare class UserPrimaryInfo extends Message<UserPrimaryInfo> {
     /**
      * The username of the user
      *
@@ -721,14 +721,14 @@ export declare class UserPrimaryInfo extends Message<UserPrimaryInfo> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UserPrimaryInfo;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UserPrimaryInfo;
     static equals(a: UserPrimaryInfo | PlainMessage<UserPrimaryInfo> | undefined, b: UserPrimaryInfo | PlainMessage<UserPrimaryInfo> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.UsersList
  */
-export declare class UsersList extends Message<UsersList> ***REMOVED***
+export declare class UsersList extends Message<UsersList> {
     /**
      * List of records
      *
@@ -743,14 +743,14 @@ export declare class UsersList extends Message<UsersList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersList;
     static equals(a: UsersList | PlainMessage<UsersList> | undefined, b: UsersList | PlainMessage<UsersList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.UsersServicePaginationReq
  */
-export declare class UsersServicePaginationReq extends Message<UsersServicePaginationReq> ***REMOVED***
+export declare class UsersServicePaginationReq extends Message<UsersServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -795,14 +795,14 @@ export declare class UsersServicePaginationReq extends Message<UsersServicePagin
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServicePaginationReq;
     static equals(a: UsersServicePaginationReq | PlainMessage<UsersServicePaginationReq> | undefined, b: UsersServicePaginationReq | PlainMessage<UsersServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.UsersServicePaginationResponse
  */
-export declare class UsersServicePaginationResponse extends Message<UsersServicePaginationResponse> ***REMOVED***
+export declare class UsersServicePaginationResponse extends Message<UsersServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -835,14 +835,14 @@ export declare class UsersServicePaginationResponse extends Message<UsersService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServicePaginationResponse;
     static equals(a: UsersServicePaginationResponse | PlainMessage<UsersServicePaginationResponse> | undefined, b: UsersServicePaginationResponse | PlainMessage<UsersServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.UsersServiceEntityPaginationReq
  */
-export declare class UsersServiceEntityPaginationReq extends Message<UsersServiceEntityPaginationReq> ***REMOVED***
+export declare class UsersServiceEntityPaginationReq extends Message<UsersServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -887,14 +887,14 @@ export declare class UsersServiceEntityPaginationReq extends Message<UsersServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceEntityPaginationReq;
     static equals(a: UsersServiceEntityPaginationReq | PlainMessage<UsersServiceEntityPaginationReq> | undefined, b: UsersServiceEntityPaginationReq | PlainMessage<UsersServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.UsersServiceFilterReq
  */
-export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq> ***REMOVED***
+export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -1065,14 +1065,14 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceFilterReq;
     static equals(a: UsersServiceFilterReq | PlainMessage<UsersServiceFilterReq> | undefined, b: UsersServiceFilterReq | PlainMessage<UsersServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.UsersServiceSearchAllReq
  */
-export declare class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> ***REMOVED***
+export declare class UsersServiceSearchAllReq extends Message<UsersServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -1129,14 +1129,14 @@ export declare class UsersServiceSearchAllReq extends Message<UsersServiceSearch
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceSearchAllReq;
     static equals(a: UsersServiceSearchAllReq | PlainMessage<UsersServiceSearchAllReq> | undefined, b: UsersServiceSearchAllReq | PlainMessage<UsersServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message that is required to register a user's device
  *
  * @generated from message Genesis.UsersServiceRegisterMobileDeviceRequest
  */
-export declare class UsersServiceRegisterMobileDeviceRequest extends Message<UsersServiceRegisterMobileDeviceRequest> ***REMOVED***
+export declare class UsersServiceRegisterMobileDeviceRequest extends Message<UsersServiceRegisterMobileDeviceRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -1169,5 +1169,5 @@ export declare class UsersServiceRegisterMobileDeviceRequest extends Message<Use
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UsersServiceRegisterMobileDeviceRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UsersServiceRegisterMobileDeviceRequest;
     static equals(a: UsersServiceRegisterMobileDeviceRequest | PlainMessage<UsersServiceRegisterMobileDeviceRequest> | undefined, b: UsersServiceRegisterMobileDeviceRequest | PlainMessage<UsersServiceRegisterMobileDeviceRequest> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=users_pb.d.ts.map

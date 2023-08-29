@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.QUOTATION_RESPONSE_SORT_KEY
  */
-export declare enum QUOTATION_RESPONSE_SORT_KEY ***REMOVED***
+export declare enum QUOTATION_RESPONSE_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -63,14 +63,14 @@ export declare enum QUOTATION_RESPONSE_SORT_KEY ***REMOVED***
      * @generated from enum value: QUOTATION_RESPONSE_SORT_KEY_FINAL_REF_NUMBER = 11;
      */
     QUOTATION_RESPONSE_SORT_KEY_FINAL_REF_NUMBER = 11
-***REMOVED***
+}
 /**
  *
  * Describes the available sort keys for sorting quotation response items
  *
  * @generated from enum Genesis.QUOTATION_RESPONSE_ITEM_SORT_KEY
  */
-export declare enum QUOTATION_RESPONSE_ITEM_SORT_KEY ***REMOVED***
+export declare enum QUOTATION_RESPONSE_ITEM_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -107,14 +107,14 @@ export declare enum QUOTATION_RESPONSE_ITEM_SORT_KEY ***REMOVED***
      * @generated from enum value: QUOTATION_RESPONSE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
      */
     QUOTATION_RESPONSE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.QuotationsResponsesServiceCreateRequest
  */
-export declare class QuotationsResponsesServiceCreateRequest extends Message<QuotationsResponsesServiceCreateRequest> ***REMOVED***
+export declare class QuotationsResponsesServiceCreateRequest extends Message<QuotationsResponsesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -183,14 +183,14 @@ export declare class QuotationsResponsesServiceCreateRequest extends Message<Quo
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceCreateRequest;
     static equals(a: QuotationsResponsesServiceCreateRequest | PlainMessage<QuotationsResponsesServiceCreateRequest> | undefined, b: QuotationsResponsesServiceCreateRequest | PlainMessage<QuotationsResponsesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.QuotationsResponsesServiceUpdateRequest
  */
-export declare class QuotationsResponsesServiceUpdateRequest extends Message<QuotationsResponsesServiceUpdateRequest> ***REMOVED***
+export declare class QuotationsResponsesServiceUpdateRequest extends Message<QuotationsResponsesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -247,14 +247,14 @@ export declare class QuotationsResponsesServiceUpdateRequest extends Message<Quo
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceUpdateRequest;
     static equals(a: QuotationsResponsesServiceUpdateRequest | PlainMessage<QuotationsResponsesServiceUpdateRequest> | undefined, b: QuotationsResponsesServiceUpdateRequest | PlainMessage<QuotationsResponsesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.QuotationResponse
  */
-export declare class QuotationResponse extends Message<QuotationResponse> ***REMOVED***
+export declare class QuotationResponse extends Message<QuotationResponse> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -359,14 +359,14 @@ export declare class QuotationResponse extends Message<QuotationResponse> ***REM
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationResponse;
     static equals(a: QuotationResponse | PlainMessage<QuotationResponse> | undefined, b: QuotationResponse | PlainMessage<QuotationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a quotation response
  *
  * @generated from message Genesis.QuotationsResponsesServiceItemCreateRequest
  */
-export declare class QuotationsResponsesServiceItemCreateRequest extends Message<QuotationsResponsesServiceItemCreateRequest> ***REMOVED***
+export declare class QuotationsResponsesServiceItemCreateRequest extends Message<QuotationsResponsesServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -459,14 +459,14 @@ export declare class QuotationsResponsesServiceItemCreateRequest extends Message
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceItemCreateRequest;
     static equals(a: QuotationsResponsesServiceItemCreateRequest | PlainMessage<QuotationsResponsesServiceItemCreateRequest> | undefined, b: QuotationsResponsesServiceItemCreateRequest | PlainMessage<QuotationsResponsesServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a quotation response
  *
  * @generated from message Genesis.QuotationsResponsesServiceItemUpdateRequest
  */
-export declare class QuotationsResponsesServiceItemUpdateRequest extends Message<QuotationsResponsesServiceItemUpdateRequest> ***REMOVED***
+export declare class QuotationsResponsesServiceItemUpdateRequest extends Message<QuotationsResponsesServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -553,14 +553,14 @@ export declare class QuotationsResponsesServiceItemUpdateRequest extends Message
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceItemUpdateRequest;
     static equals(a: QuotationsResponsesServiceItemUpdateRequest | PlainMessage<QuotationsResponsesServiceItemUpdateRequest> | undefined, b: QuotationsResponsesServiceItemUpdateRequest | PlainMessage<QuotationsResponsesServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a quotation response
  *
  * @generated from message Genesis.QuotationResponseItem
  */
-export declare class QuotationResponseItem extends Message<QuotationResponseItem> ***REMOVED***
+export declare class QuotationResponseItem extends Message<QuotationResponseItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -677,14 +677,14 @@ export declare class QuotationResponseItem extends Message<QuotationResponseItem
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationResponseItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationResponseItem;
     static equals(a: QuotationResponseItem | PlainMessage<QuotationResponseItem> | undefined, b: QuotationResponseItem | PlainMessage<QuotationResponseItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of quotations responses
  *
  * @generated from message Genesis.QuotationsResponsesList
  */
-export declare class QuotationsResponsesList extends Message<QuotationsResponsesList> ***REMOVED***
+export declare class QuotationsResponsesList extends Message<QuotationsResponsesList> {
     /**
      * List of records
      *
@@ -699,14 +699,14 @@ export declare class QuotationsResponsesList extends Message<QuotationsResponses
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationsResponsesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationsResponsesList;
     static equals(a: QuotationsResponsesList | PlainMessage<QuotationsResponsesList> | undefined, b: QuotationsResponsesList | PlainMessage<QuotationsResponsesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of quotation response items
  *
  * @generated from message Genesis.QuotationsResponsesItemsList
  */
-export declare class QuotationsResponsesItemsList extends Message<QuotationsResponsesItemsList> ***REMOVED***
+export declare class QuotationsResponsesItemsList extends Message<QuotationsResponsesItemsList> {
     /**
      * List of records
      *
@@ -721,14 +721,14 @@ export declare class QuotationsResponsesItemsList extends Message<QuotationsResp
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationsResponsesItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationsResponsesItemsList;
     static equals(a: QuotationsResponsesItemsList | PlainMessage<QuotationsResponsesItemsList> | undefined, b: QuotationsResponsesItemsList | PlainMessage<QuotationsResponsesItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.QuotationResponseItemHistoryRequest
  */
-export declare class QuotationResponseItemHistoryRequest extends Message<QuotationResponseItemHistoryRequest> ***REMOVED***
+export declare class QuotationResponseItemHistoryRequest extends Message<QuotationResponseItemHistoryRequest> {
     /**
      * Stores the quotation response ID
      *
@@ -749,14 +749,14 @@ export declare class QuotationResponseItemHistoryRequest extends Message<Quotati
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationResponseItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationResponseItemHistoryRequest;
     static equals(a: QuotationResponseItemHistoryRequest | PlainMessage<QuotationResponseItemHistoryRequest> | undefined, b: QuotationResponseItemHistoryRequest | PlainMessage<QuotationResponseItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination response to retrieve records
  *
  * @generated from message Genesis.QuotationsResponsesServicePaginationReq
  */
-export declare class QuotationsResponsesServicePaginationReq extends Message<QuotationsResponsesServicePaginationReq> ***REMOVED***
+export declare class QuotationsResponsesServicePaginationReq extends Message<QuotationsResponsesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -801,14 +801,14 @@ export declare class QuotationsResponsesServicePaginationReq extends Message<Quo
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationsResponsesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationsResponsesServicePaginationReq;
     static equals(a: QuotationsResponsesServicePaginationReq | PlainMessage<QuotationsResponsesServicePaginationReq> | undefined, b: QuotationsResponsesServicePaginationReq | PlainMessage<QuotationsResponsesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination response
  *
  * @generated from message Genesis.QuotationsResponsesServicePaginationResponse
  */
-export declare class QuotationsResponsesServicePaginationResponse extends Message<QuotationsResponsesServicePaginationResponse> ***REMOVED***
+export declare class QuotationsResponsesServicePaginationResponse extends Message<QuotationsResponsesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -841,14 +841,14 @@ export declare class QuotationsResponsesServicePaginationResponse extends Messag
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationsResponsesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationsResponsesServicePaginationResponse;
     static equals(a: QuotationsResponsesServicePaginationResponse | PlainMessage<QuotationsResponsesServicePaginationResponse> | undefined, b: QuotationsResponsesServicePaginationResponse | PlainMessage<QuotationsResponsesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination response to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.QuotationsResponsesServiceEntityPaginationReq
  */
-export declare class QuotationsResponsesServiceEntityPaginationReq extends Message<QuotationsResponsesServiceEntityPaginationReq> ***REMOVED***
+export declare class QuotationsResponsesServiceEntityPaginationReq extends Message<QuotationsResponsesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -893,14 +893,14 @@ export declare class QuotationsResponsesServiceEntityPaginationReq extends Messa
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceEntityPaginationReq;
     static equals(a: QuotationsResponsesServiceEntityPaginationReq | PlainMessage<QuotationsResponsesServiceEntityPaginationReq> | undefined, b: QuotationsResponsesServiceEntityPaginationReq | PlainMessage<QuotationsResponsesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base response payload of a filter search
  *
  * @generated from message Genesis.QuotationsResponsesServiceFilterReq
  */
-export declare class QuotationsResponsesServiceFilterReq extends Message<QuotationsResponsesServiceFilterReq> ***REMOVED***
+export declare class QuotationsResponsesServiceFilterReq extends Message<QuotationsResponsesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -1029,14 +1029,14 @@ export declare class QuotationsResponsesServiceFilterReq extends Message<Quotati
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceFilterReq;
     static equals(a: QuotationsResponsesServiceFilterReq | PlainMessage<QuotationsResponsesServiceFilterReq> | undefined, b: QuotationsResponsesServiceFilterReq | PlainMessage<QuotationsResponsesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response payload for performing a generic search operation on records
  *
  * @generated from message Genesis.QuotationsResponsesServiceSearchAllReq
  */
-export declare class QuotationsResponsesServiceSearchAllReq extends Message<QuotationsResponsesServiceSearchAllReq> ***REMOVED***
+export declare class QuotationsResponsesServiceSearchAllReq extends Message<QuotationsResponsesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -1093,14 +1093,14 @@ export declare class QuotationsResponsesServiceSearchAllReq extends Message<Quot
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceSearchAllReq;
     static equals(a: QuotationsResponsesServiceSearchAllReq | PlainMessage<QuotationsResponsesServiceSearchAllReq> | undefined, b: QuotationsResponsesServiceSearchAllReq | PlainMessage<QuotationsResponsesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload to filter quotation response items
  *
  * @generated from message Genesis.QuotationsResponsesServiceItemsFilterReq
  */
-export declare class QuotationsResponsesServiceItemsFilterReq extends Message<QuotationsResponsesServiceItemsFilterReq> ***REMOVED***
+export declare class QuotationsResponsesServiceItemsFilterReq extends Message<QuotationsResponsesServiceItemsFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -1223,5 +1223,5 @@ export declare class QuotationsResponsesServiceItemsFilterReq extends Message<Qu
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceItemsFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuotationsResponsesServiceItemsFilterReq;
     static equals(a: QuotationsResponsesServiceItemsFilterReq | PlainMessage<QuotationsResponsesServiceItemsFilterReq> | undefined, b: QuotationsResponsesServiceItemsFilterReq | PlainMessage<QuotationsResponsesServiceItemsFilterReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=quotations_responses_pb.d.ts.map

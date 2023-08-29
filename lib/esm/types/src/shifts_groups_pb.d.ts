@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.SHIFT_GROUP_SORT_KEY
  */
-export declare enum SHIFT_GROUP_SORT_KEY ***REMOVED***
+export declare enum SHIFT_GROUP_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -62,14 +62,14 @@ export declare enum SHIFT_GROUP_SORT_KEY ***REMOVED***
      * @generated from enum value: SHIFT_GROUP_SORT_KEY_CODE = 11;
      */
     SHIFT_GROUP_SORT_KEY_CODE = 11
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.ShiftsGroupsServiceCreateRequest
  */
-export declare class ShiftsGroupsServiceCreateRequest extends Message<ShiftsGroupsServiceCreateRequest> ***REMOVED***
+export declare class ShiftsGroupsServiceCreateRequest extends Message<ShiftsGroupsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -114,14 +114,14 @@ export declare class ShiftsGroupsServiceCreateRequest extends Message<ShiftsGrou
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceCreateRequest;
     static equals(a: ShiftsGroupsServiceCreateRequest | PlainMessage<ShiftsGroupsServiceCreateRequest> | undefined, b: ShiftsGroupsServiceCreateRequest | PlainMessage<ShiftsGroupsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.ShiftsGroupsServiceUpdateRequest
  */
-export declare class ShiftsGroupsServiceUpdateRequest extends Message<ShiftsGroupsServiceUpdateRequest> ***REMOVED***
+export declare class ShiftsGroupsServiceUpdateRequest extends Message<ShiftsGroupsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -172,14 +172,14 @@ export declare class ShiftsGroupsServiceUpdateRequest extends Message<ShiftsGrou
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceUpdateRequest;
     static equals(a: ShiftsGroupsServiceUpdateRequest | PlainMessage<ShiftsGroupsServiceUpdateRequest> | undefined, b: ShiftsGroupsServiceUpdateRequest | PlainMessage<ShiftsGroupsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.ShiftGroup
  */
-export declare class ShiftGroup extends Message<ShiftGroup> ***REMOVED***
+export declare class ShiftGroup extends Message<ShiftGroup> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -254,14 +254,14 @@ export declare class ShiftGroup extends Message<ShiftGroup> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftGroup;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftGroup;
     static equals(a: ShiftGroup | PlainMessage<ShiftGroup> | undefined, b: ShiftGroup | PlainMessage<ShiftGroup> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add a shift to a shift group
  *
  * @generated from message Genesis.ShiftsGroupsServiceShiftGroupCreateRequest
  */
-export declare class ShiftsGroupsServiceShiftGroupCreateRequest extends Message<ShiftsGroupsServiceShiftGroupCreateRequest> ***REMOVED***
+export declare class ShiftsGroupsServiceShiftGroupCreateRequest extends Message<ShiftsGroupsServiceShiftGroupCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -288,14 +288,14 @@ export declare class ShiftsGroupsServiceShiftGroupCreateRequest extends Message<
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceShiftGroupCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceShiftGroupCreateRequest;
     static equals(a: ShiftsGroupsServiceShiftGroupCreateRequest | PlainMessage<ShiftsGroupsServiceShiftGroupCreateRequest> | undefined, b: ShiftsGroupsServiceShiftGroupCreateRequest | PlainMessage<ShiftsGroupsServiceShiftGroupCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update a shift in a shift group
  *
  * @generated from message Genesis.ShiftsGroupsServiceShiftGroupUpdateRequest
  */
-export declare class ShiftsGroupsServiceShiftGroupUpdateRequest extends Message<ShiftsGroupsServiceShiftGroupUpdateRequest> ***REMOVED***
+export declare class ShiftsGroupsServiceShiftGroupUpdateRequest extends Message<ShiftsGroupsServiceShiftGroupUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -328,14 +328,14 @@ export declare class ShiftsGroupsServiceShiftGroupUpdateRequest extends Message<
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceShiftGroupUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceShiftGroupUpdateRequest;
     static equals(a: ShiftsGroupsServiceShiftGroupUpdateRequest | PlainMessage<ShiftsGroupsServiceShiftGroupUpdateRequest> | undefined, b: ShiftsGroupsServiceShiftGroupUpdateRequest | PlainMessage<ShiftsGroupsServiceShiftGroupUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute a shift associated to a shift group
  *
  * @generated from message Genesis.ShiftGroupShift
  */
-export declare class ShiftGroupShift extends Message<ShiftGroupShift> ***REMOVED***
+export declare class ShiftGroupShift extends Message<ShiftGroupShift> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -386,14 +386,14 @@ export declare class ShiftGroupShift extends Message<ShiftGroupShift> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftGroupShift;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftGroupShift;
     static equals(a: ShiftGroupShift | PlainMessage<ShiftGroupShift> | undefined, b: ShiftGroupShift | PlainMessage<ShiftGroupShift> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of shift groups
  *
  * @generated from message Genesis.ShiftsGroupsList
  */
-export declare class ShiftsGroupsList extends Message<ShiftsGroupsList> ***REMOVED***
+export declare class ShiftsGroupsList extends Message<ShiftsGroupsList> {
     /**
      * List of records
      *
@@ -408,14 +408,14 @@ export declare class ShiftsGroupsList extends Message<ShiftsGroupsList> ***REMOV
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsGroupsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsGroupsList;
     static equals(a: ShiftsGroupsList | PlainMessage<ShiftsGroupsList> | undefined, b: ShiftsGroupsList | PlainMessage<ShiftsGroupsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of shift group shifts
  *
  * @generated from message Genesis.ShiftsGroupsShiftsList
  */
-export declare class ShiftsGroupsShiftsList extends Message<ShiftsGroupsShiftsList> ***REMOVED***
+export declare class ShiftsGroupsShiftsList extends Message<ShiftsGroupsShiftsList> {
     /**
      * List of records
      *
@@ -430,14 +430,14 @@ export declare class ShiftsGroupsShiftsList extends Message<ShiftsGroupsShiftsLi
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsGroupsShiftsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsGroupsShiftsList;
     static equals(a: ShiftsGroupsShiftsList | PlainMessage<ShiftsGroupsShiftsList> | undefined, b: ShiftsGroupsShiftsList | PlainMessage<ShiftsGroupsShiftsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.ShiftsGroupsShiftsHistoryRequest
  */
-export declare class ShiftsGroupsShiftsHistoryRequest extends Message<ShiftsGroupsShiftsHistoryRequest> ***REMOVED***
+export declare class ShiftsGroupsShiftsHistoryRequest extends Message<ShiftsGroupsShiftsHistoryRequest> {
     /**
      * Stores the shift group ID
      *
@@ -458,14 +458,14 @@ export declare class ShiftsGroupsShiftsHistoryRequest extends Message<ShiftsGrou
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsGroupsShiftsHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsGroupsShiftsHistoryRequest;
     static equals(a: ShiftsGroupsShiftsHistoryRequest | PlainMessage<ShiftsGroupsShiftsHistoryRequest> | undefined, b: ShiftsGroupsShiftsHistoryRequest | PlainMessage<ShiftsGroupsShiftsHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.ShiftsGroupsServicePaginationReq
  */
-export declare class ShiftsGroupsServicePaginationReq extends Message<ShiftsGroupsServicePaginationReq> ***REMOVED***
+export declare class ShiftsGroupsServicePaginationReq extends Message<ShiftsGroupsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -510,14 +510,14 @@ export declare class ShiftsGroupsServicePaginationReq extends Message<ShiftsGrou
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsGroupsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsGroupsServicePaginationReq;
     static equals(a: ShiftsGroupsServicePaginationReq | PlainMessage<ShiftsGroupsServicePaginationReq> | undefined, b: ShiftsGroupsServicePaginationReq | PlainMessage<ShiftsGroupsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.ShiftsGroupsServicePaginationResponse
  */
-export declare class ShiftsGroupsServicePaginationResponse extends Message<ShiftsGroupsServicePaginationResponse> ***REMOVED***
+export declare class ShiftsGroupsServicePaginationResponse extends Message<ShiftsGroupsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -550,14 +550,14 @@ export declare class ShiftsGroupsServicePaginationResponse extends Message<Shift
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsGroupsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsGroupsServicePaginationResponse;
     static equals(a: ShiftsGroupsServicePaginationResponse | PlainMessage<ShiftsGroupsServicePaginationResponse> | undefined, b: ShiftsGroupsServicePaginationResponse | PlainMessage<ShiftsGroupsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.ShiftsGroupsServiceEntityPaginationReq
  */
-export declare class ShiftsGroupsServiceEntityPaginationReq extends Message<ShiftsGroupsServiceEntityPaginationReq> ***REMOVED***
+export declare class ShiftsGroupsServiceEntityPaginationReq extends Message<ShiftsGroupsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -602,14 +602,14 @@ export declare class ShiftsGroupsServiceEntityPaginationReq extends Message<Shif
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceEntityPaginationReq;
     static equals(a: ShiftsGroupsServiceEntityPaginationReq | PlainMessage<ShiftsGroupsServiceEntityPaginationReq> | undefined, b: ShiftsGroupsServiceEntityPaginationReq | PlainMessage<ShiftsGroupsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.ShiftsGroupsServiceFilterReq
  */
-export declare class ShiftsGroupsServiceFilterReq extends Message<ShiftsGroupsServiceFilterReq> ***REMOVED***
+export declare class ShiftsGroupsServiceFilterReq extends Message<ShiftsGroupsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -720,14 +720,14 @@ export declare class ShiftsGroupsServiceFilterReq extends Message<ShiftsGroupsSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceFilterReq;
     static equals(a: ShiftsGroupsServiceFilterReq | PlainMessage<ShiftsGroupsServiceFilterReq> | undefined, b: ShiftsGroupsServiceFilterReq | PlainMessage<ShiftsGroupsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.ShiftsGroupsServiceSearchAllReq
  */
-export declare class ShiftsGroupsServiceSearchAllReq extends Message<ShiftsGroupsServiceSearchAllReq> ***REMOVED***
+export declare class ShiftsGroupsServiceSearchAllReq extends Message<ShiftsGroupsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -784,5 +784,5 @@ export declare class ShiftsGroupsServiceSearchAllReq extends Message<ShiftsGroup
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ShiftsGroupsServiceSearchAllReq;
     static equals(a: ShiftsGroupsServiceSearchAllReq | PlainMessage<ShiftsGroupsServiceSearchAllReq> | undefined, b: ShiftsGroupsServiceSearchAllReq | PlainMessage<ShiftsGroupsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=shifts_groups_pb.d.ts.map

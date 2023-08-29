@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** LeavesTypesList, LeavesTypesServiceCreateRequest, LeavesTypesServiceEntityPaginationReq, LeavesTypesServiceFilterReq, LeavesTypesServicePaginationReq, LeavesTypesServicePaginationResponse, LeavesTypesServiceSearchAllReq, LeavesTypesServiceUpdateRequest, LeaveType ***REMOVED*** from "./leaves_types_pb.js";
-import ***REMOVED*** ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { LeavesTypesList, LeavesTypesServiceCreateRequest, LeavesTypesServiceEntityPaginationReq, LeavesTypesServiceFilterReq, LeavesTypesServicePaginationReq, LeavesTypesServicePaginationResponse, LeavesTypesServiceSearchAllReq, LeavesTypesServiceUpdateRequest, LeaveType } from "./leaves_types_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithUserComment } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,152 +13,152 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.LeavesTypesService
  */
-export const LeavesTypesService = ***REMOVED***
+export const LeavesTypesService = {
   typeName: "Genesis.LeavesTypesService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.LeavesTypesService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: LeavesTypesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.LeavesTypesService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: LeavesTypesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.LeavesTypesService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: LeavesTypesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.LeavesTypesService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.LeavesTypesService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.LeavesTypesService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.LeavesTypesService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.LeavesTypesService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: LeavesTypesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.LeavesTypesService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.LeavesTypesService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.LeavesTypesService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.LeavesTypesService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.LeavesTypesService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -167,100 +167,100 @@ export const LeavesTypesService = ***REMOVED***
      *
      * @generated from rpc Genesis.LeavesTypesService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.LeavesTypesService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: LeaveType,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.LeavesTypesService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: LeavesTypesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.LeavesTypesService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: LeavesTypesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.LeavesTypesService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: LeavesTypesServicePaginationReq,
       O: LeavesTypesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.LeavesTypesService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: LeavesTypesServiceEntityPaginationReq,
       O: LeavesTypesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.LeavesTypesService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: LeavesTypesServiceSearchAllReq,
       O: LeavesTypesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.LeavesTypesService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: LeavesTypesServiceFilterReq,
       O: LeavesTypesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.LeavesTypesService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

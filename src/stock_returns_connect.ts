@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** StockReturn, StockReturnItem, StockReturnItemHistoryRequest, StockReturnItemProspectiveInfoRequest, StockReturnsItemsList, StockReturnsList, StockReturnsServiceAlreadyAddedQuantityForSourceRequest, StockReturnsServiceCreateRequest, StockReturnsServiceEntityPaginationReq, StockReturnsServiceFilterReq, StockReturnsServiceItemCreateRequest, StockReturnsServiceItemUpdateRequest, StockReturnsServicePaginationReq, StockReturnsServicePaginationResponse, StockReturnsServiceSearchAllReq, StockReturnsServiceUpdateRequest ***REMOVED*** from "./stock_returns_pb.js";
-import ***REMOVED*** ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, SimpleSearchReq ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
+import { StockReturn, StockReturnItem, StockReturnItemHistoryRequest, StockReturnItemProspectiveInfoRequest, StockReturnsItemsList, StockReturnsList, StockReturnsServiceAlreadyAddedQuantityForSourceRequest, StockReturnsServiceCreateRequest, StockReturnsServiceEntityPaginationReq, StockReturnsServiceFilterReq, StockReturnsServiceItemCreateRequest, StockReturnsServiceItemUpdateRequest, StockReturnsServicePaginationReq, StockReturnsServicePaginationResponse, StockReturnsServiceSearchAllReq, StockReturnsServiceUpdateRequest } from "./stock_returns_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest, SimpleSearchReq } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
+import { FamiliesList } from "./families_pb.js";
 
 /**
  *
@@ -14,427 +14,427 @@ import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
  *
  * @generated from service Genesis.StockReturnsService
  */
-export const StockReturnsService = ***REMOVED***
+export const StockReturnsService = {
   typeName: "Genesis.StockReturnsService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.StockReturnsService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: StockReturnsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.StockReturnsService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: StockReturnsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.StockReturnsService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: StockReturnsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.StockReturnsService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.StockReturnsService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.StockReturnsService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.StockReturnsService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.StockReturnsService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: StockReturnsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.StockReturnsService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.StockReturnsService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.StockReturnsService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.StockReturnsService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.StockReturnsService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.StockReturnsService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
      * @generated from rpc Genesis.StockReturnsService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send Email
      *
      * @generated from rpc Genesis.StockReturnsService.SendEmail
      */
-    sendEmail: ***REMOVED***
+    sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Checks if the Stock Return can be marked as completed
      *
      * @generated from rpc Genesis.StockReturnsService.IsCompletable
      */
-    isCompletable: ***REMOVED***
+    isCompletable: {
       name: "IsCompletable",
       I: Identifier,
       O: BooleanResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a stock return
      *
      * @generated from rpc Genesis.StockReturnsService.AddStockReturnItem
      */
-    addStockReturnItem: ***REMOVED***
+    addStockReturnItem: {
       name: "AddStockReturnItem",
       I: StockReturnsServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a stock return
      *
      * @generated from rpc Genesis.StockReturnsService.ModifyStockReturnItem
      */
-    modifyStockReturnItem: ***REMOVED***
+    modifyStockReturnItem: {
       name: "ModifyStockReturnItem",
       I: StockReturnsServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a stock return
      *
      * @generated from rpc Genesis.StockReturnsService.ApproveStockReturnItem
      */
-    approveStockReturnItem: ***REMOVED***
+    approveStockReturnItem: {
       name: "ApproveStockReturnItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a stock return
      *
      * @generated from rpc Genesis.StockReturnsService.DeleteStockReturnItem
      */
-    deleteStockReturnItem: ***REMOVED***
+    deleteStockReturnItem: {
       name: "DeleteStockReturnItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a stock return
      *
      * @generated from rpc Genesis.StockReturnsService.ReorderStockReturnItems
      */
-    reorderStockReturnItems: ***REMOVED***
+    reorderStockReturnItems: {
       name: "ReorderStockReturnItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Stock Return Item by ID
      *
      * @generated from rpc Genesis.StockReturnsService.ViewStockReturnItemByID
      */
-    viewStockReturnItemByID: ***REMOVED***
+    viewStockReturnItemByID: {
       name: "ViewStockReturnItemByID",
       I: Identifier,
       O: StockReturnItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Stock Return Item by Inventory Hash
      *
      * @generated from rpc Genesis.StockReturnsService.ViewStockReturnItemByInventoryHash
      */
-    viewStockReturnItemByInventoryHash: ***REMOVED***
+    viewStockReturnItemByInventoryHash: {
       name: "ViewStockReturnItemByInventoryHash",
       I: SimpleSearchReq,
       O: StockReturnItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved stock return items for given stock return ID
      *
      * @generated from rpc Genesis.StockReturnsService.ViewApprovedStockReturnItems
      */
-    viewApprovedStockReturnItems: ***REMOVED***
+    viewApprovedStockReturnItems: {
       name: "ViewApprovedStockReturnItems",
       I: IdentifierWithSearchKey,
       O: StockReturnsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved stock return items for given stock return ID
      *
      * @generated from rpc Genesis.StockReturnsService.ViewUnapprovedStockReturnItems
      */
-    viewUnapprovedStockReturnItems: ***REMOVED***
+    viewUnapprovedStockReturnItems: {
       name: "ViewUnapprovedStockReturnItems",
       I: IdentifierWithSearchKey,
       O: StockReturnsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the stock return item
      *
      * @generated from rpc Genesis.StockReturnsService.ViewStockReturnItemHistory
      */
-    viewStockReturnItemHistory: ***REMOVED***
+    viewStockReturnItemHistory: {
       name: "ViewStockReturnItemHistory",
       I: StockReturnItemHistoryRequest,
       O: StockReturnsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.StockReturnsService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: StockReturn,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.StockReturnsService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: StockReturnsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.StockReturnsService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: StockReturnsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.StockReturnsService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: StockReturnsServicePaginationReq,
       O: StockReturnsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.StockReturnsService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: StockReturnsServiceEntityPaginationReq,
       O: StockReturnsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View prospective families for the given stock return
      *
      * @generated from rpc Genesis.StockReturnsService.ViewProspectiveFamilies
      */
-    viewProspectiveFamilies: ***REMOVED***
+    viewProspectiveFamilies: {
       name: "ViewProspectiveFamilies",
       I: IdentifierWithSearchKey,
       O: FamiliesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View prospective stock return item info for the given family ID and stock return ID
      *
      * @generated from rpc Genesis.StockReturnsService.ViewProspectiveStockReturnItem
      */
-    viewProspectiveStockReturnItem: ***REMOVED***
+    viewProspectiveStockReturnItem: {
       name: "ViewProspectiveStockReturnItem",
       I: StockReturnItemProspectiveInfoRequest,
       O: StockReturnsServiceItemCreateRequest,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View already added quantities
      *
      * @generated from rpc Genesis.StockReturnsService.ViewAddedFamilyQuantityForSource
      */
-    viewAddedFamilyQuantityForSource: ***REMOVED***
+    viewAddedFamilyQuantityForSource: {
       name: "ViewAddedFamilyQuantityForSource",
       I: StockReturnsServiceAlreadyAddedQuantityForSourceRequest,
       O: QuantityResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.StockReturnsService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: StockReturnsServiceSearchAllReq,
       O: StockReturnsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.StockReturnsService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: StockReturnsServiceFilterReq,
       O: StockReturnsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.StockReturnsService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

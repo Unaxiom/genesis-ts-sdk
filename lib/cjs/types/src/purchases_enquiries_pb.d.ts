@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.PURCHASE_ENQUIRY_SORT_KEY
  */
-export declare enum PURCHASE_ENQUIRY_SORT_KEY ***REMOVED***
+export declare enum PURCHASE_ENQUIRY_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -69,14 +69,14 @@ export declare enum PURCHASE_ENQUIRY_SORT_KEY ***REMOVED***
      * @generated from enum value: PURCHASE_ENQUIRY_SORT_KEY_PRIORITY = 14;
      */
     PURCHASE_ENQUIRY_SORT_KEY_PRIORITY = 14
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.PurchasesEnquiriesServiceCreateRequest
  */
-export declare class PurchasesEnquiriesServiceCreateRequest extends Message<PurchasesEnquiriesServiceCreateRequest> ***REMOVED***
+export declare class PurchasesEnquiriesServiceCreateRequest extends Message<PurchasesEnquiriesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -127,14 +127,14 @@ export declare class PurchasesEnquiriesServiceCreateRequest extends Message<Purc
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceCreateRequest;
     static equals(a: PurchasesEnquiriesServiceCreateRequest | PlainMessage<PurchasesEnquiriesServiceCreateRequest> | undefined, b: PurchasesEnquiriesServiceCreateRequest | PlainMessage<PurchasesEnquiriesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.PurchasesEnquiriesServiceUpdateRequest
  */
-export declare class PurchasesEnquiriesServiceUpdateRequest extends Message<PurchasesEnquiriesServiceUpdateRequest> ***REMOVED***
+export declare class PurchasesEnquiriesServiceUpdateRequest extends Message<PurchasesEnquiriesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -191,14 +191,14 @@ export declare class PurchasesEnquiriesServiceUpdateRequest extends Message<Purc
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceUpdateRequest;
     static equals(a: PurchasesEnquiriesServiceUpdateRequest | PlainMessage<PurchasesEnquiriesServiceUpdateRequest> | undefined, b: PurchasesEnquiriesServiceUpdateRequest | PlainMessage<PurchasesEnquiriesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.PurchaseEnquiry
  */
-export declare class PurchaseEnquiry extends Message<PurchaseEnquiry> ***REMOVED***
+export declare class PurchaseEnquiry extends Message<PurchaseEnquiry> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -285,14 +285,14 @@ export declare class PurchaseEnquiry extends Message<PurchaseEnquiry> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseEnquiry;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseEnquiry;
     static equals(a: PurchaseEnquiry | PlainMessage<PurchaseEnquiry> | undefined, b: PurchaseEnquiry | PlainMessage<PurchaseEnquiry> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a purchase enquiry
  *
  * @generated from message Genesis.PurchasesEnquiriesServiceItemCreateRequest
  */
-export declare class PurchasesEnquiriesServiceItemCreateRequest extends Message<PurchasesEnquiriesServiceItemCreateRequest> ***REMOVED***
+export declare class PurchasesEnquiriesServiceItemCreateRequest extends Message<PurchasesEnquiriesServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -343,14 +343,14 @@ export declare class PurchasesEnquiriesServiceItemCreateRequest extends Message<
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceItemCreateRequest;
     static equals(a: PurchasesEnquiriesServiceItemCreateRequest | PlainMessage<PurchasesEnquiriesServiceItemCreateRequest> | undefined, b: PurchasesEnquiriesServiceItemCreateRequest | PlainMessage<PurchasesEnquiriesServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a purchase enquiry
  *
  * @generated from message Genesis.PurchasesEnquiriesServiceItemUpdateRequest
  */
-export declare class PurchasesEnquiriesServiceItemUpdateRequest extends Message<PurchasesEnquiriesServiceItemUpdateRequest> ***REMOVED***
+export declare class PurchasesEnquiriesServiceItemUpdateRequest extends Message<PurchasesEnquiriesServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -401,14 +401,14 @@ export declare class PurchasesEnquiriesServiceItemUpdateRequest extends Message<
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceItemUpdateRequest;
     static equals(a: PurchasesEnquiriesServiceItemUpdateRequest | PlainMessage<PurchasesEnquiriesServiceItemUpdateRequest> | undefined, b: PurchasesEnquiriesServiceItemUpdateRequest | PlainMessage<PurchasesEnquiriesServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a purchase enquiry
  *
  * @generated from message Genesis.PurchaseEnquiryItem
  */
-export declare class PurchaseEnquiryItem extends Message<PurchaseEnquiryItem> ***REMOVED***
+export declare class PurchaseEnquiryItem extends Message<PurchaseEnquiryItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -483,14 +483,14 @@ export declare class PurchaseEnquiryItem extends Message<PurchaseEnquiryItem> **
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseEnquiryItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseEnquiryItem;
     static equals(a: PurchaseEnquiryItem | PlainMessage<PurchaseEnquiryItem> | undefined, b: PurchaseEnquiryItem | PlainMessage<PurchaseEnquiryItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of purchases enquiries
  *
  * @generated from message Genesis.PurchasesEnquiriesList
  */
-export declare class PurchasesEnquiriesList extends Message<PurchasesEnquiriesList> ***REMOVED***
+export declare class PurchasesEnquiriesList extends Message<PurchasesEnquiriesList> {
     /**
      * List of records
      *
@@ -505,14 +505,14 @@ export declare class PurchasesEnquiriesList extends Message<PurchasesEnquiriesLi
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesEnquiriesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesEnquiriesList;
     static equals(a: PurchasesEnquiriesList | PlainMessage<PurchasesEnquiriesList> | undefined, b: PurchasesEnquiriesList | PlainMessage<PurchasesEnquiriesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of purchase enquiry items
  *
  * @generated from message Genesis.PurchasesEnquiriesItemsList
  */
-export declare class PurchasesEnquiriesItemsList extends Message<PurchasesEnquiriesItemsList> ***REMOVED***
+export declare class PurchasesEnquiriesItemsList extends Message<PurchasesEnquiriesItemsList> {
     /**
      * List of records
      *
@@ -527,14 +527,14 @@ export declare class PurchasesEnquiriesItemsList extends Message<PurchasesEnquir
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesEnquiriesItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesEnquiriesItemsList;
     static equals(a: PurchasesEnquiriesItemsList | PlainMessage<PurchasesEnquiriesItemsList> | undefined, b: PurchasesEnquiriesItemsList | PlainMessage<PurchasesEnquiriesItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.PurchaseEnquiryItemHistoryRequest
  */
-export declare class PurchaseEnquiryItemHistoryRequest extends Message<PurchaseEnquiryItemHistoryRequest> ***REMOVED***
+export declare class PurchaseEnquiryItemHistoryRequest extends Message<PurchaseEnquiryItemHistoryRequest> {
     /**
      * Stores the purchase enquiry ID
      *
@@ -555,14 +555,14 @@ export declare class PurchaseEnquiryItemHistoryRequest extends Message<PurchaseE
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseEnquiryItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseEnquiryItemHistoryRequest;
     static equals(a: PurchaseEnquiryItemHistoryRequest | PlainMessage<PurchaseEnquiryItemHistoryRequest> | undefined, b: PurchaseEnquiryItemHistoryRequest | PlainMessage<PurchaseEnquiryItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.PurchasesEnquiriesServicePaginationReq
  */
-export declare class PurchasesEnquiriesServicePaginationReq extends Message<PurchasesEnquiriesServicePaginationReq> ***REMOVED***
+export declare class PurchasesEnquiriesServicePaginationReq extends Message<PurchasesEnquiriesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -607,14 +607,14 @@ export declare class PurchasesEnquiriesServicePaginationReq extends Message<Purc
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServicePaginationReq;
     static equals(a: PurchasesEnquiriesServicePaginationReq | PlainMessage<PurchasesEnquiriesServicePaginationReq> | undefined, b: PurchasesEnquiriesServicePaginationReq | PlainMessage<PurchasesEnquiriesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.PurchasesEnquiriesServicePaginationResponse
  */
-export declare class PurchasesEnquiriesServicePaginationResponse extends Message<PurchasesEnquiriesServicePaginationResponse> ***REMOVED***
+export declare class PurchasesEnquiriesServicePaginationResponse extends Message<PurchasesEnquiriesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -647,14 +647,14 @@ export declare class PurchasesEnquiriesServicePaginationResponse extends Message
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServicePaginationResponse;
     static equals(a: PurchasesEnquiriesServicePaginationResponse | PlainMessage<PurchasesEnquiriesServicePaginationResponse> | undefined, b: PurchasesEnquiriesServicePaginationResponse | PlainMessage<PurchasesEnquiriesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.PurchasesEnquiriesServiceEntityPaginationReq
  */
-export declare class PurchasesEnquiriesServiceEntityPaginationReq extends Message<PurchasesEnquiriesServiceEntityPaginationReq> ***REMOVED***
+export declare class PurchasesEnquiriesServiceEntityPaginationReq extends Message<PurchasesEnquiriesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -699,14 +699,14 @@ export declare class PurchasesEnquiriesServiceEntityPaginationReq extends Messag
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceEntityPaginationReq;
     static equals(a: PurchasesEnquiriesServiceEntityPaginationReq | PlainMessage<PurchasesEnquiriesServiceEntityPaginationReq> | undefined, b: PurchasesEnquiriesServiceEntityPaginationReq | PlainMessage<PurchasesEnquiriesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.PurchasesEnquiriesServiceFilterReq
  */
-export declare class PurchasesEnquiriesServiceFilterReq extends Message<PurchasesEnquiriesServiceFilterReq> ***REMOVED***
+export declare class PurchasesEnquiriesServiceFilterReq extends Message<PurchasesEnquiriesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -823,14 +823,14 @@ export declare class PurchasesEnquiriesServiceFilterReq extends Message<Purchase
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceFilterReq;
     static equals(a: PurchasesEnquiriesServiceFilterReq | PlainMessage<PurchasesEnquiriesServiceFilterReq> | undefined, b: PurchasesEnquiriesServiceFilterReq | PlainMessage<PurchasesEnquiriesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.PurchasesEnquiriesServiceSearchAllReq
  */
-export declare class PurchasesEnquiriesServiceSearchAllReq extends Message<PurchasesEnquiriesServiceSearchAllReq> ***REMOVED***
+export declare class PurchasesEnquiriesServiceSearchAllReq extends Message<PurchasesEnquiriesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -887,5 +887,5 @@ export declare class PurchasesEnquiriesServiceSearchAllReq extends Message<Purch
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesEnquiriesServiceSearchAllReq;
     static equals(a: PurchasesEnquiriesServiceSearchAllReq | PlainMessage<PurchasesEnquiriesServiceSearchAllReq> | undefined, b: PurchasesEnquiriesServiceSearchAllReq | PlainMessage<PurchasesEnquiriesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=purchases_enquiries_pb.d.ts.map

@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** SalesEnquiriesItemsList, SalesEnquiriesList, SalesEnquiriesServiceCreateRequest, SalesEnquiriesServiceEntityPaginationReq, SalesEnquiriesServiceFilterReq, SalesEnquiriesServiceItemCreateRequest, SalesEnquiriesServiceItemUpdateRequest, SalesEnquiriesServicePaginationReq, SalesEnquiriesServicePaginationResponse, SalesEnquiriesServiceSearchAllReq, SalesEnquiriesServiceUpdateRequest, SalesEnquiry, SalesEnquiryItem, SalesEnquiryItemHistoryRequest ***REMOVED*** from "./sales_enquiries_pb.js";
-import ***REMOVED*** ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { SalesEnquiriesItemsList, SalesEnquiriesList, SalesEnquiriesServiceCreateRequest, SalesEnquiriesServiceEntityPaginationReq, SalesEnquiriesServiceFilterReq, SalesEnquiriesServiceItemCreateRequest, SalesEnquiriesServiceItemUpdateRequest, SalesEnquiriesServicePaginationReq, SalesEnquiriesServicePaginationResponse, SalesEnquiriesServiceSearchAllReq, SalesEnquiriesServiceUpdateRequest, SalesEnquiry, SalesEnquiryItem, SalesEnquiryItemHistoryRequest } from "./sales_enquiries_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifiersList, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,383 +13,383 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.SalesEnquiriesService
  */
-export const SalesEnquiriesService = ***REMOVED***
+export const SalesEnquiriesService = {
   typeName: "Genesis.SalesEnquiriesService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.SalesEnquiriesService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: SalesEnquiriesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.SalesEnquiriesService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: SalesEnquiriesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.SalesEnquiriesService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: SalesEnquiriesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.SalesEnquiriesService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.SalesEnquiriesService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.SalesEnquiriesService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.SalesEnquiriesService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.SalesEnquiriesService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: SalesEnquiriesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.SalesEnquiriesService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.SalesEnquiriesService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.SalesEnquiriesService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.SalesEnquiriesService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.SalesEnquiriesService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.SalesEnquiriesService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
      * @generated from rpc Genesis.SalesEnquiriesService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send Email
      *
      * @generated from rpc Genesis.SalesEnquiriesService.SendEmail
      */
-    sendEmail: ***REMOVED***
+    sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a sales enquiry
      *
      * @generated from rpc Genesis.SalesEnquiriesService.AddSalesEnquiryItem
      */
-    addSalesEnquiryItem: ***REMOVED***
+    addSalesEnquiryItem: {
       name: "AddSalesEnquiryItem",
       I: SalesEnquiriesServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a sales enquiry
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ModifySalesEnquiryItem
      */
-    modifySalesEnquiryItem: ***REMOVED***
+    modifySalesEnquiryItem: {
       name: "ModifySalesEnquiryItem",
       I: SalesEnquiriesServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a sales enquiry
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ApproveSalesEnquiryItem
      */
-    approveSalesEnquiryItem: ***REMOVED***
+    approveSalesEnquiryItem: {
       name: "ApproveSalesEnquiryItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a sales enquiry
      *
      * @generated from rpc Genesis.SalesEnquiriesService.DeleteSalesEnquiryItem
      */
-    deleteSalesEnquiryItem: ***REMOVED***
+    deleteSalesEnquiryItem: {
       name: "DeleteSalesEnquiryItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a sales enquiry
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ReorderSalesEnquiryItems
      */
-    reorderSalesEnquiryItems: ***REMOVED***
+    reorderSalesEnquiryItems: {
       name: "ReorderSalesEnquiryItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Sales Enquiry Item by ID
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ViewSalesEnquiryItemByID
      */
-    viewSalesEnquiryItemByID: ***REMOVED***
+    viewSalesEnquiryItemByID: {
       name: "ViewSalesEnquiryItemByID",
       I: Identifier,
       O: SalesEnquiryItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved sales enquiry items for given sales enquiry ID
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ViewApprovedSalesEnquiryItems
      */
-    viewApprovedSalesEnquiryItems: ***REMOVED***
+    viewApprovedSalesEnquiryItems: {
       name: "ViewApprovedSalesEnquiryItems",
       I: IdentifierWithSearchKey,
       O: SalesEnquiriesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved sales enquiry items for given sales enquiry ID
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ViewUnapprovedSalesEnquiryItems
      */
-    viewUnapprovedSalesEnquiryItems: ***REMOVED***
+    viewUnapprovedSalesEnquiryItems: {
       name: "ViewUnapprovedSalesEnquiryItems",
       I: IdentifierWithSearchKey,
       O: SalesEnquiriesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the sales enquiry item
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ViewSalesEnquiryItemHistory
      */
-    viewSalesEnquiryItemHistory: ***REMOVED***
+    viewSalesEnquiryItemHistory: {
       name: "ViewSalesEnquiryItemHistory",
       I: SalesEnquiryItemHistoryRequest,
       O: SalesEnquiriesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: SalesEnquiry,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: SalesEnquiriesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: SalesEnquiriesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: SalesEnquiriesServicePaginationReq,
       O: SalesEnquiriesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: SalesEnquiriesServiceEntityPaginationReq,
       O: SalesEnquiriesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all sales orders IDs that are associated with the given sales enquiry ID
      *
      * @generated from rpc Genesis.SalesEnquiriesService.ViewAssociatedSalesOrdersIDs
      */
-    viewAssociatedSalesOrdersIDs: ***REMOVED***
+    viewAssociatedSalesOrdersIDs: {
       name: "ViewAssociatedSalesOrdersIDs",
       I: Identifier,
       O: IdentifiersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.SalesEnquiriesService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: SalesEnquiriesServiceSearchAllReq,
       O: SalesEnquiriesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.SalesEnquiriesService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: SalesEnquiriesServiceFilterReq,
       O: SalesEnquiriesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.SalesEnquiriesService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

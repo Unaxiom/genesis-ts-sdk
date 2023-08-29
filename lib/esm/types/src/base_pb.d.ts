@@ -1,12 +1,12 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
 /**
  *
  * Describes the order in which the records need to be returned
  *
  * @generated from enum Genesis.SORT_ORDER
  */
-export declare enum SORT_ORDER ***REMOVED***
+export declare enum SORT_ORDER {
     /**
      * Fetch results in the ascending order of the provided sort key
      *
@@ -19,14 +19,14 @@ export declare enum SORT_ORDER ***REMOVED***
      * @generated from enum value: DESCENDING = 1;
      */
     DESCENDING = 1
-***REMOVED***
+}
 /**
  *
  * Describes the standard lifecycle status of each record
  *
  * @generated from enum Genesis.STANDARD_LIFECYCLE_STATUS
  */
-export declare enum STANDARD_LIFECYCLE_STATUS ***REMOVED***
+export declare enum STANDARD_LIFECYCLE_STATUS {
     /**
      * The resource has just been created, and has been sent for verification
      *
@@ -81,14 +81,14 @@ export declare enum STANDARD_LIFECYCLE_STATUS ***REMOVED***
      * @generated from enum value: ANY = 10;
      */
     ANY = 10
-***REMOVED***
+}
 /**
  *
  * Describes all the possible values within a logbook operation
  *
  * @generated from enum Genesis.LOGBOOK_OPERATION
  */
-export declare enum LOGBOOK_OPERATION ***REMOVED***
+export declare enum LOGBOOK_OPERATION {
     /**
      * Create a resource
      *
@@ -113,14 +113,14 @@ export declare enum LOGBOOK_OPERATION ***REMOVED***
      * @generated from enum value: RESTORE = 3;
      */
     RESTORE = 3
-***REMOVED***
+}
 /**
  *
  * Describes an empty object
  *
  * @generated from message Genesis.Empty
  */
-export declare class Empty extends Message<Empty> ***REMOVED***
+export declare class Empty extends Message<Empty> {
     constructor(data?: PartialMessage<Empty>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Genesis.Empty";
@@ -129,14 +129,14 @@ export declare class Empty extends Message<Empty> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Empty;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Empty;
     static equals(a: Empty | PlainMessage<Empty> | undefined, b: Empty | PlainMessage<Empty> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the boolean response
  *
  * @generated from message Genesis.BooleanResponse
  */
-export declare class BooleanResponse extends Message<BooleanResponse> ***REMOVED***
+export declare class BooleanResponse extends Message<BooleanResponse> {
     /**
      * Stores if the value is true or false
      *
@@ -151,14 +151,14 @@ export declare class BooleanResponse extends Message<BooleanResponse> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): BooleanResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): BooleanResponse;
     static equals(a: BooleanResponse | PlainMessage<BooleanResponse> | undefined, b: BooleanResponse | PlainMessage<BooleanResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a generic response that consists of bytes as payload
  *
  * @generated from message Genesis.BytesResponse
  */
-export declare class BytesResponse extends Message<BytesResponse> ***REMOVED***
+export declare class BytesResponse extends Message<BytesResponse> {
     /**
      * Stores the response content in bytes
      *
@@ -173,14 +173,14 @@ export declare class BytesResponse extends Message<BytesResponse> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): BytesResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): BytesResponse;
     static equals(a: BytesResponse | PlainMessage<BytesResponse> | undefined, b: BytesResponse | PlainMessage<BytesResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a generic response that consists of info of an image
  *
  * @generated from message Genesis.ImageResponse
  */
-export declare class ImageResponse extends Message<ImageResponse> ***REMOVED***
+export declare class ImageResponse extends Message<ImageResponse> {
     /**
      * Stores the raw image content
      *
@@ -207,14 +207,14 @@ export declare class ImageResponse extends Message<ImageResponse> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ImageResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ImageResponse;
     static equals(a: ImageResponse | PlainMessage<ImageResponse> | undefined, b: ImageResponse | PlainMessage<ImageResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message that consists of a base64 string. Useful for relaying an image as a base64 string.
  *
  * @generated from message Genesis.Base64String
  */
-export declare class Base64String extends Message<Base64String> ***REMOVED***
+export declare class Base64String extends Message<Base64String> {
     /**
      * Stores the image as a base64 string
      *
@@ -229,14 +229,14 @@ export declare class Base64String extends Message<Base64String> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Base64String;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Base64String;
     static equals(a: Base64String | PlainMessage<Base64String> | undefined, b: Base64String | PlainMessage<Base64String> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the payload that will be used to filter records on the basis of the given month and day
  *
  * @generated from message Genesis.MonthAndDayFilter
  */
-export declare class MonthAndDayFilter extends Message<MonthAndDayFilter> ***REMOVED***
+export declare class MonthAndDayFilter extends Message<MonthAndDayFilter> {
     /**
      * Stores the month (1 for Jan, 2 for Feb, etc.)
      *
@@ -257,14 +257,14 @@ export declare class MonthAndDayFilter extends Message<MonthAndDayFilter> ***REM
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): MonthAndDayFilter;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): MonthAndDayFilter;
     static equals(a: MonthAndDayFilter | PlainMessage<MonthAndDayFilter> | undefined, b: MonthAndDayFilter | PlainMessage<MonthAndDayFilter> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a generic response that represents a GPS coordinate
  *
  * @generated from message Genesis.GPSCoordinatesResponse
  */
-export declare class GPSCoordinatesResponse extends Message<GPSCoordinatesResponse> ***REMOVED***
+export declare class GPSCoordinatesResponse extends Message<GPSCoordinatesResponse> {
     /**
      * Stores the latitude
      *
@@ -285,14 +285,14 @@ export declare class GPSCoordinatesResponse extends Message<GPSCoordinatesRespon
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GPSCoordinatesResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GPSCoordinatesResponse;
     static equals(a: GPSCoordinatesResponse | PlainMessage<GPSCoordinatesResponse> | undefined, b: GPSCoordinatesResponse | PlainMessage<GPSCoordinatesResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the payload for a request to determine the count of records in the given status
  *
  * @generated from message Genesis.CountInSLCStatusRequest
  */
-export declare class CountInSLCStatusRequest extends Message<CountInSLCStatusRequest> ***REMOVED***
+export declare class CountInSLCStatusRequest extends Message<CountInSLCStatusRequest> {
     /**
      * Denote if only active records need to be returned
      *
@@ -313,14 +313,14 @@ export declare class CountInSLCStatusRequest extends Message<CountInSLCStatusReq
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CountInSLCStatusRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CountInSLCStatusRequest;
     static equals(a: CountInSLCStatusRequest | PlainMessage<CountInSLCStatusRequest> | undefined, b: CountInSLCStatusRequest | PlainMessage<CountInSLCStatusRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the count response
  *
  * @generated from message Genesis.CountResponse
  */
-export declare class CountResponse extends Message<CountResponse> ***REMOVED***
+export declare class CountResponse extends Message<CountResponse> {
     /**
      * The number of records
      *
@@ -335,14 +335,14 @@ export declare class CountResponse extends Message<CountResponse> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CountResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CountResponse;
     static equals(a: CountResponse | PlainMessage<CountResponse> | undefined, b: CountResponse | PlainMessage<CountResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the quantity response
  *
  * @generated from message Genesis.QuantityResponse
  */
-export declare class QuantityResponse extends Message<QuantityResponse> ***REMOVED***
+export declare class QuantityResponse extends Message<QuantityResponse> {
     /**
      * The quantity
      *
@@ -357,14 +357,14 @@ export declare class QuantityResponse extends Message<QuantityResponse> ***REMOV
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuantityResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuantityResponse;
     static equals(a: QuantityResponse | PlainMessage<QuantityResponse> | undefined, b: QuantityResponse | PlainMessage<QuantityResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the dual quantity response. Primary quantity represents quantity in internal UoM and secondary quantity represents quantity in either vendor UoM or client UoM, depending on the context
  *
  * @generated from message Genesis.DualQuantitiesResponse
  */
-export declare class DualQuantitiesResponse extends Message<DualQuantitiesResponse> ***REMOVED***
+export declare class DualQuantitiesResponse extends Message<DualQuantitiesResponse> {
     /**
      * Quantity in internal UoM
      *
@@ -385,14 +385,14 @@ export declare class DualQuantitiesResponse extends Message<DualQuantitiesRespon
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DualQuantitiesResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DualQuantitiesResponse;
     static equals(a: DualQuantitiesResponse | PlainMessage<DualQuantitiesResponse> | undefined, b: DualQuantitiesResponse | PlainMessage<DualQuantitiesResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the employee metadata of each resource
  *
  * @generated from message Genesis.EmployeeMetadata
  */
-export declare class EmployeeMetadata extends Message<EmployeeMetadata> ***REMOVED***
+export declare class EmployeeMetadata extends Message<EmployeeMetadata> {
     /**
      * ID of the resource
      *
@@ -437,14 +437,14 @@ export declare class EmployeeMetadata extends Message<EmployeeMetadata> ***REMOV
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EmployeeMetadata;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EmployeeMetadata;
     static equals(a: EmployeeMetadata | PlainMessage<EmployeeMetadata> | undefined, b: EmployeeMetadata | PlainMessage<EmployeeMetadata> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the approval metadata of each resource
  *
  * @generated from message Genesis.ApprovalMetadata
  */
-export declare class ApprovalMetadata extends Message<ApprovalMetadata> ***REMOVED***
+export declare class ApprovalMetadata extends Message<ApprovalMetadata> {
     /**
      * Stores the UNIX timestamp of when a resource was approved
      *
@@ -471,14 +471,14 @@ export declare class ApprovalMetadata extends Message<ApprovalMetadata> ***REMOV
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ApprovalMetadata;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ApprovalMetadata;
     static equals(a: ApprovalMetadata | PlainMessage<ApprovalMetadata> | undefined, b: ApprovalMetadata | PlainMessage<ApprovalMetadata> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the status of the records returned to a request
  *
  * @generated from message Genesis.ActiveStatus
  */
-export declare class ActiveStatus extends Message<ActiveStatus> ***REMOVED***
+export declare class ActiveStatus extends Message<ActiveStatus> {
     /**
      * Used in ViewAll procedural calls, to denote if only active records need to be returned
      *
@@ -493,14 +493,14 @@ export declare class ActiveStatus extends Message<ActiveStatus> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ActiveStatus;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ActiveStatus;
     static equals(a: ActiveStatus | PlainMessage<ActiveStatus> | undefined, b: ActiveStatus | PlainMessage<ActiveStatus> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the payload that is required to update the password of a user (by an administrator)
  *
  * @generated from message Genesis.UpdatePasswordReq
  */
-export declare class UpdatePasswordReq extends Message<UpdatePasswordReq> ***REMOVED***
+export declare class UpdatePasswordReq extends Message<UpdatePasswordReq> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -527,14 +527,14 @@ export declare class UpdatePasswordReq extends Message<UpdatePasswordReq> ***REM
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UpdatePasswordReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UpdatePasswordReq;
     static equals(a: UpdatePasswordReq | PlainMessage<UpdatePasswordReq> | undefined, b: UpdatePasswordReq | PlainMessage<UpdatePasswordReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the payload that is requred to update the user's own password
  *
  * @generated from message Genesis.UpdateOwnPasswordReq
  */
-export declare class UpdateOwnPasswordReq extends Message<UpdateOwnPasswordReq> ***REMOVED***
+export declare class UpdateOwnPasswordReq extends Message<UpdateOwnPasswordReq> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -561,14 +561,14 @@ export declare class UpdateOwnPasswordReq extends Message<UpdateOwnPasswordReq> 
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UpdateOwnPasswordReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UpdateOwnPasswordReq;
     static equals(a: UpdateOwnPasswordReq | PlainMessage<UpdateOwnPasswordReq> | undefined, b: UpdateOwnPasswordReq | PlainMessage<UpdateOwnPasswordReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the payload that is required to upload a picture associated to a resource (such as profile picture or signature)
  *
  * @generated from message Genesis.UploadPictureReq
  */
-export declare class UploadPictureReq extends Message<UploadPictureReq> ***REMOVED***
+export declare class UploadPictureReq extends Message<UploadPictureReq> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -601,14 +601,14 @@ export declare class UploadPictureReq extends Message<UploadPictureReq> ***REMOV
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UploadPictureReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UploadPictureReq;
     static equals(a: UploadPictureReq | PlainMessage<UploadPictureReq> | undefined, b: UploadPictureReq | PlainMessage<UploadPictureReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a simple search request
  *
  * @generated from message Genesis.SimpleSearchReq
  */
-export declare class SimpleSearchReq extends Message<SimpleSearchReq> ***REMOVED***
+export declare class SimpleSearchReq extends Message<SimpleSearchReq> {
     /**
      * @generated from field: string search_key = 1;
      */
@@ -621,14 +621,14 @@ export declare class SimpleSearchReq extends Message<SimpleSearchReq> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SimpleSearchReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SimpleSearchReq;
     static equals(a: SimpleSearchReq | PlainMessage<SimpleSearchReq> | undefined, b: SimpleSearchReq | PlainMessage<SimpleSearchReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the standard identifier
  *
  * @generated from message Genesis.Identifier
  */
-export declare class Identifier extends Message<Identifier> ***REMOVED***
+export declare class Identifier extends Message<Identifier> {
     /**
      * ID of the resource
      *
@@ -643,14 +643,14 @@ export declare class Identifier extends Message<Identifier> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Identifier;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Identifier;
     static equals(a: Identifier | PlainMessage<Identifier> | undefined, b: Identifier | PlainMessage<Identifier> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the standard identifier that can also be a zero
  *
  * @generated from message Genesis.IdentifierZeroable
  */
-export declare class IdentifierZeroable extends Message<IdentifierZeroable> ***REMOVED***
+export declare class IdentifierZeroable extends Message<IdentifierZeroable> {
     /**
      * ID of the resource
      *
@@ -665,14 +665,14 @@ export declare class IdentifierZeroable extends Message<IdentifierZeroable> ***R
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierZeroable;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierZeroable;
     static equals(a: IdentifierZeroable | PlainMessage<IdentifierZeroable> | undefined, b: IdentifierZeroable | PlainMessage<IdentifierZeroable> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the standard identifier along with a search key
  *
  * @generated from message Genesis.IdentifierWithSearch
  */
-export declare class IdentifierWithSearch extends Message<IdentifierWithSearch> ***REMOVED***
+export declare class IdentifierWithSearch extends Message<IdentifierWithSearch> {
     /**
      * ID of the resource
      *
@@ -693,14 +693,14 @@ export declare class IdentifierWithSearch extends Message<IdentifierWithSearch> 
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithSearch;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithSearch;
     static equals(a: IdentifierWithSearch | PlainMessage<IdentifierWithSearch> | undefined, b: IdentifierWithSearch | PlainMessage<IdentifierWithSearch> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the list of standard identifiers, used for identifying associated items
  *
  * @generated from message Genesis.IdentifiersList
  */
-export declare class IdentifiersList extends Message<IdentifiersList> ***REMOVED***
+export declare class IdentifiersList extends Message<IdentifiersList> {
     /**
      * List of identifiers
      *
@@ -715,14 +715,14 @@ export declare class IdentifiersList extends Message<IdentifiersList> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifiersList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifiersList;
     static equals(a: IdentifiersList | PlainMessage<IdentifiersList> | undefined, b: IdentifiersList | PlainMessage<IdentifiersList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the standard identifier with a user comment. Useful when an operation needs to be performed, and a user comment needs to be recorded
  *
  * @generated from message Genesis.IdentifierWithUserComment
  */
-export declare class IdentifierWithUserComment extends Message<IdentifierWithUserComment> ***REMOVED***
+export declare class IdentifierWithUserComment extends Message<IdentifierWithUserComment> {
     /**
      * ID of the resource
      *
@@ -743,14 +743,14 @@ export declare class IdentifierWithUserComment extends Message<IdentifierWithUse
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithUserComment;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithUserComment;
     static equals(a: IdentifierWithUserComment | PlainMessage<IdentifierWithUserComment> | undefined, b: IdentifierWithUserComment | PlainMessage<IdentifierWithUserComment> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the standard identifier with email attributes. Useful when a record (identified by the identifier) needs to be mailed with the given subject, and the list of email addresses.
  *
  * @generated from message Genesis.IdentifierWithEmailAttributes
  */
-export declare class IdentifierWithEmailAttributes extends Message<IdentifierWithEmailAttributes> ***REMOVED***
+export declare class IdentifierWithEmailAttributes extends Message<IdentifierWithEmailAttributes> {
     /**
      * ID of the resource
      *
@@ -783,14 +783,14 @@ export declare class IdentifierWithEmailAttributes extends Message<IdentifierWit
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithEmailAttributes;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithEmailAttributes;
     static equals(a: IdentifierWithEmailAttributes | PlainMessage<IdentifierWithEmailAttributes> | undefined, b: IdentifierWithEmailAttributes | PlainMessage<IdentifierWithEmailAttributes> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the standard identifier with a search key. Useful when searching within sub records of a parent item (such as shift group shifts, etc)
  *
  * @generated from message Genesis.IdentifierWithSearchKey
  */
-export declare class IdentifierWithSearchKey extends Message<IdentifierWithSearchKey> ***REMOVED***
+export declare class IdentifierWithSearchKey extends Message<IdentifierWithSearchKey> {
     /**
      * ID of the resource
      *
@@ -811,14 +811,14 @@ export declare class IdentifierWithSearchKey extends Message<IdentifierWithSearc
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithSearchKey;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithSearchKey;
     static equals(a: IdentifierWithSearchKey | PlainMessage<IdentifierWithSearchKey> | undefined, b: IdentifierWithSearchKey | PlainMessage<IdentifierWithSearchKey> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the UUID identifier
  *
  * @generated from message Genesis.IdentifierUUID
  */
-export declare class IdentifierUUID extends Message<IdentifierUUID> ***REMOVED***
+export declare class IdentifierUUID extends Message<IdentifierUUID> {
     /**
      * UUID of the resource
      *
@@ -833,14 +833,14 @@ export declare class IdentifierUUID extends Message<IdentifierUUID> ***REMOVED**
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierUUID;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierUUID;
     static equals(a: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined, b: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes each parameter that's part of the logbook (does not include historical data of the object) with the operation being a standard lifecycle status
  *
  * @generated from message Genesis.LogbookLogConciseSLC
  */
-export declare class LogbookLogConciseSLC extends Message<LogbookLogConciseSLC> ***REMOVED***
+export declare class LogbookLogConciseSLC extends Message<LogbookLogConciseSLC> {
     /**
      * ID of the resource
      *
@@ -909,14 +909,14 @@ export declare class LogbookLogConciseSLC extends Message<LogbookLogConciseSLC> 
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogbookLogConciseSLC;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogbookLogConciseSLC;
     static equals(a: LogbookLogConciseSLC | PlainMessage<LogbookLogConciseSLC> | undefined, b: LogbookLogConciseSLC | PlainMessage<LogbookLogConciseSLC> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to create a standard lifecycle log entry
  *
  * @generated from message Genesis.LogbookLogConciseSLCCreateRequest
  */
-export declare class LogbookLogConciseSLCCreateRequest extends Message<LogbookLogConciseSLCCreateRequest> ***REMOVED***
+export declare class LogbookLogConciseSLCCreateRequest extends Message<LogbookLogConciseSLCCreateRequest> {
     /**
      * Stores the timestamp of when this resource was created
      *
@@ -961,14 +961,14 @@ export declare class LogbookLogConciseSLCCreateRequest extends Message<LogbookLo
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogbookLogConciseSLCCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogbookLogConciseSLCCreateRequest;
     static equals(a: LogbookLogConciseSLCCreateRequest | PlainMessage<LogbookLogConciseSLCCreateRequest> | undefined, b: LogbookLogConciseSLCCreateRequest | PlainMessage<LogbookLogConciseSLCCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to create a generic lifecycle log entry
  *
  * @generated from message Genesis.LogbookLogConciseGenericCreateRequest
  */
-export declare class LogbookLogConciseGenericCreateRequest extends Message<LogbookLogConciseGenericCreateRequest> ***REMOVED***
+export declare class LogbookLogConciseGenericCreateRequest extends Message<LogbookLogConciseGenericCreateRequest> {
     /**
      * Stores the timestamp of when this resource was created
      *
@@ -1013,14 +1013,14 @@ export declare class LogbookLogConciseGenericCreateRequest extends Message<Logbo
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogbookLogConciseGenericCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogbookLogConciseGenericCreateRequest;
     static equals(a: LogbookLogConciseGenericCreateRequest | PlainMessage<LogbookLogConciseGenericCreateRequest> | undefined, b: LogbookLogConciseGenericCreateRequest | PlainMessage<LogbookLogConciseGenericCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes each parameter that's part of the logbook (includes historical data of the object)
  *
  * @generated from message Genesis.LogbookLogComplete
  */
-export declare class LogbookLogComplete extends Message<LogbookLogComplete> ***REMOVED***
+export declare class LogbookLogComplete extends Message<LogbookLogComplete> {
     /**
      * Stores the metada of this resource
      *
@@ -1071,14 +1071,14 @@ export declare class LogbookLogComplete extends Message<LogbookLogComplete> ***R
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogbookLogComplete;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogbookLogComplete;
     static equals(a: LogbookLogComplete | PlainMessage<LogbookLogComplete> | undefined, b: LogbookLogComplete | PlainMessage<LogbookLogComplete> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the data model to handle reordering of items
  *
  * @generated from message Genesis.ReorderItemsRequest
  */
-export declare class ReorderItemsRequest extends Message<ReorderItemsRequest> ***REMOVED***
+export declare class ReorderItemsRequest extends Message<ReorderItemsRequest> {
     /**
      * ID of the resource
      *
@@ -1099,14 +1099,14 @@ export declare class ReorderItemsRequest extends Message<ReorderItemsRequest> **
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReorderItemsRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReorderItemsRequest;
     static equals(a: ReorderItemsRequest | PlainMessage<ReorderItemsRequest> | undefined, b: ReorderItemsRequest | PlainMessage<ReorderItemsRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the data model to handle cloning of properties of a source record (denoted by source ID) into a target record (denoted by the target ID)
  *
  * @generated from message Genesis.CloneRequest
  */
-export declare class CloneRequest extends Message<CloneRequest> ***REMOVED***
+export declare class CloneRequest extends Message<CloneRequest> {
     /**
      * The ID of the source record whose properties need to be cloned into the target record
      *
@@ -1139,5 +1139,5 @@ export declare class CloneRequest extends Message<CloneRequest> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CloneRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CloneRequest;
     static equals(a: CloneRequest | PlainMessage<CloneRequest> | undefined, b: CloneRequest | PlainMessage<CloneRequest> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=base_pb.d.ts.map

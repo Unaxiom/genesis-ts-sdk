@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.EQUATION_SALES_BUNDLE_SORT_KEY
  */
-export declare enum EQUATION_SALES_BUNDLE_SORT_KEY ***REMOVED***
+export declare enum EQUATION_SALES_BUNDLE_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -62,14 +62,14 @@ export declare enum EQUATION_SALES_BUNDLE_SORT_KEY ***REMOVED***
      * @generated from enum value: EQUATION_SALES_BUNDLE_SORT_KEY_FAMILY_ID = 11;
      */
     EQUATION_SALES_BUNDLE_SORT_KEY_FAMILY_ID = 11
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceCreateRequest
  */
-export declare class EquationsSalesBundlesServiceCreateRequest extends Message<EquationsSalesBundlesServiceCreateRequest> ***REMOVED***
+export declare class EquationsSalesBundlesServiceCreateRequest extends Message<EquationsSalesBundlesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -114,14 +114,14 @@ export declare class EquationsSalesBundlesServiceCreateRequest extends Message<E
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceCreateRequest;
     static equals(a: EquationsSalesBundlesServiceCreateRequest | PlainMessage<EquationsSalesBundlesServiceCreateRequest> | undefined, b: EquationsSalesBundlesServiceCreateRequest | PlainMessage<EquationsSalesBundlesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceUpdateRequest
  */
-export declare class EquationsSalesBundlesServiceUpdateRequest extends Message<EquationsSalesBundlesServiceUpdateRequest> ***REMOVED***
+export declare class EquationsSalesBundlesServiceUpdateRequest extends Message<EquationsSalesBundlesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -166,14 +166,14 @@ export declare class EquationsSalesBundlesServiceUpdateRequest extends Message<E
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceUpdateRequest;
     static equals(a: EquationsSalesBundlesServiceUpdateRequest | PlainMessage<EquationsSalesBundlesServiceUpdateRequest> | undefined, b: EquationsSalesBundlesServiceUpdateRequest | PlainMessage<EquationsSalesBundlesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.EquationSalesBundle
  */
-export declare class EquationSalesBundle extends Message<EquationSalesBundle> ***REMOVED***
+export declare class EquationSalesBundle extends Message<EquationSalesBundle> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -254,14 +254,14 @@ export declare class EquationSalesBundle extends Message<EquationSalesBundle> **
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationSalesBundle;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationSalesBundle;
     static equals(a: EquationSalesBundle | PlainMessage<EquationSalesBundle> | undefined, b: EquationSalesBundle | PlainMessage<EquationSalesBundle> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a equation sales bundle
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceItemCreateRequest
  */
-export declare class EquationsSalesBundlesServiceItemCreateRequest extends Message<EquationsSalesBundlesServiceItemCreateRequest> ***REMOVED***
+export declare class EquationsSalesBundlesServiceItemCreateRequest extends Message<EquationsSalesBundlesServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -306,14 +306,14 @@ export declare class EquationsSalesBundlesServiceItemCreateRequest extends Messa
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceItemCreateRequest;
     static equals(a: EquationsSalesBundlesServiceItemCreateRequest | PlainMessage<EquationsSalesBundlesServiceItemCreateRequest> | undefined, b: EquationsSalesBundlesServiceItemCreateRequest | PlainMessage<EquationsSalesBundlesServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a equation sales bundle
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceItemUpdateRequest
  */
-export declare class EquationsSalesBundlesServiceItemUpdateRequest extends Message<EquationsSalesBundlesServiceItemUpdateRequest> ***REMOVED***
+export declare class EquationsSalesBundlesServiceItemUpdateRequest extends Message<EquationsSalesBundlesServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -352,14 +352,14 @@ export declare class EquationsSalesBundlesServiceItemUpdateRequest extends Messa
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceItemUpdateRequest;
     static equals(a: EquationsSalesBundlesServiceItemUpdateRequest | PlainMessage<EquationsSalesBundlesServiceItemUpdateRequest> | undefined, b: EquationsSalesBundlesServiceItemUpdateRequest | PlainMessage<EquationsSalesBundlesServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a equation sales bundle
  *
  * @generated from message Genesis.EquationSalesBundleItem
  */
-export declare class EquationSalesBundleItem extends Message<EquationSalesBundleItem> ***REMOVED***
+export declare class EquationSalesBundleItem extends Message<EquationSalesBundleItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -428,14 +428,14 @@ export declare class EquationSalesBundleItem extends Message<EquationSalesBundle
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationSalesBundleItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationSalesBundleItem;
     static equals(a: EquationSalesBundleItem | PlainMessage<EquationSalesBundleItem> | undefined, b: EquationSalesBundleItem | PlainMessage<EquationSalesBundleItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of equations sales bundles
  *
  * @generated from message Genesis.EquationsSalesBundlesList
  */
-export declare class EquationsSalesBundlesList extends Message<EquationsSalesBundlesList> ***REMOVED***
+export declare class EquationsSalesBundlesList extends Message<EquationsSalesBundlesList> {
     /**
      * List of records
      *
@@ -450,14 +450,14 @@ export declare class EquationsSalesBundlesList extends Message<EquationsSalesBun
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesList;
     static equals(a: EquationsSalesBundlesList | PlainMessage<EquationsSalesBundlesList> | undefined, b: EquationsSalesBundlesList | PlainMessage<EquationsSalesBundlesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of equation sales bundle items
  *
  * @generated from message Genesis.EquationsSalesBundlesItemsList
  */
-export declare class EquationsSalesBundlesItemsList extends Message<EquationsSalesBundlesItemsList> ***REMOVED***
+export declare class EquationsSalesBundlesItemsList extends Message<EquationsSalesBundlesItemsList> {
     /**
      * List of records
      *
@@ -472,14 +472,14 @@ export declare class EquationsSalesBundlesItemsList extends Message<EquationsSal
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesItemsList;
     static equals(a: EquationsSalesBundlesItemsList | PlainMessage<EquationsSalesBundlesItemsList> | undefined, b: EquationsSalesBundlesItemsList | PlainMessage<EquationsSalesBundlesItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.EquationSalesBundleItemHistoryRequest
  */
-export declare class EquationSalesBundleItemHistoryRequest extends Message<EquationSalesBundleItemHistoryRequest> ***REMOVED***
+export declare class EquationSalesBundleItemHistoryRequest extends Message<EquationSalesBundleItemHistoryRequest> {
     /**
      * Stores the ID of the equation sales bundle
      *
@@ -500,14 +500,14 @@ export declare class EquationSalesBundleItemHistoryRequest extends Message<Equat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationSalesBundleItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationSalesBundleItemHistoryRequest;
     static equals(a: EquationSalesBundleItemHistoryRequest | PlainMessage<EquationSalesBundleItemHistoryRequest> | undefined, b: EquationSalesBundleItemHistoryRequest | PlainMessage<EquationSalesBundleItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.EquationsSalesBundlesServicePaginationReq
  */
-export declare class EquationsSalesBundlesServicePaginationReq extends Message<EquationsSalesBundlesServicePaginationReq> ***REMOVED***
+export declare class EquationsSalesBundlesServicePaginationReq extends Message<EquationsSalesBundlesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -552,14 +552,14 @@ export declare class EquationsSalesBundlesServicePaginationReq extends Message<E
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServicePaginationReq;
     static equals(a: EquationsSalesBundlesServicePaginationReq | PlainMessage<EquationsSalesBundlesServicePaginationReq> | undefined, b: EquationsSalesBundlesServicePaginationReq | PlainMessage<EquationsSalesBundlesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.EquationsSalesBundlesServicePaginationResponse
  */
-export declare class EquationsSalesBundlesServicePaginationResponse extends Message<EquationsSalesBundlesServicePaginationResponse> ***REMOVED***
+export declare class EquationsSalesBundlesServicePaginationResponse extends Message<EquationsSalesBundlesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -592,14 +592,14 @@ export declare class EquationsSalesBundlesServicePaginationResponse extends Mess
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServicePaginationResponse;
     static equals(a: EquationsSalesBundlesServicePaginationResponse | PlainMessage<EquationsSalesBundlesServicePaginationResponse> | undefined, b: EquationsSalesBundlesServicePaginationResponse | PlainMessage<EquationsSalesBundlesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceEntityPaginationReq
  */
-export declare class EquationsSalesBundlesServiceEntityPaginationReq extends Message<EquationsSalesBundlesServiceEntityPaginationReq> ***REMOVED***
+export declare class EquationsSalesBundlesServiceEntityPaginationReq extends Message<EquationsSalesBundlesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -644,14 +644,14 @@ export declare class EquationsSalesBundlesServiceEntityPaginationReq extends Mes
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceEntityPaginationReq;
     static equals(a: EquationsSalesBundlesServiceEntityPaginationReq | PlainMessage<EquationsSalesBundlesServiceEntityPaginationReq> | undefined, b: EquationsSalesBundlesServiceEntityPaginationReq | PlainMessage<EquationsSalesBundlesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceFilterReq
  */
-export declare class EquationsSalesBundlesServiceFilterReq extends Message<EquationsSalesBundlesServiceFilterReq> ***REMOVED***
+export declare class EquationsSalesBundlesServiceFilterReq extends Message<EquationsSalesBundlesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -762,14 +762,14 @@ export declare class EquationsSalesBundlesServiceFilterReq extends Message<Equat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceFilterReq;
     static equals(a: EquationsSalesBundlesServiceFilterReq | PlainMessage<EquationsSalesBundlesServiceFilterReq> | undefined, b: EquationsSalesBundlesServiceFilterReq | PlainMessage<EquationsSalesBundlesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.EquationsSalesBundlesServiceSearchAllReq
  */
-export declare class EquationsSalesBundlesServiceSearchAllReq extends Message<EquationsSalesBundlesServiceSearchAllReq> ***REMOVED***
+export declare class EquationsSalesBundlesServiceSearchAllReq extends Message<EquationsSalesBundlesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -826,5 +826,5 @@ export declare class EquationsSalesBundlesServiceSearchAllReq extends Message<Eq
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsSalesBundlesServiceSearchAllReq;
     static equals(a: EquationsSalesBundlesServiceSearchAllReq | PlainMessage<EquationsSalesBundlesServiceSearchAllReq> | undefined, b: EquationsSalesBundlesServiceSearchAllReq | PlainMessage<EquationsSalesBundlesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=equations_sales_bundles_pb.d.ts.map

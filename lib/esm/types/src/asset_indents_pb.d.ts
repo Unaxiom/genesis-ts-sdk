@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.ASSET_INDENT_SORT_KEY
  */
-export declare enum ASSET_INDENT_SORT_KEY ***REMOVED***
+export declare enum ASSET_INDENT_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -69,14 +69,14 @@ export declare enum ASSET_INDENT_SORT_KEY ***REMOVED***
      * @generated from enum value: ASSET_INDENT_SORT_KEY_LOCATION_ID = 12;
      */
     ASSET_INDENT_SORT_KEY_LOCATION_ID = 12
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.AssetIndentsServiceCreateRequest
  */
-export declare class AssetIndentsServiceCreateRequest extends Message<AssetIndentsServiceCreateRequest> ***REMOVED***
+export declare class AssetIndentsServiceCreateRequest extends Message<AssetIndentsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -133,14 +133,14 @@ export declare class AssetIndentsServiceCreateRequest extends Message<AssetInden
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentsServiceCreateRequest;
     static equals(a: AssetIndentsServiceCreateRequest | PlainMessage<AssetIndentsServiceCreateRequest> | undefined, b: AssetIndentsServiceCreateRequest | PlainMessage<AssetIndentsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.AssetIndentsServiceUpdateRequest
  */
-export declare class AssetIndentsServiceUpdateRequest extends Message<AssetIndentsServiceUpdateRequest> ***REMOVED***
+export declare class AssetIndentsServiceUpdateRequest extends Message<AssetIndentsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -197,14 +197,14 @@ export declare class AssetIndentsServiceUpdateRequest extends Message<AssetInden
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentsServiceUpdateRequest;
     static equals(a: AssetIndentsServiceUpdateRequest | PlainMessage<AssetIndentsServiceUpdateRequest> | undefined, b: AssetIndentsServiceUpdateRequest | PlainMessage<AssetIndentsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.AssetIndent
  */
-export declare class AssetIndent extends Message<AssetIndent> ***REMOVED***
+export declare class AssetIndent extends Message<AssetIndent> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -297,14 +297,14 @@ export declare class AssetIndent extends Message<AssetIndent> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndent;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndent;
     static equals(a: AssetIndent | PlainMessage<AssetIndent> | undefined, b: AssetIndent | PlainMessage<AssetIndent> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a asset indent
  *
  * @generated from message Genesis.AssetIndentsServiceItemCreateRequest
  */
-export declare class AssetIndentsServiceItemCreateRequest extends Message<AssetIndentsServiceItemCreateRequest> ***REMOVED***
+export declare class AssetIndentsServiceItemCreateRequest extends Message<AssetIndentsServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -337,14 +337,14 @@ export declare class AssetIndentsServiceItemCreateRequest extends Message<AssetI
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentsServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentsServiceItemCreateRequest;
     static equals(a: AssetIndentsServiceItemCreateRequest | PlainMessage<AssetIndentsServiceItemCreateRequest> | undefined, b: AssetIndentsServiceItemCreateRequest | PlainMessage<AssetIndentsServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a asset indent
  *
  * @generated from message Genesis.AssetIndentsServiceItemUpdateRequest
  */
-export declare class AssetIndentsServiceItemUpdateRequest extends Message<AssetIndentsServiceItemUpdateRequest> ***REMOVED***
+export declare class AssetIndentsServiceItemUpdateRequest extends Message<AssetIndentsServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -371,14 +371,14 @@ export declare class AssetIndentsServiceItemUpdateRequest extends Message<AssetI
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentsServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentsServiceItemUpdateRequest;
     static equals(a: AssetIndentsServiceItemUpdateRequest | PlainMessage<AssetIndentsServiceItemUpdateRequest> | undefined, b: AssetIndentsServiceItemUpdateRequest | PlainMessage<AssetIndentsServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a asset indent
  *
  * @generated from message Genesis.AssetIndentItem
  */
-export declare class AssetIndentItem extends Message<AssetIndentItem> ***REMOVED***
+export declare class AssetIndentItem extends Message<AssetIndentItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -435,14 +435,14 @@ export declare class AssetIndentItem extends Message<AssetIndentItem> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentItem;
     static equals(a: AssetIndentItem | PlainMessage<AssetIndentItem> | undefined, b: AssetIndentItem | PlainMessage<AssetIndentItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of asset indents
  *
  * @generated from message Genesis.AssetIndentsList
  */
-export declare class AssetIndentsList extends Message<AssetIndentsList> ***REMOVED***
+export declare class AssetIndentsList extends Message<AssetIndentsList> {
     /**
      * List of records
      *
@@ -457,14 +457,14 @@ export declare class AssetIndentsList extends Message<AssetIndentsList> ***REMOV
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentsList;
     static equals(a: AssetIndentsList | PlainMessage<AssetIndentsList> | undefined, b: AssetIndentsList | PlainMessage<AssetIndentsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of asset indent items
  *
  * @generated from message Genesis.AssetIndentsItemsList
  */
-export declare class AssetIndentsItemsList extends Message<AssetIndentsItemsList> ***REMOVED***
+export declare class AssetIndentsItemsList extends Message<AssetIndentsItemsList> {
     /**
      * List of records
      *
@@ -479,14 +479,14 @@ export declare class AssetIndentsItemsList extends Message<AssetIndentsItemsList
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentsItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentsItemsList;
     static equals(a: AssetIndentsItemsList | PlainMessage<AssetIndentsItemsList> | undefined, b: AssetIndentsItemsList | PlainMessage<AssetIndentsItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.AssetIndentItemHistoryRequest
  */
-export declare class AssetIndentItemHistoryRequest extends Message<AssetIndentItemHistoryRequest> ***REMOVED***
+export declare class AssetIndentItemHistoryRequest extends Message<AssetIndentItemHistoryRequest> {
     /**
      * Stores the asset indent ID
      *
@@ -507,14 +507,14 @@ export declare class AssetIndentItemHistoryRequest extends Message<AssetIndentIt
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentItemHistoryRequest;
     static equals(a: AssetIndentItemHistoryRequest | PlainMessage<AssetIndentItemHistoryRequest> | undefined, b: AssetIndentItemHistoryRequest | PlainMessage<AssetIndentItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the info of a prospective asset indent item
  *
  * @generated from message Genesis.AssetIndentItemProspectiveInfoRequest
  */
-export declare class AssetIndentItemProspectiveInfoRequest extends Message<AssetIndentItemProspectiveInfoRequest> ***REMOVED***
+export declare class AssetIndentItemProspectiveInfoRequest extends Message<AssetIndentItemProspectiveInfoRequest> {
     /**
      * Stores the asset indent ID
      *
@@ -535,14 +535,14 @@ export declare class AssetIndentItemProspectiveInfoRequest extends Message<Asset
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentItemProspectiveInfoRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentItemProspectiveInfoRequest;
     static equals(a: AssetIndentItemProspectiveInfoRequest | PlainMessage<AssetIndentItemProspectiveInfoRequest> | undefined, b: AssetIndentItemProspectiveInfoRequest | PlainMessage<AssetIndentItemProspectiveInfoRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.AssetIndentsServicePaginationReq
  */
-export declare class AssetIndentsServicePaginationReq extends Message<AssetIndentsServicePaginationReq> ***REMOVED***
+export declare class AssetIndentsServicePaginationReq extends Message<AssetIndentsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -587,14 +587,14 @@ export declare class AssetIndentsServicePaginationReq extends Message<AssetInden
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentsServicePaginationReq;
     static equals(a: AssetIndentsServicePaginationReq | PlainMessage<AssetIndentsServicePaginationReq> | undefined, b: AssetIndentsServicePaginationReq | PlainMessage<AssetIndentsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.AssetIndentsServicePaginationResponse
  */
-export declare class AssetIndentsServicePaginationResponse extends Message<AssetIndentsServicePaginationResponse> ***REMOVED***
+export declare class AssetIndentsServicePaginationResponse extends Message<AssetIndentsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -627,14 +627,14 @@ export declare class AssetIndentsServicePaginationResponse extends Message<Asset
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentsServicePaginationResponse;
     static equals(a: AssetIndentsServicePaginationResponse | PlainMessage<AssetIndentsServicePaginationResponse> | undefined, b: AssetIndentsServicePaginationResponse | PlainMessage<AssetIndentsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.AssetIndentsServiceEntityPaginationReq
  */
-export declare class AssetIndentsServiceEntityPaginationReq extends Message<AssetIndentsServiceEntityPaginationReq> ***REMOVED***
+export declare class AssetIndentsServiceEntityPaginationReq extends Message<AssetIndentsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -679,14 +679,14 @@ export declare class AssetIndentsServiceEntityPaginationReq extends Message<Asse
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentsServiceEntityPaginationReq;
     static equals(a: AssetIndentsServiceEntityPaginationReq | PlainMessage<AssetIndentsServiceEntityPaginationReq> | undefined, b: AssetIndentsServiceEntityPaginationReq | PlainMessage<AssetIndentsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.AssetIndentsServiceFilterReq
  */
-export declare class AssetIndentsServiceFilterReq extends Message<AssetIndentsServiceFilterReq> ***REMOVED***
+export declare class AssetIndentsServiceFilterReq extends Message<AssetIndentsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -815,14 +815,14 @@ export declare class AssetIndentsServiceFilterReq extends Message<AssetIndentsSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentsServiceFilterReq;
     static equals(a: AssetIndentsServiceFilterReq | PlainMessage<AssetIndentsServiceFilterReq> | undefined, b: AssetIndentsServiceFilterReq | PlainMessage<AssetIndentsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.AssetIndentsServiceSearchAllReq
  */
-export declare class AssetIndentsServiceSearchAllReq extends Message<AssetIndentsServiceSearchAllReq> ***REMOVED***
+export declare class AssetIndentsServiceSearchAllReq extends Message<AssetIndentsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -891,5 +891,5 @@ export declare class AssetIndentsServiceSearchAllReq extends Message<AssetIndent
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssetIndentsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssetIndentsServiceSearchAllReq;
     static equals(a: AssetIndentsServiceSearchAllReq | PlainMessage<AssetIndentsServiceSearchAllReq> | undefined, b: AssetIndentsServiceSearchAllReq | PlainMessage<AssetIndentsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=asset_indents_pb.d.ts.map

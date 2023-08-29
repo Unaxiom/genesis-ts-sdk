@@ -3,8 +3,8 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 
 /**
  *
@@ -12,7 +12,7 @@ import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/p
  *
  * @generated from message Genesis.UserLoginRequest
  */
-export class UserLoginRequest extends Message<UserLoginRequest> ***REMOVED***
+export class UserLoginRequest extends Message<UserLoginRequest> {
   /**
    * Username of the user
    *
@@ -34,35 +34,35 @@ export class UserLoginRequest extends Message<UserLoginRequest> ***REMOVED***
    */
   otp = "";
 
-  constructor(data?: PartialMessage<UserLoginRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<UserLoginRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UserLoginRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "plain_text_password", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "otp", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "plain_text_password", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "otp", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UserLoginRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UserLoginRequest {
     return new UserLoginRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UserLoginRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UserLoginRequest {
     return new UserLoginRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UserLoginRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UserLoginRequest {
     return new UserLoginRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UserLoginRequest | PlainMessage<UserLoginRequest> | undefined, b: UserLoginRequest | PlainMessage<UserLoginRequest> | undefined): boolean ***REMOVED***
+  static equals(a: UserLoginRequest | PlainMessage<UserLoginRequest> | undefined, b: UserLoginRequest | PlainMessage<UserLoginRequest> | undefined): boolean {
     return proto3.util.equals(UserLoginRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -70,7 +70,7 @@ export class UserLoginRequest extends Message<UserLoginRequest> ***REMOVED***
  *
  * @generated from message Genesis.UserLoginResponse
  */
-export class UserLoginResponse extends Message<UserLoginResponse> ***REMOVED***
+export class UserLoginResponse extends Message<UserLoginResponse> {
   /**
    * Username of the user that just logged in
    *
@@ -92,35 +92,35 @@ export class UserLoginResponse extends Message<UserLoginResponse> ***REMOVED***
    */
   expiresAt = protoInt64.zero;
 
-  constructor(data?: PartialMessage<UserLoginResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<UserLoginResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UserLoginResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "auth_token", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "expires_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "auth_token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "expires_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UserLoginResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UserLoginResponse {
     return new UserLoginResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UserLoginResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UserLoginResponse {
     return new UserLoginResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UserLoginResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UserLoginResponse {
     return new UserLoginResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UserLoginResponse | PlainMessage<UserLoginResponse> | undefined, b: UserLoginResponse | PlainMessage<UserLoginResponse> | undefined): boolean ***REMOVED***
+  static equals(a: UserLoginResponse | PlainMessage<UserLoginResponse> | undefined, b: UserLoginResponse | PlainMessage<UserLoginResponse> | undefined): boolean {
     return proto3.util.equals(UserLoginResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -128,7 +128,7 @@ export class UserLoginResponse extends Message<UserLoginResponse> ***REMOVED***
  *
  * @generated from message Genesis.AuthTokenValidityRequest
  */
-export class AuthTokenValidityRequest extends Message<AuthTokenValidityRequest> ***REMOVED***
+export class AuthTokenValidityRequest extends Message<AuthTokenValidityRequest> {
   /**
    * The token whose validity needs to be determined
    *
@@ -136,33 +136,33 @@ export class AuthTokenValidityRequest extends Message<AuthTokenValidityRequest> 
    */
   authToken = "";
 
-  constructor(data?: PartialMessage<AuthTokenValidityRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<AuthTokenValidityRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.AuthTokenValidityRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "auth_token", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "auth_token", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AuthTokenValidityRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AuthTokenValidityRequest {
     return new AuthTokenValidityRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AuthTokenValidityRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AuthTokenValidityRequest {
     return new AuthTokenValidityRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AuthTokenValidityRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AuthTokenValidityRequest {
     return new AuthTokenValidityRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: AuthTokenValidityRequest | PlainMessage<AuthTokenValidityRequest> | undefined, b: AuthTokenValidityRequest | PlainMessage<AuthTokenValidityRequest> | undefined): boolean ***REMOVED***
+  static equals(a: AuthTokenValidityRequest | PlainMessage<AuthTokenValidityRequest> | undefined, b: AuthTokenValidityRequest | PlainMessage<AuthTokenValidityRequest> | undefined): boolean {
     return proto3.util.equals(AuthTokenValidityRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -170,33 +170,33 @@ export class AuthTokenValidityRequest extends Message<AuthTokenValidityRequest> 
  *
  * @generated from message Genesis.LogoutRequest
  */
-export class LogoutRequest extends Message<LogoutRequest> ***REMOVED***
-  constructor(data?: PartialMessage<LogoutRequest>) ***REMOVED***
+export class LogoutRequest extends Message<LogoutRequest> {
+  constructor(data?: PartialMessage<LogoutRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LogoutRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogoutRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogoutRequest {
     return new LogoutRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogoutRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogoutRequest {
     return new LogoutRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogoutRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogoutRequest {
     return new LogoutRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LogoutRequest | PlainMessage<LogoutRequest> | undefined, b: LogoutRequest | PlainMessage<LogoutRequest> | undefined): boolean ***REMOVED***
+  static equals(a: LogoutRequest | PlainMessage<LogoutRequest> | undefined, b: LogoutRequest | PlainMessage<LogoutRequest> | undefined): boolean {
     return proto3.util.equals(LogoutRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -204,31 +204,31 @@ export class LogoutRequest extends Message<LogoutRequest> ***REMOVED***
  *
  * @generated from message Genesis.LogoutResponse
  */
-export class LogoutResponse extends Message<LogoutResponse> ***REMOVED***
-  constructor(data?: PartialMessage<LogoutResponse>) ***REMOVED***
+export class LogoutResponse extends Message<LogoutResponse> {
+  constructor(data?: PartialMessage<LogoutResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LogoutResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogoutResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogoutResponse {
     return new LogoutResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogoutResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogoutResponse {
     return new LogoutResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogoutResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogoutResponse {
     return new LogoutResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LogoutResponse | PlainMessage<LogoutResponse> | undefined, b: LogoutResponse | PlainMessage<LogoutResponse> | undefined): boolean ***REMOVED***
+  static equals(a: LogoutResponse | PlainMessage<LogoutResponse> | undefined, b: LogoutResponse | PlainMessage<LogoutResponse> | undefined): boolean {
     return proto3.util.equals(LogoutResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

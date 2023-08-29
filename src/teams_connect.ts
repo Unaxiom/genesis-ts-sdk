@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** Team, TeamMember, TeamMemberHistoryRequest, TeamsList, TeamsMembersList, TeamsServiceCreateRequest, TeamsServiceEntityPaginationReq, TeamsServiceFilterReq, TeamsServiceMemberCreateRequest, TeamsServiceMemberUpdateRequest, TeamsServicePaginationReq, TeamsServicePaginationResponse, TeamsServiceSearchAllReq, TeamsServiceUpdateRequest ***REMOVED*** from "./teams_pb.js";
-import ***REMOVED*** ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { Team, TeamMember, TeamMemberHistoryRequest, TeamsList, TeamsMembersList, TeamsServiceCreateRequest, TeamsServiceEntityPaginationReq, TeamsServiceFilterReq, TeamsServiceMemberCreateRequest, TeamsServiceMemberUpdateRequest, TeamsServicePaginationReq, TeamsServicePaginationResponse, TeamsServiceSearchAllReq, TeamsServiceUpdateRequest } from "./teams_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,163 +13,163 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.TeamsService
  */
-export const TeamsService = ***REMOVED***
+export const TeamsService = {
   typeName: "Genesis.TeamsService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.TeamsService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: TeamsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.TeamsService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: TeamsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.TeamsService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: TeamsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.TeamsService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.TeamsService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.TeamsService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.TeamsService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.TeamsService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: TeamsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.TeamsService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.TeamsService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.TeamsService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.TeamsService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.TeamsService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.TeamsService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -178,221 +178,221 @@ export const TeamsService = ***REMOVED***
      *
      * @generated from rpc Genesis.TeamsService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Clone team from an existing team (denoted by the identifier)
      *
      * @generated from rpc Genesis.TeamsService.Clone
      */
-    clone: ***REMOVED***
+    clone: {
       name: "Clone",
       I: CloneRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add a member to a team
      *
      * @generated from rpc Genesis.TeamsService.AddTeamMember
      */
-    addTeamMember: ***REMOVED***
+    addTeamMember: {
       name: "AddTeamMember",
       I: TeamsServiceMemberCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify a member in a team
      *
      * @generated from rpc Genesis.TeamsService.ModifyTeamMember
      */
-    modifyTeamMember: ***REMOVED***
+    modifyTeamMember: {
       name: "ModifyTeamMember",
       I: TeamsServiceMemberUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve a member in a team
      *
      * @generated from rpc Genesis.TeamsService.ApproveTeamMember
      */
-    approveTeamMember: ***REMOVED***
+    approveTeamMember: {
       name: "ApproveTeamMember",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete a member in a team
      *
      * @generated from rpc Genesis.TeamsService.DeleteTeamMember
      */
-    deleteTeamMember: ***REMOVED***
+    deleteTeamMember: {
       name: "DeleteTeamMember",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder members in a team
      *
      * @generated from rpc Genesis.TeamsService.ReorderTeamMembers
      */
-    reorderTeamMembers: ***REMOVED***
+    reorderTeamMembers: {
       name: "ReorderTeamMembers",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Team Member by ID
      *
      * @generated from rpc Genesis.TeamsService.ViewTeamMemberByID
      */
-    viewTeamMemberByID: ***REMOVED***
+    viewTeamMemberByID: {
       name: "ViewTeamMemberByID",
       I: Identifier,
       O: TeamMember,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved team members for given team ID
      *
      * @generated from rpc Genesis.TeamsService.ViewApprovedTeamMembers
      */
-    viewApprovedTeamMembers: ***REMOVED***
+    viewApprovedTeamMembers: {
       name: "ViewApprovedTeamMembers",
       I: IdentifierWithSearchKey,
       O: TeamsMembersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved team members for given team ID
      *
      * @generated from rpc Genesis.TeamsService.ViewUnapprovedTeamMembers
      */
-    viewUnapprovedTeamMembers: ***REMOVED***
+    viewUnapprovedTeamMembers: {
       name: "ViewUnapprovedTeamMembers",
       I: IdentifierWithSearchKey,
       O: TeamsMembersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the team member
      *
      * @generated from rpc Genesis.TeamsService.ViewTeamMemberHistory
      */
-    viewTeamMemberHistory: ***REMOVED***
+    viewTeamMemberHistory: {
       name: "ViewTeamMemberHistory",
       I: TeamMemberHistoryRequest,
       O: TeamsMembersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all the teams that the member is part of (and not the team lead)
      *
      * @generated from rpc Genesis.TeamsService.ViewTeamsForMember
      */
-    viewTeamsForMember: ***REMOVED***
+    viewTeamsForMember: {
       name: "ViewTeamsForMember",
       I: Identifier,
       O: TeamsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.TeamsService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: Team,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.TeamsService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: TeamsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.TeamsService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: TeamsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.TeamsService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: TeamsServicePaginationReq,
       O: TeamsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.TeamsService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: TeamsServiceEntityPaginationReq,
       O: TeamsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.TeamsService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: TeamsServiceSearchAllReq,
       O: TeamsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.TeamsService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: TeamsServiceFilterReq,
       O: TeamsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.TeamsService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

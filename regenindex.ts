@@ -9,16 +9,16 @@ const filesList = fs.readdirSync(directoryPath);
 let indexStr = <string[]>[
     // `export * from "@bufbuild/connect-web";`
 
-    // `import ***REMOVED*** createConnectTransport as connectNode ***REMOVED*** from "@bufbuild/connect-node";`,
-    // `import ***REMOVED*** createConnectTransport as connectWeb ***REMOVED*** from "@bufbuild/connect-web";`,
-    // `export ***REMOVED*** connectNode, connectWeb ***REMOVED***;`
+    // `import { createConnectTransport as connectNode } from "@bufbuild/connect-node";`,
+    // `import { createConnectTransport as connectWeb } from "@bufbuild/connect-web";`,
+    // `export { connectNode, connectWeb };`
 ];
 
-filesList.forEach(f => ***REMOVED***
-    if (f.endsWith("_connect.ts") || f.endsWith("_pb.ts")) ***REMOVED***
-        indexStr.push(`export * from "./$***REMOVED***srcFolder***REMOVED***/$***REMOVED***f.split(".ts")[0]***REMOVED***";`);
-***REMOVED***
-***REMOVED***);
+filesList.forEach(f => {
+    if (f.endsWith("_connect.ts") || f.endsWith("_pb.ts")) {
+        indexStr.push(`export * from "./${srcFolder}/${f.split(".ts")[0]}";`);
+    }
+});
 
 fs.writeFileSync(path.join(__dirname, "index.ts"), indexStr.join("\n"));
 

@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** EmployeeMetadata, SORT_ORDER ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { EmployeeMetadata, SORT_ORDER } from "./base_pb.js";
 /**
  *
  * Describes the available options that a associate can be associated with
  *
  * @generated from enum Genesis.ASSOCIATE_ORG_REF_FROM
  */
-export declare enum ASSOCIATE_ORG_REF_FROM ***REMOVED***
+export declare enum ASSOCIATE_ORG_REF_FROM {
     /**
      * The default value which is an empty string
      *
@@ -26,14 +26,14 @@ export declare enum ASSOCIATE_ORG_REF_FROM ***REMOVED***
      * @generated from enum value: ASSOCIATE_ORG_REF_FROM_VENDOR = 2;
      */
     ASSOCIATE_ORG_REF_FROM_VENDOR = 2
-***REMOVED***
+}
 /**
  *
  * Describes the available sort keys for retrieving associates
  *
  * @generated from enum Genesis.ASSOCIATE_SORT_KEY
  */
-export declare enum ASSOCIATE_SORT_KEY ***REMOVED***
+export declare enum ASSOCIATE_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -82,14 +82,14 @@ export declare enum ASSOCIATE_SORT_KEY ***REMOVED***
      * @generated from enum value: ASSOCIATE_SORT_KEY_JOB_TITLE = 14;
      */
     ASSOCIATE_SORT_KEY_JOB_TITLE = 14
-***REMOVED***
+}
 /**
  *
  * Describes the data structure of each associate on the platform
  *
  * @generated from message Genesis.Associate
  */
-export declare class Associate extends Message<Associate> ***REMOVED***
+export declare class Associate extends Message<Associate> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -206,14 +206,14 @@ export declare class Associate extends Message<Associate> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Associate;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Associate;
     static equals(a: Associate | PlainMessage<Associate> | undefined, b: Associate | PlainMessage<Associate> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the data structure that stores a list of associates
  *
  * @generated from message Genesis.AssociatesList
  */
-export declare class AssociatesList extends Message<AssociatesList> ***REMOVED***
+export declare class AssociatesList extends Message<AssociatesList> {
     /**
      * List of associates
      *
@@ -228,14 +228,14 @@ export declare class AssociatesList extends Message<AssociatesList> ***REMOVED**
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssociatesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssociatesList;
     static equals(a: AssociatesList | PlainMessage<AssociatesList> | undefined, b: AssociatesList | PlainMessage<AssociatesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the data structure that responds to a pagination request
  *
  * @generated from message Genesis.AssociatePaginationResp
  */
-export declare class AssociatePaginationResp extends Message<AssociatePaginationResp> ***REMOVED***
+export declare class AssociatePaginationResp extends Message<AssociatePaginationResp> {
     /**
      * The number of records in this payload
      *
@@ -268,14 +268,14 @@ export declare class AssociatePaginationResp extends Message<AssociatePagination
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssociatePaginationResp;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssociatePaginationResp;
     static equals(a: AssociatePaginationResp | PlainMessage<AssociatePaginationResp> | undefined, b: AssociatePaginationResp | PlainMessage<AssociatePaginationResp> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the necessary data structure during creation of a associate
  *
  * @generated from message Genesis.AssociatesServiceCreateRequest
  */
-export declare class AssociatesServiceCreateRequest extends Message<AssociatesServiceCreateRequest> ***REMOVED***
+export declare class AssociatesServiceCreateRequest extends Message<AssociatesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -396,14 +396,14 @@ export declare class AssociatesServiceCreateRequest extends Message<AssociatesSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssociatesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssociatesServiceCreateRequest;
     static equals(a: AssociatesServiceCreateRequest | PlainMessage<AssociatesServiceCreateRequest> | undefined, b: AssociatesServiceCreateRequest | PlainMessage<AssociatesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the data structure to perform the update (draft/revision) operation on a associate
  *
  * @generated from message Genesis.AssociatesServiceUpdateRequest
  */
-export declare class AssociatesServiceUpdateRequest extends Message<AssociatesServiceUpdateRequest> ***REMOVED***
+export declare class AssociatesServiceUpdateRequest extends Message<AssociatesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -524,14 +524,14 @@ export declare class AssociatesServiceUpdateRequest extends Message<AssociatesSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssociatesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssociatesServiceUpdateRequest;
     static equals(a: AssociatesServiceUpdateRequest | PlainMessage<AssociatesServiceUpdateRequest> | undefined, b: AssociatesServiceUpdateRequest | PlainMessage<AssociatesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.AssociatesServicePaginationReq
  */
-export declare class AssociatesServicePaginationReq extends Message<AssociatesServicePaginationReq> ***REMOVED***
+export declare class AssociatesServicePaginationReq extends Message<AssociatesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -570,14 +570,14 @@ export declare class AssociatesServicePaginationReq extends Message<AssociatesSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssociatesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssociatesServicePaginationReq;
     static equals(a: AssociatesServicePaginationReq | PlainMessage<AssociatesServicePaginationReq> | undefined, b: AssociatesServicePaginationReq | PlainMessage<AssociatesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.AssociatesServiceEntityPaginationReq
  */
-export declare class AssociatesServiceEntityPaginationReq extends Message<AssociatesServiceEntityPaginationReq> ***REMOVED***
+export declare class AssociatesServiceEntityPaginationReq extends Message<AssociatesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -622,14 +622,14 @@ export declare class AssociatesServiceEntityPaginationReq extends Message<Associ
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssociatesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssociatesServiceEntityPaginationReq;
     static equals(a: AssociatesServiceEntityPaginationReq | PlainMessage<AssociatesServiceEntityPaginationReq> | undefined, b: AssociatesServiceEntityPaginationReq | PlainMessage<AssociatesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on associates
  *
  * @generated from message Genesis.AssociatesServiceSearchAllReq
  */
-export declare class AssociatesServiceSearchAllReq extends Message<AssociatesServiceSearchAllReq> ***REMOVED***
+export declare class AssociatesServiceSearchAllReq extends Message<AssociatesServiceSearchAllReq> {
     /**
      * The sort order that is to be used to fetch the response
      *
@@ -662,5 +662,5 @@ export declare class AssociatesServiceSearchAllReq extends Message<AssociatesSer
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AssociatesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AssociatesServiceSearchAllReq;
     static equals(a: AssociatesServiceSearchAllReq | PlainMessage<AssociatesServiceSearchAllReq> | undefined, b: AssociatesServiceSearchAllReq | PlainMessage<AssociatesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=associates_pb.d.ts.map

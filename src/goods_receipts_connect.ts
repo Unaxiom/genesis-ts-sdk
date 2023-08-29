@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** GoodsReceipt, GoodsReceiptItem, GoodsReceiptItemHistoryRequest, GoodsReceiptItemProspectiveInfoRequest, GoodsReceiptsItemsList, GoodsReceiptsList, GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest, GoodsReceiptsServiceAutofillRequest, GoodsReceiptsServiceCreateRequest, GoodsReceiptsServiceEntityPaginationReq, GoodsReceiptsServiceFilterReq, GoodsReceiptsServiceItemCreateRequest, GoodsReceiptsServiceItemUpdateRequest, GoodsReceiptsServicePaginationReq, GoodsReceiptsServicePaginationResponse, GoodsReceiptsServiceSearchAllReq, GoodsReceiptsServiceUpdateRequest ***REMOVED*** from "./goods_receipts_pb.js";
-import ***REMOVED*** ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
+import { GoodsReceipt, GoodsReceiptItem, GoodsReceiptItemHistoryRequest, GoodsReceiptItemProspectiveInfoRequest, GoodsReceiptsItemsList, GoodsReceiptsList, GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest, GoodsReceiptsServiceAutofillRequest, GoodsReceiptsServiceCreateRequest, GoodsReceiptsServiceEntityPaginationReq, GoodsReceiptsServiceFilterReq, GoodsReceiptsServiceItemCreateRequest, GoodsReceiptsServiceItemUpdateRequest, GoodsReceiptsServicePaginationReq, GoodsReceiptsServicePaginationResponse, GoodsReceiptsServiceSearchAllReq, GoodsReceiptsServiceUpdateRequest } from "./goods_receipts_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
+import { FamiliesList } from "./families_pb.js";
 
 /**
  *
@@ -14,449 +14,449 @@ import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
  *
  * @generated from service Genesis.GoodsReceiptsService
  */
-export const GoodsReceiptsService = ***REMOVED***
+export const GoodsReceiptsService = {
   typeName: "Genesis.GoodsReceiptsService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.GoodsReceiptsService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: GoodsReceiptsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.GoodsReceiptsService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: GoodsReceiptsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.GoodsReceiptsService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: GoodsReceiptsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.GoodsReceiptsService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.GoodsReceiptsService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.GoodsReceiptsService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.GoodsReceiptsService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.GoodsReceiptsService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: GoodsReceiptsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.GoodsReceiptsService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.GoodsReceiptsService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.GoodsReceiptsService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.GoodsReceiptsService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.GoodsReceiptsService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.GoodsReceiptsService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
      * @generated from rpc Genesis.GoodsReceiptsService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send Email
      *
      * @generated from rpc Genesis.GoodsReceiptsService.SendEmail
      */
-    sendEmail: ***REMOVED***
+    sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Autofill the goods receipt
      *
      * @generated from rpc Genesis.GoodsReceiptsService.Autofill
      */
-    autofill: ***REMOVED***
+    autofill: {
       name: "Autofill",
       I: GoodsReceiptsServiceAutofillRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Checks if the Goods Receipt can be marked as completed
      *
      * @generated from rpc Genesis.GoodsReceiptsService.IsCompletable
      */
-    isCompletable: ***REMOVED***
+    isCompletable: {
       name: "IsCompletable",
       I: Identifier,
       O: BooleanResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a goods receipt
      *
      * @generated from rpc Genesis.GoodsReceiptsService.AddGoodsReceiptItem
      */
-    addGoodsReceiptItem: ***REMOVED***
+    addGoodsReceiptItem: {
       name: "AddGoodsReceiptItem",
       I: GoodsReceiptsServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a goods receipt
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ModifyGoodsReceiptItem
      */
-    modifyGoodsReceiptItem: ***REMOVED***
+    modifyGoodsReceiptItem: {
       name: "ModifyGoodsReceiptItem",
       I: GoodsReceiptsServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a goods receipt
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ApproveGoodsReceiptItem
      */
-    approveGoodsReceiptItem: ***REMOVED***
+    approveGoodsReceiptItem: {
       name: "ApproveGoodsReceiptItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a goods receipt
      *
      * @generated from rpc Genesis.GoodsReceiptsService.DeleteGoodsReceiptItem
      */
-    deleteGoodsReceiptItem: ***REMOVED***
+    deleteGoodsReceiptItem: {
       name: "DeleteGoodsReceiptItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a goods receipt
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ReorderGoodsReceiptItems
      */
-    reorderGoodsReceiptItems: ***REMOVED***
+    reorderGoodsReceiptItems: {
       name: "ReorderGoodsReceiptItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Goods Receipt Item by ID
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewGoodsReceiptItemByID
      */
-    viewGoodsReceiptItemByID: ***REMOVED***
+    viewGoodsReceiptItemByID: {
       name: "ViewGoodsReceiptItemByID",
       I: Identifier,
       O: GoodsReceiptItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved goods receipt items for given goods receipt ID
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewApprovedGoodsReceiptItems
      */
-    viewApprovedGoodsReceiptItems: ***REMOVED***
+    viewApprovedGoodsReceiptItems: {
       name: "ViewApprovedGoodsReceiptItems",
       I: IdentifierWithSearchKey,
       O: GoodsReceiptsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved goods receipt items for given goods receipt ID
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewUnapprovedGoodsReceiptItems
      */
-    viewUnapprovedGoodsReceiptItems: ***REMOVED***
+    viewUnapprovedGoodsReceiptItems: {
       name: "ViewUnapprovedGoodsReceiptItems",
       I: IdentifierWithSearchKey,
       O: GoodsReceiptsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the goods receipt item
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewGoodsReceiptItemHistory
      */
-    viewGoodsReceiptItemHistory: ***REMOVED***
+    viewGoodsReceiptItemHistory: {
       name: "ViewGoodsReceiptItemHistory",
       I: GoodsReceiptItemHistoryRequest,
       O: GoodsReceiptsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: GoodsReceipt,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: GoodsReceiptsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: GoodsReceiptsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: GoodsReceiptsServicePaginationReq,
       O: GoodsReceiptsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: GoodsReceiptsServiceEntityPaginationReq,
       O: GoodsReceiptsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View prospective families for the given goods receipt
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewProspectiveFamilies
      */
-    viewProspectiveFamilies: ***REMOVED***
+    viewProspectiveFamilies: {
       name: "ViewProspectiveFamilies",
       I: IdentifierWithSearchKey,
       O: FamiliesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View prospective goods receipt item info for the given family ID and goods receipt ID
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewProspectiveGoodsReceiptItem
      */
-    viewProspectiveGoodsReceiptItem: ***REMOVED***
+    viewProspectiveGoodsReceiptItem: {
       name: "ViewProspectiveGoodsReceiptItem",
       I: GoodsReceiptItemProspectiveInfoRequest,
       O: GoodsReceiptsServiceItemCreateRequest,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the associated vendor invoice ID that is denoted by the identifier in the response for the goods receipt that is denoted by the identifier in the request
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewAssociatedVendorInvoiceID
      */
-    viewAssociatedVendorInvoiceID: ***REMOVED***
+    viewAssociatedVendorInvoiceID: {
       name: "ViewAssociatedVendorInvoiceID",
       I: Identifier,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Checks if the Goods Receipt has been billed
      *
      * @generated from rpc Genesis.GoodsReceiptsService.IsBilled
      */
-    isBilled: ***REMOVED***
+    isBilled: {
       name: "IsBilled",
       I: Identifier,
       O: BooleanResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View already added quantities
      *
      * @generated from rpc Genesis.GoodsReceiptsService.ViewAddedFamilyQuantityForSource
      */
-    viewAddedFamilyQuantityForSource: ***REMOVED***
+    viewAddedFamilyQuantityForSource: {
       name: "ViewAddedFamilyQuantityForSource",
       I: GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest,
       O: DualQuantitiesResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.GoodsReceiptsService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: GoodsReceiptsServiceSearchAllReq,
       O: GoodsReceiptsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.GoodsReceiptsService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: GoodsReceiptsServiceFilterReq,
       O: GoodsReceiptsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.GoodsReceiptsService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

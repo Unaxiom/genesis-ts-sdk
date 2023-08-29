@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** EquationFamily, EquationFamilyItem, EquationFamilyItemHistoryRequest, EquationsFamiliesItemsList, EquationsFamiliesList, EquationsFamiliesServiceCreateRequest, EquationsFamiliesServiceEntityPaginationReq, EquationsFamiliesServiceFilterReq, EquationsFamiliesServiceItemCreateRequest, EquationsFamiliesServiceItemUpdateRequest, EquationsFamiliesServicePaginationReq, EquationsFamiliesServicePaginationResponse, EquationsFamiliesServiceSearchAllReq, EquationsFamiliesServiceUpdateRequest ***REMOVED*** from "./equations_families_pb.js";
-import ***REMOVED*** ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearch, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
+import { EquationFamily, EquationFamilyItem, EquationFamilyItemHistoryRequest, EquationsFamiliesItemsList, EquationsFamiliesList, EquationsFamiliesServiceCreateRequest, EquationsFamiliesServiceEntityPaginationReq, EquationsFamiliesServiceFilterReq, EquationsFamiliesServiceItemCreateRequest, EquationsFamiliesServiceItemUpdateRequest, EquationsFamiliesServicePaginationReq, EquationsFamiliesServicePaginationResponse, EquationsFamiliesServiceSearchAllReq, EquationsFamiliesServiceUpdateRequest } from "./equations_families_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearch, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
+import { FamiliesList } from "./families_pb.js";
 
 /**
  *
@@ -14,163 +14,163 @@ import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
  *
  * @generated from service Genesis.EquationsFamiliesService
  */
-export const EquationsFamiliesService = ***REMOVED***
+export const EquationsFamiliesService = {
   typeName: "Genesis.EquationsFamiliesService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.EquationsFamiliesService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: EquationsFamiliesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.EquationsFamiliesService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: EquationsFamiliesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.EquationsFamiliesService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: EquationsFamiliesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.EquationsFamiliesService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.EquationsFamiliesService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.EquationsFamiliesService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.EquationsFamiliesService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.EquationsFamiliesService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: EquationsFamiliesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.EquationsFamiliesService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.EquationsFamiliesService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.EquationsFamiliesService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.EquationsFamiliesService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.EquationsFamiliesService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.EquationsFamiliesService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -179,232 +179,232 @@ export const EquationsFamiliesService = ***REMOVED***
      *
      * @generated from rpc Genesis.EquationsFamiliesService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Clone equation from an existing equation (denoted by the identifier)
      *
      * @generated from rpc Genesis.EquationsFamiliesService.Clone
      */
-    clone: ***REMOVED***
+    clone: {
       name: "Clone",
       I: CloneRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a equation family
      *
      * @generated from rpc Genesis.EquationsFamiliesService.AddEquationFamilyItem
      */
-    addEquationFamilyItem: ***REMOVED***
+    addEquationFamilyItem: {
       name: "AddEquationFamilyItem",
       I: EquationsFamiliesServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a equation family
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ModifyEquationFamilyItem
      */
-    modifyEquationFamilyItem: ***REMOVED***
+    modifyEquationFamilyItem: {
       name: "ModifyEquationFamilyItem",
       I: EquationsFamiliesServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a equation family
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ApproveEquationFamilyItem
      */
-    approveEquationFamilyItem: ***REMOVED***
+    approveEquationFamilyItem: {
       name: "ApproveEquationFamilyItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a equation family
      *
      * @generated from rpc Genesis.EquationsFamiliesService.DeleteEquationFamilyItem
      */
-    deleteEquationFamilyItem: ***REMOVED***
+    deleteEquationFamilyItem: {
       name: "DeleteEquationFamilyItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a equation family
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ReorderEquationFamilyItems
      */
-    reorderEquationFamilyItems: ***REMOVED***
+    reorderEquationFamilyItems: {
       name: "ReorderEquationFamilyItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Equation Family Item by ID
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ViewEquationFamilyItemByID
      */
-    viewEquationFamilyItemByID: ***REMOVED***
+    viewEquationFamilyItemByID: {
       name: "ViewEquationFamilyItemByID",
       I: Identifier,
       O: EquationFamilyItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved equation family items for given equation family ID
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ViewApprovedEquationFamilyItems
      */
-    viewApprovedEquationFamilyItems: ***REMOVED***
+    viewApprovedEquationFamilyItems: {
       name: "ViewApprovedEquationFamilyItems",
       I: IdentifierWithSearchKey,
       O: EquationsFamiliesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved equation family items for given equation family ID
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ViewUnapprovedEquationFamilyItems
      */
-    viewUnapprovedEquationFamilyItems: ***REMOVED***
+    viewUnapprovedEquationFamilyItems: {
       name: "ViewUnapprovedEquationFamilyItems",
       I: IdentifierWithSearchKey,
       O: EquationsFamiliesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the equation family item
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ViewEquationFamilyItemHistory
      */
-    viewEquationFamilyItemHistory: ***REMOVED***
+    viewEquationFamilyItemHistory: {
       name: "ViewEquationFamilyItemHistory",
       I: EquationFamilyItemHistoryRequest,
       O: EquationsFamiliesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: EquationFamily,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: EquationsFamiliesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: EquationsFamiliesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: EquationsFamiliesServicePaginationReq,
       O: EquationsFamiliesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: EquationsFamiliesServiceEntityPaginationReq,
       O: EquationsFamiliesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the latest equation for a family (denoted by the given identifier)
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ViewForFamilyID
      */
-    viewForFamilyID: ***REMOVED***
+    viewForFamilyID: {
       name: "ViewForFamilyID",
       I: Identifier,
       O: EquationFamily,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all selectable families for a family ID represented by Identifier (without cyclical dependencies) and the given search key
      *
      * @generated from rpc Genesis.EquationsFamiliesService.ViewSelectableFamilies
      */
-    viewSelectableFamilies: ***REMOVED***
+    viewSelectableFamilies: {
       name: "ViewSelectableFamilies",
       I: IdentifierWithSearch,
       O: FamiliesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.EquationsFamiliesService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: EquationsFamiliesServiceSearchAllReq,
       O: EquationsFamiliesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.EquationsFamiliesService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: EquationsFamiliesServiceFilterReq,
       O: EquationsFamiliesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.EquationsFamiliesService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

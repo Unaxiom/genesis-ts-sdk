@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** QuotationResponse, QuotationResponseItem, QuotationResponseItemHistoryRequest, QuotationsResponsesItemsList, QuotationsResponsesList, QuotationsResponsesServiceCreateRequest, QuotationsResponsesServiceEntityPaginationReq, QuotationsResponsesServiceFilterReq, QuotationsResponsesServiceItemCreateRequest, QuotationsResponsesServiceItemsFilterReq, QuotationsResponsesServiceItemUpdateRequest, QuotationsResponsesServicePaginationReq, QuotationsResponsesServicePaginationResponse, QuotationsResponsesServiceSearchAllReq, QuotationsResponsesServiceUpdateRequest ***REMOVED*** from "./quotations_responses_pb.js";
-import ***REMOVED*** ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { QuotationResponse, QuotationResponseItem, QuotationResponseItemHistoryRequest, QuotationsResponsesItemsList, QuotationsResponsesList, QuotationsResponsesServiceCreateRequest, QuotationsResponsesServiceEntityPaginationReq, QuotationsResponsesServiceFilterReq, QuotationsResponsesServiceItemCreateRequest, QuotationsResponsesServiceItemsFilterReq, QuotationsResponsesServiceItemUpdateRequest, QuotationsResponsesServicePaginationReq, QuotationsResponsesServicePaginationResponse, QuotationsResponsesServiceSearchAllReq, QuotationsResponsesServiceUpdateRequest } from "./quotations_responses_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,372 +13,372 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.QuotationsResponsesService
  */
-export const QuotationsResponsesService = ***REMOVED***
+export const QuotationsResponsesService = {
   typeName: "Genesis.QuotationsResponsesService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.QuotationsResponsesService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: QuotationsResponsesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.QuotationsResponsesService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: QuotationsResponsesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.QuotationsResponsesService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: QuotationsResponsesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.QuotationsResponsesService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.QuotationsResponsesService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.QuotationsResponsesService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.QuotationsResponsesService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.QuotationsResponsesService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: QuotationsResponsesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.QuotationsResponsesService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.QuotationsResponsesService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.QuotationsResponsesService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.QuotationsResponsesService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.QuotationsResponsesService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.QuotationsResponsesService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
      * @generated from rpc Genesis.QuotationsResponsesService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a quotation response
      *
      * @generated from rpc Genesis.QuotationsResponsesService.AddQuotationResponseItem
      */
-    addQuotationResponseItem: ***REMOVED***
+    addQuotationResponseItem: {
       name: "AddQuotationResponseItem",
       I: QuotationsResponsesServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a quotation response
      *
      * @generated from rpc Genesis.QuotationsResponsesService.ModifyQuotationResponseItem
      */
-    modifyQuotationResponseItem: ***REMOVED***
+    modifyQuotationResponseItem: {
       name: "ModifyQuotationResponseItem",
       I: QuotationsResponsesServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a quotation response
      *
      * @generated from rpc Genesis.QuotationsResponsesService.ApproveQuotationResponseItem
      */
-    approveQuotationResponseItem: ***REMOVED***
+    approveQuotationResponseItem: {
       name: "ApproveQuotationResponseItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a quotation response
      *
      * @generated from rpc Genesis.QuotationsResponsesService.DeleteQuotationResponseItem
      */
-    deleteQuotationResponseItem: ***REMOVED***
+    deleteQuotationResponseItem: {
       name: "DeleteQuotationResponseItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a quotation response
      *
      * @generated from rpc Genesis.QuotationsResponsesService.ReorderQuotationResponseItems
      */
-    reorderQuotationResponseItems: ***REMOVED***
+    reorderQuotationResponseItems: {
       name: "ReorderQuotationResponseItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View quotation response Item by ID
      *
      * @generated from rpc Genesis.QuotationsResponsesService.ViewQuotationResponseItemByID
      */
-    viewQuotationResponseItemByID: ***REMOVED***
+    viewQuotationResponseItemByID: {
       name: "ViewQuotationResponseItemByID",
       I: Identifier,
       O: QuotationResponseItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved quotation response items for given quotation response ID
      *
      * @generated from rpc Genesis.QuotationsResponsesService.ViewApprovedQuotationResponseItems
      */
-    viewApprovedQuotationResponseItems: ***REMOVED***
+    viewApprovedQuotationResponseItems: {
       name: "ViewApprovedQuotationResponseItems",
       I: IdentifierWithSearchKey,
       O: QuotationsResponsesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved quotation response items for given quotation response ID
      *
      * @generated from rpc Genesis.QuotationsResponsesService.ViewUnapprovedQuotationResponseItems
      */
-    viewUnapprovedQuotationResponseItems: ***REMOVED***
+    viewUnapprovedQuotationResponseItems: {
       name: "ViewUnapprovedQuotationResponseItems",
       I: IdentifierWithSearchKey,
       O: QuotationsResponsesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the quotation response item
      *
      * @generated from rpc Genesis.QuotationsResponsesService.ViewQuotationResponseItemHistory
      */
-    viewQuotationResponseItemHistory: ***REMOVED***
+    viewQuotationResponseItemHistory: {
       name: "ViewQuotationResponseItemHistory",
       I: QuotationResponseItemHistoryRequest,
       O: QuotationsResponsesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all the quotation response items that match the given filter criteria
      *
      * @generated from rpc Genesis.QuotationsResponsesService.FilterItems
      */
-    filterItems: ***REMOVED***
+    filterItems: {
       name: "FilterItems",
       I: QuotationsResponsesServiceItemsFilterReq,
       O: QuotationsResponsesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.QuotationsResponsesService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: QuotationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.QuotationsResponsesService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: QuotationsResponsesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.QuotationsResponsesService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: QuotationsResponsesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.QuotationsResponsesService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: QuotationsResponsesServicePaginationReq,
       O: QuotationsResponsesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.QuotationsResponsesService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: QuotationsResponsesServiceEntityPaginationReq,
       O: QuotationsResponsesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.QuotationsResponsesService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: QuotationsResponsesServiceSearchAllReq,
       O: QuotationsResponsesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.QuotationsResponsesService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: QuotationsResponsesServiceFilterReq,
       O: QuotationsResponsesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.QuotationsResponsesService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

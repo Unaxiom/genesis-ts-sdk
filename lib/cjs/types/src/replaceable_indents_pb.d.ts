@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.REPLACEABLE_INDENT_SORT_KEY
  */
-export declare enum REPLACEABLE_INDENT_SORT_KEY ***REMOVED***
+export declare enum REPLACEABLE_INDENT_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -69,14 +69,14 @@ export declare enum REPLACEABLE_INDENT_SORT_KEY ***REMOVED***
      * @generated from enum value: REPLACEABLE_INDENT_SORT_KEY_LOCATION_ID = 12;
      */
     REPLACEABLE_INDENT_SORT_KEY_LOCATION_ID = 12
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.ReplaceableIndentsServiceCreateRequest
  */
-export declare class ReplaceableIndentsServiceCreateRequest extends Message<ReplaceableIndentsServiceCreateRequest> ***REMOVED***
+export declare class ReplaceableIndentsServiceCreateRequest extends Message<ReplaceableIndentsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -145,14 +145,14 @@ export declare class ReplaceableIndentsServiceCreateRequest extends Message<Repl
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceCreateRequest;
     static equals(a: ReplaceableIndentsServiceCreateRequest | PlainMessage<ReplaceableIndentsServiceCreateRequest> | undefined, b: ReplaceableIndentsServiceCreateRequest | PlainMessage<ReplaceableIndentsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.ReplaceableIndentsServiceUpdateRequest
  */
-export declare class ReplaceableIndentsServiceUpdateRequest extends Message<ReplaceableIndentsServiceUpdateRequest> ***REMOVED***
+export declare class ReplaceableIndentsServiceUpdateRequest extends Message<ReplaceableIndentsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -209,14 +209,14 @@ export declare class ReplaceableIndentsServiceUpdateRequest extends Message<Repl
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceUpdateRequest;
     static equals(a: ReplaceableIndentsServiceUpdateRequest | PlainMessage<ReplaceableIndentsServiceUpdateRequest> | undefined, b: ReplaceableIndentsServiceUpdateRequest | PlainMessage<ReplaceableIndentsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to perform an autofill request
  *
  * @generated from message Genesis.ReplaceableIndentsServiceAutofillRequest
  */
-export declare class ReplaceableIndentsServiceAutofillRequest extends Message<ReplaceableIndentsServiceAutofillRequest> ***REMOVED***
+export declare class ReplaceableIndentsServiceAutofillRequest extends Message<ReplaceableIndentsServiceAutofillRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -243,14 +243,14 @@ export declare class ReplaceableIndentsServiceAutofillRequest extends Message<Re
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceAutofillRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceAutofillRequest;
     static equals(a: ReplaceableIndentsServiceAutofillRequest | PlainMessage<ReplaceableIndentsServiceAutofillRequest> | undefined, b: ReplaceableIndentsServiceAutofillRequest | PlainMessage<ReplaceableIndentsServiceAutofillRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.ReplaceableIndent
  */
-export declare class ReplaceableIndent extends Message<ReplaceableIndent> ***REMOVED***
+export declare class ReplaceableIndent extends Message<ReplaceableIndent> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -355,14 +355,14 @@ export declare class ReplaceableIndent extends Message<ReplaceableIndent> ***REM
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndent;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndent;
     static equals(a: ReplaceableIndent | PlainMessage<ReplaceableIndent> | undefined, b: ReplaceableIndent | PlainMessage<ReplaceableIndent> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a replaceable indent
  *
  * @generated from message Genesis.ReplaceableIndentsServiceItemCreateRequest
  */
-export declare class ReplaceableIndentsServiceItemCreateRequest extends Message<ReplaceableIndentsServiceItemCreateRequest> ***REMOVED***
+export declare class ReplaceableIndentsServiceItemCreateRequest extends Message<ReplaceableIndentsServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -395,14 +395,14 @@ export declare class ReplaceableIndentsServiceItemCreateRequest extends Message<
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceItemCreateRequest;
     static equals(a: ReplaceableIndentsServiceItemCreateRequest | PlainMessage<ReplaceableIndentsServiceItemCreateRequest> | undefined, b: ReplaceableIndentsServiceItemCreateRequest | PlainMessage<ReplaceableIndentsServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a replaceable indent
  *
  * @generated from message Genesis.ReplaceableIndentsServiceItemUpdateRequest
  */
-export declare class ReplaceableIndentsServiceItemUpdateRequest extends Message<ReplaceableIndentsServiceItemUpdateRequest> ***REMOVED***
+export declare class ReplaceableIndentsServiceItemUpdateRequest extends Message<ReplaceableIndentsServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -429,14 +429,14 @@ export declare class ReplaceableIndentsServiceItemUpdateRequest extends Message<
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceItemUpdateRequest;
     static equals(a: ReplaceableIndentsServiceItemUpdateRequest | PlainMessage<ReplaceableIndentsServiceItemUpdateRequest> | undefined, b: ReplaceableIndentsServiceItemUpdateRequest | PlainMessage<ReplaceableIndentsServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a replaceable indent
  *
  * @generated from message Genesis.ReplaceableIndentItem
  */
-export declare class ReplaceableIndentItem extends Message<ReplaceableIndentItem> ***REMOVED***
+export declare class ReplaceableIndentItem extends Message<ReplaceableIndentItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -493,14 +493,14 @@ export declare class ReplaceableIndentItem extends Message<ReplaceableIndentItem
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentItem;
     static equals(a: ReplaceableIndentItem | PlainMessage<ReplaceableIndentItem> | undefined, b: ReplaceableIndentItem | PlainMessage<ReplaceableIndentItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of replaceable indents
  *
  * @generated from message Genesis.ReplaceableIndentsList
  */
-export declare class ReplaceableIndentsList extends Message<ReplaceableIndentsList> ***REMOVED***
+export declare class ReplaceableIndentsList extends Message<ReplaceableIndentsList> {
     /**
      * List of records
      *
@@ -515,14 +515,14 @@ export declare class ReplaceableIndentsList extends Message<ReplaceableIndentsLi
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsList;
     static equals(a: ReplaceableIndentsList | PlainMessage<ReplaceableIndentsList> | undefined, b: ReplaceableIndentsList | PlainMessage<ReplaceableIndentsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of replaceable indent items
  *
  * @generated from message Genesis.ReplaceableIndentsItemsList
  */
-export declare class ReplaceableIndentsItemsList extends Message<ReplaceableIndentsItemsList> ***REMOVED***
+export declare class ReplaceableIndentsItemsList extends Message<ReplaceableIndentsItemsList> {
     /**
      * List of records
      *
@@ -537,14 +537,14 @@ export declare class ReplaceableIndentsItemsList extends Message<ReplaceableInde
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsItemsList;
     static equals(a: ReplaceableIndentsItemsList | PlainMessage<ReplaceableIndentsItemsList> | undefined, b: ReplaceableIndentsItemsList | PlainMessage<ReplaceableIndentsItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.ReplaceableIndentItemHistoryRequest
  */
-export declare class ReplaceableIndentItemHistoryRequest extends Message<ReplaceableIndentItemHistoryRequest> ***REMOVED***
+export declare class ReplaceableIndentItemHistoryRequest extends Message<ReplaceableIndentItemHistoryRequest> {
     /**
      * Stores the replaceable indent ID
      *
@@ -565,14 +565,14 @@ export declare class ReplaceableIndentItemHistoryRequest extends Message<Replace
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentItemHistoryRequest;
     static equals(a: ReplaceableIndentItemHistoryRequest | PlainMessage<ReplaceableIndentItemHistoryRequest> | undefined, b: ReplaceableIndentItemHistoryRequest | PlainMessage<ReplaceableIndentItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the info of a prospective replaceable indent item
  *
  * @generated from message Genesis.ReplaceableIndentItemProspectiveInfoRequest
  */
-export declare class ReplaceableIndentItemProspectiveInfoRequest extends Message<ReplaceableIndentItemProspectiveInfoRequest> ***REMOVED***
+export declare class ReplaceableIndentItemProspectiveInfoRequest extends Message<ReplaceableIndentItemProspectiveInfoRequest> {
     /**
      * Stores the replaceable indent ID
      *
@@ -593,14 +593,14 @@ export declare class ReplaceableIndentItemProspectiveInfoRequest extends Message
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentItemProspectiveInfoRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentItemProspectiveInfoRequest;
     static equals(a: ReplaceableIndentItemProspectiveInfoRequest | PlainMessage<ReplaceableIndentItemProspectiveInfoRequest> | undefined, b: ReplaceableIndentItemProspectiveInfoRequest | PlainMessage<ReplaceableIndentItemProspectiveInfoRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.ReplaceableIndentsServicePaginationReq
  */
-export declare class ReplaceableIndentsServicePaginationReq extends Message<ReplaceableIndentsServicePaginationReq> ***REMOVED***
+export declare class ReplaceableIndentsServicePaginationReq extends Message<ReplaceableIndentsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -645,14 +645,14 @@ export declare class ReplaceableIndentsServicePaginationReq extends Message<Repl
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginationReq;
     static equals(a: ReplaceableIndentsServicePaginationReq | PlainMessage<ReplaceableIndentsServicePaginationReq> | undefined, b: ReplaceableIndentsServicePaginationReq | PlainMessage<ReplaceableIndentsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.ReplaceableIndentsServicePaginationResponse
  */
-export declare class ReplaceableIndentsServicePaginationResponse extends Message<ReplaceableIndentsServicePaginationResponse> ***REMOVED***
+export declare class ReplaceableIndentsServicePaginationResponse extends Message<ReplaceableIndentsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -685,14 +685,14 @@ export declare class ReplaceableIndentsServicePaginationResponse extends Message
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginationResponse;
     static equals(a: ReplaceableIndentsServicePaginationResponse | PlainMessage<ReplaceableIndentsServicePaginationResponse> | undefined, b: ReplaceableIndentsServicePaginationResponse | PlainMessage<ReplaceableIndentsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.ReplaceableIndentsServiceEntityPaginationReq
  */
-export declare class ReplaceableIndentsServiceEntityPaginationReq extends Message<ReplaceableIndentsServiceEntityPaginationReq> ***REMOVED***
+export declare class ReplaceableIndentsServiceEntityPaginationReq extends Message<ReplaceableIndentsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -737,14 +737,14 @@ export declare class ReplaceableIndentsServiceEntityPaginationReq extends Messag
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceEntityPaginationReq;
     static equals(a: ReplaceableIndentsServiceEntityPaginationReq | PlainMessage<ReplaceableIndentsServiceEntityPaginationReq> | undefined, b: ReplaceableIndentsServiceEntityPaginationReq | PlainMessage<ReplaceableIndentsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.ReplaceableIndentsServiceFilterReq
  */
-export declare class ReplaceableIndentsServiceFilterReq extends Message<ReplaceableIndentsServiceFilterReq> ***REMOVED***
+export declare class ReplaceableIndentsServiceFilterReq extends Message<ReplaceableIndentsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -879,14 +879,14 @@ export declare class ReplaceableIndentsServiceFilterReq extends Message<Replacea
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceFilterReq;
     static equals(a: ReplaceableIndentsServiceFilterReq | PlainMessage<ReplaceableIndentsServiceFilterReq> | undefined, b: ReplaceableIndentsServiceFilterReq | PlainMessage<ReplaceableIndentsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.ReplaceableIndentsServiceSearchAllReq
  */
-export declare class ReplaceableIndentsServiceSearchAllReq extends Message<ReplaceableIndentsServiceSearchAllReq> ***REMOVED***
+export declare class ReplaceableIndentsServiceSearchAllReq extends Message<ReplaceableIndentsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -967,5 +967,5 @@ export declare class ReplaceableIndentsServiceSearchAllReq extends Message<Repla
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceSearchAllReq;
     static equals(a: ReplaceableIndentsServiceSearchAllReq | PlainMessage<ReplaceableIndentsServiceSearchAllReq> | undefined, b: ReplaceableIndentsServiceSearchAllReq | PlainMessage<ReplaceableIndentsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=replaceable_indents_pb.d.ts.map

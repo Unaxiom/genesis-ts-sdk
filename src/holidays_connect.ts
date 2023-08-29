@@ -9,9 +9,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** Holiday, HolidayShiftGroup, HolidaysList, HolidaysServiceCreateRequest, HolidaysServiceEntityPaginationReq, HolidaysServiceFilterReq, HolidaysServicePaginationReq, HolidaysServicePaginationResponse, HolidaysServiceSearchAllReq, HolidaysServiceShiftGroupCreateRequest, HolidaysServiceShiftGroupUpdateRequest, HolidaysServiceUpdateRequest, HolidaysServiceViewHolidaysOnTimestampRequest, HolidaysShiftsGroupsHistoryRequest, HolidaysShiftsGroupsList ***REMOVED*** from "./holidays_pb.js";
-import ***REMOVED*** ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { Holiday, HolidayShiftGroup, HolidaysList, HolidaysServiceCreateRequest, HolidaysServiceEntityPaginationReq, HolidaysServiceFilterReq, HolidaysServicePaginationReq, HolidaysServicePaginationResponse, HolidaysServiceSearchAllReq, HolidaysServiceShiftGroupCreateRequest, HolidaysServiceShiftGroupUpdateRequest, HolidaysServiceUpdateRequest, HolidaysServiceViewHolidaysOnTimestampRequest, HolidaysShiftsGroupsHistoryRequest, HolidaysShiftsGroupsList } from "./holidays_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -19,152 +19,152 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.HolidaysService
  */
-export const HolidaysService = ***REMOVED***
+export const HolidaysService = {
   typeName: "Genesis.HolidaysService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.HolidaysService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: HolidaysServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.HolidaysService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: HolidaysServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.HolidaysService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: HolidaysServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.HolidaysService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.HolidaysService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.HolidaysService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.HolidaysService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.HolidaysService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: HolidaysServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.HolidaysService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.HolidaysService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.HolidaysService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.HolidaysService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.HolidaysService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -173,210 +173,210 @@ export const HolidaysService = ***REMOVED***
      *
      * @generated from rpc Genesis.HolidaysService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add a shift to a shift group
      *
      * @generated from rpc Genesis.HolidaysService.AddHolidayShiftGroup
      */
-    addHolidayShiftGroup: ***REMOVED***
+    addHolidayShiftGroup: {
       name: "AddHolidayShiftGroup",
       I: HolidaysServiceShiftGroupCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify a shift in a shift group
      *
      * @generated from rpc Genesis.HolidaysService.ModifyHolidayShiftGroup
      */
-    modifyHolidayShiftGroup: ***REMOVED***
+    modifyHolidayShiftGroup: {
       name: "ModifyHolidayShiftGroup",
       I: HolidaysServiceShiftGroupUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve a shift in a shift group
      *
      * @generated from rpc Genesis.HolidaysService.ApproveHolidayShiftGroup
      */
-    approveHolidayShiftGroup: ***REMOVED***
+    approveHolidayShiftGroup: {
       name: "ApproveHolidayShiftGroup",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete a shift in a shift group
      *
      * @generated from rpc Genesis.HolidaysService.DeleteHolidayShiftGroup
      */
-    deleteHolidayShiftGroup: ***REMOVED***
+    deleteHolidayShiftGroup: {
       name: "DeleteHolidayShiftGroup",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder shifts in a shift group
      *
      * @generated from rpc Genesis.HolidaysService.ReorderHolidayShiftsGroups
      */
-    reorderHolidayShiftsGroups: ***REMOVED***
+    reorderHolidayShiftsGroups: {
       name: "ReorderHolidayShiftsGroups",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Holiday Shift Group by ID
      *
      * @generated from rpc Genesis.HolidaysService.ViewHolidayShiftGroupByID
      */
-    viewHolidayShiftGroupByID: ***REMOVED***
+    viewHolidayShiftGroupByID: {
       name: "ViewHolidayShiftGroupByID",
       I: Identifier,
       O: HolidayShiftGroup,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved holiday shift groups for given shift group ID
      *
      * @generated from rpc Genesis.HolidaysService.ViewApprovedHolidayShiftsGroups
      */
-    viewApprovedHolidayShiftsGroups: ***REMOVED***
+    viewApprovedHolidayShiftsGroups: {
       name: "ViewApprovedHolidayShiftsGroups",
       I: IdentifierWithSearchKey,
       O: HolidaysShiftsGroupsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved holiday shift groups for given shift group ID
      *
      * @generated from rpc Genesis.HolidaysService.ViewUnapprovedHolidayShiftsGroups
      */
-    viewUnapprovedHolidayShiftsGroups: ***REMOVED***
+    viewUnapprovedHolidayShiftsGroups: {
       name: "ViewUnapprovedHolidayShiftsGroups",
       I: IdentifierWithSearchKey,
       O: HolidaysShiftsGroupsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the shift group shift
      *
      * @generated from rpc Genesis.HolidaysService.ViewHolidayShiftsGroupsHistory
      */
-    viewHolidayShiftsGroupsHistory: ***REMOVED***
+    viewHolidayShiftsGroupsHistory: {
       name: "ViewHolidayShiftsGroupsHistory",
       I: HolidaysShiftsGroupsHistoryRequest,
       O: HolidaysShiftsGroupsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.HolidaysService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: Holiday,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.HolidaysService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: HolidaysList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.HolidaysService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: HolidaysList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.HolidaysService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: HolidaysServicePaginationReq,
       O: HolidaysServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.HolidaysService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: HolidaysServiceEntityPaginationReq,
       O: HolidaysServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all the holidays on the given timestamp
      *
      * @generated from rpc Genesis.HolidaysService.ViewHolidaysOn
      */
-    viewHolidaysOn: ***REMOVED***
+    viewHolidaysOn: {
       name: "ViewHolidaysOn",
       I: HolidaysServiceViewHolidaysOnTimestampRequest,
       O: HolidaysList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.HolidaysService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: HolidaysServiceSearchAllReq,
       O: HolidaysList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.HolidaysService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: HolidaysServiceFilterReq,
       O: HolidaysList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.HolidaysService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

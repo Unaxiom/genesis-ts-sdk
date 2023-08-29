@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the parameters that are part of a family structure
  *
  * @generated from message Genesis.Family
  */
-export declare class Family extends Message<Family> ***REMOVED***
+export declare class Family extends Message<Family> {
     /**
      * ID of the resource
      *
@@ -214,14 +214,14 @@ export declare class Family extends Message<Family> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Family;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Family;
     static equals(a: Family | PlainMessage<Family> | undefined, b: Family | PlainMessage<Family> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of families
  *
  * @generated from message Genesis.FamiliesList
  */
-export declare class FamiliesList extends Message<FamiliesList> ***REMOVED***
+export declare class FamiliesList extends Message<FamiliesList> {
     /**
      * List of families
      *
@@ -236,5 +236,5 @@ export declare class FamiliesList extends Message<FamiliesList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesList;
     static equals(a: FamiliesList | PlainMessage<FamiliesList> | undefined, b: FamiliesList | PlainMessage<FamiliesList> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=families_pb.d.ts.map

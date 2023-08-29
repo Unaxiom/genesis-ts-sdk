@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** EquationReplaceable, EquationReplaceableItem, EquationReplaceableItemHistoryRequest, EquationsReplaceablesItemsList, EquationsReplaceablesList, EquationsReplaceablesServiceCreateRequest, EquationsReplaceablesServiceEntityPaginationReq, EquationsReplaceablesServiceFilterReq, EquationsReplaceablesServiceItemCreateRequest, EquationsReplaceablesServiceItemUpdateRequest, EquationsReplaceablesServicePaginationReq, EquationsReplaceablesServicePaginationResponse, EquationsReplaceablesServiceSearchAllReq, EquationsReplaceablesServiceUpdateRequest ***REMOVED*** from "./equations_replaceables_pb.js";
-import ***REMOVED*** ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { EquationReplaceable, EquationReplaceableItem, EquationReplaceableItemHistoryRequest, EquationsReplaceablesItemsList, EquationsReplaceablesList, EquationsReplaceablesServiceCreateRequest, EquationsReplaceablesServiceEntityPaginationReq, EquationsReplaceablesServiceFilterReq, EquationsReplaceablesServiceItemCreateRequest, EquationsReplaceablesServiceItemUpdateRequest, EquationsReplaceablesServicePaginationReq, EquationsReplaceablesServicePaginationResponse, EquationsReplaceablesServiceSearchAllReq, EquationsReplaceablesServiceUpdateRequest } from "./equations_replaceables_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,163 +13,163 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.EquationsReplaceablesService
  */
-export const EquationsReplaceablesService = ***REMOVED***
+export const EquationsReplaceablesService = {
   typeName: "Genesis.EquationsReplaceablesService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: EquationsReplaceablesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: EquationsReplaceablesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: EquationsReplaceablesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: EquationsReplaceablesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -178,221 +178,221 @@ export const EquationsReplaceablesService = ***REMOVED***
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Clone equation from an existing equation (denoted by the identifier)
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.Clone
      */
-    clone: ***REMOVED***
+    clone: {
       name: "Clone",
       I: CloneRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a equation replaceable
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.AddEquationReplaceableItem
      */
-    addEquationReplaceableItem: ***REMOVED***
+    addEquationReplaceableItem: {
       name: "AddEquationReplaceableItem",
       I: EquationsReplaceablesServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a equation replaceable
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ModifyEquationReplaceableItem
      */
-    modifyEquationReplaceableItem: ***REMOVED***
+    modifyEquationReplaceableItem: {
       name: "ModifyEquationReplaceableItem",
       I: EquationsReplaceablesServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a equation replaceable
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ApproveEquationReplaceableItem
      */
-    approveEquationReplaceableItem: ***REMOVED***
+    approveEquationReplaceableItem: {
       name: "ApproveEquationReplaceableItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a equation replaceable
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.DeleteEquationReplaceableItem
      */
-    deleteEquationReplaceableItem: ***REMOVED***
+    deleteEquationReplaceableItem: {
       name: "DeleteEquationReplaceableItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a equation replaceable
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ReorderEquationReplaceableItems
      */
-    reorderEquationReplaceableItems: ***REMOVED***
+    reorderEquationReplaceableItems: {
       name: "ReorderEquationReplaceableItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Equation Replaceable Item by ID
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ViewEquationReplaceableItemByID
      */
-    viewEquationReplaceableItemByID: ***REMOVED***
+    viewEquationReplaceableItemByID: {
       name: "ViewEquationReplaceableItemByID",
       I: Identifier,
       O: EquationReplaceableItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved equation replaceable items for given equation replaceable ID
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ViewApprovedEquationReplaceableItems
      */
-    viewApprovedEquationReplaceableItems: ***REMOVED***
+    viewApprovedEquationReplaceableItems: {
       name: "ViewApprovedEquationReplaceableItems",
       I: IdentifierWithSearchKey,
       O: EquationsReplaceablesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved equation replaceable items for given equation replaceable ID
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ViewUnapprovedEquationReplaceableItems
      */
-    viewUnapprovedEquationReplaceableItems: ***REMOVED***
+    viewUnapprovedEquationReplaceableItems: {
       name: "ViewUnapprovedEquationReplaceableItems",
       I: IdentifierWithSearchKey,
       O: EquationsReplaceablesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the equation replaceable item
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ViewEquationReplaceableItemHistory
      */
-    viewEquationReplaceableItemHistory: ***REMOVED***
+    viewEquationReplaceableItemHistory: {
       name: "ViewEquationReplaceableItemHistory",
       I: EquationReplaceableItemHistoryRequest,
       O: EquationsReplaceablesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: EquationReplaceable,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: EquationsReplaceablesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: EquationsReplaceablesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: EquationsReplaceablesServicePaginationReq,
       O: EquationsReplaceablesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: EquationsReplaceablesServiceEntityPaginationReq,
       O: EquationsReplaceablesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the latest equation for a family (denoted by the given identifier)
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.ViewForFamilyID
      */
-    viewForFamilyID: ***REMOVED***
+    viewForFamilyID: {
       name: "ViewForFamilyID",
       I: Identifier,
       O: EquationReplaceable,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: EquationsReplaceablesServiceSearchAllReq,
       O: EquationsReplaceablesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: EquationsReplaceablesServiceFilterReq,
       O: EquationsReplaceablesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.EquationsReplaceablesService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

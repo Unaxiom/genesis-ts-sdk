@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.QC_PARAM_SORT_KEY
  */
-export declare enum QC_PARAM_SORT_KEY ***REMOVED***
+export declare enum QC_PARAM_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -62,14 +62,14 @@ export declare enum QC_PARAM_SORT_KEY ***REMOVED***
      * @generated from enum value: QC_PARAM_SORT_KEY_CODE = 11;
      */
     QC_PARAM_SORT_KEY_CODE = 11
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.QCParamsServiceCreateRequest
  */
-export declare class QCParamsServiceCreateRequest extends Message<QCParamsServiceCreateRequest> ***REMOVED***
+export declare class QCParamsServiceCreateRequest extends Message<QCParamsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -108,14 +108,14 @@ export declare class QCParamsServiceCreateRequest extends Message<QCParamsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCParamsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCParamsServiceCreateRequest;
     static equals(a: QCParamsServiceCreateRequest | PlainMessage<QCParamsServiceCreateRequest> | undefined, b: QCParamsServiceCreateRequest | PlainMessage<QCParamsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.QCParamsServiceUpdateRequest
  */
-export declare class QCParamsServiceUpdateRequest extends Message<QCParamsServiceUpdateRequest> ***REMOVED***
+export declare class QCParamsServiceUpdateRequest extends Message<QCParamsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -160,14 +160,14 @@ export declare class QCParamsServiceUpdateRequest extends Message<QCParamsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCParamsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCParamsServiceUpdateRequest;
     static equals(a: QCParamsServiceUpdateRequest | PlainMessage<QCParamsServiceUpdateRequest> | undefined, b: QCParamsServiceUpdateRequest | PlainMessage<QCParamsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.QCParam
  */
-export declare class QCParam extends Message<QCParam> ***REMOVED***
+export declare class QCParam extends Message<QCParam> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -230,14 +230,14 @@ export declare class QCParam extends Message<QCParam> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCParam;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCParam;
     static equals(a: QCParam | PlainMessage<QCParam> | undefined, b: QCParam | PlainMessage<QCParam> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.QCParamsList
  */
-export declare class QCParamsList extends Message<QCParamsList> ***REMOVED***
+export declare class QCParamsList extends Message<QCParamsList> {
     /**
      * List of records
      *
@@ -252,14 +252,14 @@ export declare class QCParamsList extends Message<QCParamsList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCParamsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCParamsList;
     static equals(a: QCParamsList | PlainMessage<QCParamsList> | undefined, b: QCParamsList | PlainMessage<QCParamsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.QCParamsServicePaginationReq
  */
-export declare class QCParamsServicePaginationReq extends Message<QCParamsServicePaginationReq> ***REMOVED***
+export declare class QCParamsServicePaginationReq extends Message<QCParamsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -304,14 +304,14 @@ export declare class QCParamsServicePaginationReq extends Message<QCParamsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCParamsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCParamsServicePaginationReq;
     static equals(a: QCParamsServicePaginationReq | PlainMessage<QCParamsServicePaginationReq> | undefined, b: QCParamsServicePaginationReq | PlainMessage<QCParamsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.QCParamsServicePaginationResponse
  */
-export declare class QCParamsServicePaginationResponse extends Message<QCParamsServicePaginationResponse> ***REMOVED***
+export declare class QCParamsServicePaginationResponse extends Message<QCParamsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -344,14 +344,14 @@ export declare class QCParamsServicePaginationResponse extends Message<QCParamsS
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCParamsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCParamsServicePaginationResponse;
     static equals(a: QCParamsServicePaginationResponse | PlainMessage<QCParamsServicePaginationResponse> | undefined, b: QCParamsServicePaginationResponse | PlainMessage<QCParamsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.QCParamsServiceEntityPaginationReq
  */
-export declare class QCParamsServiceEntityPaginationReq extends Message<QCParamsServiceEntityPaginationReq> ***REMOVED***
+export declare class QCParamsServiceEntityPaginationReq extends Message<QCParamsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -396,14 +396,14 @@ export declare class QCParamsServiceEntityPaginationReq extends Message<QCParams
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCParamsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCParamsServiceEntityPaginationReq;
     static equals(a: QCParamsServiceEntityPaginationReq | PlainMessage<QCParamsServiceEntityPaginationReq> | undefined, b: QCParamsServiceEntityPaginationReq | PlainMessage<QCParamsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.QCParamsServiceFilterReq
  */
-export declare class QCParamsServiceFilterReq extends Message<QCParamsServiceFilterReq> ***REMOVED***
+export declare class QCParamsServiceFilterReq extends Message<QCParamsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -514,14 +514,14 @@ export declare class QCParamsServiceFilterReq extends Message<QCParamsServiceFil
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCParamsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCParamsServiceFilterReq;
     static equals(a: QCParamsServiceFilterReq | PlainMessage<QCParamsServiceFilterReq> | undefined, b: QCParamsServiceFilterReq | PlainMessage<QCParamsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.QCParamsServiceSearchAllReq
  */
-export declare class QCParamsServiceSearchAllReq extends Message<QCParamsServiceSearchAllReq> ***REMOVED***
+export declare class QCParamsServiceSearchAllReq extends Message<QCParamsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -578,5 +578,5 @@ export declare class QCParamsServiceSearchAllReq extends Message<QCParamsService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCParamsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCParamsServiceSearchAllReq;
     static equals(a: QCParamsServiceSearchAllReq | PlainMessage<QCParamsServiceSearchAllReq> | undefined, b: QCParamsServiceSearchAllReq | PlainMessage<QCParamsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=qc_params_pb.d.ts.map

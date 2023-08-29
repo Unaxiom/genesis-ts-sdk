@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.LEAVE_TYPE_SORT_KEY
  */
-export declare enum LEAVE_TYPE_SORT_KEY ***REMOVED***
+export declare enum LEAVE_TYPE_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -62,14 +62,14 @@ export declare enum LEAVE_TYPE_SORT_KEY ***REMOVED***
      * @generated from enum value: LEAVE_TYPE_SORT_KEY_CODE = 11;
      */
     LEAVE_TYPE_SORT_KEY_CODE = 11
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.LeavesTypesServiceCreateRequest
  */
-export declare class LeavesTypesServiceCreateRequest extends Message<LeavesTypesServiceCreateRequest> ***REMOVED***
+export declare class LeavesTypesServiceCreateRequest extends Message<LeavesTypesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -114,14 +114,14 @@ export declare class LeavesTypesServiceCreateRequest extends Message<LeavesTypes
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesTypesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesTypesServiceCreateRequest;
     static equals(a: LeavesTypesServiceCreateRequest | PlainMessage<LeavesTypesServiceCreateRequest> | undefined, b: LeavesTypesServiceCreateRequest | PlainMessage<LeavesTypesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.LeavesTypesServiceUpdateRequest
  */
-export declare class LeavesTypesServiceUpdateRequest extends Message<LeavesTypesServiceUpdateRequest> ***REMOVED***
+export declare class LeavesTypesServiceUpdateRequest extends Message<LeavesTypesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -172,14 +172,14 @@ export declare class LeavesTypesServiceUpdateRequest extends Message<LeavesTypes
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesTypesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesTypesServiceUpdateRequest;
     static equals(a: LeavesTypesServiceUpdateRequest | PlainMessage<LeavesTypesServiceUpdateRequest> | undefined, b: LeavesTypesServiceUpdateRequest | PlainMessage<LeavesTypesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.LeaveType
  */
-export declare class LeaveType extends Message<LeaveType> ***REMOVED***
+export declare class LeaveType extends Message<LeaveType> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -248,14 +248,14 @@ export declare class LeaveType extends Message<LeaveType> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeaveType;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeaveType;
     static equals(a: LeaveType | PlainMessage<LeaveType> | undefined, b: LeaveType | PlainMessage<LeaveType> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.LeavesTypesList
  */
-export declare class LeavesTypesList extends Message<LeavesTypesList> ***REMOVED***
+export declare class LeavesTypesList extends Message<LeavesTypesList> {
     /**
      * List of records
      *
@@ -270,14 +270,14 @@ export declare class LeavesTypesList extends Message<LeavesTypesList> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesTypesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesTypesList;
     static equals(a: LeavesTypesList | PlainMessage<LeavesTypesList> | undefined, b: LeavesTypesList | PlainMessage<LeavesTypesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.LeavesTypesServicePaginationReq
  */
-export declare class LeavesTypesServicePaginationReq extends Message<LeavesTypesServicePaginationReq> ***REMOVED***
+export declare class LeavesTypesServicePaginationReq extends Message<LeavesTypesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -322,14 +322,14 @@ export declare class LeavesTypesServicePaginationReq extends Message<LeavesTypes
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesTypesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesTypesServicePaginationReq;
     static equals(a: LeavesTypesServicePaginationReq | PlainMessage<LeavesTypesServicePaginationReq> | undefined, b: LeavesTypesServicePaginationReq | PlainMessage<LeavesTypesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.LeavesTypesServicePaginationResponse
  */
-export declare class LeavesTypesServicePaginationResponse extends Message<LeavesTypesServicePaginationResponse> ***REMOVED***
+export declare class LeavesTypesServicePaginationResponse extends Message<LeavesTypesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -362,14 +362,14 @@ export declare class LeavesTypesServicePaginationResponse extends Message<Leaves
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesTypesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesTypesServicePaginationResponse;
     static equals(a: LeavesTypesServicePaginationResponse | PlainMessage<LeavesTypesServicePaginationResponse> | undefined, b: LeavesTypesServicePaginationResponse | PlainMessage<LeavesTypesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.LeavesTypesServiceEntityPaginationReq
  */
-export declare class LeavesTypesServiceEntityPaginationReq extends Message<LeavesTypesServiceEntityPaginationReq> ***REMOVED***
+export declare class LeavesTypesServiceEntityPaginationReq extends Message<LeavesTypesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -414,14 +414,14 @@ export declare class LeavesTypesServiceEntityPaginationReq extends Message<Leave
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesTypesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesTypesServiceEntityPaginationReq;
     static equals(a: LeavesTypesServiceEntityPaginationReq | PlainMessage<LeavesTypesServiceEntityPaginationReq> | undefined, b: LeavesTypesServiceEntityPaginationReq | PlainMessage<LeavesTypesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.LeavesTypesServiceFilterReq
  */
-export declare class LeavesTypesServiceFilterReq extends Message<LeavesTypesServiceFilterReq> ***REMOVED***
+export declare class LeavesTypesServiceFilterReq extends Message<LeavesTypesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -532,14 +532,14 @@ export declare class LeavesTypesServiceFilterReq extends Message<LeavesTypesServ
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesTypesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesTypesServiceFilterReq;
     static equals(a: LeavesTypesServiceFilterReq | PlainMessage<LeavesTypesServiceFilterReq> | undefined, b: LeavesTypesServiceFilterReq | PlainMessage<LeavesTypesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.LeavesTypesServiceSearchAllReq
  */
-export declare class LeavesTypesServiceSearchAllReq extends Message<LeavesTypesServiceSearchAllReq> ***REMOVED***
+export declare class LeavesTypesServiceSearchAllReq extends Message<LeavesTypesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -596,5 +596,5 @@ export declare class LeavesTypesServiceSearchAllReq extends Message<LeavesTypesS
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesTypesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesTypesServiceSearchAllReq;
     static equals(a: LeavesTypesServiceSearchAllReq | PlainMessage<LeavesTypesServiceSearchAllReq> | undefined, b: LeavesTypesServiceSearchAllReq | PlainMessage<LeavesTypesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=leaves_types_pb.d.ts.map

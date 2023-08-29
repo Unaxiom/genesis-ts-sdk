@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -14,7 +14,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.ATTENDANCE_AMENDMENT_SORT_KEY
  */
-export enum ATTENDANCE_AMENDMENT_SORT_KEY ***REMOVED***
+export enum ATTENDANCE_AMENDMENT_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -112,23 +112,23 @@ export enum ATTENDANCE_AMENDMENT_SORT_KEY ***REMOVED***
    * @generated from enum value: ATTENDANCE_AMENDMENT_SORT_KEY_AMENDMENT_EXIT_TIMESTAMP = 16;
    */
   ATTENDANCE_AMENDMENT_SORT_KEY_AMENDMENT_EXIT_TIMESTAMP = 16,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(ATTENDANCE_AMENDMENT_SORT_KEY)
 proto3.util.setEnumType(ATTENDANCE_AMENDMENT_SORT_KEY, "Genesis.ATTENDANCE_AMENDMENT_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "ATTENDANCE_AMENDMENT_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "ATTENDANCE_AMENDMENT_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "ATTENDANCE_AMENDMENT_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "ATTENDANCE_AMENDMENT_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "ATTENDANCE_AMENDMENT_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "ATTENDANCE_AMENDMENT_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "ATTENDANCE_AMENDMENT_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "ATTENDANCE_AMENDMENT_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "ATTENDANCE_AMENDMENT_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
-  ***REMOVED*** no: 12, name: "ATTENDANCE_AMENDMENT_SORT_KEY_USER_ID" ***REMOVED***,
-  ***REMOVED*** no: 13, name: "ATTENDANCE_AMENDMENT_SORT_KEY_ATTENDANCE_ENTRY_TIMESTAMP" ***REMOVED***,
-  ***REMOVED*** no: 14, name: "ATTENDANCE_AMENDMENT_SORT_KEY_ATTENDANCE_EXIT_TIMESTAMP" ***REMOVED***,
-  ***REMOVED*** no: 15, name: "ATTENDANCE_AMENDMENT_SORT_KEY_AMENDMENT_ENTRY_TIMESTAMP" ***REMOVED***,
-  ***REMOVED*** no: 16, name: "ATTENDANCE_AMENDMENT_SORT_KEY_AMENDMENT_EXIT_TIMESTAMP" ***REMOVED***,
+  { no: 0, name: "ATTENDANCE_AMENDMENT_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "ATTENDANCE_AMENDMENT_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "ATTENDANCE_AMENDMENT_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "ATTENDANCE_AMENDMENT_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "ATTENDANCE_AMENDMENT_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "ATTENDANCE_AMENDMENT_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "ATTENDANCE_AMENDMENT_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "ATTENDANCE_AMENDMENT_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "ATTENDANCE_AMENDMENT_SORT_KEY_FINAL_REF_NUMBER" },
+  { no: 12, name: "ATTENDANCE_AMENDMENT_SORT_KEY_USER_ID" },
+  { no: 13, name: "ATTENDANCE_AMENDMENT_SORT_KEY_ATTENDANCE_ENTRY_TIMESTAMP" },
+  { no: 14, name: "ATTENDANCE_AMENDMENT_SORT_KEY_ATTENDANCE_EXIT_TIMESTAMP" },
+  { no: 15, name: "ATTENDANCE_AMENDMENT_SORT_KEY_AMENDMENT_ENTRY_TIMESTAMP" },
+  { no: 16, name: "ATTENDANCE_AMENDMENT_SORT_KEY_AMENDMENT_EXIT_TIMESTAMP" },
 ]);
 
 /**
@@ -137,7 +137,7 @@ proto3.util.setEnumType(ATTENDANCE_AMENDMENT_SORT_KEY, "Genesis.ATTENDANCE_AMEND
  *
  * @generated from message Genesis.AttendancesAmendmentsServiceCreateRequest
  */
-export class AttendancesAmendmentsServiceCreateRequest extends Message<AttendancesAmendmentsServiceCreateRequest> ***REMOVED***
+export class AttendancesAmendmentsServiceCreateRequest extends Message<AttendancesAmendmentsServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -208,42 +208,42 @@ export class AttendancesAmendmentsServiceCreateRequest extends Message<Attendanc
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<AttendancesAmendmentsServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<AttendancesAmendmentsServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.AttendancesAmendmentsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "attendance_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "amendment_entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "amendment_exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "attendance_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "amendment_entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "amendment_exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServiceCreateRequest {
     return new AttendancesAmendmentsServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceCreateRequest {
     return new AttendancesAmendmentsServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceCreateRequest {
     return new AttendancesAmendmentsServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: AttendancesAmendmentsServiceCreateRequest | PlainMessage<AttendancesAmendmentsServiceCreateRequest> | undefined, b: AttendancesAmendmentsServiceCreateRequest | PlainMessage<AttendancesAmendmentsServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: AttendancesAmendmentsServiceCreateRequest | PlainMessage<AttendancesAmendmentsServiceCreateRequest> | undefined, b: AttendancesAmendmentsServiceCreateRequest | PlainMessage<AttendancesAmendmentsServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(AttendancesAmendmentsServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -251,7 +251,7 @@ export class AttendancesAmendmentsServiceCreateRequest extends Message<Attendanc
  *
  * @generated from message Genesis.AttendancesAmendmentsServiceUpdateRequest
  */
-export class AttendancesAmendmentsServiceUpdateRequest extends Message<AttendancesAmendmentsServiceUpdateRequest> ***REMOVED***
+export class AttendancesAmendmentsServiceUpdateRequest extends Message<AttendancesAmendmentsServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -315,41 +315,41 @@ export class AttendancesAmendmentsServiceUpdateRequest extends Message<Attendanc
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<AttendancesAmendmentsServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<AttendancesAmendmentsServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.AttendancesAmendmentsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "amendment_entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "amendment_exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "amendment_entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "amendment_exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServiceUpdateRequest {
     return new AttendancesAmendmentsServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceUpdateRequest {
     return new AttendancesAmendmentsServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceUpdateRequest {
     return new AttendancesAmendmentsServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: AttendancesAmendmentsServiceUpdateRequest | PlainMessage<AttendancesAmendmentsServiceUpdateRequest> | undefined, b: AttendancesAmendmentsServiceUpdateRequest | PlainMessage<AttendancesAmendmentsServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: AttendancesAmendmentsServiceUpdateRequest | PlainMessage<AttendancesAmendmentsServiceUpdateRequest> | undefined, b: AttendancesAmendmentsServiceUpdateRequest | PlainMessage<AttendancesAmendmentsServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(AttendancesAmendmentsServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -357,7 +357,7 @@ export class AttendancesAmendmentsServiceUpdateRequest extends Message<Attendanc
  *
  * @generated from message Genesis.AttendanceAmendment
  */
-export class AttendanceAmendment extends Message<AttendanceAmendment> ***REMOVED***
+export class AttendanceAmendment extends Message<AttendanceAmendment> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -477,49 +477,49 @@ export class AttendanceAmendment extends Message<AttendanceAmendment> ***REMOVED
    */
   formData: FormFieldDatum[] = [];
 
-  constructor(data?: PartialMessage<AttendanceAmendment>) ***REMOVED***
+  constructor(data?: PartialMessage<AttendanceAmendment>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.AttendanceAmendment";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "attendance_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "attendance_entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "attendance_exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "amendment_entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "amendment_exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "attendance_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "attendance_entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "attendance_exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "amendment_entry_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 17, name: "amendment_exit_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 18, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendanceAmendment ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendanceAmendment {
     return new AttendanceAmendment().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendanceAmendment ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendanceAmendment {
     return new AttendanceAmendment().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendanceAmendment ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendanceAmendment {
     return new AttendanceAmendment().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: AttendanceAmendment | PlainMessage<AttendanceAmendment> | undefined, b: AttendanceAmendment | PlainMessage<AttendanceAmendment> | undefined): boolean ***REMOVED***
+  static equals(a: AttendanceAmendment | PlainMessage<AttendanceAmendment> | undefined, b: AttendanceAmendment | PlainMessage<AttendanceAmendment> | undefined): boolean {
     return proto3.util.equals(AttendanceAmendment, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -527,7 +527,7 @@ export class AttendanceAmendment extends Message<AttendanceAmendment> ***REMOVED
  *
  * @generated from message Genesis.AttendancesAmendmentsList
  */
-export class AttendancesAmendmentsList extends Message<AttendancesAmendmentsList> ***REMOVED***
+export class AttendancesAmendmentsList extends Message<AttendancesAmendmentsList> {
   /**
    * List of records
    *
@@ -535,33 +535,33 @@ export class AttendancesAmendmentsList extends Message<AttendancesAmendmentsList
    */
   list: AttendanceAmendment[] = [];
 
-  constructor(data?: PartialMessage<AttendancesAmendmentsList>) ***REMOVED***
+  constructor(data?: PartialMessage<AttendancesAmendmentsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.AttendancesAmendmentsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: AttendanceAmendment, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: AttendanceAmendment, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsList {
     return new AttendancesAmendmentsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsList {
     return new AttendancesAmendmentsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsList {
     return new AttendancesAmendmentsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: AttendancesAmendmentsList | PlainMessage<AttendancesAmendmentsList> | undefined, b: AttendancesAmendmentsList | PlainMessage<AttendancesAmendmentsList> | undefined): boolean ***REMOVED***
+  static equals(a: AttendancesAmendmentsList | PlainMessage<AttendancesAmendmentsList> | undefined, b: AttendancesAmendmentsList | PlainMessage<AttendancesAmendmentsList> | undefined): boolean {
     return proto3.util.equals(AttendancesAmendmentsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -569,7 +569,7 @@ export class AttendancesAmendmentsList extends Message<AttendancesAmendmentsList
  *
  * @generated from message Genesis.AttendancesAmendmentsServicePaginationReq
  */
-export class AttendancesAmendmentsServicePaginationReq extends Message<AttendancesAmendmentsServicePaginationReq> ***REMOVED***
+export class AttendancesAmendmentsServicePaginationReq extends Message<AttendancesAmendmentsServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -612,38 +612,38 @@ export class AttendancesAmendmentsServicePaginationReq extends Message<Attendanc
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<AttendancesAmendmentsServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<AttendancesAmendmentsServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.AttendancesAmendmentsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ATTENDANCE_AMENDMENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ATTENDANCE_AMENDMENT_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServicePaginationReq {
     return new AttendancesAmendmentsServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServicePaginationReq {
     return new AttendancesAmendmentsServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServicePaginationReq {
     return new AttendancesAmendmentsServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: AttendancesAmendmentsServicePaginationReq | PlainMessage<AttendancesAmendmentsServicePaginationReq> | undefined, b: AttendancesAmendmentsServicePaginationReq | PlainMessage<AttendancesAmendmentsServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: AttendancesAmendmentsServicePaginationReq | PlainMessage<AttendancesAmendmentsServicePaginationReq> | undefined, b: AttendancesAmendmentsServicePaginationReq | PlainMessage<AttendancesAmendmentsServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(AttendancesAmendmentsServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -651,7 +651,7 @@ export class AttendancesAmendmentsServicePaginationReq extends Message<Attendanc
  *
  * @generated from message Genesis.AttendancesAmendmentsServicePaginationResponse
  */
-export class AttendancesAmendmentsServicePaginationResponse extends Message<AttendancesAmendmentsServicePaginationResponse> ***REMOVED***
+export class AttendancesAmendmentsServicePaginationResponse extends Message<AttendancesAmendmentsServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -680,36 +680,36 @@ export class AttendancesAmendmentsServicePaginationResponse extends Message<Atte
    */
   payload: AttendanceAmendment[] = [];
 
-  constructor(data?: PartialMessage<AttendancesAmendmentsServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<AttendancesAmendmentsServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.AttendancesAmendmentsServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: AttendanceAmendment, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: AttendanceAmendment, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServicePaginationResponse {
     return new AttendancesAmendmentsServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServicePaginationResponse {
     return new AttendancesAmendmentsServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServicePaginationResponse {
     return new AttendancesAmendmentsServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: AttendancesAmendmentsServicePaginationResponse | PlainMessage<AttendancesAmendmentsServicePaginationResponse> | undefined, b: AttendancesAmendmentsServicePaginationResponse | PlainMessage<AttendancesAmendmentsServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: AttendancesAmendmentsServicePaginationResponse | PlainMessage<AttendancesAmendmentsServicePaginationResponse> | undefined, b: AttendancesAmendmentsServicePaginationResponse | PlainMessage<AttendancesAmendmentsServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(AttendancesAmendmentsServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -717,7 +717,7 @@ export class AttendancesAmendmentsServicePaginationResponse extends Message<Atte
  *
  * @generated from message Genesis.AttendancesAmendmentsServiceEntityPaginationReq
  */
-export class AttendancesAmendmentsServiceEntityPaginationReq extends Message<AttendancesAmendmentsServiceEntityPaginationReq> ***REMOVED***
+export class AttendancesAmendmentsServiceEntityPaginationReq extends Message<AttendancesAmendmentsServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -760,38 +760,38 @@ export class AttendancesAmendmentsServiceEntityPaginationReq extends Message<Att
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<AttendancesAmendmentsServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<AttendancesAmendmentsServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.AttendancesAmendmentsServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ATTENDANCE_AMENDMENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ATTENDANCE_AMENDMENT_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServiceEntityPaginationReq {
     return new AttendancesAmendmentsServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceEntityPaginationReq {
     return new AttendancesAmendmentsServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceEntityPaginationReq {
     return new AttendancesAmendmentsServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: AttendancesAmendmentsServiceEntityPaginationReq | PlainMessage<AttendancesAmendmentsServiceEntityPaginationReq> | undefined, b: AttendancesAmendmentsServiceEntityPaginationReq | PlainMessage<AttendancesAmendmentsServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: AttendancesAmendmentsServiceEntityPaginationReq | PlainMessage<AttendancesAmendmentsServiceEntityPaginationReq> | undefined, b: AttendancesAmendmentsServiceEntityPaginationReq | PlainMessage<AttendancesAmendmentsServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(AttendancesAmendmentsServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -799,7 +799,7 @@ export class AttendancesAmendmentsServiceEntityPaginationReq extends Message<Att
  *
  * @generated from message Genesis.AttendancesAmendmentsServiceFilterReq
  */
-export class AttendancesAmendmentsServiceFilterReq extends Message<AttendancesAmendmentsServiceFilterReq> ***REMOVED***
+export class AttendancesAmendmentsServiceFilterReq extends Message<AttendancesAmendmentsServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -989,59 +989,59 @@ export class AttendancesAmendmentsServiceFilterReq extends Message<AttendancesAm
    */
   amendmentExitTimestampEnd = protoInt64.zero;
 
-  constructor(data?: PartialMessage<AttendancesAmendmentsServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<AttendancesAmendmentsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.AttendancesAmendmentsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ATTENDANCE_AMENDMENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "attendance_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "attendance_entry_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "attendance_entry_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 26, name: "attendance_exit_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 27, name: "attendance_exit_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 28, name: "amendment_entry_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 29, name: "amendment_entry_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "amendment_exit_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 31, name: "amendment_exit_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ATTENDANCE_AMENDMENT_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 23, name: "attendance_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 24, name: "attendance_entry_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 25, name: "attendance_entry_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 26, name: "attendance_exit_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 27, name: "attendance_exit_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 28, name: "amendment_entry_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 29, name: "amendment_entry_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "amendment_exit_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 31, name: "amendment_exit_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServiceFilterReq {
     return new AttendancesAmendmentsServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceFilterReq {
     return new AttendancesAmendmentsServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceFilterReq {
     return new AttendancesAmendmentsServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: AttendancesAmendmentsServiceFilterReq | PlainMessage<AttendancesAmendmentsServiceFilterReq> | undefined, b: AttendancesAmendmentsServiceFilterReq | PlainMessage<AttendancesAmendmentsServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: AttendancesAmendmentsServiceFilterReq | PlainMessage<AttendancesAmendmentsServiceFilterReq> | undefined, b: AttendancesAmendmentsServiceFilterReq | PlainMessage<AttendancesAmendmentsServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(AttendancesAmendmentsServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1049,7 +1049,7 @@ export class AttendancesAmendmentsServiceFilterReq extends Message<AttendancesAm
  *
  * @generated from message Genesis.AttendancesAmendmentsServiceSearchAllReq
  */
-export class AttendancesAmendmentsServiceSearchAllReq extends Message<AttendancesAmendmentsServiceSearchAllReq> ***REMOVED***
+export class AttendancesAmendmentsServiceSearchAllReq extends Message<AttendancesAmendmentsServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1113,39 +1113,39 @@ export class AttendancesAmendmentsServiceSearchAllReq extends Message<Attendance
    */
   userId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<AttendancesAmendmentsServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<AttendancesAmendmentsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.AttendancesAmendmentsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ATTENDANCE_AMENDMENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ATTENDANCE_AMENDMENT_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AttendancesAmendmentsServiceSearchAllReq {
     return new AttendancesAmendmentsServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceSearchAllReq {
     return new AttendancesAmendmentsServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesAmendmentsServiceSearchAllReq {
     return new AttendancesAmendmentsServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: AttendancesAmendmentsServiceSearchAllReq | PlainMessage<AttendancesAmendmentsServiceSearchAllReq> | undefined, b: AttendancesAmendmentsServiceSearchAllReq | PlainMessage<AttendancesAmendmentsServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: AttendancesAmendmentsServiceSearchAllReq | PlainMessage<AttendancesAmendmentsServiceSearchAllReq> | undefined, b: AttendancesAmendmentsServiceSearchAllReq | PlainMessage<AttendancesAmendmentsServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(AttendancesAmendmentsServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

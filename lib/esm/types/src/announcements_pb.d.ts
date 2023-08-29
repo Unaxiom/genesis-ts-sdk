@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.ANNOUNCEMENT_SORT_KEY
  */
-export declare enum ANNOUNCEMENT_SORT_KEY ***REMOVED***
+export declare enum ANNOUNCEMENT_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -74,14 +74,14 @@ export declare enum ANNOUNCEMENT_SORT_KEY ***REMOVED***
      * @generated from enum value: ANNOUNCEMENT_SORT_KEY_END_ON = 13;
      */
     ANNOUNCEMENT_SORT_KEY_END_ON = 13
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.AnnouncementsServiceCreateRequest
  */
-export declare class AnnouncementsServiceCreateRequest extends Message<AnnouncementsServiceCreateRequest> ***REMOVED***
+export declare class AnnouncementsServiceCreateRequest extends Message<AnnouncementsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -132,14 +132,14 @@ export declare class AnnouncementsServiceCreateRequest extends Message<Announcem
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AnnouncementsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AnnouncementsServiceCreateRequest;
     static equals(a: AnnouncementsServiceCreateRequest | PlainMessage<AnnouncementsServiceCreateRequest> | undefined, b: AnnouncementsServiceCreateRequest | PlainMessage<AnnouncementsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.AnnouncementsServiceUpdateRequest
  */
-export declare class AnnouncementsServiceUpdateRequest extends Message<AnnouncementsServiceUpdateRequest> ***REMOVED***
+export declare class AnnouncementsServiceUpdateRequest extends Message<AnnouncementsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -196,14 +196,14 @@ export declare class AnnouncementsServiceUpdateRequest extends Message<Announcem
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AnnouncementsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AnnouncementsServiceUpdateRequest;
     static equals(a: AnnouncementsServiceUpdateRequest | PlainMessage<AnnouncementsServiceUpdateRequest> | undefined, b: AnnouncementsServiceUpdateRequest | PlainMessage<AnnouncementsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.Announcement
  */
-export declare class Announcement extends Message<Announcement> ***REMOVED***
+export declare class Announcement extends Message<Announcement> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -278,14 +278,14 @@ export declare class Announcement extends Message<Announcement> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Announcement;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Announcement;
     static equals(a: Announcement | PlainMessage<Announcement> | undefined, b: Announcement | PlainMessage<Announcement> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.AnnouncementsList
  */
-export declare class AnnouncementsList extends Message<AnnouncementsList> ***REMOVED***
+export declare class AnnouncementsList extends Message<AnnouncementsList> {
     /**
      * List of records
      *
@@ -300,14 +300,14 @@ export declare class AnnouncementsList extends Message<AnnouncementsList> ***REM
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AnnouncementsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AnnouncementsList;
     static equals(a: AnnouncementsList | PlainMessage<AnnouncementsList> | undefined, b: AnnouncementsList | PlainMessage<AnnouncementsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.AnnouncementsServicePaginationReq
  */
-export declare class AnnouncementsServicePaginationReq extends Message<AnnouncementsServicePaginationReq> ***REMOVED***
+export declare class AnnouncementsServicePaginationReq extends Message<AnnouncementsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -352,14 +352,14 @@ export declare class AnnouncementsServicePaginationReq extends Message<Announcem
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AnnouncementsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AnnouncementsServicePaginationReq;
     static equals(a: AnnouncementsServicePaginationReq | PlainMessage<AnnouncementsServicePaginationReq> | undefined, b: AnnouncementsServicePaginationReq | PlainMessage<AnnouncementsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.AnnouncementsServicePaginationResponse
  */
-export declare class AnnouncementsServicePaginationResponse extends Message<AnnouncementsServicePaginationResponse> ***REMOVED***
+export declare class AnnouncementsServicePaginationResponse extends Message<AnnouncementsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -392,14 +392,14 @@ export declare class AnnouncementsServicePaginationResponse extends Message<Anno
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AnnouncementsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AnnouncementsServicePaginationResponse;
     static equals(a: AnnouncementsServicePaginationResponse | PlainMessage<AnnouncementsServicePaginationResponse> | undefined, b: AnnouncementsServicePaginationResponse | PlainMessage<AnnouncementsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.AnnouncementsServiceEntityPaginationReq
  */
-export declare class AnnouncementsServiceEntityPaginationReq extends Message<AnnouncementsServiceEntityPaginationReq> ***REMOVED***
+export declare class AnnouncementsServiceEntityPaginationReq extends Message<AnnouncementsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -444,14 +444,14 @@ export declare class AnnouncementsServiceEntityPaginationReq extends Message<Ann
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AnnouncementsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AnnouncementsServiceEntityPaginationReq;
     static equals(a: AnnouncementsServiceEntityPaginationReq | PlainMessage<AnnouncementsServiceEntityPaginationReq> | undefined, b: AnnouncementsServiceEntityPaginationReq | PlainMessage<AnnouncementsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.AnnouncementsServiceFilterReq
  */
-export declare class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceFilterReq> ***REMOVED***
+export declare class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -586,14 +586,14 @@ export declare class AnnouncementsServiceFilterReq extends Message<Announcements
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AnnouncementsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AnnouncementsServiceFilterReq;
     static equals(a: AnnouncementsServiceFilterReq | PlainMessage<AnnouncementsServiceFilterReq> | undefined, b: AnnouncementsServiceFilterReq | PlainMessage<AnnouncementsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.AnnouncementsServiceSearchAllReq
  */
-export declare class AnnouncementsServiceSearchAllReq extends Message<AnnouncementsServiceSearchAllReq> ***REMOVED***
+export declare class AnnouncementsServiceSearchAllReq extends Message<AnnouncementsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -650,5 +650,5 @@ export declare class AnnouncementsServiceSearchAllReq extends Message<Announceme
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AnnouncementsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AnnouncementsServiceSearchAllReq;
     static equals(a: AnnouncementsServiceSearchAllReq | PlainMessage<AnnouncementsServiceSearchAllReq> | undefined, b: AnnouncementsServiceSearchAllReq | PlainMessage<AnnouncementsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=announcements_pb.d.ts.map

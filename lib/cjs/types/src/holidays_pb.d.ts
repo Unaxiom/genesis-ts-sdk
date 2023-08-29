@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.HOLIDAY_SORT_KEY
  */
-export declare enum HOLIDAY_SORT_KEY ***REMOVED***
+export declare enum HOLIDAY_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -74,14 +74,14 @@ export declare enum HOLIDAY_SORT_KEY ***REMOVED***
      * @generated from enum value: HOLIDAY_SORT_KEY_END_ON = 13;
      */
     HOLIDAY_SORT_KEY_END_ON = 13
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.HolidaysServiceCreateRequest
  */
-export declare class HolidaysServiceCreateRequest extends Message<HolidaysServiceCreateRequest> ***REMOVED***
+export declare class HolidaysServiceCreateRequest extends Message<HolidaysServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -132,14 +132,14 @@ export declare class HolidaysServiceCreateRequest extends Message<HolidaysServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceCreateRequest;
     static equals(a: HolidaysServiceCreateRequest | PlainMessage<HolidaysServiceCreateRequest> | undefined, b: HolidaysServiceCreateRequest | PlainMessage<HolidaysServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.HolidaysServiceUpdateRequest
  */
-export declare class HolidaysServiceUpdateRequest extends Message<HolidaysServiceUpdateRequest> ***REMOVED***
+export declare class HolidaysServiceUpdateRequest extends Message<HolidaysServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -196,14 +196,14 @@ export declare class HolidaysServiceUpdateRequest extends Message<HolidaysServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceUpdateRequest;
     static equals(a: HolidaysServiceUpdateRequest | PlainMessage<HolidaysServiceUpdateRequest> | undefined, b: HolidaysServiceUpdateRequest | PlainMessage<HolidaysServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.Holiday
  */
-export declare class Holiday extends Message<Holiday> ***REMOVED***
+export declare class Holiday extends Message<Holiday> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -284,14 +284,14 @@ export declare class Holiday extends Message<Holiday> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Holiday;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Holiday;
     static equals(a: Holiday | PlainMessage<Holiday> | undefined, b: Holiday | PlainMessage<Holiday> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add a shift to a shift group
  *
  * @generated from message Genesis.HolidaysServiceShiftGroupCreateRequest
  */
-export declare class HolidaysServiceShiftGroupCreateRequest extends Message<HolidaysServiceShiftGroupCreateRequest> ***REMOVED***
+export declare class HolidaysServiceShiftGroupCreateRequest extends Message<HolidaysServiceShiftGroupCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -318,14 +318,14 @@ export declare class HolidaysServiceShiftGroupCreateRequest extends Message<Holi
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceShiftGroupCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceShiftGroupCreateRequest;
     static equals(a: HolidaysServiceShiftGroupCreateRequest | PlainMessage<HolidaysServiceShiftGroupCreateRequest> | undefined, b: HolidaysServiceShiftGroupCreateRequest | PlainMessage<HolidaysServiceShiftGroupCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update a shift in a shift group
  *
  * @generated from message Genesis.HolidaysServiceShiftGroupUpdateRequest
  */
-export declare class HolidaysServiceShiftGroupUpdateRequest extends Message<HolidaysServiceShiftGroupUpdateRequest> ***REMOVED***
+export declare class HolidaysServiceShiftGroupUpdateRequest extends Message<HolidaysServiceShiftGroupUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -358,14 +358,14 @@ export declare class HolidaysServiceShiftGroupUpdateRequest extends Message<Holi
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceShiftGroupUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceShiftGroupUpdateRequest;
     static equals(a: HolidaysServiceShiftGroupUpdateRequest | PlainMessage<HolidaysServiceShiftGroupUpdateRequest> | undefined, b: HolidaysServiceShiftGroupUpdateRequest | PlainMessage<HolidaysServiceShiftGroupUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute a shift associated to a shift group
  *
  * @generated from message Genesis.HolidayShiftGroup
  */
-export declare class HolidayShiftGroup extends Message<HolidayShiftGroup> ***REMOVED***
+export declare class HolidayShiftGroup extends Message<HolidayShiftGroup> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -416,14 +416,14 @@ export declare class HolidayShiftGroup extends Message<HolidayShiftGroup> ***REM
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidayShiftGroup;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidayShiftGroup;
     static equals(a: HolidayShiftGroup | PlainMessage<HolidayShiftGroup> | undefined, b: HolidayShiftGroup | PlainMessage<HolidayShiftGroup> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of shift groups
  *
  * @generated from message Genesis.HolidaysList
  */
-export declare class HolidaysList extends Message<HolidaysList> ***REMOVED***
+export declare class HolidaysList extends Message<HolidaysList> {
     /**
      * List of records
      *
@@ -438,14 +438,14 @@ export declare class HolidaysList extends Message<HolidaysList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysList;
     static equals(a: HolidaysList | PlainMessage<HolidaysList> | undefined, b: HolidaysList | PlainMessage<HolidaysList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of holiday shift groups
  *
  * @generated from message Genesis.HolidaysShiftsGroupsList
  */
-export declare class HolidaysShiftsGroupsList extends Message<HolidaysShiftsGroupsList> ***REMOVED***
+export declare class HolidaysShiftsGroupsList extends Message<HolidaysShiftsGroupsList> {
     /**
      * List of records
      *
@@ -460,14 +460,14 @@ export declare class HolidaysShiftsGroupsList extends Message<HolidaysShiftsGrou
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysShiftsGroupsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysShiftsGroupsList;
     static equals(a: HolidaysShiftsGroupsList | PlainMessage<HolidaysShiftsGroupsList> | undefined, b: HolidaysShiftsGroupsList | PlainMessage<HolidaysShiftsGroupsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.HolidaysShiftsGroupsHistoryRequest
  */
-export declare class HolidaysShiftsGroupsHistoryRequest extends Message<HolidaysShiftsGroupsHistoryRequest> ***REMOVED***
+export declare class HolidaysShiftsGroupsHistoryRequest extends Message<HolidaysShiftsGroupsHistoryRequest> {
     /**
      * Stores the holiday ID
      *
@@ -488,14 +488,14 @@ export declare class HolidaysShiftsGroupsHistoryRequest extends Message<Holidays
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysShiftsGroupsHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysShiftsGroupsHistoryRequest;
     static equals(a: HolidaysShiftsGroupsHistoryRequest | PlainMessage<HolidaysShiftsGroupsHistoryRequest> | undefined, b: HolidaysShiftsGroupsHistoryRequest | PlainMessage<HolidaysShiftsGroupsHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.HolidaysServicePaginationReq
  */
-export declare class HolidaysServicePaginationReq extends Message<HolidaysServicePaginationReq> ***REMOVED***
+export declare class HolidaysServicePaginationReq extends Message<HolidaysServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -540,14 +540,14 @@ export declare class HolidaysServicePaginationReq extends Message<HolidaysServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServicePaginationReq;
     static equals(a: HolidaysServicePaginationReq | PlainMessage<HolidaysServicePaginationReq> | undefined, b: HolidaysServicePaginationReq | PlainMessage<HolidaysServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.HolidaysServicePaginationResponse
  */
-export declare class HolidaysServicePaginationResponse extends Message<HolidaysServicePaginationResponse> ***REMOVED***
+export declare class HolidaysServicePaginationResponse extends Message<HolidaysServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -580,14 +580,14 @@ export declare class HolidaysServicePaginationResponse extends Message<HolidaysS
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServicePaginationResponse;
     static equals(a: HolidaysServicePaginationResponse | PlainMessage<HolidaysServicePaginationResponse> | undefined, b: HolidaysServicePaginationResponse | PlainMessage<HolidaysServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.HolidaysServiceEntityPaginationReq
  */
-export declare class HolidaysServiceEntityPaginationReq extends Message<HolidaysServiceEntityPaginationReq> ***REMOVED***
+export declare class HolidaysServiceEntityPaginationReq extends Message<HolidaysServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -632,14 +632,14 @@ export declare class HolidaysServiceEntityPaginationReq extends Message<Holidays
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceEntityPaginationReq;
     static equals(a: HolidaysServiceEntityPaginationReq | PlainMessage<HolidaysServiceEntityPaginationReq> | undefined, b: HolidaysServiceEntityPaginationReq | PlainMessage<HolidaysServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.HolidaysServiceFilterReq
  */
-export declare class HolidaysServiceFilterReq extends Message<HolidaysServiceFilterReq> ***REMOVED***
+export declare class HolidaysServiceFilterReq extends Message<HolidaysServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -774,14 +774,14 @@ export declare class HolidaysServiceFilterReq extends Message<HolidaysServiceFil
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceFilterReq;
     static equals(a: HolidaysServiceFilterReq | PlainMessage<HolidaysServiceFilterReq> | undefined, b: HolidaysServiceFilterReq | PlainMessage<HolidaysServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.HolidaysServiceSearchAllReq
  */
-export declare class HolidaysServiceSearchAllReq extends Message<HolidaysServiceSearchAllReq> ***REMOVED***
+export declare class HolidaysServiceSearchAllReq extends Message<HolidaysServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -838,14 +838,14 @@ export declare class HolidaysServiceSearchAllReq extends Message<HolidaysService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceSearchAllReq;
     static equals(a: HolidaysServiceSearchAllReq | PlainMessage<HolidaysServiceSearchAllReq> | undefined, b: HolidaysServiceSearchAllReq | PlainMessage<HolidaysServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload to query if the given timestamp is a holiday for the given shift group ID
  *
  * @generated from message Genesis.HolidaysServiceViewHolidaysOnTimestampRequest
  */
-export declare class HolidaysServiceViewHolidaysOnTimestampRequest extends Message<HolidaysServiceViewHolidaysOnTimestampRequest> ***REMOVED***
+export declare class HolidaysServiceViewHolidaysOnTimestampRequest extends Message<HolidaysServiceViewHolidaysOnTimestampRequest> {
     /**
      * Stores the timestamp
      *
@@ -866,5 +866,5 @@ export declare class HolidaysServiceViewHolidaysOnTimestampRequest extends Messa
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceViewHolidaysOnTimestampRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceViewHolidaysOnTimestampRequest;
     static equals(a: HolidaysServiceViewHolidaysOnTimestampRequest | PlainMessage<HolidaysServiceViewHolidaysOnTimestampRequest> | undefined, b: HolidaysServiceViewHolidaysOnTimestampRequest | PlainMessage<HolidaysServiceViewHolidaysOnTimestampRequest> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=holidays_pb.d.ts.map

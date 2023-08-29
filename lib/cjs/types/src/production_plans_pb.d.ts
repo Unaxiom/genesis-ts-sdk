@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.PRODUCTION_PLAN_SORT_KEY
  */
-export declare enum PRODUCTION_PLAN_SORT_KEY ***REMOVED***
+export declare enum PRODUCTION_PLAN_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -81,14 +81,14 @@ export declare enum PRODUCTION_PLAN_SORT_KEY ***REMOVED***
      * @generated from enum value: PRODUCTION_PLAN_SORT_KEY_END_DATE = 14;
      */
     PRODUCTION_PLAN_SORT_KEY_END_DATE = 14
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.ProductionPlansServiceCreateRequest
  */
-export declare class ProductionPlansServiceCreateRequest extends Message<ProductionPlansServiceCreateRequest> ***REMOVED***
+export declare class ProductionPlansServiceCreateRequest extends Message<ProductionPlansServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -181,14 +181,14 @@ export declare class ProductionPlansServiceCreateRequest extends Message<Product
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceCreateRequest;
     static equals(a: ProductionPlansServiceCreateRequest | PlainMessage<ProductionPlansServiceCreateRequest> | undefined, b: ProductionPlansServiceCreateRequest | PlainMessage<ProductionPlansServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.ProductionPlansServiceUpdateRequest
  */
-export declare class ProductionPlansServiceUpdateRequest extends Message<ProductionPlansServiceUpdateRequest> ***REMOVED***
+export declare class ProductionPlansServiceUpdateRequest extends Message<ProductionPlansServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -269,14 +269,14 @@ export declare class ProductionPlansServiceUpdateRequest extends Message<Product
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceUpdateRequest;
     static equals(a: ProductionPlansServiceUpdateRequest | PlainMessage<ProductionPlansServiceUpdateRequest> | undefined, b: ProductionPlansServiceUpdateRequest | PlainMessage<ProductionPlansServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to perform an autofill request
  *
  * @generated from message Genesis.ProductionPlansServiceAutofillRequest
  */
-export declare class ProductionPlansServiceAutofillRequest extends Message<ProductionPlansServiceAutofillRequest> ***REMOVED***
+export declare class ProductionPlansServiceAutofillRequest extends Message<ProductionPlansServiceAutofillRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -303,14 +303,14 @@ export declare class ProductionPlansServiceAutofillRequest extends Message<Produ
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceAutofillRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceAutofillRequest;
     static equals(a: ProductionPlansServiceAutofillRequest | PlainMessage<ProductionPlansServiceAutofillRequest> | undefined, b: ProductionPlansServiceAutofillRequest | PlainMessage<ProductionPlansServiceAutofillRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.ProductionPlan
  */
-export declare class ProductionPlan extends Message<ProductionPlan> ***REMOVED***
+export declare class ProductionPlan extends Message<ProductionPlan> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -439,14 +439,14 @@ export declare class ProductionPlan extends Message<ProductionPlan> ***REMOVED**
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlan;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlan;
     static equals(a: ProductionPlan | PlainMessage<ProductionPlan> | undefined, b: ProductionPlan | PlainMessage<ProductionPlan> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a production plan
  *
  * @generated from message Genesis.ProductionPlansServiceItemCreateRequest
  */
-export declare class ProductionPlansServiceItemCreateRequest extends Message<ProductionPlansServiceItemCreateRequest> ***REMOVED***
+export declare class ProductionPlansServiceItemCreateRequest extends Message<ProductionPlansServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -479,14 +479,14 @@ export declare class ProductionPlansServiceItemCreateRequest extends Message<Pro
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceItemCreateRequest;
     static equals(a: ProductionPlansServiceItemCreateRequest | PlainMessage<ProductionPlansServiceItemCreateRequest> | undefined, b: ProductionPlansServiceItemCreateRequest | PlainMessage<ProductionPlansServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a production plan
  *
  * @generated from message Genesis.ProductionPlansServiceItemUpdateRequest
  */
-export declare class ProductionPlansServiceItemUpdateRequest extends Message<ProductionPlansServiceItemUpdateRequest> ***REMOVED***
+export declare class ProductionPlansServiceItemUpdateRequest extends Message<ProductionPlansServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -513,14 +513,14 @@ export declare class ProductionPlansServiceItemUpdateRequest extends Message<Pro
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceItemUpdateRequest;
     static equals(a: ProductionPlansServiceItemUpdateRequest | PlainMessage<ProductionPlansServiceItemUpdateRequest> | undefined, b: ProductionPlansServiceItemUpdateRequest | PlainMessage<ProductionPlansServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a production plan
  *
  * @generated from message Genesis.ProductionPlanItem
  */
-export declare class ProductionPlanItem extends Message<ProductionPlanItem> ***REMOVED***
+export declare class ProductionPlanItem extends Message<ProductionPlanItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -577,14 +577,14 @@ export declare class ProductionPlanItem extends Message<ProductionPlanItem> ***R
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanItem;
     static equals(a: ProductionPlanItem | PlainMessage<ProductionPlanItem> | undefined, b: ProductionPlanItem | PlainMessage<ProductionPlanItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of production plans
  *
  * @generated from message Genesis.ProductionPlansList
  */
-export declare class ProductionPlansList extends Message<ProductionPlansList> ***REMOVED***
+export declare class ProductionPlansList extends Message<ProductionPlansList> {
     /**
      * List of records
      *
@@ -599,14 +599,14 @@ export declare class ProductionPlansList extends Message<ProductionPlansList> **
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansList;
     static equals(a: ProductionPlansList | PlainMessage<ProductionPlansList> | undefined, b: ProductionPlansList | PlainMessage<ProductionPlansList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of production plan items
  *
  * @generated from message Genesis.ProductionPlansItemsList
  */
-export declare class ProductionPlansItemsList extends Message<ProductionPlansItemsList> ***REMOVED***
+export declare class ProductionPlansItemsList extends Message<ProductionPlansItemsList> {
     /**
      * List of records
      *
@@ -621,14 +621,14 @@ export declare class ProductionPlansItemsList extends Message<ProductionPlansIte
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansItemsList;
     static equals(a: ProductionPlansItemsList | PlainMessage<ProductionPlansItemsList> | undefined, b: ProductionPlansItemsList | PlainMessage<ProductionPlansItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.ProductionPlanItemHistoryRequest
  */
-export declare class ProductionPlanItemHistoryRequest extends Message<ProductionPlanItemHistoryRequest> ***REMOVED***
+export declare class ProductionPlanItemHistoryRequest extends Message<ProductionPlanItemHistoryRequest> {
     /**
      * Stores the production plan ID
      *
@@ -649,14 +649,14 @@ export declare class ProductionPlanItemHistoryRequest extends Message<Production
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanItemHistoryRequest;
     static equals(a: ProductionPlanItemHistoryRequest | PlainMessage<ProductionPlanItemHistoryRequest> | undefined, b: ProductionPlanItemHistoryRequest | PlainMessage<ProductionPlanItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the info of a prospective production plan item
  *
  * @generated from message Genesis.ProductionPlanItemProspectiveInfoRequest
  */
-export declare class ProductionPlanItemProspectiveInfoRequest extends Message<ProductionPlanItemProspectiveInfoRequest> ***REMOVED***
+export declare class ProductionPlanItemProspectiveInfoRequest extends Message<ProductionPlanItemProspectiveInfoRequest> {
     /**
      * Stores the production plan ID
      *
@@ -677,14 +677,14 @@ export declare class ProductionPlanItemProspectiveInfoRequest extends Message<Pr
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanItemProspectiveInfoRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanItemProspectiveInfoRequest;
     static equals(a: ProductionPlanItemProspectiveInfoRequest | PlainMessage<ProductionPlanItemProspectiveInfoRequest> | undefined, b: ProductionPlanItemProspectiveInfoRequest | PlainMessage<ProductionPlanItemProspectiveInfoRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.ProductionPlansServicePaginationReq
  */
-export declare class ProductionPlansServicePaginationReq extends Message<ProductionPlansServicePaginationReq> ***REMOVED***
+export declare class ProductionPlansServicePaginationReq extends Message<ProductionPlansServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -729,14 +729,14 @@ export declare class ProductionPlansServicePaginationReq extends Message<Product
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginationReq;
     static equals(a: ProductionPlansServicePaginationReq | PlainMessage<ProductionPlansServicePaginationReq> | undefined, b: ProductionPlansServicePaginationReq | PlainMessage<ProductionPlansServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.ProductionPlansServicePaginationResponse
  */
-export declare class ProductionPlansServicePaginationResponse extends Message<ProductionPlansServicePaginationResponse> ***REMOVED***
+export declare class ProductionPlansServicePaginationResponse extends Message<ProductionPlansServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -769,14 +769,14 @@ export declare class ProductionPlansServicePaginationResponse extends Message<Pr
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginationResponse;
     static equals(a: ProductionPlansServicePaginationResponse | PlainMessage<ProductionPlansServicePaginationResponse> | undefined, b: ProductionPlansServicePaginationResponse | PlainMessage<ProductionPlansServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.ProductionPlansServiceEntityPaginationReq
  */
-export declare class ProductionPlansServiceEntityPaginationReq extends Message<ProductionPlansServiceEntityPaginationReq> ***REMOVED***
+export declare class ProductionPlansServiceEntityPaginationReq extends Message<ProductionPlansServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -821,14 +821,14 @@ export declare class ProductionPlansServiceEntityPaginationReq extends Message<P
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceEntityPaginationReq;
     static equals(a: ProductionPlansServiceEntityPaginationReq | PlainMessage<ProductionPlansServiceEntityPaginationReq> | undefined, b: ProductionPlansServiceEntityPaginationReq | PlainMessage<ProductionPlansServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.ProductionPlansServiceFilterReq
  */
-export declare class ProductionPlansServiceFilterReq extends Message<ProductionPlansServiceFilterReq> ***REMOVED***
+export declare class ProductionPlansServiceFilterReq extends Message<ProductionPlansServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -1017,14 +1017,14 @@ export declare class ProductionPlansServiceFilterReq extends Message<ProductionP
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceFilterReq;
     static equals(a: ProductionPlansServiceFilterReq | PlainMessage<ProductionPlansServiceFilterReq> | undefined, b: ProductionPlansServiceFilterReq | PlainMessage<ProductionPlansServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.ProductionPlansServiceSearchAllReq
  */
-export declare class ProductionPlansServiceSearchAllReq extends Message<ProductionPlansServiceSearchAllReq> ***REMOVED***
+export declare class ProductionPlansServiceSearchAllReq extends Message<ProductionPlansServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -1105,5 +1105,5 @@ export declare class ProductionPlansServiceSearchAllReq extends Message<Producti
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceSearchAllReq;
     static equals(a: ProductionPlansServiceSearchAllReq | PlainMessage<ProductionPlansServiceSearchAllReq> | undefined, b: ProductionPlansServiceSearchAllReq | PlainMessage<ProductionPlansServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=production_plans_pb.d.ts.map

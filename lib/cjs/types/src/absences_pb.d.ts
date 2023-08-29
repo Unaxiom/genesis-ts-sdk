@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.ABSENCE_SORT_KEY
  */
-export declare enum ABSENCE_SORT_KEY ***REMOVED***
+export declare enum ABSENCE_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -87,14 +87,14 @@ export declare enum ABSENCE_SORT_KEY ***REMOVED***
      * @generated from enum value: ABSENCE_SORT_KEY_TO_TIMESTAMP = 15;
      */
     ABSENCE_SORT_KEY_TO_TIMESTAMP = 15
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.AbsencesServiceCreateRequest
  */
-export declare class AbsencesServiceCreateRequest extends Message<AbsencesServiceCreateRequest> ***REMOVED***
+export declare class AbsencesServiceCreateRequest extends Message<AbsencesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -175,14 +175,14 @@ export declare class AbsencesServiceCreateRequest extends Message<AbsencesServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbsencesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbsencesServiceCreateRequest;
     static equals(a: AbsencesServiceCreateRequest | PlainMessage<AbsencesServiceCreateRequest> | undefined, b: AbsencesServiceCreateRequest | PlainMessage<AbsencesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.AbsencesServiceUpdateRequest
  */
-export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServiceUpdateRequest> ***REMOVED***
+export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -259,14 +259,14 @@ export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbsencesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbsencesServiceUpdateRequest;
     static equals(a: AbsencesServiceUpdateRequest | PlainMessage<AbsencesServiceUpdateRequest> | undefined, b: AbsencesServiceUpdateRequest | PlainMessage<AbsencesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.Absence
  */
-export declare class Absence extends Message<Absence> ***REMOVED***
+export declare class Absence extends Message<Absence> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -377,14 +377,14 @@ export declare class Absence extends Message<Absence> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Absence;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Absence;
     static equals(a: Absence | PlainMessage<Absence> | undefined, b: Absence | PlainMessage<Absence> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.AbsencesList
  */
-export declare class AbsencesList extends Message<AbsencesList> ***REMOVED***
+export declare class AbsencesList extends Message<AbsencesList> {
     /**
      * List of records
      *
@@ -399,14 +399,14 @@ export declare class AbsencesList extends Message<AbsencesList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbsencesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbsencesList;
     static equals(a: AbsencesList | PlainMessage<AbsencesList> | undefined, b: AbsencesList | PlainMessage<AbsencesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.AbsencesServicePaginationReq
  */
-export declare class AbsencesServicePaginationReq extends Message<AbsencesServicePaginationReq> ***REMOVED***
+export declare class AbsencesServicePaginationReq extends Message<AbsencesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -451,14 +451,14 @@ export declare class AbsencesServicePaginationReq extends Message<AbsencesServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbsencesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbsencesServicePaginationReq;
     static equals(a: AbsencesServicePaginationReq | PlainMessage<AbsencesServicePaginationReq> | undefined, b: AbsencesServicePaginationReq | PlainMessage<AbsencesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.AbsencesServicePaginationResponse
  */
-export declare class AbsencesServicePaginationResponse extends Message<AbsencesServicePaginationResponse> ***REMOVED***
+export declare class AbsencesServicePaginationResponse extends Message<AbsencesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -491,14 +491,14 @@ export declare class AbsencesServicePaginationResponse extends Message<AbsencesS
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbsencesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbsencesServicePaginationResponse;
     static equals(a: AbsencesServicePaginationResponse | PlainMessage<AbsencesServicePaginationResponse> | undefined, b: AbsencesServicePaginationResponse | PlainMessage<AbsencesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.AbsencesServiceEntityPaginationReq
  */
-export declare class AbsencesServiceEntityPaginationReq extends Message<AbsencesServiceEntityPaginationReq> ***REMOVED***
+export declare class AbsencesServiceEntityPaginationReq extends Message<AbsencesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -543,14 +543,14 @@ export declare class AbsencesServiceEntityPaginationReq extends Message<Absences
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbsencesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbsencesServiceEntityPaginationReq;
     static equals(a: AbsencesServiceEntityPaginationReq | PlainMessage<AbsencesServiceEntityPaginationReq> | undefined, b: AbsencesServiceEntityPaginationReq | PlainMessage<AbsencesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.AbsencesServiceFilterReq
  */
-export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> ***REMOVED***
+export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -715,14 +715,14 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbsencesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbsencesServiceFilterReq;
     static equals(a: AbsencesServiceFilterReq | PlainMessage<AbsencesServiceFilterReq> | undefined, b: AbsencesServiceFilterReq | PlainMessage<AbsencesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.AbsencesServiceSearchAllReq
  */
-export declare class AbsencesServiceSearchAllReq extends Message<AbsencesServiceSearchAllReq> ***REMOVED***
+export declare class AbsencesServiceSearchAllReq extends Message<AbsencesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -785,5 +785,5 @@ export declare class AbsencesServiceSearchAllReq extends Message<AbsencesService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AbsencesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AbsencesServiceSearchAllReq;
     static equals(a: AbsencesServiceSearchAllReq | PlainMessage<AbsencesServiceSearchAllReq> | undefined, b: AbsencesServiceSearchAllReq | PlainMessage<AbsencesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=absences_pb.d.ts.map

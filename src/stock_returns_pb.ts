@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -14,7 +14,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.STOCK_RETURN_SORT_KEY
  */
-export enum STOCK_RETURN_SORT_KEY ***REMOVED***
+export enum STOCK_RETURN_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -77,18 +77,18 @@ export enum STOCK_RETURN_SORT_KEY ***REMOVED***
    * @generated from enum value: STOCK_RETURN_SORT_KEY_FINAL_REF_NUMBER = 11;
    */
   STOCK_RETURN_SORT_KEY_FINAL_REF_NUMBER = 11,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(STOCK_RETURN_SORT_KEY)
 proto3.util.setEnumType(STOCK_RETURN_SORT_KEY, "Genesis.STOCK_RETURN_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "STOCK_RETURN_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "STOCK_RETURN_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "STOCK_RETURN_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "STOCK_RETURN_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "STOCK_RETURN_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "STOCK_RETURN_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "STOCK_RETURN_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "STOCK_RETURN_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "STOCK_RETURN_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
+  { no: 0, name: "STOCK_RETURN_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "STOCK_RETURN_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "STOCK_RETURN_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "STOCK_RETURN_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "STOCK_RETURN_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "STOCK_RETURN_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "STOCK_RETURN_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "STOCK_RETURN_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "STOCK_RETURN_SORT_KEY_FINAL_REF_NUMBER" },
 ]);
 
 /**
@@ -97,7 +97,7 @@ proto3.util.setEnumType(STOCK_RETURN_SORT_KEY, "Genesis.STOCK_RETURN_SORT_KEY", 
  *
  * @generated from message Genesis.StockReturnsServiceCreateRequest
  */
-export class StockReturnsServiceCreateRequest extends Message<StockReturnsServiceCreateRequest> ***REMOVED***
+export class StockReturnsServiceCreateRequest extends Message<StockReturnsServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -147,39 +147,39 @@ export class StockReturnsServiceCreateRequest extends Message<StockReturnsServic
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<StockReturnsServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnsServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceCreateRequest {
     return new StockReturnsServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceCreateRequest {
     return new StockReturnsServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceCreateRequest {
     return new StockReturnsServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnsServiceCreateRequest | PlainMessage<StockReturnsServiceCreateRequest> | undefined, b: StockReturnsServiceCreateRequest | PlainMessage<StockReturnsServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnsServiceCreateRequest | PlainMessage<StockReturnsServiceCreateRequest> | undefined, b: StockReturnsServiceCreateRequest | PlainMessage<StockReturnsServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(StockReturnsServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -187,7 +187,7 @@ export class StockReturnsServiceCreateRequest extends Message<StockReturnsServic
  *
  * @generated from message Genesis.StockReturnsServiceUpdateRequest
  */
-export class StockReturnsServiceUpdateRequest extends Message<StockReturnsServiceUpdateRequest> ***REMOVED***
+export class StockReturnsServiceUpdateRequest extends Message<StockReturnsServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -230,38 +230,38 @@ export class StockReturnsServiceUpdateRequest extends Message<StockReturnsServic
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<StockReturnsServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnsServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceUpdateRequest {
     return new StockReturnsServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceUpdateRequest {
     return new StockReturnsServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceUpdateRequest {
     return new StockReturnsServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnsServiceUpdateRequest | PlainMessage<StockReturnsServiceUpdateRequest> | undefined, b: StockReturnsServiceUpdateRequest | PlainMessage<StockReturnsServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnsServiceUpdateRequest | PlainMessage<StockReturnsServiceUpdateRequest> | undefined, b: StockReturnsServiceUpdateRequest | PlainMessage<StockReturnsServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(StockReturnsServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -269,7 +269,7 @@ export class StockReturnsServiceUpdateRequest extends Message<StockReturnsServic
  *
  * @generated from message Genesis.StockReturn
  */
-export class StockReturn extends Message<StockReturn> ***REMOVED***
+export class StockReturn extends Message<StockReturn> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -361,45 +361,45 @@ export class StockReturn extends Message<StockReturn> ***REMOVED***
    */
   formData: FormFieldDatum[] = [];
 
-  constructor(data?: PartialMessage<StockReturn>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturn>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturn";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "list", kind: "message", T: StockReturnItem, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "list", kind: "message", T: StockReturnItem, repeated: true },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturn ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturn {
     return new StockReturn().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturn ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturn {
     return new StockReturn().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturn ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturn {
     return new StockReturn().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturn | PlainMessage<StockReturn> | undefined, b: StockReturn | PlainMessage<StockReturn> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturn | PlainMessage<StockReturn> | undefined, b: StockReturn | PlainMessage<StockReturn> | undefined): boolean {
     return proto3.util.equals(StockReturn, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -407,7 +407,7 @@ export class StockReturn extends Message<StockReturn> ***REMOVED***
  *
  * @generated from message Genesis.StockReturnsServiceItemCreateRequest
  */
-export class StockReturnsServiceItemCreateRequest extends Message<StockReturnsServiceItemCreateRequest> ***REMOVED***
+export class StockReturnsServiceItemCreateRequest extends Message<StockReturnsServiceItemCreateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -450,38 +450,38 @@ export class StockReturnsServiceItemCreateRequest extends Message<StockReturnsSe
    */
   remainingDimensions = "";
 
-  constructor(data?: PartialMessage<StockReturnsServiceItemCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnsServiceItemCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnsServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "stock_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "remaining_dimensions", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "stock_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "remaining_dimensions", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceItemCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceItemCreateRequest {
     return new StockReturnsServiceItemCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceItemCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceItemCreateRequest {
     return new StockReturnsServiceItemCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceItemCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceItemCreateRequest {
     return new StockReturnsServiceItemCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnsServiceItemCreateRequest | PlainMessage<StockReturnsServiceItemCreateRequest> | undefined, b: StockReturnsServiceItemCreateRequest | PlainMessage<StockReturnsServiceItemCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnsServiceItemCreateRequest | PlainMessage<StockReturnsServiceItemCreateRequest> | undefined, b: StockReturnsServiceItemCreateRequest | PlainMessage<StockReturnsServiceItemCreateRequest> | undefined): boolean {
     return proto3.util.equals(StockReturnsServiceItemCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -489,7 +489,7 @@ export class StockReturnsServiceItemCreateRequest extends Message<StockReturnsSe
  *
  * @generated from message Genesis.StockReturnsServiceItemUpdateRequest
  */
-export class StockReturnsServiceItemUpdateRequest extends Message<StockReturnsServiceItemUpdateRequest> ***REMOVED***
+export class StockReturnsServiceItemUpdateRequest extends Message<StockReturnsServiceItemUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -525,37 +525,37 @@ export class StockReturnsServiceItemUpdateRequest extends Message<StockReturnsSe
    */
   remainingDimensions = "";
 
-  constructor(data?: PartialMessage<StockReturnsServiceItemUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnsServiceItemUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnsServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "remaining_dimensions", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "remaining_dimensions", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceItemUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceItemUpdateRequest {
     return new StockReturnsServiceItemUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceItemUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceItemUpdateRequest {
     return new StockReturnsServiceItemUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceItemUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceItemUpdateRequest {
     return new StockReturnsServiceItemUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnsServiceItemUpdateRequest | PlainMessage<StockReturnsServiceItemUpdateRequest> | undefined, b: StockReturnsServiceItemUpdateRequest | PlainMessage<StockReturnsServiceItemUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnsServiceItemUpdateRequest | PlainMessage<StockReturnsServiceItemUpdateRequest> | undefined, b: StockReturnsServiceItemUpdateRequest | PlainMessage<StockReturnsServiceItemUpdateRequest> | undefined): boolean {
     return proto3.util.equals(StockReturnsServiceItemUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -563,7 +563,7 @@ export class StockReturnsServiceItemUpdateRequest extends Message<StockReturnsSe
  *
  * @generated from message Genesis.StockReturnItem
  */
-export class StockReturnItem extends Message<StockReturnItem> ***REMOVED***
+export class StockReturnItem extends Message<StockReturnItem> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -634,42 +634,42 @@ export class StockReturnItem extends Message<StockReturnItem> ***REMOVED***
    */
   remainingDimensions = "";
 
-  constructor(data?: PartialMessage<StockReturnItem>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnItem>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnItem";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "stock_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "remaining_dimensions", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "stock_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "remaining_dimensions", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnItem ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnItem {
     return new StockReturnItem().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnItem ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnItem {
     return new StockReturnItem().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnItem ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnItem {
     return new StockReturnItem().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnItem | PlainMessage<StockReturnItem> | undefined, b: StockReturnItem | PlainMessage<StockReturnItem> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnItem | PlainMessage<StockReturnItem> | undefined, b: StockReturnItem | PlainMessage<StockReturnItem> | undefined): boolean {
     return proto3.util.equals(StockReturnItem, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -677,7 +677,7 @@ export class StockReturnItem extends Message<StockReturnItem> ***REMOVED***
  *
  * @generated from message Genesis.StockReturnsList
  */
-export class StockReturnsList extends Message<StockReturnsList> ***REMOVED***
+export class StockReturnsList extends Message<StockReturnsList> {
   /**
    * List of records
    *
@@ -685,33 +685,33 @@ export class StockReturnsList extends Message<StockReturnsList> ***REMOVED***
    */
   list: StockReturn[] = [];
 
-  constructor(data?: PartialMessage<StockReturnsList>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: StockReturn, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: StockReturn, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsList {
     return new StockReturnsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsList {
     return new StockReturnsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsList {
     return new StockReturnsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnsList | PlainMessage<StockReturnsList> | undefined, b: StockReturnsList | PlainMessage<StockReturnsList> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnsList | PlainMessage<StockReturnsList> | undefined, b: StockReturnsList | PlainMessage<StockReturnsList> | undefined): boolean {
     return proto3.util.equals(StockReturnsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -719,7 +719,7 @@ export class StockReturnsList extends Message<StockReturnsList> ***REMOVED***
  *
  * @generated from message Genesis.StockReturnsItemsList
  */
-export class StockReturnsItemsList extends Message<StockReturnsItemsList> ***REMOVED***
+export class StockReturnsItemsList extends Message<StockReturnsItemsList> {
   /**
    * List of records
    *
@@ -727,33 +727,33 @@ export class StockReturnsItemsList extends Message<StockReturnsItemsList> ***REM
    */
   list: StockReturnItem[] = [];
 
-  constructor(data?: PartialMessage<StockReturnsItemsList>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnsItemsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnsItemsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: StockReturnItem, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: StockReturnItem, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsItemsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsItemsList {
     return new StockReturnsItemsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsItemsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsItemsList {
     return new StockReturnsItemsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsItemsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsItemsList {
     return new StockReturnsItemsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnsItemsList | PlainMessage<StockReturnsItemsList> | undefined, b: StockReturnsItemsList | PlainMessage<StockReturnsItemsList> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnsItemsList | PlainMessage<StockReturnsItemsList> | undefined, b: StockReturnsItemsList | PlainMessage<StockReturnsItemsList> | undefined): boolean {
     return proto3.util.equals(StockReturnsItemsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -761,7 +761,7 @@ export class StockReturnsItemsList extends Message<StockReturnsItemsList> ***REM
  *
  * @generated from message Genesis.StockReturnItemHistoryRequest
  */
-export class StockReturnItemHistoryRequest extends Message<StockReturnItemHistoryRequest> ***REMOVED***
+export class StockReturnItemHistoryRequest extends Message<StockReturnItemHistoryRequest> {
   /**
    * Stores the stock return ID
    *
@@ -776,34 +776,34 @@ export class StockReturnItemHistoryRequest extends Message<StockReturnItemHistor
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<StockReturnItemHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnItemHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnItemHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "stock_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "stock_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnItemHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnItemHistoryRequest {
     return new StockReturnItemHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnItemHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnItemHistoryRequest {
     return new StockReturnItemHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnItemHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnItemHistoryRequest {
     return new StockReturnItemHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnItemHistoryRequest | PlainMessage<StockReturnItemHistoryRequest> | undefined, b: StockReturnItemHistoryRequest | PlainMessage<StockReturnItemHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnItemHistoryRequest | PlainMessage<StockReturnItemHistoryRequest> | undefined, b: StockReturnItemHistoryRequest | PlainMessage<StockReturnItemHistoryRequest> | undefined): boolean {
     return proto3.util.equals(StockReturnItemHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -811,7 +811,7 @@ export class StockReturnItemHistoryRequest extends Message<StockReturnItemHistor
  *
  * @generated from message Genesis.StockReturnItemProspectiveInfoRequest
  */
-export class StockReturnItemProspectiveInfoRequest extends Message<StockReturnItemProspectiveInfoRequest> ***REMOVED***
+export class StockReturnItemProspectiveInfoRequest extends Message<StockReturnItemProspectiveInfoRequest> {
   /**
    * Stores the stock return ID
    *
@@ -826,34 +826,34 @@ export class StockReturnItemProspectiveInfoRequest extends Message<StockReturnIt
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<StockReturnItemProspectiveInfoRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnItemProspectiveInfoRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnItemProspectiveInfoRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "stock_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "stock_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnItemProspectiveInfoRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnItemProspectiveInfoRequest {
     return new StockReturnItemProspectiveInfoRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnItemProspectiveInfoRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnItemProspectiveInfoRequest {
     return new StockReturnItemProspectiveInfoRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnItemProspectiveInfoRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnItemProspectiveInfoRequest {
     return new StockReturnItemProspectiveInfoRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnItemProspectiveInfoRequest | PlainMessage<StockReturnItemProspectiveInfoRequest> | undefined, b: StockReturnItemProspectiveInfoRequest | PlainMessage<StockReturnItemProspectiveInfoRequest> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnItemProspectiveInfoRequest | PlainMessage<StockReturnItemProspectiveInfoRequest> | undefined, b: StockReturnItemProspectiveInfoRequest | PlainMessage<StockReturnItemProspectiveInfoRequest> | undefined): boolean {
     return proto3.util.equals(StockReturnItemProspectiveInfoRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -861,7 +861,7 @@ export class StockReturnItemProspectiveInfoRequest extends Message<StockReturnIt
  *
  * @generated from message Genesis.StockReturnsServiceAlreadyAddedQuantityForSourceRequest
  */
-export class StockReturnsServiceAlreadyAddedQuantityForSourceRequest extends Message<StockReturnsServiceAlreadyAddedQuantityForSourceRequest> ***REMOVED***
+export class StockReturnsServiceAlreadyAddedQuantityForSourceRequest extends Message<StockReturnsServiceAlreadyAddedQuantityForSourceRequest> {
   /**
    * The associated reference
    *
@@ -883,35 +883,35 @@ export class StockReturnsServiceAlreadyAddedQuantityForSourceRequest extends Mes
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<StockReturnsServiceAlreadyAddedQuantityForSourceRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnsServiceAlreadyAddedQuantityForSourceRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnsServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceAlreadyAddedQuantityForSourceRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceAlreadyAddedQuantityForSourceRequest {
     return new StockReturnsServiceAlreadyAddedQuantityForSourceRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceAlreadyAddedQuantityForSourceRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceAlreadyAddedQuantityForSourceRequest {
     return new StockReturnsServiceAlreadyAddedQuantityForSourceRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceAlreadyAddedQuantityForSourceRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceAlreadyAddedQuantityForSourceRequest {
     return new StockReturnsServiceAlreadyAddedQuantityForSourceRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<StockReturnsServiceAlreadyAddedQuantityForSourceRequest> | undefined, b: StockReturnsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<StockReturnsServiceAlreadyAddedQuantityForSourceRequest> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<StockReturnsServiceAlreadyAddedQuantityForSourceRequest> | undefined, b: StockReturnsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<StockReturnsServiceAlreadyAddedQuantityForSourceRequest> | undefined): boolean {
     return proto3.util.equals(StockReturnsServiceAlreadyAddedQuantityForSourceRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -919,7 +919,7 @@ export class StockReturnsServiceAlreadyAddedQuantityForSourceRequest extends Mes
  *
  * @generated from message Genesis.StockReturnsServicePaginationReq
  */
-export class StockReturnsServicePaginationReq extends Message<StockReturnsServicePaginationReq> ***REMOVED***
+export class StockReturnsServicePaginationReq extends Message<StockReturnsServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -962,38 +962,38 @@ export class StockReturnsServicePaginationReq extends Message<StockReturnsServic
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<StockReturnsServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnsServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STOCK_RETURN_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STOCK_RETURN_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServicePaginationReq {
     return new StockReturnsServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServicePaginationReq {
     return new StockReturnsServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServicePaginationReq {
     return new StockReturnsServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnsServicePaginationReq | PlainMessage<StockReturnsServicePaginationReq> | undefined, b: StockReturnsServicePaginationReq | PlainMessage<StockReturnsServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnsServicePaginationReq | PlainMessage<StockReturnsServicePaginationReq> | undefined, b: StockReturnsServicePaginationReq | PlainMessage<StockReturnsServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(StockReturnsServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1001,7 +1001,7 @@ export class StockReturnsServicePaginationReq extends Message<StockReturnsServic
  *
  * @generated from message Genesis.StockReturnsServicePaginationResponse
  */
-export class StockReturnsServicePaginationResponse extends Message<StockReturnsServicePaginationResponse> ***REMOVED***
+export class StockReturnsServicePaginationResponse extends Message<StockReturnsServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -1030,36 +1030,36 @@ export class StockReturnsServicePaginationResponse extends Message<StockReturnsS
    */
   payload: StockReturn[] = [];
 
-  constructor(data?: PartialMessage<StockReturnsServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnsServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnsServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: StockReturn, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: StockReturn, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServicePaginationResponse {
     return new StockReturnsServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServicePaginationResponse {
     return new StockReturnsServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServicePaginationResponse {
     return new StockReturnsServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnsServicePaginationResponse | PlainMessage<StockReturnsServicePaginationResponse> | undefined, b: StockReturnsServicePaginationResponse | PlainMessage<StockReturnsServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnsServicePaginationResponse | PlainMessage<StockReturnsServicePaginationResponse> | undefined, b: StockReturnsServicePaginationResponse | PlainMessage<StockReturnsServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(StockReturnsServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1067,7 +1067,7 @@ export class StockReturnsServicePaginationResponse extends Message<StockReturnsS
  *
  * @generated from message Genesis.StockReturnsServiceEntityPaginationReq
  */
-export class StockReturnsServiceEntityPaginationReq extends Message<StockReturnsServiceEntityPaginationReq> ***REMOVED***
+export class StockReturnsServiceEntityPaginationReq extends Message<StockReturnsServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1110,38 +1110,38 @@ export class StockReturnsServiceEntityPaginationReq extends Message<StockReturns
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<StockReturnsServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnsServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnsServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STOCK_RETURN_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STOCK_RETURN_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceEntityPaginationReq {
     return new StockReturnsServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceEntityPaginationReq {
     return new StockReturnsServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceEntityPaginationReq {
     return new StockReturnsServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnsServiceEntityPaginationReq | PlainMessage<StockReturnsServiceEntityPaginationReq> | undefined, b: StockReturnsServiceEntityPaginationReq | PlainMessage<StockReturnsServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnsServiceEntityPaginationReq | PlainMessage<StockReturnsServiceEntityPaginationReq> | undefined, b: StockReturnsServiceEntityPaginationReq | PlainMessage<StockReturnsServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(StockReturnsServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1149,7 +1149,7 @@ export class StockReturnsServiceEntityPaginationReq extends Message<StockReturns
  *
  * @generated from message Genesis.StockReturnsServiceFilterReq
  */
-export class StockReturnsServiceFilterReq extends Message<StockReturnsServiceFilterReq> ***REMOVED***
+export class StockReturnsServiceFilterReq extends Message<StockReturnsServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1283,51 +1283,51 @@ export class StockReturnsServiceFilterReq extends Message<StockReturnsServiceFil
    */
   refId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<StockReturnsServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STOCK_RETURN_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STOCK_RETURN_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceFilterReq {
     return new StockReturnsServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceFilterReq {
     return new StockReturnsServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceFilterReq {
     return new StockReturnsServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnsServiceFilterReq | PlainMessage<StockReturnsServiceFilterReq> | undefined, b: StockReturnsServiceFilterReq | PlainMessage<StockReturnsServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnsServiceFilterReq | PlainMessage<StockReturnsServiceFilterReq> | undefined, b: StockReturnsServiceFilterReq | PlainMessage<StockReturnsServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(StockReturnsServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1335,7 +1335,7 @@ export class StockReturnsServiceFilterReq extends Message<StockReturnsServiceFil
  *
  * @generated from message Genesis.StockReturnsServiceSearchAllReq
  */
-export class StockReturnsServiceSearchAllReq extends Message<StockReturnsServiceSearchAllReq> ***REMOVED***
+export class StockReturnsServiceSearchAllReq extends Message<StockReturnsServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1406,40 +1406,40 @@ export class StockReturnsServiceSearchAllReq extends Message<StockReturnsService
    */
   refId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<StockReturnsServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<StockReturnsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.StockReturnsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STOCK_RETURN_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STOCK_RETURN_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StockReturnsServiceSearchAllReq {
     return new StockReturnsServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StockReturnsServiceSearchAllReq {
     return new StockReturnsServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StockReturnsServiceSearchAllReq {
     return new StockReturnsServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StockReturnsServiceSearchAllReq | PlainMessage<StockReturnsServiceSearchAllReq> | undefined, b: StockReturnsServiceSearchAllReq | PlainMessage<StockReturnsServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: StockReturnsServiceSearchAllReq | PlainMessage<StockReturnsServiceSearchAllReq> | undefined, b: StockReturnsServiceSearchAllReq | PlainMessage<StockReturnsServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(StockReturnsServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** User, UsersList, UsersServiceCreateRequest, UsersServiceEntityPaginationReq, UsersServiceFilterReq, UsersServicePaginationReq, UsersServicePaginationResponse, UsersServiceRegisterMobileDeviceRequest, UsersServiceSearchAllReq, UsersServiceUpdateRequest ***REMOVED*** from "./users_pb.js";
-import ***REMOVED*** ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierUUID, IdentifierWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { User, UsersList, UsersServiceCreateRequest, UsersServiceEntityPaginationReq, UsersServiceFilterReq, UsersServicePaginationReq, UsersServicePaginationResponse, UsersServiceRegisterMobileDeviceRequest, UsersServiceSearchAllReq, UsersServiceUpdateRequest } from "./users_pb.js";
+import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierUUID, IdentifierWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,141 +13,141 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.UsersService
  */
-export const UsersService = ***REMOVED***
+export const UsersService = {
   typeName: "Genesis.UsersService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Register user's mobile device for push notifications. Returns the ID of the user device record
      *
      * @generated from rpc Genesis.UsersService.RegisterMobileDevice
      */
-    registerMobileDevice: ***REMOVED***
+    registerMobileDevice: {
       name: "RegisterMobileDevice",
       I: UsersServiceRegisterMobileDeviceRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.UsersService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: UsersServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.UsersService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: UsersServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.UsersService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: UsersServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.UsersService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.UsersService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.UsersService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.UsersService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.UsersService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: UsersServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.UsersService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.UsersService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.UsersService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -156,265 +156,265 @@ export const UsersService = ***REMOVED***
      *
      * @generated from rpc Genesis.UsersService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update user's password by another user (such as an administrator)
      *
      * @generated from rpc Genesis.UsersService.UpdatePassword
      */
-    updatePassword: ***REMOVED***
+    updatePassword: {
       name: "UpdatePassword",
       I: UpdatePasswordReq,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update user's own password
      *
      * @generated from rpc Genesis.UsersService.UpdateOwnPassword
      */
-    updateOwnPassword: ***REMOVED***
+    updateOwnPassword: {
       name: "UpdateOwnPassword",
       I: UpdateOwnPasswordReq,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update the user's profile picture
      *
      * @generated from rpc Genesis.UsersService.UpdateProfilePicture
      */
-    updateProfilePicture: ***REMOVED***
+    updateProfilePicture: {
       name: "UpdateProfilePicture",
       I: UploadPictureReq,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update the user's signature
      *
      * @generated from rpc Genesis.UsersService.UpdateSignature
      */
-    updateSignature: ***REMOVED***
+    updateSignature: {
       name: "UpdateSignature",
       I: UploadPictureReq,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Enable MFA for user
      *
      * @generated from rpc Genesis.UsersService.MFAEnable
      */
-    mFAEnable: ***REMOVED***
+    mFAEnable: {
       name: "MFAEnable",
       I: Identifier,
       O: ImageResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reset MFA for user
      *
      * @generated from rpc Genesis.UsersService.MFAReset
      */
-    mFAReset: ***REMOVED***
+    mFAReset: {
       name: "MFAReset",
       I: Identifier,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID (returns the entire information about the user, including the logs)
      *
      * @generated from rpc Genesis.UsersService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: IdentifierZeroable,
       O: User,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by UUID (logs aren't returned)
      *
      * @generated from rpc Genesis.UsersService.ViewByUUID
      */
-    viewByUUID: ***REMOVED***
+    viewByUUID: {
       name: "ViewByUUID",
       I: IdentifierUUID,
       O: User,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by username (logs aren't returned)
      *
      * @generated from rpc Genesis.UsersService.ViewByUsername
      */
-    viewByUsername: ***REMOVED***
+    viewByUsername: {
       name: "ViewByUsername",
       I: SimpleSearchReq,
       O: User,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by user's code (logs aren't returned)
      *
      * @generated from rpc Genesis.UsersService.ViewByCode
      */
-    viewByCode: ***REMOVED***
+    viewByCode: {
       name: "ViewByCode",
       I: SimpleSearchReq,
       O: User,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.UsersService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: UsersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.UsersService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: UsersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.UsersService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: UsersServicePaginationReq,
       O: UsersServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.UsersService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: UsersServiceEntityPaginationReq,
       O: UsersServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View self user (the profile of the logged in user)
      *
      * @generated from rpc Genesis.UsersService.ViewSelf
      */
-    viewSelf: ***REMOVED***
+    viewSelf: {
       name: "ViewSelf",
       I: Empty,
       O: User,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all users with birthdays on the given date
      *
      * @generated from rpc Genesis.UsersService.ViewBirthdaysOn
      */
-    viewBirthdaysOn: ***REMOVED***
+    viewBirthdaysOn: {
       name: "ViewBirthdaysOn",
       I: MonthAndDayFilter,
       O: UsersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View user's signature
      *
      * @generated from rpc Genesis.UsersService.ViewSignature
      */
-    viewSignature: ***REMOVED***
+    viewSignature: {
       name: "ViewSignature",
       I: Identifier,
       O: Base64String,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View user's profile picture
      *
      * @generated from rpc Genesis.UsersService.ViewProfilePicture
      */
-    viewProfilePicture: ***REMOVED***
+    viewProfilePicture: {
       name: "ViewProfilePicture",
       I: Identifier,
       O: ImageResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View user's VCard
      *
      * @generated from rpc Genesis.UsersService.ViewVCard
      */
-    viewVCard: ***REMOVED***
+    viewVCard: {
       name: "ViewVCard",
       I: Identifier,
       O: ImageResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View user's QR Code
      *
      * @generated from rpc Genesis.UsersService.ViewQRCode
      */
-    viewQRCode: ***REMOVED***
+    viewQRCode: {
       name: "ViewQRCode",
       I: Identifier,
       O: ImageResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.UsersService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: UsersServiceSearchAllReq,
       O: UsersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.UsersService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: UsersServiceFilterReq,
       O: UsersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.UsersService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

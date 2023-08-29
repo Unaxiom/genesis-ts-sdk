@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -14,7 +14,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.GOAL_ITEM_INPUT_VALUE_TYPE
  */
-export enum GOAL_ITEM_INPUT_VALUE_TYPE ***REMOVED***
+export enum GOAL_ITEM_INPUT_VALUE_TYPE {
   /**
    * Input value type is an absolute number (with min and max defined in number_min_value and number_max_value)
    *
@@ -42,13 +42,13 @@ export enum GOAL_ITEM_INPUT_VALUE_TYPE ***REMOVED***
    * @generated from enum value: GOAL_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 3;
    */
   GOAL_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 3,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(GOAL_ITEM_INPUT_VALUE_TYPE)
 proto3.util.setEnumType(GOAL_ITEM_INPUT_VALUE_TYPE, "Genesis.GOAL_ITEM_INPUT_VALUE_TYPE", [
-  ***REMOVED*** no: 0, name: "GOAL_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "GOAL_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "GOAL_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "GOAL_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN" ***REMOVED***,
+  { no: 0, name: "GOAL_ITEM_INPUT_VALUE_TYPE_NUMBER_ABSOLUTE_UNSPECIFIED" },
+  { no: 1, name: "GOAL_ITEM_INPUT_VALUE_TYPE_NUMBER_PERCENTAGE" },
+  { no: 2, name: "GOAL_ITEM_INPUT_VALUE_TYPE_TEXT_INPUT" },
+  { no: 3, name: "GOAL_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN" },
 ]);
 
 /**
@@ -57,7 +57,7 @@ proto3.util.setEnumType(GOAL_ITEM_INPUT_VALUE_TYPE, "Genesis.GOAL_ITEM_INPUT_VAL
  *
  * @generated from enum Genesis.GOAL_SORT_KEY
  */
-export enum GOAL_SORT_KEY ***REMOVED***
+export enum GOAL_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -120,18 +120,18 @@ export enum GOAL_SORT_KEY ***REMOVED***
    * @generated from enum value: GOAL_SORT_KEY_FINAL_REF_NUMBER = 11;
    */
   GOAL_SORT_KEY_FINAL_REF_NUMBER = 11,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(GOAL_SORT_KEY)
 proto3.util.setEnumType(GOAL_SORT_KEY, "Genesis.GOAL_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "GOAL_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "GOAL_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "GOAL_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "GOAL_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "GOAL_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "GOAL_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "GOAL_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "GOAL_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "GOAL_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
+  { no: 0, name: "GOAL_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "GOAL_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "GOAL_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "GOAL_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "GOAL_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "GOAL_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "GOAL_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "GOAL_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "GOAL_SORT_KEY_FINAL_REF_NUMBER" },
 ]);
 
 /**
@@ -140,7 +140,7 @@ proto3.util.setEnumType(GOAL_SORT_KEY, "Genesis.GOAL_SORT_KEY", [
  *
  * @generated from message Genesis.GoalsServiceCreateRequest
  */
-export class GoalsServiceCreateRequest extends Message<GoalsServiceCreateRequest> ***REMOVED***
+export class GoalsServiceCreateRequest extends Message<GoalsServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -204,41 +204,41 @@ export class GoalsServiceCreateRequest extends Message<GoalsServiceCreateRequest
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<GoalsServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalsServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "start_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "end_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "start_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "end_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceCreateRequest {
     return new GoalsServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceCreateRequest {
     return new GoalsServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceCreateRequest {
     return new GoalsServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalsServiceCreateRequest | PlainMessage<GoalsServiceCreateRequest> | undefined, b: GoalsServiceCreateRequest | PlainMessage<GoalsServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoalsServiceCreateRequest | PlainMessage<GoalsServiceCreateRequest> | undefined, b: GoalsServiceCreateRequest | PlainMessage<GoalsServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(GoalsServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -246,7 +246,7 @@ export class GoalsServiceCreateRequest extends Message<GoalsServiceCreateRequest
  *
  * @generated from message Genesis.GoalsServiceUpdateRequest
  */
-export class GoalsServiceUpdateRequest extends Message<GoalsServiceUpdateRequest> ***REMOVED***
+export class GoalsServiceUpdateRequest extends Message<GoalsServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -310,41 +310,41 @@ export class GoalsServiceUpdateRequest extends Message<GoalsServiceUpdateRequest
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<GoalsServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalsServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "start_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "end_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "start_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "end_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceUpdateRequest {
     return new GoalsServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceUpdateRequest {
     return new GoalsServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceUpdateRequest {
     return new GoalsServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalsServiceUpdateRequest | PlainMessage<GoalsServiceUpdateRequest> | undefined, b: GoalsServiceUpdateRequest | PlainMessage<GoalsServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoalsServiceUpdateRequest | PlainMessage<GoalsServiceUpdateRequest> | undefined, b: GoalsServiceUpdateRequest | PlainMessage<GoalsServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(GoalsServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -352,7 +352,7 @@ export class GoalsServiceUpdateRequest extends Message<GoalsServiceUpdateRequest
  *
  * @generated from message Genesis.Goal
  */
-export class Goal extends Message<Goal> ***REMOVED***
+export class Goal extends Message<Goal> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -458,47 +458,47 @@ export class Goal extends Message<Goal> ***REMOVED***
    */
   formData: FormFieldDatum[] = [];
 
-  constructor(data?: PartialMessage<Goal>) ***REMOVED***
+  constructor(data?: PartialMessage<Goal>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.Goal";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "start_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "end_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "list", kind: "message", T: GoalItem, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 40, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "start_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "end_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "list", kind: "message", T: GoalItem, repeated: true },
+    { no: 40, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Goal ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Goal {
     return new Goal().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Goal ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Goal {
     return new Goal().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Goal ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Goal {
     return new Goal().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Goal | PlainMessage<Goal> | undefined, b: Goal | PlainMessage<Goal> | undefined): boolean ***REMOVED***
+  static equals(a: Goal | PlainMessage<Goal> | undefined, b: Goal | PlainMessage<Goal> | undefined): boolean {
     return proto3.util.equals(Goal, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -506,7 +506,7 @@ export class Goal extends Message<Goal> ***REMOVED***
  *
  * @generated from message Genesis.GoalsServiceItemCreateRequest
  */
-export class GoalsServiceItemCreateRequest extends Message<GoalsServiceItemCreateRequest> ***REMOVED***
+export class GoalsServiceItemCreateRequest extends Message<GoalsServiceItemCreateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -584,43 +584,43 @@ export class GoalsServiceItemCreateRequest extends Message<GoalsServiceItemCreat
    */
   textAcceptableValue = "";
 
-  constructor(data?: PartialMessage<GoalsServiceItemCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalsServiceItemCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalsServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "goal_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "label_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "input_value_type", kind: "enum", T: proto3.getEnumType(GOAL_ITEM_INPUT_VALUE_TYPE) ***REMOVED***,
-    ***REMOVED*** no: 21, name: "number_min_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "number_max_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "number_acceptable_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "text_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 31, name: "text_acceptable_value", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "goal_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "label_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "input_value_type", kind: "enum", T: proto3.getEnumType(GOAL_ITEM_INPUT_VALUE_TYPE) },
+    { no: 21, name: "number_min_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 22, name: "number_max_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 23, name: "number_acceptable_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "text_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 31, name: "text_acceptable_value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceItemCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceItemCreateRequest {
     return new GoalsServiceItemCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceItemCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceItemCreateRequest {
     return new GoalsServiceItemCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceItemCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceItemCreateRequest {
     return new GoalsServiceItemCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalsServiceItemCreateRequest | PlainMessage<GoalsServiceItemCreateRequest> | undefined, b: GoalsServiceItemCreateRequest | PlainMessage<GoalsServiceItemCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoalsServiceItemCreateRequest | PlainMessage<GoalsServiceItemCreateRequest> | undefined, b: GoalsServiceItemCreateRequest | PlainMessage<GoalsServiceItemCreateRequest> | undefined): boolean {
     return proto3.util.equals(GoalsServiceItemCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -628,7 +628,7 @@ export class GoalsServiceItemCreateRequest extends Message<GoalsServiceItemCreat
  *
  * @generated from message Genesis.GoalsServiceItemUpdateRequest
  */
-export class GoalsServiceItemUpdateRequest extends Message<GoalsServiceItemUpdateRequest> ***REMOVED***
+export class GoalsServiceItemUpdateRequest extends Message<GoalsServiceItemUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -706,43 +706,43 @@ export class GoalsServiceItemUpdateRequest extends Message<GoalsServiceItemUpdat
    */
   textAcceptableValue = "";
 
-  constructor(data?: PartialMessage<GoalsServiceItemUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalsServiceItemUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalsServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "label_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "input_value_type", kind: "enum", T: proto3.getEnumType(GOAL_ITEM_INPUT_VALUE_TYPE) ***REMOVED***,
-    ***REMOVED*** no: 21, name: "number_min_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "number_max_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "number_acceptable_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "text_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 31, name: "text_acceptable_value", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "label_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "input_value_type", kind: "enum", T: proto3.getEnumType(GOAL_ITEM_INPUT_VALUE_TYPE) },
+    { no: 21, name: "number_min_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 22, name: "number_max_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 23, name: "number_acceptable_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "text_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 31, name: "text_acceptable_value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceItemUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceItemUpdateRequest {
     return new GoalsServiceItemUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceItemUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceItemUpdateRequest {
     return new GoalsServiceItemUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceItemUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceItemUpdateRequest {
     return new GoalsServiceItemUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalsServiceItemUpdateRequest | PlainMessage<GoalsServiceItemUpdateRequest> | undefined, b: GoalsServiceItemUpdateRequest | PlainMessage<GoalsServiceItemUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoalsServiceItemUpdateRequest | PlainMessage<GoalsServiceItemUpdateRequest> | undefined, b: GoalsServiceItemUpdateRequest | PlainMessage<GoalsServiceItemUpdateRequest> | undefined): boolean {
     return proto3.util.equals(GoalsServiceItemUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -750,7 +750,7 @@ export class GoalsServiceItemUpdateRequest extends Message<GoalsServiceItemUpdat
  *
  * @generated from message Genesis.GoalItem
  */
-export class GoalItem extends Message<GoalItem> ***REMOVED***
+export class GoalItem extends Message<GoalItem> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -856,47 +856,47 @@ export class GoalItem extends Message<GoalItem> ***REMOVED***
    */
   textAcceptableValue = "";
 
-  constructor(data?: PartialMessage<GoalItem>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalItem>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalItem";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "goal_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "label_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "input_value_type", kind: "enum", T: proto3.getEnumType(GOAL_ITEM_INPUT_VALUE_TYPE) ***REMOVED***,
-    ***REMOVED*** no: 21, name: "number_min_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "number_max_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "number_acceptable_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "text_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 31, name: "text_acceptable_value", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "goal_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "label_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "input_value_type", kind: "enum", T: proto3.getEnumType(GOAL_ITEM_INPUT_VALUE_TYPE) },
+    { no: 21, name: "number_min_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 22, name: "number_max_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 23, name: "number_acceptable_value", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "text_values", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 31, name: "text_acceptable_value", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalItem ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalItem {
     return new GoalItem().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalItem ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalItem {
     return new GoalItem().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalItem ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalItem {
     return new GoalItem().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalItem | PlainMessage<GoalItem> | undefined, b: GoalItem | PlainMessage<GoalItem> | undefined): boolean ***REMOVED***
+  static equals(a: GoalItem | PlainMessage<GoalItem> | undefined, b: GoalItem | PlainMessage<GoalItem> | undefined): boolean {
     return proto3.util.equals(GoalItem, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -904,7 +904,7 @@ export class GoalItem extends Message<GoalItem> ***REMOVED***
  *
  * @generated from message Genesis.GoalsList
  */
-export class GoalsList extends Message<GoalsList> ***REMOVED***
+export class GoalsList extends Message<GoalsList> {
   /**
    * List of records
    *
@@ -912,33 +912,33 @@ export class GoalsList extends Message<GoalsList> ***REMOVED***
    */
   list: Goal[] = [];
 
-  constructor(data?: PartialMessage<GoalsList>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: Goal, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: Goal, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsList {
     return new GoalsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsList {
     return new GoalsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsList {
     return new GoalsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalsList | PlainMessage<GoalsList> | undefined, b: GoalsList | PlainMessage<GoalsList> | undefined): boolean ***REMOVED***
+  static equals(a: GoalsList | PlainMessage<GoalsList> | undefined, b: GoalsList | PlainMessage<GoalsList> | undefined): boolean {
     return proto3.util.equals(GoalsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -946,7 +946,7 @@ export class GoalsList extends Message<GoalsList> ***REMOVED***
  *
  * @generated from message Genesis.GoalsItemsList
  */
-export class GoalsItemsList extends Message<GoalsItemsList> ***REMOVED***
+export class GoalsItemsList extends Message<GoalsItemsList> {
   /**
    * List of records
    *
@@ -954,33 +954,33 @@ export class GoalsItemsList extends Message<GoalsItemsList> ***REMOVED***
    */
   list: GoalItem[] = [];
 
-  constructor(data?: PartialMessage<GoalsItemsList>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalsItemsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalsItemsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: GoalItem, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: GoalItem, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsItemsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsItemsList {
     return new GoalsItemsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsItemsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsItemsList {
     return new GoalsItemsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsItemsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsItemsList {
     return new GoalsItemsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalsItemsList | PlainMessage<GoalsItemsList> | undefined, b: GoalsItemsList | PlainMessage<GoalsItemsList> | undefined): boolean ***REMOVED***
+  static equals(a: GoalsItemsList | PlainMessage<GoalsItemsList> | undefined, b: GoalsItemsList | PlainMessage<GoalsItemsList> | undefined): boolean {
     return proto3.util.equals(GoalsItemsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -988,7 +988,7 @@ export class GoalsItemsList extends Message<GoalsItemsList> ***REMOVED***
  *
  * @generated from message Genesis.GoalItemHistoryRequest
  */
-export class GoalItemHistoryRequest extends Message<GoalItemHistoryRequest> ***REMOVED***
+export class GoalItemHistoryRequest extends Message<GoalItemHistoryRequest> {
   /**
    * Stores the goal ID
    *
@@ -1003,34 +1003,34 @@ export class GoalItemHistoryRequest extends Message<GoalItemHistoryRequest> ***R
    */
   name = "";
 
-  constructor(data?: PartialMessage<GoalItemHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalItemHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalItemHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "goal_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 10, name: "goal_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalItemHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalItemHistoryRequest {
     return new GoalItemHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalItemHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalItemHistoryRequest {
     return new GoalItemHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalItemHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalItemHistoryRequest {
     return new GoalItemHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalItemHistoryRequest | PlainMessage<GoalItemHistoryRequest> | undefined, b: GoalItemHistoryRequest | PlainMessage<GoalItemHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoalItemHistoryRequest | PlainMessage<GoalItemHistoryRequest> | undefined, b: GoalItemHistoryRequest | PlainMessage<GoalItemHistoryRequest> | undefined): boolean {
     return proto3.util.equals(GoalItemHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1038,7 +1038,7 @@ export class GoalItemHistoryRequest extends Message<GoalItemHistoryRequest> ***R
  *
  * @generated from message Genesis.GoalsServicePaginationReq
  */
-export class GoalsServicePaginationReq extends Message<GoalsServicePaginationReq> ***REMOVED***
+export class GoalsServicePaginationReq extends Message<GoalsServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1081,38 +1081,38 @@ export class GoalsServicePaginationReq extends Message<GoalsServicePaginationReq
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<GoalsServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalsServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOAL_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOAL_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServicePaginationReq {
     return new GoalsServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServicePaginationReq {
     return new GoalsServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServicePaginationReq {
     return new GoalsServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalsServicePaginationReq | PlainMessage<GoalsServicePaginationReq> | undefined, b: GoalsServicePaginationReq | PlainMessage<GoalsServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: GoalsServicePaginationReq | PlainMessage<GoalsServicePaginationReq> | undefined, b: GoalsServicePaginationReq | PlainMessage<GoalsServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(GoalsServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1120,7 +1120,7 @@ export class GoalsServicePaginationReq extends Message<GoalsServicePaginationReq
  *
  * @generated from message Genesis.GoalsServicePaginationResponse
  */
-export class GoalsServicePaginationResponse extends Message<GoalsServicePaginationResponse> ***REMOVED***
+export class GoalsServicePaginationResponse extends Message<GoalsServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -1149,36 +1149,36 @@ export class GoalsServicePaginationResponse extends Message<GoalsServicePaginati
    */
   payload: Goal[] = [];
 
-  constructor(data?: PartialMessage<GoalsServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalsServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalsServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: Goal, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: Goal, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServicePaginationResponse {
     return new GoalsServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServicePaginationResponse {
     return new GoalsServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServicePaginationResponse {
     return new GoalsServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalsServicePaginationResponse | PlainMessage<GoalsServicePaginationResponse> | undefined, b: GoalsServicePaginationResponse | PlainMessage<GoalsServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: GoalsServicePaginationResponse | PlainMessage<GoalsServicePaginationResponse> | undefined, b: GoalsServicePaginationResponse | PlainMessage<GoalsServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(GoalsServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1186,7 +1186,7 @@ export class GoalsServicePaginationResponse extends Message<GoalsServicePaginati
  *
  * @generated from message Genesis.GoalsServiceEntityPaginationReq
  */
-export class GoalsServiceEntityPaginationReq extends Message<GoalsServiceEntityPaginationReq> ***REMOVED***
+export class GoalsServiceEntityPaginationReq extends Message<GoalsServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1229,38 +1229,38 @@ export class GoalsServiceEntityPaginationReq extends Message<GoalsServiceEntityP
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<GoalsServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalsServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalsServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOAL_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOAL_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceEntityPaginationReq {
     return new GoalsServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceEntityPaginationReq {
     return new GoalsServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceEntityPaginationReq {
     return new GoalsServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalsServiceEntityPaginationReq | PlainMessage<GoalsServiceEntityPaginationReq> | undefined, b: GoalsServiceEntityPaginationReq | PlainMessage<GoalsServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: GoalsServiceEntityPaginationReq | PlainMessage<GoalsServiceEntityPaginationReq> | undefined, b: GoalsServiceEntityPaginationReq | PlainMessage<GoalsServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(GoalsServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1268,7 +1268,7 @@ export class GoalsServiceEntityPaginationReq extends Message<GoalsServiceEntityP
  *
  * @generated from message Genesis.GoalsServiceFilterReq
  */
-export class GoalsServiceFilterReq extends Message<GoalsServiceFilterReq> ***REMOVED***
+export class GoalsServiceFilterReq extends Message<GoalsServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1395,50 +1395,50 @@ export class GoalsServiceFilterReq extends Message<GoalsServiceFilterReq> ***REM
    */
   userId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<GoalsServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOAL_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOAL_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceFilterReq {
     return new GoalsServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceFilterReq {
     return new GoalsServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceFilterReq {
     return new GoalsServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalsServiceFilterReq | PlainMessage<GoalsServiceFilterReq> | undefined, b: GoalsServiceFilterReq | PlainMessage<GoalsServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: GoalsServiceFilterReq | PlainMessage<GoalsServiceFilterReq> | undefined, b: GoalsServiceFilterReq | PlainMessage<GoalsServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(GoalsServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1446,7 +1446,7 @@ export class GoalsServiceFilterReq extends Message<GoalsServiceFilterReq> ***REM
  *
  * @generated from message Genesis.GoalsServiceSearchAllReq
  */
-export class GoalsServiceSearchAllReq extends Message<GoalsServiceSearchAllReq> ***REMOVED***
+export class GoalsServiceSearchAllReq extends Message<GoalsServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1510,39 +1510,39 @@ export class GoalsServiceSearchAllReq extends Message<GoalsServiceSearchAllReq> 
    */
   userId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<GoalsServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<GoalsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoalsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOAL_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOAL_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoalsServiceSearchAllReq {
     return new GoalsServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceSearchAllReq {
     return new GoalsServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceSearchAllReq {
     return new GoalsServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoalsServiceSearchAllReq | PlainMessage<GoalsServiceSearchAllReq> | undefined, b: GoalsServiceSearchAllReq | PlainMessage<GoalsServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: GoalsServiceSearchAllReq | PlainMessage<GoalsServiceSearchAllReq> | undefined, b: GoalsServiceSearchAllReq | PlainMessage<GoalsServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(GoalsServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

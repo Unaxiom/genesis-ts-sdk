@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.EXPENSE_SORT_KEY
  */
-export declare enum EXPENSE_SORT_KEY ***REMOVED***
+export declare enum EXPENSE_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -75,14 +75,14 @@ export declare enum EXPENSE_SORT_KEY ***REMOVED***
      * @generated from enum value: EXPENSE_SORT_KEY_PAID_BY_USER_ID = 13;
      */
     EXPENSE_SORT_KEY_PAID_BY_USER_ID = 13
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.ExpensesServiceCreateRequest
  */
-export declare class ExpensesServiceCreateRequest extends Message<ExpensesServiceCreateRequest> ***REMOVED***
+export declare class ExpensesServiceCreateRequest extends Message<ExpensesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -151,14 +151,14 @@ export declare class ExpensesServiceCreateRequest extends Message<ExpensesServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpensesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpensesServiceCreateRequest;
     static equals(a: ExpensesServiceCreateRequest | PlainMessage<ExpensesServiceCreateRequest> | undefined, b: ExpensesServiceCreateRequest | PlainMessage<ExpensesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.ExpensesServiceUpdateRequest
  */
-export declare class ExpensesServiceUpdateRequest extends Message<ExpensesServiceUpdateRequest> ***REMOVED***
+export declare class ExpensesServiceUpdateRequest extends Message<ExpensesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -233,14 +233,14 @@ export declare class ExpensesServiceUpdateRequest extends Message<ExpensesServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpensesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpensesServiceUpdateRequest;
     static equals(a: ExpensesServiceUpdateRequest | PlainMessage<ExpensesServiceUpdateRequest> | undefined, b: ExpensesServiceUpdateRequest | PlainMessage<ExpensesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.Expense
  */
-export declare class Expense extends Message<Expense> ***REMOVED***
+export declare class Expense extends Message<Expense> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -351,14 +351,14 @@ export declare class Expense extends Message<Expense> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Expense;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Expense;
     static equals(a: Expense | PlainMessage<Expense> | undefined, b: Expense | PlainMessage<Expense> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a expense
  *
  * @generated from message Genesis.ExpensesServiceItemCreateRequest
  */
-export declare class ExpensesServiceItemCreateRequest extends Message<ExpensesServiceItemCreateRequest> ***REMOVED***
+export declare class ExpensesServiceItemCreateRequest extends Message<ExpensesServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -421,14 +421,14 @@ export declare class ExpensesServiceItemCreateRequest extends Message<ExpensesSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpensesServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpensesServiceItemCreateRequest;
     static equals(a: ExpensesServiceItemCreateRequest | PlainMessage<ExpensesServiceItemCreateRequest> | undefined, b: ExpensesServiceItemCreateRequest | PlainMessage<ExpensesServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a expense
  *
  * @generated from message Genesis.ExpensesServiceItemUpdateRequest
  */
-export declare class ExpensesServiceItemUpdateRequest extends Message<ExpensesServiceItemUpdateRequest> ***REMOVED***
+export declare class ExpensesServiceItemUpdateRequest extends Message<ExpensesServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -491,14 +491,14 @@ export declare class ExpensesServiceItemUpdateRequest extends Message<ExpensesSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpensesServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpensesServiceItemUpdateRequest;
     static equals(a: ExpensesServiceItemUpdateRequest | PlainMessage<ExpensesServiceItemUpdateRequest> | undefined, b: ExpensesServiceItemUpdateRequest | PlainMessage<ExpensesServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a expense
  *
  * @generated from message Genesis.ExpenseItem
  */
-export declare class ExpenseItem extends Message<ExpenseItem> ***REMOVED***
+export declare class ExpenseItem extends Message<ExpenseItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -585,14 +585,14 @@ export declare class ExpenseItem extends Message<ExpenseItem> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpenseItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpenseItem;
     static equals(a: ExpenseItem | PlainMessage<ExpenseItem> | undefined, b: ExpenseItem | PlainMessage<ExpenseItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of expenses
  *
  * @generated from message Genesis.ExpensesList
  */
-export declare class ExpensesList extends Message<ExpensesList> ***REMOVED***
+export declare class ExpensesList extends Message<ExpensesList> {
     /**
      * List of records
      *
@@ -607,14 +607,14 @@ export declare class ExpensesList extends Message<ExpensesList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpensesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpensesList;
     static equals(a: ExpensesList | PlainMessage<ExpensesList> | undefined, b: ExpensesList | PlainMessage<ExpensesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of expense items
  *
  * @generated from message Genesis.ExpensesItemsList
  */
-export declare class ExpensesItemsList extends Message<ExpensesItemsList> ***REMOVED***
+export declare class ExpensesItemsList extends Message<ExpensesItemsList> {
     /**
      * List of records
      *
@@ -629,14 +629,14 @@ export declare class ExpensesItemsList extends Message<ExpensesItemsList> ***REM
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpensesItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpensesItemsList;
     static equals(a: ExpensesItemsList | PlainMessage<ExpensesItemsList> | undefined, b: ExpensesItemsList | PlainMessage<ExpensesItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.ExpenseItemHistoryRequest
  */
-export declare class ExpenseItemHistoryRequest extends Message<ExpenseItemHistoryRequest> ***REMOVED***
+export declare class ExpenseItemHistoryRequest extends Message<ExpenseItemHistoryRequest> {
     /**
      * Stores the expense ID
      *
@@ -657,14 +657,14 @@ export declare class ExpenseItemHistoryRequest extends Message<ExpenseItemHistor
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpenseItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpenseItemHistoryRequest;
     static equals(a: ExpenseItemHistoryRequest | PlainMessage<ExpenseItemHistoryRequest> | undefined, b: ExpenseItemHistoryRequest | PlainMessage<ExpenseItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.ExpensesServicePaginationReq
  */
-export declare class ExpensesServicePaginationReq extends Message<ExpensesServicePaginationReq> ***REMOVED***
+export declare class ExpensesServicePaginationReq extends Message<ExpensesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -709,14 +709,14 @@ export declare class ExpensesServicePaginationReq extends Message<ExpensesServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpensesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpensesServicePaginationReq;
     static equals(a: ExpensesServicePaginationReq | PlainMessage<ExpensesServicePaginationReq> | undefined, b: ExpensesServicePaginationReq | PlainMessage<ExpensesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.ExpensesServicePaginationResponse
  */
-export declare class ExpensesServicePaginationResponse extends Message<ExpensesServicePaginationResponse> ***REMOVED***
+export declare class ExpensesServicePaginationResponse extends Message<ExpensesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -749,14 +749,14 @@ export declare class ExpensesServicePaginationResponse extends Message<ExpensesS
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpensesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpensesServicePaginationResponse;
     static equals(a: ExpensesServicePaginationResponse | PlainMessage<ExpensesServicePaginationResponse> | undefined, b: ExpensesServicePaginationResponse | PlainMessage<ExpensesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.ExpensesServiceEntityPaginationReq
  */
-export declare class ExpensesServiceEntityPaginationReq extends Message<ExpensesServiceEntityPaginationReq> ***REMOVED***
+export declare class ExpensesServiceEntityPaginationReq extends Message<ExpensesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -801,14 +801,14 @@ export declare class ExpensesServiceEntityPaginationReq extends Message<Expenses
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpensesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpensesServiceEntityPaginationReq;
     static equals(a: ExpensesServiceEntityPaginationReq | PlainMessage<ExpensesServiceEntityPaginationReq> | undefined, b: ExpensesServiceEntityPaginationReq | PlainMessage<ExpensesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.ExpensesServiceFilterReq
  */
-export declare class ExpensesServiceFilterReq extends Message<ExpensesServiceFilterReq> ***REMOVED***
+export declare class ExpensesServiceFilterReq extends Message<ExpensesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -937,14 +937,14 @@ export declare class ExpensesServiceFilterReq extends Message<ExpensesServiceFil
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpensesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpensesServiceFilterReq;
     static equals(a: ExpensesServiceFilterReq | PlainMessage<ExpensesServiceFilterReq> | undefined, b: ExpensesServiceFilterReq | PlainMessage<ExpensesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.ExpensesServiceSearchAllReq
  */
-export declare class ExpensesServiceSearchAllReq extends Message<ExpensesServiceSearchAllReq> ***REMOVED***
+export declare class ExpensesServiceSearchAllReq extends Message<ExpensesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -1001,5 +1001,5 @@ export declare class ExpensesServiceSearchAllReq extends Message<ExpensesService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ExpensesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ExpensesServiceSearchAllReq;
     static equals(a: ExpensesServiceSearchAllReq | PlainMessage<ExpensesServiceSearchAllReq> | undefined, b: ExpensesServiceSearchAllReq | PlainMessage<ExpensesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=expenses_pb.d.ts.map

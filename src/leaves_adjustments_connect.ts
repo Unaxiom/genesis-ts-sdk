@@ -9,9 +9,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** LeaveAdjustment, LeaveAdjustmentRecord, LeavesAdjustmentsList, LeavesAdjustmentsRecordsHistoryRequest, LeavesAdjustmentsRecordsList, LeavesAdjustmentsServiceCreateRequest, LeavesAdjustmentsServiceEntityPaginationReq, LeavesAdjustmentsServiceFilterReq, LeavesAdjustmentsServicePaginationReq, LeavesAdjustmentsServicePaginationResponse, LeavesAdjustmentsServiceRecordCreateRequest, LeavesAdjustmentsServiceRecordUpdateRequest, LeavesAdjustmentsServiceSearchAllReq, LeavesAdjustmentsServiceUpdateRequest ***REMOVED*** from "./leaves_adjustments_pb.js";
-import ***REMOVED*** ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { LeaveAdjustment, LeaveAdjustmentRecord, LeavesAdjustmentsList, LeavesAdjustmentsRecordsHistoryRequest, LeavesAdjustmentsRecordsList, LeavesAdjustmentsServiceCreateRequest, LeavesAdjustmentsServiceEntityPaginationReq, LeavesAdjustmentsServiceFilterReq, LeavesAdjustmentsServicePaginationReq, LeavesAdjustmentsServicePaginationResponse, LeavesAdjustmentsServiceRecordCreateRequest, LeavesAdjustmentsServiceRecordUpdateRequest, LeavesAdjustmentsServiceSearchAllReq, LeavesAdjustmentsServiceUpdateRequest } from "./leaves_adjustments_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -19,152 +19,152 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.LeavesAdjustmentsService
  */
-export const LeavesAdjustmentsService = ***REMOVED***
+export const LeavesAdjustmentsService = {
   typeName: "Genesis.LeavesAdjustmentsService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: LeavesAdjustmentsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: LeavesAdjustmentsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: LeavesAdjustmentsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: LeavesAdjustmentsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -173,199 +173,199 @@ export const LeavesAdjustmentsService = ***REMOVED***
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add a record to a record
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.AddLeaveAdjustmentRecord
      */
-    addLeaveAdjustmentRecord: ***REMOVED***
+    addLeaveAdjustmentRecord: {
       name: "AddLeaveAdjustmentRecord",
       I: LeavesAdjustmentsServiceRecordCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify a record in a record
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.ModifyLeaveAdjustmentRecord
      */
-    modifyLeaveAdjustmentRecord: ***REMOVED***
+    modifyLeaveAdjustmentRecord: {
       name: "ModifyLeaveAdjustmentRecord",
       I: LeavesAdjustmentsServiceRecordUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve a record in a record
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.ApproveLeaveAdjustmentRecord
      */
-    approveLeaveAdjustmentRecord: ***REMOVED***
+    approveLeaveAdjustmentRecord: {
       name: "ApproveLeaveAdjustmentRecord",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete a record in a record
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.DeleteLeaveAdjustmentRecord
      */
-    deleteLeaveAdjustmentRecord: ***REMOVED***
+    deleteLeaveAdjustmentRecord: {
       name: "DeleteLeaveAdjustmentRecord",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder records
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.ReorderLeaveAdjustmentRecords
      */
-    reorderLeaveAdjustmentRecords: ***REMOVED***
+    reorderLeaveAdjustmentRecords: {
       name: "ReorderLeaveAdjustmentRecords",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Leave Adjustment Record by ID
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.ViewLeaveAdjustmentRecordByID
      */
-    viewLeaveAdjustmentRecordByID: ***REMOVED***
+    viewLeaveAdjustmentRecordByID: {
       name: "ViewLeaveAdjustmentRecordByID",
       I: Identifier,
       O: LeaveAdjustmentRecord,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved leave adjustment records for given record ID
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.ViewApprovedLeaveAdjustmentRecords
      */
-    viewApprovedLeaveAdjustmentRecords: ***REMOVED***
+    viewApprovedLeaveAdjustmentRecords: {
       name: "ViewApprovedLeaveAdjustmentRecords",
       I: IdentifierWithSearchKey,
       O: LeavesAdjustmentsRecordsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved leave adjustment records for given record ID
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.ViewUnapprovedLeaveAdjustmentRecords
      */
-    viewUnapprovedLeaveAdjustmentRecords: ***REMOVED***
+    viewUnapprovedLeaveAdjustmentRecords: {
       name: "ViewUnapprovedLeaveAdjustmentRecords",
       I: IdentifierWithSearchKey,
       O: LeavesAdjustmentsRecordsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the record
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.ViewLeaveAdjustmentRecordsHistory
      */
-    viewLeaveAdjustmentRecordsHistory: ***REMOVED***
+    viewLeaveAdjustmentRecordsHistory: {
       name: "ViewLeaveAdjustmentRecordsHistory",
       I: LeavesAdjustmentsRecordsHistoryRequest,
       O: LeavesAdjustmentsRecordsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: LeaveAdjustment,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: LeavesAdjustmentsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: LeavesAdjustmentsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: LeavesAdjustmentsServicePaginationReq,
       O: LeavesAdjustmentsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: LeavesAdjustmentsServiceEntityPaginationReq,
       O: LeavesAdjustmentsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: LeavesAdjustmentsServiceSearchAllReq,
       O: LeavesAdjustmentsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: LeavesAdjustmentsServiceFilterReq,
       O: LeavesAdjustmentsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.LeavesAdjustmentsService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -14,7 +14,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.REPLACEABLE_INDENT_SORT_KEY
  */
-export enum REPLACEABLE_INDENT_SORT_KEY ***REMOVED***
+export enum REPLACEABLE_INDENT_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -84,19 +84,19 @@ export enum REPLACEABLE_INDENT_SORT_KEY ***REMOVED***
    * @generated from enum value: REPLACEABLE_INDENT_SORT_KEY_LOCATION_ID = 12;
    */
   REPLACEABLE_INDENT_SORT_KEY_LOCATION_ID = 12,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(REPLACEABLE_INDENT_SORT_KEY)
 proto3.util.setEnumType(REPLACEABLE_INDENT_SORT_KEY, "Genesis.REPLACEABLE_INDENT_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "REPLACEABLE_INDENT_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "REPLACEABLE_INDENT_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "REPLACEABLE_INDENT_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "REPLACEABLE_INDENT_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "REPLACEABLE_INDENT_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "REPLACEABLE_INDENT_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "REPLACEABLE_INDENT_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "REPLACEABLE_INDENT_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "REPLACEABLE_INDENT_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
-  ***REMOVED*** no: 12, name: "REPLACEABLE_INDENT_SORT_KEY_LOCATION_ID" ***REMOVED***,
+  { no: 0, name: "REPLACEABLE_INDENT_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "REPLACEABLE_INDENT_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "REPLACEABLE_INDENT_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "REPLACEABLE_INDENT_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "REPLACEABLE_INDENT_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "REPLACEABLE_INDENT_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "REPLACEABLE_INDENT_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "REPLACEABLE_INDENT_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "REPLACEABLE_INDENT_SORT_KEY_FINAL_REF_NUMBER" },
+  { no: 12, name: "REPLACEABLE_INDENT_SORT_KEY_LOCATION_ID" },
 ]);
 
 /**
@@ -105,7 +105,7 @@ proto3.util.setEnumType(REPLACEABLE_INDENT_SORT_KEY, "Genesis.REPLACEABLE_INDENT
  *
  * @generated from message Genesis.ReplaceableIndentsServiceCreateRequest
  */
-export class ReplaceableIndentsServiceCreateRequest extends Message<ReplaceableIndentsServiceCreateRequest> ***REMOVED***
+export class ReplaceableIndentsServiceCreateRequest extends Message<ReplaceableIndentsServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -176,42 +176,42 @@ export class ReplaceableIndentsServiceCreateRequest extends Message<ReplaceableI
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<ReplaceableIndentsServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentsServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceCreateRequest {
     return new ReplaceableIndentsServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceCreateRequest {
     return new ReplaceableIndentsServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceCreateRequest {
     return new ReplaceableIndentsServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentsServiceCreateRequest | PlainMessage<ReplaceableIndentsServiceCreateRequest> | undefined, b: ReplaceableIndentsServiceCreateRequest | PlainMessage<ReplaceableIndentsServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentsServiceCreateRequest | PlainMessage<ReplaceableIndentsServiceCreateRequest> | undefined, b: ReplaceableIndentsServiceCreateRequest | PlainMessage<ReplaceableIndentsServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentsServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -219,7 +219,7 @@ export class ReplaceableIndentsServiceCreateRequest extends Message<ReplaceableI
  *
  * @generated from message Genesis.ReplaceableIndentsServiceUpdateRequest
  */
-export class ReplaceableIndentsServiceUpdateRequest extends Message<ReplaceableIndentsServiceUpdateRequest> ***REMOVED***
+export class ReplaceableIndentsServiceUpdateRequest extends Message<ReplaceableIndentsServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -276,40 +276,40 @@ export class ReplaceableIndentsServiceUpdateRequest extends Message<ReplaceableI
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<ReplaceableIndentsServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentsServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceUpdateRequest {
     return new ReplaceableIndentsServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceUpdateRequest {
     return new ReplaceableIndentsServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceUpdateRequest {
     return new ReplaceableIndentsServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentsServiceUpdateRequest | PlainMessage<ReplaceableIndentsServiceUpdateRequest> | undefined, b: ReplaceableIndentsServiceUpdateRequest | PlainMessage<ReplaceableIndentsServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentsServiceUpdateRequest | PlainMessage<ReplaceableIndentsServiceUpdateRequest> | undefined, b: ReplaceableIndentsServiceUpdateRequest | PlainMessage<ReplaceableIndentsServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentsServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -317,7 +317,7 @@ export class ReplaceableIndentsServiceUpdateRequest extends Message<ReplaceableI
  *
  * @generated from message Genesis.ReplaceableIndentsServiceAutofillRequest
  */
-export class ReplaceableIndentsServiceAutofillRequest extends Message<ReplaceableIndentsServiceAutofillRequest> ***REMOVED***
+export class ReplaceableIndentsServiceAutofillRequest extends Message<ReplaceableIndentsServiceAutofillRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -339,35 +339,35 @@ export class ReplaceableIndentsServiceAutofillRequest extends Message<Replaceabl
    */
   populateUsingEquationDependencies = false;
 
-  constructor(data?: PartialMessage<ReplaceableIndentsServiceAutofillRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentsServiceAutofillRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentsServiceAutofillRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "populate_using_equation_dependencies", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "populate_using_equation_dependencies", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceAutofillRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceAutofillRequest {
     return new ReplaceableIndentsServiceAutofillRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceAutofillRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceAutofillRequest {
     return new ReplaceableIndentsServiceAutofillRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceAutofillRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceAutofillRequest {
     return new ReplaceableIndentsServiceAutofillRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentsServiceAutofillRequest | PlainMessage<ReplaceableIndentsServiceAutofillRequest> | undefined, b: ReplaceableIndentsServiceAutofillRequest | PlainMessage<ReplaceableIndentsServiceAutofillRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentsServiceAutofillRequest | PlainMessage<ReplaceableIndentsServiceAutofillRequest> | undefined, b: ReplaceableIndentsServiceAutofillRequest | PlainMessage<ReplaceableIndentsServiceAutofillRequest> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentsServiceAutofillRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -375,7 +375,7 @@ export class ReplaceableIndentsServiceAutofillRequest extends Message<Replaceabl
  *
  * @generated from message Genesis.ReplaceableIndent
  */
-export class ReplaceableIndent extends Message<ReplaceableIndent> ***REMOVED***
+export class ReplaceableIndent extends Message<ReplaceableIndent> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -488,48 +488,48 @@ export class ReplaceableIndent extends Message<ReplaceableIndent> ***REMOVED***
    */
   formData: FormFieldDatum[] = [];
 
-  constructor(data?: PartialMessage<ReplaceableIndent>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndent>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndent";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "list", kind: "message", T: ReplaceableIndentItem, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 40, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "list", kind: "message", T: ReplaceableIndentItem, repeated: true },
+    { no: 40, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndent ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndent {
     return new ReplaceableIndent().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndent ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndent {
     return new ReplaceableIndent().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndent ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndent {
     return new ReplaceableIndent().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndent | PlainMessage<ReplaceableIndent> | undefined, b: ReplaceableIndent | PlainMessage<ReplaceableIndent> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndent | PlainMessage<ReplaceableIndent> | undefined, b: ReplaceableIndent | PlainMessage<ReplaceableIndent> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndent, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -537,7 +537,7 @@ export class ReplaceableIndent extends Message<ReplaceableIndent> ***REMOVED***
  *
  * @generated from message Genesis.ReplaceableIndentsServiceItemCreateRequest
  */
-export class ReplaceableIndentsServiceItemCreateRequest extends Message<ReplaceableIndentsServiceItemCreateRequest> ***REMOVED***
+export class ReplaceableIndentsServiceItemCreateRequest extends Message<ReplaceableIndentsServiceItemCreateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -566,36 +566,36 @@ export class ReplaceableIndentsServiceItemCreateRequest extends Message<Replacea
    */
   internalQuantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ReplaceableIndentsServiceItemCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentsServiceItemCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentsServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "replaceable_indent_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "replaceable_indent_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceItemCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceItemCreateRequest {
     return new ReplaceableIndentsServiceItemCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceItemCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceItemCreateRequest {
     return new ReplaceableIndentsServiceItemCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceItemCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceItemCreateRequest {
     return new ReplaceableIndentsServiceItemCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentsServiceItemCreateRequest | PlainMessage<ReplaceableIndentsServiceItemCreateRequest> | undefined, b: ReplaceableIndentsServiceItemCreateRequest | PlainMessage<ReplaceableIndentsServiceItemCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentsServiceItemCreateRequest | PlainMessage<ReplaceableIndentsServiceItemCreateRequest> | undefined, b: ReplaceableIndentsServiceItemCreateRequest | PlainMessage<ReplaceableIndentsServiceItemCreateRequest> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentsServiceItemCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -603,7 +603,7 @@ export class ReplaceableIndentsServiceItemCreateRequest extends Message<Replacea
  *
  * @generated from message Genesis.ReplaceableIndentsServiceItemUpdateRequest
  */
-export class ReplaceableIndentsServiceItemUpdateRequest extends Message<ReplaceableIndentsServiceItemUpdateRequest> ***REMOVED***
+export class ReplaceableIndentsServiceItemUpdateRequest extends Message<ReplaceableIndentsServiceItemUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -625,35 +625,35 @@ export class ReplaceableIndentsServiceItemUpdateRequest extends Message<Replacea
    */
   internalQuantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ReplaceableIndentsServiceItemUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentsServiceItemUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentsServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceItemUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceItemUpdateRequest {
     return new ReplaceableIndentsServiceItemUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceItemUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceItemUpdateRequest {
     return new ReplaceableIndentsServiceItemUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceItemUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceItemUpdateRequest {
     return new ReplaceableIndentsServiceItemUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentsServiceItemUpdateRequest | PlainMessage<ReplaceableIndentsServiceItemUpdateRequest> | undefined, b: ReplaceableIndentsServiceItemUpdateRequest | PlainMessage<ReplaceableIndentsServiceItemUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentsServiceItemUpdateRequest | PlainMessage<ReplaceableIndentsServiceItemUpdateRequest> | undefined, b: ReplaceableIndentsServiceItemUpdateRequest | PlainMessage<ReplaceableIndentsServiceItemUpdateRequest> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentsServiceItemUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -661,7 +661,7 @@ export class ReplaceableIndentsServiceItemUpdateRequest extends Message<Replacea
  *
  * @generated from message Genesis.ReplaceableIndentItem
  */
-export class ReplaceableIndentItem extends Message<ReplaceableIndentItem> ***REMOVED***
+export class ReplaceableIndentItem extends Message<ReplaceableIndentItem> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -718,40 +718,40 @@ export class ReplaceableIndentItem extends Message<ReplaceableIndentItem> ***REM
    */
   internalQuantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ReplaceableIndentItem>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentItem>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentItem";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "replaceable_indent_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "replaceable_indent_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentItem ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentItem {
     return new ReplaceableIndentItem().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentItem ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentItem {
     return new ReplaceableIndentItem().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentItem ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentItem {
     return new ReplaceableIndentItem().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentItem | PlainMessage<ReplaceableIndentItem> | undefined, b: ReplaceableIndentItem | PlainMessage<ReplaceableIndentItem> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentItem | PlainMessage<ReplaceableIndentItem> | undefined, b: ReplaceableIndentItem | PlainMessage<ReplaceableIndentItem> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentItem, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -759,7 +759,7 @@ export class ReplaceableIndentItem extends Message<ReplaceableIndentItem> ***REM
  *
  * @generated from message Genesis.ReplaceableIndentsList
  */
-export class ReplaceableIndentsList extends Message<ReplaceableIndentsList> ***REMOVED***
+export class ReplaceableIndentsList extends Message<ReplaceableIndentsList> {
   /**
    * List of records
    *
@@ -767,33 +767,33 @@ export class ReplaceableIndentsList extends Message<ReplaceableIndentsList> ***R
    */
   list: ReplaceableIndent[] = [];
 
-  constructor(data?: PartialMessage<ReplaceableIndentsList>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: ReplaceableIndent, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: ReplaceableIndent, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsList {
     return new ReplaceableIndentsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsList {
     return new ReplaceableIndentsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsList {
     return new ReplaceableIndentsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentsList | PlainMessage<ReplaceableIndentsList> | undefined, b: ReplaceableIndentsList | PlainMessage<ReplaceableIndentsList> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentsList | PlainMessage<ReplaceableIndentsList> | undefined, b: ReplaceableIndentsList | PlainMessage<ReplaceableIndentsList> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -801,7 +801,7 @@ export class ReplaceableIndentsList extends Message<ReplaceableIndentsList> ***R
  *
  * @generated from message Genesis.ReplaceableIndentsItemsList
  */
-export class ReplaceableIndentsItemsList extends Message<ReplaceableIndentsItemsList> ***REMOVED***
+export class ReplaceableIndentsItemsList extends Message<ReplaceableIndentsItemsList> {
   /**
    * List of records
    *
@@ -809,33 +809,33 @@ export class ReplaceableIndentsItemsList extends Message<ReplaceableIndentsItems
    */
   list: ReplaceableIndentItem[] = [];
 
-  constructor(data?: PartialMessage<ReplaceableIndentsItemsList>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentsItemsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentsItemsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: ReplaceableIndentItem, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: ReplaceableIndentItem, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsItemsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsItemsList {
     return new ReplaceableIndentsItemsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsItemsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsItemsList {
     return new ReplaceableIndentsItemsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsItemsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsItemsList {
     return new ReplaceableIndentsItemsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentsItemsList | PlainMessage<ReplaceableIndentsItemsList> | undefined, b: ReplaceableIndentsItemsList | PlainMessage<ReplaceableIndentsItemsList> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentsItemsList | PlainMessage<ReplaceableIndentsItemsList> | undefined, b: ReplaceableIndentsItemsList | PlainMessage<ReplaceableIndentsItemsList> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentsItemsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -843,7 +843,7 @@ export class ReplaceableIndentsItemsList extends Message<ReplaceableIndentsItems
  *
  * @generated from message Genesis.ReplaceableIndentItemHistoryRequest
  */
-export class ReplaceableIndentItemHistoryRequest extends Message<ReplaceableIndentItemHistoryRequest> ***REMOVED***
+export class ReplaceableIndentItemHistoryRequest extends Message<ReplaceableIndentItemHistoryRequest> {
   /**
    * Stores the replaceable indent ID
    *
@@ -858,34 +858,34 @@ export class ReplaceableIndentItemHistoryRequest extends Message<ReplaceableInde
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ReplaceableIndentItemHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentItemHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentItemHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "replaceable_indent_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "replaceable_indent_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentItemHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentItemHistoryRequest {
     return new ReplaceableIndentItemHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentItemHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentItemHistoryRequest {
     return new ReplaceableIndentItemHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentItemHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentItemHistoryRequest {
     return new ReplaceableIndentItemHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentItemHistoryRequest | PlainMessage<ReplaceableIndentItemHistoryRequest> | undefined, b: ReplaceableIndentItemHistoryRequest | PlainMessage<ReplaceableIndentItemHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentItemHistoryRequest | PlainMessage<ReplaceableIndentItemHistoryRequest> | undefined, b: ReplaceableIndentItemHistoryRequest | PlainMessage<ReplaceableIndentItemHistoryRequest> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentItemHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -893,7 +893,7 @@ export class ReplaceableIndentItemHistoryRequest extends Message<ReplaceableInde
  *
  * @generated from message Genesis.ReplaceableIndentItemProspectiveInfoRequest
  */
-export class ReplaceableIndentItemProspectiveInfoRequest extends Message<ReplaceableIndentItemProspectiveInfoRequest> ***REMOVED***
+export class ReplaceableIndentItemProspectiveInfoRequest extends Message<ReplaceableIndentItemProspectiveInfoRequest> {
   /**
    * Stores the replaceable indent ID
    *
@@ -908,34 +908,34 @@ export class ReplaceableIndentItemProspectiveInfoRequest extends Message<Replace
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ReplaceableIndentItemProspectiveInfoRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentItemProspectiveInfoRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentItemProspectiveInfoRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "replaceable_indent_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "replaceable_indent_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentItemProspectiveInfoRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentItemProspectiveInfoRequest {
     return new ReplaceableIndentItemProspectiveInfoRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentItemProspectiveInfoRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentItemProspectiveInfoRequest {
     return new ReplaceableIndentItemProspectiveInfoRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentItemProspectiveInfoRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentItemProspectiveInfoRequest {
     return new ReplaceableIndentItemProspectiveInfoRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentItemProspectiveInfoRequest | PlainMessage<ReplaceableIndentItemProspectiveInfoRequest> | undefined, b: ReplaceableIndentItemProspectiveInfoRequest | PlainMessage<ReplaceableIndentItemProspectiveInfoRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentItemProspectiveInfoRequest | PlainMessage<ReplaceableIndentItemProspectiveInfoRequest> | undefined, b: ReplaceableIndentItemProspectiveInfoRequest | PlainMessage<ReplaceableIndentItemProspectiveInfoRequest> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentItemProspectiveInfoRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -943,7 +943,7 @@ export class ReplaceableIndentItemProspectiveInfoRequest extends Message<Replace
  *
  * @generated from message Genesis.ReplaceableIndentsServicePaginationReq
  */
-export class ReplaceableIndentsServicePaginationReq extends Message<ReplaceableIndentsServicePaginationReq> ***REMOVED***
+export class ReplaceableIndentsServicePaginationReq extends Message<ReplaceableIndentsServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -986,38 +986,38 @@ export class ReplaceableIndentsServicePaginationReq extends Message<ReplaceableI
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<ReplaceableIndentsServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentsServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(REPLACEABLE_INDENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(REPLACEABLE_INDENT_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServicePaginationReq {
     return new ReplaceableIndentsServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginationReq {
     return new ReplaceableIndentsServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginationReq {
     return new ReplaceableIndentsServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentsServicePaginationReq | PlainMessage<ReplaceableIndentsServicePaginationReq> | undefined, b: ReplaceableIndentsServicePaginationReq | PlainMessage<ReplaceableIndentsServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentsServicePaginationReq | PlainMessage<ReplaceableIndentsServicePaginationReq> | undefined, b: ReplaceableIndentsServicePaginationReq | PlainMessage<ReplaceableIndentsServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentsServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1025,7 +1025,7 @@ export class ReplaceableIndentsServicePaginationReq extends Message<ReplaceableI
  *
  * @generated from message Genesis.ReplaceableIndentsServicePaginationResponse
  */
-export class ReplaceableIndentsServicePaginationResponse extends Message<ReplaceableIndentsServicePaginationResponse> ***REMOVED***
+export class ReplaceableIndentsServicePaginationResponse extends Message<ReplaceableIndentsServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -1054,36 +1054,36 @@ export class ReplaceableIndentsServicePaginationResponse extends Message<Replace
    */
   payload: ReplaceableIndent[] = [];
 
-  constructor(data?: PartialMessage<ReplaceableIndentsServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentsServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentsServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: ReplaceableIndent, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: ReplaceableIndent, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServicePaginationResponse {
     return new ReplaceableIndentsServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginationResponse {
     return new ReplaceableIndentsServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServicePaginationResponse {
     return new ReplaceableIndentsServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentsServicePaginationResponse | PlainMessage<ReplaceableIndentsServicePaginationResponse> | undefined, b: ReplaceableIndentsServicePaginationResponse | PlainMessage<ReplaceableIndentsServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentsServicePaginationResponse | PlainMessage<ReplaceableIndentsServicePaginationResponse> | undefined, b: ReplaceableIndentsServicePaginationResponse | PlainMessage<ReplaceableIndentsServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentsServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1091,7 +1091,7 @@ export class ReplaceableIndentsServicePaginationResponse extends Message<Replace
  *
  * @generated from message Genesis.ReplaceableIndentsServiceEntityPaginationReq
  */
-export class ReplaceableIndentsServiceEntityPaginationReq extends Message<ReplaceableIndentsServiceEntityPaginationReq> ***REMOVED***
+export class ReplaceableIndentsServiceEntityPaginationReq extends Message<ReplaceableIndentsServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1134,38 +1134,38 @@ export class ReplaceableIndentsServiceEntityPaginationReq extends Message<Replac
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<ReplaceableIndentsServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentsServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentsServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(REPLACEABLE_INDENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(REPLACEABLE_INDENT_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceEntityPaginationReq {
     return new ReplaceableIndentsServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceEntityPaginationReq {
     return new ReplaceableIndentsServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceEntityPaginationReq {
     return new ReplaceableIndentsServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentsServiceEntityPaginationReq | PlainMessage<ReplaceableIndentsServiceEntityPaginationReq> | undefined, b: ReplaceableIndentsServiceEntityPaginationReq | PlainMessage<ReplaceableIndentsServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentsServiceEntityPaginationReq | PlainMessage<ReplaceableIndentsServiceEntityPaginationReq> | undefined, b: ReplaceableIndentsServiceEntityPaginationReq | PlainMessage<ReplaceableIndentsServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentsServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1173,7 +1173,7 @@ export class ReplaceableIndentsServiceEntityPaginationReq extends Message<Replac
  *
  * @generated from message Genesis.ReplaceableIndentsServiceFilterReq
  */
-export class ReplaceableIndentsServiceFilterReq extends Message<ReplaceableIndentsServiceFilterReq> ***REMOVED***
+export class ReplaceableIndentsServiceFilterReq extends Message<ReplaceableIndentsServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1321,53 +1321,53 @@ export class ReplaceableIndentsServiceFilterReq extends Message<ReplaceableInden
    */
   itemHash = "";
 
-  constructor(data?: PartialMessage<ReplaceableIndentsServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(REPLACEABLE_INDENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 26, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(REPLACEABLE_INDENT_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 24, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 25, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 26, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceFilterReq {
     return new ReplaceableIndentsServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceFilterReq {
     return new ReplaceableIndentsServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceFilterReq {
     return new ReplaceableIndentsServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentsServiceFilterReq | PlainMessage<ReplaceableIndentsServiceFilterReq> | undefined, b: ReplaceableIndentsServiceFilterReq | PlainMessage<ReplaceableIndentsServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentsServiceFilterReq | PlainMessage<ReplaceableIndentsServiceFilterReq> | undefined, b: ReplaceableIndentsServiceFilterReq | PlainMessage<ReplaceableIndentsServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentsServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1375,7 +1375,7 @@ export class ReplaceableIndentsServiceFilterReq extends Message<ReplaceableInden
  *
  * @generated from message Genesis.ReplaceableIndentsServiceSearchAllReq
  */
-export class ReplaceableIndentsServiceSearchAllReq extends Message<ReplaceableIndentsServiceSearchAllReq> ***REMOVED***
+export class ReplaceableIndentsServiceSearchAllReq extends Message<ReplaceableIndentsServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1460,42 +1460,42 @@ export class ReplaceableIndentsServiceSearchAllReq extends Message<ReplaceableIn
    */
   itemHash = "";
 
-  constructor(data?: PartialMessage<ReplaceableIndentsServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<ReplaceableIndentsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReplaceableIndentsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(REPLACEABLE_INDENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 26, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(REPLACEABLE_INDENT_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 24, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 25, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 26, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReplaceableIndentsServiceSearchAllReq {
     return new ReplaceableIndentsServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceSearchAllReq {
     return new ReplaceableIndentsServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReplaceableIndentsServiceSearchAllReq {
     return new ReplaceableIndentsServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReplaceableIndentsServiceSearchAllReq | PlainMessage<ReplaceableIndentsServiceSearchAllReq> | undefined, b: ReplaceableIndentsServiceSearchAllReq | PlainMessage<ReplaceableIndentsServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: ReplaceableIndentsServiceSearchAllReq | PlainMessage<ReplaceableIndentsServiceSearchAllReq> | undefined, b: ReplaceableIndentsServiceSearchAllReq | PlainMessage<ReplaceableIndentsServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(ReplaceableIndentsServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

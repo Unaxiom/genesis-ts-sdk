@@ -9,9 +9,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** ShiftGroup, ShiftGroupShift, ShiftsGroupsList, ShiftsGroupsServiceCreateRequest, ShiftsGroupsServiceEntityPaginationReq, ShiftsGroupsServiceFilterReq, ShiftsGroupsServicePaginationReq, ShiftsGroupsServicePaginationResponse, ShiftsGroupsServiceSearchAllReq, ShiftsGroupsServiceShiftGroupCreateRequest, ShiftsGroupsServiceShiftGroupUpdateRequest, ShiftsGroupsServiceUpdateRequest, ShiftsGroupsShiftsHistoryRequest, ShiftsGroupsShiftsList ***REMOVED*** from "./shifts_groups_pb.js";
-import ***REMOVED*** ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { ShiftGroup, ShiftGroupShift, ShiftsGroupsList, ShiftsGroupsServiceCreateRequest, ShiftsGroupsServiceEntityPaginationReq, ShiftsGroupsServiceFilterReq, ShiftsGroupsServicePaginationReq, ShiftsGroupsServicePaginationResponse, ShiftsGroupsServiceSearchAllReq, ShiftsGroupsServiceShiftGroupCreateRequest, ShiftsGroupsServiceShiftGroupUpdateRequest, ShiftsGroupsServiceUpdateRequest, ShiftsGroupsShiftsHistoryRequest, ShiftsGroupsShiftsList } from "./shifts_groups_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -19,152 +19,152 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.ShiftsGroupsService
  */
-export const ShiftsGroupsService = ***REMOVED***
+export const ShiftsGroupsService = {
   typeName: "Genesis.ShiftsGroupsService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.ShiftsGroupsService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: ShiftsGroupsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.ShiftsGroupsService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: ShiftsGroupsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.ShiftsGroupsService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: ShiftsGroupsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.ShiftsGroupsService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.ShiftsGroupsService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.ShiftsGroupsService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.ShiftsGroupsService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.ShiftsGroupsService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: ShiftsGroupsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.ShiftsGroupsService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.ShiftsGroupsService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.ShiftsGroupsService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.ShiftsGroupsService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.ShiftsGroupsService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -173,199 +173,199 @@ export const ShiftsGroupsService = ***REMOVED***
      *
      * @generated from rpc Genesis.ShiftsGroupsService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add a shift to a shift group
      *
      * @generated from rpc Genesis.ShiftsGroupsService.AddShiftGroupShift
      */
-    addShiftGroupShift: ***REMOVED***
+    addShiftGroupShift: {
       name: "AddShiftGroupShift",
       I: ShiftsGroupsServiceShiftGroupCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify a shift in a shift group
      *
      * @generated from rpc Genesis.ShiftsGroupsService.ModifyShiftGroupShift
      */
-    modifyShiftGroupShift: ***REMOVED***
+    modifyShiftGroupShift: {
       name: "ModifyShiftGroupShift",
       I: ShiftsGroupsServiceShiftGroupUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve a shift in a shift group
      *
      * @generated from rpc Genesis.ShiftsGroupsService.ApproveShiftGroupShift
      */
-    approveShiftGroupShift: ***REMOVED***
+    approveShiftGroupShift: {
       name: "ApproveShiftGroupShift",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete a shift in a shift group
      *
      * @generated from rpc Genesis.ShiftsGroupsService.DeleteShiftGroupShift
      */
-    deleteShiftGroupShift: ***REMOVED***
+    deleteShiftGroupShift: {
       name: "DeleteShiftGroupShift",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder shifts in a shift group
      *
      * @generated from rpc Genesis.ShiftsGroupsService.ReorderShiftGroupShifts
      */
-    reorderShiftGroupShifts: ***REMOVED***
+    reorderShiftGroupShifts: {
       name: "ReorderShiftGroupShifts",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Shift Group Shift by ID
      *
      * @generated from rpc Genesis.ShiftsGroupsService.ViewShiftGroupShiftByID
      */
-    viewShiftGroupShiftByID: ***REMOVED***
+    viewShiftGroupShiftByID: {
       name: "ViewShiftGroupShiftByID",
       I: Identifier,
       O: ShiftGroupShift,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved shift group shifts for given shift group ID
      *
      * @generated from rpc Genesis.ShiftsGroupsService.ViewApprovedShiftGroupShifts
      */
-    viewApprovedShiftGroupShifts: ***REMOVED***
+    viewApprovedShiftGroupShifts: {
       name: "ViewApprovedShiftGroupShifts",
       I: IdentifierWithSearchKey,
       O: ShiftsGroupsShiftsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved shift group shifts for given shift group ID
      *
      * @generated from rpc Genesis.ShiftsGroupsService.ViewUnapprovedShiftGroupShifts
      */
-    viewUnapprovedShiftGroupShifts: ***REMOVED***
+    viewUnapprovedShiftGroupShifts: {
       name: "ViewUnapprovedShiftGroupShifts",
       I: IdentifierWithSearchKey,
       O: ShiftsGroupsShiftsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the shift group shift
      *
      * @generated from rpc Genesis.ShiftsGroupsService.ViewShiftGroupShiftsHistory
      */
-    viewShiftGroupShiftsHistory: ***REMOVED***
+    viewShiftGroupShiftsHistory: {
       name: "ViewShiftGroupShiftsHistory",
       I: ShiftsGroupsShiftsHistoryRequest,
       O: ShiftsGroupsShiftsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.ShiftsGroupsService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: ShiftGroup,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.ShiftsGroupsService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: ShiftsGroupsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.ShiftsGroupsService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: ShiftsGroupsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.ShiftsGroupsService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: ShiftsGroupsServicePaginationReq,
       O: ShiftsGroupsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.ShiftsGroupsService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: ShiftsGroupsServiceEntityPaginationReq,
       O: ShiftsGroupsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.ShiftsGroupsService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: ShiftsGroupsServiceSearchAllReq,
       O: ShiftsGroupsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.ShiftsGroupsService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: ShiftsGroupsServiceFilterReq,
       O: ShiftsGroupsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.ShiftsGroupsService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

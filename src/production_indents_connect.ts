@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** ProductionIndent, ProductionIndentItem, ProductionIndentItemHistoryRequest, ProductionIndentItemProspectiveInfoRequest, ProductionIndentsItemsList, ProductionIndentsList, ProductionIndentsServiceAutofillRequest, ProductionIndentsServiceCreateRequest, ProductionIndentsServiceEntityPaginationReq, ProductionIndentsServiceFilterReq, ProductionIndentsServiceItemCreateRequest, ProductionIndentsServiceItemUpdateRequest, ProductionIndentsServicePaginationReq, ProductionIndentsServicePaginationResponse, ProductionIndentsServiceSearchAllReq, ProductionIndentsServiceUpdateRequest ***REMOVED*** from "./production_indents_pb.js";
-import ***REMOVED*** ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
+import { ProductionIndent, ProductionIndentItem, ProductionIndentItemHistoryRequest, ProductionIndentItemProspectiveInfoRequest, ProductionIndentsItemsList, ProductionIndentsList, ProductionIndentsServiceAutofillRequest, ProductionIndentsServiceCreateRequest, ProductionIndentsServiceEntityPaginationReq, ProductionIndentsServiceFilterReq, ProductionIndentsServiceItemCreateRequest, ProductionIndentsServiceItemUpdateRequest, ProductionIndentsServicePaginationReq, ProductionIndentsServicePaginationResponse, ProductionIndentsServiceSearchAllReq, ProductionIndentsServiceUpdateRequest } from "./production_indents_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
+import { FamiliesList } from "./families_pb.js";
 
 /**
  *
@@ -14,427 +14,427 @@ import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
  *
  * @generated from service Genesis.ProductionIndentsService
  */
-export const ProductionIndentsService = ***REMOVED***
+export const ProductionIndentsService = {
   typeName: "Genesis.ProductionIndentsService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.ProductionIndentsService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: ProductionIndentsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.ProductionIndentsService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: ProductionIndentsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.ProductionIndentsService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: ProductionIndentsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.ProductionIndentsService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.ProductionIndentsService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.ProductionIndentsService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.ProductionIndentsService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.ProductionIndentsService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: ProductionIndentsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.ProductionIndentsService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.ProductionIndentsService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.ProductionIndentsService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.ProductionIndentsService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.ProductionIndentsService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.ProductionIndentsService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
      * @generated from rpc Genesis.ProductionIndentsService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send Email
      *
      * @generated from rpc Genesis.ProductionIndentsService.SendEmail
      */
-    sendEmail: ***REMOVED***
+    sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Autofill the production indent
      *
      * @generated from rpc Genesis.ProductionIndentsService.Autofill
      */
-    autofill: ***REMOVED***
+    autofill: {
       name: "Autofill",
       I: ProductionIndentsServiceAutofillRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Checks if the Production Indent can be marked as completed
      *
      * @generated from rpc Genesis.ProductionIndentsService.IsCompletable
      */
-    isCompletable: ***REMOVED***
+    isCompletable: {
       name: "IsCompletable",
       I: Identifier,
       O: BooleanResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a production indent
      *
      * @generated from rpc Genesis.ProductionIndentsService.AddProductionIndentItem
      */
-    addProductionIndentItem: ***REMOVED***
+    addProductionIndentItem: {
       name: "AddProductionIndentItem",
       I: ProductionIndentsServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a production indent
      *
      * @generated from rpc Genesis.ProductionIndentsService.ModifyProductionIndentItem
      */
-    modifyProductionIndentItem: ***REMOVED***
+    modifyProductionIndentItem: {
       name: "ModifyProductionIndentItem",
       I: ProductionIndentsServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a production indent
      *
      * @generated from rpc Genesis.ProductionIndentsService.ApproveProductionIndentItem
      */
-    approveProductionIndentItem: ***REMOVED***
+    approveProductionIndentItem: {
       name: "ApproveProductionIndentItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a production indent
      *
      * @generated from rpc Genesis.ProductionIndentsService.DeleteProductionIndentItem
      */
-    deleteProductionIndentItem: ***REMOVED***
+    deleteProductionIndentItem: {
       name: "DeleteProductionIndentItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a production indent
      *
      * @generated from rpc Genesis.ProductionIndentsService.ReorderProductionIndentItems
      */
-    reorderProductionIndentItems: ***REMOVED***
+    reorderProductionIndentItems: {
       name: "ReorderProductionIndentItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Production Indent Item by ID
      *
      * @generated from rpc Genesis.ProductionIndentsService.ViewProductionIndentItemByID
      */
-    viewProductionIndentItemByID: ***REMOVED***
+    viewProductionIndentItemByID: {
       name: "ViewProductionIndentItemByID",
       I: Identifier,
       O: ProductionIndentItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved production indent items for given production indent ID
      *
      * @generated from rpc Genesis.ProductionIndentsService.ViewApprovedProductionIndentItems
      */
-    viewApprovedProductionIndentItems: ***REMOVED***
+    viewApprovedProductionIndentItems: {
       name: "ViewApprovedProductionIndentItems",
       I: IdentifierWithSearchKey,
       O: ProductionIndentsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved production indent items for given production indent ID
      *
      * @generated from rpc Genesis.ProductionIndentsService.ViewUnapprovedProductionIndentItems
      */
-    viewUnapprovedProductionIndentItems: ***REMOVED***
+    viewUnapprovedProductionIndentItems: {
       name: "ViewUnapprovedProductionIndentItems",
       I: IdentifierWithSearchKey,
       O: ProductionIndentsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the production indent item
      *
      * @generated from rpc Genesis.ProductionIndentsService.ViewProductionIndentItemHistory
      */
-    viewProductionIndentItemHistory: ***REMOVED***
+    viewProductionIndentItemHistory: {
       name: "ViewProductionIndentItemHistory",
       I: ProductionIndentItemHistoryRequest,
       O: ProductionIndentsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.ProductionIndentsService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: ProductionIndent,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.ProductionIndentsService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: ProductionIndentsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.ProductionIndentsService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: ProductionIndentsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.ProductionIndentsService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: ProductionIndentsServicePaginationReq,
       O: ProductionIndentsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.ProductionIndentsService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: ProductionIndentsServiceEntityPaginationReq,
       O: ProductionIndentsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View prospective families for the given production indent
      *
      * @generated from rpc Genesis.ProductionIndentsService.ViewProspectiveFamilies
      */
-    viewProspectiveFamilies: ***REMOVED***
+    viewProspectiveFamilies: {
       name: "ViewProspectiveFamilies",
       I: IdentifierWithSearchKey,
       O: FamiliesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View prospective production indent item info for the given family ID and production indent ID
      *
      * @generated from rpc Genesis.ProductionIndentsService.ViewProspectiveProductionIndentItem
      */
-    viewProspectiveProductionIndentItem: ***REMOVED***
+    viewProspectiveProductionIndentItem: {
       name: "ViewProspectiveProductionIndentItem",
       I: ProductionIndentItemProspectiveInfoRequest,
       O: ProductionIndentsServiceItemCreateRequest,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the added quantity for the family with the given request payload
      *
      * @generated from rpc Genesis.ProductionIndentsService.ViewAddedQuantityForFamily
      */
-    viewAddedQuantityForFamily: ***REMOVED***
+    viewAddedQuantityForFamily: {
       name: "ViewAddedQuantityForFamily",
       I: ProductionIndentItemProspectiveInfoRequest,
       O: QuantityResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.ProductionIndentsService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: ProductionIndentsServiceSearchAllReq,
       O: ProductionIndentsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.ProductionIndentsService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: ProductionIndentsServiceFilterReq,
       O: ProductionIndentsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.ProductionIndentsService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.EQUATION_REPLACEABLE_SORT_KEY
  */
-export declare enum EQUATION_REPLACEABLE_SORT_KEY ***REMOVED***
+export declare enum EQUATION_REPLACEABLE_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -62,14 +62,14 @@ export declare enum EQUATION_REPLACEABLE_SORT_KEY ***REMOVED***
      * @generated from enum value: EQUATION_REPLACEABLE_SORT_KEY_FAMILY_ID = 11;
      */
     EQUATION_REPLACEABLE_SORT_KEY_FAMILY_ID = 11
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.EquationsReplaceablesServiceCreateRequest
  */
-export declare class EquationsReplaceablesServiceCreateRequest extends Message<EquationsReplaceablesServiceCreateRequest> ***REMOVED***
+export declare class EquationsReplaceablesServiceCreateRequest extends Message<EquationsReplaceablesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -114,14 +114,14 @@ export declare class EquationsReplaceablesServiceCreateRequest extends Message<E
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceCreateRequest;
     static equals(a: EquationsReplaceablesServiceCreateRequest | PlainMessage<EquationsReplaceablesServiceCreateRequest> | undefined, b: EquationsReplaceablesServiceCreateRequest | PlainMessage<EquationsReplaceablesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.EquationsReplaceablesServiceUpdateRequest
  */
-export declare class EquationsReplaceablesServiceUpdateRequest extends Message<EquationsReplaceablesServiceUpdateRequest> ***REMOVED***
+export declare class EquationsReplaceablesServiceUpdateRequest extends Message<EquationsReplaceablesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -166,14 +166,14 @@ export declare class EquationsReplaceablesServiceUpdateRequest extends Message<E
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceUpdateRequest;
     static equals(a: EquationsReplaceablesServiceUpdateRequest | PlainMessage<EquationsReplaceablesServiceUpdateRequest> | undefined, b: EquationsReplaceablesServiceUpdateRequest | PlainMessage<EquationsReplaceablesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.EquationReplaceable
  */
-export declare class EquationReplaceable extends Message<EquationReplaceable> ***REMOVED***
+export declare class EquationReplaceable extends Message<EquationReplaceable> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -254,14 +254,14 @@ export declare class EquationReplaceable extends Message<EquationReplaceable> **
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationReplaceable;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationReplaceable;
     static equals(a: EquationReplaceable | PlainMessage<EquationReplaceable> | undefined, b: EquationReplaceable | PlainMessage<EquationReplaceable> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a equation replaceable
  *
  * @generated from message Genesis.EquationsReplaceablesServiceItemCreateRequest
  */
-export declare class EquationsReplaceablesServiceItemCreateRequest extends Message<EquationsReplaceablesServiceItemCreateRequest> ***REMOVED***
+export declare class EquationsReplaceablesServiceItemCreateRequest extends Message<EquationsReplaceablesServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -306,14 +306,14 @@ export declare class EquationsReplaceablesServiceItemCreateRequest extends Messa
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceItemCreateRequest;
     static equals(a: EquationsReplaceablesServiceItemCreateRequest | PlainMessage<EquationsReplaceablesServiceItemCreateRequest> | undefined, b: EquationsReplaceablesServiceItemCreateRequest | PlainMessage<EquationsReplaceablesServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a equation replaceable
  *
  * @generated from message Genesis.EquationsReplaceablesServiceItemUpdateRequest
  */
-export declare class EquationsReplaceablesServiceItemUpdateRequest extends Message<EquationsReplaceablesServiceItemUpdateRequest> ***REMOVED***
+export declare class EquationsReplaceablesServiceItemUpdateRequest extends Message<EquationsReplaceablesServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -352,14 +352,14 @@ export declare class EquationsReplaceablesServiceItemUpdateRequest extends Messa
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceItemUpdateRequest;
     static equals(a: EquationsReplaceablesServiceItemUpdateRequest | PlainMessage<EquationsReplaceablesServiceItemUpdateRequest> | undefined, b: EquationsReplaceablesServiceItemUpdateRequest | PlainMessage<EquationsReplaceablesServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a equation replaceable
  *
  * @generated from message Genesis.EquationReplaceableItem
  */
-export declare class EquationReplaceableItem extends Message<EquationReplaceableItem> ***REMOVED***
+export declare class EquationReplaceableItem extends Message<EquationReplaceableItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -428,14 +428,14 @@ export declare class EquationReplaceableItem extends Message<EquationReplaceable
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationReplaceableItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationReplaceableItem;
     static equals(a: EquationReplaceableItem | PlainMessage<EquationReplaceableItem> | undefined, b: EquationReplaceableItem | PlainMessage<EquationReplaceableItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of equations replaceables
  *
  * @generated from message Genesis.EquationsReplaceablesList
  */
-export declare class EquationsReplaceablesList extends Message<EquationsReplaceablesList> ***REMOVED***
+export declare class EquationsReplaceablesList extends Message<EquationsReplaceablesList> {
     /**
      * List of records
      *
@@ -450,14 +450,14 @@ export declare class EquationsReplaceablesList extends Message<EquationsReplacea
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsReplaceablesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsReplaceablesList;
     static equals(a: EquationsReplaceablesList | PlainMessage<EquationsReplaceablesList> | undefined, b: EquationsReplaceablesList | PlainMessage<EquationsReplaceablesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of equation replaceable items
  *
  * @generated from message Genesis.EquationsReplaceablesItemsList
  */
-export declare class EquationsReplaceablesItemsList extends Message<EquationsReplaceablesItemsList> ***REMOVED***
+export declare class EquationsReplaceablesItemsList extends Message<EquationsReplaceablesItemsList> {
     /**
      * List of records
      *
@@ -472,14 +472,14 @@ export declare class EquationsReplaceablesItemsList extends Message<EquationsRep
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsReplaceablesItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsReplaceablesItemsList;
     static equals(a: EquationsReplaceablesItemsList | PlainMessage<EquationsReplaceablesItemsList> | undefined, b: EquationsReplaceablesItemsList | PlainMessage<EquationsReplaceablesItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.EquationReplaceableItemHistoryRequest
  */
-export declare class EquationReplaceableItemHistoryRequest extends Message<EquationReplaceableItemHistoryRequest> ***REMOVED***
+export declare class EquationReplaceableItemHistoryRequest extends Message<EquationReplaceableItemHistoryRequest> {
     /**
      * Stores the ID of the equation replaceable
      *
@@ -500,14 +500,14 @@ export declare class EquationReplaceableItemHistoryRequest extends Message<Equat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationReplaceableItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationReplaceableItemHistoryRequest;
     static equals(a: EquationReplaceableItemHistoryRequest | PlainMessage<EquationReplaceableItemHistoryRequest> | undefined, b: EquationReplaceableItemHistoryRequest | PlainMessage<EquationReplaceableItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.EquationsReplaceablesServicePaginationReq
  */
-export declare class EquationsReplaceablesServicePaginationReq extends Message<EquationsReplaceablesServicePaginationReq> ***REMOVED***
+export declare class EquationsReplaceablesServicePaginationReq extends Message<EquationsReplaceablesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -552,14 +552,14 @@ export declare class EquationsReplaceablesServicePaginationReq extends Message<E
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsReplaceablesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsReplaceablesServicePaginationReq;
     static equals(a: EquationsReplaceablesServicePaginationReq | PlainMessage<EquationsReplaceablesServicePaginationReq> | undefined, b: EquationsReplaceablesServicePaginationReq | PlainMessage<EquationsReplaceablesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.EquationsReplaceablesServicePaginationResponse
  */
-export declare class EquationsReplaceablesServicePaginationResponse extends Message<EquationsReplaceablesServicePaginationResponse> ***REMOVED***
+export declare class EquationsReplaceablesServicePaginationResponse extends Message<EquationsReplaceablesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -592,14 +592,14 @@ export declare class EquationsReplaceablesServicePaginationResponse extends Mess
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsReplaceablesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsReplaceablesServicePaginationResponse;
     static equals(a: EquationsReplaceablesServicePaginationResponse | PlainMessage<EquationsReplaceablesServicePaginationResponse> | undefined, b: EquationsReplaceablesServicePaginationResponse | PlainMessage<EquationsReplaceablesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.EquationsReplaceablesServiceEntityPaginationReq
  */
-export declare class EquationsReplaceablesServiceEntityPaginationReq extends Message<EquationsReplaceablesServiceEntityPaginationReq> ***REMOVED***
+export declare class EquationsReplaceablesServiceEntityPaginationReq extends Message<EquationsReplaceablesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -644,14 +644,14 @@ export declare class EquationsReplaceablesServiceEntityPaginationReq extends Mes
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceEntityPaginationReq;
     static equals(a: EquationsReplaceablesServiceEntityPaginationReq | PlainMessage<EquationsReplaceablesServiceEntityPaginationReq> | undefined, b: EquationsReplaceablesServiceEntityPaginationReq | PlainMessage<EquationsReplaceablesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.EquationsReplaceablesServiceFilterReq
  */
-export declare class EquationsReplaceablesServiceFilterReq extends Message<EquationsReplaceablesServiceFilterReq> ***REMOVED***
+export declare class EquationsReplaceablesServiceFilterReq extends Message<EquationsReplaceablesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -762,14 +762,14 @@ export declare class EquationsReplaceablesServiceFilterReq extends Message<Equat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceFilterReq;
     static equals(a: EquationsReplaceablesServiceFilterReq | PlainMessage<EquationsReplaceablesServiceFilterReq> | undefined, b: EquationsReplaceablesServiceFilterReq | PlainMessage<EquationsReplaceablesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.EquationsReplaceablesServiceSearchAllReq
  */
-export declare class EquationsReplaceablesServiceSearchAllReq extends Message<EquationsReplaceablesServiceSearchAllReq> ***REMOVED***
+export declare class EquationsReplaceablesServiceSearchAllReq extends Message<EquationsReplaceablesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -826,5 +826,5 @@ export declare class EquationsReplaceablesServiceSearchAllReq extends Message<Eq
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsReplaceablesServiceSearchAllReq;
     static equals(a: EquationsReplaceablesServiceSearchAllReq | PlainMessage<EquationsReplaceablesServiceSearchAllReq> | undefined, b: EquationsReplaceablesServiceSearchAllReq | PlainMessage<EquationsReplaceablesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=equations_replaceables_pb.d.ts.map

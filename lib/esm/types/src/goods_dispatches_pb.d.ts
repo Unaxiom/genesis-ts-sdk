@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.GOODS_DISPATCH_SORT_KEY
  */
-export declare enum GOODS_DISPATCH_SORT_KEY ***REMOVED***
+export declare enum GOODS_DISPATCH_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -63,14 +63,14 @@ export declare enum GOODS_DISPATCH_SORT_KEY ***REMOVED***
      * @generated from enum value: GOODS_DISPATCH_SORT_KEY_FINAL_REF_NUMBER = 11;
      */
     GOODS_DISPATCH_SORT_KEY_FINAL_REF_NUMBER = 11
-***REMOVED***
+}
 /**
  *
  * Describes the available billing statuses
  *
  * @generated from enum Genesis.GOODS_DISPATCH_BILLING_STATUS
  */
-export declare enum GOODS_DISPATCH_BILLING_STATUS ***REMOVED***
+export declare enum GOODS_DISPATCH_BILLING_STATUS {
     /**
      * Any billing status
      *
@@ -89,14 +89,14 @@ export declare enum GOODS_DISPATCH_BILLING_STATUS ***REMOVED***
      * @generated from enum value: GOODS_DISPATCH_BILLING_STATUS_UNBILLED = 2;
      */
     GOODS_DISPATCH_BILLING_STATUS_UNBILLED = 2
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.GoodsDispatchesServiceCreateRequest
  */
-export declare class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatchesServiceCreateRequest> ***REMOVED***
+export declare class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatchesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -147,14 +147,14 @@ export declare class GoodsDispatchesServiceCreateRequest extends Message<GoodsDi
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceCreateRequest;
     static equals(a: GoodsDispatchesServiceCreateRequest | PlainMessage<GoodsDispatchesServiceCreateRequest> | undefined, b: GoodsDispatchesServiceCreateRequest | PlainMessage<GoodsDispatchesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.GoodsDispatchesServiceUpdateRequest
  */
-export declare class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDispatchesServiceUpdateRequest> ***REMOVED***
+export declare class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDispatchesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -199,14 +199,14 @@ export declare class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDi
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceUpdateRequest;
     static equals(a: GoodsDispatchesServiceUpdateRequest | PlainMessage<GoodsDispatchesServiceUpdateRequest> | undefined, b: GoodsDispatchesServiceUpdateRequest | PlainMessage<GoodsDispatchesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to perform an autofill request
  *
  * @generated from message Genesis.GoodsDispatchesServiceAutofillRequest
  */
-export declare class GoodsDispatchesServiceAutofillRequest extends Message<GoodsDispatchesServiceAutofillRequest> ***REMOVED***
+export declare class GoodsDispatchesServiceAutofillRequest extends Message<GoodsDispatchesServiceAutofillRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -233,14 +233,14 @@ export declare class GoodsDispatchesServiceAutofillRequest extends Message<Goods
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceAutofillRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceAutofillRequest;
     static equals(a: GoodsDispatchesServiceAutofillRequest | PlainMessage<GoodsDispatchesServiceAutofillRequest> | undefined, b: GoodsDispatchesServiceAutofillRequest | PlainMessage<GoodsDispatchesServiceAutofillRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.GoodsDispatch
  */
-export declare class GoodsDispatch extends Message<GoodsDispatch> ***REMOVED***
+export declare class GoodsDispatch extends Message<GoodsDispatch> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -327,14 +327,14 @@ export declare class GoodsDispatch extends Message<GoodsDispatch> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatch;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatch;
     static equals(a: GoodsDispatch | PlainMessage<GoodsDispatch> | undefined, b: GoodsDispatch | PlainMessage<GoodsDispatch> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a goods dispatch
  *
  * @generated from message Genesis.GoodsDispatchesServiceItemCreateRequest
  */
-export declare class GoodsDispatchesServiceItemCreateRequest extends Message<GoodsDispatchesServiceItemCreateRequest> ***REMOVED***
+export declare class GoodsDispatchesServiceItemCreateRequest extends Message<GoodsDispatchesServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -391,14 +391,14 @@ export declare class GoodsDispatchesServiceItemCreateRequest extends Message<Goo
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceItemCreateRequest;
     static equals(a: GoodsDispatchesServiceItemCreateRequest | PlainMessage<GoodsDispatchesServiceItemCreateRequest> | undefined, b: GoodsDispatchesServiceItemCreateRequest | PlainMessage<GoodsDispatchesServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a goods dispatch
  *
  * @generated from message Genesis.GoodsDispatchesServiceItemUpdateRequest
  */
-export declare class GoodsDispatchesServiceItemUpdateRequest extends Message<GoodsDispatchesServiceItemUpdateRequest> ***REMOVED***
+export declare class GoodsDispatchesServiceItemUpdateRequest extends Message<GoodsDispatchesServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -449,14 +449,14 @@ export declare class GoodsDispatchesServiceItemUpdateRequest extends Message<Goo
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceItemUpdateRequest;
     static equals(a: GoodsDispatchesServiceItemUpdateRequest | PlainMessage<GoodsDispatchesServiceItemUpdateRequest> | undefined, b: GoodsDispatchesServiceItemUpdateRequest | PlainMessage<GoodsDispatchesServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a goods dispatch
  *
  * @generated from message Genesis.GoodsDispatchItem
  */
-export declare class GoodsDispatchItem extends Message<GoodsDispatchItem> ***REMOVED***
+export declare class GoodsDispatchItem extends Message<GoodsDispatchItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -537,14 +537,14 @@ export declare class GoodsDispatchItem extends Message<GoodsDispatchItem> ***REM
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchItem;
     static equals(a: GoodsDispatchItem | PlainMessage<GoodsDispatchItem> | undefined, b: GoodsDispatchItem | PlainMessage<GoodsDispatchItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of goods dispatches
  *
  * @generated from message Genesis.GoodsDispatchesList
  */
-export declare class GoodsDispatchesList extends Message<GoodsDispatchesList> ***REMOVED***
+export declare class GoodsDispatchesList extends Message<GoodsDispatchesList> {
     /**
      * List of records
      *
@@ -559,14 +559,14 @@ export declare class GoodsDispatchesList extends Message<GoodsDispatchesList> **
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesList;
     static equals(a: GoodsDispatchesList | PlainMessage<GoodsDispatchesList> | undefined, b: GoodsDispatchesList | PlainMessage<GoodsDispatchesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of goods dispatch items
  *
  * @generated from message Genesis.GoodsDispatchesItemsList
  */
-export declare class GoodsDispatchesItemsList extends Message<GoodsDispatchesItemsList> ***REMOVED***
+export declare class GoodsDispatchesItemsList extends Message<GoodsDispatchesItemsList> {
     /**
      * List of records
      *
@@ -581,14 +581,14 @@ export declare class GoodsDispatchesItemsList extends Message<GoodsDispatchesIte
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesItemsList;
     static equals(a: GoodsDispatchesItemsList | PlainMessage<GoodsDispatchesItemsList> | undefined, b: GoodsDispatchesItemsList | PlainMessage<GoodsDispatchesItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.GoodsDispatchItemHistoryRequest
  */
-export declare class GoodsDispatchItemHistoryRequest extends Message<GoodsDispatchItemHistoryRequest> ***REMOVED***
+export declare class GoodsDispatchItemHistoryRequest extends Message<GoodsDispatchItemHistoryRequest> {
     /**
      * Stores the goods dispatch ID
      *
@@ -609,14 +609,14 @@ export declare class GoodsDispatchItemHistoryRequest extends Message<GoodsDispat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchItemHistoryRequest;
     static equals(a: GoodsDispatchItemHistoryRequest | PlainMessage<GoodsDispatchItemHistoryRequest> | undefined, b: GoodsDispatchItemHistoryRequest | PlainMessage<GoodsDispatchItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the info of a prospective goods dispatch item
  *
  * @generated from message Genesis.GoodsDispatchItemProspectiveInfoRequest
  */
-export declare class GoodsDispatchItemProspectiveInfoRequest extends Message<GoodsDispatchItemProspectiveInfoRequest> ***REMOVED***
+export declare class GoodsDispatchItemProspectiveInfoRequest extends Message<GoodsDispatchItemProspectiveInfoRequest> {
     /**
      * Stores the goods dispatch ID
      *
@@ -637,14 +637,14 @@ export declare class GoodsDispatchItemProspectiveInfoRequest extends Message<Goo
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchItemProspectiveInfoRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchItemProspectiveInfoRequest;
     static equals(a: GoodsDispatchItemProspectiveInfoRequest | PlainMessage<GoodsDispatchItemProspectiveInfoRequest> | undefined, b: GoodsDispatchItemProspectiveInfoRequest | PlainMessage<GoodsDispatchItemProspectiveInfoRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload to retrieve the quantity that has already been added for the specific ref_from, ref_id and family_id
  *
  * @generated from message Genesis.GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest
  */
-export declare class GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest extends Message<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest> ***REMOVED***
+export declare class GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest extends Message<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest> {
     /**
      * The associated reference
      *
@@ -671,14 +671,14 @@ export declare class GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest 
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest;
     static equals(a: GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest> | undefined, b: GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.GoodsDispatchesServicePaginationReq
  */
-export declare class GoodsDispatchesServicePaginationReq extends Message<GoodsDispatchesServicePaginationReq> ***REMOVED***
+export declare class GoodsDispatchesServicePaginationReq extends Message<GoodsDispatchesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -723,14 +723,14 @@ export declare class GoodsDispatchesServicePaginationReq extends Message<GoodsDi
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServicePaginationReq;
     static equals(a: GoodsDispatchesServicePaginationReq | PlainMessage<GoodsDispatchesServicePaginationReq> | undefined, b: GoodsDispatchesServicePaginationReq | PlainMessage<GoodsDispatchesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.GoodsDispatchesServicePaginationResponse
  */
-export declare class GoodsDispatchesServicePaginationResponse extends Message<GoodsDispatchesServicePaginationResponse> ***REMOVED***
+export declare class GoodsDispatchesServicePaginationResponse extends Message<GoodsDispatchesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -763,14 +763,14 @@ export declare class GoodsDispatchesServicePaginationResponse extends Message<Go
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServicePaginationResponse;
     static equals(a: GoodsDispatchesServicePaginationResponse | PlainMessage<GoodsDispatchesServicePaginationResponse> | undefined, b: GoodsDispatchesServicePaginationResponse | PlainMessage<GoodsDispatchesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.GoodsDispatchesServiceEntityPaginationReq
  */
-export declare class GoodsDispatchesServiceEntityPaginationReq extends Message<GoodsDispatchesServiceEntityPaginationReq> ***REMOVED***
+export declare class GoodsDispatchesServiceEntityPaginationReq extends Message<GoodsDispatchesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -815,14 +815,14 @@ export declare class GoodsDispatchesServiceEntityPaginationReq extends Message<G
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceEntityPaginationReq;
     static equals(a: GoodsDispatchesServiceEntityPaginationReq | PlainMessage<GoodsDispatchesServiceEntityPaginationReq> | undefined, b: GoodsDispatchesServiceEntityPaginationReq | PlainMessage<GoodsDispatchesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.GoodsDispatchesServiceFilterReq
  */
-export declare class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServiceFilterReq> ***REMOVED***
+export declare class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -951,14 +951,14 @@ export declare class GoodsDispatchesServiceFilterReq extends Message<GoodsDispat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceFilterReq;
     static equals(a: GoodsDispatchesServiceFilterReq | PlainMessage<GoodsDispatchesServiceFilterReq> | undefined, b: GoodsDispatchesServiceFilterReq | PlainMessage<GoodsDispatchesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.GoodsDispatchesServiceSearchAllReq
  */
-export declare class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesServiceSearchAllReq> ***REMOVED***
+export declare class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -1033,5 +1033,5 @@ export declare class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDis
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsDispatchesServiceSearchAllReq;
     static equals(a: GoodsDispatchesServiceSearchAllReq | PlainMessage<GoodsDispatchesServiceSearchAllReq> | undefined, b: GoodsDispatchesServiceSearchAllReq | PlainMessage<GoodsDispatchesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=goods_dispatches_pb.d.ts.map

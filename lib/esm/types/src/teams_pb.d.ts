@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.TEAM_SORT_KEY
  */
-export declare enum TEAM_SORT_KEY ***REMOVED***
+export declare enum TEAM_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -68,14 +68,14 @@ export declare enum TEAM_SORT_KEY ***REMOVED***
      * @generated from enum value: TEAM_SORT_KEY_LEAD_USER_ID = 12;
      */
     TEAM_SORT_KEY_LEAD_USER_ID = 12
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.TeamsServiceCreateRequest
  */
-export declare class TeamsServiceCreateRequest extends Message<TeamsServiceCreateRequest> ***REMOVED***
+export declare class TeamsServiceCreateRequest extends Message<TeamsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -126,14 +126,14 @@ export declare class TeamsServiceCreateRequest extends Message<TeamsServiceCreat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamsServiceCreateRequest;
     static equals(a: TeamsServiceCreateRequest | PlainMessage<TeamsServiceCreateRequest> | undefined, b: TeamsServiceCreateRequest | PlainMessage<TeamsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.TeamsServiceUpdateRequest
  */
-export declare class TeamsServiceUpdateRequest extends Message<TeamsServiceUpdateRequest> ***REMOVED***
+export declare class TeamsServiceUpdateRequest extends Message<TeamsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -190,14 +190,14 @@ export declare class TeamsServiceUpdateRequest extends Message<TeamsServiceUpdat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamsServiceUpdateRequest;
     static equals(a: TeamsServiceUpdateRequest | PlainMessage<TeamsServiceUpdateRequest> | undefined, b: TeamsServiceUpdateRequest | PlainMessage<TeamsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.Team
  */
-export declare class Team extends Message<Team> ***REMOVED***
+export declare class Team extends Message<Team> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -278,14 +278,14 @@ export declare class Team extends Message<Team> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Team;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Team;
     static equals(a: Team | PlainMessage<Team> | undefined, b: Team | PlainMessage<Team> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add a member to a team
  *
  * @generated from message Genesis.TeamsServiceMemberCreateRequest
  */
-export declare class TeamsServiceMemberCreateRequest extends Message<TeamsServiceMemberCreateRequest> ***REMOVED***
+export declare class TeamsServiceMemberCreateRequest extends Message<TeamsServiceMemberCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -312,14 +312,14 @@ export declare class TeamsServiceMemberCreateRequest extends Message<TeamsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamsServiceMemberCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamsServiceMemberCreateRequest;
     static equals(a: TeamsServiceMemberCreateRequest | PlainMessage<TeamsServiceMemberCreateRequest> | undefined, b: TeamsServiceMemberCreateRequest | PlainMessage<TeamsServiceMemberCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update a member in a team
  *
  * @generated from message Genesis.TeamsServiceMemberUpdateRequest
  */
-export declare class TeamsServiceMemberUpdateRequest extends Message<TeamsServiceMemberUpdateRequest> ***REMOVED***
+export declare class TeamsServiceMemberUpdateRequest extends Message<TeamsServiceMemberUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -340,14 +340,14 @@ export declare class TeamsServiceMemberUpdateRequest extends Message<TeamsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamsServiceMemberUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamsServiceMemberUpdateRequest;
     static equals(a: TeamsServiceMemberUpdateRequest | PlainMessage<TeamsServiceMemberUpdateRequest> | undefined, b: TeamsServiceMemberUpdateRequest | PlainMessage<TeamsServiceMemberUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute a member associated to a team
  *
  * @generated from message Genesis.TeamMember
  */
-export declare class TeamMember extends Message<TeamMember> ***REMOVED***
+export declare class TeamMember extends Message<TeamMember> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -398,14 +398,14 @@ export declare class TeamMember extends Message<TeamMember> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamMember;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamMember;
     static equals(a: TeamMember | PlainMessage<TeamMember> | undefined, b: TeamMember | PlainMessage<TeamMember> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of teams
  *
  * @generated from message Genesis.TeamsList
  */
-export declare class TeamsList extends Message<TeamsList> ***REMOVED***
+export declare class TeamsList extends Message<TeamsList> {
     /**
      * List of records
      *
@@ -420,14 +420,14 @@ export declare class TeamsList extends Message<TeamsList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamsList;
     static equals(a: TeamsList | PlainMessage<TeamsList> | undefined, b: TeamsList | PlainMessage<TeamsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of team members
  *
  * @generated from message Genesis.TeamsMembersList
  */
-export declare class TeamsMembersList extends Message<TeamsMembersList> ***REMOVED***
+export declare class TeamsMembersList extends Message<TeamsMembersList> {
     /**
      * List of records
      *
@@ -442,14 +442,14 @@ export declare class TeamsMembersList extends Message<TeamsMembersList> ***REMOV
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamsMembersList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamsMembersList;
     static equals(a: TeamsMembersList | PlainMessage<TeamsMembersList> | undefined, b: TeamsMembersList | PlainMessage<TeamsMembersList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.TeamMemberHistoryRequest
  */
-export declare class TeamMemberHistoryRequest extends Message<TeamMemberHistoryRequest> ***REMOVED***
+export declare class TeamMemberHistoryRequest extends Message<TeamMemberHistoryRequest> {
     /**
      * Stores the ID of the team
      *
@@ -470,14 +470,14 @@ export declare class TeamMemberHistoryRequest extends Message<TeamMemberHistoryR
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamMemberHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamMemberHistoryRequest;
     static equals(a: TeamMemberHistoryRequest | PlainMessage<TeamMemberHistoryRequest> | undefined, b: TeamMemberHistoryRequest | PlainMessage<TeamMemberHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.TeamsServicePaginationReq
  */
-export declare class TeamsServicePaginationReq extends Message<TeamsServicePaginationReq> ***REMOVED***
+export declare class TeamsServicePaginationReq extends Message<TeamsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -522,14 +522,14 @@ export declare class TeamsServicePaginationReq extends Message<TeamsServicePagin
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamsServicePaginationReq;
     static equals(a: TeamsServicePaginationReq | PlainMessage<TeamsServicePaginationReq> | undefined, b: TeamsServicePaginationReq | PlainMessage<TeamsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.TeamsServicePaginationResponse
  */
-export declare class TeamsServicePaginationResponse extends Message<TeamsServicePaginationResponse> ***REMOVED***
+export declare class TeamsServicePaginationResponse extends Message<TeamsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -562,14 +562,14 @@ export declare class TeamsServicePaginationResponse extends Message<TeamsService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamsServicePaginationResponse;
     static equals(a: TeamsServicePaginationResponse | PlainMessage<TeamsServicePaginationResponse> | undefined, b: TeamsServicePaginationResponse | PlainMessage<TeamsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.TeamsServiceEntityPaginationReq
  */
-export declare class TeamsServiceEntityPaginationReq extends Message<TeamsServiceEntityPaginationReq> ***REMOVED***
+export declare class TeamsServiceEntityPaginationReq extends Message<TeamsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -614,14 +614,14 @@ export declare class TeamsServiceEntityPaginationReq extends Message<TeamsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamsServiceEntityPaginationReq;
     static equals(a: TeamsServiceEntityPaginationReq | PlainMessage<TeamsServiceEntityPaginationReq> | undefined, b: TeamsServiceEntityPaginationReq | PlainMessage<TeamsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.TeamsServiceFilterReq
  */
-export declare class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> ***REMOVED***
+export declare class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -738,14 +738,14 @@ export declare class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamsServiceFilterReq;
     static equals(a: TeamsServiceFilterReq | PlainMessage<TeamsServiceFilterReq> | undefined, b: TeamsServiceFilterReq | PlainMessage<TeamsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.TeamsServiceSearchAllReq
  */
-export declare class TeamsServiceSearchAllReq extends Message<TeamsServiceSearchAllReq> ***REMOVED***
+export declare class TeamsServiceSearchAllReq extends Message<TeamsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -802,5 +802,5 @@ export declare class TeamsServiceSearchAllReq extends Message<TeamsServiceSearch
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TeamsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TeamsServiceSearchAllReq;
     static equals(a: TeamsServiceSearchAllReq | PlainMessage<TeamsServiceSearchAllReq> | undefined, b: TeamsServiceSearchAllReq | PlainMessage<TeamsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=teams_pb.d.ts.map

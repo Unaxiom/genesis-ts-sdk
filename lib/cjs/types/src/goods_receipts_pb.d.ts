@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.GOODS_RECEIPT_SORT_KEY
  */
-export declare enum GOODS_RECEIPT_SORT_KEY ***REMOVED***
+export declare enum GOODS_RECEIPT_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -75,14 +75,14 @@ export declare enum GOODS_RECEIPT_SORT_KEY ***REMOVED***
      * @generated from enum value: GOODS_RECEIPT_SORT_KEY_VENDOR_BILL_DATE = 13;
      */
     GOODS_RECEIPT_SORT_KEY_VENDOR_BILL_DATE = 13
-***REMOVED***
+}
 /**
  *
  * Describes the available billing statuses
  *
  * @generated from enum Genesis.GOODS_RECEIPT_BILLING_STATUS
  */
-export declare enum GOODS_RECEIPT_BILLING_STATUS ***REMOVED***
+export declare enum GOODS_RECEIPT_BILLING_STATUS {
     /**
      * Any billing status
      *
@@ -101,14 +101,14 @@ export declare enum GOODS_RECEIPT_BILLING_STATUS ***REMOVED***
      * @generated from enum value: GOODS_RECEIPT_BILLING_STATUS_UNBILLED = 2;
      */
     GOODS_RECEIPT_BILLING_STATUS_UNBILLED = 2
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.GoodsReceiptsServiceCreateRequest
  */
-export declare class GoodsReceiptsServiceCreateRequest extends Message<GoodsReceiptsServiceCreateRequest> ***REMOVED***
+export declare class GoodsReceiptsServiceCreateRequest extends Message<GoodsReceiptsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -171,14 +171,14 @@ export declare class GoodsReceiptsServiceCreateRequest extends Message<GoodsRece
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceCreateRequest;
     static equals(a: GoodsReceiptsServiceCreateRequest | PlainMessage<GoodsReceiptsServiceCreateRequest> | undefined, b: GoodsReceiptsServiceCreateRequest | PlainMessage<GoodsReceiptsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.GoodsReceiptsServiceUpdateRequest
  */
-export declare class GoodsReceiptsServiceUpdateRequest extends Message<GoodsReceiptsServiceUpdateRequest> ***REMOVED***
+export declare class GoodsReceiptsServiceUpdateRequest extends Message<GoodsReceiptsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -235,14 +235,14 @@ export declare class GoodsReceiptsServiceUpdateRequest extends Message<GoodsRece
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceUpdateRequest;
     static equals(a: GoodsReceiptsServiceUpdateRequest | PlainMessage<GoodsReceiptsServiceUpdateRequest> | undefined, b: GoodsReceiptsServiceUpdateRequest | PlainMessage<GoodsReceiptsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to perform an autofill request
  *
  * @generated from message Genesis.GoodsReceiptsServiceAutofillRequest
  */
-export declare class GoodsReceiptsServiceAutofillRequest extends Message<GoodsReceiptsServiceAutofillRequest> ***REMOVED***
+export declare class GoodsReceiptsServiceAutofillRequest extends Message<GoodsReceiptsServiceAutofillRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -263,14 +263,14 @@ export declare class GoodsReceiptsServiceAutofillRequest extends Message<GoodsRe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceAutofillRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceAutofillRequest;
     static equals(a: GoodsReceiptsServiceAutofillRequest | PlainMessage<GoodsReceiptsServiceAutofillRequest> | undefined, b: GoodsReceiptsServiceAutofillRequest | PlainMessage<GoodsReceiptsServiceAutofillRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.GoodsReceipt
  */
-export declare class GoodsReceipt extends Message<GoodsReceipt> ***REMOVED***
+export declare class GoodsReceipt extends Message<GoodsReceipt> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -369,14 +369,14 @@ export declare class GoodsReceipt extends Message<GoodsReceipt> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceipt;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceipt;
     static equals(a: GoodsReceipt | PlainMessage<GoodsReceipt> | undefined, b: GoodsReceipt | PlainMessage<GoodsReceipt> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a goods receipt
  *
  * @generated from message Genesis.GoodsReceiptsServiceItemCreateRequest
  */
-export declare class GoodsReceiptsServiceItemCreateRequest extends Message<GoodsReceiptsServiceItemCreateRequest> ***REMOVED***
+export declare class GoodsReceiptsServiceItemCreateRequest extends Message<GoodsReceiptsServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -421,14 +421,14 @@ export declare class GoodsReceiptsServiceItemCreateRequest extends Message<Goods
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceItemCreateRequest;
     static equals(a: GoodsReceiptsServiceItemCreateRequest | PlainMessage<GoodsReceiptsServiceItemCreateRequest> | undefined, b: GoodsReceiptsServiceItemCreateRequest | PlainMessage<GoodsReceiptsServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a goods receipt
  *
  * @generated from message Genesis.GoodsReceiptsServiceItemUpdateRequest
  */
-export declare class GoodsReceiptsServiceItemUpdateRequest extends Message<GoodsReceiptsServiceItemUpdateRequest> ***REMOVED***
+export declare class GoodsReceiptsServiceItemUpdateRequest extends Message<GoodsReceiptsServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -467,14 +467,14 @@ export declare class GoodsReceiptsServiceItemUpdateRequest extends Message<Goods
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceItemUpdateRequest;
     static equals(a: GoodsReceiptsServiceItemUpdateRequest | PlainMessage<GoodsReceiptsServiceItemUpdateRequest> | undefined, b: GoodsReceiptsServiceItemUpdateRequest | PlainMessage<GoodsReceiptsServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a goods receipt
  *
  * @generated from message Genesis.GoodsReceiptItem
  */
-export declare class GoodsReceiptItem extends Message<GoodsReceiptItem> ***REMOVED***
+export declare class GoodsReceiptItem extends Message<GoodsReceiptItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -543,14 +543,14 @@ export declare class GoodsReceiptItem extends Message<GoodsReceiptItem> ***REMOV
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptItem;
     static equals(a: GoodsReceiptItem | PlainMessage<GoodsReceiptItem> | undefined, b: GoodsReceiptItem | PlainMessage<GoodsReceiptItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of goods receipts
  *
  * @generated from message Genesis.GoodsReceiptsList
  */
-export declare class GoodsReceiptsList extends Message<GoodsReceiptsList> ***REMOVED***
+export declare class GoodsReceiptsList extends Message<GoodsReceiptsList> {
     /**
      * List of records
      *
@@ -565,14 +565,14 @@ export declare class GoodsReceiptsList extends Message<GoodsReceiptsList> ***REM
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsList;
     static equals(a: GoodsReceiptsList | PlainMessage<GoodsReceiptsList> | undefined, b: GoodsReceiptsList | PlainMessage<GoodsReceiptsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of goods receipt items
  *
  * @generated from message Genesis.GoodsReceiptsItemsList
  */
-export declare class GoodsReceiptsItemsList extends Message<GoodsReceiptsItemsList> ***REMOVED***
+export declare class GoodsReceiptsItemsList extends Message<GoodsReceiptsItemsList> {
     /**
      * List of records
      *
@@ -587,14 +587,14 @@ export declare class GoodsReceiptsItemsList extends Message<GoodsReceiptsItemsLi
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsItemsList;
     static equals(a: GoodsReceiptsItemsList | PlainMessage<GoodsReceiptsItemsList> | undefined, b: GoodsReceiptsItemsList | PlainMessage<GoodsReceiptsItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.GoodsReceiptItemHistoryRequest
  */
-export declare class GoodsReceiptItemHistoryRequest extends Message<GoodsReceiptItemHistoryRequest> ***REMOVED***
+export declare class GoodsReceiptItemHistoryRequest extends Message<GoodsReceiptItemHistoryRequest> {
     /**
      * Stores the goods receipt ID
      *
@@ -615,14 +615,14 @@ export declare class GoodsReceiptItemHistoryRequest extends Message<GoodsReceipt
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptItemHistoryRequest;
     static equals(a: GoodsReceiptItemHistoryRequest | PlainMessage<GoodsReceiptItemHistoryRequest> | undefined, b: GoodsReceiptItemHistoryRequest | PlainMessage<GoodsReceiptItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the info of a prospective goods receipt item
  *
  * @generated from message Genesis.GoodsReceiptItemProspectiveInfoRequest
  */
-export declare class GoodsReceiptItemProspectiveInfoRequest extends Message<GoodsReceiptItemProspectiveInfoRequest> ***REMOVED***
+export declare class GoodsReceiptItemProspectiveInfoRequest extends Message<GoodsReceiptItemProspectiveInfoRequest> {
     /**
      * Stores the goods receipt ID
      *
@@ -643,14 +643,14 @@ export declare class GoodsReceiptItemProspectiveInfoRequest extends Message<Good
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptItemProspectiveInfoRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptItemProspectiveInfoRequest;
     static equals(a: GoodsReceiptItemProspectiveInfoRequest | PlainMessage<GoodsReceiptItemProspectiveInfoRequest> | undefined, b: GoodsReceiptItemProspectiveInfoRequest | PlainMessage<GoodsReceiptItemProspectiveInfoRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload to retrieve the quantity that has already been added for the specific ref_from, ref_id and family_id
  *
  * @generated from message Genesis.GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest
  */
-export declare class GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest extends Message<GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest> ***REMOVED***
+export declare class GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest extends Message<GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest> {
     /**
      * The associated reference
      *
@@ -677,14 +677,14 @@ export declare class GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest ex
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest;
     static equals(a: GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest> | undefined, b: GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.GoodsReceiptsServicePaginationReq
  */
-export declare class GoodsReceiptsServicePaginationReq extends Message<GoodsReceiptsServicePaginationReq> ***REMOVED***
+export declare class GoodsReceiptsServicePaginationReq extends Message<GoodsReceiptsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -729,14 +729,14 @@ export declare class GoodsReceiptsServicePaginationReq extends Message<GoodsRece
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServicePaginationReq;
     static equals(a: GoodsReceiptsServicePaginationReq | PlainMessage<GoodsReceiptsServicePaginationReq> | undefined, b: GoodsReceiptsServicePaginationReq | PlainMessage<GoodsReceiptsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.GoodsReceiptsServicePaginationResponse
  */
-export declare class GoodsReceiptsServicePaginationResponse extends Message<GoodsReceiptsServicePaginationResponse> ***REMOVED***
+export declare class GoodsReceiptsServicePaginationResponse extends Message<GoodsReceiptsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -769,14 +769,14 @@ export declare class GoodsReceiptsServicePaginationResponse extends Message<Good
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServicePaginationResponse;
     static equals(a: GoodsReceiptsServicePaginationResponse | PlainMessage<GoodsReceiptsServicePaginationResponse> | undefined, b: GoodsReceiptsServicePaginationResponse | PlainMessage<GoodsReceiptsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.GoodsReceiptsServiceEntityPaginationReq
  */
-export declare class GoodsReceiptsServiceEntityPaginationReq extends Message<GoodsReceiptsServiceEntityPaginationReq> ***REMOVED***
+export declare class GoodsReceiptsServiceEntityPaginationReq extends Message<GoodsReceiptsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -821,14 +821,14 @@ export declare class GoodsReceiptsServiceEntityPaginationReq extends Message<Goo
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceEntityPaginationReq;
     static equals(a: GoodsReceiptsServiceEntityPaginationReq | PlainMessage<GoodsReceiptsServiceEntityPaginationReq> | undefined, b: GoodsReceiptsServiceEntityPaginationReq | PlainMessage<GoodsReceiptsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.GoodsReceiptsServiceFilterReq
  */
-export declare class GoodsReceiptsServiceFilterReq extends Message<GoodsReceiptsServiceFilterReq> ***REMOVED***
+export declare class GoodsReceiptsServiceFilterReq extends Message<GoodsReceiptsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -975,14 +975,14 @@ export declare class GoodsReceiptsServiceFilterReq extends Message<GoodsReceipts
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceFilterReq;
     static equals(a: GoodsReceiptsServiceFilterReq | PlainMessage<GoodsReceiptsServiceFilterReq> | undefined, b: GoodsReceiptsServiceFilterReq | PlainMessage<GoodsReceiptsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.GoodsReceiptsServiceSearchAllReq
  */
-export declare class GoodsReceiptsServiceSearchAllReq extends Message<GoodsReceiptsServiceSearchAllReq> ***REMOVED***
+export declare class GoodsReceiptsServiceSearchAllReq extends Message<GoodsReceiptsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -1057,5 +1057,5 @@ export declare class GoodsReceiptsServiceSearchAllReq extends Message<GoodsRecei
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceSearchAllReq;
     static equals(a: GoodsReceiptsServiceSearchAllReq | PlainMessage<GoodsReceiptsServiceSearchAllReq> | undefined, b: GoodsReceiptsServiceSearchAllReq | PlainMessage<GoodsReceiptsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=goods_receipts_pb.d.ts.map

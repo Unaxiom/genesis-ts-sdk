@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** LeavesLogsCountEmployeeLeavesRequest, LeavesLogsList, LeavesLogsServiceFilterReq ***REMOVED*** from "./leaves_logs_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** CountResponse ***REMOVED*** from "./base_pb.js";
+import { LeavesLogsCountEmployeeLeavesRequest, LeavesLogsList, LeavesLogsServiceFilterReq } from "./leaves_logs_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
+import { CountResponse } from "./base_pb.js";
 
 /**
  *
@@ -16,9 +16,9 @@ import ***REMOVED*** CountResponse ***REMOVED*** from "./base_pb.js";
  *
  * @generated from service Genesis.LeavesLogsService
  */
-export const LeavesLogsService = ***REMOVED***
+export const LeavesLogsService = {
   typeName: "Genesis.LeavesLogsService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * ------------------------------------------------------
      * Search operations are listed below
@@ -26,23 +26,23 @@ export const LeavesLogsService = ***REMOVED***
      *
      * @generated from rpc Genesis.LeavesLogsService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: LeavesLogsServiceFilterReq,
       O: LeavesLogsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count leaves of employee
      *
      * @generated from rpc Genesis.LeavesLogsService.CountEmployeeLeaves
      */
-    countEmployeeLeaves: ***REMOVED***
+    countEmployeeLeaves: {
       name: "CountEmployeeLeaves",
       I: LeavesLogsCountEmployeeLeavesRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

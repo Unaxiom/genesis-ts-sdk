@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -14,7 +14,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.PURCHASE_RETURN_SORT_KEY
  */
-export enum PURCHASE_RETURN_SORT_KEY ***REMOVED***
+export enum PURCHASE_RETURN_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -77,18 +77,18 @@ export enum PURCHASE_RETURN_SORT_KEY ***REMOVED***
    * @generated from enum value: PURCHASE_RETURN_SORT_KEY_FINAL_REF_NUMBER = 11;
    */
   PURCHASE_RETURN_SORT_KEY_FINAL_REF_NUMBER = 11,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(PURCHASE_RETURN_SORT_KEY)
 proto3.util.setEnumType(PURCHASE_RETURN_SORT_KEY, "Genesis.PURCHASE_RETURN_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "PURCHASE_RETURN_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "PURCHASE_RETURN_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "PURCHASE_RETURN_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "PURCHASE_RETURN_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "PURCHASE_RETURN_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "PURCHASE_RETURN_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "PURCHASE_RETURN_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "PURCHASE_RETURN_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "PURCHASE_RETURN_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
+  { no: 0, name: "PURCHASE_RETURN_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "PURCHASE_RETURN_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "PURCHASE_RETURN_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "PURCHASE_RETURN_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "PURCHASE_RETURN_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "PURCHASE_RETURN_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "PURCHASE_RETURN_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "PURCHASE_RETURN_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "PURCHASE_RETURN_SORT_KEY_FINAL_REF_NUMBER" },
 ]);
 
 /**
@@ -97,7 +97,7 @@ proto3.util.setEnumType(PURCHASE_RETURN_SORT_KEY, "Genesis.PURCHASE_RETURN_SORT_
  *
  * @generated from enum Genesis.PURCHASE_RETURN_BILLING_STATUS
  */
-export enum PURCHASE_RETURN_BILLING_STATUS ***REMOVED***
+export enum PURCHASE_RETURN_BILLING_STATUS {
   /**
    * Any billing status
    *
@@ -118,12 +118,12 @@ export enum PURCHASE_RETURN_BILLING_STATUS ***REMOVED***
    * @generated from enum value: PURCHASE_RETURN_BILLING_STATUS_UNBILLED = 2;
    */
   PURCHASE_RETURN_BILLING_STATUS_UNBILLED = 2,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(PURCHASE_RETURN_BILLING_STATUS)
 proto3.util.setEnumType(PURCHASE_RETURN_BILLING_STATUS, "Genesis.PURCHASE_RETURN_BILLING_STATUS", [
-  ***REMOVED*** no: 0, name: "PURCHASE_RETURN_BILLING_STATUS_ANY_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "PURCHASE_RETURN_BILLING_STATUS_BILLED" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "PURCHASE_RETURN_BILLING_STATUS_UNBILLED" ***REMOVED***,
+  { no: 0, name: "PURCHASE_RETURN_BILLING_STATUS_ANY_UNSPECIFIED" },
+  { no: 1, name: "PURCHASE_RETURN_BILLING_STATUS_BILLED" },
+  { no: 2, name: "PURCHASE_RETURN_BILLING_STATUS_UNBILLED" },
 ]);
 
 /**
@@ -132,7 +132,7 @@ proto3.util.setEnumType(PURCHASE_RETURN_BILLING_STATUS, "Genesis.PURCHASE_RETURN
  *
  * @generated from message Genesis.PurchasesReturnsServiceCreateRequest
  */
-export class PurchasesReturnsServiceCreateRequest extends Message<PurchasesReturnsServiceCreateRequest> ***REMOVED***
+export class PurchasesReturnsServiceCreateRequest extends Message<PurchasesReturnsServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -182,39 +182,39 @@ export class PurchasesReturnsServiceCreateRequest extends Message<PurchasesRetur
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<PurchasesReturnsServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesReturnsServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesReturnsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceCreateRequest {
     return new PurchasesReturnsServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceCreateRequest {
     return new PurchasesReturnsServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceCreateRequest {
     return new PurchasesReturnsServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesReturnsServiceCreateRequest | PlainMessage<PurchasesReturnsServiceCreateRequest> | undefined, b: PurchasesReturnsServiceCreateRequest | PlainMessage<PurchasesReturnsServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesReturnsServiceCreateRequest | PlainMessage<PurchasesReturnsServiceCreateRequest> | undefined, b: PurchasesReturnsServiceCreateRequest | PlainMessage<PurchasesReturnsServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(PurchasesReturnsServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -222,7 +222,7 @@ export class PurchasesReturnsServiceCreateRequest extends Message<PurchasesRetur
  *
  * @generated from message Genesis.PurchasesReturnsServiceUpdateRequest
  */
-export class PurchasesReturnsServiceUpdateRequest extends Message<PurchasesReturnsServiceUpdateRequest> ***REMOVED***
+export class PurchasesReturnsServiceUpdateRequest extends Message<PurchasesReturnsServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -265,38 +265,38 @@ export class PurchasesReturnsServiceUpdateRequest extends Message<PurchasesRetur
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<PurchasesReturnsServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesReturnsServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesReturnsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceUpdateRequest {
     return new PurchasesReturnsServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceUpdateRequest {
     return new PurchasesReturnsServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceUpdateRequest {
     return new PurchasesReturnsServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesReturnsServiceUpdateRequest | PlainMessage<PurchasesReturnsServiceUpdateRequest> | undefined, b: PurchasesReturnsServiceUpdateRequest | PlainMessage<PurchasesReturnsServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesReturnsServiceUpdateRequest | PlainMessage<PurchasesReturnsServiceUpdateRequest> | undefined, b: PurchasesReturnsServiceUpdateRequest | PlainMessage<PurchasesReturnsServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(PurchasesReturnsServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -304,7 +304,7 @@ export class PurchasesReturnsServiceUpdateRequest extends Message<PurchasesRetur
  *
  * @generated from message Genesis.PurchaseReturn
  */
-export class PurchaseReturn extends Message<PurchaseReturn> ***REMOVED***
+export class PurchaseReturn extends Message<PurchaseReturn> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -396,45 +396,45 @@ export class PurchaseReturn extends Message<PurchaseReturn> ***REMOVED***
    */
   formData: FormFieldDatum[] = [];
 
-  constructor(data?: PartialMessage<PurchaseReturn>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchaseReturn>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchaseReturn";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "list", kind: "message", T: PurchaseReturnItem, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "list", kind: "message", T: PurchaseReturnItem, repeated: true },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseReturn ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseReturn {
     return new PurchaseReturn().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseReturn ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseReturn {
     return new PurchaseReturn().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseReturn ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseReturn {
     return new PurchaseReturn().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchaseReturn | PlainMessage<PurchaseReturn> | undefined, b: PurchaseReturn | PlainMessage<PurchaseReturn> | undefined): boolean ***REMOVED***
+  static equals(a: PurchaseReturn | PlainMessage<PurchaseReturn> | undefined, b: PurchaseReturn | PlainMessage<PurchaseReturn> | undefined): boolean {
     return proto3.util.equals(PurchaseReturn, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -442,7 +442,7 @@ export class PurchaseReturn extends Message<PurchaseReturn> ***REMOVED***
  *
  * @generated from message Genesis.PurchasesReturnsServiceItemCreateRequest
  */
-export class PurchasesReturnsServiceItemCreateRequest extends Message<PurchasesReturnsServiceItemCreateRequest> ***REMOVED***
+export class PurchasesReturnsServiceItemCreateRequest extends Message<PurchasesReturnsServiceItemCreateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -492,39 +492,39 @@ export class PurchasesReturnsServiceItemCreateRequest extends Message<PurchasesR
    */
   vendorQuantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<PurchasesReturnsServiceItemCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesReturnsServiceItemCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesReturnsServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "purchase_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "vendor_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "vendor_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "purchase_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "vendor_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "vendor_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceItemCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceItemCreateRequest {
     return new PurchasesReturnsServiceItemCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceItemCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceItemCreateRequest {
     return new PurchasesReturnsServiceItemCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceItemCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceItemCreateRequest {
     return new PurchasesReturnsServiceItemCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesReturnsServiceItemCreateRequest | PlainMessage<PurchasesReturnsServiceItemCreateRequest> | undefined, b: PurchasesReturnsServiceItemCreateRequest | PlainMessage<PurchasesReturnsServiceItemCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesReturnsServiceItemCreateRequest | PlainMessage<PurchasesReturnsServiceItemCreateRequest> | undefined, b: PurchasesReturnsServiceItemCreateRequest | PlainMessage<PurchasesReturnsServiceItemCreateRequest> | undefined): boolean {
     return proto3.util.equals(PurchasesReturnsServiceItemCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -532,7 +532,7 @@ export class PurchasesReturnsServiceItemCreateRequest extends Message<PurchasesR
  *
  * @generated from message Genesis.PurchasesReturnsServiceItemUpdateRequest
  */
-export class PurchasesReturnsServiceItemUpdateRequest extends Message<PurchasesReturnsServiceItemUpdateRequest> ***REMOVED***
+export class PurchasesReturnsServiceItemUpdateRequest extends Message<PurchasesReturnsServiceItemUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -575,38 +575,38 @@ export class PurchasesReturnsServiceItemUpdateRequest extends Message<PurchasesR
    */
   vendorQuantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<PurchasesReturnsServiceItemUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesReturnsServiceItemUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesReturnsServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "vendor_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "vendor_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "vendor_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "vendor_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceItemUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceItemUpdateRequest {
     return new PurchasesReturnsServiceItemUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceItemUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceItemUpdateRequest {
     return new PurchasesReturnsServiceItemUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceItemUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceItemUpdateRequest {
     return new PurchasesReturnsServiceItemUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesReturnsServiceItemUpdateRequest | PlainMessage<PurchasesReturnsServiceItemUpdateRequest> | undefined, b: PurchasesReturnsServiceItemUpdateRequest | PlainMessage<PurchasesReturnsServiceItemUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesReturnsServiceItemUpdateRequest | PlainMessage<PurchasesReturnsServiceItemUpdateRequest> | undefined, b: PurchasesReturnsServiceItemUpdateRequest | PlainMessage<PurchasesReturnsServiceItemUpdateRequest> | undefined): boolean {
     return proto3.util.equals(PurchasesReturnsServiceItemUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -614,7 +614,7 @@ export class PurchasesReturnsServiceItemUpdateRequest extends Message<PurchasesR
  *
  * @generated from message Genesis.PurchaseReturnItem
  */
-export class PurchaseReturnItem extends Message<PurchaseReturnItem> ***REMOVED***
+export class PurchaseReturnItem extends Message<PurchaseReturnItem> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -692,43 +692,43 @@ export class PurchaseReturnItem extends Message<PurchaseReturnItem> ***REMOVED**
    */
   vendorQuantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<PurchaseReturnItem>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchaseReturnItem>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchaseReturnItem";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "purchase_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "vendor_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "vendor_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "purchase_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "vendor_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "vendor_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseReturnItem ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseReturnItem {
     return new PurchaseReturnItem().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseReturnItem ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseReturnItem {
     return new PurchaseReturnItem().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseReturnItem ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseReturnItem {
     return new PurchaseReturnItem().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchaseReturnItem | PlainMessage<PurchaseReturnItem> | undefined, b: PurchaseReturnItem | PlainMessage<PurchaseReturnItem> | undefined): boolean ***REMOVED***
+  static equals(a: PurchaseReturnItem | PlainMessage<PurchaseReturnItem> | undefined, b: PurchaseReturnItem | PlainMessage<PurchaseReturnItem> | undefined): boolean {
     return proto3.util.equals(PurchaseReturnItem, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -736,7 +736,7 @@ export class PurchaseReturnItem extends Message<PurchaseReturnItem> ***REMOVED**
  *
  * @generated from message Genesis.PurchasesReturnsList
  */
-export class PurchasesReturnsList extends Message<PurchasesReturnsList> ***REMOVED***
+export class PurchasesReturnsList extends Message<PurchasesReturnsList> {
   /**
    * List of records
    *
@@ -744,33 +744,33 @@ export class PurchasesReturnsList extends Message<PurchasesReturnsList> ***REMOV
    */
   list: PurchaseReturn[] = [];
 
-  constructor(data?: PartialMessage<PurchasesReturnsList>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesReturnsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesReturnsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: PurchaseReturn, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: PurchaseReturn, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsList {
     return new PurchasesReturnsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsList {
     return new PurchasesReturnsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsList {
     return new PurchasesReturnsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesReturnsList | PlainMessage<PurchasesReturnsList> | undefined, b: PurchasesReturnsList | PlainMessage<PurchasesReturnsList> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesReturnsList | PlainMessage<PurchasesReturnsList> | undefined, b: PurchasesReturnsList | PlainMessage<PurchasesReturnsList> | undefined): boolean {
     return proto3.util.equals(PurchasesReturnsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -778,7 +778,7 @@ export class PurchasesReturnsList extends Message<PurchasesReturnsList> ***REMOV
  *
  * @generated from message Genesis.PurchasesReturnsItemsList
  */
-export class PurchasesReturnsItemsList extends Message<PurchasesReturnsItemsList> ***REMOVED***
+export class PurchasesReturnsItemsList extends Message<PurchasesReturnsItemsList> {
   /**
    * List of records
    *
@@ -786,33 +786,33 @@ export class PurchasesReturnsItemsList extends Message<PurchasesReturnsItemsList
    */
   list: PurchaseReturnItem[] = [];
 
-  constructor(data?: PartialMessage<PurchasesReturnsItemsList>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesReturnsItemsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesReturnsItemsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: PurchaseReturnItem, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: PurchaseReturnItem, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsItemsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsItemsList {
     return new PurchasesReturnsItemsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsItemsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsItemsList {
     return new PurchasesReturnsItemsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsItemsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsItemsList {
     return new PurchasesReturnsItemsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesReturnsItemsList | PlainMessage<PurchasesReturnsItemsList> | undefined, b: PurchasesReturnsItemsList | PlainMessage<PurchasesReturnsItemsList> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesReturnsItemsList | PlainMessage<PurchasesReturnsItemsList> | undefined, b: PurchasesReturnsItemsList | PlainMessage<PurchasesReturnsItemsList> | undefined): boolean {
     return proto3.util.equals(PurchasesReturnsItemsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -820,7 +820,7 @@ export class PurchasesReturnsItemsList extends Message<PurchasesReturnsItemsList
  *
  * @generated from message Genesis.PurchaseReturnItemHistoryRequest
  */
-export class PurchaseReturnItemHistoryRequest extends Message<PurchaseReturnItemHistoryRequest> ***REMOVED***
+export class PurchaseReturnItemHistoryRequest extends Message<PurchaseReturnItemHistoryRequest> {
   /**
    * Stores the purchase return ID
    *
@@ -835,34 +835,34 @@ export class PurchaseReturnItemHistoryRequest extends Message<PurchaseReturnItem
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<PurchaseReturnItemHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchaseReturnItemHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchaseReturnItemHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "purchase_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "purchase_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseReturnItemHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseReturnItemHistoryRequest {
     return new PurchaseReturnItemHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseReturnItemHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseReturnItemHistoryRequest {
     return new PurchaseReturnItemHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseReturnItemHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseReturnItemHistoryRequest {
     return new PurchaseReturnItemHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchaseReturnItemHistoryRequest | PlainMessage<PurchaseReturnItemHistoryRequest> | undefined, b: PurchaseReturnItemHistoryRequest | PlainMessage<PurchaseReturnItemHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: PurchaseReturnItemHistoryRequest | PlainMessage<PurchaseReturnItemHistoryRequest> | undefined, b: PurchaseReturnItemHistoryRequest | PlainMessage<PurchaseReturnItemHistoryRequest> | undefined): boolean {
     return proto3.util.equals(PurchaseReturnItemHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -870,7 +870,7 @@ export class PurchaseReturnItemHistoryRequest extends Message<PurchaseReturnItem
  *
  * @generated from message Genesis.PurchaseReturnItemProspectiveInfoRequest
  */
-export class PurchaseReturnItemProspectiveInfoRequest extends Message<PurchaseReturnItemProspectiveInfoRequest> ***REMOVED***
+export class PurchaseReturnItemProspectiveInfoRequest extends Message<PurchaseReturnItemProspectiveInfoRequest> {
   /**
    * Stores the purchase return ID
    *
@@ -885,34 +885,34 @@ export class PurchaseReturnItemProspectiveInfoRequest extends Message<PurchaseRe
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<PurchaseReturnItemProspectiveInfoRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchaseReturnItemProspectiveInfoRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchaseReturnItemProspectiveInfoRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "purchase_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "purchase_return_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseReturnItemProspectiveInfoRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchaseReturnItemProspectiveInfoRequest {
     return new PurchaseReturnItemProspectiveInfoRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseReturnItemProspectiveInfoRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchaseReturnItemProspectiveInfoRequest {
     return new PurchaseReturnItemProspectiveInfoRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseReturnItemProspectiveInfoRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchaseReturnItemProspectiveInfoRequest {
     return new PurchaseReturnItemProspectiveInfoRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchaseReturnItemProspectiveInfoRequest | PlainMessage<PurchaseReturnItemProspectiveInfoRequest> | undefined, b: PurchaseReturnItemProspectiveInfoRequest | PlainMessage<PurchaseReturnItemProspectiveInfoRequest> | undefined): boolean ***REMOVED***
+  static equals(a: PurchaseReturnItemProspectiveInfoRequest | PlainMessage<PurchaseReturnItemProspectiveInfoRequest> | undefined, b: PurchaseReturnItemProspectiveInfoRequest | PlainMessage<PurchaseReturnItemProspectiveInfoRequest> | undefined): boolean {
     return proto3.util.equals(PurchaseReturnItemProspectiveInfoRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -920,7 +920,7 @@ export class PurchaseReturnItemProspectiveInfoRequest extends Message<PurchaseRe
  *
  * @generated from message Genesis.PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest
  */
-export class PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest extends Message<PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest> ***REMOVED***
+export class PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest extends Message<PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest> {
   /**
    * The associated reference
    *
@@ -942,35 +942,35 @@ export class PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest extends
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest {
     return new PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest {
     return new PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest {
     return new PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest> | undefined, b: PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest> | undefined, b: PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest> | undefined): boolean {
     return proto3.util.equals(PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -978,7 +978,7 @@ export class PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest extends
  *
  * @generated from message Genesis.PurchasesReturnsServicePaginationReq
  */
-export class PurchasesReturnsServicePaginationReq extends Message<PurchasesReturnsServicePaginationReq> ***REMOVED***
+export class PurchasesReturnsServicePaginationReq extends Message<PurchasesReturnsServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1021,38 +1021,38 @@ export class PurchasesReturnsServicePaginationReq extends Message<PurchasesRetur
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<PurchasesReturnsServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesReturnsServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesReturnsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServicePaginationReq {
     return new PurchasesReturnsServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServicePaginationReq {
     return new PurchasesReturnsServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServicePaginationReq {
     return new PurchasesReturnsServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesReturnsServicePaginationReq | PlainMessage<PurchasesReturnsServicePaginationReq> | undefined, b: PurchasesReturnsServicePaginationReq | PlainMessage<PurchasesReturnsServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesReturnsServicePaginationReq | PlainMessage<PurchasesReturnsServicePaginationReq> | undefined, b: PurchasesReturnsServicePaginationReq | PlainMessage<PurchasesReturnsServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(PurchasesReturnsServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1060,7 +1060,7 @@ export class PurchasesReturnsServicePaginationReq extends Message<PurchasesRetur
  *
  * @generated from message Genesis.PurchasesReturnsServicePaginationResponse
  */
-export class PurchasesReturnsServicePaginationResponse extends Message<PurchasesReturnsServicePaginationResponse> ***REMOVED***
+export class PurchasesReturnsServicePaginationResponse extends Message<PurchasesReturnsServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -1089,36 +1089,36 @@ export class PurchasesReturnsServicePaginationResponse extends Message<Purchases
    */
   payload: PurchaseReturn[] = [];
 
-  constructor(data?: PartialMessage<PurchasesReturnsServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesReturnsServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesReturnsServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: PurchaseReturn, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: PurchaseReturn, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServicePaginationResponse {
     return new PurchasesReturnsServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServicePaginationResponse {
     return new PurchasesReturnsServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServicePaginationResponse {
     return new PurchasesReturnsServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesReturnsServicePaginationResponse | PlainMessage<PurchasesReturnsServicePaginationResponse> | undefined, b: PurchasesReturnsServicePaginationResponse | PlainMessage<PurchasesReturnsServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesReturnsServicePaginationResponse | PlainMessage<PurchasesReturnsServicePaginationResponse> | undefined, b: PurchasesReturnsServicePaginationResponse | PlainMessage<PurchasesReturnsServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(PurchasesReturnsServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1126,7 +1126,7 @@ export class PurchasesReturnsServicePaginationResponse extends Message<Purchases
  *
  * @generated from message Genesis.PurchasesReturnsServiceEntityPaginationReq
  */
-export class PurchasesReturnsServiceEntityPaginationReq extends Message<PurchasesReturnsServiceEntityPaginationReq> ***REMOVED***
+export class PurchasesReturnsServiceEntityPaginationReq extends Message<PurchasesReturnsServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1169,38 +1169,38 @@ export class PurchasesReturnsServiceEntityPaginationReq extends Message<Purchase
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<PurchasesReturnsServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesReturnsServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesReturnsServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceEntityPaginationReq {
     return new PurchasesReturnsServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceEntityPaginationReq {
     return new PurchasesReturnsServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceEntityPaginationReq {
     return new PurchasesReturnsServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesReturnsServiceEntityPaginationReq | PlainMessage<PurchasesReturnsServiceEntityPaginationReq> | undefined, b: PurchasesReturnsServiceEntityPaginationReq | PlainMessage<PurchasesReturnsServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesReturnsServiceEntityPaginationReq | PlainMessage<PurchasesReturnsServiceEntityPaginationReq> | undefined, b: PurchasesReturnsServiceEntityPaginationReq | PlainMessage<PurchasesReturnsServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(PurchasesReturnsServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1208,7 +1208,7 @@ export class PurchasesReturnsServiceEntityPaginationReq extends Message<Purchase
  *
  * @generated from message Genesis.PurchasesReturnsServiceFilterReq
  */
-export class PurchasesReturnsServiceFilterReq extends Message<PurchasesReturnsServiceFilterReq> ***REMOVED***
+export class PurchasesReturnsServiceFilterReq extends Message<PurchasesReturnsServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1349,52 +1349,52 @@ export class PurchasesReturnsServiceFilterReq extends Message<PurchasesReturnsSe
    */
   billingStatus = PURCHASE_RETURN_BILLING_STATUS.PURCHASE_RETURN_BILLING_STATUS_ANY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<PurchasesReturnsServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesReturnsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesReturnsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_BILLING_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_BILLING_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceFilterReq {
     return new PurchasesReturnsServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceFilterReq {
     return new PurchasesReturnsServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceFilterReq {
     return new PurchasesReturnsServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesReturnsServiceFilterReq | PlainMessage<PurchasesReturnsServiceFilterReq> | undefined, b: PurchasesReturnsServiceFilterReq | PlainMessage<PurchasesReturnsServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesReturnsServiceFilterReq | PlainMessage<PurchasesReturnsServiceFilterReq> | undefined, b: PurchasesReturnsServiceFilterReq | PlainMessage<PurchasesReturnsServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(PurchasesReturnsServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1402,7 +1402,7 @@ export class PurchasesReturnsServiceFilterReq extends Message<PurchasesReturnsSe
  *
  * @generated from message Genesis.PurchasesReturnsServiceSearchAllReq
  */
-export class PurchasesReturnsServiceSearchAllReq extends Message<PurchasesReturnsServiceSearchAllReq> ***REMOVED***
+export class PurchasesReturnsServiceSearchAllReq extends Message<PurchasesReturnsServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1480,41 +1480,41 @@ export class PurchasesReturnsServiceSearchAllReq extends Message<PurchasesReturn
    */
   billingStatus = PURCHASE_RETURN_BILLING_STATUS.PURCHASE_RETURN_BILLING_STATUS_ANY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<PurchasesReturnsServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesReturnsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesReturnsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_BILLING_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(PURCHASE_RETURN_BILLING_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesReturnsServiceSearchAllReq {
     return new PurchasesReturnsServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceSearchAllReq {
     return new PurchasesReturnsServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesReturnsServiceSearchAllReq {
     return new PurchasesReturnsServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesReturnsServiceSearchAllReq | PlainMessage<PurchasesReturnsServiceSearchAllReq> | undefined, b: PurchasesReturnsServiceSearchAllReq | PlainMessage<PurchasesReturnsServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesReturnsServiceSearchAllReq | PlainMessage<PurchasesReturnsServiceSearchAllReq> | undefined, b: PurchasesReturnsServiceSearchAllReq | PlainMessage<PurchasesReturnsServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(PurchasesReturnsServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

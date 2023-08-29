@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** OnDutiesList, OnDutiesServiceCreateRequest, OnDutiesServiceEntityPaginationReq, OnDutiesServiceFilterReq, OnDutiesServiceImageEntryRequest, OnDutiesServiceImageExitRequest, OnDutiesServicePaginationReq, OnDutiesServicePaginationResponse, OnDutiesServiceSearchAllReq, OnDutiesServiceUpdateRequest, OnDuty ***REMOVED*** from "./on_duties_pb.js";
-import ***REMOVED*** ActiveStatus, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierUUID, IdentifierWithUserComment, ImageResponse ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { OnDutiesList, OnDutiesServiceCreateRequest, OnDutiesServiceEntityPaginationReq, OnDutiesServiceFilterReq, OnDutiesServiceImageEntryRequest, OnDutiesServiceImageExitRequest, OnDutiesServicePaginationReq, OnDutiesServicePaginationResponse, OnDutiesServiceSearchAllReq, OnDutiesServiceUpdateRequest, OnDuty } from "./on_duties_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, GPSCoordinatesResponse, Identifier, IdentifierUUID, IdentifierWithUserComment, ImageResponse } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,152 +13,152 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.OnDutiesService
  */
-export const OnDutiesService = ***REMOVED***
+export const OnDutiesService = {
   typeName: "Genesis.OnDutiesService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.OnDutiesService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: OnDutiesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.OnDutiesService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: OnDutiesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.OnDutiesService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: OnDutiesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.OnDutiesService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.OnDutiesService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.OnDutiesService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.OnDutiesService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.OnDutiesService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: OnDutiesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.OnDutiesService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.OnDutiesService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.OnDutiesService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.OnDutiesService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.OnDutiesService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -167,166 +167,166 @@ export const OnDutiesService = ***REMOVED***
      *
      * @generated from rpc Genesis.OnDutiesService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Store entry time
      *
      * @generated from rpc Genesis.OnDutiesService.RecordImageEntry
      */
-    recordImageEntry: ***REMOVED***
+    recordImageEntry: {
       name: "RecordImageEntry",
       I: OnDutiesServiceImageEntryRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Store exit time
      *
      * @generated from rpc Genesis.OnDutiesService.RecordImageExit
      */
-    recordImageExit: ***REMOVED***
+    recordImageExit: {
       name: "RecordImageExit",
       I: OnDutiesServiceImageExitRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.OnDutiesService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: OnDuty,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.OnDutiesService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: OnDutiesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.OnDutiesService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: OnDutiesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.OnDutiesService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: OnDutiesServicePaginationReq,
       O: OnDutiesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.OnDutiesService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: OnDutiesServiceEntityPaginationReq,
       O: OnDutiesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View entry image for atendance ID
      *
      * @generated from rpc Genesis.OnDutiesService.ViewEntryImage
      */
-    viewEntryImage: ***REMOVED***
+    viewEntryImage: {
       name: "ViewEntryImage",
       I: Identifier,
       O: ImageResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View exit image for atendance ID
      *
      * @generated from rpc Genesis.OnDutiesService.ViewExitImage
      */
-    viewExitImage: ***REMOVED***
+    viewExitImage: {
       name: "ViewExitImage",
       I: Identifier,
       O: ImageResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View entry GPS coordinates for onduty ID
      *
      * @generated from rpc Genesis.OnDutiesService.ViewEntryGPSCoordinates
      */
-    viewEntryGPSCoordinates: ***REMOVED***
+    viewEntryGPSCoordinates: {
       name: "ViewEntryGPSCoordinates",
       I: Identifier,
       O: GPSCoordinatesResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View exit GPS coordinates for onduty ID
      *
      * @generated from rpc Genesis.OnDutiesService.ViewExitGPSCoordinates
      */
-    viewExitGPSCoordinates: ***REMOVED***
+    viewExitGPSCoordinates: {
       name: "ViewExitGPSCoordinates",
       I: Identifier,
       O: GPSCoordinatesResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.OnDutiesService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: OnDutiesServiceSearchAllReq,
       O: OnDutiesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.OnDutiesService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: OnDutiesServiceFilterReq,
       O: OnDutiesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.OnDutiesService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

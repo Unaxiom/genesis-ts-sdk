@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** EquationsWorkOrdersItemsList, EquationsWorkOrdersList, EquationsWorkOrdersServiceCreateRequest, EquationsWorkOrdersServiceEntityPaginationReq, EquationsWorkOrdersServiceFilterReq, EquationsWorkOrdersServiceItemCreateRequest, EquationsWorkOrdersServiceItemUpdateRequest, EquationsWorkOrdersServicePaginationReq, EquationsWorkOrdersServicePaginationResponse, EquationsWorkOrdersServiceSearchAllReq, EquationsWorkOrdersServiceUpdateRequest, EquationWorkOrder, EquationWorkOrderItem, EquationWorkOrderItemHistoryRequest ***REMOVED*** from "./equations_work_orders_pb.js";
-import ***REMOVED*** ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { EquationsWorkOrdersItemsList, EquationsWorkOrdersList, EquationsWorkOrdersServiceCreateRequest, EquationsWorkOrdersServiceEntityPaginationReq, EquationsWorkOrdersServiceFilterReq, EquationsWorkOrdersServiceItemCreateRequest, EquationsWorkOrdersServiceItemUpdateRequest, EquationsWorkOrdersServicePaginationReq, EquationsWorkOrdersServicePaginationResponse, EquationsWorkOrdersServiceSearchAllReq, EquationsWorkOrdersServiceUpdateRequest, EquationWorkOrder, EquationWorkOrderItem, EquationWorkOrderItemHistoryRequest } from "./equations_work_orders_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,163 +13,163 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.EquationsWorkOrdersService
  */
-export const EquationsWorkOrdersService = ***REMOVED***
+export const EquationsWorkOrdersService = {
   typeName: "Genesis.EquationsWorkOrdersService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: EquationsWorkOrdersServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: EquationsWorkOrdersServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: EquationsWorkOrdersServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: EquationsWorkOrdersServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -178,221 +178,221 @@ export const EquationsWorkOrdersService = ***REMOVED***
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Clone equation from an existing equation (denoted by the identifier)
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.Clone
      */
-    clone: ***REMOVED***
+    clone: {
       name: "Clone",
       I: CloneRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a equation work order
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.AddEquationWorkOrderItem
      */
-    addEquationWorkOrderItem: ***REMOVED***
+    addEquationWorkOrderItem: {
       name: "AddEquationWorkOrderItem",
       I: EquationsWorkOrdersServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a equation work order
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ModifyEquationWorkOrderItem
      */
-    modifyEquationWorkOrderItem: ***REMOVED***
+    modifyEquationWorkOrderItem: {
       name: "ModifyEquationWorkOrderItem",
       I: EquationsWorkOrdersServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a equation work order
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ApproveEquationWorkOrderItem
      */
-    approveEquationWorkOrderItem: ***REMOVED***
+    approveEquationWorkOrderItem: {
       name: "ApproveEquationWorkOrderItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a equation work order
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.DeleteEquationWorkOrderItem
      */
-    deleteEquationWorkOrderItem: ***REMOVED***
+    deleteEquationWorkOrderItem: {
       name: "DeleteEquationWorkOrderItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a equation work order
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ReorderEquationWorkOrderItems
      */
-    reorderEquationWorkOrderItems: ***REMOVED***
+    reorderEquationWorkOrderItems: {
       name: "ReorderEquationWorkOrderItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Equation Work Order Item by ID
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ViewEquationWorkOrderItemByID
      */
-    viewEquationWorkOrderItemByID: ***REMOVED***
+    viewEquationWorkOrderItemByID: {
       name: "ViewEquationWorkOrderItemByID",
       I: Identifier,
       O: EquationWorkOrderItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved equation work order items for given equation work order ID
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ViewApprovedEquationWorkOrderItems
      */
-    viewApprovedEquationWorkOrderItems: ***REMOVED***
+    viewApprovedEquationWorkOrderItems: {
       name: "ViewApprovedEquationWorkOrderItems",
       I: IdentifierWithSearchKey,
       O: EquationsWorkOrdersItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved equation work order items for given equation work order ID
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ViewUnapprovedEquationWorkOrderItems
      */
-    viewUnapprovedEquationWorkOrderItems: ***REMOVED***
+    viewUnapprovedEquationWorkOrderItems: {
       name: "ViewUnapprovedEquationWorkOrderItems",
       I: IdentifierWithSearchKey,
       O: EquationsWorkOrdersItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the equation work order item
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ViewEquationWorkOrderItemHistory
      */
-    viewEquationWorkOrderItemHistory: ***REMOVED***
+    viewEquationWorkOrderItemHistory: {
       name: "ViewEquationWorkOrderItemHistory",
       I: EquationWorkOrderItemHistoryRequest,
       O: EquationsWorkOrdersItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: EquationWorkOrder,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: EquationsWorkOrdersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: EquationsWorkOrdersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: EquationsWorkOrdersServicePaginationReq,
       O: EquationsWorkOrdersServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: EquationsWorkOrdersServiceEntityPaginationReq,
       O: EquationsWorkOrdersServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the latest equation for a work order (denoted by the given identifier)
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.ViewForWorkOrderID
      */
-    viewForWorkOrderID: ***REMOVED***
+    viewForWorkOrderID: {
       name: "ViewForWorkOrderID",
       I: Identifier,
       O: EquationWorkOrder,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: EquationsWorkOrdersServiceSearchAllReq,
       O: EquationsWorkOrdersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: EquationsWorkOrdersServiceFilterReq,
       O: EquationsWorkOrdersList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.EquationsWorkOrdersService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

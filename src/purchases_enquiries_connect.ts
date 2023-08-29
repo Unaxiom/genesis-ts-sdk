@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** PurchaseEnquiry, PurchaseEnquiryItem, PurchaseEnquiryItemHistoryRequest, PurchasesEnquiriesItemsList, PurchasesEnquiriesList, PurchasesEnquiriesServiceCreateRequest, PurchasesEnquiriesServiceEntityPaginationReq, PurchasesEnquiriesServiceFilterReq, PurchasesEnquiriesServiceItemCreateRequest, PurchasesEnquiriesServiceItemUpdateRequest, PurchasesEnquiriesServicePaginationReq, PurchasesEnquiriesServicePaginationResponse, PurchasesEnquiriesServiceSearchAllReq, PurchasesEnquiriesServiceUpdateRequest ***REMOVED*** from "./purchases_enquiries_pb.js";
-import ***REMOVED*** ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { PurchaseEnquiry, PurchaseEnquiryItem, PurchaseEnquiryItemHistoryRequest, PurchasesEnquiriesItemsList, PurchasesEnquiriesList, PurchasesEnquiriesServiceCreateRequest, PurchasesEnquiriesServiceEntityPaginationReq, PurchasesEnquiriesServiceFilterReq, PurchasesEnquiriesServiceItemCreateRequest, PurchasesEnquiriesServiceItemUpdateRequest, PurchasesEnquiriesServicePaginationReq, PurchasesEnquiriesServicePaginationResponse, PurchasesEnquiriesServiceSearchAllReq, PurchasesEnquiriesServiceUpdateRequest } from "./purchases_enquiries_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,361 +13,361 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.PurchasesEnquiriesService
  */
-export const PurchasesEnquiriesService = ***REMOVED***
+export const PurchasesEnquiriesService = {
   typeName: "Genesis.PurchasesEnquiriesService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: PurchasesEnquiriesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: PurchasesEnquiriesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: PurchasesEnquiriesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: PurchasesEnquiriesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a purchase enquiry
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.AddPurchaseEnquiryItem
      */
-    addPurchaseEnquiryItem: ***REMOVED***
+    addPurchaseEnquiryItem: {
       name: "AddPurchaseEnquiryItem",
       I: PurchasesEnquiriesServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a purchase enquiry
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.ModifyPurchaseEnquiryItem
      */
-    modifyPurchaseEnquiryItem: ***REMOVED***
+    modifyPurchaseEnquiryItem: {
       name: "ModifyPurchaseEnquiryItem",
       I: PurchasesEnquiriesServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a purchase enquiry
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.ApprovePurchaseEnquiryItem
      */
-    approvePurchaseEnquiryItem: ***REMOVED***
+    approvePurchaseEnquiryItem: {
       name: "ApprovePurchaseEnquiryItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a purchase enquiry
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.DeletePurchaseEnquiryItem
      */
-    deletePurchaseEnquiryItem: ***REMOVED***
+    deletePurchaseEnquiryItem: {
       name: "DeletePurchaseEnquiryItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a purchase enquiry
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.ReorderPurchaseEnquiryItems
      */
-    reorderPurchaseEnquiryItems: ***REMOVED***
+    reorderPurchaseEnquiryItems: {
       name: "ReorderPurchaseEnquiryItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View purchase enquiry Item by ID
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.ViewPurchaseEnquiryItemByID
      */
-    viewPurchaseEnquiryItemByID: ***REMOVED***
+    viewPurchaseEnquiryItemByID: {
       name: "ViewPurchaseEnquiryItemByID",
       I: Identifier,
       O: PurchaseEnquiryItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved purchase enquiry items for given purchase enquiry ID
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.ViewApprovedPurchaseEnquiryItems
      */
-    viewApprovedPurchaseEnquiryItems: ***REMOVED***
+    viewApprovedPurchaseEnquiryItems: {
       name: "ViewApprovedPurchaseEnquiryItems",
       I: IdentifierWithSearchKey,
       O: PurchasesEnquiriesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved purchase enquiry items for given purchase enquiry ID
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.ViewUnapprovedPurchaseEnquiryItems
      */
-    viewUnapprovedPurchaseEnquiryItems: ***REMOVED***
+    viewUnapprovedPurchaseEnquiryItems: {
       name: "ViewUnapprovedPurchaseEnquiryItems",
       I: IdentifierWithSearchKey,
       O: PurchasesEnquiriesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the purchase enquiry item
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.ViewPurchaseEnquiryItemHistory
      */
-    viewPurchaseEnquiryItemHistory: ***REMOVED***
+    viewPurchaseEnquiryItemHistory: {
       name: "ViewPurchaseEnquiryItemHistory",
       I: PurchaseEnquiryItemHistoryRequest,
       O: PurchasesEnquiriesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: PurchaseEnquiry,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: PurchasesEnquiriesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: PurchasesEnquiriesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: PurchasesEnquiriesServicePaginationReq,
       O: PurchasesEnquiriesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: PurchasesEnquiriesServiceEntityPaginationReq,
       O: PurchasesEnquiriesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: PurchasesEnquiriesServiceSearchAllReq,
       O: PurchasesEnquiriesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: PurchasesEnquiriesServiceFilterReq,
       O: PurchasesEnquiriesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.PurchasesEnquiriesService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

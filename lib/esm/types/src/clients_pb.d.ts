@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.CLIENT_SORT_KEY
  */
-export declare enum CLIENT_SORT_KEY ***REMOVED***
+export declare enum CLIENT_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -69,14 +69,14 @@ export declare enum CLIENT_SORT_KEY ***REMOVED***
      * @generated from enum value: CLIENT_SORT_KEY_PHONE = 13;
      */
     CLIENT_SORT_KEY_PHONE = 13
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.ClientsServiceCreateRequest
  */
-export declare class ClientsServiceCreateRequest extends Message<ClientsServiceCreateRequest> ***REMOVED***
+export declare class ClientsServiceCreateRequest extends Message<ClientsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -133,14 +133,14 @@ export declare class ClientsServiceCreateRequest extends Message<ClientsServiceC
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientsServiceCreateRequest;
     static equals(a: ClientsServiceCreateRequest | PlainMessage<ClientsServiceCreateRequest> | undefined, b: ClientsServiceCreateRequest | PlainMessage<ClientsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.ClientsServiceUpdateRequest
  */
-export declare class ClientsServiceUpdateRequest extends Message<ClientsServiceUpdateRequest> ***REMOVED***
+export declare class ClientsServiceUpdateRequest extends Message<ClientsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -203,14 +203,14 @@ export declare class ClientsServiceUpdateRequest extends Message<ClientsServiceU
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientsServiceUpdateRequest;
     static equals(a: ClientsServiceUpdateRequest | PlainMessage<ClientsServiceUpdateRequest> | undefined, b: ClientsServiceUpdateRequest | PlainMessage<ClientsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.Client
  */
-export declare class Client extends Message<Client> ***REMOVED***
+export declare class Client extends Message<Client> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -285,14 +285,14 @@ export declare class Client extends Message<Client> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Client;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Client;
     static equals(a: Client | PlainMessage<Client> | undefined, b: Client | PlainMessage<Client> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.ClientsList
  */
-export declare class ClientsList extends Message<ClientsList> ***REMOVED***
+export declare class ClientsList extends Message<ClientsList> {
     /**
      * List of records
      *
@@ -307,14 +307,14 @@ export declare class ClientsList extends Message<ClientsList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientsList;
     static equals(a: ClientsList | PlainMessage<ClientsList> | undefined, b: ClientsList | PlainMessage<ClientsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.ClientsServicePaginationReq
  */
-export declare class ClientsServicePaginationReq extends Message<ClientsServicePaginationReq> ***REMOVED***
+export declare class ClientsServicePaginationReq extends Message<ClientsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -359,14 +359,14 @@ export declare class ClientsServicePaginationReq extends Message<ClientsServiceP
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientsServicePaginationReq;
     static equals(a: ClientsServicePaginationReq | PlainMessage<ClientsServicePaginationReq> | undefined, b: ClientsServicePaginationReq | PlainMessage<ClientsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.ClientsServicePaginationResponse
  */
-export declare class ClientsServicePaginationResponse extends Message<ClientsServicePaginationResponse> ***REMOVED***
+export declare class ClientsServicePaginationResponse extends Message<ClientsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -399,14 +399,14 @@ export declare class ClientsServicePaginationResponse extends Message<ClientsSer
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientsServicePaginationResponse;
     static equals(a: ClientsServicePaginationResponse | PlainMessage<ClientsServicePaginationResponse> | undefined, b: ClientsServicePaginationResponse | PlainMessage<ClientsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.ClientsServiceEntityPaginationReq
  */
-export declare class ClientsServiceEntityPaginationReq extends Message<ClientsServiceEntityPaginationReq> ***REMOVED***
+export declare class ClientsServiceEntityPaginationReq extends Message<ClientsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -451,14 +451,14 @@ export declare class ClientsServiceEntityPaginationReq extends Message<ClientsSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientsServiceEntityPaginationReq;
     static equals(a: ClientsServiceEntityPaginationReq | PlainMessage<ClientsServiceEntityPaginationReq> | undefined, b: ClientsServiceEntityPaginationReq | PlainMessage<ClientsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.ClientsServiceFilterReq
  */
-export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilterReq> ***REMOVED***
+export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -569,14 +569,14 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientsServiceFilterReq;
     static equals(a: ClientsServiceFilterReq | PlainMessage<ClientsServiceFilterReq> | undefined, b: ClientsServiceFilterReq | PlainMessage<ClientsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.ClientsServiceSearchAllReq
  */
-export declare class ClientsServiceSearchAllReq extends Message<ClientsServiceSearchAllReq> ***REMOVED***
+export declare class ClientsServiceSearchAllReq extends Message<ClientsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -633,5 +633,5 @@ export declare class ClientsServiceSearchAllReq extends Message<ClientsServiceSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ClientsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ClientsServiceSearchAllReq;
     static equals(a: ClientsServiceSearchAllReq | PlainMessage<ClientsServiceSearchAllReq> | undefined, b: ClientsServiceSearchAllReq | PlainMessage<ClientsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=clients_pb.d.ts.map

@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.WORK_ORDER_SORT_KEY
  */
-export declare enum WORK_ORDER_SORT_KEY ***REMOVED***
+export declare enum WORK_ORDER_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -69,14 +69,14 @@ export declare enum WORK_ORDER_SORT_KEY ***REMOVED***
      * @generated from enum value: WORK_ORDER_SORT_KEY_LOCATION_ID = 12;
      */
     WORK_ORDER_SORT_KEY_LOCATION_ID = 12
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.WorkOrdersServiceCreateRequest
  */
-export declare class WorkOrdersServiceCreateRequest extends Message<WorkOrdersServiceCreateRequest> ***REMOVED***
+export declare class WorkOrdersServiceCreateRequest extends Message<WorkOrdersServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -133,14 +133,14 @@ export declare class WorkOrdersServiceCreateRequest extends Message<WorkOrdersSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrdersServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersServiceCreateRequest;
     static equals(a: WorkOrdersServiceCreateRequest | PlainMessage<WorkOrdersServiceCreateRequest> | undefined, b: WorkOrdersServiceCreateRequest | PlainMessage<WorkOrdersServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.WorkOrdersServiceUpdateRequest
  */
-export declare class WorkOrdersServiceUpdateRequest extends Message<WorkOrdersServiceUpdateRequest> ***REMOVED***
+export declare class WorkOrdersServiceUpdateRequest extends Message<WorkOrdersServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -185,14 +185,14 @@ export declare class WorkOrdersServiceUpdateRequest extends Message<WorkOrdersSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrdersServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersServiceUpdateRequest;
     static equals(a: WorkOrdersServiceUpdateRequest | PlainMessage<WorkOrdersServiceUpdateRequest> | undefined, b: WorkOrdersServiceUpdateRequest | PlainMessage<WorkOrdersServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to perform an autofill request
  *
  * @generated from message Genesis.WorkOrdersServiceAutofillRequest
  */
-export declare class WorkOrdersServiceAutofillRequest extends Message<WorkOrdersServiceAutofillRequest> ***REMOVED***
+export declare class WorkOrdersServiceAutofillRequest extends Message<WorkOrdersServiceAutofillRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -219,14 +219,14 @@ export declare class WorkOrdersServiceAutofillRequest extends Message<WorkOrders
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrdersServiceAutofillRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersServiceAutofillRequest;
     static equals(a: WorkOrdersServiceAutofillRequest | PlainMessage<WorkOrdersServiceAutofillRequest> | undefined, b: WorkOrdersServiceAutofillRequest | PlainMessage<WorkOrdersServiceAutofillRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.WorkOrder
  */
-export declare class WorkOrder extends Message<WorkOrder> ***REMOVED***
+export declare class WorkOrder extends Message<WorkOrder> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -319,14 +319,14 @@ export declare class WorkOrder extends Message<WorkOrder> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrder;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrder;
     static equals(a: WorkOrder | PlainMessage<WorkOrder> | undefined, b: WorkOrder | PlainMessage<WorkOrder> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a work order
  *
  * @generated from message Genesis.WorkOrdersServiceItemCreateRequest
  */
-export declare class WorkOrdersServiceItemCreateRequest extends Message<WorkOrdersServiceItemCreateRequest> ***REMOVED***
+export declare class WorkOrdersServiceItemCreateRequest extends Message<WorkOrdersServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -365,14 +365,14 @@ export declare class WorkOrdersServiceItemCreateRequest extends Message<WorkOrde
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrdersServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersServiceItemCreateRequest;
     static equals(a: WorkOrdersServiceItemCreateRequest | PlainMessage<WorkOrdersServiceItemCreateRequest> | undefined, b: WorkOrdersServiceItemCreateRequest | PlainMessage<WorkOrdersServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a work order
  *
  * @generated from message Genesis.WorkOrdersServiceItemUpdateRequest
  */
-export declare class WorkOrdersServiceItemUpdateRequest extends Message<WorkOrdersServiceItemUpdateRequest> ***REMOVED***
+export declare class WorkOrdersServiceItemUpdateRequest extends Message<WorkOrdersServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -405,14 +405,14 @@ export declare class WorkOrdersServiceItemUpdateRequest extends Message<WorkOrde
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrdersServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersServiceItemUpdateRequest;
     static equals(a: WorkOrdersServiceItemUpdateRequest | PlainMessage<WorkOrdersServiceItemUpdateRequest> | undefined, b: WorkOrdersServiceItemUpdateRequest | PlainMessage<WorkOrdersServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a work order
  *
  * @generated from message Genesis.WorkOrderItem
  */
-export declare class WorkOrderItem extends Message<WorkOrderItem> ***REMOVED***
+export declare class WorkOrderItem extends Message<WorkOrderItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -475,14 +475,14 @@ export declare class WorkOrderItem extends Message<WorkOrderItem> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderItem;
     static equals(a: WorkOrderItem | PlainMessage<WorkOrderItem> | undefined, b: WorkOrderItem | PlainMessage<WorkOrderItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of work orders
  *
  * @generated from message Genesis.WorkOrdersList
  */
-export declare class WorkOrdersList extends Message<WorkOrdersList> ***REMOVED***
+export declare class WorkOrdersList extends Message<WorkOrdersList> {
     /**
      * List of records
      *
@@ -497,14 +497,14 @@ export declare class WorkOrdersList extends Message<WorkOrdersList> ***REMOVED**
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrdersList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersList;
     static equals(a: WorkOrdersList | PlainMessage<WorkOrdersList> | undefined, b: WorkOrdersList | PlainMessage<WorkOrdersList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of work order items
  *
  * @generated from message Genesis.WorkOrdersItemsList
  */
-export declare class WorkOrdersItemsList extends Message<WorkOrdersItemsList> ***REMOVED***
+export declare class WorkOrdersItemsList extends Message<WorkOrdersItemsList> {
     /**
      * List of records
      *
@@ -519,14 +519,14 @@ export declare class WorkOrdersItemsList extends Message<WorkOrdersItemsList> **
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrdersItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersItemsList;
     static equals(a: WorkOrdersItemsList | PlainMessage<WorkOrdersItemsList> | undefined, b: WorkOrdersItemsList | PlainMessage<WorkOrdersItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.WorkOrderItemHistoryRequest
  */
-export declare class WorkOrderItemHistoryRequest extends Message<WorkOrderItemHistoryRequest> ***REMOVED***
+export declare class WorkOrderItemHistoryRequest extends Message<WorkOrderItemHistoryRequest> {
     /**
      * Stores the work order ID
      *
@@ -547,14 +547,14 @@ export declare class WorkOrderItemHistoryRequest extends Message<WorkOrderItemHi
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderItemHistoryRequest;
     static equals(a: WorkOrderItemHistoryRequest | PlainMessage<WorkOrderItemHistoryRequest> | undefined, b: WorkOrderItemHistoryRequest | PlainMessage<WorkOrderItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the info of a prospective work order item
  *
  * @generated from message Genesis.WorkOrderItemProspectiveInfoRequest
  */
-export declare class WorkOrderItemProspectiveInfoRequest extends Message<WorkOrderItemProspectiveInfoRequest> ***REMOVED***
+export declare class WorkOrderItemProspectiveInfoRequest extends Message<WorkOrderItemProspectiveInfoRequest> {
     /**
      * Stores the work order ID
      *
@@ -575,14 +575,14 @@ export declare class WorkOrderItemProspectiveInfoRequest extends Message<WorkOrd
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrderItemProspectiveInfoRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrderItemProspectiveInfoRequest;
     static equals(a: WorkOrderItemProspectiveInfoRequest | PlainMessage<WorkOrderItemProspectiveInfoRequest> | undefined, b: WorkOrderItemProspectiveInfoRequest | PlainMessage<WorkOrderItemProspectiveInfoRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.WorkOrdersServicePaginationReq
  */
-export declare class WorkOrdersServicePaginationReq extends Message<WorkOrdersServicePaginationReq> ***REMOVED***
+export declare class WorkOrdersServicePaginationReq extends Message<WorkOrdersServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -627,14 +627,14 @@ export declare class WorkOrdersServicePaginationReq extends Message<WorkOrdersSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrdersServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersServicePaginationReq;
     static equals(a: WorkOrdersServicePaginationReq | PlainMessage<WorkOrdersServicePaginationReq> | undefined, b: WorkOrdersServicePaginationReq | PlainMessage<WorkOrdersServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.WorkOrdersServicePaginationResponse
  */
-export declare class WorkOrdersServicePaginationResponse extends Message<WorkOrdersServicePaginationResponse> ***REMOVED***
+export declare class WorkOrdersServicePaginationResponse extends Message<WorkOrdersServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -667,14 +667,14 @@ export declare class WorkOrdersServicePaginationResponse extends Message<WorkOrd
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrdersServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersServicePaginationResponse;
     static equals(a: WorkOrdersServicePaginationResponse | PlainMessage<WorkOrdersServicePaginationResponse> | undefined, b: WorkOrdersServicePaginationResponse | PlainMessage<WorkOrdersServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.WorkOrdersServiceEntityPaginationReq
  */
-export declare class WorkOrdersServiceEntityPaginationReq extends Message<WorkOrdersServiceEntityPaginationReq> ***REMOVED***
+export declare class WorkOrdersServiceEntityPaginationReq extends Message<WorkOrdersServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -719,14 +719,14 @@ export declare class WorkOrdersServiceEntityPaginationReq extends Message<WorkOr
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrdersServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersServiceEntityPaginationReq;
     static equals(a: WorkOrdersServiceEntityPaginationReq | PlainMessage<WorkOrdersServiceEntityPaginationReq> | undefined, b: WorkOrdersServiceEntityPaginationReq | PlainMessage<WorkOrdersServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.WorkOrdersServiceFilterReq
  */
-export declare class WorkOrdersServiceFilterReq extends Message<WorkOrdersServiceFilterReq> ***REMOVED***
+export declare class WorkOrdersServiceFilterReq extends Message<WorkOrdersServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -873,14 +873,14 @@ export declare class WorkOrdersServiceFilterReq extends Message<WorkOrdersServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrdersServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersServiceFilterReq;
     static equals(a: WorkOrdersServiceFilterReq | PlainMessage<WorkOrdersServiceFilterReq> | undefined, b: WorkOrdersServiceFilterReq | PlainMessage<WorkOrdersServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.WorkOrdersServiceSearchAllReq
  */
-export declare class WorkOrdersServiceSearchAllReq extends Message<WorkOrdersServiceSearchAllReq> ***REMOVED***
+export declare class WorkOrdersServiceSearchAllReq extends Message<WorkOrdersServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -955,5 +955,5 @@ export declare class WorkOrdersServiceSearchAllReq extends Message<WorkOrdersSer
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): WorkOrdersServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): WorkOrdersServiceSearchAllReq;
     static equals(a: WorkOrdersServiceSearchAllReq | PlainMessage<WorkOrdersServiceSearchAllReq> | undefined, b: WorkOrdersServiceSearchAllReq | PlainMessage<WorkOrdersServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=work_orders_pb.d.ts.map

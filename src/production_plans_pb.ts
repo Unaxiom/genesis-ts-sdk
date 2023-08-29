@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -14,7 +14,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.PRODUCTION_PLAN_SORT_KEY
  */
-export enum PRODUCTION_PLAN_SORT_KEY ***REMOVED***
+export enum PRODUCTION_PLAN_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -98,21 +98,21 @@ export enum PRODUCTION_PLAN_SORT_KEY ***REMOVED***
    * @generated from enum value: PRODUCTION_PLAN_SORT_KEY_END_DATE = 14;
    */
   PRODUCTION_PLAN_SORT_KEY_END_DATE = 14,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(PRODUCTION_PLAN_SORT_KEY)
 proto3.util.setEnumType(PRODUCTION_PLAN_SORT_KEY, "Genesis.PRODUCTION_PLAN_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "PRODUCTION_PLAN_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "PRODUCTION_PLAN_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "PRODUCTION_PLAN_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "PRODUCTION_PLAN_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "PRODUCTION_PLAN_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "PRODUCTION_PLAN_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "PRODUCTION_PLAN_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "PRODUCTION_PLAN_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "PRODUCTION_PLAN_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
-  ***REMOVED*** no: 12, name: "PRODUCTION_PLAN_SORT_KEY_LOCATION_ID" ***REMOVED***,
-  ***REMOVED*** no: 13, name: "PRODUCTION_PLAN_SORT_KEY_START_DATE" ***REMOVED***,
-  ***REMOVED*** no: 14, name: "PRODUCTION_PLAN_SORT_KEY_END_DATE" ***REMOVED***,
+  { no: 0, name: "PRODUCTION_PLAN_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "PRODUCTION_PLAN_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "PRODUCTION_PLAN_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "PRODUCTION_PLAN_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "PRODUCTION_PLAN_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "PRODUCTION_PLAN_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "PRODUCTION_PLAN_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "PRODUCTION_PLAN_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "PRODUCTION_PLAN_SORT_KEY_FINAL_REF_NUMBER" },
+  { no: 12, name: "PRODUCTION_PLAN_SORT_KEY_LOCATION_ID" },
+  { no: 13, name: "PRODUCTION_PLAN_SORT_KEY_START_DATE" },
+  { no: 14, name: "PRODUCTION_PLAN_SORT_KEY_END_DATE" },
 ]);
 
 /**
@@ -121,7 +121,7 @@ proto3.util.setEnumType(PRODUCTION_PLAN_SORT_KEY, "Genesis.PRODUCTION_PLAN_SORT_
  *
  * @generated from message Genesis.ProductionPlansServiceCreateRequest
  */
-export class ProductionPlansServiceCreateRequest extends Message<ProductionPlansServiceCreateRequest> ***REMOVED***
+export class ProductionPlansServiceCreateRequest extends Message<ProductionPlansServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -220,46 +220,46 @@ export class ProductionPlansServiceCreateRequest extends Message<ProductionPlans
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<ProductionPlansServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlansServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlansServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "project_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "start_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "start_time", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "end_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "end_time", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 8, name: "project_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "start_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "start_time", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "end_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 19, name: "end_time", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceCreateRequest {
     return new ProductionPlansServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceCreateRequest {
     return new ProductionPlansServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceCreateRequest {
     return new ProductionPlansServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlansServiceCreateRequest | PlainMessage<ProductionPlansServiceCreateRequest> | undefined, b: ProductionPlansServiceCreateRequest | PlainMessage<ProductionPlansServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlansServiceCreateRequest | PlainMessage<ProductionPlansServiceCreateRequest> | undefined, b: ProductionPlansServiceCreateRequest | PlainMessage<ProductionPlansServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(ProductionPlansServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -267,7 +267,7 @@ export class ProductionPlansServiceCreateRequest extends Message<ProductionPlans
  *
  * @generated from message Genesis.ProductionPlansServiceUpdateRequest
  */
-export class ProductionPlansServiceUpdateRequest extends Message<ProductionPlansServiceUpdateRequest> ***REMOVED***
+export class ProductionPlansServiceUpdateRequest extends Message<ProductionPlansServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -352,44 +352,44 @@ export class ProductionPlansServiceUpdateRequest extends Message<ProductionPlans
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<ProductionPlansServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlansServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlansServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "project_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "start_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "start_time", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "end_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "end_time", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 8, name: "project_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "start_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "start_time", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "end_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 19, name: "end_time", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceUpdateRequest {
     return new ProductionPlansServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceUpdateRequest {
     return new ProductionPlansServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceUpdateRequest {
     return new ProductionPlansServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlansServiceUpdateRequest | PlainMessage<ProductionPlansServiceUpdateRequest> | undefined, b: ProductionPlansServiceUpdateRequest | PlainMessage<ProductionPlansServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlansServiceUpdateRequest | PlainMessage<ProductionPlansServiceUpdateRequest> | undefined, b: ProductionPlansServiceUpdateRequest | PlainMessage<ProductionPlansServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(ProductionPlansServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -397,7 +397,7 @@ export class ProductionPlansServiceUpdateRequest extends Message<ProductionPlans
  *
  * @generated from message Genesis.ProductionPlansServiceAutofillRequest
  */
-export class ProductionPlansServiceAutofillRequest extends Message<ProductionPlansServiceAutofillRequest> ***REMOVED***
+export class ProductionPlansServiceAutofillRequest extends Message<ProductionPlansServiceAutofillRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -419,35 +419,35 @@ export class ProductionPlansServiceAutofillRequest extends Message<ProductionPla
    */
   populateUsingEquationDependencies = false;
 
-  constructor(data?: PartialMessage<ProductionPlansServiceAutofillRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlansServiceAutofillRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlansServiceAutofillRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "populate_using_equation_dependencies", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "populate_using_equation_dependencies", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceAutofillRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceAutofillRequest {
     return new ProductionPlansServiceAutofillRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceAutofillRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceAutofillRequest {
     return new ProductionPlansServiceAutofillRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceAutofillRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceAutofillRequest {
     return new ProductionPlansServiceAutofillRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlansServiceAutofillRequest | PlainMessage<ProductionPlansServiceAutofillRequest> | undefined, b: ProductionPlansServiceAutofillRequest | PlainMessage<ProductionPlansServiceAutofillRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlansServiceAutofillRequest | PlainMessage<ProductionPlansServiceAutofillRequest> | undefined, b: ProductionPlansServiceAutofillRequest | PlainMessage<ProductionPlansServiceAutofillRequest> | undefined): boolean {
     return proto3.util.equals(ProductionPlansServiceAutofillRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -455,7 +455,7 @@ export class ProductionPlansServiceAutofillRequest extends Message<ProductionPla
  *
  * @generated from message Genesis.ProductionPlan
  */
-export class ProductionPlan extends Message<ProductionPlan> ***REMOVED***
+export class ProductionPlan extends Message<ProductionPlan> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -596,52 +596,52 @@ export class ProductionPlan extends Message<ProductionPlan> ***REMOVED***
    */
   formData: FormFieldDatum[] = [];
 
-  constructor(data?: PartialMessage<ProductionPlan>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlan>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlan";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "project_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "start_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "start_time", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "end_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "end_time", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "list", kind: "message", T: ProductionPlanItem, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "project_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "start_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "start_time", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "end_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 19, name: "end_time", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "list", kind: "message", T: ProductionPlanItem, repeated: true },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlan ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlan {
     return new ProductionPlan().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlan ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlan {
     return new ProductionPlan().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlan ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlan {
     return new ProductionPlan().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlan | PlainMessage<ProductionPlan> | undefined, b: ProductionPlan | PlainMessage<ProductionPlan> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlan | PlainMessage<ProductionPlan> | undefined, b: ProductionPlan | PlainMessage<ProductionPlan> | undefined): boolean {
     return proto3.util.equals(ProductionPlan, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -649,7 +649,7 @@ export class ProductionPlan extends Message<ProductionPlan> ***REMOVED***
  *
  * @generated from message Genesis.ProductionPlansServiceItemCreateRequest
  */
-export class ProductionPlansServiceItemCreateRequest extends Message<ProductionPlansServiceItemCreateRequest> ***REMOVED***
+export class ProductionPlansServiceItemCreateRequest extends Message<ProductionPlansServiceItemCreateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -678,36 +678,36 @@ export class ProductionPlansServiceItemCreateRequest extends Message<ProductionP
    */
   quantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ProductionPlansServiceItemCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlansServiceItemCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlansServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "production_plan_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "production_plan_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceItemCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceItemCreateRequest {
     return new ProductionPlansServiceItemCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceItemCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceItemCreateRequest {
     return new ProductionPlansServiceItemCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceItemCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceItemCreateRequest {
     return new ProductionPlansServiceItemCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlansServiceItemCreateRequest | PlainMessage<ProductionPlansServiceItemCreateRequest> | undefined, b: ProductionPlansServiceItemCreateRequest | PlainMessage<ProductionPlansServiceItemCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlansServiceItemCreateRequest | PlainMessage<ProductionPlansServiceItemCreateRequest> | undefined, b: ProductionPlansServiceItemCreateRequest | PlainMessage<ProductionPlansServiceItemCreateRequest> | undefined): boolean {
     return proto3.util.equals(ProductionPlansServiceItemCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -715,7 +715,7 @@ export class ProductionPlansServiceItemCreateRequest extends Message<ProductionP
  *
  * @generated from message Genesis.ProductionPlansServiceItemUpdateRequest
  */
-export class ProductionPlansServiceItemUpdateRequest extends Message<ProductionPlansServiceItemUpdateRequest> ***REMOVED***
+export class ProductionPlansServiceItemUpdateRequest extends Message<ProductionPlansServiceItemUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -737,35 +737,35 @@ export class ProductionPlansServiceItemUpdateRequest extends Message<ProductionP
    */
   quantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ProductionPlansServiceItemUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlansServiceItemUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlansServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceItemUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceItemUpdateRequest {
     return new ProductionPlansServiceItemUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceItemUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceItemUpdateRequest {
     return new ProductionPlansServiceItemUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceItemUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceItemUpdateRequest {
     return new ProductionPlansServiceItemUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlansServiceItemUpdateRequest | PlainMessage<ProductionPlansServiceItemUpdateRequest> | undefined, b: ProductionPlansServiceItemUpdateRequest | PlainMessage<ProductionPlansServiceItemUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlansServiceItemUpdateRequest | PlainMessage<ProductionPlansServiceItemUpdateRequest> | undefined, b: ProductionPlansServiceItemUpdateRequest | PlainMessage<ProductionPlansServiceItemUpdateRequest> | undefined): boolean {
     return proto3.util.equals(ProductionPlansServiceItemUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -773,7 +773,7 @@ export class ProductionPlansServiceItemUpdateRequest extends Message<ProductionP
  *
  * @generated from message Genesis.ProductionPlanItem
  */
-export class ProductionPlanItem extends Message<ProductionPlanItem> ***REMOVED***
+export class ProductionPlanItem extends Message<ProductionPlanItem> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -830,40 +830,40 @@ export class ProductionPlanItem extends Message<ProductionPlanItem> ***REMOVED**
    */
   quantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ProductionPlanItem>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlanItem>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlanItem";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "production_plan_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "production_plan_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlanItem ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlanItem {
     return new ProductionPlanItem().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanItem ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanItem {
     return new ProductionPlanItem().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanItem ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanItem {
     return new ProductionPlanItem().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlanItem | PlainMessage<ProductionPlanItem> | undefined, b: ProductionPlanItem | PlainMessage<ProductionPlanItem> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlanItem | PlainMessage<ProductionPlanItem> | undefined, b: ProductionPlanItem | PlainMessage<ProductionPlanItem> | undefined): boolean {
     return proto3.util.equals(ProductionPlanItem, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -871,7 +871,7 @@ export class ProductionPlanItem extends Message<ProductionPlanItem> ***REMOVED**
  *
  * @generated from message Genesis.ProductionPlansList
  */
-export class ProductionPlansList extends Message<ProductionPlansList> ***REMOVED***
+export class ProductionPlansList extends Message<ProductionPlansList> {
   /**
    * List of records
    *
@@ -879,33 +879,33 @@ export class ProductionPlansList extends Message<ProductionPlansList> ***REMOVED
    */
   list: ProductionPlan[] = [];
 
-  constructor(data?: PartialMessage<ProductionPlansList>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlansList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlansList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: ProductionPlan, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: ProductionPlan, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansList {
     return new ProductionPlansList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansList {
     return new ProductionPlansList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansList {
     return new ProductionPlansList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlansList | PlainMessage<ProductionPlansList> | undefined, b: ProductionPlansList | PlainMessage<ProductionPlansList> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlansList | PlainMessage<ProductionPlansList> | undefined, b: ProductionPlansList | PlainMessage<ProductionPlansList> | undefined): boolean {
     return proto3.util.equals(ProductionPlansList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -913,7 +913,7 @@ export class ProductionPlansList extends Message<ProductionPlansList> ***REMOVED
  *
  * @generated from message Genesis.ProductionPlansItemsList
  */
-export class ProductionPlansItemsList extends Message<ProductionPlansItemsList> ***REMOVED***
+export class ProductionPlansItemsList extends Message<ProductionPlansItemsList> {
   /**
    * List of records
    *
@@ -921,33 +921,33 @@ export class ProductionPlansItemsList extends Message<ProductionPlansItemsList> 
    */
   list: ProductionPlanItem[] = [];
 
-  constructor(data?: PartialMessage<ProductionPlansItemsList>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlansItemsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlansItemsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: ProductionPlanItem, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: ProductionPlanItem, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansItemsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansItemsList {
     return new ProductionPlansItemsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansItemsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansItemsList {
     return new ProductionPlansItemsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansItemsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansItemsList {
     return new ProductionPlansItemsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlansItemsList | PlainMessage<ProductionPlansItemsList> | undefined, b: ProductionPlansItemsList | PlainMessage<ProductionPlansItemsList> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlansItemsList | PlainMessage<ProductionPlansItemsList> | undefined, b: ProductionPlansItemsList | PlainMessage<ProductionPlansItemsList> | undefined): boolean {
     return proto3.util.equals(ProductionPlansItemsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -955,7 +955,7 @@ export class ProductionPlansItemsList extends Message<ProductionPlansItemsList> 
  *
  * @generated from message Genesis.ProductionPlanItemHistoryRequest
  */
-export class ProductionPlanItemHistoryRequest extends Message<ProductionPlanItemHistoryRequest> ***REMOVED***
+export class ProductionPlanItemHistoryRequest extends Message<ProductionPlanItemHistoryRequest> {
   /**
    * Stores the production plan ID
    *
@@ -970,34 +970,34 @@ export class ProductionPlanItemHistoryRequest extends Message<ProductionPlanItem
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ProductionPlanItemHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlanItemHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlanItemHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "production_plan_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "production_plan_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlanItemHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlanItemHistoryRequest {
     return new ProductionPlanItemHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanItemHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanItemHistoryRequest {
     return new ProductionPlanItemHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanItemHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanItemHistoryRequest {
     return new ProductionPlanItemHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlanItemHistoryRequest | PlainMessage<ProductionPlanItemHistoryRequest> | undefined, b: ProductionPlanItemHistoryRequest | PlainMessage<ProductionPlanItemHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlanItemHistoryRequest | PlainMessage<ProductionPlanItemHistoryRequest> | undefined, b: ProductionPlanItemHistoryRequest | PlainMessage<ProductionPlanItemHistoryRequest> | undefined): boolean {
     return proto3.util.equals(ProductionPlanItemHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1005,7 +1005,7 @@ export class ProductionPlanItemHistoryRequest extends Message<ProductionPlanItem
  *
  * @generated from message Genesis.ProductionPlanItemProspectiveInfoRequest
  */
-export class ProductionPlanItemProspectiveInfoRequest extends Message<ProductionPlanItemProspectiveInfoRequest> ***REMOVED***
+export class ProductionPlanItemProspectiveInfoRequest extends Message<ProductionPlanItemProspectiveInfoRequest> {
   /**
    * Stores the production plan ID
    *
@@ -1020,34 +1020,34 @@ export class ProductionPlanItemProspectiveInfoRequest extends Message<Production
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ProductionPlanItemProspectiveInfoRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlanItemProspectiveInfoRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlanItemProspectiveInfoRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "production_plan_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "production_plan_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlanItemProspectiveInfoRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlanItemProspectiveInfoRequest {
     return new ProductionPlanItemProspectiveInfoRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanItemProspectiveInfoRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlanItemProspectiveInfoRequest {
     return new ProductionPlanItemProspectiveInfoRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanItemProspectiveInfoRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlanItemProspectiveInfoRequest {
     return new ProductionPlanItemProspectiveInfoRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlanItemProspectiveInfoRequest | PlainMessage<ProductionPlanItemProspectiveInfoRequest> | undefined, b: ProductionPlanItemProspectiveInfoRequest | PlainMessage<ProductionPlanItemProspectiveInfoRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlanItemProspectiveInfoRequest | PlainMessage<ProductionPlanItemProspectiveInfoRequest> | undefined, b: ProductionPlanItemProspectiveInfoRequest | PlainMessage<ProductionPlanItemProspectiveInfoRequest> | undefined): boolean {
     return proto3.util.equals(ProductionPlanItemProspectiveInfoRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1055,7 +1055,7 @@ export class ProductionPlanItemProspectiveInfoRequest extends Message<Production
  *
  * @generated from message Genesis.ProductionPlansServicePaginationReq
  */
-export class ProductionPlansServicePaginationReq extends Message<ProductionPlansServicePaginationReq> ***REMOVED***
+export class ProductionPlansServicePaginationReq extends Message<ProductionPlansServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1098,38 +1098,38 @@ export class ProductionPlansServicePaginationReq extends Message<ProductionPlans
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<ProductionPlansServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlansServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlansServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServicePaginationReq {
     return new ProductionPlansServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginationReq {
     return new ProductionPlansServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginationReq {
     return new ProductionPlansServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlansServicePaginationReq | PlainMessage<ProductionPlansServicePaginationReq> | undefined, b: ProductionPlansServicePaginationReq | PlainMessage<ProductionPlansServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlansServicePaginationReq | PlainMessage<ProductionPlansServicePaginationReq> | undefined, b: ProductionPlansServicePaginationReq | PlainMessage<ProductionPlansServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(ProductionPlansServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1137,7 +1137,7 @@ export class ProductionPlansServicePaginationReq extends Message<ProductionPlans
  *
  * @generated from message Genesis.ProductionPlansServicePaginationResponse
  */
-export class ProductionPlansServicePaginationResponse extends Message<ProductionPlansServicePaginationResponse> ***REMOVED***
+export class ProductionPlansServicePaginationResponse extends Message<ProductionPlansServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -1166,36 +1166,36 @@ export class ProductionPlansServicePaginationResponse extends Message<Production
    */
   payload: ProductionPlan[] = [];
 
-  constructor(data?: PartialMessage<ProductionPlansServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlansServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlansServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: ProductionPlan, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: ProductionPlan, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServicePaginationResponse {
     return new ProductionPlansServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginationResponse {
     return new ProductionPlansServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServicePaginationResponse {
     return new ProductionPlansServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlansServicePaginationResponse | PlainMessage<ProductionPlansServicePaginationResponse> | undefined, b: ProductionPlansServicePaginationResponse | PlainMessage<ProductionPlansServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlansServicePaginationResponse | PlainMessage<ProductionPlansServicePaginationResponse> | undefined, b: ProductionPlansServicePaginationResponse | PlainMessage<ProductionPlansServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(ProductionPlansServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1203,7 +1203,7 @@ export class ProductionPlansServicePaginationResponse extends Message<Production
  *
  * @generated from message Genesis.ProductionPlansServiceEntityPaginationReq
  */
-export class ProductionPlansServiceEntityPaginationReq extends Message<ProductionPlansServiceEntityPaginationReq> ***REMOVED***
+export class ProductionPlansServiceEntityPaginationReq extends Message<ProductionPlansServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1246,38 +1246,38 @@ export class ProductionPlansServiceEntityPaginationReq extends Message<Productio
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<ProductionPlansServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlansServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlansServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceEntityPaginationReq {
     return new ProductionPlansServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceEntityPaginationReq {
     return new ProductionPlansServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceEntityPaginationReq {
     return new ProductionPlansServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlansServiceEntityPaginationReq | PlainMessage<ProductionPlansServiceEntityPaginationReq> | undefined, b: ProductionPlansServiceEntityPaginationReq | PlainMessage<ProductionPlansServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlansServiceEntityPaginationReq | PlainMessage<ProductionPlansServiceEntityPaginationReq> | undefined, b: ProductionPlansServiceEntityPaginationReq | PlainMessage<ProductionPlansServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(ProductionPlansServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1285,7 +1285,7 @@ export class ProductionPlansServiceEntityPaginationReq extends Message<Productio
  *
  * @generated from message Genesis.ProductionPlansServiceFilterReq
  */
-export class ProductionPlansServiceFilterReq extends Message<ProductionPlansServiceFilterReq> ***REMOVED***
+export class ProductionPlansServiceFilterReq extends Message<ProductionPlansServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1496,62 +1496,62 @@ export class ProductionPlansServiceFilterReq extends Message<ProductionPlansServ
    */
   projectId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ProductionPlansServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlansServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlansServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "start_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 31, name: "start_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 32, name: "start_time_start", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 33, name: "start_time_end", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 34, name: "end_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 35, name: "end_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 36, name: "end_time_start", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 37, name: "end_time_end", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 50, name: "project_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 24, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 25, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "start_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 31, name: "start_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 32, name: "start_time_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 33, name: "start_time_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 34, name: "end_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 35, name: "end_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 36, name: "end_time_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 37, name: "end_time_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 50, name: "project_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceFilterReq {
     return new ProductionPlansServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceFilterReq {
     return new ProductionPlansServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceFilterReq {
     return new ProductionPlansServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlansServiceFilterReq | PlainMessage<ProductionPlansServiceFilterReq> | undefined, b: ProductionPlansServiceFilterReq | PlainMessage<ProductionPlansServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlansServiceFilterReq | PlainMessage<ProductionPlansServiceFilterReq> | undefined, b: ProductionPlansServiceFilterReq | PlainMessage<ProductionPlansServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(ProductionPlansServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1559,7 +1559,7 @@ export class ProductionPlansServiceFilterReq extends Message<ProductionPlansServ
  *
  * @generated from message Genesis.ProductionPlansServiceSearchAllReq
  */
-export class ProductionPlansServiceSearchAllReq extends Message<ProductionPlansServiceSearchAllReq> ***REMOVED***
+export class ProductionPlansServiceSearchAllReq extends Message<ProductionPlansServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1644,42 +1644,42 @@ export class ProductionPlansServiceSearchAllReq extends Message<ProductionPlansS
    */
   supervisor = "";
 
-  constructor(data?: PartialMessage<ProductionPlansServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<ProductionPlansServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ProductionPlansServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PRODUCTION_PLAN_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 24, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 25, name: "supervisor", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProductionPlansServiceSearchAllReq {
     return new ProductionPlansServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProductionPlansServiceSearchAllReq {
     return new ProductionPlansServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProductionPlansServiceSearchAllReq {
     return new ProductionPlansServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ProductionPlansServiceSearchAllReq | PlainMessage<ProductionPlansServiceSearchAllReq> | undefined, b: ProductionPlansServiceSearchAllReq | PlainMessage<ProductionPlansServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: ProductionPlansServiceSearchAllReq | PlainMessage<ProductionPlansServiceSearchAllReq> | undefined, b: ProductionPlansServiceSearchAllReq | PlainMessage<ProductionPlansServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(ProductionPlansServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** ProductionPlan, ProductionPlanItem, ProductionPlanItemHistoryRequest, ProductionPlanItemProspectiveInfoRequest, ProductionPlansItemsList, ProductionPlansList, ProductionPlansServiceAutofillRequest, ProductionPlansServiceCreateRequest, ProductionPlansServiceEntityPaginationReq, ProductionPlansServiceFilterReq, ProductionPlansServiceItemCreateRequest, ProductionPlansServiceItemUpdateRequest, ProductionPlansServicePaginationReq, ProductionPlansServicePaginationResponse, ProductionPlansServiceSearchAllReq, ProductionPlansServiceUpdateRequest ***REMOVED*** from "./production_plans_pb.js";
-import ***REMOVED*** ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
+import { ProductionPlan, ProductionPlanItem, ProductionPlanItemHistoryRequest, ProductionPlanItemProspectiveInfoRequest, ProductionPlansItemsList, ProductionPlansList, ProductionPlansServiceAutofillRequest, ProductionPlansServiceCreateRequest, ProductionPlansServiceEntityPaginationReq, ProductionPlansServiceFilterReq, ProductionPlansServiceItemCreateRequest, ProductionPlansServiceItemUpdateRequest, ProductionPlansServicePaginationReq, ProductionPlansServicePaginationResponse, ProductionPlansServiceSearchAllReq, ProductionPlansServiceUpdateRequest } from "./production_plans_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
+import { FamiliesList } from "./families_pb.js";
 
 /**
  *
@@ -14,416 +14,416 @@ import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
  *
  * @generated from service Genesis.ProductionPlansService
  */
-export const ProductionPlansService = ***REMOVED***
+export const ProductionPlansService = {
   typeName: "Genesis.ProductionPlansService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.ProductionPlansService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: ProductionPlansServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.ProductionPlansService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: ProductionPlansServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.ProductionPlansService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: ProductionPlansServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.ProductionPlansService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.ProductionPlansService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.ProductionPlansService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.ProductionPlansService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.ProductionPlansService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: ProductionPlansServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.ProductionPlansService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.ProductionPlansService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.ProductionPlansService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.ProductionPlansService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.ProductionPlansService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.ProductionPlansService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
      * @generated from rpc Genesis.ProductionPlansService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send Email
      *
      * @generated from rpc Genesis.ProductionPlansService.SendEmail
      */
-    sendEmail: ***REMOVED***
+    sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Autofill the production plan
      *
      * @generated from rpc Genesis.ProductionPlansService.Autofill
      */
-    autofill: ***REMOVED***
+    autofill: {
       name: "Autofill",
       I: ProductionPlansServiceAutofillRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Checks if the Production Plan can be marked as completed
      *
      * @generated from rpc Genesis.ProductionPlansService.IsCompletable
      */
-    isCompletable: ***REMOVED***
+    isCompletable: {
       name: "IsCompletable",
       I: Identifier,
       O: BooleanResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a production plan
      *
      * @generated from rpc Genesis.ProductionPlansService.AddProductionPlanItem
      */
-    addProductionPlanItem: ***REMOVED***
+    addProductionPlanItem: {
       name: "AddProductionPlanItem",
       I: ProductionPlansServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a production plan
      *
      * @generated from rpc Genesis.ProductionPlansService.ModifyProductionPlanItem
      */
-    modifyProductionPlanItem: ***REMOVED***
+    modifyProductionPlanItem: {
       name: "ModifyProductionPlanItem",
       I: ProductionPlansServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a production plan
      *
      * @generated from rpc Genesis.ProductionPlansService.ApproveProductionPlanItem
      */
-    approveProductionPlanItem: ***REMOVED***
+    approveProductionPlanItem: {
       name: "ApproveProductionPlanItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a production plan
      *
      * @generated from rpc Genesis.ProductionPlansService.DeleteProductionPlanItem
      */
-    deleteProductionPlanItem: ***REMOVED***
+    deleteProductionPlanItem: {
       name: "DeleteProductionPlanItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a production plan
      *
      * @generated from rpc Genesis.ProductionPlansService.ReorderProductionPlanItems
      */
-    reorderProductionPlanItems: ***REMOVED***
+    reorderProductionPlanItems: {
       name: "ReorderProductionPlanItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Production Plan Item by ID
      *
      * @generated from rpc Genesis.ProductionPlansService.ViewProductionPlanItemByID
      */
-    viewProductionPlanItemByID: ***REMOVED***
+    viewProductionPlanItemByID: {
       name: "ViewProductionPlanItemByID",
       I: Identifier,
       O: ProductionPlanItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved production plan items for given production plan ID
      *
      * @generated from rpc Genesis.ProductionPlansService.ViewApprovedProductionPlanItems
      */
-    viewApprovedProductionPlanItems: ***REMOVED***
+    viewApprovedProductionPlanItems: {
       name: "ViewApprovedProductionPlanItems",
       I: IdentifierWithSearchKey,
       O: ProductionPlansItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved production plan items for given production plan ID
      *
      * @generated from rpc Genesis.ProductionPlansService.ViewUnapprovedProductionPlanItems
      */
-    viewUnapprovedProductionPlanItems: ***REMOVED***
+    viewUnapprovedProductionPlanItems: {
       name: "ViewUnapprovedProductionPlanItems",
       I: IdentifierWithSearchKey,
       O: ProductionPlansItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the production plan item
      *
      * @generated from rpc Genesis.ProductionPlansService.ViewProductionPlanItemHistory
      */
-    viewProductionPlanItemHistory: ***REMOVED***
+    viewProductionPlanItemHistory: {
       name: "ViewProductionPlanItemHistory",
       I: ProductionPlanItemHistoryRequest,
       O: ProductionPlansItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.ProductionPlansService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: ProductionPlan,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.ProductionPlansService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: ProductionPlansList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.ProductionPlansService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: ProductionPlansList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.ProductionPlansService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: ProductionPlansServicePaginationReq,
       O: ProductionPlansServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.ProductionPlansService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: ProductionPlansServiceEntityPaginationReq,
       O: ProductionPlansServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View prospective families for the given production plan
      *
      * @generated from rpc Genesis.ProductionPlansService.ViewProspectiveFamilies
      */
-    viewProspectiveFamilies: ***REMOVED***
+    viewProspectiveFamilies: {
       name: "ViewProspectiveFamilies",
       I: IdentifierWithSearchKey,
       O: FamiliesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View prospective production plan item info for the given family ID and production plan ID
      *
      * @generated from rpc Genesis.ProductionPlansService.ViewProspectiveProductionPlanItem
      */
-    viewProspectiveProductionPlanItem: ***REMOVED***
+    viewProspectiveProductionPlanItem: {
       name: "ViewProspectiveProductionPlanItem",
       I: ProductionPlanItemProspectiveInfoRequest,
       O: ProductionPlansServiceItemCreateRequest,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.ProductionPlansService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: ProductionPlansServiceSearchAllReq,
       O: ProductionPlansList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.ProductionPlansService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: ProductionPlansServiceFilterReq,
       O: ProductionPlansList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.ProductionPlansService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

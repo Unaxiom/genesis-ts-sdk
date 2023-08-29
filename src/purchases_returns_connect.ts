@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** PurchaseReturn, PurchaseReturnItem, PurchaseReturnItemHistoryRequest, PurchaseReturnItemProspectiveInfoRequest, PurchasesReturnsItemsList, PurchasesReturnsList, PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest, PurchasesReturnsServiceCreateRequest, PurchasesReturnsServiceEntityPaginationReq, PurchasesReturnsServiceFilterReq, PurchasesReturnsServiceItemCreateRequest, PurchasesReturnsServiceItemUpdateRequest, PurchasesReturnsServicePaginationReq, PurchasesReturnsServicePaginationResponse, PurchasesReturnsServiceSearchAllReq, PurchasesReturnsServiceUpdateRequest ***REMOVED*** from "./purchases_returns_pb.js";
-import ***REMOVED*** ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
+import { PurchaseReturn, PurchaseReturnItem, PurchaseReturnItemHistoryRequest, PurchaseReturnItemProspectiveInfoRequest, PurchasesReturnsItemsList, PurchasesReturnsList, PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest, PurchasesReturnsServiceCreateRequest, PurchasesReturnsServiceEntityPaginationReq, PurchasesReturnsServiceFilterReq, PurchasesReturnsServiceItemCreateRequest, PurchasesReturnsServiceItemUpdateRequest, PurchasesReturnsServicePaginationReq, PurchasesReturnsServicePaginationResponse, PurchasesReturnsServiceSearchAllReq, PurchasesReturnsServiceUpdateRequest } from "./purchases_returns_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
+import { FamiliesList } from "./families_pb.js";
 
 /**
  *
@@ -14,438 +14,438 @@ import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
  *
  * @generated from service Genesis.PurchasesReturnsService
  */
-export const PurchasesReturnsService = ***REMOVED***
+export const PurchasesReturnsService = {
   typeName: "Genesis.PurchasesReturnsService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.PurchasesReturnsService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: PurchasesReturnsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.PurchasesReturnsService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: PurchasesReturnsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.PurchasesReturnsService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: PurchasesReturnsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.PurchasesReturnsService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.PurchasesReturnsService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.PurchasesReturnsService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.PurchasesReturnsService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.PurchasesReturnsService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: PurchasesReturnsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.PurchasesReturnsService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.PurchasesReturnsService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.PurchasesReturnsService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.PurchasesReturnsService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.PurchasesReturnsService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.PurchasesReturnsService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
      * @generated from rpc Genesis.PurchasesReturnsService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send Email
      *
      * @generated from rpc Genesis.PurchasesReturnsService.SendEmail
      */
-    sendEmail: ***REMOVED***
+    sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Checks if the Purchase Return can be marked as completed
      *
      * @generated from rpc Genesis.PurchasesReturnsService.IsCompletable
      */
-    isCompletable: ***REMOVED***
+    isCompletable: {
       name: "IsCompletable",
       I: Identifier,
       O: BooleanResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a purchase return
      *
      * @generated from rpc Genesis.PurchasesReturnsService.AddPurchaseReturnItem
      */
-    addPurchaseReturnItem: ***REMOVED***
+    addPurchaseReturnItem: {
       name: "AddPurchaseReturnItem",
       I: PurchasesReturnsServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a purchase return
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ModifyPurchaseReturnItem
      */
-    modifyPurchaseReturnItem: ***REMOVED***
+    modifyPurchaseReturnItem: {
       name: "ModifyPurchaseReturnItem",
       I: PurchasesReturnsServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a purchase return
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ApprovePurchaseReturnItem
      */
-    approvePurchaseReturnItem: ***REMOVED***
+    approvePurchaseReturnItem: {
       name: "ApprovePurchaseReturnItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a purchase return
      *
      * @generated from rpc Genesis.PurchasesReturnsService.DeletePurchaseReturnItem
      */
-    deletePurchaseReturnItem: ***REMOVED***
+    deletePurchaseReturnItem: {
       name: "DeletePurchaseReturnItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a purchase return
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ReorderPurchaseReturnItems
      */
-    reorderPurchaseReturnItems: ***REMOVED***
+    reorderPurchaseReturnItems: {
       name: "ReorderPurchaseReturnItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Purchase Return Item by ID
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewPurchaseReturnItemByID
      */
-    viewPurchaseReturnItemByID: ***REMOVED***
+    viewPurchaseReturnItemByID: {
       name: "ViewPurchaseReturnItemByID",
       I: Identifier,
       O: PurchaseReturnItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Purchase Return Item by Inventory Hash
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewPurchaseReturnItemByInventoryHash
      */
-    viewPurchaseReturnItemByInventoryHash: ***REMOVED***
+    viewPurchaseReturnItemByInventoryHash: {
       name: "ViewPurchaseReturnItemByInventoryHash",
       I: SimpleSearchReq,
       O: PurchaseReturnItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved purchase return items for given purchase return ID
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewApprovedPurchaseReturnItems
      */
-    viewApprovedPurchaseReturnItems: ***REMOVED***
+    viewApprovedPurchaseReturnItems: {
       name: "ViewApprovedPurchaseReturnItems",
       I: IdentifierWithSearchKey,
       O: PurchasesReturnsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved purchase return items for given purchase return ID
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewUnapprovedPurchaseReturnItems
      */
-    viewUnapprovedPurchaseReturnItems: ***REMOVED***
+    viewUnapprovedPurchaseReturnItems: {
       name: "ViewUnapprovedPurchaseReturnItems",
       I: IdentifierWithSearchKey,
       O: PurchasesReturnsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the purchase return item
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewPurchaseReturnItemHistory
      */
-    viewPurchaseReturnItemHistory: ***REMOVED***
+    viewPurchaseReturnItemHistory: {
       name: "ViewPurchaseReturnItemHistory",
       I: PurchaseReturnItemHistoryRequest,
       O: PurchasesReturnsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: PurchaseReturn,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: PurchasesReturnsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: PurchasesReturnsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: PurchasesReturnsServicePaginationReq,
       O: PurchasesReturnsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: PurchasesReturnsServiceEntityPaginationReq,
       O: PurchasesReturnsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View prospective families for the given purchase return
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewProspectiveFamilies
      */
-    viewProspectiveFamilies: ***REMOVED***
+    viewProspectiveFamilies: {
       name: "ViewProspectiveFamilies",
       I: IdentifierWithSearchKey,
       O: FamiliesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View prospective purchase return item info for the given family ID and purchase return ID
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewProspectivePurchaseReturnItem
      */
-    viewProspectivePurchaseReturnItem: ***REMOVED***
+    viewProspectivePurchaseReturnItem: {
       name: "ViewProspectivePurchaseReturnItem",
       I: PurchaseReturnItemProspectiveInfoRequest,
       O: PurchasesReturnsServiceItemCreateRequest,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Checks if the Purchase Return has been billed
      *
      * @generated from rpc Genesis.PurchasesReturnsService.IsBilled
      */
-    isBilled: ***REMOVED***
+    isBilled: {
       name: "IsBilled",
       I: Identifier,
       O: BooleanResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View already added quantities
      *
      * @generated from rpc Genesis.PurchasesReturnsService.ViewAddedFamilyQuantityForSource
      */
-    viewAddedFamilyQuantityForSource: ***REMOVED***
+    viewAddedFamilyQuantityForSource: {
       name: "ViewAddedFamilyQuantityForSource",
       I: PurchasesReturnsServiceAlreadyAddedQuantityForSourceRequest,
       O: DualQuantitiesResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.PurchasesReturnsService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: PurchasesReturnsServiceSearchAllReq,
       O: PurchasesReturnsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.PurchasesReturnsService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: PurchasesReturnsServiceFilterReq,
       O: PurchasesReturnsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.PurchasesReturnsService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

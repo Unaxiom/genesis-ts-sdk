@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -13,7 +13,7 @@ import ***REMOVED*** STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js"
  *
  * @generated from message Genesis.Family
  */
-export class Family extends Message<Family> ***REMOVED***
+export class Family extends Message<Family> {
   /**
    * ID of the resource
    *
@@ -245,65 +245,65 @@ export class Family extends Message<Family> ***REMOVED***
    */
   timestamp = protoInt64.zero;
 
-  constructor(data?: PartialMessage<Family>) ***REMOVED***
+  constructor(data?: PartialMessage<Family>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.Family";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "uuid", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "family_type", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "print_name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 6, name: "drawing_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "unit_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "added_by", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "parent_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "root_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "leaf", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "ledger_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "qc_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "store_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "qc_hub_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "price", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "min_stock_to_maintain", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "initial_stock", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 26, name: "consumption_sequence", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 27, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 28, name: "approved_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 29, name: "approved_by", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 31, name: "label_ids", kind: "scalar", T: 3 /* ScalarType.INT64 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 32, name: "active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 33, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
+    { no: 3, name: "family_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 4, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 5, name: "print_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 6, name: "drawing_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 7, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 8, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "unit_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "added_by", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "parent_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "root_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "leaf", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 16, name: "ledger_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 17, name: "qc_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 18, name: "tax_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 19, name: "location_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "store_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 21, name: "qc_hub_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 22, name: "price", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 23, name: "min_stock_to_maintain", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 24, name: "initial_stock", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 25, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 26, name: "consumption_sequence", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 27, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 28, name: "approved_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 29, name: "approved_by", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 31, name: "label_ids", kind: "scalar", T: 3 /* ScalarType.INT64 */, repeated: true },
+    { no: 32, name: "active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 33, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Family ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Family {
     return new Family().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Family ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Family {
     return new Family().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Family ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Family {
     return new Family().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Family | PlainMessage<Family> | undefined, b: Family | PlainMessage<Family> | undefined): boolean ***REMOVED***
+  static equals(a: Family | PlainMessage<Family> | undefined, b: Family | PlainMessage<Family> | undefined): boolean {
     return proto3.util.equals(Family, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -311,7 +311,7 @@ export class Family extends Message<Family> ***REMOVED***
  *
  * @generated from message Genesis.FamiliesList
  */
-export class FamiliesList extends Message<FamiliesList> ***REMOVED***
+export class FamiliesList extends Message<FamiliesList> {
   /**
    * List of families
    *
@@ -319,31 +319,31 @@ export class FamiliesList extends Message<FamiliesList> ***REMOVED***
    */
   list: Family[] = [];
 
-  constructor(data?: PartialMessage<FamiliesList>) ***REMOVED***
+  constructor(data?: PartialMessage<FamiliesList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.FamiliesList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: Family, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: Family, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesList {
     return new FamiliesList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FamiliesList {
     return new FamiliesList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FamiliesList {
     return new FamiliesList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: FamiliesList | PlainMessage<FamiliesList> | undefined, b: FamiliesList | PlainMessage<FamiliesList> | undefined): boolean ***REMOVED***
+  static equals(a: FamiliesList | PlainMessage<FamiliesList> | undefined, b: FamiliesList | PlainMessage<FamiliesList> | undefined): boolean {
     return proto3.util.equals(FamiliesList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

@@ -3,8 +3,8 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 
 /**
  *
@@ -12,7 +12,7 @@ import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/p
  *
  * @generated from enum Genesis.SORT_ORDER
  */
-export enum SORT_ORDER ***REMOVED***
+export enum SORT_ORDER {
   /**
    * Fetch results in the ascending order of the provided sort key
    *
@@ -26,11 +26,11 @@ export enum SORT_ORDER ***REMOVED***
    * @generated from enum value: DESCENDING = 1;
    */
   DESCENDING = 1,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(SORT_ORDER)
 proto3.util.setEnumType(SORT_ORDER, "Genesis.SORT_ORDER", [
-  ***REMOVED*** no: 0, name: "ASCENDING_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "DESCENDING" ***REMOVED***,
+  { no: 0, name: "ASCENDING_UNSPECIFIED" },
+  { no: 1, name: "DESCENDING" },
 ]);
 
 /**
@@ -39,7 +39,7 @@ proto3.util.setEnumType(SORT_ORDER, "Genesis.SORT_ORDER", [
  *
  * @generated from enum Genesis.STANDARD_LIFECYCLE_STATUS
  */
-export enum STANDARD_LIFECYCLE_STATUS ***REMOVED***
+export enum STANDARD_LIFECYCLE_STATUS {
   /**
    * The resource has just been created, and has been sent for verification
    *
@@ -102,18 +102,18 @@ export enum STANDARD_LIFECYCLE_STATUS ***REMOVED***
    * @generated from enum value: ANY = 10;
    */
   ANY = 10,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS)
 proto3.util.setEnumType(STANDARD_LIFECYCLE_STATUS, "Genesis.STANDARD_LIFECYCLE_STATUS", [
-  ***REMOVED*** no: 0, name: "PREVERIFY_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "DRAFT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "VERIFIED" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "STANDING" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "REVISION" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "HALTED" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "COMPLETED" ***REMOVED***,
-  ***REMOVED*** no: 7, name: "DISCARDED" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "ANY" ***REMOVED***,
+  { no: 0, name: "PREVERIFY_UNSPECIFIED" },
+  { no: 1, name: "DRAFT" },
+  { no: 2, name: "VERIFIED" },
+  { no: 3, name: "STANDING" },
+  { no: 4, name: "REVISION" },
+  { no: 5, name: "HALTED" },
+  { no: 6, name: "COMPLETED" },
+  { no: 7, name: "DISCARDED" },
+  { no: 10, name: "ANY" },
 ]);
 
 /**
@@ -122,7 +122,7 @@ proto3.util.setEnumType(STANDARD_LIFECYCLE_STATUS, "Genesis.STANDARD_LIFECYCLE_S
  *
  * @generated from enum Genesis.LOGBOOK_OPERATION
  */
-export enum LOGBOOK_OPERATION ***REMOVED***
+export enum LOGBOOK_OPERATION {
   /**
    * Create a resource
    *
@@ -150,13 +150,13 @@ export enum LOGBOOK_OPERATION ***REMOVED***
    * @generated from enum value: RESTORE = 3;
    */
   RESTORE = 3,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(LOGBOOK_OPERATION)
 proto3.util.setEnumType(LOGBOOK_OPERATION, "Genesis.LOGBOOK_OPERATION", [
-  ***REMOVED*** no: 0, name: "CREATE_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "UPDATE" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "ARCHIVE" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "RESTORE" ***REMOVED***,
+  { no: 0, name: "CREATE_UNSPECIFIED" },
+  { no: 1, name: "UPDATE" },
+  { no: 2, name: "ARCHIVE" },
+  { no: 3, name: "RESTORE" },
 ]);
 
 /**
@@ -165,33 +165,33 @@ proto3.util.setEnumType(LOGBOOK_OPERATION, "Genesis.LOGBOOK_OPERATION", [
  *
  * @generated from message Genesis.Empty
  */
-export class Empty extends Message<Empty> ***REMOVED***
-  constructor(data?: PartialMessage<Empty>) ***REMOVED***
+export class Empty extends Message<Empty> {
+  constructor(data?: PartialMessage<Empty>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.Empty";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Empty ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Empty {
     return new Empty().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Empty ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Empty {
     return new Empty().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Empty ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Empty {
     return new Empty().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Empty | PlainMessage<Empty> | undefined, b: Empty | PlainMessage<Empty> | undefined): boolean ***REMOVED***
+  static equals(a: Empty | PlainMessage<Empty> | undefined, b: Empty | PlainMessage<Empty> | undefined): boolean {
     return proto3.util.equals(Empty, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -199,7 +199,7 @@ export class Empty extends Message<Empty> ***REMOVED***
  *
  * @generated from message Genesis.BooleanResponse
  */
-export class BooleanResponse extends Message<BooleanResponse> ***REMOVED***
+export class BooleanResponse extends Message<BooleanResponse> {
   /**
    * Stores if the value is true or false
    *
@@ -207,33 +207,33 @@ export class BooleanResponse extends Message<BooleanResponse> ***REMOVED***
    */
   value = false;
 
-  constructor(data?: PartialMessage<BooleanResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<BooleanResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.BooleanResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "value", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
+    { no: 1, name: "value", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): BooleanResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): BooleanResponse {
     return new BooleanResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): BooleanResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): BooleanResponse {
     return new BooleanResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): BooleanResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): BooleanResponse {
     return new BooleanResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: BooleanResponse | PlainMessage<BooleanResponse> | undefined, b: BooleanResponse | PlainMessage<BooleanResponse> | undefined): boolean ***REMOVED***
+  static equals(a: BooleanResponse | PlainMessage<BooleanResponse> | undefined, b: BooleanResponse | PlainMessage<BooleanResponse> | undefined): boolean {
     return proto3.util.equals(BooleanResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -241,7 +241,7 @@ export class BooleanResponse extends Message<BooleanResponse> ***REMOVED***
  *
  * @generated from message Genesis.BytesResponse
  */
-export class BytesResponse extends Message<BytesResponse> ***REMOVED***
+export class BytesResponse extends Message<BytesResponse> {
   /**
    * Stores the response content in bytes
    *
@@ -249,33 +249,33 @@ export class BytesResponse extends Message<BytesResponse> ***REMOVED***
    */
   value = new Uint8Array(0);
 
-  constructor(data?: PartialMessage<BytesResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<BytesResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.BytesResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "value", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
+    { no: 1, name: "value", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): BytesResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): BytesResponse {
     return new BytesResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): BytesResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): BytesResponse {
     return new BytesResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): BytesResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): BytesResponse {
     return new BytesResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: BytesResponse | PlainMessage<BytesResponse> | undefined, b: BytesResponse | PlainMessage<BytesResponse> | undefined): boolean ***REMOVED***
+  static equals(a: BytesResponse | PlainMessage<BytesResponse> | undefined, b: BytesResponse | PlainMessage<BytesResponse> | undefined): boolean {
     return proto3.util.equals(BytesResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -283,7 +283,7 @@ export class BytesResponse extends Message<BytesResponse> ***REMOVED***
  *
  * @generated from message Genesis.ImageResponse
  */
-export class ImageResponse extends Message<ImageResponse> ***REMOVED***
+export class ImageResponse extends Message<ImageResponse> {
   /**
    * Stores the raw image content
    *
@@ -305,35 +305,35 @@ export class ImageResponse extends Message<ImageResponse> ***REMOVED***
    */
   timestamp = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ImageResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<ImageResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ImageResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "image", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "mime_type", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "image", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
+    { no: 2, name: "mime_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ImageResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ImageResponse {
     return new ImageResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ImageResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ImageResponse {
     return new ImageResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ImageResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ImageResponse {
     return new ImageResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ImageResponse | PlainMessage<ImageResponse> | undefined, b: ImageResponse | PlainMessage<ImageResponse> | undefined): boolean ***REMOVED***
+  static equals(a: ImageResponse | PlainMessage<ImageResponse> | undefined, b: ImageResponse | PlainMessage<ImageResponse> | undefined): boolean {
     return proto3.util.equals(ImageResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -341,7 +341,7 @@ export class ImageResponse extends Message<ImageResponse> ***REMOVED***
  *
  * @generated from message Genesis.Base64String
  */
-export class Base64String extends Message<Base64String> ***REMOVED***
+export class Base64String extends Message<Base64String> {
   /**
    * Stores the image as a base64 string
    *
@@ -349,33 +349,33 @@ export class Base64String extends Message<Base64String> ***REMOVED***
    */
   image = "";
 
-  constructor(data?: PartialMessage<Base64String>) ***REMOVED***
+  constructor(data?: PartialMessage<Base64String>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.Base64String";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "image", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "image", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Base64String ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Base64String {
     return new Base64String().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Base64String ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Base64String {
     return new Base64String().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Base64String ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Base64String {
     return new Base64String().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Base64String | PlainMessage<Base64String> | undefined, b: Base64String | PlainMessage<Base64String> | undefined): boolean ***REMOVED***
+  static equals(a: Base64String | PlainMessage<Base64String> | undefined, b: Base64String | PlainMessage<Base64String> | undefined): boolean {
     return proto3.util.equals(Base64String, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -383,7 +383,7 @@ export class Base64String extends Message<Base64String> ***REMOVED***
  *
  * @generated from message Genesis.MonthAndDayFilter
  */
-export class MonthAndDayFilter extends Message<MonthAndDayFilter> ***REMOVED***
+export class MonthAndDayFilter extends Message<MonthAndDayFilter> {
   /**
    * Stores the month (1 for Jan, 2 for Feb, etc.)
    *
@@ -398,34 +398,34 @@ export class MonthAndDayFilter extends Message<MonthAndDayFilter> ***REMOVED***
    */
   day = protoInt64.zero;
 
-  constructor(data?: PartialMessage<MonthAndDayFilter>) ***REMOVED***
+  constructor(data?: PartialMessage<MonthAndDayFilter>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.MonthAndDayFilter";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "month", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "day", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "month", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "day", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MonthAndDayFilter ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MonthAndDayFilter {
     return new MonthAndDayFilter().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): MonthAndDayFilter ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): MonthAndDayFilter {
     return new MonthAndDayFilter().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): MonthAndDayFilter ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): MonthAndDayFilter {
     return new MonthAndDayFilter().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: MonthAndDayFilter | PlainMessage<MonthAndDayFilter> | undefined, b: MonthAndDayFilter | PlainMessage<MonthAndDayFilter> | undefined): boolean ***REMOVED***
+  static equals(a: MonthAndDayFilter | PlainMessage<MonthAndDayFilter> | undefined, b: MonthAndDayFilter | PlainMessage<MonthAndDayFilter> | undefined): boolean {
     return proto3.util.equals(MonthAndDayFilter, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -433,7 +433,7 @@ export class MonthAndDayFilter extends Message<MonthAndDayFilter> ***REMOVED***
  *
  * @generated from message Genesis.GPSCoordinatesResponse
  */
-export class GPSCoordinatesResponse extends Message<GPSCoordinatesResponse> ***REMOVED***
+export class GPSCoordinatesResponse extends Message<GPSCoordinatesResponse> {
   /**
    * Stores the latitude
    *
@@ -448,34 +448,34 @@ export class GPSCoordinatesResponse extends Message<GPSCoordinatesResponse> ***R
    */
   longitude = 0;
 
-  constructor(data?: PartialMessage<GPSCoordinatesResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<GPSCoordinatesResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GPSCoordinatesResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "latitude", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "longitude", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ ***REMOVED***,
+    { no: 1, name: "latitude", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
+    { no: 2, name: "longitude", kind: "scalar", T: 1 /* ScalarType.DOUBLE */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GPSCoordinatesResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GPSCoordinatesResponse {
     return new GPSCoordinatesResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GPSCoordinatesResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GPSCoordinatesResponse {
     return new GPSCoordinatesResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GPSCoordinatesResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GPSCoordinatesResponse {
     return new GPSCoordinatesResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GPSCoordinatesResponse | PlainMessage<GPSCoordinatesResponse> | undefined, b: GPSCoordinatesResponse | PlainMessage<GPSCoordinatesResponse> | undefined): boolean ***REMOVED***
+  static equals(a: GPSCoordinatesResponse | PlainMessage<GPSCoordinatesResponse> | undefined, b: GPSCoordinatesResponse | PlainMessage<GPSCoordinatesResponse> | undefined): boolean {
     return proto3.util.equals(GPSCoordinatesResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -483,7 +483,7 @@ export class GPSCoordinatesResponse extends Message<GPSCoordinatesResponse> ***R
  *
  * @generated from message Genesis.CountInSLCStatusRequest
  */
-export class CountInSLCStatusRequest extends Message<CountInSLCStatusRequest> ***REMOVED***
+export class CountInSLCStatusRequest extends Message<CountInSLCStatusRequest> {
   /**
    * Denote if only active records need to be returned
    *
@@ -498,34 +498,34 @@ export class CountInSLCStatusRequest extends Message<CountInSLCStatusRequest> **
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<CountInSLCStatusRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<CountInSLCStatusRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.CountInSLCStatusRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CountInSLCStatusRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CountInSLCStatusRequest {
     return new CountInSLCStatusRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CountInSLCStatusRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CountInSLCStatusRequest {
     return new CountInSLCStatusRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CountInSLCStatusRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CountInSLCStatusRequest {
     return new CountInSLCStatusRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: CountInSLCStatusRequest | PlainMessage<CountInSLCStatusRequest> | undefined, b: CountInSLCStatusRequest | PlainMessage<CountInSLCStatusRequest> | undefined): boolean ***REMOVED***
+  static equals(a: CountInSLCStatusRequest | PlainMessage<CountInSLCStatusRequest> | undefined, b: CountInSLCStatusRequest | PlainMessage<CountInSLCStatusRequest> | undefined): boolean {
     return proto3.util.equals(CountInSLCStatusRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -533,7 +533,7 @@ export class CountInSLCStatusRequest extends Message<CountInSLCStatusRequest> **
  *
  * @generated from message Genesis.CountResponse
  */
-export class CountResponse extends Message<CountResponse> ***REMOVED***
+export class CountResponse extends Message<CountResponse> {
   /**
    * The number of records
    *
@@ -541,33 +541,33 @@ export class CountResponse extends Message<CountResponse> ***REMOVED***
    */
   count = protoInt64.zero;
 
-  constructor(data?: PartialMessage<CountResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<CountResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.CountResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CountResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CountResponse {
     return new CountResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CountResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CountResponse {
     return new CountResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CountResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CountResponse {
     return new CountResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: CountResponse | PlainMessage<CountResponse> | undefined, b: CountResponse | PlainMessage<CountResponse> | undefined): boolean ***REMOVED***
+  static equals(a: CountResponse | PlainMessage<CountResponse> | undefined, b: CountResponse | PlainMessage<CountResponse> | undefined): boolean {
     return proto3.util.equals(CountResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -575,7 +575,7 @@ export class CountResponse extends Message<CountResponse> ***REMOVED***
  *
  * @generated from message Genesis.QuantityResponse
  */
-export class QuantityResponse extends Message<QuantityResponse> ***REMOVED***
+export class QuantityResponse extends Message<QuantityResponse> {
   /**
    * The quantity
    *
@@ -583,33 +583,33 @@ export class QuantityResponse extends Message<QuantityResponse> ***REMOVED***
    */
   quantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<QuantityResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<QuantityResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.QuantityResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuantityResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuantityResponse {
     return new QuantityResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuantityResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuantityResponse {
     return new QuantityResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuantityResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuantityResponse {
     return new QuantityResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: QuantityResponse | PlainMessage<QuantityResponse> | undefined, b: QuantityResponse | PlainMessage<QuantityResponse> | undefined): boolean ***REMOVED***
+  static equals(a: QuantityResponse | PlainMessage<QuantityResponse> | undefined, b: QuantityResponse | PlainMessage<QuantityResponse> | undefined): boolean {
     return proto3.util.equals(QuantityResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -617,7 +617,7 @@ export class QuantityResponse extends Message<QuantityResponse> ***REMOVED***
  *
  * @generated from message Genesis.DualQuantitiesResponse
  */
-export class DualQuantitiesResponse extends Message<DualQuantitiesResponse> ***REMOVED***
+export class DualQuantitiesResponse extends Message<DualQuantitiesResponse> {
   /**
    * Quantity in internal UoM
    *
@@ -632,34 +632,34 @@ export class DualQuantitiesResponse extends Message<DualQuantitiesResponse> ***R
    */
   secondaryQuantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<DualQuantitiesResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<DualQuantitiesResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.DualQuantitiesResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "primary_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "secondary_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "primary_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "secondary_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DualQuantitiesResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DualQuantitiesResponse {
     return new DualQuantitiesResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DualQuantitiesResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DualQuantitiesResponse {
     return new DualQuantitiesResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DualQuantitiesResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DualQuantitiesResponse {
     return new DualQuantitiesResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: DualQuantitiesResponse | PlainMessage<DualQuantitiesResponse> | undefined, b: DualQuantitiesResponse | PlainMessage<DualQuantitiesResponse> | undefined): boolean ***REMOVED***
+  static equals(a: DualQuantitiesResponse | PlainMessage<DualQuantitiesResponse> | undefined, b: DualQuantitiesResponse | PlainMessage<DualQuantitiesResponse> | undefined): boolean {
     return proto3.util.equals(DualQuantitiesResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -667,7 +667,7 @@ export class DualQuantitiesResponse extends Message<DualQuantitiesResponse> ***R
  *
  * @generated from message Genesis.EmployeeMetadata
  */
-export class EmployeeMetadata extends Message<EmployeeMetadata> ***REMOVED***
+export class EmployeeMetadata extends Message<EmployeeMetadata> {
   /**
    * ID of the resource
    *
@@ -710,38 +710,38 @@ export class EmployeeMetadata extends Message<EmployeeMetadata> ***REMOVED***
    */
   modifiedAt = protoInt64.zero;
 
-  constructor(data?: PartialMessage<EmployeeMetadata>) ***REMOVED***
+  constructor(data?: PartialMessage<EmployeeMetadata>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.EmployeeMetadata";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "uuid", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "added_by", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "created_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 6, name: "modified_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "uuid", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
+    { no: 3, name: "added_by", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 4, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "created_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 6, name: "modified_at", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EmployeeMetadata ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EmployeeMetadata {
     return new EmployeeMetadata().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EmployeeMetadata ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EmployeeMetadata {
     return new EmployeeMetadata().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EmployeeMetadata ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EmployeeMetadata {
     return new EmployeeMetadata().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EmployeeMetadata | PlainMessage<EmployeeMetadata> | undefined, b: EmployeeMetadata | PlainMessage<EmployeeMetadata> | undefined): boolean ***REMOVED***
+  static equals(a: EmployeeMetadata | PlainMessage<EmployeeMetadata> | undefined, b: EmployeeMetadata | PlainMessage<EmployeeMetadata> | undefined): boolean {
     return proto3.util.equals(EmployeeMetadata, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -749,7 +749,7 @@ export class EmployeeMetadata extends Message<EmployeeMetadata> ***REMOVED***
  *
  * @generated from message Genesis.ApprovalMetadata
  */
-export class ApprovalMetadata extends Message<ApprovalMetadata> ***REMOVED***
+export class ApprovalMetadata extends Message<ApprovalMetadata> {
   /**
    * Stores the UNIX timestamp of when a resource was approved
    *
@@ -771,35 +771,35 @@ export class ApprovalMetadata extends Message<ApprovalMetadata> ***REMOVED***
    */
   approverRoleId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<ApprovalMetadata>) ***REMOVED***
+  constructor(data?: PartialMessage<ApprovalMetadata>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ApprovalMetadata";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "approved_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "approved_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ApprovalMetadata ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ApprovalMetadata {
     return new ApprovalMetadata().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ApprovalMetadata ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ApprovalMetadata {
     return new ApprovalMetadata().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ApprovalMetadata ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ApprovalMetadata {
     return new ApprovalMetadata().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ApprovalMetadata | PlainMessage<ApprovalMetadata> | undefined, b: ApprovalMetadata | PlainMessage<ApprovalMetadata> | undefined): boolean ***REMOVED***
+  static equals(a: ApprovalMetadata | PlainMessage<ApprovalMetadata> | undefined, b: ApprovalMetadata | PlainMessage<ApprovalMetadata> | undefined): boolean {
     return proto3.util.equals(ApprovalMetadata, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -807,7 +807,7 @@ export class ApprovalMetadata extends Message<ApprovalMetadata> ***REMOVED***
  *
  * @generated from message Genesis.ActiveStatus
  */
-export class ActiveStatus extends Message<ActiveStatus> ***REMOVED***
+export class ActiveStatus extends Message<ActiveStatus> {
   /**
    * Used in ViewAll procedural calls, to denote if only active records need to be returned
    *
@@ -815,33 +815,33 @@ export class ActiveStatus extends Message<ActiveStatus> ***REMOVED***
    */
   isActive = false;
 
-  constructor(data?: PartialMessage<ActiveStatus>) ***REMOVED***
+  constructor(data?: PartialMessage<ActiveStatus>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ActiveStatus";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ActiveStatus ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ActiveStatus {
     return new ActiveStatus().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ActiveStatus ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ActiveStatus {
     return new ActiveStatus().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ActiveStatus ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ActiveStatus {
     return new ActiveStatus().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ActiveStatus | PlainMessage<ActiveStatus> | undefined, b: ActiveStatus | PlainMessage<ActiveStatus> | undefined): boolean ***REMOVED***
+  static equals(a: ActiveStatus | PlainMessage<ActiveStatus> | undefined, b: ActiveStatus | PlainMessage<ActiveStatus> | undefined): boolean {
     return proto3.util.equals(ActiveStatus, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -849,7 +849,7 @@ export class ActiveStatus extends Message<ActiveStatus> ***REMOVED***
  *
  * @generated from message Genesis.UpdatePasswordReq
  */
-export class UpdatePasswordReq extends Message<UpdatePasswordReq> ***REMOVED***
+export class UpdatePasswordReq extends Message<UpdatePasswordReq> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -871,35 +871,35 @@ export class UpdatePasswordReq extends Message<UpdatePasswordReq> ***REMOVED***
    */
   plainTextPassword = "";
 
-  constructor(data?: PartialMessage<UpdatePasswordReq>) ***REMOVED***
+  constructor(data?: PartialMessage<UpdatePasswordReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UpdatePasswordReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "plain_text_password", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "plain_text_password", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UpdatePasswordReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UpdatePasswordReq {
     return new UpdatePasswordReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UpdatePasswordReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UpdatePasswordReq {
     return new UpdatePasswordReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UpdatePasswordReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UpdatePasswordReq {
     return new UpdatePasswordReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UpdatePasswordReq | PlainMessage<UpdatePasswordReq> | undefined, b: UpdatePasswordReq | PlainMessage<UpdatePasswordReq> | undefined): boolean ***REMOVED***
+  static equals(a: UpdatePasswordReq | PlainMessage<UpdatePasswordReq> | undefined, b: UpdatePasswordReq | PlainMessage<UpdatePasswordReq> | undefined): boolean {
     return proto3.util.equals(UpdatePasswordReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -907,7 +907,7 @@ export class UpdatePasswordReq extends Message<UpdatePasswordReq> ***REMOVED***
  *
  * @generated from message Genesis.UpdateOwnPasswordReq
  */
-export class UpdateOwnPasswordReq extends Message<UpdateOwnPasswordReq> ***REMOVED***
+export class UpdateOwnPasswordReq extends Message<UpdateOwnPasswordReq> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -929,35 +929,35 @@ export class UpdateOwnPasswordReq extends Message<UpdateOwnPasswordReq> ***REMOV
    */
   plainTextPassword = "";
 
-  constructor(data?: PartialMessage<UpdateOwnPasswordReq>) ***REMOVED***
+  constructor(data?: PartialMessage<UpdateOwnPasswordReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UpdateOwnPasswordReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "old_plain_text_password", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "plain_text_password", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "old_plain_text_password", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 4, name: "plain_text_password", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UpdateOwnPasswordReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UpdateOwnPasswordReq {
     return new UpdateOwnPasswordReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UpdateOwnPasswordReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UpdateOwnPasswordReq {
     return new UpdateOwnPasswordReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UpdateOwnPasswordReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UpdateOwnPasswordReq {
     return new UpdateOwnPasswordReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UpdateOwnPasswordReq | PlainMessage<UpdateOwnPasswordReq> | undefined, b: UpdateOwnPasswordReq | PlainMessage<UpdateOwnPasswordReq> | undefined): boolean ***REMOVED***
+  static equals(a: UpdateOwnPasswordReq | PlainMessage<UpdateOwnPasswordReq> | undefined, b: UpdateOwnPasswordReq | PlainMessage<UpdateOwnPasswordReq> | undefined): boolean {
     return proto3.util.equals(UpdateOwnPasswordReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -965,7 +965,7 @@ export class UpdateOwnPasswordReq extends Message<UpdateOwnPasswordReq> ***REMOV
  *
  * @generated from message Genesis.UploadPictureReq
  */
-export class UploadPictureReq extends Message<UploadPictureReq> ***REMOVED***
+export class UploadPictureReq extends Message<UploadPictureReq> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -994,36 +994,36 @@ export class UploadPictureReq extends Message<UploadPictureReq> ***REMOVED***
    */
   mimeType = "";
 
-  constructor(data?: PartialMessage<UploadPictureReq>) ***REMOVED***
+  constructor(data?: PartialMessage<UploadPictureReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.UploadPictureReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "img", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "mime_type", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "img", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "mime_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UploadPictureReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UploadPictureReq {
     return new UploadPictureReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UploadPictureReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UploadPictureReq {
     return new UploadPictureReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UploadPictureReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UploadPictureReq {
     return new UploadPictureReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UploadPictureReq | PlainMessage<UploadPictureReq> | undefined, b: UploadPictureReq | PlainMessage<UploadPictureReq> | undefined): boolean ***REMOVED***
+  static equals(a: UploadPictureReq | PlainMessage<UploadPictureReq> | undefined, b: UploadPictureReq | PlainMessage<UploadPictureReq> | undefined): boolean {
     return proto3.util.equals(UploadPictureReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1031,39 +1031,39 @@ export class UploadPictureReq extends Message<UploadPictureReq> ***REMOVED***
  *
  * @generated from message Genesis.SimpleSearchReq
  */
-export class SimpleSearchReq extends Message<SimpleSearchReq> ***REMOVED***
+export class SimpleSearchReq extends Message<SimpleSearchReq> {
   /**
    * @generated from field: string search_key = 1;
    */
   searchKey = "";
 
-  constructor(data?: PartialMessage<SimpleSearchReq>) ***REMOVED***
+  constructor(data?: PartialMessage<SimpleSearchReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.SimpleSearchReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SimpleSearchReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SimpleSearchReq {
     return new SimpleSearchReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SimpleSearchReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SimpleSearchReq {
     return new SimpleSearchReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SimpleSearchReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SimpleSearchReq {
     return new SimpleSearchReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SimpleSearchReq | PlainMessage<SimpleSearchReq> | undefined, b: SimpleSearchReq | PlainMessage<SimpleSearchReq> | undefined): boolean ***REMOVED***
+  static equals(a: SimpleSearchReq | PlainMessage<SimpleSearchReq> | undefined, b: SimpleSearchReq | PlainMessage<SimpleSearchReq> | undefined): boolean {
     return proto3.util.equals(SimpleSearchReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1071,7 +1071,7 @@ export class SimpleSearchReq extends Message<SimpleSearchReq> ***REMOVED***
  *
  * @generated from message Genesis.Identifier
  */
-export class Identifier extends Message<Identifier> ***REMOVED***
+export class Identifier extends Message<Identifier> {
   /**
    * ID of the resource
    *
@@ -1079,33 +1079,33 @@ export class Identifier extends Message<Identifier> ***REMOVED***
    */
   id = protoInt64.zero;
 
-  constructor(data?: PartialMessage<Identifier>) ***REMOVED***
+  constructor(data?: PartialMessage<Identifier>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.Identifier";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Identifier ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Identifier {
     return new Identifier().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Identifier ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Identifier {
     return new Identifier().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Identifier ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Identifier {
     return new Identifier().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Identifier | PlainMessage<Identifier> | undefined, b: Identifier | PlainMessage<Identifier> | undefined): boolean ***REMOVED***
+  static equals(a: Identifier | PlainMessage<Identifier> | undefined, b: Identifier | PlainMessage<Identifier> | undefined): boolean {
     return proto3.util.equals(Identifier, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1113,7 +1113,7 @@ export class Identifier extends Message<Identifier> ***REMOVED***
  *
  * @generated from message Genesis.IdentifierZeroable
  */
-export class IdentifierZeroable extends Message<IdentifierZeroable> ***REMOVED***
+export class IdentifierZeroable extends Message<IdentifierZeroable> {
   /**
    * ID of the resource
    *
@@ -1121,33 +1121,33 @@ export class IdentifierZeroable extends Message<IdentifierZeroable> ***REMOVED**
    */
   id = protoInt64.zero;
 
-  constructor(data?: PartialMessage<IdentifierZeroable>) ***REMOVED***
+  constructor(data?: PartialMessage<IdentifierZeroable>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.IdentifierZeroable";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierZeroable ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierZeroable {
     return new IdentifierZeroable().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierZeroable ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierZeroable {
     return new IdentifierZeroable().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierZeroable ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierZeroable {
     return new IdentifierZeroable().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: IdentifierZeroable | PlainMessage<IdentifierZeroable> | undefined, b: IdentifierZeroable | PlainMessage<IdentifierZeroable> | undefined): boolean ***REMOVED***
+  static equals(a: IdentifierZeroable | PlainMessage<IdentifierZeroable> | undefined, b: IdentifierZeroable | PlainMessage<IdentifierZeroable> | undefined): boolean {
     return proto3.util.equals(IdentifierZeroable, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1155,7 +1155,7 @@ export class IdentifierZeroable extends Message<IdentifierZeroable> ***REMOVED**
  *
  * @generated from message Genesis.IdentifierWithSearch
  */
-export class IdentifierWithSearch extends Message<IdentifierWithSearch> ***REMOVED***
+export class IdentifierWithSearch extends Message<IdentifierWithSearch> {
   /**
    * ID of the resource
    *
@@ -1170,34 +1170,34 @@ export class IdentifierWithSearch extends Message<IdentifierWithSearch> ***REMOV
    */
   searchKey = "";
 
-  constructor(data?: PartialMessage<IdentifierWithSearch>) ***REMOVED***
+  constructor(data?: PartialMessage<IdentifierWithSearch>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.IdentifierWithSearch";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierWithSearch ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierWithSearch {
     return new IdentifierWithSearch().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithSearch ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithSearch {
     return new IdentifierWithSearch().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithSearch ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithSearch {
     return new IdentifierWithSearch().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: IdentifierWithSearch | PlainMessage<IdentifierWithSearch> | undefined, b: IdentifierWithSearch | PlainMessage<IdentifierWithSearch> | undefined): boolean ***REMOVED***
+  static equals(a: IdentifierWithSearch | PlainMessage<IdentifierWithSearch> | undefined, b: IdentifierWithSearch | PlainMessage<IdentifierWithSearch> | undefined): boolean {
     return proto3.util.equals(IdentifierWithSearch, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1205,7 +1205,7 @@ export class IdentifierWithSearch extends Message<IdentifierWithSearch> ***REMOV
  *
  * @generated from message Genesis.IdentifiersList
  */
-export class IdentifiersList extends Message<IdentifiersList> ***REMOVED***
+export class IdentifiersList extends Message<IdentifiersList> {
   /**
    * List of identifiers
    *
@@ -1213,33 +1213,33 @@ export class IdentifiersList extends Message<IdentifiersList> ***REMOVED***
    */
   list: bigint[] = [];
 
-  constructor(data?: PartialMessage<IdentifiersList>) ***REMOVED***
+  constructor(data?: PartialMessage<IdentifiersList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.IdentifiersList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "scalar", T: 3 /* ScalarType.INT64 */, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "scalar", T: 3 /* ScalarType.INT64 */, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifiersList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifiersList {
     return new IdentifiersList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifiersList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifiersList {
     return new IdentifiersList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifiersList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifiersList {
     return new IdentifiersList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: IdentifiersList | PlainMessage<IdentifiersList> | undefined, b: IdentifiersList | PlainMessage<IdentifiersList> | undefined): boolean ***REMOVED***
+  static equals(a: IdentifiersList | PlainMessage<IdentifiersList> | undefined, b: IdentifiersList | PlainMessage<IdentifiersList> | undefined): boolean {
     return proto3.util.equals(IdentifiersList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1247,7 +1247,7 @@ export class IdentifiersList extends Message<IdentifiersList> ***REMOVED***
  *
  * @generated from message Genesis.IdentifierWithUserComment
  */
-export class IdentifierWithUserComment extends Message<IdentifierWithUserComment> ***REMOVED***
+export class IdentifierWithUserComment extends Message<IdentifierWithUserComment> {
   /**
    * ID of the resource
    *
@@ -1262,34 +1262,34 @@ export class IdentifierWithUserComment extends Message<IdentifierWithUserComment
    */
   userComment = "";
 
-  constructor(data?: PartialMessage<IdentifierWithUserComment>) ***REMOVED***
+  constructor(data?: PartialMessage<IdentifierWithUserComment>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.IdentifierWithUserComment";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierWithUserComment ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierWithUserComment {
     return new IdentifierWithUserComment().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithUserComment ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithUserComment {
     return new IdentifierWithUserComment().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithUserComment ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithUserComment {
     return new IdentifierWithUserComment().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: IdentifierWithUserComment | PlainMessage<IdentifierWithUserComment> | undefined, b: IdentifierWithUserComment | PlainMessage<IdentifierWithUserComment> | undefined): boolean ***REMOVED***
+  static equals(a: IdentifierWithUserComment | PlainMessage<IdentifierWithUserComment> | undefined, b: IdentifierWithUserComment | PlainMessage<IdentifierWithUserComment> | undefined): boolean {
     return proto3.util.equals(IdentifierWithUserComment, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1297,7 +1297,7 @@ export class IdentifierWithUserComment extends Message<IdentifierWithUserComment
  *
  * @generated from message Genesis.IdentifierWithEmailAttributes
  */
-export class IdentifierWithEmailAttributes extends Message<IdentifierWithEmailAttributes> ***REMOVED***
+export class IdentifierWithEmailAttributes extends Message<IdentifierWithEmailAttributes> {
   /**
    * ID of the resource
    *
@@ -1326,36 +1326,36 @@ export class IdentifierWithEmailAttributes extends Message<IdentifierWithEmailAt
    */
   body = "";
 
-  constructor(data?: PartialMessage<IdentifierWithEmailAttributes>) ***REMOVED***
+  constructor(data?: PartialMessage<IdentifierWithEmailAttributes>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.IdentifierWithEmailAttributes";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "subject", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "recipients", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 12, name: "body", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "subject", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "recipients", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 12, name: "body", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierWithEmailAttributes ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierWithEmailAttributes {
     return new IdentifierWithEmailAttributes().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithEmailAttributes ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithEmailAttributes {
     return new IdentifierWithEmailAttributes().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithEmailAttributes ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithEmailAttributes {
     return new IdentifierWithEmailAttributes().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: IdentifierWithEmailAttributes | PlainMessage<IdentifierWithEmailAttributes> | undefined, b: IdentifierWithEmailAttributes | PlainMessage<IdentifierWithEmailAttributes> | undefined): boolean ***REMOVED***
+  static equals(a: IdentifierWithEmailAttributes | PlainMessage<IdentifierWithEmailAttributes> | undefined, b: IdentifierWithEmailAttributes | PlainMessage<IdentifierWithEmailAttributes> | undefined): boolean {
     return proto3.util.equals(IdentifierWithEmailAttributes, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1363,7 +1363,7 @@ export class IdentifierWithEmailAttributes extends Message<IdentifierWithEmailAt
  *
  * @generated from message Genesis.IdentifierWithSearchKey
  */
-export class IdentifierWithSearchKey extends Message<IdentifierWithSearchKey> ***REMOVED***
+export class IdentifierWithSearchKey extends Message<IdentifierWithSearchKey> {
   /**
    * ID of the resource
    *
@@ -1378,34 +1378,34 @@ export class IdentifierWithSearchKey extends Message<IdentifierWithSearchKey> **
    */
   searchKey = "";
 
-  constructor(data?: PartialMessage<IdentifierWithSearchKey>) ***REMOVED***
+  constructor(data?: PartialMessage<IdentifierWithSearchKey>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.IdentifierWithSearchKey";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierWithSearchKey ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierWithSearchKey {
     return new IdentifierWithSearchKey().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithSearchKey ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierWithSearchKey {
     return new IdentifierWithSearchKey().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithSearchKey ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierWithSearchKey {
     return new IdentifierWithSearchKey().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: IdentifierWithSearchKey | PlainMessage<IdentifierWithSearchKey> | undefined, b: IdentifierWithSearchKey | PlainMessage<IdentifierWithSearchKey> | undefined): boolean ***REMOVED***
+  static equals(a: IdentifierWithSearchKey | PlainMessage<IdentifierWithSearchKey> | undefined, b: IdentifierWithSearchKey | PlainMessage<IdentifierWithSearchKey> | undefined): boolean {
     return proto3.util.equals(IdentifierWithSearchKey, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1413,7 +1413,7 @@ export class IdentifierWithSearchKey extends Message<IdentifierWithSearchKey> **
  *
  * @generated from message Genesis.IdentifierUUID
  */
-export class IdentifierUUID extends Message<IdentifierUUID> ***REMOVED***
+export class IdentifierUUID extends Message<IdentifierUUID> {
   /**
    * UUID of the resource
    *
@@ -1421,33 +1421,33 @@ export class IdentifierUUID extends Message<IdentifierUUID> ***REMOVED***
    */
   uuid = "";
 
-  constructor(data?: PartialMessage<IdentifierUUID>) ***REMOVED***
+  constructor(data?: PartialMessage<IdentifierUUID>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.IdentifierUUID";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierUUID ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): IdentifierUUID {
     return new IdentifierUUID().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierUUID ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): IdentifierUUID {
     return new IdentifierUUID().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierUUID ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): IdentifierUUID {
     return new IdentifierUUID().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined, b: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined): boolean ***REMOVED***
+  static equals(a: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined, b: IdentifierUUID | PlainMessage<IdentifierUUID> | undefined): boolean {
     return proto3.util.equals(IdentifierUUID, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1455,7 +1455,7 @@ export class IdentifierUUID extends Message<IdentifierUUID> ***REMOVED***
  *
  * @generated from message Genesis.LogbookLogConciseSLC
  */
-export class LogbookLogConciseSLC extends Message<LogbookLogConciseSLC> ***REMOVED***
+export class LogbookLogConciseSLC extends Message<LogbookLogConciseSLC> {
   /**
    * ID of the resource
    *
@@ -1526,42 +1526,42 @@ export class LogbookLogConciseSLC extends Message<LogbookLogConciseSLC> ***REMOV
    */
   userComment = "";
 
-  constructor(data?: PartialMessage<LogbookLogConciseSLC>) ***REMOVED***
+  constructor(data?: PartialMessage<LogbookLogConciseSLC>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LogbookLogConciseSLC";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "ref_uuid", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "operation", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 12, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "app_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 3, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "ref_uuid", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
+    { no: 11, name: "operation", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 12, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "app_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogbookLogConciseSLC ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogbookLogConciseSLC {
     return new LogbookLogConciseSLC().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogbookLogConciseSLC ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogbookLogConciseSLC {
     return new LogbookLogConciseSLC().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogbookLogConciseSLC ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogbookLogConciseSLC {
     return new LogbookLogConciseSLC().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LogbookLogConciseSLC | PlainMessage<LogbookLogConciseSLC> | undefined, b: LogbookLogConciseSLC | PlainMessage<LogbookLogConciseSLC> | undefined): boolean ***REMOVED***
+  static equals(a: LogbookLogConciseSLC | PlainMessage<LogbookLogConciseSLC> | undefined, b: LogbookLogConciseSLC | PlainMessage<LogbookLogConciseSLC> | undefined): boolean {
     return proto3.util.equals(LogbookLogConciseSLC, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1569,7 +1569,7 @@ export class LogbookLogConciseSLC extends Message<LogbookLogConciseSLC> ***REMOV
  *
  * @generated from message Genesis.LogbookLogConciseSLCCreateRequest
  */
-export class LogbookLogConciseSLCCreateRequest extends Message<LogbookLogConciseSLCCreateRequest> ***REMOVED***
+export class LogbookLogConciseSLCCreateRequest extends Message<LogbookLogConciseSLCCreateRequest> {
   /**
    * Stores the timestamp of when this resource was created
    *
@@ -1612,38 +1612,38 @@ export class LogbookLogConciseSLCCreateRequest extends Message<LogbookLogConcise
    */
   userComment = "";
 
-  constructor(data?: PartialMessage<LogbookLogConciseSLCCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<LogbookLogConciseSLCCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LogbookLogConciseSLCCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 3, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "ref_uuid", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "operation", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 12, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "app_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 3, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "ref_uuid", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
+    { no: 11, name: "operation", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 12, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "app_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogbookLogConciseSLCCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogbookLogConciseSLCCreateRequest {
     return new LogbookLogConciseSLCCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogbookLogConciseSLCCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogbookLogConciseSLCCreateRequest {
     return new LogbookLogConciseSLCCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogbookLogConciseSLCCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogbookLogConciseSLCCreateRequest {
     return new LogbookLogConciseSLCCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LogbookLogConciseSLCCreateRequest | PlainMessage<LogbookLogConciseSLCCreateRequest> | undefined, b: LogbookLogConciseSLCCreateRequest | PlainMessage<LogbookLogConciseSLCCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: LogbookLogConciseSLCCreateRequest | PlainMessage<LogbookLogConciseSLCCreateRequest> | undefined, b: LogbookLogConciseSLCCreateRequest | PlainMessage<LogbookLogConciseSLCCreateRequest> | undefined): boolean {
     return proto3.util.equals(LogbookLogConciseSLCCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1651,7 +1651,7 @@ export class LogbookLogConciseSLCCreateRequest extends Message<LogbookLogConcise
  *
  * @generated from message Genesis.LogbookLogConciseGenericCreateRequest
  */
-export class LogbookLogConciseGenericCreateRequest extends Message<LogbookLogConciseGenericCreateRequest> ***REMOVED***
+export class LogbookLogConciseGenericCreateRequest extends Message<LogbookLogConciseGenericCreateRequest> {
   /**
    * Stores the timestamp of when this resource was created
    *
@@ -1694,38 +1694,38 @@ export class LogbookLogConciseGenericCreateRequest extends Message<LogbookLogCon
    */
   userComment = "";
 
-  constructor(data?: PartialMessage<LogbookLogConciseGenericCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<LogbookLogConciseGenericCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LogbookLogConciseGenericCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 3, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "ref_uuid", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "operation", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "app_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 3, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "ref_uuid", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
+    { no: 11, name: "operation", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "app_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogbookLogConciseGenericCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogbookLogConciseGenericCreateRequest {
     return new LogbookLogConciseGenericCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogbookLogConciseGenericCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogbookLogConciseGenericCreateRequest {
     return new LogbookLogConciseGenericCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogbookLogConciseGenericCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogbookLogConciseGenericCreateRequest {
     return new LogbookLogConciseGenericCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LogbookLogConciseGenericCreateRequest | PlainMessage<LogbookLogConciseGenericCreateRequest> | undefined, b: LogbookLogConciseGenericCreateRequest | PlainMessage<LogbookLogConciseGenericCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: LogbookLogConciseGenericCreateRequest | PlainMessage<LogbookLogConciseGenericCreateRequest> | undefined, b: LogbookLogConciseGenericCreateRequest | PlainMessage<LogbookLogConciseGenericCreateRequest> | undefined): boolean {
     return proto3.util.equals(LogbookLogConciseGenericCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1733,7 +1733,7 @@ export class LogbookLogConciseGenericCreateRequest extends Message<LogbookLogCon
  *
  * @generated from message Genesis.LogbookLogComplete
  */
-export class LogbookLogComplete extends Message<LogbookLogComplete> ***REMOVED***
+export class LogbookLogComplete extends Message<LogbookLogComplete> {
   /**
    * Stores the metada of this resource
    *
@@ -1783,39 +1783,39 @@ export class LogbookLogComplete extends Message<LogbookLogComplete> ***REMOVED**
    */
   previousData = new Uint8Array(0);
 
-  constructor(data?: PartialMessage<LogbookLogComplete>) ***REMOVED***
+  constructor(data?: PartialMessage<LogbookLogComplete>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LogbookLogComplete";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 10, name: "ref_uuid", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "operation", kind: "enum", T: proto3.getEnumType(LOGBOOK_OPERATION) ***REMOVED***,
-    ***REMOVED*** no: 12, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "app_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "previous_data", kind: "scalar", T: 12 /* ScalarType.BYTES */ ***REMOVED***,
+    { no: 1, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 10, name: "ref_uuid", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
+    { no: 11, name: "operation", kind: "enum", T: proto3.getEnumType(LOGBOOK_OPERATION) },
+    { no: 12, name: "username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "app_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "previous_data", kind: "scalar", T: 12 /* ScalarType.BYTES */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogbookLogComplete ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogbookLogComplete {
     return new LogbookLogComplete().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogbookLogComplete ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LogbookLogComplete {
     return new LogbookLogComplete().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogbookLogComplete ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LogbookLogComplete {
     return new LogbookLogComplete().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LogbookLogComplete | PlainMessage<LogbookLogComplete> | undefined, b: LogbookLogComplete | PlainMessage<LogbookLogComplete> | undefined): boolean ***REMOVED***
+  static equals(a: LogbookLogComplete | PlainMessage<LogbookLogComplete> | undefined, b: LogbookLogComplete | PlainMessage<LogbookLogComplete> | undefined): boolean {
     return proto3.util.equals(LogbookLogComplete, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1823,7 +1823,7 @@ export class LogbookLogComplete extends Message<LogbookLogComplete> ***REMOVED**
  *
  * @generated from message Genesis.ReorderItemsRequest
  */
-export class ReorderItemsRequest extends Message<ReorderItemsRequest> ***REMOVED***
+export class ReorderItemsRequest extends Message<ReorderItemsRequest> {
   /**
    * ID of the resource
    *
@@ -1838,34 +1838,34 @@ export class ReorderItemsRequest extends Message<ReorderItemsRequest> ***REMOVED
    */
   sequence: bigint[] = [];
 
-  constructor(data?: PartialMessage<ReorderItemsRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<ReorderItemsRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.ReorderItemsRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "sequence", kind: "scalar", T: 3 /* ScalarType.INT64 */, repeated: true ***REMOVED***,
+    { no: 1, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "sequence", kind: "scalar", T: 3 /* ScalarType.INT64 */, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReorderItemsRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ReorderItemsRequest {
     return new ReorderItemsRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReorderItemsRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ReorderItemsRequest {
     return new ReorderItemsRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReorderItemsRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ReorderItemsRequest {
     return new ReorderItemsRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: ReorderItemsRequest | PlainMessage<ReorderItemsRequest> | undefined, b: ReorderItemsRequest | PlainMessage<ReorderItemsRequest> | undefined): boolean ***REMOVED***
+  static equals(a: ReorderItemsRequest | PlainMessage<ReorderItemsRequest> | undefined, b: ReorderItemsRequest | PlainMessage<ReorderItemsRequest> | undefined): boolean {
     return proto3.util.equals(ReorderItemsRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1873,7 +1873,7 @@ export class ReorderItemsRequest extends Message<ReorderItemsRequest> ***REMOVED
  *
  * @generated from message Genesis.CloneRequest
  */
-export class CloneRequest extends Message<CloneRequest> ***REMOVED***
+export class CloneRequest extends Message<CloneRequest> {
   /**
    * The ID of the source record whose properties need to be cloned into the target record
    *
@@ -1902,34 +1902,34 @@ export class CloneRequest extends Message<CloneRequest> ***REMOVED***
    */
   userComment = "";
 
-  constructor(data?: PartialMessage<CloneRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<CloneRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.CloneRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "source_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "target_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "delete_existing", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "source_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "target_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "delete_existing", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 4, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CloneRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CloneRequest {
     return new CloneRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CloneRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CloneRequest {
     return new CloneRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CloneRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CloneRequest {
     return new CloneRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: CloneRequest | PlainMessage<CloneRequest> | undefined, b: CloneRequest | PlainMessage<CloneRequest> | undefined): boolean ***REMOVED***
+  static equals(a: CloneRequest | PlainMessage<CloneRequest> | undefined, b: CloneRequest | PlainMessage<CloneRequest> | undefined): boolean {
     return proto3.util.equals(CloneRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

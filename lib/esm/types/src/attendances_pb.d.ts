@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.ATTENDANCE_SORT_KEY
  */
-export declare enum ATTENDANCE_SORT_KEY ***REMOVED***
+export declare enum ATTENDANCE_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -81,14 +81,14 @@ export declare enum ATTENDANCE_SORT_KEY ***REMOVED***
      * @generated from enum value: ATTENDANCE_SORT_KEY_EXIT_TIMESTAMP = 14;
      */
     ATTENDANCE_SORT_KEY_EXIT_TIMESTAMP = 14
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.AttendancesServiceCreateRequest
  */
-export declare class AttendancesServiceCreateRequest extends Message<AttendancesServiceCreateRequest> ***REMOVED***
+export declare class AttendancesServiceCreateRequest extends Message<AttendancesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -151,14 +151,14 @@ export declare class AttendancesServiceCreateRequest extends Message<Attendances
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesServiceCreateRequest;
     static equals(a: AttendancesServiceCreateRequest | PlainMessage<AttendancesServiceCreateRequest> | undefined, b: AttendancesServiceCreateRequest | PlainMessage<AttendancesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.AttendancesServiceUpdateRequest
  */
-export declare class AttendancesServiceUpdateRequest extends Message<AttendancesServiceUpdateRequest> ***REMOVED***
+export declare class AttendancesServiceUpdateRequest extends Message<AttendancesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -221,14 +221,14 @@ export declare class AttendancesServiceUpdateRequest extends Message<Attendances
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesServiceUpdateRequest;
     static equals(a: AttendancesServiceUpdateRequest | PlainMessage<AttendancesServiceUpdateRequest> | undefined, b: AttendancesServiceUpdateRequest | PlainMessage<AttendancesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message payload that is necessary to create an entry record. This will most likely be called only from mobile devices.
  *
  * @generated from message Genesis.AttendancesServiceImageEntryRequest
  */
-export declare class AttendancesServiceImageEntryRequest extends Message<AttendancesServiceImageEntryRequest> ***REMOVED***
+export declare class AttendancesServiceImageEntryRequest extends Message<AttendancesServiceImageEntryRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -237,9 +237,9 @@ export declare class AttendancesServiceImageEntryRequest extends Message<Attenda
     entityUuid: string;
     /**
      * // The reference ID of the attendance
-     * string reference_id = 10 [(genesis_validate.rules).string = ***REMOVED***
+     * string reference_id = 10 [(genesis_validate.rules).string = {
      *     pattern: "[0-9A-Za-z ]+$", // Allow spaces
-     * ***REMOVED***];
+     * }];
      * The ID of the user that this attendance belongs to
      *
      * @generated from field: int64 user_id = 11;
@@ -277,14 +277,14 @@ export declare class AttendancesServiceImageEntryRequest extends Message<Attenda
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesServiceImageEntryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesServiceImageEntryRequest;
     static equals(a: AttendancesServiceImageEntryRequest | PlainMessage<AttendancesServiceImageEntryRequest> | undefined, b: AttendancesServiceImageEntryRequest | PlainMessage<AttendancesServiceImageEntryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message payload that is necessary to create an exit record. This will most likely be called only from mobile devices.
  *
  * @generated from message Genesis.AttendancesServiceImageExitRequest
  */
-export declare class AttendancesServiceImageExitRequest extends Message<AttendancesServiceImageExitRequest> ***REMOVED***
+export declare class AttendancesServiceImageExitRequest extends Message<AttendancesServiceImageExitRequest> {
     /**
      * The ID of the record that needs to be updated
      *
@@ -323,14 +323,14 @@ export declare class AttendancesServiceImageExitRequest extends Message<Attendan
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesServiceImageExitRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesServiceImageExitRequest;
     static equals(a: AttendancesServiceImageExitRequest | PlainMessage<AttendancesServiceImageExitRequest> | undefined, b: AttendancesServiceImageExitRequest | PlainMessage<AttendancesServiceImageExitRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.Attendance
  */
-export declare class Attendance extends Message<Attendance> ***REMOVED***
+export declare class Attendance extends Message<Attendance> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -423,14 +423,14 @@ export declare class Attendance extends Message<Attendance> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Attendance;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Attendance;
     static equals(a: Attendance | PlainMessage<Attendance> | undefined, b: Attendance | PlainMessage<Attendance> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.AttendancesList
  */
-export declare class AttendancesList extends Message<AttendancesList> ***REMOVED***
+export declare class AttendancesList extends Message<AttendancesList> {
     /**
      * List of records
      *
@@ -445,14 +445,14 @@ export declare class AttendancesList extends Message<AttendancesList> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesList;
     static equals(a: AttendancesList | PlainMessage<AttendancesList> | undefined, b: AttendancesList | PlainMessage<AttendancesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.AttendancesServicePaginationReq
  */
-export declare class AttendancesServicePaginationReq extends Message<AttendancesServicePaginationReq> ***REMOVED***
+export declare class AttendancesServicePaginationReq extends Message<AttendancesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -497,14 +497,14 @@ export declare class AttendancesServicePaginationReq extends Message<Attendances
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesServicePaginationReq;
     static equals(a: AttendancesServicePaginationReq | PlainMessage<AttendancesServicePaginationReq> | undefined, b: AttendancesServicePaginationReq | PlainMessage<AttendancesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.AttendancesServicePaginationResponse
  */
-export declare class AttendancesServicePaginationResponse extends Message<AttendancesServicePaginationResponse> ***REMOVED***
+export declare class AttendancesServicePaginationResponse extends Message<AttendancesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -537,14 +537,14 @@ export declare class AttendancesServicePaginationResponse extends Message<Attend
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesServicePaginationResponse;
     static equals(a: AttendancesServicePaginationResponse | PlainMessage<AttendancesServicePaginationResponse> | undefined, b: AttendancesServicePaginationResponse | PlainMessage<AttendancesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.AttendancesServiceEntityPaginationReq
  */
-export declare class AttendancesServiceEntityPaginationReq extends Message<AttendancesServiceEntityPaginationReq> ***REMOVED***
+export declare class AttendancesServiceEntityPaginationReq extends Message<AttendancesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -589,14 +589,14 @@ export declare class AttendancesServiceEntityPaginationReq extends Message<Atten
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesServiceEntityPaginationReq;
     static equals(a: AttendancesServiceEntityPaginationReq | PlainMessage<AttendancesServiceEntityPaginationReq> | undefined, b: AttendancesServiceEntityPaginationReq | PlainMessage<AttendancesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.AttendancesServiceFilterReq
  */
-export declare class AttendancesServiceFilterReq extends Message<AttendancesServiceFilterReq> ***REMOVED***
+export declare class AttendancesServiceFilterReq extends Message<AttendancesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -737,14 +737,14 @@ export declare class AttendancesServiceFilterReq extends Message<AttendancesServ
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesServiceFilterReq;
     static equals(a: AttendancesServiceFilterReq | PlainMessage<AttendancesServiceFilterReq> | undefined, b: AttendancesServiceFilterReq | PlainMessage<AttendancesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.AttendancesServiceSearchAllReq
  */
-export declare class AttendancesServiceSearchAllReq extends Message<AttendancesServiceSearchAllReq> ***REMOVED***
+export declare class AttendancesServiceSearchAllReq extends Message<AttendancesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -807,5 +807,5 @@ export declare class AttendancesServiceSearchAllReq extends Message<AttendancesS
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AttendancesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AttendancesServiceSearchAllReq;
     static equals(a: AttendancesServiceSearchAllReq | PlainMessage<AttendancesServiceSearchAllReq> | undefined, b: AttendancesServiceSearchAllReq | PlainMessage<AttendancesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=attendances_pb.d.ts.map

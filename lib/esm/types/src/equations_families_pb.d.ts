@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.EQUATION_FAMILY_SORT_KEY
  */
-export declare enum EQUATION_FAMILY_SORT_KEY ***REMOVED***
+export declare enum EQUATION_FAMILY_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -62,14 +62,14 @@ export declare enum EQUATION_FAMILY_SORT_KEY ***REMOVED***
      * @generated from enum value: EQUATION_FAMILY_SORT_KEY_FAMILY_ID = 11;
      */
     EQUATION_FAMILY_SORT_KEY_FAMILY_ID = 11
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.EquationsFamiliesServiceCreateRequest
  */
-export declare class EquationsFamiliesServiceCreateRequest extends Message<EquationsFamiliesServiceCreateRequest> ***REMOVED***
+export declare class EquationsFamiliesServiceCreateRequest extends Message<EquationsFamiliesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -114,14 +114,14 @@ export declare class EquationsFamiliesServiceCreateRequest extends Message<Equat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceCreateRequest;
     static equals(a: EquationsFamiliesServiceCreateRequest | PlainMessage<EquationsFamiliesServiceCreateRequest> | undefined, b: EquationsFamiliesServiceCreateRequest | PlainMessage<EquationsFamiliesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.EquationsFamiliesServiceUpdateRequest
  */
-export declare class EquationsFamiliesServiceUpdateRequest extends Message<EquationsFamiliesServiceUpdateRequest> ***REMOVED***
+export declare class EquationsFamiliesServiceUpdateRequest extends Message<EquationsFamiliesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -166,14 +166,14 @@ export declare class EquationsFamiliesServiceUpdateRequest extends Message<Equat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceUpdateRequest;
     static equals(a: EquationsFamiliesServiceUpdateRequest | PlainMessage<EquationsFamiliesServiceUpdateRequest> | undefined, b: EquationsFamiliesServiceUpdateRequest | PlainMessage<EquationsFamiliesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.EquationFamily
  */
-export declare class EquationFamily extends Message<EquationFamily> ***REMOVED***
+export declare class EquationFamily extends Message<EquationFamily> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -254,14 +254,14 @@ export declare class EquationFamily extends Message<EquationFamily> ***REMOVED**
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationFamily;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationFamily;
     static equals(a: EquationFamily | PlainMessage<EquationFamily> | undefined, b: EquationFamily | PlainMessage<EquationFamily> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a equation family
  *
  * @generated from message Genesis.EquationsFamiliesServiceItemCreateRequest
  */
-export declare class EquationsFamiliesServiceItemCreateRequest extends Message<EquationsFamiliesServiceItemCreateRequest> ***REMOVED***
+export declare class EquationsFamiliesServiceItemCreateRequest extends Message<EquationsFamiliesServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -306,14 +306,14 @@ export declare class EquationsFamiliesServiceItemCreateRequest extends Message<E
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceItemCreateRequest;
     static equals(a: EquationsFamiliesServiceItemCreateRequest | PlainMessage<EquationsFamiliesServiceItemCreateRequest> | undefined, b: EquationsFamiliesServiceItemCreateRequest | PlainMessage<EquationsFamiliesServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a equation family
  *
  * @generated from message Genesis.EquationsFamiliesServiceItemUpdateRequest
  */
-export declare class EquationsFamiliesServiceItemUpdateRequest extends Message<EquationsFamiliesServiceItemUpdateRequest> ***REMOVED***
+export declare class EquationsFamiliesServiceItemUpdateRequest extends Message<EquationsFamiliesServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -352,14 +352,14 @@ export declare class EquationsFamiliesServiceItemUpdateRequest extends Message<E
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceItemUpdateRequest;
     static equals(a: EquationsFamiliesServiceItemUpdateRequest | PlainMessage<EquationsFamiliesServiceItemUpdateRequest> | undefined, b: EquationsFamiliesServiceItemUpdateRequest | PlainMessage<EquationsFamiliesServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a equation family
  *
  * @generated from message Genesis.EquationFamilyItem
  */
-export declare class EquationFamilyItem extends Message<EquationFamilyItem> ***REMOVED***
+export declare class EquationFamilyItem extends Message<EquationFamilyItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -428,14 +428,14 @@ export declare class EquationFamilyItem extends Message<EquationFamilyItem> ***R
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationFamilyItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationFamilyItem;
     static equals(a: EquationFamilyItem | PlainMessage<EquationFamilyItem> | undefined, b: EquationFamilyItem | PlainMessage<EquationFamilyItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of equations families
  *
  * @generated from message Genesis.EquationsFamiliesList
  */
-export declare class EquationsFamiliesList extends Message<EquationsFamiliesList> ***REMOVED***
+export declare class EquationsFamiliesList extends Message<EquationsFamiliesList> {
     /**
      * List of records
      *
@@ -450,14 +450,14 @@ export declare class EquationsFamiliesList extends Message<EquationsFamiliesList
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesList;
     static equals(a: EquationsFamiliesList | PlainMessage<EquationsFamiliesList> | undefined, b: EquationsFamiliesList | PlainMessage<EquationsFamiliesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of equation family items
  *
  * @generated from message Genesis.EquationsFamiliesItemsList
  */
-export declare class EquationsFamiliesItemsList extends Message<EquationsFamiliesItemsList> ***REMOVED***
+export declare class EquationsFamiliesItemsList extends Message<EquationsFamiliesItemsList> {
     /**
      * List of records
      *
@@ -472,14 +472,14 @@ export declare class EquationsFamiliesItemsList extends Message<EquationsFamilie
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesItemsList;
     static equals(a: EquationsFamiliesItemsList | PlainMessage<EquationsFamiliesItemsList> | undefined, b: EquationsFamiliesItemsList | PlainMessage<EquationsFamiliesItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.EquationFamilyItemHistoryRequest
  */
-export declare class EquationFamilyItemHistoryRequest extends Message<EquationFamilyItemHistoryRequest> ***REMOVED***
+export declare class EquationFamilyItemHistoryRequest extends Message<EquationFamilyItemHistoryRequest> {
     /**
      * Stores the ID of the equation family
      *
@@ -500,14 +500,14 @@ export declare class EquationFamilyItemHistoryRequest extends Message<EquationFa
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationFamilyItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationFamilyItemHistoryRequest;
     static equals(a: EquationFamilyItemHistoryRequest | PlainMessage<EquationFamilyItemHistoryRequest> | undefined, b: EquationFamilyItemHistoryRequest | PlainMessage<EquationFamilyItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.EquationsFamiliesServicePaginationReq
  */
-export declare class EquationsFamiliesServicePaginationReq extends Message<EquationsFamiliesServicePaginationReq> ***REMOVED***
+export declare class EquationsFamiliesServicePaginationReq extends Message<EquationsFamiliesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -552,14 +552,14 @@ export declare class EquationsFamiliesServicePaginationReq extends Message<Equat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServicePaginationReq;
     static equals(a: EquationsFamiliesServicePaginationReq | PlainMessage<EquationsFamiliesServicePaginationReq> | undefined, b: EquationsFamiliesServicePaginationReq | PlainMessage<EquationsFamiliesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.EquationsFamiliesServicePaginationResponse
  */
-export declare class EquationsFamiliesServicePaginationResponse extends Message<EquationsFamiliesServicePaginationResponse> ***REMOVED***
+export declare class EquationsFamiliesServicePaginationResponse extends Message<EquationsFamiliesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -592,14 +592,14 @@ export declare class EquationsFamiliesServicePaginationResponse extends Message<
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServicePaginationResponse;
     static equals(a: EquationsFamiliesServicePaginationResponse | PlainMessage<EquationsFamiliesServicePaginationResponse> | undefined, b: EquationsFamiliesServicePaginationResponse | PlainMessage<EquationsFamiliesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.EquationsFamiliesServiceEntityPaginationReq
  */
-export declare class EquationsFamiliesServiceEntityPaginationReq extends Message<EquationsFamiliesServiceEntityPaginationReq> ***REMOVED***
+export declare class EquationsFamiliesServiceEntityPaginationReq extends Message<EquationsFamiliesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -644,14 +644,14 @@ export declare class EquationsFamiliesServiceEntityPaginationReq extends Message
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceEntityPaginationReq;
     static equals(a: EquationsFamiliesServiceEntityPaginationReq | PlainMessage<EquationsFamiliesServiceEntityPaginationReq> | undefined, b: EquationsFamiliesServiceEntityPaginationReq | PlainMessage<EquationsFamiliesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.EquationsFamiliesServiceFilterReq
  */
-export declare class EquationsFamiliesServiceFilterReq extends Message<EquationsFamiliesServiceFilterReq> ***REMOVED***
+export declare class EquationsFamiliesServiceFilterReq extends Message<EquationsFamiliesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -762,14 +762,14 @@ export declare class EquationsFamiliesServiceFilterReq extends Message<Equations
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceFilterReq;
     static equals(a: EquationsFamiliesServiceFilterReq | PlainMessage<EquationsFamiliesServiceFilterReq> | undefined, b: EquationsFamiliesServiceFilterReq | PlainMessage<EquationsFamiliesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.EquationsFamiliesServiceSearchAllReq
  */
-export declare class EquationsFamiliesServiceSearchAllReq extends Message<EquationsFamiliesServiceSearchAllReq> ***REMOVED***
+export declare class EquationsFamiliesServiceSearchAllReq extends Message<EquationsFamiliesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -826,5 +826,5 @@ export declare class EquationsFamiliesServiceSearchAllReq extends Message<Equati
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EquationsFamiliesServiceSearchAllReq;
     static equals(a: EquationsFamiliesServiceSearchAllReq | PlainMessage<EquationsFamiliesServiceSearchAllReq> | undefined, b: EquationsFamiliesServiceSearchAllReq | PlainMessage<EquationsFamiliesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=equations_families_pb.d.ts.map

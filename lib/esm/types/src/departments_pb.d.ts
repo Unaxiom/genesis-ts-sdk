@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.DEPARTMENT_SORT_KEY
  */
-export declare enum DEPARTMENT_SORT_KEY ***REMOVED***
+export declare enum DEPARTMENT_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -68,14 +68,14 @@ export declare enum DEPARTMENT_SORT_KEY ***REMOVED***
      * @generated from enum value: DEPARTMENT_SORT_KEY_HEAD_USER_ID = 12;
      */
     DEPARTMENT_SORT_KEY_HEAD_USER_ID = 12
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.DepartmentsServiceCreateRequest
  */
-export declare class DepartmentsServiceCreateRequest extends Message<DepartmentsServiceCreateRequest> ***REMOVED***
+export declare class DepartmentsServiceCreateRequest extends Message<DepartmentsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -126,14 +126,14 @@ export declare class DepartmentsServiceCreateRequest extends Message<Departments
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DepartmentsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DepartmentsServiceCreateRequest;
     static equals(a: DepartmentsServiceCreateRequest | PlainMessage<DepartmentsServiceCreateRequest> | undefined, b: DepartmentsServiceCreateRequest | PlainMessage<DepartmentsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.DepartmentsServiceUpdateRequest
  */
-export declare class DepartmentsServiceUpdateRequest extends Message<DepartmentsServiceUpdateRequest> ***REMOVED***
+export declare class DepartmentsServiceUpdateRequest extends Message<DepartmentsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -190,14 +190,14 @@ export declare class DepartmentsServiceUpdateRequest extends Message<Departments
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DepartmentsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DepartmentsServiceUpdateRequest;
     static equals(a: DepartmentsServiceUpdateRequest | PlainMessage<DepartmentsServiceUpdateRequest> | undefined, b: DepartmentsServiceUpdateRequest | PlainMessage<DepartmentsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.Department
  */
-export declare class Department extends Message<Department> ***REMOVED***
+export declare class Department extends Message<Department> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -272,14 +272,14 @@ export declare class Department extends Message<Department> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Department;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Department;
     static equals(a: Department | PlainMessage<Department> | undefined, b: Department | PlainMessage<Department> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of departments
  *
  * @generated from message Genesis.DepartmentsList
  */
-export declare class DepartmentsList extends Message<DepartmentsList> ***REMOVED***
+export declare class DepartmentsList extends Message<DepartmentsList> {
     /**
      * List of records
      *
@@ -294,14 +294,14 @@ export declare class DepartmentsList extends Message<DepartmentsList> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DepartmentsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DepartmentsList;
     static equals(a: DepartmentsList | PlainMessage<DepartmentsList> | undefined, b: DepartmentsList | PlainMessage<DepartmentsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.DepartmentsServicePaginationReq
  */
-export declare class DepartmentsServicePaginationReq extends Message<DepartmentsServicePaginationReq> ***REMOVED***
+export declare class DepartmentsServicePaginationReq extends Message<DepartmentsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -346,14 +346,14 @@ export declare class DepartmentsServicePaginationReq extends Message<Departments
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DepartmentsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DepartmentsServicePaginationReq;
     static equals(a: DepartmentsServicePaginationReq | PlainMessage<DepartmentsServicePaginationReq> | undefined, b: DepartmentsServicePaginationReq | PlainMessage<DepartmentsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.DepartmentsServicePaginationResponse
  */
-export declare class DepartmentsServicePaginationResponse extends Message<DepartmentsServicePaginationResponse> ***REMOVED***
+export declare class DepartmentsServicePaginationResponse extends Message<DepartmentsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -386,14 +386,14 @@ export declare class DepartmentsServicePaginationResponse extends Message<Depart
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DepartmentsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DepartmentsServicePaginationResponse;
     static equals(a: DepartmentsServicePaginationResponse | PlainMessage<DepartmentsServicePaginationResponse> | undefined, b: DepartmentsServicePaginationResponse | PlainMessage<DepartmentsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.DepartmentsServiceEntityPaginationReq
  */
-export declare class DepartmentsServiceEntityPaginationReq extends Message<DepartmentsServiceEntityPaginationReq> ***REMOVED***
+export declare class DepartmentsServiceEntityPaginationReq extends Message<DepartmentsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -438,14 +438,14 @@ export declare class DepartmentsServiceEntityPaginationReq extends Message<Depar
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DepartmentsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DepartmentsServiceEntityPaginationReq;
     static equals(a: DepartmentsServiceEntityPaginationReq | PlainMessage<DepartmentsServiceEntityPaginationReq> | undefined, b: DepartmentsServiceEntityPaginationReq | PlainMessage<DepartmentsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.DepartmentsServiceFilterReq
  */
-export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilterReq> ***REMOVED***
+export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -562,14 +562,14 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DepartmentsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DepartmentsServiceFilterReq;
     static equals(a: DepartmentsServiceFilterReq | PlainMessage<DepartmentsServiceFilterReq> | undefined, b: DepartmentsServiceFilterReq | PlainMessage<DepartmentsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.DepartmentsServiceSearchAllReq
  */
-export declare class DepartmentsServiceSearchAllReq extends Message<DepartmentsServiceSearchAllReq> ***REMOVED***
+export declare class DepartmentsServiceSearchAllReq extends Message<DepartmentsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -626,5 +626,5 @@ export declare class DepartmentsServiceSearchAllReq extends Message<DepartmentsS
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DepartmentsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DepartmentsServiceSearchAllReq;
     static equals(a: DepartmentsServiceSearchAllReq | PlainMessage<DepartmentsServiceSearchAllReq> | undefined, b: DepartmentsServiceSearchAllReq | PlainMessage<DepartmentsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=departments_pb.d.ts.map

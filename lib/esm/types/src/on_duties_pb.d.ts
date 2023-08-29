@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.ON_DUTY_SORT_KEY
  */
-export declare enum ON_DUTY_SORT_KEY ***REMOVED***
+export declare enum ON_DUTY_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -81,14 +81,14 @@ export declare enum ON_DUTY_SORT_KEY ***REMOVED***
      * @generated from enum value: ON_DUTY_SORT_KEY_EXIT_TIMESTAMP = 14;
      */
     ON_DUTY_SORT_KEY_EXIT_TIMESTAMP = 14
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.OnDutiesServiceCreateRequest
  */
-export declare class OnDutiesServiceCreateRequest extends Message<OnDutiesServiceCreateRequest> ***REMOVED***
+export declare class OnDutiesServiceCreateRequest extends Message<OnDutiesServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -151,14 +151,14 @@ export declare class OnDutiesServiceCreateRequest extends Message<OnDutiesServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceCreateRequest;
     static equals(a: OnDutiesServiceCreateRequest | PlainMessage<OnDutiesServiceCreateRequest> | undefined, b: OnDutiesServiceCreateRequest | PlainMessage<OnDutiesServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.OnDutiesServiceUpdateRequest
  */
-export declare class OnDutiesServiceUpdateRequest extends Message<OnDutiesServiceUpdateRequest> ***REMOVED***
+export declare class OnDutiesServiceUpdateRequest extends Message<OnDutiesServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -221,14 +221,14 @@ export declare class OnDutiesServiceUpdateRequest extends Message<OnDutiesServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceUpdateRequest;
     static equals(a: OnDutiesServiceUpdateRequest | PlainMessage<OnDutiesServiceUpdateRequest> | undefined, b: OnDutiesServiceUpdateRequest | PlainMessage<OnDutiesServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message payload that is necessary to create an entry record. This will most likely be called only from mobile devices.
  *
  * @generated from message Genesis.OnDutiesServiceImageEntryRequest
  */
-export declare class OnDutiesServiceImageEntryRequest extends Message<OnDutiesServiceImageEntryRequest> ***REMOVED***
+export declare class OnDutiesServiceImageEntryRequest extends Message<OnDutiesServiceImageEntryRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -237,9 +237,9 @@ export declare class OnDutiesServiceImageEntryRequest extends Message<OnDutiesSe
     entityUuid: string;
     /**
      * // The reference ID of the onduty
-     * string reference_id = 10 [(genesis_validate.rules).string = ***REMOVED***
+     * string reference_id = 10 [(genesis_validate.rules).string = {
      *     pattern: "[0-9A-Za-z ]+$", // Allow spaces
-     * ***REMOVED***];
+     * }];
      * The ID of the user who has requested for onduty
      *
      * @generated from field: int64 user_id = 11;
@@ -277,14 +277,14 @@ export declare class OnDutiesServiceImageEntryRequest extends Message<OnDutiesSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceImageEntryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceImageEntryRequest;
     static equals(a: OnDutiesServiceImageEntryRequest | PlainMessage<OnDutiesServiceImageEntryRequest> | undefined, b: OnDutiesServiceImageEntryRequest | PlainMessage<OnDutiesServiceImageEntryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message payload that is necessary to create an exit record. This will most likely be called only from mobile devices.
  *
  * @generated from message Genesis.OnDutiesServiceImageExitRequest
  */
-export declare class OnDutiesServiceImageExitRequest extends Message<OnDutiesServiceImageExitRequest> ***REMOVED***
+export declare class OnDutiesServiceImageExitRequest extends Message<OnDutiesServiceImageExitRequest> {
     /**
      * The ID of the record that needs to be updated
      *
@@ -323,14 +323,14 @@ export declare class OnDutiesServiceImageExitRequest extends Message<OnDutiesSer
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceImageExitRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceImageExitRequest;
     static equals(a: OnDutiesServiceImageExitRequest | PlainMessage<OnDutiesServiceImageExitRequest> | undefined, b: OnDutiesServiceImageExitRequest | PlainMessage<OnDutiesServiceImageExitRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.OnDuty
  */
-export declare class OnDuty extends Message<OnDuty> ***REMOVED***
+export declare class OnDuty extends Message<OnDuty> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -423,14 +423,14 @@ export declare class OnDuty extends Message<OnDuty> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDuty;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDuty;
     static equals(a: OnDuty | PlainMessage<OnDuty> | undefined, b: OnDuty | PlainMessage<OnDuty> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.OnDutiesList
  */
-export declare class OnDutiesList extends Message<OnDutiesList> ***REMOVED***
+export declare class OnDutiesList extends Message<OnDutiesList> {
     /**
      * List of records
      *
@@ -445,14 +445,14 @@ export declare class OnDutiesList extends Message<OnDutiesList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesList;
     static equals(a: OnDutiesList | PlainMessage<OnDutiesList> | undefined, b: OnDutiesList | PlainMessage<OnDutiesList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.OnDutiesServicePaginationReq
  */
-export declare class OnDutiesServicePaginationReq extends Message<OnDutiesServicePaginationReq> ***REMOVED***
+export declare class OnDutiesServicePaginationReq extends Message<OnDutiesServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -497,14 +497,14 @@ export declare class OnDutiesServicePaginationReq extends Message<OnDutiesServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServicePaginationReq;
     static equals(a: OnDutiesServicePaginationReq | PlainMessage<OnDutiesServicePaginationReq> | undefined, b: OnDutiesServicePaginationReq | PlainMessage<OnDutiesServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.OnDutiesServicePaginationResponse
  */
-export declare class OnDutiesServicePaginationResponse extends Message<OnDutiesServicePaginationResponse> ***REMOVED***
+export declare class OnDutiesServicePaginationResponse extends Message<OnDutiesServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -537,14 +537,14 @@ export declare class OnDutiesServicePaginationResponse extends Message<OnDutiesS
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServicePaginationResponse;
     static equals(a: OnDutiesServicePaginationResponse | PlainMessage<OnDutiesServicePaginationResponse> | undefined, b: OnDutiesServicePaginationResponse | PlainMessage<OnDutiesServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.OnDutiesServiceEntityPaginationReq
  */
-export declare class OnDutiesServiceEntityPaginationReq extends Message<OnDutiesServiceEntityPaginationReq> ***REMOVED***
+export declare class OnDutiesServiceEntityPaginationReq extends Message<OnDutiesServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -589,14 +589,14 @@ export declare class OnDutiesServiceEntityPaginationReq extends Message<OnDuties
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceEntityPaginationReq;
     static equals(a: OnDutiesServiceEntityPaginationReq | PlainMessage<OnDutiesServiceEntityPaginationReq> | undefined, b: OnDutiesServiceEntityPaginationReq | PlainMessage<OnDutiesServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.OnDutiesServiceFilterReq
  */
-export declare class OnDutiesServiceFilterReq extends Message<OnDutiesServiceFilterReq> ***REMOVED***
+export declare class OnDutiesServiceFilterReq extends Message<OnDutiesServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -737,14 +737,14 @@ export declare class OnDutiesServiceFilterReq extends Message<OnDutiesServiceFil
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceFilterReq;
     static equals(a: OnDutiesServiceFilterReq | PlainMessage<OnDutiesServiceFilterReq> | undefined, b: OnDutiesServiceFilterReq | PlainMessage<OnDutiesServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.OnDutiesServiceSearchAllReq
  */
-export declare class OnDutiesServiceSearchAllReq extends Message<OnDutiesServiceSearchAllReq> ***REMOVED***
+export declare class OnDutiesServiceSearchAllReq extends Message<OnDutiesServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -807,5 +807,5 @@ export declare class OnDutiesServiceSearchAllReq extends Message<OnDutiesService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): OnDutiesServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): OnDutiesServiceSearchAllReq;
     static equals(a: OnDutiesServiceSearchAllReq | PlainMessage<OnDutiesServiceSearchAllReq> | undefined, b: OnDutiesServiceSearchAllReq | PlainMessage<OnDutiesServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=on_duties_pb.d.ts.map

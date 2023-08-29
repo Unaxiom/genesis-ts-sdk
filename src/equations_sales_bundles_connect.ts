@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** EquationSalesBundle, EquationSalesBundleItem, EquationSalesBundleItemHistoryRequest, EquationsSalesBundlesItemsList, EquationsSalesBundlesList, EquationsSalesBundlesServiceCreateRequest, EquationsSalesBundlesServiceEntityPaginationReq, EquationsSalesBundlesServiceFilterReq, EquationsSalesBundlesServiceItemCreateRequest, EquationsSalesBundlesServiceItemUpdateRequest, EquationsSalesBundlesServicePaginationReq, EquationsSalesBundlesServicePaginationResponse, EquationsSalesBundlesServiceSearchAllReq, EquationsSalesBundlesServiceUpdateRequest ***REMOVED*** from "./equations_sales_bundles_pb.js";
-import ***REMOVED*** ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { EquationSalesBundle, EquationSalesBundleItem, EquationSalesBundleItemHistoryRequest, EquationsSalesBundlesItemsList, EquationsSalesBundlesList, EquationsSalesBundlesServiceCreateRequest, EquationsSalesBundlesServiceEntityPaginationReq, EquationsSalesBundlesServiceFilterReq, EquationsSalesBundlesServiceItemCreateRequest, EquationsSalesBundlesServiceItemUpdateRequest, EquationsSalesBundlesServicePaginationReq, EquationsSalesBundlesServicePaginationResponse, EquationsSalesBundlesServiceSearchAllReq, EquationsSalesBundlesServiceUpdateRequest } from "./equations_sales_bundles_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,163 +13,163 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.EquationsSalesBundlesService
  */
-export const EquationsSalesBundlesService = ***REMOVED***
+export const EquationsSalesBundlesService = {
   typeName: "Genesis.EquationsSalesBundlesService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: EquationsSalesBundlesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: EquationsSalesBundlesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: EquationsSalesBundlesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: EquationsSalesBundlesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -178,221 +178,221 @@ export const EquationsSalesBundlesService = ***REMOVED***
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Clone equation from an existing equation (denoted by the identifier)
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.Clone
      */
-    clone: ***REMOVED***
+    clone: {
       name: "Clone",
       I: CloneRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a equation sales bundle
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.AddEquationSalesBundleItem
      */
-    addEquationSalesBundleItem: ***REMOVED***
+    addEquationSalesBundleItem: {
       name: "AddEquationSalesBundleItem",
       I: EquationsSalesBundlesServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a equation sales bundle
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ModifyEquationSalesBundleItem
      */
-    modifyEquationSalesBundleItem: ***REMOVED***
+    modifyEquationSalesBundleItem: {
       name: "ModifyEquationSalesBundleItem",
       I: EquationsSalesBundlesServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a equation sales bundle
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ApproveEquationSalesBundleItem
      */
-    approveEquationSalesBundleItem: ***REMOVED***
+    approveEquationSalesBundleItem: {
       name: "ApproveEquationSalesBundleItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a equation sales bundle
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.DeleteEquationSalesBundleItem
      */
-    deleteEquationSalesBundleItem: ***REMOVED***
+    deleteEquationSalesBundleItem: {
       name: "DeleteEquationSalesBundleItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a equation sales bundle
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ReorderEquationSalesBundleItems
      */
-    reorderEquationSalesBundleItems: ***REMOVED***
+    reorderEquationSalesBundleItems: {
       name: "ReorderEquationSalesBundleItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Equation Sales Bundle Item by ID
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ViewEquationSalesBundleItemByID
      */
-    viewEquationSalesBundleItemByID: ***REMOVED***
+    viewEquationSalesBundleItemByID: {
       name: "ViewEquationSalesBundleItemByID",
       I: Identifier,
       O: EquationSalesBundleItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved equation sales bundle items for given equation sales bundle ID
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ViewApprovedEquationSalesBundleItems
      */
-    viewApprovedEquationSalesBundleItems: ***REMOVED***
+    viewApprovedEquationSalesBundleItems: {
       name: "ViewApprovedEquationSalesBundleItems",
       I: IdentifierWithSearchKey,
       O: EquationsSalesBundlesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved equation sales bundle items for given equation sales bundle ID
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ViewUnapprovedEquationSalesBundleItems
      */
-    viewUnapprovedEquationSalesBundleItems: ***REMOVED***
+    viewUnapprovedEquationSalesBundleItems: {
       name: "ViewUnapprovedEquationSalesBundleItems",
       I: IdentifierWithSearchKey,
       O: EquationsSalesBundlesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the equation sales bundle item
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ViewEquationSalesBundleItemHistory
      */
-    viewEquationSalesBundleItemHistory: ***REMOVED***
+    viewEquationSalesBundleItemHistory: {
       name: "ViewEquationSalesBundleItemHistory",
       I: EquationSalesBundleItemHistoryRequest,
       O: EquationsSalesBundlesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: EquationSalesBundle,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: EquationsSalesBundlesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: EquationsSalesBundlesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: EquationsSalesBundlesServicePaginationReq,
       O: EquationsSalesBundlesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: EquationsSalesBundlesServiceEntityPaginationReq,
       O: EquationsSalesBundlesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the latest equation for a family (denoted by the given identifier)
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.ViewForFamilyID
      */
-    viewForFamilyID: ***REMOVED***
+    viewForFamilyID: {
       name: "ViewForFamilyID",
       I: Identifier,
       O: EquationSalesBundle,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: EquationsSalesBundlesServiceSearchAllReq,
       O: EquationsSalesBundlesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: EquationsSalesBundlesServiceFilterReq,
       O: EquationsSalesBundlesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.EquationsSalesBundlesService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

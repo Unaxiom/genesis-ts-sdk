@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available input types for a qc group item (with possible vbalues being number-absolute, number-percentage, text-input, text-dropdown)
  *
  * @generated from enum Genesis.QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE
  */
-export declare enum QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE ***REMOVED***
+export declare enum QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE {
     /**
      * Acceptable value type is an absolute number (with min and max defined in number_min_value and number_max_value)
      *
@@ -33,14 +33,14 @@ export declare enum QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE ***REMOVED***
      * @generated from enum value: QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_TEXT_DROPDOWN = 3;
      */
     QC_GROUP_ITEM_ACCEPTABLE_VALUE_TYPE_TEXT_DROPDOWN = 3
-***REMOVED***
+}
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.QC_GROUP_SORT_KEY
  */
-export declare enum QC_GROUP_SORT_KEY ***REMOVED***
+export declare enum QC_GROUP_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -89,14 +89,14 @@ export declare enum QC_GROUP_SORT_KEY ***REMOVED***
      * @generated from enum value: QC_GROUP_SORT_KEY_NAME = 10;
      */
     QC_GROUP_SORT_KEY_NAME = 10
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.QCGroupsServiceCreateRequest
  */
-export declare class QCGroupsServiceCreateRequest extends Message<QCGroupsServiceCreateRequest> ***REMOVED***
+export declare class QCGroupsServiceCreateRequest extends Message<QCGroupsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -147,14 +147,14 @@ export declare class QCGroupsServiceCreateRequest extends Message<QCGroupsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupsServiceCreateRequest;
     static equals(a: QCGroupsServiceCreateRequest | PlainMessage<QCGroupsServiceCreateRequest> | undefined, b: QCGroupsServiceCreateRequest | PlainMessage<QCGroupsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.QCGroupsServiceUpdateRequest
  */
-export declare class QCGroupsServiceUpdateRequest extends Message<QCGroupsServiceUpdateRequest> ***REMOVED***
+export declare class QCGroupsServiceUpdateRequest extends Message<QCGroupsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -211,14 +211,14 @@ export declare class QCGroupsServiceUpdateRequest extends Message<QCGroupsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupsServiceUpdateRequest;
     static equals(a: QCGroupsServiceUpdateRequest | PlainMessage<QCGroupsServiceUpdateRequest> | undefined, b: QCGroupsServiceUpdateRequest | PlainMessage<QCGroupsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.QCGroup
  */
-export declare class QCGroup extends Message<QCGroup> ***REMOVED***
+export declare class QCGroup extends Message<QCGroup> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -299,14 +299,14 @@ export declare class QCGroup extends Message<QCGroup> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroup;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroup;
     static equals(a: QCGroup | PlainMessage<QCGroup> | undefined, b: QCGroup | PlainMessage<QCGroup> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add a param to a qc group
  *
  * @generated from message Genesis.QCGroupsServiceItemCreateRequest
  */
-export declare class QCGroupsServiceItemCreateRequest extends Message<QCGroupsServiceItemCreateRequest> ***REMOVED***
+export declare class QCGroupsServiceItemCreateRequest extends Message<QCGroupsServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -387,14 +387,14 @@ export declare class QCGroupsServiceItemCreateRequest extends Message<QCGroupsSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupsServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupsServiceItemCreateRequest;
     static equals(a: QCGroupsServiceItemCreateRequest | PlainMessage<QCGroupsServiceItemCreateRequest> | undefined, b: QCGroupsServiceItemCreateRequest | PlainMessage<QCGroupsServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update a param in a qc group
  *
  * @generated from message Genesis.QCGroupsServiceItemUpdateRequest
  */
-export declare class QCGroupsServiceItemUpdateRequest extends Message<QCGroupsServiceItemUpdateRequest> ***REMOVED***
+export declare class QCGroupsServiceItemUpdateRequest extends Message<QCGroupsServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -463,14 +463,14 @@ export declare class QCGroupsServiceItemUpdateRequest extends Message<QCGroupsSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupsServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupsServiceItemUpdateRequest;
     static equals(a: QCGroupsServiceItemUpdateRequest | PlainMessage<QCGroupsServiceItemUpdateRequest> | undefined, b: QCGroupsServiceItemUpdateRequest | PlainMessage<QCGroupsServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute a param associated to a qc group
  *
  * @generated from message Genesis.QCGroupItem
  */
-export declare class QCGroupItem extends Message<QCGroupItem> ***REMOVED***
+export declare class QCGroupItem extends Message<QCGroupItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -575,14 +575,14 @@ export declare class QCGroupItem extends Message<QCGroupItem> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupItem;
     static equals(a: QCGroupItem | PlainMessage<QCGroupItem> | undefined, b: QCGroupItem | PlainMessage<QCGroupItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of qc groups
  *
  * @generated from message Genesis.QCGroupsList
  */
-export declare class QCGroupsList extends Message<QCGroupsList> ***REMOVED***
+export declare class QCGroupsList extends Message<QCGroupsList> {
     /**
      * List of records
      *
@@ -597,14 +597,14 @@ export declare class QCGroupsList extends Message<QCGroupsList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupsList;
     static equals(a: QCGroupsList | PlainMessage<QCGroupsList> | undefined, b: QCGroupsList | PlainMessage<QCGroupsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of qc group params
  *
  * @generated from message Genesis.QCGroupsItemsList
  */
-export declare class QCGroupsItemsList extends Message<QCGroupsItemsList> ***REMOVED***
+export declare class QCGroupsItemsList extends Message<QCGroupsItemsList> {
     /**
      * List of records
      *
@@ -619,14 +619,14 @@ export declare class QCGroupsItemsList extends Message<QCGroupsItemsList> ***REM
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupsItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupsItemsList;
     static equals(a: QCGroupsItemsList | PlainMessage<QCGroupsItemsList> | undefined, b: QCGroupsItemsList | PlainMessage<QCGroupsItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.QCGroupItemHistoryRequest
  */
-export declare class QCGroupItemHistoryRequest extends Message<QCGroupItemHistoryRequest> ***REMOVED***
+export declare class QCGroupItemHistoryRequest extends Message<QCGroupItemHistoryRequest> {
     /**
      * Stores the ID of the qc group
      *
@@ -647,14 +647,14 @@ export declare class QCGroupItemHistoryRequest extends Message<QCGroupItemHistor
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupItemHistoryRequest;
     static equals(a: QCGroupItemHistoryRequest | PlainMessage<QCGroupItemHistoryRequest> | undefined, b: QCGroupItemHistoryRequest | PlainMessage<QCGroupItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.QCGroupsServicePaginationReq
  */
-export declare class QCGroupsServicePaginationReq extends Message<QCGroupsServicePaginationReq> ***REMOVED***
+export declare class QCGroupsServicePaginationReq extends Message<QCGroupsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -699,14 +699,14 @@ export declare class QCGroupsServicePaginationReq extends Message<QCGroupsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupsServicePaginationReq;
     static equals(a: QCGroupsServicePaginationReq | PlainMessage<QCGroupsServicePaginationReq> | undefined, b: QCGroupsServicePaginationReq | PlainMessage<QCGroupsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.QCGroupsServicePaginationResponse
  */
-export declare class QCGroupsServicePaginationResponse extends Message<QCGroupsServicePaginationResponse> ***REMOVED***
+export declare class QCGroupsServicePaginationResponse extends Message<QCGroupsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -739,14 +739,14 @@ export declare class QCGroupsServicePaginationResponse extends Message<QCGroupsS
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupsServicePaginationResponse;
     static equals(a: QCGroupsServicePaginationResponse | PlainMessage<QCGroupsServicePaginationResponse> | undefined, b: QCGroupsServicePaginationResponse | PlainMessage<QCGroupsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.QCGroupsServiceEntityPaginationReq
  */
-export declare class QCGroupsServiceEntityPaginationReq extends Message<QCGroupsServiceEntityPaginationReq> ***REMOVED***
+export declare class QCGroupsServiceEntityPaginationReq extends Message<QCGroupsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -791,14 +791,14 @@ export declare class QCGroupsServiceEntityPaginationReq extends Message<QCGroups
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupsServiceEntityPaginationReq;
     static equals(a: QCGroupsServiceEntityPaginationReq | PlainMessage<QCGroupsServiceEntityPaginationReq> | undefined, b: QCGroupsServiceEntityPaginationReq | PlainMessage<QCGroupsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.QCGroupsServiceFilterReq
  */
-export declare class QCGroupsServiceFilterReq extends Message<QCGroupsServiceFilterReq> ***REMOVED***
+export declare class QCGroupsServiceFilterReq extends Message<QCGroupsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -903,14 +903,14 @@ export declare class QCGroupsServiceFilterReq extends Message<QCGroupsServiceFil
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupsServiceFilterReq;
     static equals(a: QCGroupsServiceFilterReq | PlainMessage<QCGroupsServiceFilterReq> | undefined, b: QCGroupsServiceFilterReq | PlainMessage<QCGroupsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.QCGroupsServiceSearchAllReq
  */
-export declare class QCGroupsServiceSearchAllReq extends Message<QCGroupsServiceSearchAllReq> ***REMOVED***
+export declare class QCGroupsServiceSearchAllReq extends Message<QCGroupsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -967,5 +967,5 @@ export declare class QCGroupsServiceSearchAllReq extends Message<QCGroupsService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QCGroupsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QCGroupsServiceSearchAllReq;
     static equals(a: QCGroupsServiceSearchAllReq | PlainMessage<QCGroupsServiceSearchAllReq> | undefined, b: QCGroupsServiceSearchAllReq | PlainMessage<QCGroupsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=qc_groups_pb.d.ts.map

@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.SALES_RETURN_SORT_KEY
  */
-export declare enum SALES_RETURN_SORT_KEY ***REMOVED***
+export declare enum SALES_RETURN_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -63,14 +63,14 @@ export declare enum SALES_RETURN_SORT_KEY ***REMOVED***
      * @generated from enum value: SALES_RETURN_SORT_KEY_FINAL_REF_NUMBER = 11;
      */
     SALES_RETURN_SORT_KEY_FINAL_REF_NUMBER = 11
-***REMOVED***
+}
 /**
  *
  * Describes the available billing statuses
  *
  * @generated from enum Genesis.SALES_RETURN_BILLING_STATUS
  */
-export declare enum SALES_RETURN_BILLING_STATUS ***REMOVED***
+export declare enum SALES_RETURN_BILLING_STATUS {
     /**
      * Any billing status
      *
@@ -89,14 +89,14 @@ export declare enum SALES_RETURN_BILLING_STATUS ***REMOVED***
      * @generated from enum value: SALES_RETURN_BILLING_STATUS_UNBILLED = 2;
      */
     SALES_RETURN_BILLING_STATUS_UNBILLED = 2
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.SalesReturnsServiceCreateRequest
  */
-export declare class SalesReturnsServiceCreateRequest extends Message<SalesReturnsServiceCreateRequest> ***REMOVED***
+export declare class SalesReturnsServiceCreateRequest extends Message<SalesReturnsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -147,14 +147,14 @@ export declare class SalesReturnsServiceCreateRequest extends Message<SalesRetur
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnsServiceCreateRequest;
     static equals(a: SalesReturnsServiceCreateRequest | PlainMessage<SalesReturnsServiceCreateRequest> | undefined, b: SalesReturnsServiceCreateRequest | PlainMessage<SalesReturnsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.SalesReturnsServiceUpdateRequest
  */
-export declare class SalesReturnsServiceUpdateRequest extends Message<SalesReturnsServiceUpdateRequest> ***REMOVED***
+export declare class SalesReturnsServiceUpdateRequest extends Message<SalesReturnsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -199,14 +199,14 @@ export declare class SalesReturnsServiceUpdateRequest extends Message<SalesRetur
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnsServiceUpdateRequest;
     static equals(a: SalesReturnsServiceUpdateRequest | PlainMessage<SalesReturnsServiceUpdateRequest> | undefined, b: SalesReturnsServiceUpdateRequest | PlainMessage<SalesReturnsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.SalesReturn
  */
-export declare class SalesReturn extends Message<SalesReturn> ***REMOVED***
+export declare class SalesReturn extends Message<SalesReturn> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -293,14 +293,14 @@ export declare class SalesReturn extends Message<SalesReturn> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturn;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturn;
     static equals(a: SalesReturn | PlainMessage<SalesReturn> | undefined, b: SalesReturn | PlainMessage<SalesReturn> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a sales return
  *
  * @generated from message Genesis.SalesReturnsServiceItemCreateRequest
  */
-export declare class SalesReturnsServiceItemCreateRequest extends Message<SalesReturnsServiceItemCreateRequest> ***REMOVED***
+export declare class SalesReturnsServiceItemCreateRequest extends Message<SalesReturnsServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -351,14 +351,14 @@ export declare class SalesReturnsServiceItemCreateRequest extends Message<SalesR
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnsServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnsServiceItemCreateRequest;
     static equals(a: SalesReturnsServiceItemCreateRequest | PlainMessage<SalesReturnsServiceItemCreateRequest> | undefined, b: SalesReturnsServiceItemCreateRequest | PlainMessage<SalesReturnsServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a sales return
  *
  * @generated from message Genesis.SalesReturnsServiceItemUpdateRequest
  */
-export declare class SalesReturnsServiceItemUpdateRequest extends Message<SalesReturnsServiceItemUpdateRequest> ***REMOVED***
+export declare class SalesReturnsServiceItemUpdateRequest extends Message<SalesReturnsServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -403,14 +403,14 @@ export declare class SalesReturnsServiceItemUpdateRequest extends Message<SalesR
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnsServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnsServiceItemUpdateRequest;
     static equals(a: SalesReturnsServiceItemUpdateRequest | PlainMessage<SalesReturnsServiceItemUpdateRequest> | undefined, b: SalesReturnsServiceItemUpdateRequest | PlainMessage<SalesReturnsServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a sales return
  *
  * @generated from message Genesis.SalesReturnItem
  */
-export declare class SalesReturnItem extends Message<SalesReturnItem> ***REMOVED***
+export declare class SalesReturnItem extends Message<SalesReturnItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -485,14 +485,14 @@ export declare class SalesReturnItem extends Message<SalesReturnItem> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnItem;
     static equals(a: SalesReturnItem | PlainMessage<SalesReturnItem> | undefined, b: SalesReturnItem | PlainMessage<SalesReturnItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of sales returns
  *
  * @generated from message Genesis.SalesReturnsList
  */
-export declare class SalesReturnsList extends Message<SalesReturnsList> ***REMOVED***
+export declare class SalesReturnsList extends Message<SalesReturnsList> {
     /**
      * List of records
      *
@@ -507,14 +507,14 @@ export declare class SalesReturnsList extends Message<SalesReturnsList> ***REMOV
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnsList;
     static equals(a: SalesReturnsList | PlainMessage<SalesReturnsList> | undefined, b: SalesReturnsList | PlainMessage<SalesReturnsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of sales return items
  *
  * @generated from message Genesis.SalesReturnsItemsList
  */
-export declare class SalesReturnsItemsList extends Message<SalesReturnsItemsList> ***REMOVED***
+export declare class SalesReturnsItemsList extends Message<SalesReturnsItemsList> {
     /**
      * List of records
      *
@@ -529,14 +529,14 @@ export declare class SalesReturnsItemsList extends Message<SalesReturnsItemsList
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnsItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnsItemsList;
     static equals(a: SalesReturnsItemsList | PlainMessage<SalesReturnsItemsList> | undefined, b: SalesReturnsItemsList | PlainMessage<SalesReturnsItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.SalesReturnItemHistoryRequest
  */
-export declare class SalesReturnItemHistoryRequest extends Message<SalesReturnItemHistoryRequest> ***REMOVED***
+export declare class SalesReturnItemHistoryRequest extends Message<SalesReturnItemHistoryRequest> {
     /**
      * Stores the sales return ID
      *
@@ -557,14 +557,14 @@ export declare class SalesReturnItemHistoryRequest extends Message<SalesReturnIt
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnItemHistoryRequest;
     static equals(a: SalesReturnItemHistoryRequest | PlainMessage<SalesReturnItemHistoryRequest> | undefined, b: SalesReturnItemHistoryRequest | PlainMessage<SalesReturnItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the info of a prospective sales return item
  *
  * @generated from message Genesis.SalesReturnItemProspectiveInfoRequest
  */
-export declare class SalesReturnItemProspectiveInfoRequest extends Message<SalesReturnItemProspectiveInfoRequest> ***REMOVED***
+export declare class SalesReturnItemProspectiveInfoRequest extends Message<SalesReturnItemProspectiveInfoRequest> {
     /**
      * Stores the sales return ID
      *
@@ -585,14 +585,14 @@ export declare class SalesReturnItemProspectiveInfoRequest extends Message<Sales
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnItemProspectiveInfoRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnItemProspectiveInfoRequest;
     static equals(a: SalesReturnItemProspectiveInfoRequest | PlainMessage<SalesReturnItemProspectiveInfoRequest> | undefined, b: SalesReturnItemProspectiveInfoRequest | PlainMessage<SalesReturnItemProspectiveInfoRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload to retrieve the quantity that has already been added for the specific ref_from, ref_id and family_id
  *
  * @generated from message Genesis.SalesReturnsServiceAlreadyAddedQuantityForSourceRequest
  */
-export declare class SalesReturnsServiceAlreadyAddedQuantityForSourceRequest extends Message<SalesReturnsServiceAlreadyAddedQuantityForSourceRequest> ***REMOVED***
+export declare class SalesReturnsServiceAlreadyAddedQuantityForSourceRequest extends Message<SalesReturnsServiceAlreadyAddedQuantityForSourceRequest> {
     /**
      * The associated reference
      *
@@ -619,14 +619,14 @@ export declare class SalesReturnsServiceAlreadyAddedQuantityForSourceRequest ext
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnsServiceAlreadyAddedQuantityForSourceRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnsServiceAlreadyAddedQuantityForSourceRequest;
     static equals(a: SalesReturnsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<SalesReturnsServiceAlreadyAddedQuantityForSourceRequest> | undefined, b: SalesReturnsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<SalesReturnsServiceAlreadyAddedQuantityForSourceRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.SalesReturnsServicePaginationReq
  */
-export declare class SalesReturnsServicePaginationReq extends Message<SalesReturnsServicePaginationReq> ***REMOVED***
+export declare class SalesReturnsServicePaginationReq extends Message<SalesReturnsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -671,14 +671,14 @@ export declare class SalesReturnsServicePaginationReq extends Message<SalesRetur
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnsServicePaginationReq;
     static equals(a: SalesReturnsServicePaginationReq | PlainMessage<SalesReturnsServicePaginationReq> | undefined, b: SalesReturnsServicePaginationReq | PlainMessage<SalesReturnsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.SalesReturnsServicePaginationResponse
  */
-export declare class SalesReturnsServicePaginationResponse extends Message<SalesReturnsServicePaginationResponse> ***REMOVED***
+export declare class SalesReturnsServicePaginationResponse extends Message<SalesReturnsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -711,14 +711,14 @@ export declare class SalesReturnsServicePaginationResponse extends Message<Sales
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnsServicePaginationResponse;
     static equals(a: SalesReturnsServicePaginationResponse | PlainMessage<SalesReturnsServicePaginationResponse> | undefined, b: SalesReturnsServicePaginationResponse | PlainMessage<SalesReturnsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.SalesReturnsServiceEntityPaginationReq
  */
-export declare class SalesReturnsServiceEntityPaginationReq extends Message<SalesReturnsServiceEntityPaginationReq> ***REMOVED***
+export declare class SalesReturnsServiceEntityPaginationReq extends Message<SalesReturnsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -763,14 +763,14 @@ export declare class SalesReturnsServiceEntityPaginationReq extends Message<Sale
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnsServiceEntityPaginationReq;
     static equals(a: SalesReturnsServiceEntityPaginationReq | PlainMessage<SalesReturnsServiceEntityPaginationReq> | undefined, b: SalesReturnsServiceEntityPaginationReq | PlainMessage<SalesReturnsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.SalesReturnsServiceFilterReq
  */
-export declare class SalesReturnsServiceFilterReq extends Message<SalesReturnsServiceFilterReq> ***REMOVED***
+export declare class SalesReturnsServiceFilterReq extends Message<SalesReturnsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -899,14 +899,14 @@ export declare class SalesReturnsServiceFilterReq extends Message<SalesReturnsSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnsServiceFilterReq;
     static equals(a: SalesReturnsServiceFilterReq | PlainMessage<SalesReturnsServiceFilterReq> | undefined, b: SalesReturnsServiceFilterReq | PlainMessage<SalesReturnsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.SalesReturnsServiceSearchAllReq
  */
-export declare class SalesReturnsServiceSearchAllReq extends Message<SalesReturnsServiceSearchAllReq> ***REMOVED***
+export declare class SalesReturnsServiceSearchAllReq extends Message<SalesReturnsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -981,5 +981,5 @@ export declare class SalesReturnsServiceSearchAllReq extends Message<SalesReturn
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SalesReturnsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SalesReturnsServiceSearchAllReq;
     static equals(a: SalesReturnsServiceSearchAllReq | PlainMessage<SalesReturnsServiceSearchAllReq> | undefined, b: SalesReturnsServiceSearchAllReq | PlainMessage<SalesReturnsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=sales_returns_pb.d.ts.map

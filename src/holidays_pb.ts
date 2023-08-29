@@ -9,9 +9,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -19,7 +19,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.HOLIDAY_SORT_KEY
  */
-export enum HOLIDAY_SORT_KEY ***REMOVED***
+export enum HOLIDAY_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -96,20 +96,20 @@ export enum HOLIDAY_SORT_KEY ***REMOVED***
    * @generated from enum value: HOLIDAY_SORT_KEY_END_ON = 13;
    */
   HOLIDAY_SORT_KEY_END_ON = 13,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(HOLIDAY_SORT_KEY)
 proto3.util.setEnumType(HOLIDAY_SORT_KEY, "Genesis.HOLIDAY_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "HOLIDAY_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "HOLIDAY_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "HOLIDAY_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "HOLIDAY_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "HOLIDAY_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "HOLIDAY_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "HOLIDAY_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "HOLIDAY_SORT_KEY_TITLE" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "HOLIDAY_SORT_KEY_DESCRIPTION" ***REMOVED***,
-  ***REMOVED*** no: 12, name: "HOLIDAY_SORT_KEY_START_ON" ***REMOVED***,
-  ***REMOVED*** no: 13, name: "HOLIDAY_SORT_KEY_END_ON" ***REMOVED***,
+  { no: 0, name: "HOLIDAY_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "HOLIDAY_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "HOLIDAY_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "HOLIDAY_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "HOLIDAY_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "HOLIDAY_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "HOLIDAY_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "HOLIDAY_SORT_KEY_TITLE" },
+  { no: 11, name: "HOLIDAY_SORT_KEY_DESCRIPTION" },
+  { no: 12, name: "HOLIDAY_SORT_KEY_START_ON" },
+  { no: 13, name: "HOLIDAY_SORT_KEY_END_ON" },
 ]);
 
 /**
@@ -118,7 +118,7 @@ proto3.util.setEnumType(HOLIDAY_SORT_KEY, "Genesis.HOLIDAY_SORT_KEY", [
  *
  * @generated from message Genesis.HolidaysServiceCreateRequest
  */
-export class HolidaysServiceCreateRequest extends Message<HolidaysServiceCreateRequest> ***REMOVED***
+export class HolidaysServiceCreateRequest extends Message<HolidaysServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -168,39 +168,39 @@ export class HolidaysServiceCreateRequest extends Message<HolidaysServiceCreateR
    */
   endOn = protoInt64.zero;
 
-  constructor(data?: PartialMessage<HolidaysServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "start_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "end_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "start_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "end_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceCreateRequest {
     return new HolidaysServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceCreateRequest {
     return new HolidaysServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceCreateRequest {
     return new HolidaysServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysServiceCreateRequest | PlainMessage<HolidaysServiceCreateRequest> | undefined, b: HolidaysServiceCreateRequest | PlainMessage<HolidaysServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysServiceCreateRequest | PlainMessage<HolidaysServiceCreateRequest> | undefined, b: HolidaysServiceCreateRequest | PlainMessage<HolidaysServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(HolidaysServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -208,7 +208,7 @@ export class HolidaysServiceCreateRequest extends Message<HolidaysServiceCreateR
  *
  * @generated from message Genesis.HolidaysServiceUpdateRequest
  */
-export class HolidaysServiceUpdateRequest extends Message<HolidaysServiceUpdateRequest> ***REMOVED***
+export class HolidaysServiceUpdateRequest extends Message<HolidaysServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -265,40 +265,40 @@ export class HolidaysServiceUpdateRequest extends Message<HolidaysServiceUpdateR
    */
   endOn = protoInt64.zero;
 
-  constructor(data?: PartialMessage<HolidaysServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "start_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "end_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "start_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "end_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceUpdateRequest {
     return new HolidaysServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceUpdateRequest {
     return new HolidaysServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceUpdateRequest {
     return new HolidaysServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysServiceUpdateRequest | PlainMessage<HolidaysServiceUpdateRequest> | undefined, b: HolidaysServiceUpdateRequest | PlainMessage<HolidaysServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysServiceUpdateRequest | PlainMessage<HolidaysServiceUpdateRequest> | undefined, b: HolidaysServiceUpdateRequest | PlainMessage<HolidaysServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(HolidaysServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -306,7 +306,7 @@ export class HolidaysServiceUpdateRequest extends Message<HolidaysServiceUpdateR
  *
  * @generated from message Genesis.Holiday
  */
-export class Holiday extends Message<Holiday> ***REMOVED***
+export class Holiday extends Message<Holiday> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -391,44 +391,44 @@ export class Holiday extends Message<Holiday> ***REMOVED***
    */
   list: HolidayShiftGroup[] = [];
 
-  constructor(data?: PartialMessage<Holiday>) ***REMOVED***
+  constructor(data?: PartialMessage<Holiday>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.Holiday";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "start_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "end_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "list", kind: "message", T: HolidayShiftGroup, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "start_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "end_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "list", kind: "message", T: HolidayShiftGroup, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Holiday ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Holiday {
     return new Holiday().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Holiday ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Holiday {
     return new Holiday().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Holiday ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Holiday {
     return new Holiday().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Holiday | PlainMessage<Holiday> | undefined, b: Holiday | PlainMessage<Holiday> | undefined): boolean ***REMOVED***
+  static equals(a: Holiday | PlainMessage<Holiday> | undefined, b: Holiday | PlainMessage<Holiday> | undefined): boolean {
     return proto3.util.equals(Holiday, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -436,7 +436,7 @@ export class Holiday extends Message<Holiday> ***REMOVED***
  *
  * @generated from message Genesis.HolidaysServiceShiftGroupCreateRequest
  */
-export class HolidaysServiceShiftGroupCreateRequest extends Message<HolidaysServiceShiftGroupCreateRequest> ***REMOVED***
+export class HolidaysServiceShiftGroupCreateRequest extends Message<HolidaysServiceShiftGroupCreateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -458,35 +458,35 @@ export class HolidaysServiceShiftGroupCreateRequest extends Message<HolidaysServ
    */
   shiftGroupId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<HolidaysServiceShiftGroupCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysServiceShiftGroupCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysServiceShiftGroupCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "holiday_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "holiday_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceShiftGroupCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceShiftGroupCreateRequest {
     return new HolidaysServiceShiftGroupCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceShiftGroupCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceShiftGroupCreateRequest {
     return new HolidaysServiceShiftGroupCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceShiftGroupCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceShiftGroupCreateRequest {
     return new HolidaysServiceShiftGroupCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysServiceShiftGroupCreateRequest | PlainMessage<HolidaysServiceShiftGroupCreateRequest> | undefined, b: HolidaysServiceShiftGroupCreateRequest | PlainMessage<HolidaysServiceShiftGroupCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysServiceShiftGroupCreateRequest | PlainMessage<HolidaysServiceShiftGroupCreateRequest> | undefined, b: HolidaysServiceShiftGroupCreateRequest | PlainMessage<HolidaysServiceShiftGroupCreateRequest> | undefined): boolean {
     return proto3.util.equals(HolidaysServiceShiftGroupCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -494,7 +494,7 @@ export class HolidaysServiceShiftGroupCreateRequest extends Message<HolidaysServ
  *
  * @generated from message Genesis.HolidaysServiceShiftGroupUpdateRequest
  */
-export class HolidaysServiceShiftGroupUpdateRequest extends Message<HolidaysServiceShiftGroupUpdateRequest> ***REMOVED***
+export class HolidaysServiceShiftGroupUpdateRequest extends Message<HolidaysServiceShiftGroupUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -523,36 +523,36 @@ export class HolidaysServiceShiftGroupUpdateRequest extends Message<HolidaysServ
    */
   shiftGroupId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<HolidaysServiceShiftGroupUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysServiceShiftGroupUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysServiceShiftGroupUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "holiday_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "holiday_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceShiftGroupUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceShiftGroupUpdateRequest {
     return new HolidaysServiceShiftGroupUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceShiftGroupUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceShiftGroupUpdateRequest {
     return new HolidaysServiceShiftGroupUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceShiftGroupUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceShiftGroupUpdateRequest {
     return new HolidaysServiceShiftGroupUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysServiceShiftGroupUpdateRequest | PlainMessage<HolidaysServiceShiftGroupUpdateRequest> | undefined, b: HolidaysServiceShiftGroupUpdateRequest | PlainMessage<HolidaysServiceShiftGroupUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysServiceShiftGroupUpdateRequest | PlainMessage<HolidaysServiceShiftGroupUpdateRequest> | undefined, b: HolidaysServiceShiftGroupUpdateRequest | PlainMessage<HolidaysServiceShiftGroupUpdateRequest> | undefined): boolean {
     return proto3.util.equals(HolidaysServiceShiftGroupUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -560,7 +560,7 @@ export class HolidaysServiceShiftGroupUpdateRequest extends Message<HolidaysServ
  *
  * @generated from message Genesis.HolidayShiftGroup
  */
-export class HolidayShiftGroup extends Message<HolidayShiftGroup> ***REMOVED***
+export class HolidayShiftGroup extends Message<HolidayShiftGroup> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -610,39 +610,39 @@ export class HolidayShiftGroup extends Message<HolidayShiftGroup> ***REMOVED***
    */
   shiftGroupId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<HolidayShiftGroup>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidayShiftGroup>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidayShiftGroup";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "holiday_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "holiday_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidayShiftGroup ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidayShiftGroup {
     return new HolidayShiftGroup().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidayShiftGroup ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidayShiftGroup {
     return new HolidayShiftGroup().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidayShiftGroup ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidayShiftGroup {
     return new HolidayShiftGroup().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidayShiftGroup | PlainMessage<HolidayShiftGroup> | undefined, b: HolidayShiftGroup | PlainMessage<HolidayShiftGroup> | undefined): boolean ***REMOVED***
+  static equals(a: HolidayShiftGroup | PlainMessage<HolidayShiftGroup> | undefined, b: HolidayShiftGroup | PlainMessage<HolidayShiftGroup> | undefined): boolean {
     return proto3.util.equals(HolidayShiftGroup, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -650,7 +650,7 @@ export class HolidayShiftGroup extends Message<HolidayShiftGroup> ***REMOVED***
  *
  * @generated from message Genesis.HolidaysList
  */
-export class HolidaysList extends Message<HolidaysList> ***REMOVED***
+export class HolidaysList extends Message<HolidaysList> {
   /**
    * List of records
    *
@@ -658,33 +658,33 @@ export class HolidaysList extends Message<HolidaysList> ***REMOVED***
    */
   list: Holiday[] = [];
 
-  constructor(data?: PartialMessage<HolidaysList>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: Holiday, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: Holiday, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysList {
     return new HolidaysList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysList {
     return new HolidaysList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysList {
     return new HolidaysList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysList | PlainMessage<HolidaysList> | undefined, b: HolidaysList | PlainMessage<HolidaysList> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysList | PlainMessage<HolidaysList> | undefined, b: HolidaysList | PlainMessage<HolidaysList> | undefined): boolean {
     return proto3.util.equals(HolidaysList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -692,7 +692,7 @@ export class HolidaysList extends Message<HolidaysList> ***REMOVED***
  *
  * @generated from message Genesis.HolidaysShiftsGroupsList
  */
-export class HolidaysShiftsGroupsList extends Message<HolidaysShiftsGroupsList> ***REMOVED***
+export class HolidaysShiftsGroupsList extends Message<HolidaysShiftsGroupsList> {
   /**
    * List of records
    *
@@ -700,33 +700,33 @@ export class HolidaysShiftsGroupsList extends Message<HolidaysShiftsGroupsList> 
    */
   list: HolidayShiftGroup[] = [];
 
-  constructor(data?: PartialMessage<HolidaysShiftsGroupsList>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysShiftsGroupsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysShiftsGroupsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: HolidayShiftGroup, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: HolidayShiftGroup, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysShiftsGroupsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysShiftsGroupsList {
     return new HolidaysShiftsGroupsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysShiftsGroupsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysShiftsGroupsList {
     return new HolidaysShiftsGroupsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysShiftsGroupsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysShiftsGroupsList {
     return new HolidaysShiftsGroupsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysShiftsGroupsList | PlainMessage<HolidaysShiftsGroupsList> | undefined, b: HolidaysShiftsGroupsList | PlainMessage<HolidaysShiftsGroupsList> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysShiftsGroupsList | PlainMessage<HolidaysShiftsGroupsList> | undefined, b: HolidaysShiftsGroupsList | PlainMessage<HolidaysShiftsGroupsList> | undefined): boolean {
     return proto3.util.equals(HolidaysShiftsGroupsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -734,7 +734,7 @@ export class HolidaysShiftsGroupsList extends Message<HolidaysShiftsGroupsList> 
  *
  * @generated from message Genesis.HolidaysShiftsGroupsHistoryRequest
  */
-export class HolidaysShiftsGroupsHistoryRequest extends Message<HolidaysShiftsGroupsHistoryRequest> ***REMOVED***
+export class HolidaysShiftsGroupsHistoryRequest extends Message<HolidaysShiftsGroupsHistoryRequest> {
   /**
    * Stores the holiday ID
    *
@@ -749,34 +749,34 @@ export class HolidaysShiftsGroupsHistoryRequest extends Message<HolidaysShiftsGr
    */
   shiftGroupId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<HolidaysShiftsGroupsHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysShiftsGroupsHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysShiftsGroupsHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "holiday_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "holiday_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysShiftsGroupsHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysShiftsGroupsHistoryRequest {
     return new HolidaysShiftsGroupsHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysShiftsGroupsHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysShiftsGroupsHistoryRequest {
     return new HolidaysShiftsGroupsHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysShiftsGroupsHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysShiftsGroupsHistoryRequest {
     return new HolidaysShiftsGroupsHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysShiftsGroupsHistoryRequest | PlainMessage<HolidaysShiftsGroupsHistoryRequest> | undefined, b: HolidaysShiftsGroupsHistoryRequest | PlainMessage<HolidaysShiftsGroupsHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysShiftsGroupsHistoryRequest | PlainMessage<HolidaysShiftsGroupsHistoryRequest> | undefined, b: HolidaysShiftsGroupsHistoryRequest | PlainMessage<HolidaysShiftsGroupsHistoryRequest> | undefined): boolean {
     return proto3.util.equals(HolidaysShiftsGroupsHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -784,7 +784,7 @@ export class HolidaysShiftsGroupsHistoryRequest extends Message<HolidaysShiftsGr
  *
  * @generated from message Genesis.HolidaysServicePaginationReq
  */
-export class HolidaysServicePaginationReq extends Message<HolidaysServicePaginationReq> ***REMOVED***
+export class HolidaysServicePaginationReq extends Message<HolidaysServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -827,38 +827,38 @@ export class HolidaysServicePaginationReq extends Message<HolidaysServicePaginat
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<HolidaysServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(HOLIDAY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(HOLIDAY_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServicePaginationReq {
     return new HolidaysServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServicePaginationReq {
     return new HolidaysServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServicePaginationReq {
     return new HolidaysServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysServicePaginationReq | PlainMessage<HolidaysServicePaginationReq> | undefined, b: HolidaysServicePaginationReq | PlainMessage<HolidaysServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysServicePaginationReq | PlainMessage<HolidaysServicePaginationReq> | undefined, b: HolidaysServicePaginationReq | PlainMessage<HolidaysServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(HolidaysServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -866,7 +866,7 @@ export class HolidaysServicePaginationReq extends Message<HolidaysServicePaginat
  *
  * @generated from message Genesis.HolidaysServicePaginationResponse
  */
-export class HolidaysServicePaginationResponse extends Message<HolidaysServicePaginationResponse> ***REMOVED***
+export class HolidaysServicePaginationResponse extends Message<HolidaysServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -895,36 +895,36 @@ export class HolidaysServicePaginationResponse extends Message<HolidaysServicePa
    */
   payload: Holiday[] = [];
 
-  constructor(data?: PartialMessage<HolidaysServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: Holiday, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: Holiday, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServicePaginationResponse {
     return new HolidaysServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServicePaginationResponse {
     return new HolidaysServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServicePaginationResponse {
     return new HolidaysServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysServicePaginationResponse | PlainMessage<HolidaysServicePaginationResponse> | undefined, b: HolidaysServicePaginationResponse | PlainMessage<HolidaysServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysServicePaginationResponse | PlainMessage<HolidaysServicePaginationResponse> | undefined, b: HolidaysServicePaginationResponse | PlainMessage<HolidaysServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(HolidaysServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -932,7 +932,7 @@ export class HolidaysServicePaginationResponse extends Message<HolidaysServicePa
  *
  * @generated from message Genesis.HolidaysServiceEntityPaginationReq
  */
-export class HolidaysServiceEntityPaginationReq extends Message<HolidaysServiceEntityPaginationReq> ***REMOVED***
+export class HolidaysServiceEntityPaginationReq extends Message<HolidaysServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -975,38 +975,38 @@ export class HolidaysServiceEntityPaginationReq extends Message<HolidaysServiceE
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<HolidaysServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(HOLIDAY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(HOLIDAY_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceEntityPaginationReq {
     return new HolidaysServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceEntityPaginationReq {
     return new HolidaysServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceEntityPaginationReq {
     return new HolidaysServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysServiceEntityPaginationReq | PlainMessage<HolidaysServiceEntityPaginationReq> | undefined, b: HolidaysServiceEntityPaginationReq | PlainMessage<HolidaysServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysServiceEntityPaginationReq | PlainMessage<HolidaysServiceEntityPaginationReq> | undefined, b: HolidaysServiceEntityPaginationReq | PlainMessage<HolidaysServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(HolidaysServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1014,7 +1014,7 @@ export class HolidaysServiceEntityPaginationReq extends Message<HolidaysServiceE
  *
  * @generated from message Genesis.HolidaysServiceFilterReq
  */
-export class HolidaysServiceFilterReq extends Message<HolidaysServiceFilterReq> ***REMOVED***
+export class HolidaysServiceFilterReq extends Message<HolidaysServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1162,53 +1162,53 @@ export class HolidaysServiceFilterReq extends Message<HolidaysServiceFilterReq> 
    */
   endOnEnd = protoInt64.zero;
 
-  constructor(data?: PartialMessage<HolidaysServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(HOLIDAY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "start_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "start_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "end_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "end_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(HOLIDAY_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "start_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 23, name: "start_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 24, name: "end_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 25, name: "end_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceFilterReq {
     return new HolidaysServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceFilterReq {
     return new HolidaysServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceFilterReq {
     return new HolidaysServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysServiceFilterReq | PlainMessage<HolidaysServiceFilterReq> | undefined, b: HolidaysServiceFilterReq | PlainMessage<HolidaysServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysServiceFilterReq | PlainMessage<HolidaysServiceFilterReq> | undefined, b: HolidaysServiceFilterReq | PlainMessage<HolidaysServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(HolidaysServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1216,7 +1216,7 @@ export class HolidaysServiceFilterReq extends Message<HolidaysServiceFilterReq> 
  *
  * @generated from message Genesis.HolidaysServiceSearchAllReq
  */
-export class HolidaysServiceSearchAllReq extends Message<HolidaysServiceSearchAllReq> ***REMOVED***
+export class HolidaysServiceSearchAllReq extends Message<HolidaysServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1273,40 +1273,40 @@ export class HolidaysServiceSearchAllReq extends Message<HolidaysServiceSearchAl
    */
   searchKey = "";
 
-  constructor(data?: PartialMessage<HolidaysServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(HOLIDAY_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(HOLIDAY_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceSearchAllReq {
     return new HolidaysServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceSearchAllReq {
     return new HolidaysServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceSearchAllReq {
     return new HolidaysServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysServiceSearchAllReq | PlainMessage<HolidaysServiceSearchAllReq> | undefined, b: HolidaysServiceSearchAllReq | PlainMessage<HolidaysServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysServiceSearchAllReq | PlainMessage<HolidaysServiceSearchAllReq> | undefined, b: HolidaysServiceSearchAllReq | PlainMessage<HolidaysServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(HolidaysServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1314,7 +1314,7 @@ export class HolidaysServiceSearchAllReq extends Message<HolidaysServiceSearchAl
  *
  * @generated from message Genesis.HolidaysServiceViewHolidaysOnTimestampRequest
  */
-export class HolidaysServiceViewHolidaysOnTimestampRequest extends Message<HolidaysServiceViewHolidaysOnTimestampRequest> ***REMOVED***
+export class HolidaysServiceViewHolidaysOnTimestampRequest extends Message<HolidaysServiceViewHolidaysOnTimestampRequest> {
   /**
    * Stores the timestamp
    *
@@ -1329,32 +1329,32 @@ export class HolidaysServiceViewHolidaysOnTimestampRequest extends Message<Holid
    */
   shiftGroupId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<HolidaysServiceViewHolidaysOnTimestampRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<HolidaysServiceViewHolidaysOnTimestampRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.HolidaysServiceViewHolidaysOnTimestampRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "shift_group_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceViewHolidaysOnTimestampRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): HolidaysServiceViewHolidaysOnTimestampRequest {
     return new HolidaysServiceViewHolidaysOnTimestampRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceViewHolidaysOnTimestampRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): HolidaysServiceViewHolidaysOnTimestampRequest {
     return new HolidaysServiceViewHolidaysOnTimestampRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceViewHolidaysOnTimestampRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): HolidaysServiceViewHolidaysOnTimestampRequest {
     return new HolidaysServiceViewHolidaysOnTimestampRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: HolidaysServiceViewHolidaysOnTimestampRequest | PlainMessage<HolidaysServiceViewHolidaysOnTimestampRequest> | undefined, b: HolidaysServiceViewHolidaysOnTimestampRequest | PlainMessage<HolidaysServiceViewHolidaysOnTimestampRequest> | undefined): boolean ***REMOVED***
+  static equals(a: HolidaysServiceViewHolidaysOnTimestampRequest | PlainMessage<HolidaysServiceViewHolidaysOnTimestampRequest> | undefined, b: HolidaysServiceViewHolidaysOnTimestampRequest | PlainMessage<HolidaysServiceViewHolidaysOnTimestampRequest> | undefined): boolean {
     return proto3.util.equals(HolidaysServiceViewHolidaysOnTimestampRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

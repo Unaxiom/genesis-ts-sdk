@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available input types for a goal item (with possible vbalues being number-absolute, number-percentage, text-input, text-dropdown)
  *
  * @generated from enum Genesis.GOAL_ITEM_INPUT_VALUE_TYPE
  */
-export declare enum GOAL_ITEM_INPUT_VALUE_TYPE ***REMOVED***
+export declare enum GOAL_ITEM_INPUT_VALUE_TYPE {
     /**
      * Input value type is an absolute number (with min and max defined in number_min_value and number_max_value)
      *
@@ -33,14 +33,14 @@ export declare enum GOAL_ITEM_INPUT_VALUE_TYPE ***REMOVED***
      * @generated from enum value: GOAL_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 3;
      */
     GOAL_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 3
-***REMOVED***
+}
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.GOAL_SORT_KEY
  */
-export declare enum GOAL_SORT_KEY ***REMOVED***
+export declare enum GOAL_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -95,14 +95,14 @@ export declare enum GOAL_SORT_KEY ***REMOVED***
      * @generated from enum value: GOAL_SORT_KEY_FINAL_REF_NUMBER = 11;
      */
     GOAL_SORT_KEY_FINAL_REF_NUMBER = 11
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.GoalsServiceCreateRequest
  */
-export declare class GoalsServiceCreateRequest extends Message<GoalsServiceCreateRequest> ***REMOVED***
+export declare class GoalsServiceCreateRequest extends Message<GoalsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -165,14 +165,14 @@ export declare class GoalsServiceCreateRequest extends Message<GoalsServiceCreat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceCreateRequest;
     static equals(a: GoalsServiceCreateRequest | PlainMessage<GoalsServiceCreateRequest> | undefined, b: GoalsServiceCreateRequest | PlainMessage<GoalsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.GoalsServiceUpdateRequest
  */
-export declare class GoalsServiceUpdateRequest extends Message<GoalsServiceUpdateRequest> ***REMOVED***
+export declare class GoalsServiceUpdateRequest extends Message<GoalsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -235,14 +235,14 @@ export declare class GoalsServiceUpdateRequest extends Message<GoalsServiceUpdat
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceUpdateRequest;
     static equals(a: GoalsServiceUpdateRequest | PlainMessage<GoalsServiceUpdateRequest> | undefined, b: GoalsServiceUpdateRequest | PlainMessage<GoalsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.Goal
  */
-export declare class Goal extends Message<Goal> ***REMOVED***
+export declare class Goal extends Message<Goal> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -341,14 +341,14 @@ export declare class Goal extends Message<Goal> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Goal;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Goal;
     static equals(a: Goal | PlainMessage<Goal> | undefined, b: Goal | PlainMessage<Goal> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add an item to a goal
  *
  * @generated from message Genesis.GoalsServiceItemCreateRequest
  */
-export declare class GoalsServiceItemCreateRequest extends Message<GoalsServiceItemCreateRequest> ***REMOVED***
+export declare class GoalsServiceItemCreateRequest extends Message<GoalsServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -423,14 +423,14 @@ export declare class GoalsServiceItemCreateRequest extends Message<GoalsServiceI
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceItemCreateRequest;
     static equals(a: GoalsServiceItemCreateRequest | PlainMessage<GoalsServiceItemCreateRequest> | undefined, b: GoalsServiceItemCreateRequest | PlainMessage<GoalsServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update an item in a goal
  *
  * @generated from message Genesis.GoalsServiceItemUpdateRequest
  */
-export declare class GoalsServiceItemUpdateRequest extends Message<GoalsServiceItemUpdateRequest> ***REMOVED***
+export declare class GoalsServiceItemUpdateRequest extends Message<GoalsServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -505,14 +505,14 @@ export declare class GoalsServiceItemUpdateRequest extends Message<GoalsServiceI
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceItemUpdateRequest;
     static equals(a: GoalsServiceItemUpdateRequest | PlainMessage<GoalsServiceItemUpdateRequest> | undefined, b: GoalsServiceItemUpdateRequest | PlainMessage<GoalsServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute an item associated to a goal
  *
  * @generated from message Genesis.GoalItem
  */
-export declare class GoalItem extends Message<GoalItem> ***REMOVED***
+export declare class GoalItem extends Message<GoalItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -611,14 +611,14 @@ export declare class GoalItem extends Message<GoalItem> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalItem;
     static equals(a: GoalItem | PlainMessage<GoalItem> | undefined, b: GoalItem | PlainMessage<GoalItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of goals
  *
  * @generated from message Genesis.GoalsList
  */
-export declare class GoalsList extends Message<GoalsList> ***REMOVED***
+export declare class GoalsList extends Message<GoalsList> {
     /**
      * List of records
      *
@@ -633,14 +633,14 @@ export declare class GoalsList extends Message<GoalsList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsList;
     static equals(a: GoalsList | PlainMessage<GoalsList> | undefined, b: GoalsList | PlainMessage<GoalsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of goal items
  *
  * @generated from message Genesis.GoalsItemsList
  */
-export declare class GoalsItemsList extends Message<GoalsItemsList> ***REMOVED***
+export declare class GoalsItemsList extends Message<GoalsItemsList> {
     /**
      * List of records
      *
@@ -655,14 +655,14 @@ export declare class GoalsItemsList extends Message<GoalsItemsList> ***REMOVED**
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsItemsList;
     static equals(a: GoalsItemsList | PlainMessage<GoalsItemsList> | undefined, b: GoalsItemsList | PlainMessage<GoalsItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.GoalItemHistoryRequest
  */
-export declare class GoalItemHistoryRequest extends Message<GoalItemHistoryRequest> ***REMOVED***
+export declare class GoalItemHistoryRequest extends Message<GoalItemHistoryRequest> {
     /**
      * Stores the goal ID
      *
@@ -683,14 +683,14 @@ export declare class GoalItemHistoryRequest extends Message<GoalItemHistoryReque
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalItemHistoryRequest;
     static equals(a: GoalItemHistoryRequest | PlainMessage<GoalItemHistoryRequest> | undefined, b: GoalItemHistoryRequest | PlainMessage<GoalItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.GoalsServicePaginationReq
  */
-export declare class GoalsServicePaginationReq extends Message<GoalsServicePaginationReq> ***REMOVED***
+export declare class GoalsServicePaginationReq extends Message<GoalsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -735,14 +735,14 @@ export declare class GoalsServicePaginationReq extends Message<GoalsServicePagin
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServicePaginationReq;
     static equals(a: GoalsServicePaginationReq | PlainMessage<GoalsServicePaginationReq> | undefined, b: GoalsServicePaginationReq | PlainMessage<GoalsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.GoalsServicePaginationResponse
  */
-export declare class GoalsServicePaginationResponse extends Message<GoalsServicePaginationResponse> ***REMOVED***
+export declare class GoalsServicePaginationResponse extends Message<GoalsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -775,14 +775,14 @@ export declare class GoalsServicePaginationResponse extends Message<GoalsService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServicePaginationResponse;
     static equals(a: GoalsServicePaginationResponse | PlainMessage<GoalsServicePaginationResponse> | undefined, b: GoalsServicePaginationResponse | PlainMessage<GoalsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.GoalsServiceEntityPaginationReq
  */
-export declare class GoalsServiceEntityPaginationReq extends Message<GoalsServiceEntityPaginationReq> ***REMOVED***
+export declare class GoalsServiceEntityPaginationReq extends Message<GoalsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -827,14 +827,14 @@ export declare class GoalsServiceEntityPaginationReq extends Message<GoalsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceEntityPaginationReq;
     static equals(a: GoalsServiceEntityPaginationReq | PlainMessage<GoalsServiceEntityPaginationReq> | undefined, b: GoalsServiceEntityPaginationReq | PlainMessage<GoalsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.GoalsServiceFilterReq
  */
-export declare class GoalsServiceFilterReq extends Message<GoalsServiceFilterReq> ***REMOVED***
+export declare class GoalsServiceFilterReq extends Message<GoalsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -951,14 +951,14 @@ export declare class GoalsServiceFilterReq extends Message<GoalsServiceFilterReq
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceFilterReq;
     static equals(a: GoalsServiceFilterReq | PlainMessage<GoalsServiceFilterReq> | undefined, b: GoalsServiceFilterReq | PlainMessage<GoalsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.GoalsServiceSearchAllReq
  */
-export declare class GoalsServiceSearchAllReq extends Message<GoalsServiceSearchAllReq> ***REMOVED***
+export declare class GoalsServiceSearchAllReq extends Message<GoalsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -1021,5 +1021,5 @@ export declare class GoalsServiceSearchAllReq extends Message<GoalsServiceSearch
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoalsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoalsServiceSearchAllReq;
     static equals(a: GoalsServiceSearchAllReq | PlainMessage<GoalsServiceSearchAllReq> | undefined, b: GoalsServiceSearchAllReq | PlainMessage<GoalsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=goals_pb.d.ts.map

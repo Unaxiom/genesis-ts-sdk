@@ -3,17 +3,17 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto2 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Duration ***REMOVED*** from "./google/protobuf/duration_pb.js";
-import ***REMOVED*** Timestamp ***REMOVED*** from "./google/protobuf/timestamp_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto2 } from "@bufbuild/protobuf";
+import { Duration } from "./google/protobuf/duration_pb.js";
+import { Timestamp } from "./google/protobuf/timestamp_pb.js";
 
 /**
  * WellKnownRegex contain some well-known patterns.
  *
  * @generated from enum genesis_validate.KnownRegex
  */
-export enum KnownRegex ***REMOVED***
+export enum KnownRegex {
   /**
    * @generated from enum value: UNKNOWN = 0;
    */
@@ -32,12 +32,12 @@ export enum KnownRegex ***REMOVED***
    * @generated from enum value: HTTP_HEADER_VALUE = 2;
    */
   HTTP_HEADER_VALUE = 2,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto2.getEnumType(KnownRegex)
 proto2.util.setEnumType(KnownRegex, "genesis_validate.KnownRegex", [
-  ***REMOVED*** no: 0, name: "UNKNOWN" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "HTTP_HEADER_NAME" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "HTTP_HEADER_VALUE" ***REMOVED***,
+  { no: 0, name: "UNKNOWN" },
+  { no: 1, name: "HTTP_HEADER_NAME" },
+  { no: 2, name: "HTTP_HEADER_VALUE" },
 ]);
 
 /**
@@ -46,7 +46,7 @@ proto2.util.setEnumType(KnownRegex, "genesis_validate.KnownRegex", [
  *
  * @generated from message genesis_validate.FieldRules
  */
-export class FieldRules extends Message<FieldRules> ***REMOVED***
+export class FieldRules extends Message<FieldRules> {
   /**
    * @generated from field: optional genesis_validate.MessageRules message = 17;
    */
@@ -55,7 +55,7 @@ export class FieldRules extends Message<FieldRules> ***REMOVED***
   /**
    * @generated from oneof genesis_validate.FieldRules.type
    */
-  type: ***REMOVED***
+  type: {
     /**
      * Scalar Field Types
      *
@@ -63,91 +63,91 @@ export class FieldRules extends Message<FieldRules> ***REMOVED***
      */
     value: FloatRules;
     case: "float";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.DoubleRules double = 2;
      */
     value: DoubleRules;
     case: "double";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.Int32Rules int32 = 3;
      */
     value: Int32Rules;
     case: "int32";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.Int64Rules int64 = 4;
      */
     value: Int64Rules;
     case: "int64";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.UInt32Rules uint32 = 5;
      */
     value: UInt32Rules;
     case: "uint32";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.UInt64Rules uint64 = 6;
      */
     value: UInt64Rules;
     case: "uint64";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.SInt32Rules sint32 = 7;
      */
     value: SInt32Rules;
     case: "sint32";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.SInt64Rules sint64 = 8;
      */
     value: SInt64Rules;
     case: "sint64";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.Fixed32Rules fixed32 = 9;
      */
     value: Fixed32Rules;
     case: "fixed32";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.Fixed64Rules fixed64 = 10;
      */
     value: Fixed64Rules;
     case: "fixed64";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.SFixed32Rules sfixed32 = 11;
      */
     value: SFixed32Rules;
     case: "sfixed32";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.SFixed64Rules sfixed64 = 12;
      */
     value: SFixed64Rules;
     case: "sfixed64";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.BoolRules bool = 13;
      */
     value: BoolRules;
     case: "bool";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.StringRules string = 14;
      */
     value: StringRules;
     case: "string";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.BytesRules bytes = 15;
      */
     value: BytesRules;
     case: "bytes";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * Complex Field Types
      *
@@ -155,19 +155,19 @@ export class FieldRules extends Message<FieldRules> ***REMOVED***
      */
     value: EnumRules;
     case: "enum";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.RepeatedRules repeated = 18;
      */
     value: RepeatedRules;
     case: "repeated";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.MapRules map = 19;
      */
     value: MapRules;
     case: "map";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * Well-Known Field Types
      *
@@ -175,75 +175,75 @@ export class FieldRules extends Message<FieldRules> ***REMOVED***
      */
     value: AnyRules;
     case: "any";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.DurationRules duration = 21;
      */
     value: DurationRules;
     case: "duration";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * @generated from field: genesis_validate.TimestampRules timestamp = 22;
      */
     value: TimestampRules;
     case: "timestamp";
-  ***REMOVED*** | ***REMOVED*** case: undefined; value?: undefined ***REMOVED*** = ***REMOVED*** case: undefined ***REMOVED***;
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
-  constructor(data?: PartialMessage<FieldRules>) ***REMOVED***
+  constructor(data?: PartialMessage<FieldRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.FieldRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 17, name: "message", kind: "message", T: MessageRules, opt: true ***REMOVED***,
-    ***REMOVED*** no: 1, name: "float", kind: "message", T: FloatRules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 2, name: "double", kind: "message", T: DoubleRules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 3, name: "int32", kind: "message", T: Int32Rules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 4, name: "int64", kind: "message", T: Int64Rules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 5, name: "uint32", kind: "message", T: UInt32Rules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 6, name: "uint64", kind: "message", T: UInt64Rules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 7, name: "sint32", kind: "message", T: SInt32Rules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 8, name: "sint64", kind: "message", T: SInt64Rules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 9, name: "fixed32", kind: "message", T: Fixed32Rules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 10, name: "fixed64", kind: "message", T: Fixed64Rules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 11, name: "sfixed32", kind: "message", T: SFixed32Rules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 12, name: "sfixed64", kind: "message", T: SFixed64Rules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 13, name: "bool", kind: "message", T: BoolRules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 14, name: "string", kind: "message", T: StringRules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 15, name: "bytes", kind: "message", T: BytesRules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 16, name: "enum", kind: "message", T: EnumRules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 18, name: "repeated", kind: "message", T: RepeatedRules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 19, name: "map", kind: "message", T: MapRules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 20, name: "any", kind: "message", T: AnyRules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 21, name: "duration", kind: "message", T: DurationRules, oneof: "type" ***REMOVED***,
-    ***REMOVED*** no: 22, name: "timestamp", kind: "message", T: TimestampRules, oneof: "type" ***REMOVED***,
+    { no: 17, name: "message", kind: "message", T: MessageRules, opt: true },
+    { no: 1, name: "float", kind: "message", T: FloatRules, oneof: "type" },
+    { no: 2, name: "double", kind: "message", T: DoubleRules, oneof: "type" },
+    { no: 3, name: "int32", kind: "message", T: Int32Rules, oneof: "type" },
+    { no: 4, name: "int64", kind: "message", T: Int64Rules, oneof: "type" },
+    { no: 5, name: "uint32", kind: "message", T: UInt32Rules, oneof: "type" },
+    { no: 6, name: "uint64", kind: "message", T: UInt64Rules, oneof: "type" },
+    { no: 7, name: "sint32", kind: "message", T: SInt32Rules, oneof: "type" },
+    { no: 8, name: "sint64", kind: "message", T: SInt64Rules, oneof: "type" },
+    { no: 9, name: "fixed32", kind: "message", T: Fixed32Rules, oneof: "type" },
+    { no: 10, name: "fixed64", kind: "message", T: Fixed64Rules, oneof: "type" },
+    { no: 11, name: "sfixed32", kind: "message", T: SFixed32Rules, oneof: "type" },
+    { no: 12, name: "sfixed64", kind: "message", T: SFixed64Rules, oneof: "type" },
+    { no: 13, name: "bool", kind: "message", T: BoolRules, oneof: "type" },
+    { no: 14, name: "string", kind: "message", T: StringRules, oneof: "type" },
+    { no: 15, name: "bytes", kind: "message", T: BytesRules, oneof: "type" },
+    { no: 16, name: "enum", kind: "message", T: EnumRules, oneof: "type" },
+    { no: 18, name: "repeated", kind: "message", T: RepeatedRules, oneof: "type" },
+    { no: 19, name: "map", kind: "message", T: MapRules, oneof: "type" },
+    { no: 20, name: "any", kind: "message", T: AnyRules, oneof: "type" },
+    { no: 21, name: "duration", kind: "message", T: DurationRules, oneof: "type" },
+    { no: 22, name: "timestamp", kind: "message", T: TimestampRules, oneof: "type" },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FieldRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FieldRules {
     return new FieldRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FieldRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FieldRules {
     return new FieldRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FieldRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FieldRules {
     return new FieldRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: FieldRules | PlainMessage<FieldRules> | undefined, b: FieldRules | PlainMessage<FieldRules> | undefined): boolean ***REMOVED***
+  static equals(a: FieldRules | PlainMessage<FieldRules> | undefined, b: FieldRules | PlainMessage<FieldRules> | undefined): boolean {
     return proto2.util.equals(FieldRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * FloatRules describes the constraints applied to `float` values
  *
  * @generated from message genesis_validate.FloatRules
  */
-export class FloatRules extends Message<FloatRules> ***REMOVED***
+export class FloatRules extends Message<FloatRules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -309,47 +309,47 @@ export class FloatRules extends Message<FloatRules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<FloatRules>) ***REMOVED***
+  constructor(data?: PartialMessage<FloatRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.FloatRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 2 /* ScalarType.FLOAT */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "lt", kind: "scalar", T: 2 /* ScalarType.FLOAT */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lte", kind: "scalar", T: 2 /* ScalarType.FLOAT */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "gt", kind: "scalar", T: 2 /* ScalarType.FLOAT */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gte", kind: "scalar", T: 2 /* ScalarType.FLOAT */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "in", kind: "scalar", T: 2 /* ScalarType.FLOAT */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "not_in", kind: "scalar", T: 2 /* ScalarType.FLOAT */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 2 /* ScalarType.FLOAT */, opt: true },
+    { no: 2, name: "lt", kind: "scalar", T: 2 /* ScalarType.FLOAT */, opt: true },
+    { no: 3, name: "lte", kind: "scalar", T: 2 /* ScalarType.FLOAT */, opt: true },
+    { no: 4, name: "gt", kind: "scalar", T: 2 /* ScalarType.FLOAT */, opt: true },
+    { no: 5, name: "gte", kind: "scalar", T: 2 /* ScalarType.FLOAT */, opt: true },
+    { no: 6, name: "in", kind: "scalar", T: 2 /* ScalarType.FLOAT */, repeated: true },
+    { no: 7, name: "not_in", kind: "scalar", T: 2 /* ScalarType.FLOAT */, repeated: true },
+    { no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FloatRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FloatRules {
     return new FloatRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FloatRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FloatRules {
     return new FloatRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FloatRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FloatRules {
     return new FloatRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: FloatRules | PlainMessage<FloatRules> | undefined, b: FloatRules | PlainMessage<FloatRules> | undefined): boolean ***REMOVED***
+  static equals(a: FloatRules | PlainMessage<FloatRules> | undefined, b: FloatRules | PlainMessage<FloatRules> | undefined): boolean {
     return proto2.util.equals(FloatRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * DoubleRules describes the constraints applied to `double` values
  *
  * @generated from message genesis_validate.DoubleRules
  */
-export class DoubleRules extends Message<DoubleRules> ***REMOVED***
+export class DoubleRules extends Message<DoubleRules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -415,47 +415,47 @@ export class DoubleRules extends Message<DoubleRules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<DoubleRules>) ***REMOVED***
+  constructor(data?: PartialMessage<DoubleRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.DoubleRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "lt", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lte", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "gt", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gte", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "in", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "not_in", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, opt: true },
+    { no: 2, name: "lt", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, opt: true },
+    { no: 3, name: "lte", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, opt: true },
+    { no: 4, name: "gt", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, opt: true },
+    { no: 5, name: "gte", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, opt: true },
+    { no: 6, name: "in", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, repeated: true },
+    { no: 7, name: "not_in", kind: "scalar", T: 1 /* ScalarType.DOUBLE */, repeated: true },
+    { no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DoubleRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DoubleRules {
     return new DoubleRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DoubleRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DoubleRules {
     return new DoubleRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DoubleRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DoubleRules {
     return new DoubleRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: DoubleRules | PlainMessage<DoubleRules> | undefined, b: DoubleRules | PlainMessage<DoubleRules> | undefined): boolean ***REMOVED***
+  static equals(a: DoubleRules | PlainMessage<DoubleRules> | undefined, b: DoubleRules | PlainMessage<DoubleRules> | undefined): boolean {
     return proto2.util.equals(DoubleRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * Int32Rules describes the constraints applied to `int32` values
  *
  * @generated from message genesis_validate.Int32Rules
  */
-export class Int32Rules extends Message<Int32Rules> ***REMOVED***
+export class Int32Rules extends Message<Int32Rules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -521,47 +521,47 @@ export class Int32Rules extends Message<Int32Rules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<Int32Rules>) ***REMOVED***
+  constructor(data?: PartialMessage<Int32Rules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.Int32Rules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "lt", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lte", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "gt", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gte", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "in", kind: "scalar", T: 5 /* ScalarType.INT32 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "not_in", kind: "scalar", T: 5 /* ScalarType.INT32 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true },
+    { no: 2, name: "lt", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true },
+    { no: 3, name: "lte", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true },
+    { no: 4, name: "gt", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true },
+    { no: 5, name: "gte", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true },
+    { no: 6, name: "in", kind: "scalar", T: 5 /* ScalarType.INT32 */, repeated: true },
+    { no: 7, name: "not_in", kind: "scalar", T: 5 /* ScalarType.INT32 */, repeated: true },
+    { no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Int32Rules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Int32Rules {
     return new Int32Rules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Int32Rules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Int32Rules {
     return new Int32Rules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Int32Rules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Int32Rules {
     return new Int32Rules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Int32Rules | PlainMessage<Int32Rules> | undefined, b: Int32Rules | PlainMessage<Int32Rules> | undefined): boolean ***REMOVED***
+  static equals(a: Int32Rules | PlainMessage<Int32Rules> | undefined, b: Int32Rules | PlainMessage<Int32Rules> | undefined): boolean {
     return proto2.util.equals(Int32Rules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * Int64Rules describes the constraints applied to `int64` values
  *
  * @generated from message genesis_validate.Int64Rules
  */
-export class Int64Rules extends Message<Int64Rules> ***REMOVED***
+export class Int64Rules extends Message<Int64Rules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -627,47 +627,47 @@ export class Int64Rules extends Message<Int64Rules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<Int64Rules>) ***REMOVED***
+  constructor(data?: PartialMessage<Int64Rules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.Int64Rules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "lt", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lte", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "gt", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gte", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "in", kind: "scalar", T: 3 /* ScalarType.INT64 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "not_in", kind: "scalar", T: 3 /* ScalarType.INT64 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 2, name: "lt", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 3, name: "lte", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 4, name: "gt", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 5, name: "gte", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 6, name: "in", kind: "scalar", T: 3 /* ScalarType.INT64 */, repeated: true },
+    { no: 7, name: "not_in", kind: "scalar", T: 3 /* ScalarType.INT64 */, repeated: true },
+    { no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Int64Rules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Int64Rules {
     return new Int64Rules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Int64Rules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Int64Rules {
     return new Int64Rules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Int64Rules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Int64Rules {
     return new Int64Rules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Int64Rules | PlainMessage<Int64Rules> | undefined, b: Int64Rules | PlainMessage<Int64Rules> | undefined): boolean ***REMOVED***
+  static equals(a: Int64Rules | PlainMessage<Int64Rules> | undefined, b: Int64Rules | PlainMessage<Int64Rules> | undefined): boolean {
     return proto2.util.equals(Int64Rules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * UInt32Rules describes the constraints applied to `uint32` values
  *
  * @generated from message genesis_validate.UInt32Rules
  */
-export class UInt32Rules extends Message<UInt32Rules> ***REMOVED***
+export class UInt32Rules extends Message<UInt32Rules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -733,47 +733,47 @@ export class UInt32Rules extends Message<UInt32Rules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<UInt32Rules>) ***REMOVED***
+  constructor(data?: PartialMessage<UInt32Rules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.UInt32Rules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "lt", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lte", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "gt", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gte", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "in", kind: "scalar", T: 13 /* ScalarType.UINT32 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "not_in", kind: "scalar", T: 13 /* ScalarType.UINT32 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true },
+    { no: 2, name: "lt", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true },
+    { no: 3, name: "lte", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true },
+    { no: 4, name: "gt", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true },
+    { no: 5, name: "gte", kind: "scalar", T: 13 /* ScalarType.UINT32 */, opt: true },
+    { no: 6, name: "in", kind: "scalar", T: 13 /* ScalarType.UINT32 */, repeated: true },
+    { no: 7, name: "not_in", kind: "scalar", T: 13 /* ScalarType.UINT32 */, repeated: true },
+    { no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UInt32Rules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UInt32Rules {
     return new UInt32Rules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UInt32Rules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UInt32Rules {
     return new UInt32Rules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UInt32Rules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UInt32Rules {
     return new UInt32Rules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UInt32Rules | PlainMessage<UInt32Rules> | undefined, b: UInt32Rules | PlainMessage<UInt32Rules> | undefined): boolean ***REMOVED***
+  static equals(a: UInt32Rules | PlainMessage<UInt32Rules> | undefined, b: UInt32Rules | PlainMessage<UInt32Rules> | undefined): boolean {
     return proto2.util.equals(UInt32Rules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * UInt64Rules describes the constraints applied to `uint64` values
  *
  * @generated from message genesis_validate.UInt64Rules
  */
-export class UInt64Rules extends Message<UInt64Rules> ***REMOVED***
+export class UInt64Rules extends Message<UInt64Rules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -839,47 +839,47 @@ export class UInt64Rules extends Message<UInt64Rules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<UInt64Rules>) ***REMOVED***
+  constructor(data?: PartialMessage<UInt64Rules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.UInt64Rules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "lt", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lte", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "gt", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gte", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "in", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "not_in", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 2, name: "lt", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 3, name: "lte", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "gt", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 5, name: "gte", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 6, name: "in", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
+    { no: 7, name: "not_in", kind: "scalar", T: 4 /* ScalarType.UINT64 */, repeated: true },
+    { no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UInt64Rules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UInt64Rules {
     return new UInt64Rules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UInt64Rules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UInt64Rules {
     return new UInt64Rules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UInt64Rules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UInt64Rules {
     return new UInt64Rules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: UInt64Rules | PlainMessage<UInt64Rules> | undefined, b: UInt64Rules | PlainMessage<UInt64Rules> | undefined): boolean ***REMOVED***
+  static equals(a: UInt64Rules | PlainMessage<UInt64Rules> | undefined, b: UInt64Rules | PlainMessage<UInt64Rules> | undefined): boolean {
     return proto2.util.equals(UInt64Rules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * SInt32Rules describes the constraints applied to `sint32` values
  *
  * @generated from message genesis_validate.SInt32Rules
  */
-export class SInt32Rules extends Message<SInt32Rules> ***REMOVED***
+export class SInt32Rules extends Message<SInt32Rules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -945,47 +945,47 @@ export class SInt32Rules extends Message<SInt32Rules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<SInt32Rules>) ***REMOVED***
+  constructor(data?: PartialMessage<SInt32Rules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.SInt32Rules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 17 /* ScalarType.SINT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "lt", kind: "scalar", T: 17 /* ScalarType.SINT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lte", kind: "scalar", T: 17 /* ScalarType.SINT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "gt", kind: "scalar", T: 17 /* ScalarType.SINT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gte", kind: "scalar", T: 17 /* ScalarType.SINT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "in", kind: "scalar", T: 17 /* ScalarType.SINT32 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "not_in", kind: "scalar", T: 17 /* ScalarType.SINT32 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 17 /* ScalarType.SINT32 */, opt: true },
+    { no: 2, name: "lt", kind: "scalar", T: 17 /* ScalarType.SINT32 */, opt: true },
+    { no: 3, name: "lte", kind: "scalar", T: 17 /* ScalarType.SINT32 */, opt: true },
+    { no: 4, name: "gt", kind: "scalar", T: 17 /* ScalarType.SINT32 */, opt: true },
+    { no: 5, name: "gte", kind: "scalar", T: 17 /* ScalarType.SINT32 */, opt: true },
+    { no: 6, name: "in", kind: "scalar", T: 17 /* ScalarType.SINT32 */, repeated: true },
+    { no: 7, name: "not_in", kind: "scalar", T: 17 /* ScalarType.SINT32 */, repeated: true },
+    { no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SInt32Rules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SInt32Rules {
     return new SInt32Rules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SInt32Rules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SInt32Rules {
     return new SInt32Rules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SInt32Rules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SInt32Rules {
     return new SInt32Rules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SInt32Rules | PlainMessage<SInt32Rules> | undefined, b: SInt32Rules | PlainMessage<SInt32Rules> | undefined): boolean ***REMOVED***
+  static equals(a: SInt32Rules | PlainMessage<SInt32Rules> | undefined, b: SInt32Rules | PlainMessage<SInt32Rules> | undefined): boolean {
     return proto2.util.equals(SInt32Rules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * SInt64Rules describes the constraints applied to `sint64` values
  *
  * @generated from message genesis_validate.SInt64Rules
  */
-export class SInt64Rules extends Message<SInt64Rules> ***REMOVED***
+export class SInt64Rules extends Message<SInt64Rules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -1051,47 +1051,47 @@ export class SInt64Rules extends Message<SInt64Rules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<SInt64Rules>) ***REMOVED***
+  constructor(data?: PartialMessage<SInt64Rules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.SInt64Rules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 18 /* ScalarType.SINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "lt", kind: "scalar", T: 18 /* ScalarType.SINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lte", kind: "scalar", T: 18 /* ScalarType.SINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "gt", kind: "scalar", T: 18 /* ScalarType.SINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gte", kind: "scalar", T: 18 /* ScalarType.SINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "in", kind: "scalar", T: 18 /* ScalarType.SINT64 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "not_in", kind: "scalar", T: 18 /* ScalarType.SINT64 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 18 /* ScalarType.SINT64 */, opt: true },
+    { no: 2, name: "lt", kind: "scalar", T: 18 /* ScalarType.SINT64 */, opt: true },
+    { no: 3, name: "lte", kind: "scalar", T: 18 /* ScalarType.SINT64 */, opt: true },
+    { no: 4, name: "gt", kind: "scalar", T: 18 /* ScalarType.SINT64 */, opt: true },
+    { no: 5, name: "gte", kind: "scalar", T: 18 /* ScalarType.SINT64 */, opt: true },
+    { no: 6, name: "in", kind: "scalar", T: 18 /* ScalarType.SINT64 */, repeated: true },
+    { no: 7, name: "not_in", kind: "scalar", T: 18 /* ScalarType.SINT64 */, repeated: true },
+    { no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SInt64Rules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SInt64Rules {
     return new SInt64Rules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SInt64Rules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SInt64Rules {
     return new SInt64Rules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SInt64Rules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SInt64Rules {
     return new SInt64Rules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SInt64Rules | PlainMessage<SInt64Rules> | undefined, b: SInt64Rules | PlainMessage<SInt64Rules> | undefined): boolean ***REMOVED***
+  static equals(a: SInt64Rules | PlainMessage<SInt64Rules> | undefined, b: SInt64Rules | PlainMessage<SInt64Rules> | undefined): boolean {
     return proto2.util.equals(SInt64Rules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * Fixed32Rules describes the constraints applied to `fixed32` values
  *
  * @generated from message genesis_validate.Fixed32Rules
  */
-export class Fixed32Rules extends Message<Fixed32Rules> ***REMOVED***
+export class Fixed32Rules extends Message<Fixed32Rules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -1157,47 +1157,47 @@ export class Fixed32Rules extends Message<Fixed32Rules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<Fixed32Rules>) ***REMOVED***
+  constructor(data?: PartialMessage<Fixed32Rules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.Fixed32Rules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "lt", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lte", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "gt", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gte", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "in", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "not_in", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, opt: true },
+    { no: 2, name: "lt", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, opt: true },
+    { no: 3, name: "lte", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, opt: true },
+    { no: 4, name: "gt", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, opt: true },
+    { no: 5, name: "gte", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, opt: true },
+    { no: 6, name: "in", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, repeated: true },
+    { no: 7, name: "not_in", kind: "scalar", T: 7 /* ScalarType.FIXED32 */, repeated: true },
+    { no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Fixed32Rules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Fixed32Rules {
     return new Fixed32Rules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Fixed32Rules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Fixed32Rules {
     return new Fixed32Rules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Fixed32Rules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Fixed32Rules {
     return new Fixed32Rules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Fixed32Rules | PlainMessage<Fixed32Rules> | undefined, b: Fixed32Rules | PlainMessage<Fixed32Rules> | undefined): boolean ***REMOVED***
+  static equals(a: Fixed32Rules | PlainMessage<Fixed32Rules> | undefined, b: Fixed32Rules | PlainMessage<Fixed32Rules> | undefined): boolean {
     return proto2.util.equals(Fixed32Rules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * Fixed64Rules describes the constraints applied to `fixed64` values
  *
  * @generated from message genesis_validate.Fixed64Rules
  */
-export class Fixed64Rules extends Message<Fixed64Rules> ***REMOVED***
+export class Fixed64Rules extends Message<Fixed64Rules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -1263,47 +1263,47 @@ export class Fixed64Rules extends Message<Fixed64Rules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<Fixed64Rules>) ***REMOVED***
+  constructor(data?: PartialMessage<Fixed64Rules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.Fixed64Rules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "lt", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lte", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "gt", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gte", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "in", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "not_in", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, opt: true },
+    { no: 2, name: "lt", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, opt: true },
+    { no: 3, name: "lte", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, opt: true },
+    { no: 4, name: "gt", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, opt: true },
+    { no: 5, name: "gte", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, opt: true },
+    { no: 6, name: "in", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, repeated: true },
+    { no: 7, name: "not_in", kind: "scalar", T: 6 /* ScalarType.FIXED64 */, repeated: true },
+    { no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Fixed64Rules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Fixed64Rules {
     return new Fixed64Rules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Fixed64Rules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Fixed64Rules {
     return new Fixed64Rules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Fixed64Rules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Fixed64Rules {
     return new Fixed64Rules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Fixed64Rules | PlainMessage<Fixed64Rules> | undefined, b: Fixed64Rules | PlainMessage<Fixed64Rules> | undefined): boolean ***REMOVED***
+  static equals(a: Fixed64Rules | PlainMessage<Fixed64Rules> | undefined, b: Fixed64Rules | PlainMessage<Fixed64Rules> | undefined): boolean {
     return proto2.util.equals(Fixed64Rules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * SFixed32Rules describes the constraints applied to `sfixed32` values
  *
  * @generated from message genesis_validate.SFixed32Rules
  */
-export class SFixed32Rules extends Message<SFixed32Rules> ***REMOVED***
+export class SFixed32Rules extends Message<SFixed32Rules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -1369,47 +1369,47 @@ export class SFixed32Rules extends Message<SFixed32Rules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<SFixed32Rules>) ***REMOVED***
+  constructor(data?: PartialMessage<SFixed32Rules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.SFixed32Rules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "lt", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lte", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "gt", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gte", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "in", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "not_in", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, opt: true },
+    { no: 2, name: "lt", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, opt: true },
+    { no: 3, name: "lte", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, opt: true },
+    { no: 4, name: "gt", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, opt: true },
+    { no: 5, name: "gte", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, opt: true },
+    { no: 6, name: "in", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, repeated: true },
+    { no: 7, name: "not_in", kind: "scalar", T: 15 /* ScalarType.SFIXED32 */, repeated: true },
+    { no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SFixed32Rules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SFixed32Rules {
     return new SFixed32Rules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SFixed32Rules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SFixed32Rules {
     return new SFixed32Rules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SFixed32Rules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SFixed32Rules {
     return new SFixed32Rules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SFixed32Rules | PlainMessage<SFixed32Rules> | undefined, b: SFixed32Rules | PlainMessage<SFixed32Rules> | undefined): boolean ***REMOVED***
+  static equals(a: SFixed32Rules | PlainMessage<SFixed32Rules> | undefined, b: SFixed32Rules | PlainMessage<SFixed32Rules> | undefined): boolean {
     return proto2.util.equals(SFixed32Rules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * SFixed64Rules describes the constraints applied to `sfixed64` values
  *
  * @generated from message genesis_validate.SFixed64Rules
  */
-export class SFixed64Rules extends Message<SFixed64Rules> ***REMOVED***
+export class SFixed64Rules extends Message<SFixed64Rules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -1475,47 +1475,47 @@ export class SFixed64Rules extends Message<SFixed64Rules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<SFixed64Rules>) ***REMOVED***
+  constructor(data?: PartialMessage<SFixed64Rules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.SFixed64Rules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "lt", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lte", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "gt", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gte", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "in", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "not_in", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, opt: true },
+    { no: 2, name: "lt", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, opt: true },
+    { no: 3, name: "lte", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, opt: true },
+    { no: 4, name: "gt", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, opt: true },
+    { no: 5, name: "gte", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, opt: true },
+    { no: 6, name: "in", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, repeated: true },
+    { no: 7, name: "not_in", kind: "scalar", T: 16 /* ScalarType.SFIXED64 */, repeated: true },
+    { no: 8, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SFixed64Rules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SFixed64Rules {
     return new SFixed64Rules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SFixed64Rules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SFixed64Rules {
     return new SFixed64Rules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SFixed64Rules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SFixed64Rules {
     return new SFixed64Rules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: SFixed64Rules | PlainMessage<SFixed64Rules> | undefined, b: SFixed64Rules | PlainMessage<SFixed64Rules> | undefined): boolean ***REMOVED***
+  static equals(a: SFixed64Rules | PlainMessage<SFixed64Rules> | undefined, b: SFixed64Rules | PlainMessage<SFixed64Rules> | undefined): boolean {
     return proto2.util.equals(SFixed64Rules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * BoolRules describes the constraints applied to `bool` values
  *
  * @generated from message genesis_validate.BoolRules
  */
-export class BoolRules extends Message<BoolRules> ***REMOVED***
+export class BoolRules extends Message<BoolRules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -1523,40 +1523,40 @@ export class BoolRules extends Message<BoolRules> ***REMOVED***
    */
   const?: boolean;
 
-  constructor(data?: PartialMessage<BoolRules>) ***REMOVED***
+  constructor(data?: PartialMessage<BoolRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.BoolRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): BoolRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): BoolRules {
     return new BoolRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): BoolRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): BoolRules {
     return new BoolRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): BoolRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): BoolRules {
     return new BoolRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: BoolRules | PlainMessage<BoolRules> | undefined, b: BoolRules | PlainMessage<BoolRules> | undefined): boolean ***REMOVED***
+  static equals(a: BoolRules | PlainMessage<BoolRules> | undefined, b: BoolRules | PlainMessage<BoolRules> | undefined): boolean {
     return proto2.util.equals(BoolRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * StringRules describe the constraints applied to `string` values
  *
  * @generated from message genesis_validate.StringRules
  */
-export class StringRules extends Message<StringRules> ***REMOVED***
+export class StringRules extends Message<StringRules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -1677,7 +1677,7 @@ export class StringRules extends Message<StringRules> ***REMOVED***
    *
    * @generated from oneof genesis_validate.StringRules.well_known
    */
-  wellKnown: ***REMOVED***
+  wellKnown: {
     /**
      * Email specifies that the field must be a valid email address as
      * defined by RFC 5322
@@ -1686,7 +1686,7 @@ export class StringRules extends Message<StringRules> ***REMOVED***
      */
     value: boolean;
     case: "email";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * Hostname specifies that the field must be a valid hostname as
      * defined by RFC 1034. This constraint does not support
@@ -1696,7 +1696,7 @@ export class StringRules extends Message<StringRules> ***REMOVED***
      */
     value: boolean;
     case: "hostname";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * Ip specifies that the field must be a valid IP (v4 or v6) address.
      * Valid IPv6 addresses should not include surrounding square brackets.
@@ -1705,7 +1705,7 @@ export class StringRules extends Message<StringRules> ***REMOVED***
      */
     value: boolean;
     case: "ip";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * Ipv4 specifies that the field must be a valid IPv4 address.
      *
@@ -1713,7 +1713,7 @@ export class StringRules extends Message<StringRules> ***REMOVED***
      */
     value: boolean;
     case: "ipv4";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * Ipv6 specifies that the field must be a valid IPv6 address. Valid
      * IPv6 addresses should not include surrounding square brackets.
@@ -1722,7 +1722,7 @@ export class StringRules extends Message<StringRules> ***REMOVED***
      */
     value: boolean;
     case: "ipv6";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * Uri specifies that the field must be a valid, absolute URI as defined
      * by RFC 3986
@@ -1731,7 +1731,7 @@ export class StringRules extends Message<StringRules> ***REMOVED***
      */
     value: boolean;
     case: "uri";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * UriRef specifies that the field must be a valid URI as defined by RFC
      * 3986 and may be relative or absolute.
@@ -1740,7 +1740,7 @@ export class StringRules extends Message<StringRules> ***REMOVED***
      */
     value: boolean;
     case: "uriRef";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * Address specifies that the field must be either a valid hostname as
      * defined by RFC 1034 (which does not support internationalized domain
@@ -1750,7 +1750,7 @@ export class StringRules extends Message<StringRules> ***REMOVED***
      */
     value: boolean;
     case: "address";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * Uuid specifies that the field must be a valid UUID as defined by
      * RFC 4122
@@ -1759,7 +1759,7 @@ export class StringRules extends Message<StringRules> ***REMOVED***
      */
     value: boolean;
     case: "uuid";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * WellKnownRegex specifies a common well known pattern defined as a regex.
      *
@@ -1767,7 +1767,7 @@ export class StringRules extends Message<StringRules> ***REMOVED***
      */
     value: KnownRegex;
     case: "wellKnownRegex";
-  ***REMOVED*** | ***REMOVED*** case: undefined; value?: undefined ***REMOVED*** = ***REMOVED*** case: undefined ***REMOVED***;
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   /**
    * This applies to regexes HTTP_HEADER_NAME and HTTP_HEADER_VALUE to enable
@@ -1788,65 +1788,65 @@ export class StringRules extends Message<StringRules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<StringRules>) ***REMOVED***
+  constructor(data?: PartialMessage<StringRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.StringRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 19, name: "len", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "min_len", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "max_len", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 20, name: "len_bytes", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "min_bytes", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "max_bytes", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "pattern", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "prefix", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "suffix", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 9, name: "contains", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 23, name: "not_contains", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 10, name: "in", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 11, name: "not_in", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 12, name: "email", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 13, name: "hostname", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 14, name: "ip", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 15, name: "ipv4", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 16, name: "ipv6", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 17, name: "uri", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 18, name: "uri_ref", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 21, name: "address", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 22, name: "uuid", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 24, name: "well_known_regex", kind: "enum", T: proto2.getEnumType(KnownRegex), oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 25, name: "strict", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true, default: true ***REMOVED***,
-    ***REMOVED*** no: 26, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 19, name: "len", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 2, name: "min_len", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 3, name: "max_len", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "len_bytes", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "min_bytes", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 5, name: "max_bytes", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 6, name: "pattern", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 7, name: "prefix", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 8, name: "suffix", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: "contains", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 23, name: "not_contains", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "in", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 11, name: "not_in", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 12, name: "email", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" },
+    { no: 13, name: "hostname", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" },
+    { no: 14, name: "ip", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" },
+    { no: 15, name: "ipv4", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" },
+    { no: 16, name: "ipv6", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" },
+    { no: 17, name: "uri", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" },
+    { no: 18, name: "uri_ref", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" },
+    { no: 21, name: "address", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" },
+    { no: 22, name: "uuid", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" },
+    { no: 24, name: "well_known_regex", kind: "enum", T: proto2.getEnumType(KnownRegex), oneof: "well_known" },
+    { no: 25, name: "strict", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true, default: true },
+    { no: 26, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StringRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StringRules {
     return new StringRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StringRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): StringRules {
     return new StringRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StringRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): StringRules {
     return new StringRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: StringRules | PlainMessage<StringRules> | undefined, b: StringRules | PlainMessage<StringRules> | undefined): boolean ***REMOVED***
+  static equals(a: StringRules | PlainMessage<StringRules> | undefined, b: StringRules | PlainMessage<StringRules> | undefined): boolean {
     return proto2.util.equals(StringRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * BytesRules describe the constraints applied to `bytes` values
  *
  * @generated from message genesis_validate.BytesRules
  */
-export class BytesRules extends Message<BytesRules> ***REMOVED***
+export class BytesRules extends Message<BytesRules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -1932,7 +1932,7 @@ export class BytesRules extends Message<BytesRules> ***REMOVED***
    *
    * @generated from oneof genesis_validate.BytesRules.well_known
    */
-  wellKnown: ***REMOVED***
+  wellKnown: {
     /**
      * Ip specifies that the field must be a valid IP (v4 or v6) address in
      * byte format
@@ -1941,7 +1941,7 @@ export class BytesRules extends Message<BytesRules> ***REMOVED***
      */
     value: boolean;
     case: "ip";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * Ipv4 specifies that the field must be a valid IPv4 address in byte
      * format
@@ -1950,7 +1950,7 @@ export class BytesRules extends Message<BytesRules> ***REMOVED***
      */
     value: boolean;
     case: "ipv4";
-  ***REMOVED*** | ***REMOVED***
+  } | {
     /**
      * Ipv6 specifies that the field must be a valid IPv6 address in byte
      * format
@@ -1959,7 +1959,7 @@ export class BytesRules extends Message<BytesRules> ***REMOVED***
      */
     value: boolean;
     case: "ipv6";
-  ***REMOVED*** | ***REMOVED*** case: undefined; value?: undefined ***REMOVED*** = ***REMOVED*** case: undefined ***REMOVED***;
+  } | { case: undefined; value?: undefined } = { case: undefined };
 
   /**
    * IgnoreEmpty specifies that the validation rules of this field should be
@@ -1969,53 +1969,53 @@ export class BytesRules extends Message<BytesRules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<BytesRules>) ***REMOVED***
+  constructor(data?: PartialMessage<BytesRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.BytesRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 12 /* ScalarType.BYTES */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 13, name: "len", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "min_len", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "max_len", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "pattern", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "prefix", kind: "scalar", T: 12 /* ScalarType.BYTES */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "suffix", kind: "scalar", T: 12 /* ScalarType.BYTES */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "contains", kind: "scalar", T: 12 /* ScalarType.BYTES */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "in", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 9, name: "not_in", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 10, name: "ip", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 11, name: "ipv4", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ipv6", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" ***REMOVED***,
-    ***REMOVED*** no: 14, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 12 /* ScalarType.BYTES */, opt: true },
+    { no: 13, name: "len", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 2, name: "min_len", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 3, name: "max_len", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "pattern", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 5, name: "prefix", kind: "scalar", T: 12 /* ScalarType.BYTES */, opt: true },
+    { no: 6, name: "suffix", kind: "scalar", T: 12 /* ScalarType.BYTES */, opt: true },
+    { no: 7, name: "contains", kind: "scalar", T: 12 /* ScalarType.BYTES */, opt: true },
+    { no: 8, name: "in", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
+    { no: 9, name: "not_in", kind: "scalar", T: 12 /* ScalarType.BYTES */, repeated: true },
+    { no: 10, name: "ip", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" },
+    { no: 11, name: "ipv4", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" },
+    { no: 12, name: "ipv6", kind: "scalar", T: 8 /* ScalarType.BOOL */, oneof: "well_known" },
+    { no: 14, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): BytesRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): BytesRules {
     return new BytesRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): BytesRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): BytesRules {
     return new BytesRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): BytesRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): BytesRules {
     return new BytesRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: BytesRules | PlainMessage<BytesRules> | undefined, b: BytesRules | PlainMessage<BytesRules> | undefined): boolean ***REMOVED***
+  static equals(a: BytesRules | PlainMessage<BytesRules> | undefined, b: BytesRules | PlainMessage<BytesRules> | undefined): boolean {
     return proto2.util.equals(BytesRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * EnumRules describe the constraints applied to enum values
  *
  * @generated from message genesis_validate.EnumRules
  */
-export class EnumRules extends Message<EnumRules> ***REMOVED***
+export class EnumRules extends Message<EnumRules> {
   /**
    * Const specifies that this field must be exactly the specified value
    *
@@ -2047,36 +2047,36 @@ export class EnumRules extends Message<EnumRules> ***REMOVED***
    */
   notIn: number[] = [];
 
-  constructor(data?: PartialMessage<EnumRules>) ***REMOVED***
+  constructor(data?: PartialMessage<EnumRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.EnumRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "const", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "defined_only", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "in", kind: "scalar", T: 5 /* ScalarType.INT32 */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "not_in", kind: "scalar", T: 5 /* ScalarType.INT32 */, repeated: true ***REMOVED***,
+    { no: 1, name: "const", kind: "scalar", T: 5 /* ScalarType.INT32 */, opt: true },
+    { no: 2, name: "defined_only", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 3, name: "in", kind: "scalar", T: 5 /* ScalarType.INT32 */, repeated: true },
+    { no: 4, name: "not_in", kind: "scalar", T: 5 /* ScalarType.INT32 */, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnumRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): EnumRules {
     return new EnumRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnumRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): EnumRules {
     return new EnumRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnumRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): EnumRules {
     return new EnumRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: EnumRules | PlainMessage<EnumRules> | undefined, b: EnumRules | PlainMessage<EnumRules> | undefined): boolean ***REMOVED***
+  static equals(a: EnumRules | PlainMessage<EnumRules> | undefined, b: EnumRules | PlainMessage<EnumRules> | undefined): boolean {
     return proto2.util.equals(EnumRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * MessageRules describe the constraints applied to embedded message values.
@@ -2084,7 +2084,7 @@ export class EnumRules extends Message<EnumRules> ***REMOVED***
  *
  * @generated from message genesis_validate.MessageRules
  */
-export class MessageRules extends Message<MessageRules> ***REMOVED***
+export class MessageRules extends Message<MessageRules> {
   /**
    * Skip specifies that the validation rules of this field should not be
    * evaluated
@@ -2100,41 +2100,41 @@ export class MessageRules extends Message<MessageRules> ***REMOVED***
    */
   required?: boolean;
 
-  constructor(data?: PartialMessage<MessageRules>) ***REMOVED***
+  constructor(data?: PartialMessage<MessageRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.MessageRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "skip", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "required", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "skip", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 2, name: "required", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MessageRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MessageRules {
     return new MessageRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): MessageRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): MessageRules {
     return new MessageRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): MessageRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): MessageRules {
     return new MessageRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: MessageRules | PlainMessage<MessageRules> | undefined, b: MessageRules | PlainMessage<MessageRules> | undefined): boolean ***REMOVED***
+  static equals(a: MessageRules | PlainMessage<MessageRules> | undefined, b: MessageRules | PlainMessage<MessageRules> | undefined): boolean {
     return proto2.util.equals(MessageRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * RepeatedRules describe the constraints applied to `repeated` values
  *
  * @generated from message genesis_validate.RepeatedRules
  */
-export class RepeatedRules extends Message<RepeatedRules> ***REMOVED***
+export class RepeatedRules extends Message<RepeatedRules> {
   /**
    * MinItems specifies that this field must have the specified number of
    * items at a minimum
@@ -2177,44 +2177,44 @@ export class RepeatedRules extends Message<RepeatedRules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<RepeatedRules>) ***REMOVED***
+  constructor(data?: PartialMessage<RepeatedRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.RepeatedRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "min_items", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "max_items", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "unique", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "items", kind: "message", T: FieldRules, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "min_items", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 2, name: "max_items", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 3, name: "unique", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 4, name: "items", kind: "message", T: FieldRules, opt: true },
+    { no: 5, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): RepeatedRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): RepeatedRules {
     return new RepeatedRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RepeatedRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): RepeatedRules {
     return new RepeatedRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RepeatedRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): RepeatedRules {
     return new RepeatedRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: RepeatedRules | PlainMessage<RepeatedRules> | undefined, b: RepeatedRules | PlainMessage<RepeatedRules> | undefined): boolean ***REMOVED***
+  static equals(a: RepeatedRules | PlainMessage<RepeatedRules> | undefined, b: RepeatedRules | PlainMessage<RepeatedRules> | undefined): boolean {
     return proto2.util.equals(RepeatedRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * MapRules describe the constraints applied to `map` values
  *
  * @generated from message genesis_validate.MapRules
  */
-export class MapRules extends Message<MapRules> ***REMOVED***
+export class MapRules extends Message<MapRules> {
   /**
    * MinPairs specifies that this field must have the specified number of
    * KVs at a minimum
@@ -2263,38 +2263,38 @@ export class MapRules extends Message<MapRules> ***REMOVED***
    */
   ignoreEmpty?: boolean;
 
-  constructor(data?: PartialMessage<MapRules>) ***REMOVED***
+  constructor(data?: PartialMessage<MapRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.MapRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "min_pairs", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "max_pairs", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "no_sparse", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "keys", kind: "message", T: FieldRules, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "values", kind: "message", T: FieldRules, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
+    { no: 1, name: "min_pairs", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 2, name: "max_pairs", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 3, name: "no_sparse", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 4, name: "keys", kind: "message", T: FieldRules, opt: true },
+    { no: 5, name: "values", kind: "message", T: FieldRules, opt: true },
+    { no: 6, name: "ignore_empty", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MapRules {
     return new MapRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): MapRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): MapRules {
     return new MapRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): MapRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): MapRules {
     return new MapRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: MapRules | PlainMessage<MapRules> | undefined, b: MapRules | PlainMessage<MapRules> | undefined): boolean ***REMOVED***
+  static equals(a: MapRules | PlainMessage<MapRules> | undefined, b: MapRules | PlainMessage<MapRules> | undefined): boolean {
     return proto2.util.equals(MapRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * AnyRules describe constraints applied exclusively to the
@@ -2302,7 +2302,7 @@ export class MapRules extends Message<MapRules> ***REMOVED***
  *
  * @generated from message genesis_validate.AnyRules
  */
-export class AnyRules extends Message<AnyRules> ***REMOVED***
+export class AnyRules extends Message<AnyRules> {
   /**
    * Required specifies that this field must be set
    *
@@ -2326,35 +2326,35 @@ export class AnyRules extends Message<AnyRules> ***REMOVED***
    */
   notIn: string[] = [];
 
-  constructor(data?: PartialMessage<AnyRules>) ***REMOVED***
+  constructor(data?: PartialMessage<AnyRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.AnyRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "required", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "in", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "not_in", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true ***REMOVED***,
+    { no: 1, name: "required", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 2, name: "in", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 3, name: "not_in", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AnyRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AnyRules {
     return new AnyRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AnyRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): AnyRules {
     return new AnyRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AnyRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): AnyRules {
     return new AnyRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: AnyRules | PlainMessage<AnyRules> | undefined, b: AnyRules | PlainMessage<AnyRules> | undefined): boolean ***REMOVED***
+  static equals(a: AnyRules | PlainMessage<AnyRules> | undefined, b: AnyRules | PlainMessage<AnyRules> | undefined): boolean {
     return proto2.util.equals(AnyRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * DurationRules describe the constraints applied exclusively to the
@@ -2362,7 +2362,7 @@ export class AnyRules extends Message<AnyRules> ***REMOVED***
  *
  * @generated from message genesis_validate.DurationRules
  */
-export class DurationRules extends Message<DurationRules> ***REMOVED***
+export class DurationRules extends Message<DurationRules> {
   /**
    * Required specifies that this field must be set
    *
@@ -2425,40 +2425,40 @@ export class DurationRules extends Message<DurationRules> ***REMOVED***
    */
   notIn: Duration[] = [];
 
-  constructor(data?: PartialMessage<DurationRules>) ***REMOVED***
+  constructor(data?: PartialMessage<DurationRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.DurationRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "required", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "const", kind: "message", T: Duration, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lt", kind: "message", T: Duration, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "lte", kind: "message", T: Duration, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gt", kind: "message", T: Duration, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "gte", kind: "message", T: Duration, opt: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "in", kind: "message", T: Duration, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "not_in", kind: "message", T: Duration, repeated: true ***REMOVED***,
+    { no: 1, name: "required", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 2, name: "const", kind: "message", T: Duration, opt: true },
+    { no: 3, name: "lt", kind: "message", T: Duration, opt: true },
+    { no: 4, name: "lte", kind: "message", T: Duration, opt: true },
+    { no: 5, name: "gt", kind: "message", T: Duration, opt: true },
+    { no: 6, name: "gte", kind: "message", T: Duration, opt: true },
+    { no: 7, name: "in", kind: "message", T: Duration, repeated: true },
+    { no: 8, name: "not_in", kind: "message", T: Duration, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DurationRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DurationRules {
     return new DurationRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DurationRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): DurationRules {
     return new DurationRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DurationRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): DurationRules {
     return new DurationRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: DurationRules | PlainMessage<DurationRules> | undefined, b: DurationRules | PlainMessage<DurationRules> | undefined): boolean ***REMOVED***
+  static equals(a: DurationRules | PlainMessage<DurationRules> | undefined, b: DurationRules | PlainMessage<DurationRules> | undefined): boolean {
     return proto2.util.equals(DurationRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  * TimestampRules describe the constraints applied exclusively to the
@@ -2466,7 +2466,7 @@ export class DurationRules extends Message<DurationRules> ***REMOVED***
  *
  * @generated from message genesis_validate.TimestampRules
  */
-export class TimestampRules extends Message<TimestampRules> ***REMOVED***
+export class TimestampRules extends Message<TimestampRules> {
   /**
    * Required specifies that this field must be set
    *
@@ -2538,39 +2538,39 @@ export class TimestampRules extends Message<TimestampRules> ***REMOVED***
    */
   within?: Duration;
 
-  constructor(data?: PartialMessage<TimestampRules>) ***REMOVED***
+  constructor(data?: PartialMessage<TimestampRules>) {
     super();
     proto2.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto2 = proto2;
   static readonly typeName = "genesis_validate.TimestampRules";
   static readonly fields: FieldList = proto2.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "required", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 2, name: "const", kind: "message", T: Timestamp, opt: true ***REMOVED***,
-    ***REMOVED*** no: 3, name: "lt", kind: "message", T: Timestamp, opt: true ***REMOVED***,
-    ***REMOVED*** no: 4, name: "lte", kind: "message", T: Timestamp, opt: true ***REMOVED***,
-    ***REMOVED*** no: 5, name: "gt", kind: "message", T: Timestamp, opt: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "gte", kind: "message", T: Timestamp, opt: true ***REMOVED***,
-    ***REMOVED*** no: 7, name: "lt_now", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 8, name: "gt_now", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true ***REMOVED***,
-    ***REMOVED*** no: 9, name: "within", kind: "message", T: Duration, opt: true ***REMOVED***,
+    { no: 1, name: "required", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 2, name: "const", kind: "message", T: Timestamp, opt: true },
+    { no: 3, name: "lt", kind: "message", T: Timestamp, opt: true },
+    { no: 4, name: "lte", kind: "message", T: Timestamp, opt: true },
+    { no: 5, name: "gt", kind: "message", T: Timestamp, opt: true },
+    { no: 6, name: "gte", kind: "message", T: Timestamp, opt: true },
+    { no: 7, name: "lt_now", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 8, name: "gt_now", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 9, name: "within", kind: "message", T: Duration, opt: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): TimestampRules ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): TimestampRules {
     return new TimestampRules().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TimestampRules ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): TimestampRules {
     return new TimestampRules().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TimestampRules ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): TimestampRules {
     return new TimestampRules().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: TimestampRules | PlainMessage<TimestampRules> | undefined, b: TimestampRules | PlainMessage<TimestampRules> | undefined): boolean ***REMOVED***
+  static equals(a: TimestampRules | PlainMessage<TimestampRules> | undefined, b: TimestampRules | PlainMessage<TimestampRules> | undefined): boolean {
     return proto2.util.equals(TimestampRules, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

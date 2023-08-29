@@ -33,8 +33,8 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, JsonWriteOptions, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, JsonWriteOptions, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
 
 /**
  * A Duration represents a signed, fixed-length span of time represented
@@ -55,13 +55,13 @@ import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/p
  *     duration.seconds = end.seconds - start.seconds;
  *     duration.nanos = end.nanos - start.nanos;
  *
- *     if (duration.seconds < 0 && duration.nanos > 0) ***REMOVED***
+ *     if (duration.seconds < 0 && duration.nanos > 0) {
  *       duration.seconds += 1;
  *       duration.nanos -= 1000000000;
- * ***REMOVED*** else if (duration.seconds > 0 && duration.nanos < 0) ***REMOVED***
+ *     } else if (duration.seconds > 0 && duration.nanos < 0) {
  *       duration.seconds -= 1;
  *       duration.nanos += 1000000000;
- * ***REMOVED***
+ *     }
  *
  * Example 2: Compute Timestamp from Timestamp + Duration in pseudo code.
  *
@@ -72,13 +72,13 @@ import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/p
  *     end.seconds = start.seconds + duration.seconds;
  *     end.nanos = start.nanos + duration.nanos;
  *
- *     if (end.nanos < 0) ***REMOVED***
+ *     if (end.nanos < 0) {
  *       end.seconds -= 1;
  *       end.nanos += 1000000000;
- * ***REMOVED*** else if (end.nanos >= 1000000000) ***REMOVED***
+ *     } else if (end.nanos >= 1000000000) {
  *       end.seconds += 1;
  *       end.nanos -= 1000000000;
- * ***REMOVED***
+ *     }
  *
  * Example 3: Compute Duration from datetime.timedelta in Python.
  *
@@ -100,7 +100,7 @@ import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/p
  *
  * @generated from message google.protobuf.Duration
  */
-export class Duration extends Message<Duration> ***REMOVED***
+export class Duration extends Message<Duration> {
   /**
    * Signed seconds of the span of time. Must be from -315,576,000,000
    * to +315,576,000,000 inclusive. Note: these bounds are computed from:
@@ -122,76 +122,76 @@ export class Duration extends Message<Duration> ***REMOVED***
    */
   nanos = 0;
 
-  constructor(data?: PartialMessage<Duration>) ***REMOVED***
+  constructor(data?: PartialMessage<Duration>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
-  override fromJson(json: JsonValue, options?: Partial<JsonReadOptions>): this ***REMOVED***
-    if (typeof json !== "string") ***REMOVED***
-      throw new Error(`cannot decode google.protobuf.Duration from JSON: $***REMOVED***proto3.json.debug(json)***REMOVED***`);
-***REMOVED***
+  override fromJson(json: JsonValue, options?: Partial<JsonReadOptions>): this {
+    if (typeof json !== "string") {
+      throw new Error(`cannot decode google.protobuf.Duration from JSON: ${proto3.json.debug(json)}`);
+    }
     const match = json.match(/^(-?[0-9]+)(?:\.([0-9]+))?s/);
-    if (match === null) ***REMOVED***
-      throw new Error(`cannot decode google.protobuf.Duration from JSON: $***REMOVED***proto3.json.debug(json)***REMOVED***`);
-***REMOVED***
+    if (match === null) {
+      throw new Error(`cannot decode google.protobuf.Duration from JSON: ${proto3.json.debug(json)}`);
+    }
     const longSeconds = Number(match[1]);
-    if (longSeconds > 315576000000 || longSeconds < -315576000000) ***REMOVED***
-      throw new Error(`cannot decode google.protobuf.Duration from JSON: $***REMOVED***proto3.json.debug(json)***REMOVED***`);
-***REMOVED***
+    if (longSeconds > 315576000000 || longSeconds < -315576000000) {
+      throw new Error(`cannot decode google.protobuf.Duration from JSON: ${proto3.json.debug(json)}`);
+    }
     this.seconds = protoInt64.parse(longSeconds);
-    if (typeof match[2] == "string") ***REMOVED***
+    if (typeof match[2] == "string") {
       const nanosStr = match[2] + "0".repeat(9 - match[2].length);
       this.nanos = parseInt(nanosStr);
-      if (longSeconds < 0 || Object.is(longSeconds, -0)) ***REMOVED***
+      if (longSeconds < 0 || Object.is(longSeconds, -0)) {
         this.nanos = -this.nanos;
-  ***REMOVED***
-***REMOVED***
+      }
+    }
     return this;
-  ***REMOVED***
+  }
 
-  override toJson(options?: Partial<JsonWriteOptions>): JsonValue ***REMOVED***
-    if (Number(this.seconds) > 315576000000 || Number(this.seconds) < -315576000000) ***REMOVED***
+  override toJson(options?: Partial<JsonWriteOptions>): JsonValue {
+    if (Number(this.seconds) > 315576000000 || Number(this.seconds) < -315576000000) {
       throw new Error(`cannot encode google.protobuf.Duration to JSON: value out of range`);
-***REMOVED***
+    }
     let text = this.seconds.toString();
-    if (this.nanos !== 0) ***REMOVED***
+    if (this.nanos !== 0) {
       let nanosStr = Math.abs(this.nanos).toString();
       nanosStr = "0".repeat(9 - nanosStr.length) + nanosStr;
-      if (nanosStr.substring(3) === "000000") ***REMOVED***
+      if (nanosStr.substring(3) === "000000") {
         nanosStr = nanosStr.substring(0, 3);
-  ***REMOVED*** else if (nanosStr.substring(6) === "000") ***REMOVED***
+      } else if (nanosStr.substring(6) === "000") {
         nanosStr = nanosStr.substring(0, 6);
-  ***REMOVED***
+      }
       text += "." + nanosStr;
-      if (this.nanos < 0 && this.seconds === protoInt64.zero) ***REMOVED***
+      if (this.nanos < 0 && this.seconds === protoInt64.zero) {
           text = "-" + text;
-  ***REMOVED***
-***REMOVED***
+      }
+    }
     return text + "s";
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "google.protobuf.Duration";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "seconds", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "nanos", kind: "scalar", T: 5 /* ScalarType.INT32 */ ***REMOVED***,
+    { no: 1, name: "seconds", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "nanos", kind: "scalar", T: 5 /* ScalarType.INT32 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Duration ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): Duration {
     return new Duration().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Duration ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Duration {
     return new Duration().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Duration ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Duration {
     return new Duration().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: Duration | PlainMessage<Duration> | undefined, b: Duration | PlainMessage<Duration> | undefined): boolean ***REMOVED***
+  static equals(a: Duration | PlainMessage<Duration> | undefined, b: Duration | PlainMessage<Duration> | undefined): boolean {
     return proto3.util.equals(Duration, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

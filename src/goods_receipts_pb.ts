@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -14,7 +14,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.GOODS_RECEIPT_SORT_KEY
  */
-export enum GOODS_RECEIPT_SORT_KEY ***REMOVED***
+export enum GOODS_RECEIPT_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -91,20 +91,20 @@ export enum GOODS_RECEIPT_SORT_KEY ***REMOVED***
    * @generated from enum value: GOODS_RECEIPT_SORT_KEY_VENDOR_BILL_DATE = 13;
    */
   GOODS_RECEIPT_SORT_KEY_VENDOR_BILL_DATE = 13,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(GOODS_RECEIPT_SORT_KEY)
 proto3.util.setEnumType(GOODS_RECEIPT_SORT_KEY, "Genesis.GOODS_RECEIPT_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "GOODS_RECEIPT_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "GOODS_RECEIPT_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "GOODS_RECEIPT_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "GOODS_RECEIPT_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "GOODS_RECEIPT_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "GOODS_RECEIPT_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "GOODS_RECEIPT_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "GOODS_RECEIPT_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "GOODS_RECEIPT_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
-  ***REMOVED*** no: 12, name: "GOODS_RECEIPT_SORT_KEY_VENDOR_BILL_NO" ***REMOVED***,
-  ***REMOVED*** no: 13, name: "GOODS_RECEIPT_SORT_KEY_VENDOR_BILL_DATE" ***REMOVED***,
+  { no: 0, name: "GOODS_RECEIPT_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "GOODS_RECEIPT_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "GOODS_RECEIPT_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "GOODS_RECEIPT_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "GOODS_RECEIPT_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "GOODS_RECEIPT_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "GOODS_RECEIPT_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "GOODS_RECEIPT_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "GOODS_RECEIPT_SORT_KEY_FINAL_REF_NUMBER" },
+  { no: 12, name: "GOODS_RECEIPT_SORT_KEY_VENDOR_BILL_NO" },
+  { no: 13, name: "GOODS_RECEIPT_SORT_KEY_VENDOR_BILL_DATE" },
 ]);
 
 /**
@@ -113,7 +113,7 @@ proto3.util.setEnumType(GOODS_RECEIPT_SORT_KEY, "Genesis.GOODS_RECEIPT_SORT_KEY"
  *
  * @generated from enum Genesis.GOODS_RECEIPT_BILLING_STATUS
  */
-export enum GOODS_RECEIPT_BILLING_STATUS ***REMOVED***
+export enum GOODS_RECEIPT_BILLING_STATUS {
   /**
    * Any billing status
    *
@@ -134,12 +134,12 @@ export enum GOODS_RECEIPT_BILLING_STATUS ***REMOVED***
    * @generated from enum value: GOODS_RECEIPT_BILLING_STATUS_UNBILLED = 2;
    */
   GOODS_RECEIPT_BILLING_STATUS_UNBILLED = 2,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(GOODS_RECEIPT_BILLING_STATUS)
 proto3.util.setEnumType(GOODS_RECEIPT_BILLING_STATUS, "Genesis.GOODS_RECEIPT_BILLING_STATUS", [
-  ***REMOVED*** no: 0, name: "GOODS_RECEIPT_BILLING_STATUS_ANY_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "GOODS_RECEIPT_BILLING_STATUS_BILLED" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "GOODS_RECEIPT_BILLING_STATUS_UNBILLED" ***REMOVED***,
+  { no: 0, name: "GOODS_RECEIPT_BILLING_STATUS_ANY_UNSPECIFIED" },
+  { no: 1, name: "GOODS_RECEIPT_BILLING_STATUS_BILLED" },
+  { no: 2, name: "GOODS_RECEIPT_BILLING_STATUS_UNBILLED" },
 ]);
 
 /**
@@ -148,7 +148,7 @@ proto3.util.setEnumType(GOODS_RECEIPT_BILLING_STATUS, "Genesis.GOODS_RECEIPT_BIL
  *
  * @generated from message Genesis.GoodsReceiptsServiceCreateRequest
  */
-export class GoodsReceiptsServiceCreateRequest extends Message<GoodsReceiptsServiceCreateRequest> ***REMOVED***
+export class GoodsReceiptsServiceCreateRequest extends Message<GoodsReceiptsServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -212,41 +212,41 @@ export class GoodsReceiptsServiceCreateRequest extends Message<GoodsReceiptsServ
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<GoodsReceiptsServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "vendor_bill_no", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "vendor_bill_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "vendor_bill_no", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "vendor_bill_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceCreateRequest {
     return new GoodsReceiptsServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceCreateRequest {
     return new GoodsReceiptsServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceCreateRequest {
     return new GoodsReceiptsServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsServiceCreateRequest | PlainMessage<GoodsReceiptsServiceCreateRequest> | undefined, b: GoodsReceiptsServiceCreateRequest | PlainMessage<GoodsReceiptsServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsServiceCreateRequest | PlainMessage<GoodsReceiptsServiceCreateRequest> | undefined, b: GoodsReceiptsServiceCreateRequest | PlainMessage<GoodsReceiptsServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -254,7 +254,7 @@ export class GoodsReceiptsServiceCreateRequest extends Message<GoodsReceiptsServ
  *
  * @generated from message Genesis.GoodsReceiptsServiceUpdateRequest
  */
-export class GoodsReceiptsServiceUpdateRequest extends Message<GoodsReceiptsServiceUpdateRequest> ***REMOVED***
+export class GoodsReceiptsServiceUpdateRequest extends Message<GoodsReceiptsServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -311,40 +311,40 @@ export class GoodsReceiptsServiceUpdateRequest extends Message<GoodsReceiptsServ
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<GoodsReceiptsServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "vendor_bill_no", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "vendor_bill_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "vendor_bill_no", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "vendor_bill_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceUpdateRequest {
     return new GoodsReceiptsServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceUpdateRequest {
     return new GoodsReceiptsServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceUpdateRequest {
     return new GoodsReceiptsServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsServiceUpdateRequest | PlainMessage<GoodsReceiptsServiceUpdateRequest> | undefined, b: GoodsReceiptsServiceUpdateRequest | PlainMessage<GoodsReceiptsServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsServiceUpdateRequest | PlainMessage<GoodsReceiptsServiceUpdateRequest> | undefined, b: GoodsReceiptsServiceUpdateRequest | PlainMessage<GoodsReceiptsServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -352,7 +352,7 @@ export class GoodsReceiptsServiceUpdateRequest extends Message<GoodsReceiptsServ
  *
  * @generated from message Genesis.GoodsReceiptsServiceAutofillRequest
  */
-export class GoodsReceiptsServiceAutofillRequest extends Message<GoodsReceiptsServiceAutofillRequest> ***REMOVED***
+export class GoodsReceiptsServiceAutofillRequest extends Message<GoodsReceiptsServiceAutofillRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -367,34 +367,34 @@ export class GoodsReceiptsServiceAutofillRequest extends Message<GoodsReceiptsSe
    */
   id = protoInt64.zero;
 
-  constructor(data?: PartialMessage<GoodsReceiptsServiceAutofillRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsServiceAutofillRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsServiceAutofillRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceAutofillRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceAutofillRequest {
     return new GoodsReceiptsServiceAutofillRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceAutofillRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceAutofillRequest {
     return new GoodsReceiptsServiceAutofillRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceAutofillRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceAutofillRequest {
     return new GoodsReceiptsServiceAutofillRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsServiceAutofillRequest | PlainMessage<GoodsReceiptsServiceAutofillRequest> | undefined, b: GoodsReceiptsServiceAutofillRequest | PlainMessage<GoodsReceiptsServiceAutofillRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsServiceAutofillRequest | PlainMessage<GoodsReceiptsServiceAutofillRequest> | undefined, b: GoodsReceiptsServiceAutofillRequest | PlainMessage<GoodsReceiptsServiceAutofillRequest> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsServiceAutofillRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -402,7 +402,7 @@ export class GoodsReceiptsServiceAutofillRequest extends Message<GoodsReceiptsSe
  *
  * @generated from message Genesis.GoodsReceipt
  */
-export class GoodsReceipt extends Message<GoodsReceipt> ***REMOVED***
+export class GoodsReceipt extends Message<GoodsReceipt> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -508,47 +508,47 @@ export class GoodsReceipt extends Message<GoodsReceipt> ***REMOVED***
    */
   formData: FormFieldDatum[] = [];
 
-  constructor(data?: PartialMessage<GoodsReceipt>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceipt>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceipt";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "vendor_bill_no", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "vendor_bill_date", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "list", kind: "message", T: GoodsReceiptItem, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "vendor_bill_no", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "vendor_bill_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "list", kind: "message", T: GoodsReceiptItem, repeated: true },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceipt ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceipt {
     return new GoodsReceipt().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceipt ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceipt {
     return new GoodsReceipt().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceipt ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceipt {
     return new GoodsReceipt().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceipt | PlainMessage<GoodsReceipt> | undefined, b: GoodsReceipt | PlainMessage<GoodsReceipt> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceipt | PlainMessage<GoodsReceipt> | undefined, b: GoodsReceipt | PlainMessage<GoodsReceipt> | undefined): boolean {
     return proto3.util.equals(GoodsReceipt, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -556,7 +556,7 @@ export class GoodsReceipt extends Message<GoodsReceipt> ***REMOVED***
  *
  * @generated from message Genesis.GoodsReceiptsServiceItemCreateRequest
  */
-export class GoodsReceiptsServiceItemCreateRequest extends Message<GoodsReceiptsServiceItemCreateRequest> ***REMOVED***
+export class GoodsReceiptsServiceItemCreateRequest extends Message<GoodsReceiptsServiceItemCreateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -599,38 +599,38 @@ export class GoodsReceiptsServiceItemCreateRequest extends Message<GoodsReceipts
    */
   vendorQuantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<GoodsReceiptsServiceItemCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsServiceItemCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "goods_receipt_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "vendor_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "vendor_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "goods_receipt_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "vendor_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "vendor_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceItemCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceItemCreateRequest {
     return new GoodsReceiptsServiceItemCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceItemCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceItemCreateRequest {
     return new GoodsReceiptsServiceItemCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceItemCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceItemCreateRequest {
     return new GoodsReceiptsServiceItemCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsServiceItemCreateRequest | PlainMessage<GoodsReceiptsServiceItemCreateRequest> | undefined, b: GoodsReceiptsServiceItemCreateRequest | PlainMessage<GoodsReceiptsServiceItemCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsServiceItemCreateRequest | PlainMessage<GoodsReceiptsServiceItemCreateRequest> | undefined, b: GoodsReceiptsServiceItemCreateRequest | PlainMessage<GoodsReceiptsServiceItemCreateRequest> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsServiceItemCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -638,7 +638,7 @@ export class GoodsReceiptsServiceItemCreateRequest extends Message<GoodsReceipts
  *
  * @generated from message Genesis.GoodsReceiptsServiceItemUpdateRequest
  */
-export class GoodsReceiptsServiceItemUpdateRequest extends Message<GoodsReceiptsServiceItemUpdateRequest> ***REMOVED***
+export class GoodsReceiptsServiceItemUpdateRequest extends Message<GoodsReceiptsServiceItemUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -674,37 +674,37 @@ export class GoodsReceiptsServiceItemUpdateRequest extends Message<GoodsReceipts
    */
   vendorQuantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<GoodsReceiptsServiceItemUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsServiceItemUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "vendor_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "vendor_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "vendor_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "vendor_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceItemUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceItemUpdateRequest {
     return new GoodsReceiptsServiceItemUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceItemUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceItemUpdateRequest {
     return new GoodsReceiptsServiceItemUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceItemUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceItemUpdateRequest {
     return new GoodsReceiptsServiceItemUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsServiceItemUpdateRequest | PlainMessage<GoodsReceiptsServiceItemUpdateRequest> | undefined, b: GoodsReceiptsServiceItemUpdateRequest | PlainMessage<GoodsReceiptsServiceItemUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsServiceItemUpdateRequest | PlainMessage<GoodsReceiptsServiceItemUpdateRequest> | undefined, b: GoodsReceiptsServiceItemUpdateRequest | PlainMessage<GoodsReceiptsServiceItemUpdateRequest> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsServiceItemUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -712,7 +712,7 @@ export class GoodsReceiptsServiceItemUpdateRequest extends Message<GoodsReceipts
  *
  * @generated from message Genesis.GoodsReceiptItem
  */
-export class GoodsReceiptItem extends Message<GoodsReceiptItem> ***REMOVED***
+export class GoodsReceiptItem extends Message<GoodsReceiptItem> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -783,42 +783,42 @@ export class GoodsReceiptItem extends Message<GoodsReceiptItem> ***REMOVED***
    */
   vendorQuantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<GoodsReceiptItem>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptItem>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptItem";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "goods_receipt_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "vendor_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "vendor_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "goods_receipt_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "internal_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "vendor_uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "vendor_quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptItem ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptItem {
     return new GoodsReceiptItem().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptItem ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptItem {
     return new GoodsReceiptItem().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptItem ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptItem {
     return new GoodsReceiptItem().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptItem | PlainMessage<GoodsReceiptItem> | undefined, b: GoodsReceiptItem | PlainMessage<GoodsReceiptItem> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptItem | PlainMessage<GoodsReceiptItem> | undefined, b: GoodsReceiptItem | PlainMessage<GoodsReceiptItem> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptItem, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -826,7 +826,7 @@ export class GoodsReceiptItem extends Message<GoodsReceiptItem> ***REMOVED***
  *
  * @generated from message Genesis.GoodsReceiptsList
  */
-export class GoodsReceiptsList extends Message<GoodsReceiptsList> ***REMOVED***
+export class GoodsReceiptsList extends Message<GoodsReceiptsList> {
   /**
    * List of records
    *
@@ -834,33 +834,33 @@ export class GoodsReceiptsList extends Message<GoodsReceiptsList> ***REMOVED***
    */
   list: GoodsReceipt[] = [];
 
-  constructor(data?: PartialMessage<GoodsReceiptsList>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: GoodsReceipt, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: GoodsReceipt, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsList {
     return new GoodsReceiptsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsList {
     return new GoodsReceiptsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsList {
     return new GoodsReceiptsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsList | PlainMessage<GoodsReceiptsList> | undefined, b: GoodsReceiptsList | PlainMessage<GoodsReceiptsList> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsList | PlainMessage<GoodsReceiptsList> | undefined, b: GoodsReceiptsList | PlainMessage<GoodsReceiptsList> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -868,7 +868,7 @@ export class GoodsReceiptsList extends Message<GoodsReceiptsList> ***REMOVED***
  *
  * @generated from message Genesis.GoodsReceiptsItemsList
  */
-export class GoodsReceiptsItemsList extends Message<GoodsReceiptsItemsList> ***REMOVED***
+export class GoodsReceiptsItemsList extends Message<GoodsReceiptsItemsList> {
   /**
    * List of records
    *
@@ -876,33 +876,33 @@ export class GoodsReceiptsItemsList extends Message<GoodsReceiptsItemsList> ***R
    */
   list: GoodsReceiptItem[] = [];
 
-  constructor(data?: PartialMessage<GoodsReceiptsItemsList>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsItemsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsItemsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: GoodsReceiptItem, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: GoodsReceiptItem, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsItemsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsItemsList {
     return new GoodsReceiptsItemsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsItemsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsItemsList {
     return new GoodsReceiptsItemsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsItemsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsItemsList {
     return new GoodsReceiptsItemsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsItemsList | PlainMessage<GoodsReceiptsItemsList> | undefined, b: GoodsReceiptsItemsList | PlainMessage<GoodsReceiptsItemsList> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsItemsList | PlainMessage<GoodsReceiptsItemsList> | undefined, b: GoodsReceiptsItemsList | PlainMessage<GoodsReceiptsItemsList> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsItemsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -910,7 +910,7 @@ export class GoodsReceiptsItemsList extends Message<GoodsReceiptsItemsList> ***R
  *
  * @generated from message Genesis.GoodsReceiptItemHistoryRequest
  */
-export class GoodsReceiptItemHistoryRequest extends Message<GoodsReceiptItemHistoryRequest> ***REMOVED***
+export class GoodsReceiptItemHistoryRequest extends Message<GoodsReceiptItemHistoryRequest> {
   /**
    * Stores the goods receipt ID
    *
@@ -925,34 +925,34 @@ export class GoodsReceiptItemHistoryRequest extends Message<GoodsReceiptItemHist
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<GoodsReceiptItemHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptItemHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptItemHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "goods_receipt_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "goods_receipt_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptItemHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptItemHistoryRequest {
     return new GoodsReceiptItemHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptItemHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptItemHistoryRequest {
     return new GoodsReceiptItemHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptItemHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptItemHistoryRequest {
     return new GoodsReceiptItemHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptItemHistoryRequest | PlainMessage<GoodsReceiptItemHistoryRequest> | undefined, b: GoodsReceiptItemHistoryRequest | PlainMessage<GoodsReceiptItemHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptItemHistoryRequest | PlainMessage<GoodsReceiptItemHistoryRequest> | undefined, b: GoodsReceiptItemHistoryRequest | PlainMessage<GoodsReceiptItemHistoryRequest> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptItemHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -960,7 +960,7 @@ export class GoodsReceiptItemHistoryRequest extends Message<GoodsReceiptItemHist
  *
  * @generated from message Genesis.GoodsReceiptItemProspectiveInfoRequest
  */
-export class GoodsReceiptItemProspectiveInfoRequest extends Message<GoodsReceiptItemProspectiveInfoRequest> ***REMOVED***
+export class GoodsReceiptItemProspectiveInfoRequest extends Message<GoodsReceiptItemProspectiveInfoRequest> {
   /**
    * Stores the goods receipt ID
    *
@@ -975,34 +975,34 @@ export class GoodsReceiptItemProspectiveInfoRequest extends Message<GoodsReceipt
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<GoodsReceiptItemProspectiveInfoRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptItemProspectiveInfoRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptItemProspectiveInfoRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "goods_receipt_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "goods_receipt_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptItemProspectiveInfoRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptItemProspectiveInfoRequest {
     return new GoodsReceiptItemProspectiveInfoRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptItemProspectiveInfoRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptItemProspectiveInfoRequest {
     return new GoodsReceiptItemProspectiveInfoRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptItemProspectiveInfoRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptItemProspectiveInfoRequest {
     return new GoodsReceiptItemProspectiveInfoRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptItemProspectiveInfoRequest | PlainMessage<GoodsReceiptItemProspectiveInfoRequest> | undefined, b: GoodsReceiptItemProspectiveInfoRequest | PlainMessage<GoodsReceiptItemProspectiveInfoRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptItemProspectiveInfoRequest | PlainMessage<GoodsReceiptItemProspectiveInfoRequest> | undefined, b: GoodsReceiptItemProspectiveInfoRequest | PlainMessage<GoodsReceiptItemProspectiveInfoRequest> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptItemProspectiveInfoRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1010,7 +1010,7 @@ export class GoodsReceiptItemProspectiveInfoRequest extends Message<GoodsReceipt
  *
  * @generated from message Genesis.GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest
  */
-export class GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest extends Message<GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest> ***REMOVED***
+export class GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest extends Message<GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest> {
   /**
    * The associated reference
    *
@@ -1032,35 +1032,35 @@ export class GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest extends Me
    */
   familyId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "family_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest {
     return new GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest {
     return new GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest {
     return new GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest> | undefined, b: GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest> | undefined, b: GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest | PlainMessage<GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1068,7 +1068,7 @@ export class GoodsReceiptsServiceAlreadyAddedQuantityForSourceRequest extends Me
  *
  * @generated from message Genesis.GoodsReceiptsServicePaginationReq
  */
-export class GoodsReceiptsServicePaginationReq extends Message<GoodsReceiptsServicePaginationReq> ***REMOVED***
+export class GoodsReceiptsServicePaginationReq extends Message<GoodsReceiptsServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1111,38 +1111,38 @@ export class GoodsReceiptsServicePaginationReq extends Message<GoodsReceiptsServ
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<GoodsReceiptsServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServicePaginationReq {
     return new GoodsReceiptsServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServicePaginationReq {
     return new GoodsReceiptsServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServicePaginationReq {
     return new GoodsReceiptsServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsServicePaginationReq | PlainMessage<GoodsReceiptsServicePaginationReq> | undefined, b: GoodsReceiptsServicePaginationReq | PlainMessage<GoodsReceiptsServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsServicePaginationReq | PlainMessage<GoodsReceiptsServicePaginationReq> | undefined, b: GoodsReceiptsServicePaginationReq | PlainMessage<GoodsReceiptsServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1150,7 +1150,7 @@ export class GoodsReceiptsServicePaginationReq extends Message<GoodsReceiptsServ
  *
  * @generated from message Genesis.GoodsReceiptsServicePaginationResponse
  */
-export class GoodsReceiptsServicePaginationResponse extends Message<GoodsReceiptsServicePaginationResponse> ***REMOVED***
+export class GoodsReceiptsServicePaginationResponse extends Message<GoodsReceiptsServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -1179,36 +1179,36 @@ export class GoodsReceiptsServicePaginationResponse extends Message<GoodsReceipt
    */
   payload: GoodsReceipt[] = [];
 
-  constructor(data?: PartialMessage<GoodsReceiptsServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: GoodsReceipt, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: GoodsReceipt, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServicePaginationResponse {
     return new GoodsReceiptsServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServicePaginationResponse {
     return new GoodsReceiptsServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServicePaginationResponse {
     return new GoodsReceiptsServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsServicePaginationResponse | PlainMessage<GoodsReceiptsServicePaginationResponse> | undefined, b: GoodsReceiptsServicePaginationResponse | PlainMessage<GoodsReceiptsServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsServicePaginationResponse | PlainMessage<GoodsReceiptsServicePaginationResponse> | undefined, b: GoodsReceiptsServicePaginationResponse | PlainMessage<GoodsReceiptsServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1216,7 +1216,7 @@ export class GoodsReceiptsServicePaginationResponse extends Message<GoodsReceipt
  *
  * @generated from message Genesis.GoodsReceiptsServiceEntityPaginationReq
  */
-export class GoodsReceiptsServiceEntityPaginationReq extends Message<GoodsReceiptsServiceEntityPaginationReq> ***REMOVED***
+export class GoodsReceiptsServiceEntityPaginationReq extends Message<GoodsReceiptsServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1259,38 +1259,38 @@ export class GoodsReceiptsServiceEntityPaginationReq extends Message<GoodsReceip
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<GoodsReceiptsServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceEntityPaginationReq {
     return new GoodsReceiptsServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceEntityPaginationReq {
     return new GoodsReceiptsServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceEntityPaginationReq {
     return new GoodsReceiptsServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsServiceEntityPaginationReq | PlainMessage<GoodsReceiptsServiceEntityPaginationReq> | undefined, b: GoodsReceiptsServiceEntityPaginationReq | PlainMessage<GoodsReceiptsServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsServiceEntityPaginationReq | PlainMessage<GoodsReceiptsServiceEntityPaginationReq> | undefined, b: GoodsReceiptsServiceEntityPaginationReq | PlainMessage<GoodsReceiptsServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1298,7 +1298,7 @@ export class GoodsReceiptsServiceEntityPaginationReq extends Message<GoodsReceip
  *
  * @generated from message Genesis.GoodsReceiptsServiceFilterReq
  */
-export class GoodsReceiptsServiceFilterReq extends Message<GoodsReceiptsServiceFilterReq> ***REMOVED***
+export class GoodsReceiptsServiceFilterReq extends Message<GoodsReceiptsServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1460,55 +1460,55 @@ export class GoodsReceiptsServiceFilterReq extends Message<GoodsReceiptsServiceF
    */
   billingStatus = GOODS_RECEIPT_BILLING_STATUS.GOODS_RECEIPT_BILLING_STATUS_ANY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<GoodsReceiptsServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "vendor_bill_no", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "vendor_bill_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 26, name: "vendor_bill_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_BILLING_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 24, name: "vendor_bill_no", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 25, name: "vendor_bill_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 26, name: "vendor_bill_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_BILLING_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceFilterReq {
     return new GoodsReceiptsServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceFilterReq {
     return new GoodsReceiptsServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceFilterReq {
     return new GoodsReceiptsServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsServiceFilterReq | PlainMessage<GoodsReceiptsServiceFilterReq> | undefined, b: GoodsReceiptsServiceFilterReq | PlainMessage<GoodsReceiptsServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsServiceFilterReq | PlainMessage<GoodsReceiptsServiceFilterReq> | undefined, b: GoodsReceiptsServiceFilterReq | PlainMessage<GoodsReceiptsServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1516,7 +1516,7 @@ export class GoodsReceiptsServiceFilterReq extends Message<GoodsReceiptsServiceF
  *
  * @generated from message Genesis.GoodsReceiptsServiceSearchAllReq
  */
-export class GoodsReceiptsServiceSearchAllReq extends Message<GoodsReceiptsServiceSearchAllReq> ***REMOVED***
+export class GoodsReceiptsServiceSearchAllReq extends Message<GoodsReceiptsServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1594,41 +1594,41 @@ export class GoodsReceiptsServiceSearchAllReq extends Message<GoodsReceiptsServi
    */
   billingStatus = GOODS_RECEIPT_BILLING_STATUS.GOODS_RECEIPT_BILLING_STATUS_ANY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<GoodsReceiptsServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<GoodsReceiptsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.GoodsReceiptsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_BILLING_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_RECEIPT_BILLING_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptsServiceSearchAllReq {
     return new GoodsReceiptsServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceSearchAllReq {
     return new GoodsReceiptsServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): GoodsReceiptsServiceSearchAllReq {
     return new GoodsReceiptsServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: GoodsReceiptsServiceSearchAllReq | PlainMessage<GoodsReceiptsServiceSearchAllReq> | undefined, b: GoodsReceiptsServiceSearchAllReq | PlainMessage<GoodsReceiptsServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: GoodsReceiptsServiceSearchAllReq | PlainMessage<GoodsReceiptsServiceSearchAllReq> | undefined, b: GoodsReceiptsServiceSearchAllReq | PlainMessage<GoodsReceiptsServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(GoodsReceiptsServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

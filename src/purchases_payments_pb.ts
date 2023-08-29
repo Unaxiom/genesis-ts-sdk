@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -13,7 +13,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.PURCHASE_PAYMENT_SORT_KEY
  */
-export enum PURCHASE_PAYMENT_SORT_KEY ***REMOVED***
+export enum PURCHASE_PAYMENT_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -83,19 +83,19 @@ export enum PURCHASE_PAYMENT_SORT_KEY ***REMOVED***
    * @generated from enum value: PURCHASE_PAYMENT_SORT_KEY_PAYMENT_TIMESTAMP = 12;
    */
   PURCHASE_PAYMENT_SORT_KEY_PAYMENT_TIMESTAMP = 12,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(PURCHASE_PAYMENT_SORT_KEY)
 proto3.util.setEnumType(PURCHASE_PAYMENT_SORT_KEY, "Genesis.PURCHASE_PAYMENT_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "PURCHASE_PAYMENT_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "PURCHASE_PAYMENT_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "PURCHASE_PAYMENT_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "PURCHASE_PAYMENT_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "PURCHASE_PAYMENT_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "PURCHASE_PAYMENT_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "PURCHASE_PAYMENT_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "PURCHASE_PAYMENT_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "PURCHASE_PAYMENT_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
-  ***REMOVED*** no: 12, name: "PURCHASE_PAYMENT_SORT_KEY_PAYMENT_TIMESTAMP" ***REMOVED***,
+  { no: 0, name: "PURCHASE_PAYMENT_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "PURCHASE_PAYMENT_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "PURCHASE_PAYMENT_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "PURCHASE_PAYMENT_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "PURCHASE_PAYMENT_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "PURCHASE_PAYMENT_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "PURCHASE_PAYMENT_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "PURCHASE_PAYMENT_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "PURCHASE_PAYMENT_SORT_KEY_FINAL_REF_NUMBER" },
+  { no: 12, name: "PURCHASE_PAYMENT_SORT_KEY_PAYMENT_TIMESTAMP" },
 ]);
 
 /**
@@ -104,7 +104,7 @@ proto3.util.setEnumType(PURCHASE_PAYMENT_SORT_KEY, "Genesis.PURCHASE_PAYMENT_SOR
  *
  * @generated from message Genesis.PurchasesPaymentsServiceCreateRequest
  */
-export class PurchasesPaymentsServiceCreateRequest extends Message<PurchasesPaymentsServiceCreateRequest> ***REMOVED***
+export class PurchasesPaymentsServiceCreateRequest extends Message<PurchasesPaymentsServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -196,45 +196,45 @@ export class PurchasesPaymentsServiceCreateRequest extends Message<PurchasesPaym
    */
   description = "";
 
-  constructor(data?: PartialMessage<PurchasesPaymentsServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesPaymentsServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesPaymentsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "bank_account_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "amount_base", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "amount_net", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "payment_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "bank_account_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 17, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "amount_base", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 19, name: "amount_net", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "payment_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServiceCreateRequest {
     return new PurchasesPaymentsServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceCreateRequest {
     return new PurchasesPaymentsServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceCreateRequest {
     return new PurchasesPaymentsServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesPaymentsServiceCreateRequest | PlainMessage<PurchasesPaymentsServiceCreateRequest> | undefined, b: PurchasesPaymentsServiceCreateRequest | PlainMessage<PurchasesPaymentsServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesPaymentsServiceCreateRequest | PlainMessage<PurchasesPaymentsServiceCreateRequest> | undefined, b: PurchasesPaymentsServiceCreateRequest | PlainMessage<PurchasesPaymentsServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(PurchasesPaymentsServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -242,7 +242,7 @@ export class PurchasesPaymentsServiceCreateRequest extends Message<PurchasesPaym
  *
  * @generated from message Genesis.PurchasesPaymentsServiceUpdateRequest
  */
-export class PurchasesPaymentsServiceUpdateRequest extends Message<PurchasesPaymentsServiceUpdateRequest> ***REMOVED***
+export class PurchasesPaymentsServiceUpdateRequest extends Message<PurchasesPaymentsServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -327,44 +327,44 @@ export class PurchasesPaymentsServiceUpdateRequest extends Message<PurchasesPaym
    */
   description = "";
 
-  constructor(data?: PartialMessage<PurchasesPaymentsServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesPaymentsServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesPaymentsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "bank_account_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "amount_base", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "amount_net", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "payment_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "bank_account_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 17, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "amount_base", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 19, name: "amount_net", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "payment_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServiceUpdateRequest {
     return new PurchasesPaymentsServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceUpdateRequest {
     return new PurchasesPaymentsServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceUpdateRequest {
     return new PurchasesPaymentsServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesPaymentsServiceUpdateRequest | PlainMessage<PurchasesPaymentsServiceUpdateRequest> | undefined, b: PurchasesPaymentsServiceUpdateRequest | PlainMessage<PurchasesPaymentsServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesPaymentsServiceUpdateRequest | PlainMessage<PurchasesPaymentsServiceUpdateRequest> | undefined, b: PurchasesPaymentsServiceUpdateRequest | PlainMessage<PurchasesPaymentsServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(PurchasesPaymentsServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -372,7 +372,7 @@ export class PurchasesPaymentsServiceUpdateRequest extends Message<PurchasesPaym
  *
  * @generated from message Genesis.PurchasePayment
  */
-export class PurchasePayment extends Message<PurchasePayment> ***REMOVED***
+export class PurchasePayment extends Message<PurchasePayment> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -506,51 +506,51 @@ export class PurchasePayment extends Message<PurchasePayment> ***REMOVED***
    */
   description = "";
 
-  constructor(data?: PartialMessage<PurchasePayment>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasePayment>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasePayment";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "vendor_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "bank_account_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 17, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 18, name: "amount_base", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 19, name: "amount_net", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "payment_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "vendor_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "bank_account_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 17, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "amount_base", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 19, name: "amount_net", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "payment_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasePayment ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasePayment {
     return new PurchasePayment().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasePayment ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasePayment {
     return new PurchasePayment().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasePayment ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasePayment {
     return new PurchasePayment().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasePayment | PlainMessage<PurchasePayment> | undefined, b: PurchasePayment | PlainMessage<PurchasePayment> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasePayment | PlainMessage<PurchasePayment> | undefined, b: PurchasePayment | PlainMessage<PurchasePayment> | undefined): boolean {
     return proto3.util.equals(PurchasePayment, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -558,7 +558,7 @@ export class PurchasePayment extends Message<PurchasePayment> ***REMOVED***
  *
  * @generated from message Genesis.PurchasesPaymentsList
  */
-export class PurchasesPaymentsList extends Message<PurchasesPaymentsList> ***REMOVED***
+export class PurchasesPaymentsList extends Message<PurchasesPaymentsList> {
   /**
    * List of records
    *
@@ -566,33 +566,33 @@ export class PurchasesPaymentsList extends Message<PurchasesPaymentsList> ***REM
    */
   list: PurchasePayment[] = [];
 
-  constructor(data?: PartialMessage<PurchasesPaymentsList>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesPaymentsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesPaymentsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: PurchasePayment, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: PurchasePayment, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsList {
     return new PurchasesPaymentsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsList {
     return new PurchasesPaymentsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsList {
     return new PurchasesPaymentsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesPaymentsList | PlainMessage<PurchasesPaymentsList> | undefined, b: PurchasesPaymentsList | PlainMessage<PurchasesPaymentsList> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesPaymentsList | PlainMessage<PurchasesPaymentsList> | undefined, b: PurchasesPaymentsList | PlainMessage<PurchasesPaymentsList> | undefined): boolean {
     return proto3.util.equals(PurchasesPaymentsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -600,7 +600,7 @@ export class PurchasesPaymentsList extends Message<PurchasesPaymentsList> ***REM
  *
  * @generated from message Genesis.PurchasesPaymentsServicePaginationReq
  */
-export class PurchasesPaymentsServicePaginationReq extends Message<PurchasesPaymentsServicePaginationReq> ***REMOVED***
+export class PurchasesPaymentsServicePaginationReq extends Message<PurchasesPaymentsServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -643,38 +643,38 @@ export class PurchasesPaymentsServicePaginationReq extends Message<PurchasesPaym
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<PurchasesPaymentsServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesPaymentsServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesPaymentsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_PAYMENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_PAYMENT_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServicePaginationReq {
     return new PurchasesPaymentsServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServicePaginationReq {
     return new PurchasesPaymentsServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServicePaginationReq {
     return new PurchasesPaymentsServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesPaymentsServicePaginationReq | PlainMessage<PurchasesPaymentsServicePaginationReq> | undefined, b: PurchasesPaymentsServicePaginationReq | PlainMessage<PurchasesPaymentsServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesPaymentsServicePaginationReq | PlainMessage<PurchasesPaymentsServicePaginationReq> | undefined, b: PurchasesPaymentsServicePaginationReq | PlainMessage<PurchasesPaymentsServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(PurchasesPaymentsServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -682,7 +682,7 @@ export class PurchasesPaymentsServicePaginationReq extends Message<PurchasesPaym
  *
  * @generated from message Genesis.PurchasesPaymentsServicePaginationResponse
  */
-export class PurchasesPaymentsServicePaginationResponse extends Message<PurchasesPaymentsServicePaginationResponse> ***REMOVED***
+export class PurchasesPaymentsServicePaginationResponse extends Message<PurchasesPaymentsServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -711,36 +711,36 @@ export class PurchasesPaymentsServicePaginationResponse extends Message<Purchase
    */
   payload: PurchasePayment[] = [];
 
-  constructor(data?: PartialMessage<PurchasesPaymentsServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesPaymentsServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesPaymentsServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: PurchasePayment, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: PurchasePayment, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServicePaginationResponse {
     return new PurchasesPaymentsServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServicePaginationResponse {
     return new PurchasesPaymentsServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServicePaginationResponse {
     return new PurchasesPaymentsServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesPaymentsServicePaginationResponse | PlainMessage<PurchasesPaymentsServicePaginationResponse> | undefined, b: PurchasesPaymentsServicePaginationResponse | PlainMessage<PurchasesPaymentsServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesPaymentsServicePaginationResponse | PlainMessage<PurchasesPaymentsServicePaginationResponse> | undefined, b: PurchasesPaymentsServicePaginationResponse | PlainMessage<PurchasesPaymentsServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(PurchasesPaymentsServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -748,7 +748,7 @@ export class PurchasesPaymentsServicePaginationResponse extends Message<Purchase
  *
  * @generated from message Genesis.PurchasesPaymentsServiceEntityPaginationReq
  */
-export class PurchasesPaymentsServiceEntityPaginationReq extends Message<PurchasesPaymentsServiceEntityPaginationReq> ***REMOVED***
+export class PurchasesPaymentsServiceEntityPaginationReq extends Message<PurchasesPaymentsServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -791,38 +791,38 @@ export class PurchasesPaymentsServiceEntityPaginationReq extends Message<Purchas
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<PurchasesPaymentsServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesPaymentsServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesPaymentsServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_PAYMENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_PAYMENT_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServiceEntityPaginationReq {
     return new PurchasesPaymentsServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceEntityPaginationReq {
     return new PurchasesPaymentsServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceEntityPaginationReq {
     return new PurchasesPaymentsServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesPaymentsServiceEntityPaginationReq | PlainMessage<PurchasesPaymentsServiceEntityPaginationReq> | undefined, b: PurchasesPaymentsServiceEntityPaginationReq | PlainMessage<PurchasesPaymentsServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesPaymentsServiceEntityPaginationReq | PlainMessage<PurchasesPaymentsServiceEntityPaginationReq> | undefined, b: PurchasesPaymentsServiceEntityPaginationReq | PlainMessage<PurchasesPaymentsServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(PurchasesPaymentsServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -830,7 +830,7 @@ export class PurchasesPaymentsServiceEntityPaginationReq extends Message<Purchas
  *
  * @generated from message Genesis.PurchasesPaymentsServiceFilterReq
  */
-export class PurchasesPaymentsServiceFilterReq extends Message<PurchasesPaymentsServiceFilterReq> ***REMOVED***
+export class PurchasesPaymentsServiceFilterReq extends Message<PurchasesPaymentsServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1006,57 +1006,57 @@ export class PurchasesPaymentsServiceFilterReq extends Message<PurchasesPayments
    */
   paymentTimestampEnd = protoInt64.zero;
 
-  constructor(data?: PartialMessage<PurchasesPaymentsServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesPaymentsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesPaymentsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_PAYMENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "vendor_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "bank_account_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 26, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 27, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 28, name: "payment_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 29, name: "payment_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_PAYMENT_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "ref_from", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: "ref_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 24, name: "vendor_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 25, name: "bank_account_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 26, name: "currency_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 27, name: "transaction_type", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 28, name: "payment_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 29, name: "payment_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServiceFilterReq {
     return new PurchasesPaymentsServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceFilterReq {
     return new PurchasesPaymentsServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceFilterReq {
     return new PurchasesPaymentsServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesPaymentsServiceFilterReq | PlainMessage<PurchasesPaymentsServiceFilterReq> | undefined, b: PurchasesPaymentsServiceFilterReq | PlainMessage<PurchasesPaymentsServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesPaymentsServiceFilterReq | PlainMessage<PurchasesPaymentsServiceFilterReq> | undefined, b: PurchasesPaymentsServiceFilterReq | PlainMessage<PurchasesPaymentsServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(PurchasesPaymentsServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1064,7 +1064,7 @@ export class PurchasesPaymentsServiceFilterReq extends Message<PurchasesPayments
  *
  * @generated from message Genesis.PurchasesPaymentsServiceSearchAllReq
  */
-export class PurchasesPaymentsServiceSearchAllReq extends Message<PurchasesPaymentsServiceSearchAllReq> ***REMOVED***
+export class PurchasesPaymentsServiceSearchAllReq extends Message<PurchasesPaymentsServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1121,38 +1121,38 @@ export class PurchasesPaymentsServiceSearchAllReq extends Message<PurchasesPayme
    */
   searchKey = "";
 
-  constructor(data?: PartialMessage<PurchasesPaymentsServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<PurchasesPaymentsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.PurchasesPaymentsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_PAYMENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PURCHASE_PAYMENT_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): PurchasesPaymentsServiceSearchAllReq {
     return new PurchasesPaymentsServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceSearchAllReq {
     return new PurchasesPaymentsServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceSearchAllReq {
     return new PurchasesPaymentsServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: PurchasesPaymentsServiceSearchAllReq | PlainMessage<PurchasesPaymentsServiceSearchAllReq> | undefined, b: PurchasesPaymentsServiceSearchAllReq | PlainMessage<PurchasesPaymentsServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: PurchasesPaymentsServiceSearchAllReq | PlainMessage<PurchasesPaymentsServiceSearchAllReq> | undefined, b: PurchasesPaymentsServiceSearchAllReq | PlainMessage<PurchasesPaymentsServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(PurchasesPaymentsServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available input types for a skill group item (with possible vbalues being number-absolute, number-percentage, text-input, text-dropdown)
  *
  * @generated from enum Genesis.SKILL_GROUP_ITEM_INPUT_VALUE_TYPE
  */
-export declare enum SKILL_GROUP_ITEM_INPUT_VALUE_TYPE ***REMOVED***
+export declare enum SKILL_GROUP_ITEM_INPUT_VALUE_TYPE {
     /**
      * Input value type is an absolute number (with min and max defined in number_min_value and number_max_value)
      *
@@ -33,14 +33,14 @@ export declare enum SKILL_GROUP_ITEM_INPUT_VALUE_TYPE ***REMOVED***
      * @generated from enum value: SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 3;
      */
     SKILL_GROUP_ITEM_INPUT_VALUE_TYPE_TEXT_DROPDOWN = 3
-***REMOVED***
+}
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.SKILL_GROUP_SORT_KEY
  */
-export declare enum SKILL_GROUP_SORT_KEY ***REMOVED***
+export declare enum SKILL_GROUP_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -95,14 +95,14 @@ export declare enum SKILL_GROUP_SORT_KEY ***REMOVED***
      * @generated from enum value: SKILL_GROUP_SORT_KEY_ROLE_ID = 11;
      */
     SKILL_GROUP_SORT_KEY_ROLE_ID = 11
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.SkillsGroupsServiceCreateRequest
  */
-export declare class SkillsGroupsServiceCreateRequest extends Message<SkillsGroupsServiceCreateRequest> ***REMOVED***
+export declare class SkillsGroupsServiceCreateRequest extends Message<SkillsGroupsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -159,14 +159,14 @@ export declare class SkillsGroupsServiceCreateRequest extends Message<SkillsGrou
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillsGroupsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillsGroupsServiceCreateRequest;
     static equals(a: SkillsGroupsServiceCreateRequest | PlainMessage<SkillsGroupsServiceCreateRequest> | undefined, b: SkillsGroupsServiceCreateRequest | PlainMessage<SkillsGroupsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.SkillsGroupsServiceUpdateRequest
  */
-export declare class SkillsGroupsServiceUpdateRequest extends Message<SkillsGroupsServiceUpdateRequest> ***REMOVED***
+export declare class SkillsGroupsServiceUpdateRequest extends Message<SkillsGroupsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -229,14 +229,14 @@ export declare class SkillsGroupsServiceUpdateRequest extends Message<SkillsGrou
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillsGroupsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillsGroupsServiceUpdateRequest;
     static equals(a: SkillsGroupsServiceUpdateRequest | PlainMessage<SkillsGroupsServiceUpdateRequest> | undefined, b: SkillsGroupsServiceUpdateRequest | PlainMessage<SkillsGroupsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.SkillGroup
  */
-export declare class SkillGroup extends Message<SkillGroup> ***REMOVED***
+export declare class SkillGroup extends Message<SkillGroup> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -323,14 +323,14 @@ export declare class SkillGroup extends Message<SkillGroup> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillGroup;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillGroup;
     static equals(a: SkillGroup | PlainMessage<SkillGroup> | undefined, b: SkillGroup | PlainMessage<SkillGroup> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to add a param to a skill group
  *
  * @generated from message Genesis.SkillsGroupsServiceItemCreateRequest
  */
-export declare class SkillsGroupsServiceItemCreateRequest extends Message<SkillsGroupsServiceItemCreateRequest> ***REMOVED***
+export declare class SkillsGroupsServiceItemCreateRequest extends Message<SkillsGroupsServiceItemCreateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -387,14 +387,14 @@ export declare class SkillsGroupsServiceItemCreateRequest extends Message<Skills
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillsGroupsServiceItemCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillsGroupsServiceItemCreateRequest;
     static equals(a: SkillsGroupsServiceItemCreateRequest | PlainMessage<SkillsGroupsServiceItemCreateRequest> | undefined, b: SkillsGroupsServiceItemCreateRequest | PlainMessage<SkillsGroupsServiceItemCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters required to update a param in a skill group
  *
  * @generated from message Genesis.SkillsGroupsServiceItemUpdateRequest
  */
-export declare class SkillsGroupsServiceItemUpdateRequest extends Message<SkillsGroupsServiceItemUpdateRequest> ***REMOVED***
+export declare class SkillsGroupsServiceItemUpdateRequest extends Message<SkillsGroupsServiceItemUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -445,14 +445,14 @@ export declare class SkillsGroupsServiceItemUpdateRequest extends Message<Skills
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillsGroupsServiceItemUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillsGroupsServiceItemUpdateRequest;
     static equals(a: SkillsGroupsServiceItemUpdateRequest | PlainMessage<SkillsGroupsServiceItemUpdateRequest> | undefined, b: SkillsGroupsServiceItemUpdateRequest | PlainMessage<SkillsGroupsServiceItemUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that constitute a param associated to a skill group
  *
  * @generated from message Genesis.SkillGroupItem
  */
-export declare class SkillGroupItem extends Message<SkillGroupItem> ***REMOVED***
+export declare class SkillGroupItem extends Message<SkillGroupItem> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -533,14 +533,14 @@ export declare class SkillGroupItem extends Message<SkillGroupItem> ***REMOVED**
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillGroupItem;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillGroupItem;
     static equals(a: SkillGroupItem | PlainMessage<SkillGroupItem> | undefined, b: SkillGroupItem | PlainMessage<SkillGroupItem> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of skills groups
  *
  * @generated from message Genesis.SkillsGroupsList
  */
-export declare class SkillsGroupsList extends Message<SkillsGroupsList> ***REMOVED***
+export declare class SkillsGroupsList extends Message<SkillsGroupsList> {
     /**
      * List of records
      *
@@ -555,14 +555,14 @@ export declare class SkillsGroupsList extends Message<SkillsGroupsList> ***REMOV
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillsGroupsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillsGroupsList;
     static equals(a: SkillsGroupsList | PlainMessage<SkillsGroupsList> | undefined, b: SkillsGroupsList | PlainMessage<SkillsGroupsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of skill group params
  *
  * @generated from message Genesis.SkillsGroupsItemsList
  */
-export declare class SkillsGroupsItemsList extends Message<SkillsGroupsItemsList> ***REMOVED***
+export declare class SkillsGroupsItemsList extends Message<SkillsGroupsItemsList> {
     /**
      * List of records
      *
@@ -577,14 +577,14 @@ export declare class SkillsGroupsItemsList extends Message<SkillsGroupsItemsList
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillsGroupsItemsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillsGroupsItemsList;
     static equals(a: SkillsGroupsItemsList | PlainMessage<SkillsGroupsItemsList> | undefined, b: SkillsGroupsItemsList | PlainMessage<SkillsGroupsItemsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are required to retrieve the history of the record
  *
  * @generated from message Genesis.SkillGroupItemHistoryRequest
  */
-export declare class SkillGroupItemHistoryRequest extends Message<SkillGroupItemHistoryRequest> ***REMOVED***
+export declare class SkillGroupItemHistoryRequest extends Message<SkillGroupItemHistoryRequest> {
     /**
      * Stores the ID of the skill group
      *
@@ -605,14 +605,14 @@ export declare class SkillGroupItemHistoryRequest extends Message<SkillGroupItem
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillGroupItemHistoryRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillGroupItemHistoryRequest;
     static equals(a: SkillGroupItemHistoryRequest | PlainMessage<SkillGroupItemHistoryRequest> | undefined, b: SkillGroupItemHistoryRequest | PlainMessage<SkillGroupItemHistoryRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.SkillsGroupsServicePaginationReq
  */
-export declare class SkillsGroupsServicePaginationReq extends Message<SkillsGroupsServicePaginationReq> ***REMOVED***
+export declare class SkillsGroupsServicePaginationReq extends Message<SkillsGroupsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -657,14 +657,14 @@ export declare class SkillsGroupsServicePaginationReq extends Message<SkillsGrou
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillsGroupsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillsGroupsServicePaginationReq;
     static equals(a: SkillsGroupsServicePaginationReq | PlainMessage<SkillsGroupsServicePaginationReq> | undefined, b: SkillsGroupsServicePaginationReq | PlainMessage<SkillsGroupsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.SkillsGroupsServicePaginationResponse
  */
-export declare class SkillsGroupsServicePaginationResponse extends Message<SkillsGroupsServicePaginationResponse> ***REMOVED***
+export declare class SkillsGroupsServicePaginationResponse extends Message<SkillsGroupsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -697,14 +697,14 @@ export declare class SkillsGroupsServicePaginationResponse extends Message<Skill
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillsGroupsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillsGroupsServicePaginationResponse;
     static equals(a: SkillsGroupsServicePaginationResponse | PlainMessage<SkillsGroupsServicePaginationResponse> | undefined, b: SkillsGroupsServicePaginationResponse | PlainMessage<SkillsGroupsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.SkillsGroupsServiceEntityPaginationReq
  */
-export declare class SkillsGroupsServiceEntityPaginationReq extends Message<SkillsGroupsServiceEntityPaginationReq> ***REMOVED***
+export declare class SkillsGroupsServiceEntityPaginationReq extends Message<SkillsGroupsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -749,14 +749,14 @@ export declare class SkillsGroupsServiceEntityPaginationReq extends Message<Skil
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillsGroupsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillsGroupsServiceEntityPaginationReq;
     static equals(a: SkillsGroupsServiceEntityPaginationReq | PlainMessage<SkillsGroupsServiceEntityPaginationReq> | undefined, b: SkillsGroupsServiceEntityPaginationReq | PlainMessage<SkillsGroupsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.SkillsGroupsServiceFilterReq
  */
-export declare class SkillsGroupsServiceFilterReq extends Message<SkillsGroupsServiceFilterReq> ***REMOVED***
+export declare class SkillsGroupsServiceFilterReq extends Message<SkillsGroupsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -867,14 +867,14 @@ export declare class SkillsGroupsServiceFilterReq extends Message<SkillsGroupsSe
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillsGroupsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillsGroupsServiceFilterReq;
     static equals(a: SkillsGroupsServiceFilterReq | PlainMessage<SkillsGroupsServiceFilterReq> | undefined, b: SkillsGroupsServiceFilterReq | PlainMessage<SkillsGroupsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.SkillsGroupsServiceSearchAllReq
  */
-export declare class SkillsGroupsServiceSearchAllReq extends Message<SkillsGroupsServiceSearchAllReq> ***REMOVED***
+export declare class SkillsGroupsServiceSearchAllReq extends Message<SkillsGroupsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -931,5 +931,5 @@ export declare class SkillsGroupsServiceSearchAllReq extends Message<SkillsGroup
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): SkillsGroupsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): SkillsGroupsServiceSearchAllReq;
     static equals(a: SkillsGroupsServiceSearchAllReq | PlainMessage<SkillsGroupsServiceSearchAllReq> | undefined, b: SkillsGroupsServiceSearchAllReq | PlainMessage<SkillsGroupsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=skills_groups_pb.d.ts.map

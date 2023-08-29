@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** AuthTokenValidityRequest, LogoutRequest, LogoutResponse, UserLoginRequest, UserLoginResponse ***REMOVED*** from "./logins_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** BooleanResponse ***REMOVED*** from "./base_pb.js";
+import { AuthTokenValidityRequest, LogoutRequest, LogoutResponse, UserLoginRequest, UserLoginResponse } from "./logins_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
+import { BooleanResponse } from "./base_pb.js";
 
 /**
  *
@@ -13,42 +13,42 @@ import ***REMOVED*** BooleanResponse ***REMOVED*** from "./base_pb.js";
  *
  * @generated from service Genesis.LoginService
  */
-export const LoginService = ***REMOVED***
+export const LoginService = {
   typeName: "Genesis.LoginService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Login using credentials belonging to a user and evaluate using user's primary role
      *
      * @generated from rpc Genesis.LoginService.UserLoginPrimary
      */
-    userLoginPrimary: ***REMOVED***
+    userLoginPrimary: {
       name: "UserLoginPrimary",
       I: UserLoginRequest,
       O: UserLoginResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Check if the auth token is still valid
      *
      * @generated from rpc Genesis.LoginService.IsAuthTokenValid
      */
-    isAuthTokenValid: ***REMOVED***
+    isAuthTokenValid: {
       name: "IsAuthTokenValid",
       I: AuthTokenValidityRequest,
       O: BooleanResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Logout
      *
      * @generated from rpc Genesis.LoginService.Logout
      */
-    logout: ***REMOVED***
+    logout: {
       name: "Logout",
       I: LogoutRequest,
       O: LogoutResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

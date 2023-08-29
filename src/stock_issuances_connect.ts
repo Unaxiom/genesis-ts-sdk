@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** StockIssuance, StockIssuanceItem, StockIssuanceItemHistoryRequest, StockIssuanceItemProspectiveInfoRequest, StockIssuancesItemsList, StockIssuancesList, StockIssuancesServiceAlreadyAddedQuantityForSourceRequest, StockIssuancesServiceAutofillRequest, StockIssuancesServiceCreateRequest, StockIssuancesServiceEntityPaginationReq, StockIssuancesServiceFilterReq, StockIssuancesServiceItemCreateRequest, StockIssuancesServiceItemUpdateRequest, StockIssuancesServicePaginationReq, StockIssuancesServicePaginationResponse, StockIssuancesServiceSearchAllReq, StockIssuancesServiceUpdateRequest ***REMOVED*** from "./stock_issuances_pb.js";
-import ***REMOVED*** ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
+import { StockIssuance, StockIssuanceItem, StockIssuanceItemHistoryRequest, StockIssuanceItemProspectiveInfoRequest, StockIssuancesItemsList, StockIssuancesList, StockIssuancesServiceAlreadyAddedQuantityForSourceRequest, StockIssuancesServiceAutofillRequest, StockIssuancesServiceCreateRequest, StockIssuancesServiceEntityPaginationReq, StockIssuancesServiceFilterReq, StockIssuancesServiceItemCreateRequest, StockIssuancesServiceItemUpdateRequest, StockIssuancesServicePaginationReq, StockIssuancesServicePaginationResponse, StockIssuancesServiceSearchAllReq, StockIssuancesServiceUpdateRequest } from "./stock_issuances_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, QuantityResponse, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
+import { FamiliesList } from "./families_pb.js";
 
 /**
  *
@@ -14,427 +14,427 @@ import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
  *
  * @generated from service Genesis.StockIssuancesService
  */
-export const StockIssuancesService = ***REMOVED***
+export const StockIssuancesService = {
   typeName: "Genesis.StockIssuancesService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.StockIssuancesService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: StockIssuancesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.StockIssuancesService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: StockIssuancesServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.StockIssuancesService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: StockIssuancesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.StockIssuancesService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.StockIssuancesService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.StockIssuancesService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.StockIssuancesService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.StockIssuancesService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: StockIssuancesServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.StockIssuancesService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.StockIssuancesService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.StockIssuancesService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.StockIssuancesService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.StockIssuancesService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.StockIssuancesService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
      * @generated from rpc Genesis.StockIssuancesService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send Email
      *
      * @generated from rpc Genesis.StockIssuancesService.SendEmail
      */
-    sendEmail: ***REMOVED***
+    sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Autofill the stock issuance
      *
      * @generated from rpc Genesis.StockIssuancesService.Autofill
      */
-    autofill: ***REMOVED***
+    autofill: {
       name: "Autofill",
       I: StockIssuancesServiceAutofillRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Checks if the Stock Issuance can be marked as completed
      *
      * @generated from rpc Genesis.StockIssuancesService.IsCompletable
      */
-    isCompletable: ***REMOVED***
+    isCompletable: {
       name: "IsCompletable",
       I: Identifier,
       O: BooleanResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add an item to a stock issuance
      *
      * @generated from rpc Genesis.StockIssuancesService.AddStockIssuanceItem
      */
-    addStockIssuanceItem: ***REMOVED***
+    addStockIssuanceItem: {
       name: "AddStockIssuanceItem",
       I: StockIssuancesServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify an item in a stock issuance
      *
      * @generated from rpc Genesis.StockIssuancesService.ModifyStockIssuanceItem
      */
-    modifyStockIssuanceItem: ***REMOVED***
+    modifyStockIssuanceItem: {
       name: "ModifyStockIssuanceItem",
       I: StockIssuancesServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve an item in a stock issuance
      *
      * @generated from rpc Genesis.StockIssuancesService.ApproveStockIssuanceItem
      */
-    approveStockIssuanceItem: ***REMOVED***
+    approveStockIssuanceItem: {
       name: "ApproveStockIssuanceItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete an item in a stock issuance
      *
      * @generated from rpc Genesis.StockIssuancesService.DeleteStockIssuanceItem
      */
-    deleteStockIssuanceItem: ***REMOVED***
+    deleteStockIssuanceItem: {
       name: "DeleteStockIssuanceItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder items in a stock issuance
      *
      * @generated from rpc Genesis.StockIssuancesService.ReorderStockIssuanceItems
      */
-    reorderStockIssuanceItems: ***REMOVED***
+    reorderStockIssuanceItems: {
       name: "ReorderStockIssuanceItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Stock Issuance Item by ID
      *
      * @generated from rpc Genesis.StockIssuancesService.ViewStockIssuanceItemByID
      */
-    viewStockIssuanceItemByID: ***REMOVED***
+    viewStockIssuanceItemByID: {
       name: "ViewStockIssuanceItemByID",
       I: Identifier,
       O: StockIssuanceItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved stock issuance items for given stock issuance ID
      *
      * @generated from rpc Genesis.StockIssuancesService.ViewApprovedStockIssuanceItems
      */
-    viewApprovedStockIssuanceItems: ***REMOVED***
+    viewApprovedStockIssuanceItems: {
       name: "ViewApprovedStockIssuanceItems",
       I: IdentifierWithSearchKey,
       O: StockIssuancesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved stock issuance items for given stock issuance ID
      *
      * @generated from rpc Genesis.StockIssuancesService.ViewUnapprovedStockIssuanceItems
      */
-    viewUnapprovedStockIssuanceItems: ***REMOVED***
+    viewUnapprovedStockIssuanceItems: {
       name: "ViewUnapprovedStockIssuanceItems",
       I: IdentifierWithSearchKey,
       O: StockIssuancesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the stock issuance item
      *
      * @generated from rpc Genesis.StockIssuancesService.ViewStockIssuanceItemHistory
      */
-    viewStockIssuanceItemHistory: ***REMOVED***
+    viewStockIssuanceItemHistory: {
       name: "ViewStockIssuanceItemHistory",
       I: StockIssuanceItemHistoryRequest,
       O: StockIssuancesItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.StockIssuancesService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: StockIssuance,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.StockIssuancesService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: StockIssuancesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.StockIssuancesService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: StockIssuancesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.StockIssuancesService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: StockIssuancesServicePaginationReq,
       O: StockIssuancesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.StockIssuancesService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: StockIssuancesServiceEntityPaginationReq,
       O: StockIssuancesServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View prospective families for the given stock issuance
      *
      * @generated from rpc Genesis.StockIssuancesService.ViewProspectiveFamilies
      */
-    viewProspectiveFamilies: ***REMOVED***
+    viewProspectiveFamilies: {
       name: "ViewProspectiveFamilies",
       I: IdentifierWithSearchKey,
       O: FamiliesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View prospective stock issuance item info for the given family ID and stock issuance ID
      *
      * @generated from rpc Genesis.StockIssuancesService.ViewProspectiveStockIssuanceItem
      */
-    viewProspectiveStockIssuanceItem: ***REMOVED***
+    viewProspectiveStockIssuanceItem: {
       name: "ViewProspectiveStockIssuanceItem",
       I: StockIssuanceItemProspectiveInfoRequest,
       O: StockIssuancesServiceItemCreateRequest,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View already added quantities
      *
      * @generated from rpc Genesis.StockIssuancesService.ViewAddedFamilyQuantityForSource
      */
-    viewAddedFamilyQuantityForSource: ***REMOVED***
+    viewAddedFamilyQuantityForSource: {
       name: "ViewAddedFamilyQuantityForSource",
       I: StockIssuancesServiceAlreadyAddedQuantityForSourceRequest,
       O: QuantityResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.StockIssuancesService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: StockIssuancesServiceSearchAllReq,
       O: StockIssuancesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.StockIssuancesService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: StockIssuancesServiceFilterReq,
       O: StockIssuancesList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.StockIssuancesService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

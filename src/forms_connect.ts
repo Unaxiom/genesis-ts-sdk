@@ -3,8 +3,8 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** FormFieldDatumHistoryRequest, FormFieldDatumList ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { FormFieldDatumHistoryRequest, FormFieldDatumList } from "./forms_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -12,20 +12,20 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.FormsService
  */
-export const FormsService = ***REMOVED***
+export const FormsService = {
   typeName: "Genesis.FormsService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * View the historical values of the given form data
      *
      * @generated from rpc Genesis.FormsService.ViewFormDataHistory
      */
-    viewFormDataHistory: ***REMOVED***
+    viewFormDataHistory: {
       name: "ViewFormDataHistory",
       I: FormFieldDatumHistoryRequest,
       O: FormFieldDatumList,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

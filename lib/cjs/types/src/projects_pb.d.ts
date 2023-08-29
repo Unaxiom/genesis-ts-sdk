@@ -1,14 +1,14 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.PROJECT_SORT_KEY
  */
-export declare enum PROJECT_SORT_KEY ***REMOVED***
+export declare enum PROJECT_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -63,14 +63,14 @@ export declare enum PROJECT_SORT_KEY ***REMOVED***
      * @generated from enum value: PROJECT_SORT_KEY_FINAL_REF_NUMBER = 11;
      */
     PROJECT_SORT_KEY_FINAL_REF_NUMBER = 11
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.ProjectsServiceCreateRequest
  */
-export declare class ProjectsServiceCreateRequest extends Message<ProjectsServiceCreateRequest> ***REMOVED***
+export declare class ProjectsServiceCreateRequest extends Message<ProjectsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -121,14 +121,14 @@ export declare class ProjectsServiceCreateRequest extends Message<ProjectsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProjectsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProjectsServiceCreateRequest;
     static equals(a: ProjectsServiceCreateRequest | PlainMessage<ProjectsServiceCreateRequest> | undefined, b: ProjectsServiceCreateRequest | PlainMessage<ProjectsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.ProjectsServiceUpdateRequest
  */
-export declare class ProjectsServiceUpdateRequest extends Message<ProjectsServiceUpdateRequest> ***REMOVED***
+export declare class ProjectsServiceUpdateRequest extends Message<ProjectsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -185,14 +185,14 @@ export declare class ProjectsServiceUpdateRequest extends Message<ProjectsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProjectsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProjectsServiceUpdateRequest;
     static equals(a: ProjectsServiceUpdateRequest | PlainMessage<ProjectsServiceUpdateRequest> | undefined, b: ProjectsServiceUpdateRequest | PlainMessage<ProjectsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.Project
  */
-export declare class Project extends Message<Project> ***REMOVED***
+export declare class Project extends Message<Project> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -273,14 +273,14 @@ export declare class Project extends Message<Project> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): Project;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): Project;
     static equals(a: Project | PlainMessage<Project> | undefined, b: Project | PlainMessage<Project> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.ProjectsList
  */
-export declare class ProjectsList extends Message<ProjectsList> ***REMOVED***
+export declare class ProjectsList extends Message<ProjectsList> {
     /**
      * List of records
      *
@@ -295,14 +295,14 @@ export declare class ProjectsList extends Message<ProjectsList> ***REMOVED***
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProjectsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProjectsList;
     static equals(a: ProjectsList | PlainMessage<ProjectsList> | undefined, b: ProjectsList | PlainMessage<ProjectsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.ProjectsServicePaginationReq
  */
-export declare class ProjectsServicePaginationReq extends Message<ProjectsServicePaginationReq> ***REMOVED***
+export declare class ProjectsServicePaginationReq extends Message<ProjectsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -347,14 +347,14 @@ export declare class ProjectsServicePaginationReq extends Message<ProjectsServic
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProjectsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProjectsServicePaginationReq;
     static equals(a: ProjectsServicePaginationReq | PlainMessage<ProjectsServicePaginationReq> | undefined, b: ProjectsServicePaginationReq | PlainMessage<ProjectsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.ProjectsServicePaginationResponse
  */
-export declare class ProjectsServicePaginationResponse extends Message<ProjectsServicePaginationResponse> ***REMOVED***
+export declare class ProjectsServicePaginationResponse extends Message<ProjectsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -387,14 +387,14 @@ export declare class ProjectsServicePaginationResponse extends Message<ProjectsS
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProjectsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProjectsServicePaginationResponse;
     static equals(a: ProjectsServicePaginationResponse | PlainMessage<ProjectsServicePaginationResponse> | undefined, b: ProjectsServicePaginationResponse | PlainMessage<ProjectsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.ProjectsServiceEntityPaginationReq
  */
-export declare class ProjectsServiceEntityPaginationReq extends Message<ProjectsServiceEntityPaginationReq> ***REMOVED***
+export declare class ProjectsServiceEntityPaginationReq extends Message<ProjectsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -439,14 +439,14 @@ export declare class ProjectsServiceEntityPaginationReq extends Message<Projects
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProjectsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProjectsServiceEntityPaginationReq;
     static equals(a: ProjectsServiceEntityPaginationReq | PlainMessage<ProjectsServiceEntityPaginationReq> | undefined, b: ProjectsServiceEntityPaginationReq | PlainMessage<ProjectsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.ProjectsServiceFilterReq
  */
-export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> ***REMOVED***
+export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -563,14 +563,14 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProjectsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProjectsServiceFilterReq;
     static equals(a: ProjectsServiceFilterReq | PlainMessage<ProjectsServiceFilterReq> | undefined, b: ProjectsServiceFilterReq | PlainMessage<ProjectsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.ProjectsServiceSearchAllReq
  */
-export declare class ProjectsServiceSearchAllReq extends Message<ProjectsServiceSearchAllReq> ***REMOVED***
+export declare class ProjectsServiceSearchAllReq extends Message<ProjectsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -633,5 +633,5 @@ export declare class ProjectsServiceSearchAllReq extends Message<ProjectsService
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ProjectsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ProjectsServiceSearchAllReq;
     static equals(a: ProjectsServiceSearchAllReq | PlainMessage<ProjectsServiceSearchAllReq> | undefined, b: ProjectsServiceSearchAllReq | PlainMessage<ProjectsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=projects_pb.d.ts.map

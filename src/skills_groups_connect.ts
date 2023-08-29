@@ -3,9 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import ***REMOVED*** SkillGroup, SkillGroupItem, SkillGroupItemHistoryRequest, SkillsGroupsItemsList, SkillsGroupsList, SkillsGroupsServiceCreateRequest, SkillsGroupsServiceEntityPaginationReq, SkillsGroupsServiceFilterReq, SkillsGroupsServiceItemCreateRequest, SkillsGroupsServiceItemUpdateRequest, SkillsGroupsServicePaginationReq, SkillsGroupsServicePaginationResponse, SkillsGroupsServiceSearchAllReq, SkillsGroupsServiceUpdateRequest ***REMOVED*** from "./skills_groups_pb.js";
-import ***REMOVED*** ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
+import { SkillGroup, SkillGroupItem, SkillGroupItemHistoryRequest, SkillsGroupsItemsList, SkillsGroupsList, SkillsGroupsServiceCreateRequest, SkillsGroupsServiceEntityPaginationReq, SkillsGroupsServiceFilterReq, SkillsGroupsServiceItemCreateRequest, SkillsGroupsServiceItemUpdateRequest, SkillsGroupsServicePaginationReq, SkillsGroupsServicePaginationResponse, SkillsGroupsServiceSearchAllReq, SkillsGroupsServiceUpdateRequest } from "./skills_groups_pb.js";
+import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierUUID, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
@@ -13,163 +13,163 @@ import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
  *
  * @generated from service Genesis.SkillsGroupsService
  */
-export const SkillsGroupsService = ***REMOVED***
+export const SkillsGroupsService = {
   typeName: "Genesis.SkillsGroupsService",
-  methods: ***REMOVED***
+  methods: {
     /**
      * Create and send for verification
      *
      * @generated from rpc Genesis.SkillsGroupsService.Create
      */
-    create: ***REMOVED***
+    create: {
       name: "Create",
       I: SkillsGroupsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Create and save as draft
      *
      * @generated from rpc Genesis.SkillsGroupsService.Draft
      */
-    draft: ***REMOVED***
+    draft: {
       name: "Draft",
       I: SkillsGroupsServiceCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update draft
      *
      * @generated from rpc Genesis.SkillsGroupsService.DraftUpdate
      */
-    draftUpdate: ***REMOVED***
+    draftUpdate: {
       name: "DraftUpdate",
       I: SkillsGroupsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send for verification
      *
      * @generated from rpc Genesis.SkillsGroupsService.SendForVerification
      */
-    sendForVerification: ***REMOVED***
+    sendForVerification: {
       name: "SendForVerification",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Verify
      *
      * @generated from rpc Genesis.SkillsGroupsService.Verify
      */
-    verify: ***REMOVED***
+    verify: {
       name: "Verify",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve
      *
      * @generated from rpc Genesis.SkillsGroupsService.Approve
      */
-    approve: ***REMOVED***
+    approve: {
       name: "Approve",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Send For Revision
      *
      * @generated from rpc Genesis.SkillsGroupsService.SendForRevision
      */
-    sendForRevision: ***REMOVED***
+    sendForRevision: {
       name: "SendForRevision",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Update revision
      *
      * @generated from rpc Genesis.SkillsGroupsService.RevisionUpdate
      */
-    revisionUpdate: ***REMOVED***
+    revisionUpdate: {
       name: "RevisionUpdate",
       I: SkillsGroupsServiceUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Halt
      *
      * @generated from rpc Genesis.SkillsGroupsService.Halt
      */
-    halt: ***REMOVED***
+    halt: {
       name: "Halt",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Discard
      *
      * @generated from rpc Genesis.SkillsGroupsService.Discard
      */
-    discard: ***REMOVED***
+    discard: {
       name: "Discard",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Restore
      *
      * @generated from rpc Genesis.SkillsGroupsService.Restore
      */
-    restore: ***REMOVED***
+    restore: {
       name: "Restore",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Complete
      *
      * @generated from rpc Genesis.SkillsGroupsService.Complete
      */
-    complete: ***REMOVED***
+    complete: {
       name: "Complete",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Repeat
      *
      * @generated from rpc Genesis.SkillsGroupsService.Repeat
      */
-    repeat: ***REMOVED***
+    repeat: {
       name: "Repeat",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reopen
      *
      * @generated from rpc Genesis.SkillsGroupsService.Reopen
      */
-    reopen: ***REMOVED***
+    reopen: {
       name: "Reopen",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add comment
      *
@@ -178,221 +178,221 @@ export const SkillsGroupsService = ***REMOVED***
      *
      * @generated from rpc Genesis.SkillsGroupsService.CommentAdd
      */
-    commentAdd: ***REMOVED***
+    commentAdd: {
       name: "CommentAdd",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Clone skill group from an existing skill group (denoted by the identifier)
      *
      * @generated from rpc Genesis.SkillsGroupsService.Clone
      */
-    clone: ***REMOVED***
+    clone: {
       name: "Clone",
       I: CloneRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Add a param to a skill group
      *
      * @generated from rpc Genesis.SkillsGroupsService.AddSkillGroupItem
      */
-    addSkillGroupItem: ***REMOVED***
+    addSkillGroupItem: {
       name: "AddSkillGroupItem",
       I: SkillsGroupsServiceItemCreateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Modify a param in a skill group
      *
      * @generated from rpc Genesis.SkillsGroupsService.ModifySkillGroupItem
      */
-    modifySkillGroupItem: ***REMOVED***
+    modifySkillGroupItem: {
       name: "ModifySkillGroupItem",
       I: SkillsGroupsServiceItemUpdateRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Approve a param in a skill group
      *
      * @generated from rpc Genesis.SkillsGroupsService.ApproveSkillGroupItem
      */
-    approveSkillGroupItem: ***REMOVED***
+    approveSkillGroupItem: {
       name: "ApproveSkillGroupItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Delete a param in a skill group
      *
      * @generated from rpc Genesis.SkillsGroupsService.DeleteSkillGroupItem
      */
-    deleteSkillGroupItem: ***REMOVED***
+    deleteSkillGroupItem: {
       name: "DeleteSkillGroupItem",
       I: IdentifierWithUserComment,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Reorder params in a skill group
      *
      * @generated from rpc Genesis.SkillsGroupsService.ReorderSkillGroupItems
      */
-    reorderSkillGroupItems: ***REMOVED***
+    reorderSkillGroupItems: {
       name: "ReorderSkillGroupItems",
       I: ReorderItemsRequest,
       O: Identifier,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View Skill Group Item by ID
      *
      * @generated from rpc Genesis.SkillsGroupsService.ViewSkillGroupItemByID
      */
-    viewSkillGroupItemByID: ***REMOVED***
+    viewSkillGroupItemByID: {
       name: "ViewSkillGroupItemByID",
       I: Identifier,
       O: SkillGroupItem,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View approved skill group params for given skill group ID
      *
      * @generated from rpc Genesis.SkillsGroupsService.ViewApprovedSkillGroupItems
      */
-    viewApprovedSkillGroupItems: ***REMOVED***
+    viewApprovedSkillGroupItems: {
       name: "ViewApprovedSkillGroupItems",
       I: IdentifierWithSearchKey,
       O: SkillsGroupsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View unapproved skill group params for given skill group ID
      *
      * @generated from rpc Genesis.SkillsGroupsService.ViewUnapprovedSkillGroupItems
      */
-    viewUnapprovedSkillGroupItems: ***REMOVED***
+    viewUnapprovedSkillGroupItems: {
       name: "ViewUnapprovedSkillGroupItems",
       I: IdentifierWithSearchKey,
       O: SkillsGroupsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the history of the skill group item
      *
      * @generated from rpc Genesis.SkillsGroupsService.ViewSkillGroupItemHistory
      */
-    viewSkillGroupItemHistory: ***REMOVED***
+    viewSkillGroupItemHistory: {
       name: "ViewSkillGroupItemHistory",
       I: SkillGroupItemHistoryRequest,
       O: SkillsGroupsItemsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View by ID
      *
      * @generated from rpc Genesis.SkillsGroupsService.ViewByID
      */
-    viewByID: ***REMOVED***
+    viewByID: {
       name: "ViewByID",
       I: Identifier,
       O: SkillGroup,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all
      *
      * @generated from rpc Genesis.SkillsGroupsService.ViewAll
      */
-    viewAll: ***REMOVED***
+    viewAll: {
       name: "ViewAll",
       I: ActiveStatus,
       O: SkillsGroupsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all with the given entity UUID
      *
      * @generated from rpc Genesis.SkillsGroupsService.ViewAllForEntityUUID
      */
-    viewAllForEntityUUID: ***REMOVED***
+    viewAllForEntityUUID: {
       name: "ViewAllForEntityUUID",
       I: IdentifierUUID,
       O: SkillsGroupsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination
      *
      * @generated from rpc Genesis.SkillsGroupsService.ViewWithPagination
      */
-    viewWithPagination: ***REMOVED***
+    viewWithPagination: {
       name: "ViewWithPagination",
       I: SkillsGroupsServicePaginationReq,
       O: SkillsGroupsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View with pagination with the given entity UUID
      *
      * @generated from rpc Genesis.SkillsGroupsService.ViewWithPaginationForEntityUUID
      */
-    viewWithPaginationForEntityUUID: ***REMOVED***
+    viewWithPaginationForEntityUUID: {
       name: "ViewWithPaginationForEntityUUID",
       I: SkillsGroupsServiceEntityPaginationReq,
       O: SkillsGroupsServicePaginationResponse,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View the latest skill group for a role (denoted by the given identifier)
      *
      * @generated from rpc Genesis.SkillsGroupsService.ViewForRoleID
      */
-    viewForRoleID: ***REMOVED***
+    viewForRoleID: {
       name: "ViewForRoleID",
       I: Identifier,
       O: SkillGroup,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given search key
      *
      * @generated from rpc Genesis.SkillsGroupsService.SearchAll
      */
-    searchAll: ***REMOVED***
+    searchAll: {
       name: "SearchAll",
       I: SkillsGroupsServiceSearchAllReq,
       O: SkillsGroupsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * View all that match the given filter criteria
      *
      * @generated from rpc Genesis.SkillsGroupsService.Filter
      */
-    filter: ***REMOVED***
+    filter: {
       name: "Filter",
       I: SkillsGroupsServiceFilterReq,
       O: SkillsGroupsList,
       kind: MethodKind.Unary,
-***REMOVED***
+    },
     /**
      * Count in status
      *
      * @generated from rpc Genesis.SkillsGroupsService.CountInStatus
      */
-    countInStatus: ***REMOVED***
+    countInStatus: {
       name: "CountInStatus",
       I: CountInSLCStatusRequest,
       O: CountResponse,
       kind: MethodKind.Unary,
-***REMOVED***
-  ***REMOVED***
-***REMOVED*** as const;
+    },
+  }
+} as const;
 

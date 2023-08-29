@@ -1,445 +1,445 @@
-import ***REMOVED*** SalesReturn, SalesReturnItem, SalesReturnItemHistoryRequest, SalesReturnItemProspectiveInfoRequest, SalesReturnsItemsList, SalesReturnsList, SalesReturnsServiceAlreadyAddedQuantityForSourceRequest, SalesReturnsServiceCreateRequest, SalesReturnsServiceEntityPaginationReq, SalesReturnsServiceFilterReq, SalesReturnsServiceItemCreateRequest, SalesReturnsServiceItemUpdateRequest, SalesReturnsServicePaginationReq, SalesReturnsServicePaginationResponse, SalesReturnsServiceSearchAllReq, SalesReturnsServiceUpdateRequest ***REMOVED*** from "./sales_returns_pb.js";
-import ***REMOVED*** ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq ***REMOVED*** from "./base_pb.js";
-import ***REMOVED*** MethodKind ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FamiliesList ***REMOVED*** from "./families_pb.js";
+import { SalesReturn, SalesReturnItem, SalesReturnItemHistoryRequest, SalesReturnItemProspectiveInfoRequest, SalesReturnsItemsList, SalesReturnsList, SalesReturnsServiceAlreadyAddedQuantityForSourceRequest, SalesReturnsServiceCreateRequest, SalesReturnsServiceEntityPaginationReq, SalesReturnsServiceFilterReq, SalesReturnsServiceItemCreateRequest, SalesReturnsServiceItemUpdateRequest, SalesReturnsServicePaginationReq, SalesReturnsServicePaginationResponse, SalesReturnsServiceSearchAllReq, SalesReturnsServiceUpdateRequest } from "./sales_returns_pb.js";
+import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Identifier, IdentifierUUID, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq } from "./base_pb.js";
+import { MethodKind } from "@bufbuild/protobuf";
+import { FamiliesList } from "./families_pb.js";
 /**
  *
  * Describes the common methods applicable on each sales return
  *
  * @generated from service Genesis.SalesReturnsService
  */
-export declare const SalesReturnsService: ***REMOVED***
+export declare const SalesReturnsService: {
     readonly typeName: "Genesis.SalesReturnsService";
-    readonly methods: ***REMOVED***
+    readonly methods: {
         /**
          * Create and send for verification
          *
          * @generated from rpc Genesis.SalesReturnsService.Create
          */
-        readonly create: ***REMOVED***
+        readonly create: {
             readonly name: "Create";
             readonly I: typeof SalesReturnsServiceCreateRequest;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Create and save as draft
          *
          * @generated from rpc Genesis.SalesReturnsService.Draft
          */
-        readonly draft: ***REMOVED***
+        readonly draft: {
             readonly name: "Draft";
             readonly I: typeof SalesReturnsServiceCreateRequest;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Update draft
          *
          * @generated from rpc Genesis.SalesReturnsService.DraftUpdate
          */
-        readonly draftUpdate: ***REMOVED***
+        readonly draftUpdate: {
             readonly name: "DraftUpdate";
             readonly I: typeof SalesReturnsServiceUpdateRequest;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Send for verification
          *
          * @generated from rpc Genesis.SalesReturnsService.SendForVerification
          */
-        readonly sendForVerification: ***REMOVED***
+        readonly sendForVerification: {
             readonly name: "SendForVerification";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Verify
          *
          * @generated from rpc Genesis.SalesReturnsService.Verify
          */
-        readonly verify: ***REMOVED***
+        readonly verify: {
             readonly name: "Verify";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Approve
          *
          * @generated from rpc Genesis.SalesReturnsService.Approve
          */
-        readonly approve: ***REMOVED***
+        readonly approve: {
             readonly name: "Approve";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Send For Revision
          *
          * @generated from rpc Genesis.SalesReturnsService.SendForRevision
          */
-        readonly sendForRevision: ***REMOVED***
+        readonly sendForRevision: {
             readonly name: "SendForRevision";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Update revision
          *
          * @generated from rpc Genesis.SalesReturnsService.RevisionUpdate
          */
-        readonly revisionUpdate: ***REMOVED***
+        readonly revisionUpdate: {
             readonly name: "RevisionUpdate";
             readonly I: typeof SalesReturnsServiceUpdateRequest;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Halt
          *
          * @generated from rpc Genesis.SalesReturnsService.Halt
          */
-        readonly halt: ***REMOVED***
+        readonly halt: {
             readonly name: "Halt";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Discard
          *
          * @generated from rpc Genesis.SalesReturnsService.Discard
          */
-        readonly discard: ***REMOVED***
+        readonly discard: {
             readonly name: "Discard";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Restore
          *
          * @generated from rpc Genesis.SalesReturnsService.Restore
          */
-        readonly restore: ***REMOVED***
+        readonly restore: {
             readonly name: "Restore";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Complete
          *
          * @generated from rpc Genesis.SalesReturnsService.Complete
          */
-        readonly complete: ***REMOVED***
+        readonly complete: {
             readonly name: "Complete";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Repeat
          *
          * @generated from rpc Genesis.SalesReturnsService.Repeat
          */
-        readonly repeat: ***REMOVED***
+        readonly repeat: {
             readonly name: "Repeat";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Reopen
          *
          * @generated from rpc Genesis.SalesReturnsService.Reopen
          */
-        readonly reopen: ***REMOVED***
+        readonly reopen: {
             readonly name: "Reopen";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Add comment
          *
          * @generated from rpc Genesis.SalesReturnsService.CommentAdd
          */
-        readonly commentAdd: ***REMOVED***
+        readonly commentAdd: {
             readonly name: "CommentAdd";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Send Email
          *
          * @generated from rpc Genesis.SalesReturnsService.SendEmail
          */
-        readonly sendEmail: ***REMOVED***
+        readonly sendEmail: {
             readonly name: "SendEmail";
             readonly I: typeof IdentifierWithEmailAttributes;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Checks if the Sales Return can be marked as completed
          *
          * @generated from rpc Genesis.SalesReturnsService.IsCompletable
          */
-        readonly isCompletable: ***REMOVED***
+        readonly isCompletable: {
             readonly name: "IsCompletable";
             readonly I: typeof Identifier;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Add an item to a sales return
          *
          * @generated from rpc Genesis.SalesReturnsService.AddSalesReturnItem
          */
-        readonly addSalesReturnItem: ***REMOVED***
+        readonly addSalesReturnItem: {
             readonly name: "AddSalesReturnItem";
             readonly I: typeof SalesReturnsServiceItemCreateRequest;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Modify an item in a sales return
          *
          * @generated from rpc Genesis.SalesReturnsService.ModifySalesReturnItem
          */
-        readonly modifySalesReturnItem: ***REMOVED***
+        readonly modifySalesReturnItem: {
             readonly name: "ModifySalesReturnItem";
             readonly I: typeof SalesReturnsServiceItemUpdateRequest;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Approve an item in a sales return
          *
          * @generated from rpc Genesis.SalesReturnsService.ApproveSalesReturnItem
          */
-        readonly approveSalesReturnItem: ***REMOVED***
+        readonly approveSalesReturnItem: {
             readonly name: "ApproveSalesReturnItem";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Delete an item in a sales return
          *
          * @generated from rpc Genesis.SalesReturnsService.DeleteSalesReturnItem
          */
-        readonly deleteSalesReturnItem: ***REMOVED***
+        readonly deleteSalesReturnItem: {
             readonly name: "DeleteSalesReturnItem";
             readonly I: typeof IdentifierWithUserComment;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Reorder items in a sales return
          *
          * @generated from rpc Genesis.SalesReturnsService.ReorderSalesReturnItems
          */
-        readonly reorderSalesReturnItems: ***REMOVED***
+        readonly reorderSalesReturnItems: {
             readonly name: "ReorderSalesReturnItems";
             readonly I: typeof ReorderItemsRequest;
             readonly O: typeof Identifier;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View Sales Return Item by ID
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewSalesReturnItemByID
          */
-        readonly viewSalesReturnItemByID: ***REMOVED***
+        readonly viewSalesReturnItemByID: {
             readonly name: "ViewSalesReturnItemByID";
             readonly I: typeof Identifier;
             readonly O: typeof SalesReturnItem;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View Sales Return Item by Inventory Hash
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewSalesReturnItemByInventoryHash
          */
-        readonly viewSalesReturnItemByInventoryHash: ***REMOVED***
+        readonly viewSalesReturnItemByInventoryHash: {
             readonly name: "ViewSalesReturnItemByInventoryHash";
             readonly I: typeof SimpleSearchReq;
             readonly O: typeof SalesReturnItem;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View approved sales return items for given sales return ID
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewApprovedSalesReturnItems
          */
-        readonly viewApprovedSalesReturnItems: ***REMOVED***
+        readonly viewApprovedSalesReturnItems: {
             readonly name: "ViewApprovedSalesReturnItems";
             readonly I: typeof IdentifierWithSearchKey;
             readonly O: typeof SalesReturnsItemsList;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View unapproved sales return items for given sales return ID
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewUnapprovedSalesReturnItems
          */
-        readonly viewUnapprovedSalesReturnItems: ***REMOVED***
+        readonly viewUnapprovedSalesReturnItems: {
             readonly name: "ViewUnapprovedSalesReturnItems";
             readonly I: typeof IdentifierWithSearchKey;
             readonly O: typeof SalesReturnsItemsList;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View the history of the sales return item
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewSalesReturnItemHistory
          */
-        readonly viewSalesReturnItemHistory: ***REMOVED***
+        readonly viewSalesReturnItemHistory: {
             readonly name: "ViewSalesReturnItemHistory";
             readonly I: typeof SalesReturnItemHistoryRequest;
             readonly O: typeof SalesReturnsItemsList;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View by ID
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewByID
          */
-        readonly viewByID: ***REMOVED***
+        readonly viewByID: {
             readonly name: "ViewByID";
             readonly I: typeof Identifier;
             readonly O: typeof SalesReturn;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View all
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewAll
          */
-        readonly viewAll: ***REMOVED***
+        readonly viewAll: {
             readonly name: "ViewAll";
             readonly I: typeof ActiveStatus;
             readonly O: typeof SalesReturnsList;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View all with the given entity UUID
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewAllForEntityUUID
          */
-        readonly viewAllForEntityUUID: ***REMOVED***
+        readonly viewAllForEntityUUID: {
             readonly name: "ViewAllForEntityUUID";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof SalesReturnsList;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View with pagination
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewWithPagination
          */
-        readonly viewWithPagination: ***REMOVED***
+        readonly viewWithPagination: {
             readonly name: "ViewWithPagination";
             readonly I: typeof SalesReturnsServicePaginationReq;
             readonly O: typeof SalesReturnsServicePaginationResponse;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View with pagination with the given entity UUID
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewWithPaginationForEntityUUID
          */
-        readonly viewWithPaginationForEntityUUID: ***REMOVED***
+        readonly viewWithPaginationForEntityUUID: {
             readonly name: "ViewWithPaginationForEntityUUID";
             readonly I: typeof SalesReturnsServiceEntityPaginationReq;
             readonly O: typeof SalesReturnsServicePaginationResponse;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View prospective families for the given sales return
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewProspectiveFamilies
          */
-        readonly viewProspectiveFamilies: ***REMOVED***
+        readonly viewProspectiveFamilies: {
             readonly name: "ViewProspectiveFamilies";
             readonly I: typeof IdentifierWithSearchKey;
             readonly O: typeof FamiliesList;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View prospective sales return item info for the given family ID and sales return ID
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewProspectiveSalesReturnItem
          */
-        readonly viewProspectiveSalesReturnItem: ***REMOVED***
+        readonly viewProspectiveSalesReturnItem: {
             readonly name: "ViewProspectiveSalesReturnItem";
             readonly I: typeof SalesReturnItemProspectiveInfoRequest;
             readonly O: typeof SalesReturnsServiceItemCreateRequest;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Checks if the Sales Return has been billed
          *
          * @generated from rpc Genesis.SalesReturnsService.IsBilled
          */
-        readonly isBilled: ***REMOVED***
+        readonly isBilled: {
             readonly name: "IsBilled";
             readonly I: typeof Identifier;
             readonly O: typeof BooleanResponse;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View already added quantities
          *
          * @generated from rpc Genesis.SalesReturnsService.ViewAddedFamilyQuantityForSource
          */
-        readonly viewAddedFamilyQuantityForSource: ***REMOVED***
+        readonly viewAddedFamilyQuantityForSource: {
             readonly name: "ViewAddedFamilyQuantityForSource";
             readonly I: typeof SalesReturnsServiceAlreadyAddedQuantityForSourceRequest;
             readonly O: typeof DualQuantitiesResponse;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View all that match the given search key
          *
          * @generated from rpc Genesis.SalesReturnsService.SearchAll
          */
-        readonly searchAll: ***REMOVED***
+        readonly searchAll: {
             readonly name: "SearchAll";
             readonly I: typeof SalesReturnsServiceSearchAllReq;
             readonly O: typeof SalesReturnsList;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * View all that match the given filter criteria
          *
          * @generated from rpc Genesis.SalesReturnsService.Filter
          */
-        readonly filter: ***REMOVED***
+        readonly filter: {
             readonly name: "Filter";
             readonly I: typeof SalesReturnsServiceFilterReq;
             readonly O: typeof SalesReturnsList;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
+        };
         /**
          * Count in status
          *
          * @generated from rpc Genesis.SalesReturnsService.CountInStatus
          */
-        readonly countInStatus: ***REMOVED***
+        readonly countInStatus: {
             readonly name: "CountInStatus";
             readonly I: typeof CountInSLCStatusRequest;
             readonly O: typeof CountResponse;
             readonly kind: MethodKind.Unary;
-***REMOVED***;
-***REMOVED***;
-***REMOVED***;
+        };
+    };
+};
 //# sourceMappingURL=sales_returns_connect.d.ts.map

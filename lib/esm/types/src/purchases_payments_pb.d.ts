@@ -1,13 +1,13 @@
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 /**
  *
  * Describes the available sort keys
  *
  * @generated from enum Genesis.PURCHASE_PAYMENT_SORT_KEY
  */
-export declare enum PURCHASE_PAYMENT_SORT_KEY ***REMOVED***
+export declare enum PURCHASE_PAYMENT_SORT_KEY {
     /**
      * Fetch ordered results by id
      *
@@ -68,14 +68,14 @@ export declare enum PURCHASE_PAYMENT_SORT_KEY ***REMOVED***
      * @generated from enum value: PURCHASE_PAYMENT_SORT_KEY_PAYMENT_TIMESTAMP = 12;
      */
     PURCHASE_PAYMENT_SORT_KEY_PAYMENT_TIMESTAMP = 12
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to create a record
  *
  * @generated from message Genesis.PurchasesPaymentsServiceCreateRequest
  */
-export declare class PurchasesPaymentsServiceCreateRequest extends Message<PurchasesPaymentsServiceCreateRequest> ***REMOVED***
+export declare class PurchasesPaymentsServiceCreateRequest extends Message<PurchasesPaymentsServiceCreateRequest> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -162,14 +162,14 @@ export declare class PurchasesPaymentsServiceCreateRequest extends Message<Purch
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceCreateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceCreateRequest;
     static equals(a: PurchasesPaymentsServiceCreateRequest | PlainMessage<PurchasesPaymentsServiceCreateRequest> | undefined, b: PurchasesPaymentsServiceCreateRequest | PlainMessage<PurchasesPaymentsServiceCreateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters necessary to update a record
  *
  * @generated from message Genesis.PurchasesPaymentsServiceUpdateRequest
  */
-export declare class PurchasesPaymentsServiceUpdateRequest extends Message<PurchasesPaymentsServiceUpdateRequest> ***REMOVED***
+export declare class PurchasesPaymentsServiceUpdateRequest extends Message<PurchasesPaymentsServiceUpdateRequest> {
     /**
      * Stores any comment that the user might add during this operation
      *
@@ -250,14 +250,14 @@ export declare class PurchasesPaymentsServiceUpdateRequest extends Message<Purch
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceUpdateRequest;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceUpdateRequest;
     static equals(a: PurchasesPaymentsServiceUpdateRequest | PlainMessage<PurchasesPaymentsServiceUpdateRequest> | undefined, b: PurchasesPaymentsServiceUpdateRequest | PlainMessage<PurchasesPaymentsServiceUpdateRequest> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the parameters that are part of a standard response
  *
  * @generated from message Genesis.PurchasePayment
  */
-export declare class PurchasePayment extends Message<PurchasePayment> ***REMOVED***
+export declare class PurchasePayment extends Message<PurchasePayment> {
     /**
      * Stores a globally unique entity UUID. This will be set at the organization level
      *
@@ -380,14 +380,14 @@ export declare class PurchasePayment extends Message<PurchasePayment> ***REMOVED
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasePayment;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasePayment;
     static equals(a: PurchasePayment | PlainMessage<PurchasePayment> | undefined, b: PurchasePayment | PlainMessage<PurchasePayment> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the message consisting of the list of records
  *
  * @generated from message Genesis.PurchasesPaymentsList
  */
-export declare class PurchasesPaymentsList extends Message<PurchasesPaymentsList> ***REMOVED***
+export declare class PurchasesPaymentsList extends Message<PurchasesPaymentsList> {
     /**
      * List of records
      *
@@ -402,14 +402,14 @@ export declare class PurchasesPaymentsList extends Message<PurchasesPaymentsList
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsList;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsList;
     static equals(a: PurchasesPaymentsList | PlainMessage<PurchasesPaymentsList> | undefined, b: PurchasesPaymentsList | PlainMessage<PurchasesPaymentsList> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records
  *
  * @generated from message Genesis.PurchasesPaymentsServicePaginationReq
  */
-export declare class PurchasesPaymentsServicePaginationReq extends Message<PurchasesPaymentsServicePaginationReq> ***REMOVED***
+export declare class PurchasesPaymentsServicePaginationReq extends Message<PurchasesPaymentsServicePaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -454,14 +454,14 @@ export declare class PurchasesPaymentsServicePaginationReq extends Message<Purch
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServicePaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServicePaginationReq;
     static equals(a: PurchasesPaymentsServicePaginationReq | PlainMessage<PurchasesPaymentsServicePaginationReq> | undefined, b: PurchasesPaymentsServicePaginationReq | PlainMessage<PurchasesPaymentsServicePaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the response to a pagination request
  *
  * @generated from message Genesis.PurchasesPaymentsServicePaginationResponse
  */
-export declare class PurchasesPaymentsServicePaginationResponse extends Message<PurchasesPaymentsServicePaginationResponse> ***REMOVED***
+export declare class PurchasesPaymentsServicePaginationResponse extends Message<PurchasesPaymentsServicePaginationResponse> {
     /**
      * The number of records in this payload
      *
@@ -494,14 +494,14 @@ export declare class PurchasesPaymentsServicePaginationResponse extends Message<
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServicePaginationResponse;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServicePaginationResponse;
     static equals(a: PurchasesPaymentsServicePaginationResponse | PlainMessage<PurchasesPaymentsServicePaginationResponse> | undefined, b: PurchasesPaymentsServicePaginationResponse | PlainMessage<PurchasesPaymentsServicePaginationResponse> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes a pagination request to retrieve records associated with an entity UUID
  *
  * @generated from message Genesis.PurchasesPaymentsServiceEntityPaginationReq
  */
-export declare class PurchasesPaymentsServiceEntityPaginationReq extends Message<PurchasesPaymentsServiceEntityPaginationReq> ***REMOVED***
+export declare class PurchasesPaymentsServiceEntityPaginationReq extends Message<PurchasesPaymentsServiceEntityPaginationReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -546,14 +546,14 @@ export declare class PurchasesPaymentsServiceEntityPaginationReq extends Message
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceEntityPaginationReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceEntityPaginationReq;
     static equals(a: PurchasesPaymentsServiceEntityPaginationReq | PlainMessage<PurchasesPaymentsServiceEntityPaginationReq> | undefined, b: PurchasesPaymentsServiceEntityPaginationReq | PlainMessage<PurchasesPaymentsServiceEntityPaginationReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the base request payload of a filter search
  *
  * @generated from message Genesis.PurchasesPaymentsServiceFilterReq
  */
-export declare class PurchasesPaymentsServiceFilterReq extends Message<PurchasesPaymentsServiceFilterReq> ***REMOVED***
+export declare class PurchasesPaymentsServiceFilterReq extends Message<PurchasesPaymentsServiceFilterReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -712,14 +712,14 @@ export declare class PurchasesPaymentsServiceFilterReq extends Message<Purchases
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceFilterReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceFilterReq;
     static equals(a: PurchasesPaymentsServiceFilterReq | PlainMessage<PurchasesPaymentsServiceFilterReq> | undefined, b: PurchasesPaymentsServiceFilterReq | PlainMessage<PurchasesPaymentsServiceFilterReq> | undefined): boolean;
-***REMOVED***
+}
 /**
  *
  * Describes the request payload for performing a generic search operation on records
  *
  * @generated from message Genesis.PurchasesPaymentsServiceSearchAllReq
  */
-export declare class PurchasesPaymentsServiceSearchAllReq extends Message<PurchasesPaymentsServiceSearchAllReq> ***REMOVED***
+export declare class PurchasesPaymentsServiceSearchAllReq extends Message<PurchasesPaymentsServiceSearchAllReq> {
     /**
      * If true, then returns only active records. If false, then returns only inactive records
      *
@@ -776,5 +776,5 @@ export declare class PurchasesPaymentsServiceSearchAllReq extends Message<Purcha
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceSearchAllReq;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): PurchasesPaymentsServiceSearchAllReq;
     static equals(a: PurchasesPaymentsServiceSearchAllReq | PlainMessage<PurchasesPaymentsServiceSearchAllReq> | undefined, b: PurchasesPaymentsServiceSearchAllReq | PlainMessage<PurchasesPaymentsServiceSearchAllReq> | undefined): boolean;
-***REMOVED***
+}
 //# sourceMappingURL=purchases_payments_pb.d.ts.map

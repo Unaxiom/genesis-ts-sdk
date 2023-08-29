@@ -9,9 +9,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -19,7 +19,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.LEAVE_ADJUSTMENT_SORT_KEY
  */
-export enum LEAVE_ADJUSTMENT_SORT_KEY ***REMOVED***
+export enum LEAVE_ADJUSTMENT_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -89,19 +89,19 @@ export enum LEAVE_ADJUSTMENT_SORT_KEY ***REMOVED***
    * @generated from enum value: LEAVE_ADJUSTMENT_SORT_KEY_USER_ID = 12;
    */
   LEAVE_ADJUSTMENT_SORT_KEY_USER_ID = 12,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(LEAVE_ADJUSTMENT_SORT_KEY)
 proto3.util.setEnumType(LEAVE_ADJUSTMENT_SORT_KEY, "Genesis.LEAVE_ADJUSTMENT_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "LEAVE_ADJUSTMENT_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "LEAVE_ADJUSTMENT_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "LEAVE_ADJUSTMENT_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "LEAVE_ADJUSTMENT_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "LEAVE_ADJUSTMENT_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "LEAVE_ADJUSTMENT_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "LEAVE_ADJUSTMENT_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "LEAVE_ADJUSTMENT_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "LEAVE_ADJUSTMENT_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
-  ***REMOVED*** no: 12, name: "LEAVE_ADJUSTMENT_SORT_KEY_USER_ID" ***REMOVED***,
+  { no: 0, name: "LEAVE_ADJUSTMENT_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "LEAVE_ADJUSTMENT_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "LEAVE_ADJUSTMENT_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "LEAVE_ADJUSTMENT_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "LEAVE_ADJUSTMENT_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "LEAVE_ADJUSTMENT_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "LEAVE_ADJUSTMENT_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "LEAVE_ADJUSTMENT_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "LEAVE_ADJUSTMENT_SORT_KEY_FINAL_REF_NUMBER" },
+  { no: 12, name: "LEAVE_ADJUSTMENT_SORT_KEY_USER_ID" },
 ]);
 
 /**
@@ -110,7 +110,7 @@ proto3.util.setEnumType(LEAVE_ADJUSTMENT_SORT_KEY, "Genesis.LEAVE_ADJUSTMENT_SOR
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceCreateRequest
  */
-export class LeavesAdjustmentsServiceCreateRequest extends Message<LeavesAdjustmentsServiceCreateRequest> ***REMOVED***
+export class LeavesAdjustmentsServiceCreateRequest extends Message<LeavesAdjustmentsServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -153,38 +153,38 @@ export class LeavesAdjustmentsServiceCreateRequest extends Message<LeavesAdjustm
    */
   description = "";
 
-  constructor(data?: PartialMessage<LeavesAdjustmentsServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesAdjustmentsServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesAdjustmentsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceCreateRequest {
     return new LeavesAdjustmentsServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceCreateRequest {
     return new LeavesAdjustmentsServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceCreateRequest {
     return new LeavesAdjustmentsServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesAdjustmentsServiceCreateRequest | PlainMessage<LeavesAdjustmentsServiceCreateRequest> | undefined, b: LeavesAdjustmentsServiceCreateRequest | PlainMessage<LeavesAdjustmentsServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesAdjustmentsServiceCreateRequest | PlainMessage<LeavesAdjustmentsServiceCreateRequest> | undefined, b: LeavesAdjustmentsServiceCreateRequest | PlainMessage<LeavesAdjustmentsServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(LeavesAdjustmentsServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -192,7 +192,7 @@ export class LeavesAdjustmentsServiceCreateRequest extends Message<LeavesAdjustm
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceUpdateRequest
  */
-export class LeavesAdjustmentsServiceUpdateRequest extends Message<LeavesAdjustmentsServiceUpdateRequest> ***REMOVED***
+export class LeavesAdjustmentsServiceUpdateRequest extends Message<LeavesAdjustmentsServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -235,38 +235,38 @@ export class LeavesAdjustmentsServiceUpdateRequest extends Message<LeavesAdjustm
    */
   description = "";
 
-  constructor(data?: PartialMessage<LeavesAdjustmentsServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesAdjustmentsServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesAdjustmentsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceUpdateRequest {
     return new LeavesAdjustmentsServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceUpdateRequest {
     return new LeavesAdjustmentsServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceUpdateRequest {
     return new LeavesAdjustmentsServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesAdjustmentsServiceUpdateRequest | PlainMessage<LeavesAdjustmentsServiceUpdateRequest> | undefined, b: LeavesAdjustmentsServiceUpdateRequest | PlainMessage<LeavesAdjustmentsServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesAdjustmentsServiceUpdateRequest | PlainMessage<LeavesAdjustmentsServiceUpdateRequest> | undefined, b: LeavesAdjustmentsServiceUpdateRequest | PlainMessage<LeavesAdjustmentsServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(LeavesAdjustmentsServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -274,7 +274,7 @@ export class LeavesAdjustmentsServiceUpdateRequest extends Message<LeavesAdjustm
  *
  * @generated from message Genesis.LeaveAdjustment
  */
-export class LeaveAdjustment extends Message<LeaveAdjustment> ***REMOVED***
+export class LeaveAdjustment extends Message<LeaveAdjustment> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -359,44 +359,44 @@ export class LeaveAdjustment extends Message<LeaveAdjustment> ***REMOVED***
    */
   list: LeaveAdjustmentRecord[] = [];
 
-  constructor(data?: PartialMessage<LeaveAdjustment>) ***REMOVED***
+  constructor(data?: PartialMessage<LeaveAdjustment>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeaveAdjustment";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "list", kind: "message", T: LeaveAdjustmentRecord, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "list", kind: "message", T: LeaveAdjustmentRecord, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeaveAdjustment ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeaveAdjustment {
     return new LeaveAdjustment().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeaveAdjustment ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeaveAdjustment {
     return new LeaveAdjustment().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeaveAdjustment ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeaveAdjustment {
     return new LeaveAdjustment().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeaveAdjustment | PlainMessage<LeaveAdjustment> | undefined, b: LeaveAdjustment | PlainMessage<LeaveAdjustment> | undefined): boolean ***REMOVED***
+  static equals(a: LeaveAdjustment | PlainMessage<LeaveAdjustment> | undefined, b: LeaveAdjustment | PlainMessage<LeaveAdjustment> | undefined): boolean {
     return proto3.util.equals(LeaveAdjustment, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -404,7 +404,7 @@ export class LeaveAdjustment extends Message<LeaveAdjustment> ***REMOVED***
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceRecordCreateRequest
  */
-export class LeavesAdjustmentsServiceRecordCreateRequest extends Message<LeavesAdjustmentsServiceRecordCreateRequest> ***REMOVED***
+export class LeavesAdjustmentsServiceRecordCreateRequest extends Message<LeavesAdjustmentsServiceRecordCreateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -440,37 +440,37 @@ export class LeavesAdjustmentsServiceRecordCreateRequest extends Message<LeavesA
    */
   quantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<LeavesAdjustmentsServiceRecordCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesAdjustmentsServiceRecordCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesAdjustmentsServiceRecordCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "leave_adjustment_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "leave_adjustment_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceRecordCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceRecordCreateRequest {
     return new LeavesAdjustmentsServiceRecordCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceRecordCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceRecordCreateRequest {
     return new LeavesAdjustmentsServiceRecordCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceRecordCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceRecordCreateRequest {
     return new LeavesAdjustmentsServiceRecordCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesAdjustmentsServiceRecordCreateRequest | PlainMessage<LeavesAdjustmentsServiceRecordCreateRequest> | undefined, b: LeavesAdjustmentsServiceRecordCreateRequest | PlainMessage<LeavesAdjustmentsServiceRecordCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesAdjustmentsServiceRecordCreateRequest | PlainMessage<LeavesAdjustmentsServiceRecordCreateRequest> | undefined, b: LeavesAdjustmentsServiceRecordCreateRequest | PlainMessage<LeavesAdjustmentsServiceRecordCreateRequest> | undefined): boolean {
     return proto3.util.equals(LeavesAdjustmentsServiceRecordCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -478,7 +478,7 @@ export class LeavesAdjustmentsServiceRecordCreateRequest extends Message<LeavesA
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceRecordUpdateRequest
  */
-export class LeavesAdjustmentsServiceRecordUpdateRequest extends Message<LeavesAdjustmentsServiceRecordUpdateRequest> ***REMOVED***
+export class LeavesAdjustmentsServiceRecordUpdateRequest extends Message<LeavesAdjustmentsServiceRecordUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -521,38 +521,38 @@ export class LeavesAdjustmentsServiceRecordUpdateRequest extends Message<LeavesA
    */
   quantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<LeavesAdjustmentsServiceRecordUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesAdjustmentsServiceRecordUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesAdjustmentsServiceRecordUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "leave_adjustment_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "leave_adjustment_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceRecordUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceRecordUpdateRequest {
     return new LeavesAdjustmentsServiceRecordUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceRecordUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceRecordUpdateRequest {
     return new LeavesAdjustmentsServiceRecordUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceRecordUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceRecordUpdateRequest {
     return new LeavesAdjustmentsServiceRecordUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesAdjustmentsServiceRecordUpdateRequest | PlainMessage<LeavesAdjustmentsServiceRecordUpdateRequest> | undefined, b: LeavesAdjustmentsServiceRecordUpdateRequest | PlainMessage<LeavesAdjustmentsServiceRecordUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesAdjustmentsServiceRecordUpdateRequest | PlainMessage<LeavesAdjustmentsServiceRecordUpdateRequest> | undefined, b: LeavesAdjustmentsServiceRecordUpdateRequest | PlainMessage<LeavesAdjustmentsServiceRecordUpdateRequest> | undefined): boolean {
     return proto3.util.equals(LeavesAdjustmentsServiceRecordUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -560,7 +560,7 @@ export class LeavesAdjustmentsServiceRecordUpdateRequest extends Message<LeavesA
  *
  * @generated from message Genesis.LeaveAdjustmentRecord
  */
-export class LeaveAdjustmentRecord extends Message<LeaveAdjustmentRecord> ***REMOVED***
+export class LeaveAdjustmentRecord extends Message<LeaveAdjustmentRecord> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -624,41 +624,41 @@ export class LeaveAdjustmentRecord extends Message<LeaveAdjustmentRecord> ***REM
    */
   quantity = protoInt64.zero;
 
-  constructor(data?: PartialMessage<LeaveAdjustmentRecord>) ***REMOVED***
+  constructor(data?: PartialMessage<LeaveAdjustmentRecord>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeaveAdjustmentRecord";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "leave_adjustment_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "leave_adjustment_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "uom_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "quantity", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeaveAdjustmentRecord ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeaveAdjustmentRecord {
     return new LeaveAdjustmentRecord().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeaveAdjustmentRecord ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeaveAdjustmentRecord {
     return new LeaveAdjustmentRecord().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeaveAdjustmentRecord ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeaveAdjustmentRecord {
     return new LeaveAdjustmentRecord().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeaveAdjustmentRecord | PlainMessage<LeaveAdjustmentRecord> | undefined, b: LeaveAdjustmentRecord | PlainMessage<LeaveAdjustmentRecord> | undefined): boolean ***REMOVED***
+  static equals(a: LeaveAdjustmentRecord | PlainMessage<LeaveAdjustmentRecord> | undefined, b: LeaveAdjustmentRecord | PlainMessage<LeaveAdjustmentRecord> | undefined): boolean {
     return proto3.util.equals(LeaveAdjustmentRecord, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -666,7 +666,7 @@ export class LeaveAdjustmentRecord extends Message<LeaveAdjustmentRecord> ***REM
  *
  * @generated from message Genesis.LeavesAdjustmentsList
  */
-export class LeavesAdjustmentsList extends Message<LeavesAdjustmentsList> ***REMOVED***
+export class LeavesAdjustmentsList extends Message<LeavesAdjustmentsList> {
   /**
    * List of records
    *
@@ -674,33 +674,33 @@ export class LeavesAdjustmentsList extends Message<LeavesAdjustmentsList> ***REM
    */
   list: LeaveAdjustment[] = [];
 
-  constructor(data?: PartialMessage<LeavesAdjustmentsList>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesAdjustmentsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesAdjustmentsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: LeaveAdjustment, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: LeaveAdjustment, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsList {
     return new LeavesAdjustmentsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsList {
     return new LeavesAdjustmentsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsList {
     return new LeavesAdjustmentsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesAdjustmentsList | PlainMessage<LeavesAdjustmentsList> | undefined, b: LeavesAdjustmentsList | PlainMessage<LeavesAdjustmentsList> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesAdjustmentsList | PlainMessage<LeavesAdjustmentsList> | undefined, b: LeavesAdjustmentsList | PlainMessage<LeavesAdjustmentsList> | undefined): boolean {
     return proto3.util.equals(LeavesAdjustmentsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -708,7 +708,7 @@ export class LeavesAdjustmentsList extends Message<LeavesAdjustmentsList> ***REM
  *
  * @generated from message Genesis.LeavesAdjustmentsRecordsList
  */
-export class LeavesAdjustmentsRecordsList extends Message<LeavesAdjustmentsRecordsList> ***REMOVED***
+export class LeavesAdjustmentsRecordsList extends Message<LeavesAdjustmentsRecordsList> {
   /**
    * List of records
    *
@@ -716,33 +716,33 @@ export class LeavesAdjustmentsRecordsList extends Message<LeavesAdjustmentsRecor
    */
   list: LeaveAdjustmentRecord[] = [];
 
-  constructor(data?: PartialMessage<LeavesAdjustmentsRecordsList>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesAdjustmentsRecordsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesAdjustmentsRecordsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: LeaveAdjustmentRecord, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: LeaveAdjustmentRecord, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsRecordsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsRecordsList {
     return new LeavesAdjustmentsRecordsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsRecordsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsRecordsList {
     return new LeavesAdjustmentsRecordsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsRecordsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsRecordsList {
     return new LeavesAdjustmentsRecordsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesAdjustmentsRecordsList | PlainMessage<LeavesAdjustmentsRecordsList> | undefined, b: LeavesAdjustmentsRecordsList | PlainMessage<LeavesAdjustmentsRecordsList> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesAdjustmentsRecordsList | PlainMessage<LeavesAdjustmentsRecordsList> | undefined, b: LeavesAdjustmentsRecordsList | PlainMessage<LeavesAdjustmentsRecordsList> | undefined): boolean {
     return proto3.util.equals(LeavesAdjustmentsRecordsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -750,7 +750,7 @@ export class LeavesAdjustmentsRecordsList extends Message<LeavesAdjustmentsRecor
  *
  * @generated from message Genesis.LeavesAdjustmentsRecordsHistoryRequest
  */
-export class LeavesAdjustmentsRecordsHistoryRequest extends Message<LeavesAdjustmentsRecordsHistoryRequest> ***REMOVED***
+export class LeavesAdjustmentsRecordsHistoryRequest extends Message<LeavesAdjustmentsRecordsHistoryRequest> {
   /**
    * Stores the leave adjustment ID
    *
@@ -765,34 +765,34 @@ export class LeavesAdjustmentsRecordsHistoryRequest extends Message<LeavesAdjust
    */
   leaveTypeId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<LeavesAdjustmentsRecordsHistoryRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesAdjustmentsRecordsHistoryRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesAdjustmentsRecordsHistoryRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 10, name: "leave_adjustment_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 10, name: "leave_adjustment_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 11, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsRecordsHistoryRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsRecordsHistoryRequest {
     return new LeavesAdjustmentsRecordsHistoryRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsRecordsHistoryRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsRecordsHistoryRequest {
     return new LeavesAdjustmentsRecordsHistoryRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsRecordsHistoryRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsRecordsHistoryRequest {
     return new LeavesAdjustmentsRecordsHistoryRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesAdjustmentsRecordsHistoryRequest | PlainMessage<LeavesAdjustmentsRecordsHistoryRequest> | undefined, b: LeavesAdjustmentsRecordsHistoryRequest | PlainMessage<LeavesAdjustmentsRecordsHistoryRequest> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesAdjustmentsRecordsHistoryRequest | PlainMessage<LeavesAdjustmentsRecordsHistoryRequest> | undefined, b: LeavesAdjustmentsRecordsHistoryRequest | PlainMessage<LeavesAdjustmentsRecordsHistoryRequest> | undefined): boolean {
     return proto3.util.equals(LeavesAdjustmentsRecordsHistoryRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -800,7 +800,7 @@ export class LeavesAdjustmentsRecordsHistoryRequest extends Message<LeavesAdjust
  *
  * @generated from message Genesis.LeavesAdjustmentsServicePaginationReq
  */
-export class LeavesAdjustmentsServicePaginationReq extends Message<LeavesAdjustmentsServicePaginationReq> ***REMOVED***
+export class LeavesAdjustmentsServicePaginationReq extends Message<LeavesAdjustmentsServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -843,38 +843,38 @@ export class LeavesAdjustmentsServicePaginationReq extends Message<LeavesAdjustm
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<LeavesAdjustmentsServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesAdjustmentsServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesAdjustmentsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_ADJUSTMENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_ADJUSTMENT_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServicePaginationReq {
     return new LeavesAdjustmentsServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServicePaginationReq {
     return new LeavesAdjustmentsServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServicePaginationReq {
     return new LeavesAdjustmentsServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesAdjustmentsServicePaginationReq | PlainMessage<LeavesAdjustmentsServicePaginationReq> | undefined, b: LeavesAdjustmentsServicePaginationReq | PlainMessage<LeavesAdjustmentsServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesAdjustmentsServicePaginationReq | PlainMessage<LeavesAdjustmentsServicePaginationReq> | undefined, b: LeavesAdjustmentsServicePaginationReq | PlainMessage<LeavesAdjustmentsServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(LeavesAdjustmentsServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -882,7 +882,7 @@ export class LeavesAdjustmentsServicePaginationReq extends Message<LeavesAdjustm
  *
  * @generated from message Genesis.LeavesAdjustmentsServicePaginationResponse
  */
-export class LeavesAdjustmentsServicePaginationResponse extends Message<LeavesAdjustmentsServicePaginationResponse> ***REMOVED***
+export class LeavesAdjustmentsServicePaginationResponse extends Message<LeavesAdjustmentsServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -911,36 +911,36 @@ export class LeavesAdjustmentsServicePaginationResponse extends Message<LeavesAd
    */
   payload: LeaveAdjustment[] = [];
 
-  constructor(data?: PartialMessage<LeavesAdjustmentsServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesAdjustmentsServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesAdjustmentsServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: LeaveAdjustment, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: LeaveAdjustment, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServicePaginationResponse {
     return new LeavesAdjustmentsServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServicePaginationResponse {
     return new LeavesAdjustmentsServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServicePaginationResponse {
     return new LeavesAdjustmentsServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesAdjustmentsServicePaginationResponse | PlainMessage<LeavesAdjustmentsServicePaginationResponse> | undefined, b: LeavesAdjustmentsServicePaginationResponse | PlainMessage<LeavesAdjustmentsServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesAdjustmentsServicePaginationResponse | PlainMessage<LeavesAdjustmentsServicePaginationResponse> | undefined, b: LeavesAdjustmentsServicePaginationResponse | PlainMessage<LeavesAdjustmentsServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(LeavesAdjustmentsServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -948,7 +948,7 @@ export class LeavesAdjustmentsServicePaginationResponse extends Message<LeavesAd
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceEntityPaginationReq
  */
-export class LeavesAdjustmentsServiceEntityPaginationReq extends Message<LeavesAdjustmentsServiceEntityPaginationReq> ***REMOVED***
+export class LeavesAdjustmentsServiceEntityPaginationReq extends Message<LeavesAdjustmentsServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -991,38 +991,38 @@ export class LeavesAdjustmentsServiceEntityPaginationReq extends Message<LeavesA
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<LeavesAdjustmentsServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesAdjustmentsServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesAdjustmentsServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_ADJUSTMENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_ADJUSTMENT_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceEntityPaginationReq {
     return new LeavesAdjustmentsServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceEntityPaginationReq {
     return new LeavesAdjustmentsServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceEntityPaginationReq {
     return new LeavesAdjustmentsServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesAdjustmentsServiceEntityPaginationReq | PlainMessage<LeavesAdjustmentsServiceEntityPaginationReq> | undefined, b: LeavesAdjustmentsServiceEntityPaginationReq | PlainMessage<LeavesAdjustmentsServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesAdjustmentsServiceEntityPaginationReq | PlainMessage<LeavesAdjustmentsServiceEntityPaginationReq> | undefined, b: LeavesAdjustmentsServiceEntityPaginationReq | PlainMessage<LeavesAdjustmentsServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(LeavesAdjustmentsServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1030,7 +1030,7 @@ export class LeavesAdjustmentsServiceEntityPaginationReq extends Message<LeavesA
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceFilterReq
  */
-export class LeavesAdjustmentsServiceFilterReq extends Message<LeavesAdjustmentsServiceFilterReq> ***REMOVED***
+export class LeavesAdjustmentsServiceFilterReq extends Message<LeavesAdjustmentsServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1157,50 +1157,50 @@ export class LeavesAdjustmentsServiceFilterReq extends Message<LeavesAdjustments
    */
   userId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<LeavesAdjustmentsServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesAdjustmentsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesAdjustmentsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_ADJUSTMENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_ADJUSTMENT_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceFilterReq {
     return new LeavesAdjustmentsServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceFilterReq {
     return new LeavesAdjustmentsServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceFilterReq {
     return new LeavesAdjustmentsServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesAdjustmentsServiceFilterReq | PlainMessage<LeavesAdjustmentsServiceFilterReq> | undefined, b: LeavesAdjustmentsServiceFilterReq | PlainMessage<LeavesAdjustmentsServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesAdjustmentsServiceFilterReq | PlainMessage<LeavesAdjustmentsServiceFilterReq> | undefined, b: LeavesAdjustmentsServiceFilterReq | PlainMessage<LeavesAdjustmentsServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(LeavesAdjustmentsServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1208,7 +1208,7 @@ export class LeavesAdjustmentsServiceFilterReq extends Message<LeavesAdjustments
  *
  * @generated from message Genesis.LeavesAdjustmentsServiceSearchAllReq
  */
-export class LeavesAdjustmentsServiceSearchAllReq extends Message<LeavesAdjustmentsServiceSearchAllReq> ***REMOVED***
+export class LeavesAdjustmentsServiceSearchAllReq extends Message<LeavesAdjustmentsServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1265,38 +1265,38 @@ export class LeavesAdjustmentsServiceSearchAllReq extends Message<LeavesAdjustme
    */
   searchKey = "";
 
-  constructor(data?: PartialMessage<LeavesAdjustmentsServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesAdjustmentsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesAdjustmentsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_ADJUSTMENT_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_ADJUSTMENT_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesAdjustmentsServiceSearchAllReq {
     return new LeavesAdjustmentsServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceSearchAllReq {
     return new LeavesAdjustmentsServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesAdjustmentsServiceSearchAllReq {
     return new LeavesAdjustmentsServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesAdjustmentsServiceSearchAllReq | PlainMessage<LeavesAdjustmentsServiceSearchAllReq> | undefined, b: LeavesAdjustmentsServiceSearchAllReq | PlainMessage<LeavesAdjustmentsServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesAdjustmentsServiceSearchAllReq | PlainMessage<LeavesAdjustmentsServiceSearchAllReq> | undefined, b: LeavesAdjustmentsServiceSearchAllReq | PlainMessage<LeavesAdjustmentsServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(LeavesAdjustmentsServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 

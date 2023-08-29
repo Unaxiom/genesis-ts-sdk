@@ -3,10 +3,10 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type ***REMOVED*** BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** Message, proto3, protoInt64 ***REMOVED*** from "@bufbuild/protobuf";
-import ***REMOVED*** FormFieldDatum, FormFieldDatumCreateRequest ***REMOVED*** from "./forms_pb.js";
-import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS ***REMOVED*** from "./base_pb.js";
+import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
+import { Message, proto3, protoInt64 } from "@bufbuild/protobuf";
+import { FormFieldDatum, FormFieldDatumCreateRequest } from "./forms_pb.js";
+import { ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base_pb.js";
 
 /**
  *
@@ -14,7 +14,7 @@ import ***REMOVED*** ApprovalMetadata, EmployeeMetadata, LogbookLogConciseSLC, S
  *
  * @generated from enum Genesis.LEAVE_REQUEST_SORT_KEY
  */
-export enum LEAVE_REQUEST_SORT_KEY ***REMOVED***
+export enum LEAVE_REQUEST_SORT_KEY {
   /**
    * Fetch ordered results by id
    *
@@ -105,22 +105,22 @@ export enum LEAVE_REQUEST_SORT_KEY ***REMOVED***
    * @generated from enum value: LEAVE_REQUEST_SORT_KEY_TO_TIMESTAMP = 15;
    */
   LEAVE_REQUEST_SORT_KEY_TO_TIMESTAMP = 15,
-***REMOVED***
+}
 // Retrieve enum metadata with: proto3.getEnumType(LEAVE_REQUEST_SORT_KEY)
 proto3.util.setEnumType(LEAVE_REQUEST_SORT_KEY, "Genesis.LEAVE_REQUEST_SORT_KEY", [
-  ***REMOVED*** no: 0, name: "LEAVE_REQUEST_SORT_KEY_ID_UNSPECIFIED" ***REMOVED***,
-  ***REMOVED*** no: 1, name: "LEAVE_REQUEST_SORT_KEY_CREATED_AT" ***REMOVED***,
-  ***REMOVED*** no: 2, name: "LEAVE_REQUEST_SORT_KEY_MODIFIED_AT" ***REMOVED***,
-  ***REMOVED*** no: 3, name: "LEAVE_REQUEST_SORT_KEY_APPROVED_ON" ***REMOVED***,
-  ***REMOVED*** no: 4, name: "LEAVE_REQUEST_SORT_KEY_APPROVED_BY" ***REMOVED***,
-  ***REMOVED*** no: 5, name: "LEAVE_REQUEST_SORT_KEY_APPROVER_ROLE_ID" ***REMOVED***,
-  ***REMOVED*** no: 6, name: "LEAVE_REQUEST_SORT_KEY_COMPLETED_ON" ***REMOVED***,
-  ***REMOVED*** no: 10, name: "LEAVE_REQUEST_SORT_KEY_REFERENCE_ID" ***REMOVED***,
-  ***REMOVED*** no: 11, name: "LEAVE_REQUEST_SORT_KEY_FINAL_REF_NUMBER" ***REMOVED***,
-  ***REMOVED*** no: 12, name: "LEAVE_REQUEST_SORT_KEY_USER_ID" ***REMOVED***,
-  ***REMOVED*** no: 13, name: "LEAVE_REQUEST_SORT_KEY_LEAVE_TYPE_ID" ***REMOVED***,
-  ***REMOVED*** no: 14, name: "LEAVE_REQUEST_SORT_KEY_FROM_TIMESTAMP" ***REMOVED***,
-  ***REMOVED*** no: 15, name: "LEAVE_REQUEST_SORT_KEY_TO_TIMESTAMP" ***REMOVED***,
+  { no: 0, name: "LEAVE_REQUEST_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "LEAVE_REQUEST_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "LEAVE_REQUEST_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "LEAVE_REQUEST_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "LEAVE_REQUEST_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "LEAVE_REQUEST_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 6, name: "LEAVE_REQUEST_SORT_KEY_COMPLETED_ON" },
+  { no: 10, name: "LEAVE_REQUEST_SORT_KEY_REFERENCE_ID" },
+  { no: 11, name: "LEAVE_REQUEST_SORT_KEY_FINAL_REF_NUMBER" },
+  { no: 12, name: "LEAVE_REQUEST_SORT_KEY_USER_ID" },
+  { no: 13, name: "LEAVE_REQUEST_SORT_KEY_LEAVE_TYPE_ID" },
+  { no: 14, name: "LEAVE_REQUEST_SORT_KEY_FROM_TIMESTAMP" },
+  { no: 15, name: "LEAVE_REQUEST_SORT_KEY_TO_TIMESTAMP" },
 ]);
 
 /**
@@ -129,7 +129,7 @@ proto3.util.setEnumType(LEAVE_REQUEST_SORT_KEY, "Genesis.LEAVE_REQUEST_SORT_KEY"
  *
  * @generated from message Genesis.LeavesRequestsServiceCreateRequest
  */
-export class LeavesRequestsServiceCreateRequest extends Message<LeavesRequestsServiceCreateRequest> ***REMOVED***
+export class LeavesRequestsServiceCreateRequest extends Message<LeavesRequestsServiceCreateRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -200,42 +200,42 @@ export class LeavesRequestsServiceCreateRequest extends Message<LeavesRequestsSe
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<LeavesRequestsServiceCreateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesRequestsServiceCreateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesRequestsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "from_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "to_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "from_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "to_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServiceCreateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServiceCreateRequest {
     return new LeavesRequestsServiceCreateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServiceCreateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServiceCreateRequest {
     return new LeavesRequestsServiceCreateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServiceCreateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServiceCreateRequest {
     return new LeavesRequestsServiceCreateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesRequestsServiceCreateRequest | PlainMessage<LeavesRequestsServiceCreateRequest> | undefined, b: LeavesRequestsServiceCreateRequest | PlainMessage<LeavesRequestsServiceCreateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesRequestsServiceCreateRequest | PlainMessage<LeavesRequestsServiceCreateRequest> | undefined, b: LeavesRequestsServiceCreateRequest | PlainMessage<LeavesRequestsServiceCreateRequest> | undefined): boolean {
     return proto3.util.equals(LeavesRequestsServiceCreateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -243,7 +243,7 @@ export class LeavesRequestsServiceCreateRequest extends Message<LeavesRequestsSe
  *
  * @generated from message Genesis.LeavesRequestsServiceUpdateRequest
  */
-export class LeavesRequestsServiceUpdateRequest extends Message<LeavesRequestsServiceUpdateRequest> ***REMOVED***
+export class LeavesRequestsServiceUpdateRequest extends Message<LeavesRequestsServiceUpdateRequest> {
   /**
    * Stores any comment that the user might add during this operation
    *
@@ -314,42 +314,42 @@ export class LeavesRequestsServiceUpdateRequest extends Message<LeavesRequestsSe
    */
   formData: FormFieldDatumCreateRequest[] = [];
 
-  constructor(data?: PartialMessage<LeavesRequestsServiceUpdateRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesRequestsServiceUpdateRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesRequestsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "from_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "to_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "from_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "to_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServiceUpdateRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServiceUpdateRequest {
     return new LeavesRequestsServiceUpdateRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServiceUpdateRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServiceUpdateRequest {
     return new LeavesRequestsServiceUpdateRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServiceUpdateRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServiceUpdateRequest {
     return new LeavesRequestsServiceUpdateRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesRequestsServiceUpdateRequest | PlainMessage<LeavesRequestsServiceUpdateRequest> | undefined, b: LeavesRequestsServiceUpdateRequest | PlainMessage<LeavesRequestsServiceUpdateRequest> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesRequestsServiceUpdateRequest | PlainMessage<LeavesRequestsServiceUpdateRequest> | undefined, b: LeavesRequestsServiceUpdateRequest | PlainMessage<LeavesRequestsServiceUpdateRequest> | undefined): boolean {
     return proto3.util.equals(LeavesRequestsServiceUpdateRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -357,7 +357,7 @@ export class LeavesRequestsServiceUpdateRequest extends Message<LeavesRequestsSe
  *
  * @generated from message Genesis.LeaveRequest
  */
-export class LeaveRequest extends Message<LeaveRequest> ***REMOVED***
+export class LeaveRequest extends Message<LeaveRequest> {
   /**
    * Stores a globally unique entity UUID. This will be set at the organization level
    *
@@ -463,47 +463,47 @@ export class LeaveRequest extends Message<LeaveRequest> ***REMOVED***
    */
   formData: FormFieldDatum[] = [];
 
-  constructor(data?: PartialMessage<LeaveRequest>) ***REMOVED***
+  constructor(data?: PartialMessage<LeaveRequest>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeaveRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "metadata", kind: "message", T: EmployeeMetadata ***REMOVED***,
-    ***REMOVED*** no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata ***REMOVED***,
-    ***REMOVED*** no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true ***REMOVED***,
-    ***REMOVED*** no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "from_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "to_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true ***REMOVED***,
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 5, name: "logs", kind: "message", T: LogbookLogConciseSLC, repeated: true },
+    { no: 6, name: "completed_on", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "from_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "to_timestamp", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 30, name: "form_data", kind: "message", T: FormFieldDatum, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeaveRequest ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeaveRequest {
     return new LeaveRequest().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeaveRequest ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeaveRequest {
     return new LeaveRequest().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeaveRequest ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeaveRequest {
     return new LeaveRequest().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeaveRequest | PlainMessage<LeaveRequest> | undefined, b: LeaveRequest | PlainMessage<LeaveRequest> | undefined): boolean ***REMOVED***
+  static equals(a: LeaveRequest | PlainMessage<LeaveRequest> | undefined, b: LeaveRequest | PlainMessage<LeaveRequest> | undefined): boolean {
     return proto3.util.equals(LeaveRequest, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -511,7 +511,7 @@ export class LeaveRequest extends Message<LeaveRequest> ***REMOVED***
  *
  * @generated from message Genesis.LeavesRequestsList
  */
-export class LeavesRequestsList extends Message<LeavesRequestsList> ***REMOVED***
+export class LeavesRequestsList extends Message<LeavesRequestsList> {
   /**
    * List of records
    *
@@ -519,33 +519,33 @@ export class LeavesRequestsList extends Message<LeavesRequestsList> ***REMOVED**
    */
   list: LeaveRequest[] = [];
 
-  constructor(data?: PartialMessage<LeavesRequestsList>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesRequestsList>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesRequestsList";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "list", kind: "message", T: LeaveRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "list", kind: "message", T: LeaveRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsList ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsList {
     return new LeavesRequestsList().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsList ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsList {
     return new LeavesRequestsList().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsList ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsList {
     return new LeavesRequestsList().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesRequestsList | PlainMessage<LeavesRequestsList> | undefined, b: LeavesRequestsList | PlainMessage<LeavesRequestsList> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesRequestsList | PlainMessage<LeavesRequestsList> | undefined, b: LeavesRequestsList | PlainMessage<LeavesRequestsList> | undefined): boolean {
     return proto3.util.equals(LeavesRequestsList, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -553,7 +553,7 @@ export class LeavesRequestsList extends Message<LeavesRequestsList> ***REMOVED**
  *
  * @generated from message Genesis.LeavesRequestsServicePaginationReq
  */
-export class LeavesRequestsServicePaginationReq extends Message<LeavesRequestsServicePaginationReq> ***REMOVED***
+export class LeavesRequestsServicePaginationReq extends Message<LeavesRequestsServicePaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -596,38 +596,38 @@ export class LeavesRequestsServicePaginationReq extends Message<LeavesRequestsSe
    */
   status = STANDARD_LIFECYCLE_STATUS.PREVERIFY_UNSPECIFIED;
 
-  constructor(data?: PartialMessage<LeavesRequestsServicePaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesRequestsServicePaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesRequestsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_REQUEST_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_REQUEST_SORT_KEY) },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServicePaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServicePaginationReq {
     return new LeavesRequestsServicePaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServicePaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServicePaginationReq {
     return new LeavesRequestsServicePaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServicePaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServicePaginationReq {
     return new LeavesRequestsServicePaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesRequestsServicePaginationReq | PlainMessage<LeavesRequestsServicePaginationReq> | undefined, b: LeavesRequestsServicePaginationReq | PlainMessage<LeavesRequestsServicePaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesRequestsServicePaginationReq | PlainMessage<LeavesRequestsServicePaginationReq> | undefined, b: LeavesRequestsServicePaginationReq | PlainMessage<LeavesRequestsServicePaginationReq> | undefined): boolean {
     return proto3.util.equals(LeavesRequestsServicePaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -635,7 +635,7 @@ export class LeavesRequestsServicePaginationReq extends Message<LeavesRequestsSe
  *
  * @generated from message Genesis.LeavesRequestsServicePaginationResponse
  */
-export class LeavesRequestsServicePaginationResponse extends Message<LeavesRequestsServicePaginationResponse> ***REMOVED***
+export class LeavesRequestsServicePaginationResponse extends Message<LeavesRequestsServicePaginationResponse> {
   /**
    * The number of records in this payload
    *
@@ -664,36 +664,36 @@ export class LeavesRequestsServicePaginationResponse extends Message<LeavesReque
    */
   payload: LeaveRequest[] = [];
 
-  constructor(data?: PartialMessage<LeavesRequestsServicePaginationResponse>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesRequestsServicePaginationResponse>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesRequestsServicePaginationResponse";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "payload", kind: "message", T: LeaveRequest, repeated: true ***REMOVED***,
+    { no: 1, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "payload", kind: "message", T: LeaveRequest, repeated: true },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServicePaginationResponse ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServicePaginationResponse {
     return new LeavesRequestsServicePaginationResponse().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServicePaginationResponse ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServicePaginationResponse {
     return new LeavesRequestsServicePaginationResponse().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServicePaginationResponse ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServicePaginationResponse {
     return new LeavesRequestsServicePaginationResponse().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesRequestsServicePaginationResponse | PlainMessage<LeavesRequestsServicePaginationResponse> | undefined, b: LeavesRequestsServicePaginationResponse | PlainMessage<LeavesRequestsServicePaginationResponse> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesRequestsServicePaginationResponse | PlainMessage<LeavesRequestsServicePaginationResponse> | undefined, b: LeavesRequestsServicePaginationResponse | PlainMessage<LeavesRequestsServicePaginationResponse> | undefined): boolean {
     return proto3.util.equals(LeavesRequestsServicePaginationResponse, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -701,7 +701,7 @@ export class LeavesRequestsServicePaginationResponse extends Message<LeavesReque
  *
  * @generated from message Genesis.LeavesRequestsServiceEntityPaginationReq
  */
-export class LeavesRequestsServiceEntityPaginationReq extends Message<LeavesRequestsServiceEntityPaginationReq> ***REMOVED***
+export class LeavesRequestsServiceEntityPaginationReq extends Message<LeavesRequestsServiceEntityPaginationReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -744,38 +744,38 @@ export class LeavesRequestsServiceEntityPaginationReq extends Message<LeavesRequ
    */
   entityUuid = "";
 
-  constructor(data?: PartialMessage<LeavesRequestsServiceEntityPaginationReq>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesRequestsServiceEntityPaginationReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesRequestsServiceEntityPaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_REQUEST_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_REQUEST_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServiceEntityPaginationReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServiceEntityPaginationReq {
     return new LeavesRequestsServiceEntityPaginationReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServiceEntityPaginationReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServiceEntityPaginationReq {
     return new LeavesRequestsServiceEntityPaginationReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServiceEntityPaginationReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServiceEntityPaginationReq {
     return new LeavesRequestsServiceEntityPaginationReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesRequestsServiceEntityPaginationReq | PlainMessage<LeavesRequestsServiceEntityPaginationReq> | undefined, b: LeavesRequestsServiceEntityPaginationReq | PlainMessage<LeavesRequestsServiceEntityPaginationReq> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesRequestsServiceEntityPaginationReq | PlainMessage<LeavesRequestsServiceEntityPaginationReq> | undefined, b: LeavesRequestsServiceEntityPaginationReq | PlainMessage<LeavesRequestsServiceEntityPaginationReq> | undefined): boolean {
     return proto3.util.equals(LeavesRequestsServiceEntityPaginationReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -783,7 +783,7 @@ export class LeavesRequestsServiceEntityPaginationReq extends Message<LeavesRequ
  *
  * @generated from message Genesis.LeavesRequestsServiceFilterReq
  */
-export class LeavesRequestsServiceFilterReq extends Message<LeavesRequestsServiceFilterReq> ***REMOVED***
+export class LeavesRequestsServiceFilterReq extends Message<LeavesRequestsServiceFilterReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -945,55 +945,55 @@ export class LeavesRequestsServiceFilterReq extends Message<LeavesRequestsServic
    */
   toTimestampEnd = protoInt64.zero;
 
-  constructor(data?: PartialMessage<LeavesRequestsServiceFilterReq>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesRequestsServiceFilterReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesRequestsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_REQUEST_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 23, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 24, name: "from_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 25, name: "from_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 26, name: "to_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 27, name: "to_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_REQUEST_SORT_KEY) },
+    { no: 6, name: "creation_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 7, name: "creation_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 23, name: "leave_type_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 24, name: "from_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 25, name: "from_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 26, name: "to_timestamp_start", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 27, name: "to_timestamp_end", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServiceFilterReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServiceFilterReq {
     return new LeavesRequestsServiceFilterReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServiceFilterReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServiceFilterReq {
     return new LeavesRequestsServiceFilterReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServiceFilterReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServiceFilterReq {
     return new LeavesRequestsServiceFilterReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesRequestsServiceFilterReq | PlainMessage<LeavesRequestsServiceFilterReq> | undefined, b: LeavesRequestsServiceFilterReq | PlainMessage<LeavesRequestsServiceFilterReq> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesRequestsServiceFilterReq | PlainMessage<LeavesRequestsServiceFilterReq> | undefined, b: LeavesRequestsServiceFilterReq | PlainMessage<LeavesRequestsServiceFilterReq> | undefined): boolean {
     return proto3.util.equals(LeavesRequestsServiceFilterReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 /**
  *
@@ -1001,7 +1001,7 @@ export class LeavesRequestsServiceFilterReq extends Message<LeavesRequestsServic
  *
  * @generated from message Genesis.LeavesRequestsServiceSearchAllReq
  */
-export class LeavesRequestsServiceSearchAllReq extends Message<LeavesRequestsServiceSearchAllReq> ***REMOVED***
+export class LeavesRequestsServiceSearchAllReq extends Message<LeavesRequestsServiceSearchAllReq> {
   /**
    * If true, then returns only active records. If false, then returns only inactive records
    *
@@ -1065,39 +1065,39 @@ export class LeavesRequestsServiceSearchAllReq extends Message<LeavesRequestsSer
    */
   userId = protoInt64.zero;
 
-  constructor(data?: PartialMessage<LeavesRequestsServiceSearchAllReq>) ***REMOVED***
+  constructor(data?: PartialMessage<LeavesRequestsServiceSearchAllReq>) {
     super();
     proto3.util.initPartial(data, this);
-  ***REMOVED***
+  }
 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Genesis.LeavesRequestsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    ***REMOVED*** no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ ***REMOVED***,
-    ***REMOVED*** no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
-    ***REMOVED*** no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) ***REMOVED***,
-    ***REMOVED*** no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_REQUEST_SORT_KEY) ***REMOVED***,
-    ***REMOVED*** no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) ***REMOVED***,
-    ***REMOVED*** no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ ***REMOVED***,
-    ***REMOVED*** no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ ***REMOVED***,
+    { no: 1, name: "is_active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEAVE_REQUEST_SORT_KEY) },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "user_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
   ]);
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServiceSearchAllReq ***REMOVED***
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LeavesRequestsServiceSearchAllReq {
     return new LeavesRequestsServiceSearchAllReq().fromBinary(bytes, options);
-  ***REMOVED***
+  }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServiceSearchAllReq ***REMOVED***
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LeavesRequestsServiceSearchAllReq {
     return new LeavesRequestsServiceSearchAllReq().fromJson(jsonValue, options);
-  ***REMOVED***
+  }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServiceSearchAllReq ***REMOVED***
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LeavesRequestsServiceSearchAllReq {
     return new LeavesRequestsServiceSearchAllReq().fromJsonString(jsonString, options);
-  ***REMOVED***
+  }
 
-  static equals(a: LeavesRequestsServiceSearchAllReq | PlainMessage<LeavesRequestsServiceSearchAllReq> | undefined, b: LeavesRequestsServiceSearchAllReq | PlainMessage<LeavesRequestsServiceSearchAllReq> | undefined): boolean ***REMOVED***
+  static equals(a: LeavesRequestsServiceSearchAllReq | PlainMessage<LeavesRequestsServiceSearchAllReq> | undefined, b: LeavesRequestsServiceSearchAllReq | PlainMessage<LeavesRequestsServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(LeavesRequestsServiceSearchAllReq, a, b);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
