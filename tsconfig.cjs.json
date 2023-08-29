@@ -1,0 +1,14 @@
+***REMOVED***
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": ***REMOVED***
+        "lib": [
+            "ES6",
+            "DOM"
+    ***REMOVED***
+        "target": "ES6",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "outDir": "./lib/cjs",
+        "declarationDir": "./lib/cjs/types"
+***REMOVED***
+***REMOVED***

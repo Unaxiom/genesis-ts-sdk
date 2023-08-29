@@ -1,0 +1,18 @@
+***REMOVED***
+    "compilerOptions": ***REMOVED***
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "checkJs": true,
+        "allowJs": true,
+        "declaration": true,
+        "declarationMap": true,
+        "allowSyntheticDefaultImports": true
+***REMOVED***
+    "include": [
+        "src/*_pb.ts",
+        "src/*_connect.ts",
+        "index.ts"
+***REMOVED***
+***REMOVED***

@@ -1,0 +1,14 @@
+***REMOVED***
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": ***REMOVED***
+        "lib": [
+            "ES2022",
+            "DOM"
+    ***REMOVED***
+        "target": "ES2022",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "outDir": "./lib/esm",
+        "declarationDir": "./lib/esm/types"
+***REMOVED***
+***REMOVED***
