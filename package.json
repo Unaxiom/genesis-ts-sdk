@@ -11,7 +11,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "clean": "rm -rf ./lib && rm index.ts",
         "regenindex": "npx tsx regenindex.ts",
-        "build": "npm run clean && npm run regenindex && npm run build:esm && npm run build:cjs",
+        "docs": "npx typedoc index.ts --tsconfig tsconfig.esm.json --plugin typedoc-plugin-markdown",
+        "build": "npm run clean && npm run regenindex && npm run build:esm && npm run build:cjs && npm run docs",
         "build:esm": "npx tsc -p ./tsconfig.esm.json",
         "build:cjs": "npx tsc -p ./tsconfig.cjs.json",
         "prepack": "npm run build"
@@ -54,6 +55,8 @@
     "devDependencies": {
         "@types/node": "^20.5.7",
         "tsx": "^3.12.7",
+        "typedoc": "^0.25.0",
+        "typedoc-plugin-markdown": "^3.16.0",
         "typescript": "^5.2.2"
     }
 }
